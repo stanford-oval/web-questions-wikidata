@@ -24,7 +24,7 @@ for table in parser.tables:
             wd_property_id = re.search(r'P[\d]+', row[1]).group()
             propertyMapper[fb_property_id] = wd_property_id
 
-with open('property-mappings.json', 'w') as f:
+with open('../data/property-mappings.json', 'w') as f:
     json.dump(propertyMapper, f, indent=4)
 
 FB_ENTITY_PREFIX = 'http://rdf.freebase.com/ns/'
@@ -32,14 +32,14 @@ WD_ENTITY_PREFIX = 'http://www.wikidata.org/entity/'
 
 entity_mapper = {}
 
-with open('fb2w.nt', 'r') as f:
+with open('../data/fb2w.nt', 'r') as f:
     tsv_file = csv.reader(f, delimiter='\t')
     for fb_entity, _, wd_entity in tsv_file:
         fb_entity_id = fb_entity[1 + len(FB_ENTITY_PREFIX) : -1]
         wd_entity_id = wd_entity[1 + len(WD_ENTITY_PREFIX) : -3]
         entity_mapper[fb_entity_id] = wd_entity_id
 
-with open('entity-mappings.json', 'w') as f:
+with open('../data/entity-mappings.json', 'w') as f:
     json.dump(entity_mapper, f, indent=4)
 
 def checkEntity(sparql):
@@ -58,7 +58,7 @@ def checkProperty(sparql):
 
 count_convertible = 0
 count_not_convertible = 0
-with open('test.json', 'r') as f:
+with open('../data/train.json', 'r') as f:
     data = json.load(f)
     for q in data['Questions']:
         has_convertible_parse = False
