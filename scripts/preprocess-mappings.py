@@ -16,16 +16,33 @@ parser = HTMLTableParser()
 parser.feed(html)
 
 propertyMapper = {}
+reversePropertyMapper = {}
 
 for table in parser.tables:    
     for row in table:
-        if row[0].startswith(FB_PROPERTY_PREFIX) and re.search(r'P[\d]+', row[1]):
+        if not row[0].startswith(FB_PROPERTY_PREFIX):
+            continue;
+        if re.search(r'P[\d]+', row[1]):
             fb_property_id = row[0][len(FB_PROPERTY_PREFIX):].replace('/', '.')
             wd_property_id = re.search(r'P[\d]+', row[1]).group()
             propertyMapper[fb_property_id] = wd_property_id
 
+for table in parser.tables:
+    for row in table:
+        if not row[0].startswith(FB_PROPERTY_PREFIX):
+            continue;
+        if re.search('reverse of', row[2], re.IGNORECASE):
+            fb_property_id = row[0][len(FB_PROPERTY_PREFIX):].replace('/', '.')
+            reverse_fb_property_id = re.search(r'(?<=https:\/\/www\.freebase\.com\/)[^\s]+', row[2]).group().replace('/', '.')
+            if reverse_fb_property_id in propertyMapper:
+                reverse_wd_property_id = propertyMapper[reverse_fb_property_id]
+                reversePropertyMapper[fb_property_id] = reverse_wd_property_id
+
 with open('../data/property-mappings.json', 'w') as f:
     json.dump(propertyMapper, f, indent=4)
+
+with open('../data/reverse-property-mappings.json', 'w') as f:
+    json.dump(reversePropertyMapper, f, indent=4)
 
 FB_ENTITY_PREFIX = 'http://rdf.freebase.com/ns/'
 WD_ENTITY_PREFIX = 'http://www.wikidata.org/entity/'
