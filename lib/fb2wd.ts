@@ -8,8 +8,22 @@ import {
     SparqlGenerator,
     SelectQuery, 
     AskQuery, 
-    Pattern
+    Pattern,
+    BgpPattern,
+    IriTerm,
+    Triple
 } from 'sparqljs';
+import {
+    isBasicGraphPattern, isNamedNode
+} from './utils/sparqljs-typeguard';
+import {
+    FB_ENTITY_PREFIX,
+    FB_PROPERTY_PREFIX
+} from './utils/freebase';
+import {
+    ENTITY_PREFIX,
+    PROPERTY_PREFIX
+} from './utils/wikidata'
 
 /**
  * WebQuestion SPARQL misses xsd prefix
@@ -56,16 +70,41 @@ class FB2WDConverter {
         this.propertyMappings = JSON.parse(fs.readFileSync(path.join(__dirname, `../../data/property-mappings.json`), 'utf-8'));
     }
 
-    getEntity(fb_id : string) {
-        return this.entityMappings[fb_id];
+    private convertEntity(entity : IriTerm) {
+        if (!entity.value.startsWith(FB_ENTITY_PREFIX))
+            throw new Error('Not recognized entity: ' + entity.value);
+        const fb_id = entity.value.slice(FB_ENTITY_PREFIX.length);
+        if (!(fb_id in this.entityMappings))
+            throw new Error('Entity missing in the mapping: ' + entity.value);
+        entity.value = ENTITY_PREFIX + this.entityMappings[fb_id];
     }
 
-    getProperty(fb_id : string) {
-        return this.propertyMappings[fb_id];
+    private convertProperty(entity : IriTerm) {
+        if (!entity.value.startsWith(FB_PROPERTY_PREFIX))
+            throw new Error('Not recognized entity: ' + entity.value);
+        const fb_id = entity.value.slice(FB_PROPERTY_PREFIX.length);
+        if (!(fb_id in this.propertyMappings))
+            throw new Error('Entity missing in the mapping: ' + entity.value);
+        entity.value = PROPERTY_PREFIX + this.propertyMappings[fb_id];
     }
 
-    private _convertWhereClause(clause : Pattern) {
+    private convertTriple(triple : Triple) {
+        if (isNamedNode(triple.subject))
+            this.convertEntity(triple.subject);
+        if (isNamedNode(triple.predicate))
+            this.convertProperty(triple.predicate);
+        if (isNamedNode(triple.object))
+            this.convertEntity(triple.object);
+    }
 
+    private convertBGP(clause : BgpPattern) {
+        for (const triple of clause.triples)
+            this.convertTriple(triple); 
+    }
+
+    private convertWhereClause(clause : Pattern) {
+        if (isBasicGraphPattern(clause)) 
+            this.convertBGP(clause);
     }
 
     convert(sparql : string) {
@@ -74,7 +113,7 @@ class FB2WDConverter {
             const parsed = this.parser.parse(preprocessedSparql) as SelectQuery|AskQuery;
             if (parsed.where) {
                 for (const clause of parsed.where)
-                    this._convertWhereClause(clause);
+                    this.convertWhereClause(clause);
             }
             return this.generator.stringify(parsed);
         } catch(e) {
