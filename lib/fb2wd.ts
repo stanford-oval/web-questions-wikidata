@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 import * as argparse from 'argparse';
 import { 
     Parser, 
@@ -14,6 +13,7 @@ import {
 } from 'sparqljs';
 import {
     isBasicGraphPattern, 
+    isLiteral, 
     isNamedNode,
     isVariable
 } from './utils/sparqljs-typeguard';
@@ -29,6 +29,9 @@ import {
     ConversionErrorCode,
     ConversionError
 } from './utils/errors';
+import {
+    FB2WDMapper
+} from './utils/mappings';
 
 /**
  * WebQuestion SPARQL misses xsd prefix
@@ -65,8 +68,7 @@ interface WebQuestionParse {
 class FB2WDConverter {
     private parser : SparqlParser;
     private generator : SparqlGenerator;
-    private entityMappings : Record<string, string>;
-    private propertyMappings : Record<string, string>;
+    private mapper : FB2WDMapper;
     public counter : Record<string, number>;
     public missingEntityMappings : Set<string>;
     public missingPropertyMappings : Set<string>;
@@ -74,8 +76,7 @@ class FB2WDConverter {
     constructor() {
         this.parser = new Parser();
         this.generator = new Generator();
-        this.entityMappings = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/entity-mappings.json'), 'utf-8'));
-        this.propertyMappings = JSON.parse(fs.readFileSync(path.join(__dirname, `../../data/property-mappings.json`), 'utf-8'));
+        this.mapper = new FB2WDMapper();
         this.counter = {};
         this.missingEntityMappings = new Set();
         this.missingPropertyMappings = new Set();
@@ -92,35 +93,51 @@ class FB2WDConverter {
             if (!entity.value.startsWith(FB_ENTITY_PREFIX))
                 throw new ConversionError('UnknownEntity', 'Not recognized entity: ' + entity.value);
             const fb_id = entity.value.slice(FB_ENTITY_PREFIX.length);
-            if (!(fb_id in this.entityMappings)) {
+            if (!this.mapper.hasEntity(fb_id)) {
                 this.missingEntityMappings.add(fb_id);
                 throw new ConversionError('NoEntityMapping', 'Entity missing in the mapping: ' + entity.value);
             }
-            entity.value = ENTITY_PREFIX + this.entityMappings[fb_id];
+            entity.value = ENTITY_PREFIX + this.mapper.map(fb_id);
         } else if (!isVariable(entity)) {
             throw new ConversionError('UnsupportedNodeType', 'Not supported node: ' + entity);
         }
     }
 
-    private convertProperty(entity : any) {
-        if (isNamedNode(entity)) {
-            if (!entity.value.startsWith(FB_PROPERTY_PREFIX))
-                throw new ConversionError('UnknownProperty', 'Not recognized entity: ' + entity.value);
-            const fb_id = entity.value.slice(FB_PROPERTY_PREFIX.length);
-            if (!(fb_id in this.propertyMappings)) {
+    /**
+     * convert a fb property into a wd property, and return if we need to reverse the subject and object
+     * @param property a predicate in the parsed Triple
+     * @return if the property i
+     */
+    private checkAndConvertProperty(property : any) : boolean {
+        if (isNamedNode(property)) {
+            if (!property.value.startsWith(FB_PROPERTY_PREFIX))
+                throw new ConversionError('UnknownProperty', 'Not recognized property: ' + property.value);
+            const fb_id = property.value.slice(FB_PROPERTY_PREFIX.length);
+            if (!this.mapper.hasProperty(fb_id) && !this.mapper.hasReverseProperty(fb_id)) {
                 this.missingPropertyMappings.add(fb_id);
-                throw new ConversionError('NoPropertyMapping', 'Entity missing in the mapping: ' + entity.value);
+                throw new ConversionError('NoPropertyMapping', 'Entity missing in the mapping: ' + property.value);
             }
-            entity.value = PROPERTY_PREFIX + this.propertyMappings[fb_id];
-        } else if (!isVariable(entity)) {
-            throw new ConversionError('UnsupportedPropertyType', 'Not supported node: ' + entity);
+            property.value = PROPERTY_PREFIX + this.mapper.map(fb_id);
+            return this.mapper.hasReverseProperty(fb_id);
+        } else if (!isVariable(property)) {
+            throw new ConversionError('UnsupportedPropertyType', 'Not supported node: ' + property);
         }
+        return false;
     }
 
     private convertTriple(triple : Triple) {
         this.convertEntity(triple.subject);
-        this.convertProperty(triple.predicate);
         this.convertEntity(triple.object);
+        const reverse = this.checkAndConvertProperty(triple.predicate);
+        if (reverse) {
+            if (!isLiteral(triple.object)) {
+                const tmp = triple.subject;
+                triple.subject = triple.object;
+                triple.object = tmp;
+            } else {
+                throw new ConversionError('NotReversibleTriple', 'Failed to reverse triple: ' + triple);
+            }
+        }
     }
 
     private convertBGP(clause : BgpPattern) {

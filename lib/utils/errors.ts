@@ -3,6 +3,7 @@ export type ConversionErrorCode =
     'NoPropertyMapping' |
     'UnknownEntity' |
     'UnknownProperty' |
+    'NotReversibleTriple' |
     'UnsupportedNodeType' |
     'UnsupportedPropertyType' |
     'Unsupported' |
