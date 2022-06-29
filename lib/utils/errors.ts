@@ -1,9 +1,12 @@
-type ConversionErrorCode =  
-    'UnmappedEntity' |
-    'UnmappedProperty' |
+export type ConversionErrorCode =  
+    'NoEntityMapping' |
+    'NoPropertyMapping' |
     'UnknownEntity' |
     'UnknownProperty' |
-    'Unsupported';
+    'UnsupportedNodeType' |
+    'UnsupportedPropertyType' |
+    'Unsupported' |
+    'Unknown';
 
 export class ConversionError extends Error {
     public code : ConversionErrorCode;

@@ -10,11 +10,12 @@ import {
     AskQuery, 
     Pattern,
     BgpPattern,
-    IriTerm,
     Triple
 } from 'sparqljs';
 import {
-    isBasicGraphPattern, isNamedNode
+    isBasicGraphPattern, 
+    isNamedNode,
+    isVariable
 } from './utils/sparqljs-typeguard';
 import {
     FB_ENTITY_PREFIX,
@@ -24,6 +25,10 @@ import {
     ENTITY_PREFIX,
     PROPERTY_PREFIX
 } from './utils/wikidata'
+import {
+    ConversionErrorCode,
+    ConversionError
+} from './utils/errors';
 
 /**
  * WebQuestion SPARQL misses xsd prefix
@@ -62,39 +67,60 @@ class FB2WDConverter {
     private generator : SparqlGenerator;
     private entityMappings : Record<string, string>;
     private propertyMappings : Record<string, string>;
+    public counter : Record<string, number>;
+    public missingEntityMappings : Set<string>;
+    public missingPropertyMappings : Set<string>;
 
     constructor() {
         this.parser = new Parser();
         this.generator = new Generator();
         this.entityMappings = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/entity-mappings.json'), 'utf-8'));
         this.propertyMappings = JSON.parse(fs.readFileSync(path.join(__dirname, `../../data/property-mappings.json`), 'utf-8'));
+        this.counter = {};
+        this.missingEntityMappings = new Set();
+        this.missingPropertyMappings = new Set();
     }
 
-    private convertEntity(entity : IriTerm) {
-        if (!entity.value.startsWith(FB_ENTITY_PREFIX))
-            throw new Error('Not recognized entity: ' + entity.value);
-        const fb_id = entity.value.slice(FB_ENTITY_PREFIX.length);
-        if (!(fb_id in this.entityMappings))
-            throw new Error('Entity missing in the mapping: ' + entity.value);
-        entity.value = ENTITY_PREFIX + this.entityMappings[fb_id];
+    private count(key : ConversionErrorCode|'success') {
+        if (!(key in this.counter))
+            this.counter[key] = 0;
+        this.counter[key] += 1;
     }
 
-    private convertProperty(entity : IriTerm) {
-        if (!entity.value.startsWith(FB_PROPERTY_PREFIX))
-            throw new Error('Not recognized entity: ' + entity.value);
-        const fb_id = entity.value.slice(FB_PROPERTY_PREFIX.length);
-        if (!(fb_id in this.propertyMappings))
-            throw new Error('Entity missing in the mapping: ' + entity.value);
-        entity.value = PROPERTY_PREFIX + this.propertyMappings[fb_id];
+    private convertEntity(entity : any) {
+        if (isNamedNode(entity)) {
+            if (!entity.value.startsWith(FB_ENTITY_PREFIX))
+                throw new ConversionError('UnknownEntity', 'Not recognized entity: ' + entity.value);
+            const fb_id = entity.value.slice(FB_ENTITY_PREFIX.length);
+            if (!(fb_id in this.entityMappings)) {
+                this.missingEntityMappings.add(fb_id);
+                throw new ConversionError('NoEntityMapping', 'Entity missing in the mapping: ' + entity.value);
+            }
+            entity.value = ENTITY_PREFIX + this.entityMappings[fb_id];
+        } else if (!isVariable(entity)) {
+            throw new ConversionError('UnsupportedNodeType', 'Not supported node: ' + entity);
+        }
+    }
+
+    private convertProperty(entity : any) {
+        if (isNamedNode(entity)) {
+            if (!entity.value.startsWith(FB_PROPERTY_PREFIX))
+                throw new ConversionError('UnknownProperty', 'Not recognized entity: ' + entity.value);
+            const fb_id = entity.value.slice(FB_PROPERTY_PREFIX.length);
+            if (!(fb_id in this.propertyMappings)) {
+                this.missingPropertyMappings.add(fb_id);
+                throw new ConversionError('NoPropertyMapping', 'Entity missing in the mapping: ' + entity.value);
+            }
+            entity.value = PROPERTY_PREFIX + this.propertyMappings[fb_id];
+        } else if (!isVariable(entity)) {
+            throw new ConversionError('UnsupportedPropertyType', 'Not supported node: ' + entity);
+        }
     }
 
     private convertTriple(triple : Triple) {
-        if (isNamedNode(triple.subject))
-            this.convertEntity(triple.subject);
-        if (isNamedNode(triple.predicate))
-            this.convertProperty(triple.predicate);
-        if (isNamedNode(triple.object))
-            this.convertEntity(triple.object);
+        this.convertEntity(triple.subject);
+        this.convertProperty(triple.predicate);
+        this.convertEntity(triple.object);
     }
 
     private convertBGP(clause : BgpPattern) {
@@ -105,6 +131,8 @@ class FB2WDConverter {
     private convertWhereClause(clause : Pattern) {
         if (isBasicGraphPattern(clause)) 
             this.convertBGP(clause);
+        else
+            throw new ConversionError('Unsupported');
     }
 
     convert(sparql : string) {
@@ -115,10 +143,14 @@ class FB2WDConverter {
                 for (const clause of parsed.where)
                     this.convertWhereClause(clause);
             }
-            return this.generator.stringify(parsed);
+            const converted = this.generator.stringify(parsed);
+            this.count('success');
+            return converted;
         } catch(e) {
-            console.log(preprocessedSparql);
-            console.log((e as Error).message);
+            if (e instanceof ConversionError) 
+                this.count(e.code);
+            else    
+                this.count('Unknown');
         }
     }
 }
@@ -140,11 +172,16 @@ async function main() {
     const fbQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
     const converter = new FB2WDConverter();
     const examples = fbQuestions.Questions.map((ex : WebQuestionExample) => {
+        const converted = ex.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
         return {
             question: ex.RawQuestion,
-            sparql: converter.convert(ex.Parses[0].Sparql)
+            sparql: converted.length > 0 ? converted[0] : null
         }
     });
+    console.log(converter.counter);
+    console.log('Total: ', examples.length);
+    fs.writeFileSync('data/missing-entity-mappings.tsv', [...converter.missingEntityMappings].join('\n'));
+    fs.writeFileSync('data/missing-property-mappings.tsv', [...converter.missingPropertyMappings].join('\n'));
     fs.writeFileSync(args.output, JSON.stringify(examples, null, 2));    
 }
 
