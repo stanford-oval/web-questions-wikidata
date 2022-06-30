@@ -19,6 +19,7 @@ import {
     PROPERTY_PREFIX
 } from './utils/wikidata';
 import WikidataUtils from './utils/wikidata';
+import { FB2WDMapper } from './utils/mappings';
 
 class Annotator extends events.EventEmitter {
     private _ex ?: WebQuestionExample;
@@ -28,6 +29,7 @@ class Annotator extends events.EventEmitter {
     private _parser : SparqlParser;
     private _generator : SparqlGenerator;
     private _wikidata : WikidataUtils;
+    private _mapper : FB2WDMapper;
 
     constructor(rl : readline.Interface, examples : Array<WebQuestionExample>) {
         super();
@@ -39,6 +41,7 @@ class Annotator extends events.EventEmitter {
         this._parser = new Parser();
         this._generator = new Generator();
         this._wikidata = new WikidataUtils('wikidata.sqlite');
+        this._mapper = new FB2WDMapper();
 
         rl.on('line', async (line) => {
             // an empty line indicates a SPARQL is finished, run test
@@ -123,11 +126,39 @@ class Annotator extends events.EventEmitter {
             return;
         }
         this._ex = loadExample(example);
+        const sparql = preprocessWebQuestionsSparql(example.Parses[0].Sparql).trim();
         console.log('------');
         console.log('Example ID: ', example.QuestionId);
         console.log('Question: ', example.RawQuestion);
-        console.log('SPARQL: ', preprocessWebQuestionsSparql(example.Parses[0].Sparql).trim(), '\n');
+        console.log('SPARQL: ', sparql, '\n');
+        await this._hint(sparql);
         this._init();
+    }
+
+    private async _hint(sparql : string) {
+        let hasHint = false;
+        const entities = /(?<=ns:)m\.[^\s\(\)\\]*/g.exec(sparql) ?? [];
+        for (const entity of entities) {
+            if (this._mapper.hasEntity(entity)) {
+                hasHint = true;
+                const wdEntity = this._mapper.map(entity)!;
+                const label = await this._wikidata.getLabel(wdEntity);
+                console.log(`${entity}: ${label} (${wdEntity})`);
+            }
+        }
+        const properties = /(?<=ns:)(?!m\.)[^\s\(\)\\]+/g.exec(sparql) ?? [];
+        for (const property of properties) {
+            const reverse = this._mapper.hasReverseProperty(property);
+            if (this._mapper.hasProperty(property) || reverse) {
+                hasHint = true;
+                const wdProperty = this._mapper.map(property)!;
+                const label = await this._wikidata.getLabel(wdProperty);
+                console.log(`${property}: ${label} (${wdProperty}) ${reverse ? '(reverse)': ''}`);
+            }
+        }
+        // output a new line break
+        if (hasHint)
+            console.log('');
     }
 }
 
