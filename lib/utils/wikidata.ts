@@ -83,7 +83,7 @@ export default class WikidataUtils {
     /**
      * Set cache
      * @param table the name of the table
-     * @param values all the values to add to the table
+     * @param values all the values to add to the table 
      * @returns undefined
      */
     private async _setCache(table : string, ...values : string[]) {

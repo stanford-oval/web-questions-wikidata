@@ -37,7 +37,7 @@ import {
     preprocessWebQuestionsSparql
 } from './utils/web-questions';
 
-class FB2WDConverter {
+export default class FB2WDConverter {
     private parser : SparqlParser;
     private generator : SparqlGenerator;
     private mapper : FB2WDMapper;
