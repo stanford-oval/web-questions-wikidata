@@ -4,14 +4,23 @@ import * as events from 'events';
 import * as readline from 'readline';
 import {
     WebQuestionExample,
-    loadExample
+    loadExample,
+    preprocessWebQuestionsSparql
 } from './utils/web-questions';
+import { 
+    Parser, 
+    SparqlParser, 
+    Generator,
+    SparqlGenerator
+} from 'sparqljs';
 
 class Annotator extends events.EventEmitter {
     private _ex ?: WebQuestionExample;
     private _rl : readline.Interface;
     private _nextExample : Iterator<WebQuestionExample>;
     private _sparql : string[];
+    private _parser : SparqlParser;
+    private _generator : SparqlGenerator;
 
     constructor(rl : readline.Interface, examples : Array<WebQuestionExample>) {
         super();
@@ -20,11 +29,13 @@ class Annotator extends events.EventEmitter {
         this._rl = rl;
         this._nextExample = examples[Symbol.iterator]();
         this._sparql = [];
+        this._parser = new Parser();
+        this._generator = new Generator();
 
         rl.on('line', async (line) => {
             // an empty line indicates a SPARQL is finished, run test
             if (line.trim().length === 0) {
-                await this.testSparql();
+                await this._testSparql(this._sparql.join(' '));
                 return;
             }
             // drop an example, and continue to the next one
@@ -52,20 +63,21 @@ class Annotator extends events.EventEmitter {
         });
     }
 
-    private async testSparql() {
-        // TODO: check the correctness of the annotated SPARQL
+    private async _testSparql(sparql : string) {
         try {
-            console.log('Does the result look good? y/n/d');
+            const parsed = this._parser.parse(sparql);
+            console.log('After normalization:\n' + this._generator.stringify(parsed));
+            console.log('\nDoes the result look good? y/n/d');
         } catch(e) {
             console.log('Failed to run the SPARQL: ', (e as Error).message);
-            console.log('Try rewrite the SPARQL.');
+            console.log('Try rewrite the SPARQL.\n');
             this._init();
         }
     }
 
     private _init() {
         this._sparql = ['SELECT DISTINCT'];
-        this._rl.setPrompt('SELECT DISTINCT');
+        this._rl.setPrompt('SELECT DISTINCT ');
         this._rl.prompt();
     }
 
@@ -83,7 +95,7 @@ class Annotator extends events.EventEmitter {
         console.log('------');
         console.log('Example ID: ', example.QuestionId);
         console.log('Question: ', example.RawQuestion);
-        console.log('SPARQL: ', example.Parses[0].Sparql);
+        console.log('SPARQL: ', preprocessWebQuestionsSparql(example.Parses[0].Sparql).trim(), '\n');
         this._init();
     }
 }
@@ -115,7 +127,7 @@ function main() {
         fs.existsSync(args.annotated) ? JSON.parse(fs.readFileSync(args.annotated, 'utf-8')) : [];
     const dropped : Array<WebQuestionExample> = 
         fs.existsSync(args.dropped) ? JSON.parse(fs.readFileSync(args.dropped, 'utf-8')) : [];
-        
+
     // offset examples based on the the length of annotated and dropped
     const examples : Array<WebQuestionExample> = webQuestions.Questions.slice(annotated.length + dropped.length);
     
