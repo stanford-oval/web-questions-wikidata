@@ -137,7 +137,7 @@ class Annotator extends events.EventEmitter {
 
     private async _hint(sparql : string) {
         let hasHint = false;
-        const entities = /(?<=ns:)m\.[^\s()\\]*/g.exec(sparql) ?? [];
+        const entities = sparql.match(/(?<=ns:)m\.[^\s()\\]*/g) ?? [];
         for (const entity of entities) {
             if (this._mapper.hasEntity(entity)) {
                 hasHint = true;
@@ -146,7 +146,7 @@ class Annotator extends events.EventEmitter {
                 console.log(`${entity}: ${label} (${wdEntity})`);
             }
         }
-        const properties = /(?<=ns:)(?!m\.)[^\s()\\]+/g.exec(sparql) ?? [];
+        const properties = sparql.match(/(?<=ns:)(?!m\.)[^\s()\\]+/g) ?? [];
         for (const property of properties) {
             const reverse = this._mapper.hasReverseProperty(property);
             if (this._mapper.hasProperty(property) || reverse) {
