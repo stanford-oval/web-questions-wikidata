@@ -13,6 +13,7 @@ import {
 } from 'sparqljs';
 import {
     isBasicGraphPattern, 
+    isFunctionCall, 
     isLiteral, 
     isNamedNode,
     isVariable
@@ -21,7 +22,7 @@ import {
     FB_ENTITY_PREFIX,
     FB_PROPERTY_PREFIX
 } from './utils/freebase';
-import {
+import WikidataUtils, {
     ENTITY_PREFIX,
     PROPERTY_PREFIX
 } from './utils/wikidata';
@@ -33,8 +34,9 @@ import {
     FB2WDMapper
 } from './utils/mappings';
 import {
-    WebQuestionExample,
-    preprocessWebQuestionsSparql
+    loadExample,
+    preprocessWebQuestionsSparql,
+    WebQuestionParse
 } from './utils/web-questions';
 
 export default class FB2WDConverter {
@@ -132,6 +134,19 @@ export default class FB2WDConverter {
                 for (const clause of parsed.where)
                     this.convertWhereClause(clause);
             }
+            if ('having' in parsed || 'group' in parsed) 
+                throw new ConversionError('Unsupported');
+            if ('order' in parsed && parsed.order) {
+                if (parsed.order.length > 1)
+                    throw new ConversionError('Unsupported');
+                if (parsed.order.length === 1) {
+                    const expression = parsed.order[0].expression;
+                    if (isFunctionCall(expression) && 
+                        isNamedNode(expression.function) && 
+                        expression.function.value === 'http://www.w3.org/2001/XMLSchema#datetime')
+                        parsed.order[0].expression = expression.args[0];
+                }
+            }
             const converted = this.generator.stringify(parsed);
             this.count('success');
             return converted;
@@ -154,25 +169,60 @@ async function main() {
         required: true,
         help: 'path to the input file'
     });
-    parser.add_argument('-o', '--output', {
+    parser.add_argument('--annotated', {
         required: true,
-        help: 'path to the output file'
+        help: 'path to the file for annotated examples'
+    });
+    parser.add_argument('--skipped', {
+        required: true,
+        help: 'path to the file for skipped examples'
     });
     const args = parser.parse_args();
     const fbQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
     const converter = new FB2WDConverter();
-    const examples = fbQuestions.Questions.map((ex : WebQuestionExample) => {
-        const converted = ex.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
-        return {
-            question: ex.RawQuestion,
-            sparql: converted.length > 0 ? converted[0] : null
-        };
-    });
+    const wikidata = new WikidataUtils('wikidata.sqlite');
+    const annotated = [];
+    const skipped = [];
+    for (const ex of fbQuestions.Questions) {
+        const example = loadExample(ex);
+        const converted = example.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
+        if (converted.length > 0) {
+            console.log(converted[0]);
+            const parse : WebQuestionParse = {
+                Sparql: converted[0]!,
+                Answers: []
+            };
+            const sparql = converted[0];
+            try {
+                const response = await wikidata.query(sparql!);
+                const rawAnswers = response.map((r : any) => Object.values(r)).flat();
+                for (const answer in rawAnswers) {
+                    if (answer.startsWith(ENTITY_PREFIX)) {
+                        const qid = answer.slice(ENTITY_PREFIX.length);
+                        const label = await wikidata.getLabel(qid);
+                        parse.Answers.push({ AnswerType : 'Entity', AnswerArgument: qid, EntityName : label });
+                    } else {
+                        parse.Answers.push({ AnswerType : 'Value', AnswerArgument: answer, EntityName : null });
+                    }
+                }
+                example.Parses = [parse];
+                annotated.push(example);
+            } catch(e) {
+                console.log('Failed when querying Wikidata endpoint');
+                console.log('Question:', example.RawQuestion);
+                console.log('SPARQL:', sparql);
+            }
+        } else {
+            skipped.push(example);
+        }
+    }
     console.log(converter.counter);
-    console.log('Total: ', examples.length);
+    console.log('Annotated: ', annotated.length);
+    console.log('Skipped: ', skipped.length);
     fs.writeFileSync('data/missing-entity-mappings.tsv', [...converter.missingEntityMappings].join('\n'));
     fs.writeFileSync('data/missing-property-mappings.tsv', [...converter.missingPropertyMappings].join('\n'));
-    fs.writeFileSync(args.output, JSON.stringify(examples, null, 2));    
+    fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
+    fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));    
 }
 
 if (require.main === module)

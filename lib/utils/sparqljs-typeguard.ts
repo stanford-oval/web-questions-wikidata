@@ -7,7 +7,8 @@ import {
     BgpPattern,
     FilterPattern,
     UnionPattern,
-    AggregateExpression
+    AggregateExpression,
+    FunctionCallExpression
 } from 'sparqljs';
 
 export function isNamedNode(node : any) : node is IriTerm {
@@ -62,4 +63,8 @@ export function isAggregateExpression(node : any, aggregation ?: string) : node 
     if (aggregation)
         return 'type' in node && node.type === 'aggregate' && node.aggregation === aggregation;
     return 'type' in node && node.type === 'aggregate';
+}
+
+export function isFunctionCall(node : any) : node is FunctionCallExpression {
+    return 'type' in node && node.type === 'functionCall';
 }

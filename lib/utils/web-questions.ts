@@ -12,7 +12,7 @@ export interface WebQuestionParse {
 }
 
 export interface WebQuestionAnswer {
-    AnswerType : string,
+    AnswerType : 'Entity'|'Value',
     AnswerArgument : string,
     EntityName : string|null
 }
