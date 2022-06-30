@@ -10,15 +10,15 @@ export class FB2WDMapper {
         const entityMappings = {
             official: JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/entity-mappings.json'), 'utf-8')),
             manual: JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/manual-entity-mappings.json'), 'utf-8')),
-        }
+        };
         const propertyMappings = {
             official: JSON.parse(fs.readFileSync(path.join(__dirname, `../../../data/property-mappings.json`), 'utf-8')),
             manual: JSON.parse(fs.readFileSync(path.join(__dirname, `../../../data/manual-property-mappings.json`), 'utf-8'))
-        }
+        };
         const reversePropertyMappings = {
             official: JSON.parse(fs.readFileSync(path.join(__dirname, `../../../data/reverse-property-mappings.json`), 'utf-8')),
             manual: JSON.parse(fs.readFileSync(path.join(__dirname, `../../../data/manual-reverse-property-mappings.json`), 'utf-8'))
-        }
+        };
         this.entityMappings = { ...entityMappings.official, ...entityMappings.manual };
         this.propertyMappings = { ...propertyMappings.official, ...propertyMappings.manual };
         this.reversePropertyMappings = { ...reversePropertyMappings.official, ...reversePropertyMappings.manual };

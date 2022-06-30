@@ -31,7 +31,7 @@ class Annotator extends events.EventEmitter {
     private _wikidata : WikidataUtils;
     private _mapper : FB2WDMapper;
 
-    constructor(rl : readline.Interface, examples : Array<WebQuestionExample>) {
+    constructor(rl : readline.Interface, examples : WebQuestionExample[]) {
         super();
 
         this._ex = undefined;
@@ -137,7 +137,7 @@ class Annotator extends events.EventEmitter {
 
     private async _hint(sparql : string) {
         let hasHint = false;
-        const entities = /(?<=ns:)m\.[^\s\(\)\\]*/g.exec(sparql) ?? [];
+        const entities = /(?<=ns:)m\.[^\s()\\]*/g.exec(sparql) ?? [];
         for (const entity of entities) {
             if (this._mapper.hasEntity(entity)) {
                 hasHint = true;
@@ -146,7 +146,7 @@ class Annotator extends events.EventEmitter {
                 console.log(`${entity}: ${label} (${wdEntity})`);
             }
         }
-        const properties = /(?<=ns:)(?!m\.)[^\s\(\)\\]+/g.exec(sparql) ?? [];
+        const properties = /(?<=ns:)(?!m\.)[^\s()\\]+/g.exec(sparql) ?? [];
         for (const property of properties) {
             const reverse = this._mapper.hasReverseProperty(property);
             if (this._mapper.hasProperty(property) || reverse) {
@@ -185,13 +185,13 @@ function main() {
     const webQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
 
     // if file exists, load the existing annotated/dropped files
-    const annotated : Array<WebQuestionExample> =   
+    const annotated : WebQuestionExample[] =   
         fs.existsSync(args.annotated) ? JSON.parse(fs.readFileSync(args.annotated, 'utf-8')) : [];
-    const dropped : Array<WebQuestionExample> = 
+    const dropped : WebQuestionExample[] = 
         fs.existsSync(args.dropped) ? JSON.parse(fs.readFileSync(args.dropped, 'utf-8')) : [];
 
     // offset examples based on the the length of annotated and dropped
-    const examples : Array<WebQuestionExample> = webQuestions.Questions.slice(annotated.length + dropped.length);
+    const examples : WebQuestionExample[] = webQuestions.Questions.slice(annotated.length + dropped.length);
     
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
     const annotator = new Annotator(rl, examples);

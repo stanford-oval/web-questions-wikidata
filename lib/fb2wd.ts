@@ -24,7 +24,7 @@ import {
 import {
     ENTITY_PREFIX,
     PROPERTY_PREFIX
-} from './utils/wikidata'
+} from './utils/wikidata';
 import {
     ConversionErrorCode,
     ConversionError
@@ -35,7 +35,7 @@ import {
 import {
     WebQuestionExample,
     preprocessWebQuestionsSparql
-} from './utils/web-questions'
+} from './utils/web-questions';
 
 class FB2WDConverter {
     private parser : SparqlParser;
@@ -140,6 +140,7 @@ class FB2WDConverter {
                 this.count(e.code);
             else    
                 this.count('Unknown');
+            return null;
         }
     }
 }
@@ -165,7 +166,7 @@ async function main() {
         return {
             question: ex.RawQuestion,
             sparql: converted.length > 0 ? converted[0] : null
-        }
+        };
     });
     console.log(converter.counter);
     console.log('Total: ', examples.length);
