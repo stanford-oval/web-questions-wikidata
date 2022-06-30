@@ -2,7 +2,8 @@ export interface WebQuestionExample {
     QuestionId : string,
     RawQuestion : string,
     ProcessedQuestion : string,
-    Parses : WebQuestionParse[]
+    Parses : WebQuestionParse[],
+    comment ?: string
 }
 
 export interface WebQuestionParse {
@@ -14,6 +15,19 @@ export interface WebQuestionAnswer {
     AnswerType : string,
     AnswerArgument : string,
     EntityName : string|null
+}
+
+export function loadExample(ex : WebQuestionExample) : WebQuestionExample {
+    // only load one parse if there are multiple
+    return {
+        QuestionId: ex.QuestionId,
+        RawQuestion: ex.RawQuestion,
+        ProcessedQuestion: ex.ProcessedQuestion,
+        Parses: [{
+            Sparql: ex.Parses[0].Sparql,
+            Answers: ex.Parses[0].Answers
+        }]
+    };
 }
 
 /**

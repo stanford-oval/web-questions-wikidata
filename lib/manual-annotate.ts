@@ -3,13 +3,15 @@ import * as fs from 'fs';
 import * as events from 'events';
 import * as readline from 'readline';
 import {
-    WebQuestionExample
+    WebQuestionExample,
+    loadExample
 } from './utils/web-questions';
 
 class Annotator extends events.EventEmitter {
     private _ex ?: WebQuestionExample;
     private _rl : readline.Interface;
     private _nextExample : Iterator<WebQuestionExample>;
+    private _sparql : string[];
 
     constructor(rl : readline.Interface, examples : Array<WebQuestionExample>) {
         super();
@@ -17,22 +19,54 @@ class Annotator extends events.EventEmitter {
         this._ex = undefined;
         this._rl = rl;
         this._nextExample = examples[Symbol.iterator]();
+        this._sparql = [];
 
         rl.on('line', async (line) => {
+            // an empty line indicates a SPARQL is finished, run test
             if (line.trim().length === 0) {
-                rl.prompt();
+                await this.testSparql();
                 return;
             }
-
+            // drop an example, and continue to the next one
             if (line === 'd' || line.startsWith('d ')) {
-                const comment = line.substring(2).trim();
-                this.emit('dropped', comment);
+                this._ex!.comment = line.substring(2).trim();
+                this.emit('dropped', this._ex);
                 this.next();
                 return;
             }
-
-            this.emit('annotated', this._ex);
+            // reject an annotation, restart the same example
+            if (line === 'n') {
+                this._init();
+                return;
+            }
+            // accept an annotation, and continue to the next example
+            if (line === 'y') {
+                console.log('Example annotated.\n');
+                this._ex!.Parses[0].Sparql = this._sparql.join(' ');
+                this.emit('annotated', this._ex);
+                this.next();
+                return;
+            }
+            // in progress of writing a SPARQL query 
+            this._sparql.push(line.trim());
         });
+    }
+
+    private async testSparql() {
+        // TODO: check the correctness of the annotated SPARQL
+        try {
+            console.log('Does the result look good? y/n/d');
+        } catch(e) {
+            console.log('Failed to run the SPARQL: ', (e as Error).message);
+            console.log('Try rewrite the SPARQL.');
+            this._init();
+        }
+    }
+
+    private _init() {
+        this._sparql = ['SELECT DISTINCT'];
+        this._rl.setPrompt('SELECT DISTINCT');
+        this._rl.prompt();
     }
 
     next() {
@@ -45,10 +79,12 @@ class Annotator extends events.EventEmitter {
             this.emit('end');
             return;
         }
-        this._ex = example;
-        console.log(example.QuestionId);
-        this._rl.setPrompt('$ ');
-        this._rl.prompt();
+        this._ex = loadExample(example);
+        console.log('------');
+        console.log('Example ID: ', example.QuestionId);
+        console.log('Question: ', example.RawQuestion);
+        console.log('SPARQL: ', example.Parses[0].Sparql);
+        this._init();
     }
 }
 
@@ -70,29 +106,27 @@ function main() {
     parser.add_argument('input', {
         help: `The script expects a tsv input file with columns: id, utterance, preprocessed, target_code`
     });
-    parser.add_argument('--offset', {
-        required: false,
-        type: parseInt,
-        default: 1,
-        help: `Start from the nth line of the input tsv file.`
-    });
 
     const args = parser.parse_args();
     const webQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
-    let examples : Array<WebQuestionExample> = webQuestions.Questions;
-    if (args.offset > 1)
-        examples = examples.slice(args.offset - 1);
+
+    // if file exists, load the existing annotated/dropped files
+    const annotated : Array<WebQuestionExample> =   
+        fs.existsSync(args.annotated) ? JSON.parse(fs.readFileSync(args.annotated, 'utf-8')) : [];
+    const dropped : Array<WebQuestionExample> = 
+        fs.existsSync(args.dropped) ? JSON.parse(fs.readFileSync(args.dropped, 'utf-8')) : [];
+        
+    // offset examples based on the the length of annotated and dropped
+    const examples : Array<WebQuestionExample> = webQuestions.Questions.slice(annotated.length + dropped.length);
     
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-    rl.setPrompt('SELECT DISTINCT ');
-
     const annotator = new Annotator(rl, examples);
-    const annotated = [];
-    const dropped = [];
+    annotator.next();
 
     function quit() {
-
-        console.log('Bye\n');
+        fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
+        fs.writeFileSync(args.dropped, JSON.stringify(dropped, null, 2));
+        console.log('\nBye\n');
         rl.close();
     }
     annotator.on('end', quit);
