@@ -13,6 +13,12 @@ import {
     Generator,
     SparqlGenerator
 } from 'sparqljs';
+import {
+    ENTITY_PREFIX,
+    PREFIXES,
+    PROPERTY_PREFIX
+} from './utils/wikidata';
+import WikidataUtils from './utils/wikidata';
 
 class Annotator extends events.EventEmitter {
     private _ex ?: WebQuestionExample;
@@ -21,6 +27,7 @@ class Annotator extends events.EventEmitter {
     private _sparql : string[];
     private _parser : SparqlParser;
     private _generator : SparqlGenerator;
+    private _wikidata : WikidataUtils;
 
     constructor(rl : readline.Interface, examples : Array<WebQuestionExample>) {
         super();
@@ -31,6 +38,7 @@ class Annotator extends events.EventEmitter {
         this._sparql = [];
         this._parser = new Parser();
         this._generator = new Generator();
+        this._wikidata = new WikidataUtils('wikidata.sqlite');
 
         rl.on('line', async (line) => {
             // an empty line indicates a SPARQL is finished, run test
@@ -59,20 +67,43 @@ class Annotator extends events.EventEmitter {
                 return;
             }
             // in progress of writing a SPARQL query 
+            rl.setPrompt('');
             this._sparql.push(line.trim());
         });
     }
 
     private async _testSparql(sparql : string) {
         try {
-            const parsed = this._parser.parse(sparql);
-            console.log('After normalization:\n' + this._generator.stringify(parsed));
+            const normalized = this._normalizeSparql(sparql);
+            console.log('After normalization:\n' + normalized);
+            const response = await this._wikidata.query(sparql);
+            const wdAnswers = [];
+            for (const item of response) {
+                const values : any[] = Object.values(item);
+                for (const v of values) {
+                    if (v.value.startsWith(ENTITY_PREFIX))
+                        wdAnswers.push(await this._wikidata.getLabel(v.value.slice(ENTITY_PREFIX.length)));
+                    else if (v.value.startsWith(PROPERTY_PREFIX))
+                        wdAnswers.push(await this._wikidata.getLabel(v.value.slice(PROPERTY_PREFIX.length)));
+                    else 
+                        wdAnswers.push(v.value);
+                }
+            }
+            console.log('Wikidata answers:', wdAnswers.flat().join(', '));
+            const fbAnswers = this._ex!.Parses[0].Answers.map((a) => a.EntityName ?? a.AnswerArgument);
+            console.log('Freebase answers:', fbAnswers.join(', '));
             console.log('\nDoes the result look good? y/n/d');
         } catch(e) {
             console.log('Failed to run the SPARQL: ', (e as Error).message);
             console.log('Try rewrite the SPARQL.\n');
             this._init();
         }
+    }
+
+    private _normalizeSparql(sparql : string) {
+        const parsed = this._parser.parse(PREFIXES.join('\n') + ' ' + sparql);
+        const normalized = this._generator.stringify(parsed);
+        return normalized;
     }
 
     private _init() {
