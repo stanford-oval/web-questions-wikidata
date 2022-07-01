@@ -7,12 +7,17 @@ import wikibase from 'wikibase-sdk';
 const URL = 'https://query.wikidata.org/sparql';
 export const ENTITY_PREFIX = 'http://www.wikidata.org/entity/';
 export const PROPERTY_PREFIX = 'http://www.wikidata.org/prop/direct/';
-export const PREFIXES = [
-    'PREFIX wd: <http://www.wikidata.org/entity/>',
-    'PREFIX wdt: <http://www.wikidata.org/prop/direct/>',
-    'PREFIX ps: <http://www.wikidata.org/prop/statement/>',
-    'PREFIX pq: <http://www.wikidata.org/prop/qualifier/>'
-];
+export const PREFIXES = {
+    'wd': 'http://www.wikidata.org/entity/',
+    'wdt': 'http://www.wikidata.org/prop/direct/',
+    'ps': 'http://www.wikidata.org/prop/statement/',
+    'pq': 'http://www.wikidata.org/prop/qualifier/'
+};
+
+export function postprocessSparql(sparql : string) {
+    // remove prefixes for simplicity
+    return sparql.replace(/PREFIX [\w]+: <[^>]+\s*>/g, '').trim();
+}
 
 const SQLITE_SCHEMA = `
 create table http_requests (

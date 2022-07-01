@@ -32,7 +32,7 @@ export function loadExample(ex : WebQuestionExample) : WebQuestionExample {
 
 /**
 * WebQuestion SPARQL misses xsd prefix
-*  - PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+*  - PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#> (resolved by adding prefix to parser)
 * WebQuestion SPARQL also comes with some fixed filters for all queries that are unnecessary for parsing
 *  - a filter to make sure the result is not a mentioned entity in the question
 *  - a filter to make sure the result is either (1) an entity (2) language is not specified or English
@@ -40,8 +40,6 @@ export function loadExample(ex : WebQuestionExample) : WebQuestionExample {
 * @returns a preprocessed sparql that parses
 */
 export function preprocessWebQuestionsSparql(sparql : string) {
-    if (sparql.includes('xsd:'))
-        sparql = 'PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n' + sparql;
     sparql = sparql.replace(/\\n/g, '\n');
     sparql = sparql.replace(/FILTER \(\?x != ns:m.[^)]+\)/g, '');
     sparql = sparql.replace(`FILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))`, '');

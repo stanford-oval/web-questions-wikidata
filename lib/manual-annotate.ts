@@ -15,8 +15,9 @@ import {
 } from 'sparqljs';
 import {
     ENTITY_PREFIX,
+    PROPERTY_PREFIX,
     PREFIXES,
-    PROPERTY_PREFIX
+    postprocessSparql
 } from './utils/wikidata';
 import WikidataUtils from './utils/wikidata';
 import { FB2WDMapper } from './utils/mappings';
@@ -38,8 +39,8 @@ class Annotator extends events.EventEmitter {
         this._rl = rl;
         this._nextExample = examples[Symbol.iterator]();
         this._sparql = [];
-        this._parser = new Parser();
-        this._generator = new Generator();
+        this._parser = new Parser({ prefixes: PREFIXES });
+        this._generator = new Generator({ prefixes: PREFIXES });
         this._wikidata = new WikidataUtils('wikidata.sqlite');
         this._mapper = new FB2WDMapper();
 
@@ -104,9 +105,9 @@ class Annotator extends events.EventEmitter {
     }
 
     private _normalizeSparql(sparql : string) {
-        const parsed = this._parser.parse(PREFIXES.join('\n') + ' ' + sparql);
+        const parsed = this._parser.parse(sparql);
         const normalized = this._generator.stringify(parsed);
-        return normalized;
+        return postprocessSparql(normalized);
     }
 
     private _init() {

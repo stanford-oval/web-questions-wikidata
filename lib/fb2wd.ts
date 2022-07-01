@@ -18,12 +18,15 @@ import {
     isVariable
 } from './utils/sparqljs-typeguard';
 import {
-    FB_ENTITY_PREFIX,
-    FB_PROPERTY_PREFIX
+    ENTITY_PREFIX as FB_ENTITY_PREFIX,
+    PROPERTY_PREFIX as FB_PROPERTY_PREFIX,
+    PREFIXES as FB_PREFIXES
 } from './utils/freebase';
 import WikidataUtils, {
-    ENTITY_PREFIX,
-    PROPERTY_PREFIX
+    ENTITY_PREFIX as WD_ENTITY_PREFIX,
+    PROPERTY_PREFIX as WD_PROPERTY_PREFIX,
+    PREFIXES as WD_PREFIXES,
+    postprocessSparql
 } from './utils/wikidata';
 import {
     ConversionErrorCode,
@@ -47,8 +50,8 @@ export default class FB2WDConverter {
     public missingPropertyMappings : Set<string>;
 
     constructor() {
-        this.parser = new Parser();
-        this.generator = new Generator();
+        this.parser = new Parser({ prefixes: { ...FB_PREFIXES, ...WD_PREFIXES } });
+        this.generator = new Generator({ prefixes: WD_PREFIXES });
         this.mapper = new FB2WDMapper();
         this.counter = {};
         this.missingEntityMappings = new Set();
@@ -70,7 +73,7 @@ export default class FB2WDConverter {
                 this.missingEntityMappings.add(fb_id);
                 throw new ConversionError('NoEntityMapping', 'Entity missing in the mapping: ' + entity.value);
             }
-            entity.value = ENTITY_PREFIX + this.mapper.map(fb_id);
+            entity.value = WD_ENTITY_PREFIX + this.mapper.map(fb_id);
         } else if (!isVariable(entity)) {
             throw new ConversionError('UnsupportedNodeType', 'Not supported node: ' + entity);
         }
@@ -90,7 +93,7 @@ export default class FB2WDConverter {
                 this.missingPropertyMappings.add(fb_id);
                 throw new ConversionError('NoPropertyMapping', 'Entity missing in the mapping: ' + property.value);
             }
-            property.value = PROPERTY_PREFIX + this.mapper.map(fb_id);
+            property.value = WD_PROPERTY_PREFIX + this.mapper.map(fb_id);
             return this.mapper.hasReverseProperty(fb_id);
         } else if (!isVariable(property)) {
             throw new ConversionError('UnsupportedPropertyType', 'Not supported node: ' + property);
@@ -182,11 +185,11 @@ async function main() {
         const noAnswer = example.Parses[0].Answers.length === 0;
         const converted = example.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
         if (converted.length > 0) {
+            const sparql = postprocessSparql(converted[0]!);
             const parse : WebQuestionParse = {
-                Sparql: converted[0]!,
+                Sparql: sparql,
                 Answers: []
             };
-            const sparql = converted[0];
             try {
                 const response = await wikidata.query(sparql!);
                 const rawAnswers = response.map((r : any) => Object.values(r).map((v : any) => v.value)).flat();
@@ -195,8 +198,8 @@ async function main() {
                     continue;
                 }
                 for (const answer of rawAnswers) {
-                    if (answer.startsWith(ENTITY_PREFIX)) {
-                        const qid = answer.slice(ENTITY_PREFIX.length);
+                    if (answer.startsWith(WD_ENTITY_PREFIX)) {
+                        const qid = answer.slice(WD_ENTITY_PREFIX.length);
                         const label = await wikidata.getLabel(qid);
                         parse.Answers.push({ AnswerType : 'Entity', AnswerArgument: qid, EntityName : label });
                     } else {
