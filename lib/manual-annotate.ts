@@ -153,12 +153,12 @@ class Annotator extends events.EventEmitter {
                 hasHint = true;
                 const wdEntity = this._mapper.map(entity)!;
                 const label = await this._wikidata.getLabel(wdEntity);
-                console.log(`${entity}: ${label} (${wdEntity})`);
+                console.log(`${entity}: ${label} (${ENTITY_PREFIX + wdEntity})`);
             } else {
                 const wdEntity = await this._wikidata.getEntityByFreebaseId(entity);
                 if (wdEntity) {
                     const label = await this._wikidata.getLabel(wdEntity);
-                    console.log(`${entity}: ${label} (${wdEntity})`);
+                    console.log(`${entity}: ${label} (${ENTITY_PREFIX + wdEntity})`);
                 }
             }
         }
@@ -169,7 +169,7 @@ class Annotator extends events.EventEmitter {
                 hasHint = true;
                 const wdProperty = this._mapper.map(property)!;
                 const label = await this._wikidata.getLabel(wdProperty);
-                console.log(`${property}: ${label} (${wdProperty}) ${reverse ? '(reverse)': ''}`);
+                console.log(`${property}: ${label} (${PROPERTY_PREFIX + wdProperty}) ${reverse ? '(reverse)': ''}`);
             }
         }
         // output a new line break
