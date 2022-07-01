@@ -136,17 +136,8 @@ export default class FB2WDConverter {
             }
             if ('having' in parsed || 'group' in parsed) 
                 throw new ConversionError('Unsupported');
-            if ('order' in parsed && parsed.order) {
-                if (parsed.order.length > 1)
-                    throw new ConversionError('Unsupported');
-                if (parsed.order.length === 1) {
-                    const expression = parsed.order[0].expression;
-                    if (isFunctionCall(expression) && 
-                        isNamedNode(expression.function) && 
-                        expression.function.value === 'http://www.w3.org/2001/XMLSchema#datetime')
-                        parsed.order[0].expression = expression.args[0];
-                }
-            }
+            if ('order' in parsed && parsed.order) 
+                throw new ConversionError('Unsupported');
             const converted = this.generator.stringify(parsed);
             this.count('success');
             return converted;
@@ -195,8 +186,8 @@ async function main() {
             const sparql = converted[0];
             try {
                 const response = await wikidata.query(sparql!);
-                const rawAnswers = response.map((r : any) => Object.values(r)).flat();
-                for (const answer in rawAnswers) {
+                const rawAnswers = response.map((r : any) => Object.values(r).map((v : any) => v.value)).flat();
+                for (const answer of rawAnswers) {
                     if (answer.startsWith(ENTITY_PREFIX)) {
                         const qid = answer.slice(ENTITY_PREFIX.length);
                         const label = await wikidata.getLabel(qid);
