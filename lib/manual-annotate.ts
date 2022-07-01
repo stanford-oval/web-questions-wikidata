@@ -32,12 +32,14 @@ class Annotator extends events.EventEmitter {
     private _wikidata : WikidataUtils;
     private _mapper : FB2WDMapper;
 
-    constructor(rl : readline.Interface, examples : WebQuestionExample[]) {
+    constructor(rl : readline.Interface, 
+                examples : WebQuestionExample[], 
+                skipped : WebQuestionExample[]) {
         super();
 
         this._ex = undefined;
         this._rl = rl;
-        this._nextExample = examples[Symbol.iterator]();
+        this._nextExample = [...examples, ...skipped][Symbol.iterator]();
         this._sparql = [];
         this._parser = new Parser({ prefixes: PREFIXES });
         this._generator = new Generator({ prefixes: PREFIXES });
@@ -54,6 +56,13 @@ class Annotator extends events.EventEmitter {
             if (line === 'd' || line.startsWith('d ')) {
                 this._ex!.comment = line.substring(2).trim();
                 this.emit('dropped', this._ex);
+                this.next();
+                return;
+            }
+            // skip an example, and continue to the next one
+            if (line === 's' || line.startsWith('s ')) {
+                this._ex!.comment = line.substring(2).trim();
+                this.emit('skipped', this._ex);
                 this.next();
                 return;
             }
@@ -167,49 +176,63 @@ function main() {
     const parser = new argparse.ArgumentParser({
         add_help: true,
         description: `Manually annotate examples in WebQuestionsSP ` +
-            `"d": drop the example,` +
-            `"d $comment": drop the example with some comment.`
-    });
-    parser.add_argument('--annotated', {
-        required: false,
-        default: './annotated.tsv',
-    });
-    parser.add_argument('--dropped', {
-        required: false,
-        default: './dropped.tsv',
+            `"d": drop the example (the example can not be annotated),` +
+            `"d $comment": drop the example with some comment.` +
+            `"s": skip the example (to be annotated later),` +
+            `"s $comment": skip the example with some comment.`
     });
     parser.add_argument('input', {
         help: `The script expects a tsv input file with columns: id, utterance, preprocessed, target_code`
     });
 
     const args = parser.parse_args();
-    const webQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
+    const data = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
+    args.annotated = args.input.slice(0, -'.json'.length) + '-annotated.json';
+    args.dropped = args.input.slice(0, -'.json'.length) + '-dropped.json';
+    args.skipped = args.input.slice(0, -'.json'.length) + '-skipped.json';
 
     // if file exists, load the existing annotated/dropped files
     const annotated : WebQuestionExample[] =   
         fs.existsSync(args.annotated) ? JSON.parse(fs.readFileSync(args.annotated, 'utf-8')) : [];
     const dropped : WebQuestionExample[] = 
         fs.existsSync(args.dropped) ? JSON.parse(fs.readFileSync(args.dropped, 'utf-8')) : [];
+    const skipped : WebQuestionExample[] = 
+        fs.existsSync(args.skipped) ? JSON.parse(fs.readFileSync(args.skipped, 'utf-8')) : [];
 
-    // offset examples based on the the length of annotated and dropped
-    const examples : WebQuestionExample[] = webQuestions.Questions.slice(annotated.length + dropped.length);
+    // offset examples based on the the length of annotated, dropped, and skipped
+    const offset = annotated.length + dropped.length + skipped.length;
+    const examples : WebQuestionExample[] = data.slice(offset);
     
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-    const annotator = new Annotator(rl, examples);
+    const annotator = new Annotator(rl, examples, skipped);
     annotator.next();
 
     function quit() {
         fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
         fs.writeFileSync(args.dropped, JSON.stringify(dropped, null, 2));
+        fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));
         console.log('\nBye\n');
         rl.close();
     }
+    
+    function updateSkipped(ex : WebQuestionExample) {
+        const index = skipped.findIndex((s) => s.QuestionId === ex.QuestionId);
+        if (index !== undefined) 
+            skipped.splice(index, 1);
+    }
+
     annotator.on('end', quit);
     annotator.on('annotated', (ex : WebQuestionExample) => {
+        updateSkipped(ex);
         annotated.push(ex);
     });
     annotator.on('dropped', (ex : WebQuestionExample) => {
+        updateSkipped(ex);
         dropped.push(ex);
+    });
+    annotator.on('skipped', (ex : WebQuestionExample) => {
+        updateSkipped(ex);
+        skipped.push(ex);
     });
     rl.on('SIGINT', quit);
 }
