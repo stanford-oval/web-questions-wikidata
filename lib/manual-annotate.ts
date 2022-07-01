@@ -146,17 +146,20 @@ class Annotator extends events.EventEmitter {
     }
 
     private async _hint(sparql : string) {
-        let hasHint = false;
+        const hinted = new Set();
         const entities = sparql.match(/(?<=ns:)m\.[^\s()\\]*/g) ?? [];
         for (const entity of entities) {
+            if (hinted.has(entity))
+                continue;
             if (this._mapper.hasEntity(entity)) {
-                hasHint = true;
+                hinted.add(entity);
                 const wdEntity = this._mapper.map(entity)!;
                 const label = await this._wikidata.getLabel(wdEntity);
                 console.log(`${entity}: ${label} (${ENTITY_PREFIX + wdEntity})`);
             } else {
                 const wdEntity = await this._wikidata.getEntityByFreebaseId(entity);
                 if (wdEntity) {
+                    hinted.add(entity);
                     const label = await this._wikidata.getLabel(wdEntity);
                     console.log(`${entity}: ${label} (${ENTITY_PREFIX + wdEntity})`);
                 }
@@ -164,16 +167,18 @@ class Annotator extends events.EventEmitter {
         }
         const properties = sparql.match(/(?<=ns:)(?!m\.)[^\s()\\]+/g) ?? [];
         for (const property of properties) {
+            if (hinted.has(property))
+                continue;
             const reverse = this._mapper.hasReverseProperty(property);
             if (this._mapper.hasProperty(property) || reverse) {
-                hasHint = true;
+                hinted.add(property);
                 const wdProperty = this._mapper.map(property)!;
                 const label = await this._wikidata.getLabel(wdProperty);
                 console.log(`${property}: ${label} (${PROPERTY_PREFIX + wdProperty}) ${reverse ? '(reverse)': ''}`);
             }
         }
         // output a new line break
-        if (hasHint)
+        if (hinted.size > 0)
             console.log('');
     }
 }
