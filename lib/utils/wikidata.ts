@@ -163,4 +163,20 @@ export default class WikidataUtils {
             return null;
         }
     }
+
+    /**
+     * Get the corresponding Wikidata Entity QID given a Freebase entity
+     * @param fb_id Freebase ID
+     * @returns QID
+     */
+    async getEntityByFreebaseId(fb_id : string) : Promise<string|null> {
+        if (!fb_id.startsWith('/'))
+            fb_id = '/' + fb_id;
+        fb_id = fb_id.replace(/\./g, '/');
+        const sparql = `SELECT DISTINCT ?x WHERE { ?x wdt:P646 '${fb_id}'. }`;
+        const response = await this.query(sparql);
+        if (response.length > 0)
+            return response[0].x.value.slice(ENTITY_PREFIX.length);
+        return null;
+    }
 }

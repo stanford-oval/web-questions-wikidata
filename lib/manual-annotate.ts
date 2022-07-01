@@ -154,6 +154,12 @@ class Annotator extends events.EventEmitter {
                 const wdEntity = this._mapper.map(entity)!;
                 const label = await this._wikidata.getLabel(wdEntity);
                 console.log(`${entity}: ${label} (${wdEntity})`);
+            } else {
+                const wdEntity = await this._wikidata.getEntityByFreebaseId(entity);
+                if (wdEntity) {
+                    const label = await this._wikidata.getLabel(wdEntity);
+                    console.log(`${entity}: ${label} (${wdEntity})`);
+                }
             }
         }
         const properties = sparql.match(/(?<=ns:)(?!m\.)[^\s()\\]+/g) ?? [];
