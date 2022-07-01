@@ -10,6 +10,7 @@ export const PROPERTY_PREFIX = 'http://www.wikidata.org/prop/direct/';
 export const PREFIXES = {
     'wd': 'http://www.wikidata.org/entity/',
     'wdt': 'http://www.wikidata.org/prop/direct/',
+    'p': 'http://www.wikidata.org/prop/',
     'ps': 'http://www.wikidata.org/prop/statement/',
     'pq': 'http://www.wikidata.org/prop/qualifier/'
 };
