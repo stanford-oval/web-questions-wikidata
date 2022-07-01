@@ -28,6 +28,10 @@ export class FB2WDMapper {
         return fb_id in this.entityMappings;
     }
 
+    addEntity(fb_id : string, wd_id : string) {
+        this.entityMappings[fb_id] = wd_id;
+    }
+
     hasProperty(fb_id : string) : boolean {
         return fb_id in this.propertyMappings;
     }

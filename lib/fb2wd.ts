@@ -45,14 +45,16 @@ export default class FB2WDConverter {
     private parser : SparqlParser;
     private generator : SparqlGenerator;
     private mapper : FB2WDMapper;
+    private wikidata : WikidataUtils;
     public counter : Record<string, number>;
     public missingEntityMappings : Set<string>;
     public missingPropertyMappings : Set<string>;
 
-    constructor() {
+    constructor(wikidata : WikidataUtils) {
         this.parser = new Parser({ prefixes: { ...FB_PREFIXES, ...WD_PREFIXES } });
         this.generator = new Generator({ prefixes: WD_PREFIXES });
         this.mapper = new FB2WDMapper();
+        this.wikidata = wikidata;
         this.counter = {};
         this.missingEntityMappings = new Set();
         this.missingPropertyMappings = new Set();
@@ -64,14 +66,19 @@ export default class FB2WDConverter {
         this.counter[key] += 1;
     }
 
-    private convertEntity(entity : any) {
+    private async convertEntity(entity : any) {
         if (isNamedNode(entity)) {
             if (!entity.value.startsWith(FB_ENTITY_PREFIX))
                 throw new ConversionError('UnknownEntity', 'Not recognized entity: ' + entity.value);
             const fb_id = entity.value.slice(FB_ENTITY_PREFIX.length);
             if (!this.mapper.hasEntity(fb_id)) {
-                this.missingEntityMappings.add(fb_id);
-                throw new ConversionError('NoEntityMapping', 'Entity missing in the mapping: ' + entity.value);
+                const wd_id = await this.wikidata.getEntityByFreebaseId(fb_id);
+                if (wd_id) {
+                    this.mapper.addEntity(fb_id, wd_id);
+                } else {
+                    this.missingEntityMappings.add(fb_id);
+                    throw new ConversionError('NoEntityMapping', 'Entity missing in the mapping: ' + entity.value);
+                }
             }
             entity.value = WD_ENTITY_PREFIX + this.mapper.map(fb_id);
         } else if (!isVariable(entity)) {
@@ -101,9 +108,9 @@ export default class FB2WDConverter {
         return false;
     }
 
-    private convertTriple(triple : Triple) {
-        this.convertEntity(triple.subject);
-        this.convertEntity(triple.object);
+    private async convertTriple(triple : Triple) {
+        await this.convertEntity(triple.subject);
+        await this.convertEntity(triple.object);
         const reverse = this.checkAndConvertProperty(triple.predicate);
         if (reverse) {
             if (!isLiteral(triple.object)) {
@@ -116,21 +123,21 @@ export default class FB2WDConverter {
         }
     }
 
-    private convertBGP(clause : BgpPattern) {
+    private async convertBGP(clause : BgpPattern) {
         if (clause.triples.length > 1)
             throw new ConversionError('Unsupported');
         for (const triple of clause.triples)
-            this.convertTriple(triple); 
+            await this.convertTriple(triple); 
     }
 
-    private convertWhereClause(clause : Pattern) {
+    private async convertWhereClause(clause : Pattern) {
         if (isBasicGraphPattern(clause)) 
-            this.convertBGP(clause);
+            await this.convertBGP(clause);
         else
             throw new ConversionError('Unsupported');
     }
 
-    convert(sparql : string) {
+    async convert(sparql : string) {
         const preprocessedSparql = preprocessWebQuestionsSparql(sparql);
         try {
             const parsed = this.parser.parse(preprocessedSparql) as SelectQuery|AskQuery;
@@ -138,7 +145,7 @@ export default class FB2WDConverter {
                 if (parsed.where.length > 1)
                     throw new ConversionError('Unsupported');
                 for (const clause of parsed.where)
-                    this.convertWhereClause(clause);
+                    await this.convertWhereClause(clause);
             }
             if ('having' in parsed || 'group' in parsed) 
                 throw new ConversionError('Unsupported');
@@ -176,16 +183,20 @@ async function main() {
     });
     const args = parser.parse_args();
     const fbQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
-    const converter = new FB2WDConverter();
     const wikidata = new WikidataUtils('wikidata.sqlite');
+    const converter = new FB2WDConverter(wikidata);
     const annotated = [];
     const skipped = [];
     for (const ex of fbQuestions.Questions) {
         const example = loadExample(ex);
         const noAnswer = example.Parses[0].Answers.length === 0;
-        const converted = example.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
-        if (converted.length > 0) {
-            const sparql = postprocessSparql(converted[0]!);
+        let skip = true;
+        for (const p of example.Parses) {
+            const converted = await converter.convert(p.Sparql);
+            if (!converted)
+                continue;
+            
+            const sparql = postprocessSparql(converted);
             const parse : WebQuestionParse = {
                 Sparql: sparql,
                 Answers: []
@@ -193,10 +204,11 @@ async function main() {
             try {
                 const response = await wikidata.query(sparql!);
                 const rawAnswers = response.map((r : any) => Object.values(r).map((v : any) => v.value)).flat();
-                if (!noAnswer && rawAnswers.length === 0) {
-                    skipped.push(example);
+
+                // if there is no answer from wikidata, but there is answer in the original dataset
+                // skip
+                if (!noAnswer && rawAnswers.length === 0) 
                     continue;
-                }
                 for (const answer of rawAnswers) {
                     if (answer.startsWith(WD_ENTITY_PREFIX)) {
                         const qid = answer.slice(WD_ENTITY_PREFIX.length);
@@ -213,9 +225,15 @@ async function main() {
                 console.log('Question:', example.RawQuestion);
                 console.log('SPARQL:', sparql);
             }
-        } else {
+
+            // if the code reaches here, it means we have found a valid parse for the example 
+            // and the example has been added to the `annotated` array.
+            // so we don't add this example to `skipped` array, and ignore the rest of the parses for the example 
+            skip = false;
+            break;
+        } 
+        if (skip)
             skipped.push(example);
-        }
     }
     console.log(converter.counter);
     console.log('Annotated: ', annotated.length);
