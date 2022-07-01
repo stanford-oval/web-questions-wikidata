@@ -13,7 +13,6 @@ import {
 } from 'sparqljs';
 import {
     isBasicGraphPattern, 
-    isFunctionCall, 
     isLiteral, 
     isNamedNode,
     isVariable
@@ -115,6 +114,8 @@ export default class FB2WDConverter {
     }
 
     private convertBGP(clause : BgpPattern) {
+        if (clause.triples.length > 1)
+            throw new ConversionError('Unsupported');
         for (const triple of clause.triples)
             this.convertTriple(triple); 
     }
@@ -131,6 +132,8 @@ export default class FB2WDConverter {
         try {
             const parsed = this.parser.parse(preprocessedSparql) as SelectQuery|AskQuery;
             if (parsed.where) {
+                if (parsed.where.length > 1)
+                    throw new ConversionError('Unsupported');
                 for (const clause of parsed.where)
                     this.convertWhereClause(clause);
             }
@@ -176,9 +179,9 @@ async function main() {
     const skipped = [];
     for (const ex of fbQuestions.Questions) {
         const example = loadExample(ex);
+        const noAnswer = example.Parses[0].Answers.length === 0;
         const converted = example.Parses.map((parse) => converter.convert(parse.Sparql)).filter(Boolean);
         if (converted.length > 0) {
-            console.log(converted[0]);
             const parse : WebQuestionParse = {
                 Sparql: converted[0]!,
                 Answers: []
@@ -187,6 +190,10 @@ async function main() {
             try {
                 const response = await wikidata.query(sparql!);
                 const rawAnswers = response.map((r : any) => Object.values(r).map((v : any) => v.value)).flat();
+                if (!noAnswer && rawAnswers.length === 0) {
+                    skipped.push(example);
+                    continue;
+                }
                 for (const answer of rawAnswers) {
                     if (answer.startsWith(ENTITY_PREFIX)) {
                         const qid = answer.slice(ENTITY_PREFIX.length);
