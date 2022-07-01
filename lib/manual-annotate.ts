@@ -5,7 +5,8 @@ import * as readline from 'readline';
 import {
     WebQuestionExample,
     loadExample,
-    preprocessWebQuestionsSparql
+    preprocessWebQuestionsSparql,
+    WebQuestionAnswer
 } from './utils/web-questions';
 import { 
     Parser, 
@@ -27,6 +28,7 @@ class Annotator extends events.EventEmitter {
     private _rl : readline.Interface;
     private _nextExample : Iterator<WebQuestionExample>;
     private _sparql : string[];
+    private _answers : WebQuestionAnswer[];
     private _parser : SparqlParser;
     private _generator : SparqlGenerator;
     private _wikidata : WikidataUtils;
@@ -41,6 +43,7 @@ class Annotator extends events.EventEmitter {
         this._rl = rl;
         this._nextExample = [...examples, ...skipped][Symbol.iterator]();
         this._sparql = [];
+        this._answers = [];
         this._parser = new Parser({ prefixes: PREFIXES });
         this._generator = new Generator({ prefixes: PREFIXES });
         this._wikidata = new WikidataUtils('wikidata.sqlite');
@@ -75,6 +78,7 @@ class Annotator extends events.EventEmitter {
             if (line === 'y') {
                 console.log('Example annotated.\n');
                 this._ex!.Parses[0].Sparql = this._sparql.join(' ');
+                this._ex!.Parses[0].Answers = this._answers;
                 this.emit('annotated', this._ex);
                 this.next();
                 return;
@@ -90,19 +94,30 @@ class Annotator extends events.EventEmitter {
             const normalized = this._normalizeSparql(sparql);
             console.log('After normalization:\n' + normalized);
             const response = await this._wikidata.query(sparql);
-            const wdAnswers = [];
+            this._answers = [];
             for (const item of response) {
                 const values : any[] = Object.values(item);
+                this._answers = [];
                 for (const v of values) {
-                    if (v.value.startsWith(ENTITY_PREFIX))
-                        wdAnswers.push(await this._wikidata.getLabel(v.value.slice(ENTITY_PREFIX.length)));
-                    else if (v.value.startsWith(PROPERTY_PREFIX))
-                        wdAnswers.push(await this._wikidata.getLabel(v.value.slice(PROPERTY_PREFIX.length)));
-                    else 
-                        wdAnswers.push(v.value);
+                    if (v.value.startsWith(ENTITY_PREFIX)) {
+                        const qid = v.value.slice(ENTITY_PREFIX.length);
+                        const label = await this._wikidata.getLabel(qid);
+                        this._answers.push({
+                            AnswerType: 'Entity',
+                            AnswerArgument: qid,
+                            EntityName: label
+                        });
+                    } else {
+                        this._answers.push({
+                            AnswerType: 'Value',
+                            AnswerArgument: v.value,
+                            EntityName: null
+                        });
+                    }
                 }
             }
-            console.log('Wikidata answers:', wdAnswers.flat().join(', '));
+            const wdAnswers = this._answers.map((a) => a.EntityName ?? a.AnswerArgument);
+            console.log('Wikidata answers:', wdAnswers.join(', '));
             const fbAnswers = this._ex!.Parses[0].Answers.map((a) => a.EntityName ?? a.AnswerArgument);
             console.log('Freebase answers:', fbAnswers.join(', '));
             console.log('\nDoes the result look good? y/n/d');
