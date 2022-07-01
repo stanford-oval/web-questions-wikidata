@@ -120,8 +120,8 @@ class Annotator extends events.EventEmitter {
     }
 
     private _init() {
-        this._sparql = ['SELECT DISTINCT'];
-        this._rl.setPrompt('SELECT DISTINCT ');
+        this._sparql = ['SELECT DISTINCT ?x WHERE {'];
+        this._rl.setPrompt('SELECT DISTINCT ?x WHERE { ');
         this._rl.prompt();
     }
 
