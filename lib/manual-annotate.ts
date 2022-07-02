@@ -243,7 +243,7 @@ function main() {
     
     function updateSkipped(ex : WebQuestionExample) {
         const index = skipped.findIndex((s) => s.QuestionId === ex.QuestionId);
-        if (index !== undefined) 
+        if (index !== -1) 
             skipped.splice(index, 1);
     }
 
