@@ -1,0 +1,3476 @@
+[
+  {
+    "QuestionId": "WebQTrn-3390",
+    "RawQuestion": "what were hitler's parents names?",
+    "ProcessedQuestion": "what were hitler 's parents names",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_m9_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_m9_ ns:people.person.parents ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p0d7",
+            "EntityName": "Alois Hitler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0321wy",
+            "EntityName": "Klara Hitler"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3391",
+    "RawQuestion": "when was the first pope of the catholic church?",
+    "ProcessedQuestion": "when was the first pope of the catholic church",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02vxy_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02vxy_ ns:religion.religious_organization.leaders ?y .\n?y ns:religion.religious_organization_leadership.start_date ?x .\n?y ns:religion.religious_organization_leadership.role ns:m.05rd8 .\n?y ns:religion.religious_organization_leadership.end_date ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "0030",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3395",
+    "RawQuestion": "what kind of government does mongolia?",
+    "ProcessedQuestion": "what kind of government does mongolia",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04w8f)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04w8f ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dw03",
+            "EntityName": "Semi-presidential system"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0glnsx",
+            "EntityName": "Parliamentary republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3398",
+    "RawQuestion": "where is spain located what continent?",
+    "ProcessedQuestion": "where is spain located what continent",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:base.locations.countries.continent ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j9z",
+            "EntityName": "Europe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3399",
+    "RawQuestion": "what form of government is the philippines?",
+    "ProcessedQuestion": "what form of government is the philippines",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05v8c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05v8c ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d9r3",
+            "EntityName": "Presidential system"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fpfn",
+            "EntityName": "Unitary state"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cx9",
+            "EntityName": "Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c9rw5",
+            "EntityName": "Constitutional republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3400",
+    "RawQuestion": "who plays stewie griffin on family guy?",
+    "ProcessedQuestion": "who plays stewie griffin on family guy",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019nnl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019nnl ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.02m29p .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021yw7",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3401",
+    "RawQuestion": "what are the two major religions in canada?",
+    "ProcessedQuestion": "what are the two major religions in canada",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.statistical_region.religions ?y .\n?y ns:location.religion_percentage.religion ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sfs",
+            "EntityName": "Protestantism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c8wxp",
+            "EntityName": "Catholicism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0flw86",
+            "EntityName": "Islam"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3402",
+    "RawQuestion": "what kind of government do the canadians have?",
+    "ProcessedQuestion": "what kind of government do the canadians have",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018wl5",
+            "EntityName": "Parliamentary system"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01q20",
+            "EntityName": "Constitutional monarchy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g3y9q",
+            "EntityName": "Federal monarchy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3405",
+    "RawQuestion": "who plays stewie griffin's voice?",
+    "ProcessedQuestion": "who plays stewie griffin 's voice",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02m29p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02m29p ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.special_performance_type ns:m.02nsjvf .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021yw7",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3407",
+    "RawQuestion": "what are the mountains in peru called?",
+    "ProcessedQuestion": "what are the mountains in peru called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016wzw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016wzw ns:location.location.partiallycontains ?y .\n?y ns:location.partial_containment_relationship.partially_contains ?x .\n?x ns:common.topic.notable_types ns:m.01xs039 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p2n",
+            "EntityName": "Andes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3409",
+    "RawQuestion": "what is south america made up of?",
+    "ProcessedQuestion": "what is south america made up of",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06n3y)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06n3y ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015fr",
+            "EntityName": "Brazil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0165v",
+            "EntityName": "Bolivia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016wzw",
+            "EntityName": "Peru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01c995",
+            "EntityName": "British Guiana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ls2",
+            "EntityName": "Colombia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nr2h",
+            "EntityName": "Empire of Brazil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wmy",
+            "EntityName": "Falkland Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034m8",
+            "EntityName": "Guyana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0417l2t",
+            "EntityName": "Independent Republic of Zulia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05v10",
+            "EntityName": "Paraguay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06nnj",
+            "EntityName": "Suriname"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07twz",
+            "EntityName": "Uruguay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ylj",
+            "EntityName": "Venezuela"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dkz7x",
+            "EntityName": "Gran Colombia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jgd",
+            "EntityName": "Argentina"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3410",
+    "RawQuestion": "what team does plaxico burress play for?",
+    "ProcessedQuestion": "what team does plaxico burress play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.047j_j)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.047j_j ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tfm",
+            "EntityName": "Pittsburgh Steelers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3411",
+    "RawQuestion": "where english is spoken in the world?",
+    "ProcessedQuestion": "where english is spoken in the world",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02h40lc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02h40lc ns:language.human_language.countries_spoken_in ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0160w",
+            "EntityName": "Bahamas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0162b",
+            "EntityName": "Bangladesh"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0162v",
+            "EntityName": "Barbados"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0164b",
+            "EntityName": "Belize"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0165b",
+            "EntityName": "Bermuda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0166v",
+            "EntityName": "Botswana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0167v",
+            "EntityName": "Brunei"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016p5p",
+            "EntityName": "Transkei"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019pcs",
+            "EntityName": "Ethiopia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019rg5",
+            "EntityName": "Kenya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k0p4",
+            "EntityName": "State of Palestine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nln",
+            "EntityName": "Cameroon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nty",
+            "EntityName": "Cayman Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ppq",
+            "EntityName": "Cyprus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.020p1",
+            "EntityName": "Cook Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026wtlf",
+            "EntityName": "Territory of Papua and New Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027nb",
+            "EntityName": "Dominica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jx1",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02lx0",
+            "EntityName": "Timor-Leste"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wt0",
+            "EntityName": "Fiji"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03__y",
+            "EntityName": "Jordan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_3d",
+            "EntityName": "Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_xj",
+            "EntityName": "Jersey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034m8",
+            "EntityName": "Guyana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034tl",
+            "EntityName": "Guam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035dk",
+            "EntityName": "Ghana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035hm",
+            "EntityName": "Gibraltar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035hr8",
+            "EntityName": "South Yemen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035yg",
+            "EntityName": "Grenada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h2c",
+            "EntityName": "Honduras"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h64",
+            "EntityName": "Hong Kong"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rk0",
+            "EntityName": "India"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rt9",
+            "EntityName": "Republic of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ryn",
+            "EntityName": "Indonesia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03spz",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t1s",
+            "EntityName": "Isle of Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047t_",
+            "EntityName": "Kiribati"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hhv",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hvw",
+            "EntityName": "Lesotho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hzj",
+            "EntityName": "Liberia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v3q",
+            "EntityName": "Malta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v6v",
+            "EntityName": "Marshall Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wcf",
+            "EntityName": "Montserrat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05bmq",
+            "EntityName": "Namibia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05br2",
+            "EntityName": "Nauru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05cgv",
+            "EntityName": "Nigeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qkp",
+            "EntityName": "Papua New Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r7t",
+            "EntityName": "Puerto Rico"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sb1",
+            "EntityName": "Pakistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05v8c",
+            "EntityName": "Philippines"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.065skb",
+            "EntityName": "Gazankulu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0697s",
+            "EntityName": "Qatar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dfg",
+            "EntityName": "Rwanda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m_5",
+            "EntityName": "Sri Lanka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ryl",
+            "EntityName": "Saint Kitts and Nevis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s_2",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s0l",
+            "EntityName": "Saint Lucia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s6l",
+            "EntityName": "Saint Vincent and the Grenadines"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s9y",
+            "EntityName": "Samoa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t2t",
+            "EntityName": "Singapore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06v36",
+            "EntityName": "Swaziland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07f9q",
+            "EntityName": "Tokelau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fr_",
+            "EntityName": "Turks and Caicos Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fsv",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tp2",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ytt",
+            "EntityName": "Vatican City"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07z5n",
+            "EntityName": "Vanuatu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088q4",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088vb",
+            "EntityName": "Zambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09pmkv",
+            "EntityName": "Malaysia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09wfqp",
+            "EntityName": "Territory of New Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chghy",
+            "EntityName": "Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctw_b",
+            "EntityName": "New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d05w3",
+            "EntityName": "China"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h44w",
+            "EntityName": "Mandatory Palestine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hbgh",
+            "EntityName": "Curaçao"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hdx8",
+            "EntityName": "Gambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hzlz",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j5g9",
+            "EntityName": "Wales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0l3h",
+            "EntityName": "Antigua and Barbuda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0rdr4",
+            "EntityName": "Bonaire"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3413",
+    "RawQuestion": "what office does paul ryan hold?",
+    "ProcessedQuestion": "what office does paul ryan hold",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.024v2j)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.024v2j ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.office_position_or_title ?x .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_bcst",
+            "EntityName": "United States Representative"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3415",
+    "RawQuestion": "what country is the iberian peninsula located in?",
+    "ProcessedQuestion": "what country is the iberian peninsula located in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03v9w)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03v9w ns:location.location.partiallycontains ?y .\n?y ns:location.partial_containment_relationship.partially_contains ?x .\n?x ns:base.biblioness.bibs_location.loc_type ?sk0 .\nFILTER (str(?sk0) = \"Country\")\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r4w",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkj",
+            "EntityName": "Spain"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3417",
+    "RawQuestion": "who played marty mcfly's dad?",
+    "ProcessedQuestion": "who played marty mcfly 's dad",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.023mw_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.023mw_ ns:fictional_universe.fictional_character.parents ?x .\n?x ns:fictional_universe.fictional_character.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.023n2z",
+            "EntityName": "George McFly"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3420",
+    "RawQuestion": "which airport is closest to barcelona port?",
+    "ProcessedQuestion": "which airport is closest to barcelona port",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f62 ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013q7r",
+            "EntityName": "Barcelona–El Prat Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3421",
+    "RawQuestion": "who is jojo simmons mother?",
+    "ProcessedQuestion": "who is jojo simmons mother",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.040j_3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.040j_3 ns:people.person.parents ?x .\n?x ns:people.person.gender ns:m.02zsn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2yz_5",
+            "EntityName": "Evelyn Simmons"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3423",
+    "RawQuestion": "who plays john connor in terminator salvation?",
+    "ProcessedQuestion": "who plays john connor in terminator salvation",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.043tvp3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.043tvp3 ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.06nsv4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01wy5m",
+            "EntityName": "Christian Bale"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3424",
+    "RawQuestion": "what year doug williams won the super bowl?",
+    "ProcessedQuestion": "what year doug williams won the super bowl",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0443ql)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0443ql ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.season ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0790_m",
+            "EntityName": "1987 NFL season"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3425",
+    "RawQuestion": "what country was osama bin laden killed in?",
+    "ProcessedQuestion": "what country was osama bin laden killed in",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.05mg9 ns:people.deceased_person.place_of_death ?y . # Osama bin Laden\n  ?y ns:location.location.containedby ?x . \n  ?x ns:common.topic.notable_types ns:m.01mp .   # Country\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sb1",
+            "EntityName": "Pakistan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3427",
+    "RawQuestion": "who won the governor election in michigan?",
+    "ProcessedQuestion": "who won the governor election in michigan",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04rrx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04rrx ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.0fkvn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gc2c",
+            "EntityName": "Woodbridge Nathan Ferris"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01v6nf",
+            "EntityName": "George W. Romney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0259nw",
+            "EntityName": "James Blanchard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0259py",
+            "EntityName": "William Milliken"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0259rd",
+            "EntityName": "Jennifer Granholm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jnth",
+            "EntityName": "Frank Murphy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02nj2d",
+            "EntityName": "William Woodbridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02sjgc",
+            "EntityName": "Robert McClelland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w3th",
+            "EntityName": "Alpheus Felch"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wl66",
+            "EntityName": "Kinsley S. Bingham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wv3s",
+            "EntityName": "John S. Barry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wy6m",
+            "EntityName": "James Wright Gordon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x0rh",
+            "EntityName": "William L. Greenly"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x5sv",
+            "EntityName": "Epaphroditus Ransom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x9fm",
+            "EntityName": "Andrew Parsons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02xh77",
+            "EntityName": "Moses Wisner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02xlnf",
+            "EntityName": "Austin Blair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03jvb9",
+            "EntityName": "Henry P. Baldwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03kwm5",
+            "EntityName": "Russell A. Alger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03n_59",
+            "EntityName": "John Tyler Rich"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03n_76",
+            "EntityName": "Aaron T. Bliss"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03nnrx",
+            "EntityName": "Josiah Begole"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03nrgv",
+            "EntityName": "Edwin B. Winans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xr_s",
+            "EntityName": "John Swainson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043t3",
+            "EntityName": "John Engler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04bz1r",
+            "EntityName": "Stevens T. Mason"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f_lh",
+            "EntityName": "G. Mennen Williams"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vwzf",
+            "EntityName": "Kim Sigler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0572xq",
+            "EntityName": "Charles Croswell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0750yd",
+            "EntityName": "Harry Kelly"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07512_",
+            "EntityName": "Murray Van Wagoner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0751k3",
+            "EntityName": "Luren Dickinson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0751qp",
+            "EntityName": "Frank Fitzgerald"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075n57",
+            "EntityName": "Alex J. Groesbeck"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075n9x",
+            "EntityName": "Albert Sleeper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075ngd",
+            "EntityName": "Fred W. Green"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075nqv",
+            "EntityName": "Wilber M. Brucker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07629_",
+            "EntityName": "William Comstock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0766wz",
+            "EntityName": "Fred M. Warner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07675c",
+            "EntityName": "Chase Osborn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ff12",
+            "EntityName": "Hazen S. Pingree"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c4xj4",
+            "EntityName": "Cyrus G. Luce"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cqdxz",
+            "EntityName": "Rick Snyder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d2rq9",
+            "EntityName": "Henry H. Crapo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d2s0k",
+            "EntityName": "John J. Bagley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d2sc5",
+            "EntityName": "David Jerome"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3428",
+    "RawQuestion": "where did heidi klum and seal get married?",
+    "ProcessedQuestion": "where did heidi klum and seal get married",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01pctb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01pctb ns:people.person.spouse_s ?y .\n?y ns:people.marriage.location_of_ceremony ?x .\n?y ns:people.marriage.spouse ns:m.01vsykc .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b90_r",
+            "EntityName": "Mexico"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3432",
+    "RawQuestion": "what happened to rev. robert schuller?",
+    "ProcessedQuestion": "what happened to rev. robert schuller",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05vslll)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05vslll ns:people.deceased_person.date_of_death ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2015-04-02",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3433",
+    "RawQuestion": "who plays the voice of meg in family guy?",
+    "ProcessedQuestion": "who plays the voice of meg in family guy",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019nnl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019nnl ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.035szd .\n?y ns:tv.regular_tv_appearance.special_performance_type ns:m.02nsjvf .\nFILTER(NOT EXISTS {?y ns:tv.regular_tv_appearance.from ?sk0} || \nEXISTS {?y ns:tv.regular_tv_appearance.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:tv.regular_tv_appearance.to ?sk2} || \nEXISTS {?y ns:tv.regular_tv_appearance.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.023v4_",
+            "EntityName": "Mila Kunis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3434",
+    "RawQuestion": "what can you visit in london?",
+    "ProcessedQuestion": "what can you visit in london",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jpl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jpl ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012vvtp_",
+            "EntityName": "Travefy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136mc",
+            "EntityName": "Tate Gallery, Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013y0_",
+            "EntityName": "London Paddington station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013yrz",
+            "EntityName": "Science Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.017_lw",
+            "EntityName": "British Museum Reading Room"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018g60",
+            "EntityName": "Royal Albert Hall, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018yyl",
+            "EntityName": "Euston railway station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0198g",
+            "EntityName": "Buckingham Palace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019k9x",
+            "EntityName": "Smithfield, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d_0p",
+            "EntityName": "Hyde Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hb3",
+            "EntityName": "British Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hc38",
+            "EntityName": "Apsley House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k804",
+            "EntityName": "London Palladium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lpg6",
+            "EntityName": "Regent's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01t372",
+            "EntityName": "Natural History Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tp60",
+            "EntityName": "Strand, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w0yg",
+            "EntityName": "Sir John Soane's Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x3nm",
+            "EntityName": "Royal Institution"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x6xn",
+            "EntityName": "National Maritime Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xrzb",
+            "EntityName": "London Victoria station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xzg6",
+            "EntityName": "Queen's House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021mgt",
+            "EntityName": "Museum of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022pjp",
+            "EntityName": "St. James's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v7z",
+            "EntityName": "Central London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026ydc",
+            "EntityName": "Big Ben"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270g5",
+            "EntityName": "London Charterhouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0272nt3",
+            "EntityName": "Tramp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mg5r",
+            "EntityName": "City University London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mv8x",
+            "EntityName": "National Portrait Gallery, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q6xg0",
+            "EntityName": "Polish Institute and Sikorski Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02sfxg",
+            "EntityName": "Wallace Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yfnd",
+            "EntityName": "Wasps RFC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03825f",
+            "EntityName": "Horniman Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gm6z",
+            "EntityName": "Diana, Princess of Wales Memorial Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03l0pt",
+            "EntityName": "Henman Hill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m401",
+            "EntityName": "Olympia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0414y7c",
+            "EntityName": "Wellcome Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043mxr",
+            "EntityName": "Serpentine Galleries"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.045ffb",
+            "EntityName": "The Clink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04d1hw7",
+            "EntityName": "The Building Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04dn_hk",
+            "EntityName": "New London Architecture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jgv",
+            "EntityName": "London Underground"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mmgh",
+            "EntityName": "Chessington World of Adventures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ttyf",
+            "EntityName": "Museum of London Docklands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vflw",
+            "EntityName": "Hippodrome, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055whd",
+            "EntityName": "G-A-Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05f3pf0",
+            "EntityName": "Madame Tussauds London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fl7q",
+            "EntityName": "V&A Museum of Childhood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pq2k",
+            "EntityName": "Design Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q3_3",
+            "EntityName": "Bank of England Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r48r",
+            "EntityName": "Churchill War Rooms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s6ns",
+            "EntityName": "Jewish Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05t7yp",
+            "EntityName": "Earls Court Exhibition Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05xz1j",
+            "EntityName": "National Police Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060yf",
+            "EntityName": "Palace of Westminster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w3j7k",
+            "EntityName": "Chinawhite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07gyc",
+            "EntityName": "London Eye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07n8hk",
+            "EntityName": "Leighton House Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nb5",
+            "EntityName": "Tate Modern, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nqn",
+            "EntityName": "Tower of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bll4mn",
+            "EntityName": "Chokushi-Mon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz5j",
+            "EntityName": "Waterlily House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz9r",
+            "EntityName": "The Nash Conservatory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bvqq",
+            "EntityName": "Westminster Abbey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0rj",
+            "EntityName": "London Marathon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dplh",
+            "EntityName": "University College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fg05k",
+            "EntityName": "Duke of York's Headquarters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggp4",
+            "EntityName": "Tower Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjv_",
+            "EntityName": "University of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gl6x",
+            "EntityName": "Imperial College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gsxw",
+            "EntityName": "Trafalgar Square"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hsb3",
+            "EntityName": "London School of Economics and Political Science"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2g8sh",
+            "EntityName": "Imperial War Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32g13",
+            "EntityName": "William Wilkins's Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32kvf",
+            "EntityName": "Sainsbury Wing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j53x",
+            "EntityName": "London Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jx0nq8",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2c9hx",
+            "EntityName": "RAF Bomber Command Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m6q6",
+            "EntityName": "Barbican Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nb1f",
+            "EntityName": "Holloway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nblr",
+            "EntityName": "Newington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nc61",
+            "EntityName": "Southgate, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncpy",
+            "EntityName": "Wallington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncv_",
+            "EntityName": "Whetstone, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncy4",
+            "EntityName": "Wimbledon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p0jt",
+            "EntityName": "Liverpool Street station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p1tx",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p77g",
+            "EntityName": "London Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdb059",
+            "EntityName": "Selfridges, Oxford Street"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pwzt",
+            "EntityName": "St Paul's Cathedral"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w1d3n8",
+            "EntityName": "Crystal Palace Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0z8h65p",
+            "EntityName": "Sutcliffe Park"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3435",
+    "RawQuestion": "what form of government does north korea?",
+    "ProcessedQuestion": "what form of government does north korea",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05b7q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05b7q ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gt0n",
+            "EntityName": "Juche"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tbxf",
+            "EntityName": "Socialist state"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0py4y",
+            "EntityName": "Single-party state"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3436",
+    "RawQuestion": "where is located cornell university?",
+    "ProcessedQuestion": "where is located cornell university",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01w3v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01w3v ns:organization.organization.headquarters ?y .\n?y ns:location.mailing_address.citytown ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v_5",
+            "EntityName": "Ithaca"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3437",
+    "RawQuestion": "who speaks arabic language?",
+    "ProcessedQuestion": "who speaks arabic language",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jzc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jzc ns:language.human_language.countries_spoken_in ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0161c",
+            "EntityName": "Bahrain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01z215",
+            "EntityName": "Saudi Arabia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01z88t",
+            "EntityName": "Yemen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01znc_",
+            "EntityName": "Turkey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027jk",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02k54",
+            "EntityName": "Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z62v1",
+            "EntityName": "Seljuk Empire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03__y",
+            "EntityName": "Jordan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035hr8",
+            "EntityName": "South Yemen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03shp",
+            "EntityName": "Iran"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03spz",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047yc",
+            "EntityName": "Kuwait"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gqr",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hqz",
+            "EntityName": "Lebanon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjh",
+            "EntityName": "Mauritania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wgh",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05l8y",
+            "EntityName": "Oman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0697s",
+            "EntityName": "Qatar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vbd",
+            "EntityName": "Syria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fj_",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d05q4",
+            "EntityName": "Iraq"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h3y",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h44w",
+            "EntityName": "Mandatory Palestine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hzlz",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j1z8",
+            "EntityName": "United Arab Emirates"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3439",
+    "RawQuestion": "what dialects are spoken in the uk?",
+    "ProcessedQuestion": "what dialects are spoken in the uk",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ssc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ssc ns:location.country.languages_spoken ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01v0g",
+            "EntityName": "Cornish Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h40lc",
+            "EntityName": "English Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jcw",
+            "EntityName": "Esperanto Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03x42",
+            "EntityName": "Irish"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.070zw",
+            "EntityName": "Scottish Gaelic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083tk",
+            "EntityName": "Welsh Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ct8m",
+            "EntityName": "British Sign Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h407",
+            "EntityName": "Scots Language"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3440",
+    "RawQuestion": "what should i visit in venice?",
+    "ProcessedQuestion": "what should i visit in venice",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_pf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_pf ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.011zyz",
+            "EntityName": "Bridge of Sighs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d_55",
+            "EntityName": "Saint Mark's Basilica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_ph9",
+            "EntityName": "Grand Canal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02173k",
+            "EntityName": "Teatro La Fenice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028597g",
+            "EntityName": "Caffè Florian"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03sp81",
+            "EntityName": "San Giorgio Maggiore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03vslz",
+            "EntityName": "Rialto Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07s5md0",
+            "EntityName": "Lido di Venezia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cc21s",
+            "EntityName": "Palazzo Grassi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jw_d8z",
+            "EntityName": "Palazzo Venier dei Leoni"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pr3n",
+            "EntityName": "Piazza San Marco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0q41z",
+            "EntityName": "Doge's Palace"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3442",
+    "RawQuestion": "when was the last time iran invaded another country?",
+    "ProcessedQuestion": "when was the last time iran invaded another country",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03shp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03shp ns:military.military_combatant.force_deployments ?y .\n?y ns:military.force_strength.date ?x .\n}\nORDER BY DESC(xsd:datetime(?x))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1988",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3444",
+    "RawQuestion": "what team does kareem abdul jabbar play for?",
+    "ProcessedQuestion": "what team does kareem abdul jabbar play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.049sb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.049sb ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3445",
+    "RawQuestion": "who is jeff probst ex wife?",
+    "ProcessedQuestion": "who is jeff probst ex wife",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02pbp9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02pbp9 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n?y ns:people.marriage.to ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j6d0bg",
+            "EntityName": "Shelly Wright"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3447",
+    "RawQuestion": "what island is bethany hamilton from?",
+    "ProcessedQuestion": "what island is bethany hamilton from",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x \nWHERE {\n  ns:m.022wsn ns:people.person.place_of_birth ?y . # Bethany Hamilton\n  ?y ns:location.location.containedby ?x .\n  ?x ns:geography.island.body_of_water [] . # special way to tell whether ?x is an island\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jbsn",
+            "EntityName": "Kauai"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3448",
+    "RawQuestion": "what is paige halliwell's powers?",
+    "ProcessedQuestion": "what is paige halliwell 's powers",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ymn7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ymn7 ns:fictional_universe.fictional_character.powers_or_abilities ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04kb1zt",
+            "EntityName": "Orbing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fx57",
+            "EntityName": "Teleportation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3449",
+    "RawQuestion": "what did jean jacques rousseau write?",
+    "ProcessedQuestion": "what did jean jacques rousseau write",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0420y)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0420y ns:book.author.works_written ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.112yg84tj",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1hc0g5tv2",
+            "EntityName": "La profession de foi du vicaire savoyard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z7wgs",
+            "EntityName": "Pygmalion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03p3fk",
+            "EntityName": "Discourse on Inequality"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_00s",
+            "EntityName": "Confessions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04zyx7g",
+            "EntityName": "Essay on the Origin of Languages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sy22j",
+            "EntityName": "Letter to M. D'Alembert on Spectacles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066v92k",
+            "EntityName": "Confesiones, Las"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0673mbt",
+            "EntityName": "Les pages immortelles de J.-J. Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.067dxw6",
+            "EntityName": "Le citoyen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.067h7_1",
+            "EntityName": "Lettres élémentaires sur la botanique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.068_gx2",
+            "EntityName": "Emilius"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069gp83",
+            "EntityName": "Principes de J. J. Rousseau sur l'éducation des enfans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069tsz4",
+            "EntityName": "Lettres originales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06b1wks",
+            "EntityName": "The social contract"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06b6z9_",
+            "EntityName": "Origen de La Desigualdad Entre Los Hombres"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06b7nqx",
+            "EntityName": "Rousseau on education"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06bd5g9",
+            "EntityName": "Kodokhan sanchʻaekcha ŭi mongsang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06bdwb4",
+            "EntityName": "The morals of Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06bqv0m",
+            "EntityName": "The creed of a priest of Savoy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06c_mz5",
+            "EntityName": "Les plus belles lettres"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06c30_1",
+            "EntityName": "Citizen of Geneva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cb1_y",
+            "EntityName": "Escritos Polemicos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cdr3n",
+            "EntityName": "La première rédaction des Confessions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ckryk",
+            "EntityName": "The living thoughts of Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06clqwn",
+            "EntityName": "Obra Selectas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cq1lj",
+            "EntityName": "The confessions of Jean- Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06crq6n",
+            "EntityName": "The indispensable Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dc490",
+            "EntityName": "Lettres inédites de Jean-Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dlbyn",
+            "EntityName": "Petits chefs-d'oeuvre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dr1dg",
+            "EntityName": "Institutions chimiques"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dr6k7",
+            "EntityName": "J.-J. Rousseau et Isabelle d'Ivernois"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dr6kh",
+            "EntityName": "J.-J. Roussseau ou l'Impossible unité"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dssdl",
+            "EntityName": "Project concerning new symbols for music: 1742"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06f4z1v",
+            "EntityName": "Oeuvres de J.-J. Rousseau de Genève"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06f944d",
+            "EntityName": "Emile et Sophie, ou, Les solitaires"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06fbmlg",
+            "EntityName": "Lectures choisies de Jean-Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06fplxl",
+            "EntityName": "Emilius and Sophia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06g1g03",
+            "EntityName": "Rousseau juge de Jean Jaques"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06g83ms",
+            "EntityName": "Le devin du village"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ggtnh",
+            "EntityName": "Eloisa, or, A series of original letters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06grm6x",
+            "EntityName": "Ouevres complètes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06gyd8r",
+            "EntityName": "Lettres écrites de la montagne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06h16yb",
+            "EntityName": "Cartas a Sofía"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06h2w06",
+            "EntityName": "Herbarium Rousseau-Aublet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06hb84s",
+            "EntityName": "Matériaux pour la correspondance de J.J. Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06hl1j8",
+            "EntityName": "Selections from the works of Jean-Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06hzj_x",
+            "EntityName": "Oeuvres complètes de J.J. Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06j1wtt",
+            "EntityName": "Las confesiones"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06jh05p",
+            "EntityName": "Esprit, maximes, et principes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06jky5c",
+            "EntityName": "Reflexiones de Un Paseante Solitario"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kbjvb",
+            "EntityName": "Projet de constitution de la Corse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06khlfk",
+            "EntityName": "L'Etat de guerre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ktdj3",
+            "EntityName": "Über die Erziehung"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kx82b",
+            "EntityName": "Lun xi ju"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06l_b9r",
+            "EntityName": "Le botaniste sans maître, ou, Manière d'apprendre seul la botanique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06lk597",
+            "EntityName": "A treatise on the social compact"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06llqsg",
+            "EntityName": "The collected writings of Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m0914",
+            "EntityName": "E crits sur la musique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m86lk",
+            "EntityName": "Lettre à Mr. d'Alembert sur les spectacles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m9gzw",
+            "EntityName": "Profession de foi du vicaire savoyard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mj7hk",
+            "EntityName": "Pure Curiosity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mq85n",
+            "EntityName": "Principios del derecho político"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06n_v_k",
+            "EntityName": "Constitutional Project For Corsica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06n1vnm",
+            "EntityName": "Lettres sur la botanique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06n8pct",
+            "EntityName": "Les muses galantes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06nhdh1",
+            "EntityName": "On the Origin of Inequality"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06p0q0n",
+            "EntityName": "First & Second Discourses and Social Contract"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06pfhbz",
+            "EntityName": "A la rencontre de Jean-Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06pr0wy",
+            "EntityName": "Emile ou de l'Education"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06pwtgv",
+            "EntityName": "Ḳonfesyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06pxfwm",
+            "EntityName": "Politics and the arts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06q32h7",
+            "EntityName": "Dissertation sur la musique moderne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06qhp98",
+            "EntityName": "Emile, Julie and Other Writings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06qp18n",
+            "EntityName": "The political writings of Jean Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06qwn0v",
+            "EntityName": "Dictionnaire de musique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06r86ll",
+            "EntityName": "La botanique de J. J. Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06rg48n",
+            "EntityName": "Émile"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s85r0",
+            "EntityName": "Lettres à M. de Malesherbes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sprg2",
+            "EntityName": "Lettres de deux amants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sq4s",
+            "EntityName": "Reveries of a Solitary Walker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t_9c9",
+            "EntityName": "Letter to D'Alembert and writings for the theater"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tyct8",
+            "EntityName": "The Cunning Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vcx9w",
+            "EntityName": "Lettre à d'Alembert sur les spectacles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vgk6t",
+            "EntityName": "uvres complètes de J.J. Rousseau, citoyen de Genève"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vjfqj",
+            "EntityName": "Discursos. Sobre La Desigualdad Entre Los Hombres"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vkrw5",
+            "EntityName": "The confessions of J. J. Rousseau, citizen of Geneva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vndk0",
+            "EntityName": "́tat de guerre and Projet de paix perpétuelle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vqvz2",
+            "EntityName": "The 'Emile' of Jean Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07hwv4",
+            "EntityName": "Considerations on the Government of Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088wfq",
+            "EntityName": "Julie, or the New Heloise"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bmr1n",
+            "EntityName": "Discourse on the Arts and Sciences"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4t_",
+            "EntityName": "Letter to Beaumont, letters written from the mountain, and related writings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4t1",
+            "EntityName": "Basic crystallography"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4t7",
+            "EntityName": "Discourse on political economy and The social contract"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4tj",
+            "EntityName": "The Discourses and other political writings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4tq",
+            "EntityName": "Jean Jacques Rousseau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4tt",
+            "EntityName": "Letters on the elements of botany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4tx",
+            "EntityName": "Letters on the elements of botany, adressed to a lady"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4v5",
+            "EntityName": "Political writings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t4v8",
+            "EntityName": "The social contract and Discourse on the origin of inequality"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c5fxs0",
+            "EntityName": "Session 6 Emile selections pp 105-128"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w0yttv",
+            "EntityName": "Narcissus, or The Self-Admirer: A Comedy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w0ywkv",
+            "EntityName": "Dialogues: Rousseau Judge of Jean-Jacques"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3450",
+    "RawQuestion": "what city is the state capital of washington?",
+    "ProcessedQuestion": "what city is the state capital of washington",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.081yw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.081yw ns:base.aareas.schema.administrative_area.capital ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fw1y",
+            "EntityName": "Olympia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3453",
+    "RawQuestion": "where did nadia boulanger live?",
+    "ProcessedQuestion": "where did nadia boulanger live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02cx2m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02cx2m ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qtj",
+            "EntityName": "Paris"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3454",
+    "RawQuestion": "what year did michael jordan get drafted?",
+    "ProcessedQuestion": "what year did michael jordan get drafted",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.drafted_athlete.drafted ?y .\n?y ns:sports.sports_league_draft_pick.draft ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06jncs",
+            "EntityName": "1984 NBA draft"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3455",
+    "RawQuestion": "what airport do you fly into maui?",
+    "ProcessedQuestion": "what airport do you fly into maui",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jbs5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jbs5 ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01r3l2",
+            "EntityName": "Kahului Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398qm",
+            "EntityName": "Hana Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398r9",
+            "EntityName": "Kapalua Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3456",
+    "RawQuestion": "who does mark sanchez play for?",
+    "ProcessedQuestion": "who does mark sanchez play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ctxdn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ctxdn ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tg3",
+            "EntityName": "Philadelphia Eagles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3458",
+    "RawQuestion": "what are the main imports and exports of afghanistan?",
+    "ProcessedQuestion": "what are the main imports and exports of afghanistan",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jdd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jdd ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9v6s",
+            "EntityName": "Fruit and Tree Nut Farming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xck",
+            "EntityName": "Carpet and Rug Mills"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pg4",
+            "EntityName": "Opium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3459",
+    "RawQuestion": "what movies have gerard butler been in?",
+    "ProcessedQuestion": "what movies have gerard butler been in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.038rzr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.038rzr ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.010vzxsl",
+            "EntityName": "London Has Fallen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01242_",
+            "EntityName": "Mrs Brown"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0124x_l1",
+            "EntityName": "Geostorm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015yl2",
+            "EntityName": "Reign of Fire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01sxdy",
+            "EntityName": "The Phantom of the Opera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01v1ln",
+            "EntityName": "Tomorrow Never Dies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0292qb",
+            "EntityName": "Lara Croft Tomb Raider: The Cradle of Life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p1fl7",
+            "EntityName": "Shooters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pjkz7",
+            "EntityName": "Gamer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qk3fk",
+            "EntityName": "P.S. I Love You"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r3rry",
+            "EntityName": "Wrath of Gods"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vvwqg",
+            "EntityName": "RocknRolla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c6w7q",
+            "EntityName": "Harrison's Flowers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03g_sj5",
+            "EntityName": "Nim's Island"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047qxs",
+            "EntityName": "Timeline"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047rkcm",
+            "EntityName": "The Ugly Truth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f10b5",
+            "EntityName": "One More Kiss"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f52jw",
+            "EntityName": "How to Train Your Dragon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j04w7",
+            "EntityName": "Fast Food"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jdgq",
+            "EntityName": "Dracula 2000"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04yb52q",
+            "EntityName": "Jewel of the Sahara"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dj6d",
+            "EntityName": "Dear Frankie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05h4_qt",
+            "EntityName": "Law Abiding Citizen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05lm43",
+            "EntityName": "The Game of Their Lives"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p2gz3",
+            "EntityName": "Tales of the Black Freighter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w9zfg",
+            "EntityName": "The Bounty Hunter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07f_t4",
+            "EntityName": "300"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09210y",
+            "EntityName": "Beowulf & Grendel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bh8x1y",
+            "EntityName": "Coriolanus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwhkkw",
+            "EntityName": "Machine Gun Preacher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1p6zg",
+            "EntityName": "Trailer for a Remake of Gore Vidal's Caligula"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1z3g",
+            "EntityName": "Butterfly on a Wheel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crvp0c",
+            "EntityName": "How to Train Your Dragon: Legend of the Boneknapper Dragon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crz6lg",
+            "EntityName": "The Cherry Orchard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dlk_qn",
+            "EntityName": "Movie 43"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f0w6n",
+            "EntityName": "Attila"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gmglbv",
+            "EntityName": "Playing for Keeps"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gwp_k3",
+            "EntityName": "How to Train Your Dragon 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hhggp1",
+            "EntityName": "Chasing Mavericks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hnd78z",
+            "EntityName": "How to Train Your Dragon: Gift of the Night Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hz7mx7",
+            "EntityName": "Thunder Run"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m_cnk_",
+            "EntityName": "How to Train Your Dragon 3"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n43ym4",
+            "EntityName": "Olympus Has Fallen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0v3yjg1",
+            "EntityName": "Justin and the Knights of Valour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w0l3pk",
+            "EntityName": "Gods of Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w17vsj",
+            "EntityName": "Dynamo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3460",
+    "RawQuestion": "what country is beside france?",
+    "ProcessedQuestion": "what country is beside france",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f8l9c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f8l9c ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0154j",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0345h",
+            "EntityName": "Germany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rjj",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g61",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w58",
+            "EntityName": "Monaco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkj",
+            "EntityName": "Spain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mzp",
+            "EntityName": "Switzerland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hg5",
+            "EntityName": "Andorra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3461",
+    "RawQuestion": "what type of government germany have?",
+    "ProcessedQuestion": "what type of government germany have",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0345h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0345h ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c9rw5",
+            "EntityName": "Constitutional republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drnm",
+            "EntityName": "Representative democracy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0glnsx",
+            "EntityName": "Parliamentary republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j729",
+            "EntityName": "Federal republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3462",
+    "RawQuestion": "what is there to do in montpelier vt?",
+    "ProcessedQuestion": "what is there to do in montpelier vt",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bjy7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bjy7 ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h_zx",
+            "EntityName": "Mount Mansfield"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m93j1",
+            "EntityName": "Fairbanks Museum and Planetarium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.046frb",
+            "EntityName": "Vermont State House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04yr22z",
+            "EntityName": "Vermont Granite Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04yr24v",
+            "EntityName": "Vermont History Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04yr3vt",
+            "EntityName": "Cold Hollow Cider Mill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059lxq3",
+            "EntityName": "Hyde Park Opera House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059m0t5",
+            "EntityName": "Down To Earth Worm Farm of Vermont"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059m198",
+            "EntityName": "Jed's Maple"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qdds",
+            "EntityName": "Weathered Barn Doll Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qdq4",
+            "EntityName": "Spider Web Farm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qdvl",
+            "EntityName": "Vermont Icelandic Horse Farm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qf07",
+            "EntityName": "Ben & Jerry's Waterbury Factory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qf82",
+            "EntityName": "Bragg Farm Sugarhouse and Gift Shop"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059qfky",
+            "EntityName": "USS Montpelier Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08p8jq",
+            "EntityName": "Karmê Chöling"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gsx_6",
+            "EntityName": "Green Mountain Film Festival"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3463",
+    "RawQuestion": "who is the leader of japan right now?",
+    "ProcessedQuestion": "who is the leader of japan right now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_3d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_3d ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.02rbq .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0kfzb",
+            "EntityName": "Akihito"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3464",
+    "RawQuestion": "when did michael jordan started playing basketball in the nba?",
+    "ProcessedQuestion": "when did michael jordan started playing basketball in the nba",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.pro_athlete.career_start ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1984",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3465",
+    "RawQuestion": "what movies were michael clarke duncan?",
+    "ProcessedQuestion": "what movies were michael clarke duncan",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02lkcc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02lkcc ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0137wc",
+            "EntityName": "A Night at the Roxbury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016rw2",
+            "EntityName": "Friday"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ztp8",
+            "EntityName": "Brother Bear"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02772bj",
+            "EntityName": "The Last Mimzy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027tdtt",
+            "EntityName": "The Golden Blaze"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pym58",
+            "EntityName": "D.E.B.S."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rd7cn",
+            "EntityName": "Dinotopia: Quest for the Ruby Sunstone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v8kmz",
+            "EntityName": "Bulworth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x0srr",
+            "EntityName": "Welcome Home, Roscoe Jenkins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03s9kp",
+            "EntityName": "The Green Mile"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t95n",
+            "EntityName": "The Scorpion King"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03tbg6",
+            "EntityName": "Cats & Dogs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03w9fwk",
+            "EntityName": "Street Fighter: The Legend of Chun-Li"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wccpk",
+            "EntityName": "The Slammin' Salmon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0435vm",
+            "EntityName": "The Island"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047wh1",
+            "EntityName": "Planet of the Apes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.048vhl",
+            "EntityName": "Daredevil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04b4pq",
+            "EntityName": "Delgo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j2sl_",
+            "EntityName": "They Call Me Sirr"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n1s9m",
+            "EntityName": "Cats & Dogs: The Revenge of Kitty Galore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tqtl",
+            "EntityName": "Sin City"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xx51",
+            "EntityName": "Racing Stripes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zn3t_",
+            "EntityName": "Caught Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064nstb",
+            "EntityName": "One Way"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.072hxn",
+            "EntityName": "The Players Club"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08952r",
+            "EntityName": "Talladega Nights: The Ballad of Ricky Bobby"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08f3y0",
+            "EntityName": "See Spot Run"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08zjv6",
+            "EntityName": "Breakfast of Champions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09146g",
+            "EntityName": "Kung Fu Panda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.099p23",
+            "EntityName": "Kim Possible: A Sitch in Time"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c_s1",
+            "EntityName": "George of the Jungle 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bh8yn3",
+            "EntityName": "Green Lantern"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bk2k2",
+            "EntityName": "Brother Bear 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bk2pk",
+            "EntityName": "Invasion of the Tinysauruses"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c4yqd4",
+            "EntityName": "Redemption Road"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crs593",
+            "EntityName": "American Crude"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crwmhk",
+            "EntityName": "Pursued"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crzh7b",
+            "EntityName": "R. Kelly: The R. in R&B: The Video Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d1dcw",
+            "EntityName": "Air Buddies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dgq12n",
+            "EntityName": "Cross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ds33",
+            "EntityName": "Armageddon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dsb4b",
+            "EntityName": "The Underground Comedy Movie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fk5t4",
+            "EntityName": "Back in Business"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fzz_c",
+            "EntityName": "Operation: Jet Fusion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g_1sj",
+            "EntityName": "School for Scoundrels"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g5qvj",
+            "EntityName": "The Whole Nine Yards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gfzfj",
+            "EntityName": "Family Guy Presents: Stewie Griffin: The Untold Story"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjs8p",
+            "EntityName": "George and the Dragon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gwz12g",
+            "EntityName": "A Resurrection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gy5rt9",
+            "EntityName": "From the Rough"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h15c4x",
+            "EntityName": "In the Hive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h2cyp5",
+            "EntityName": "A Crush on You"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h646fd",
+            "EntityName": "Criminal Empire for Dummies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hntz2g",
+            "EntityName": "Legend of a Rabbit"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0kv36n",
+            "EntityName": "Slipstream"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y7tq_4",
+            "EntityName": "D.E.B.S."
+          }
+        ]
+      }
+    ]
+  }
+]

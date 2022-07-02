@@ -1,0 +1,3546 @@
+[
+  {
+    "QuestionId": "WebQTrn-0",
+    "RawQuestion": "what is the name of justin bieber brother?",
+    "ProcessedQuestion": "what is the name of justin bieber brother",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06w2sn5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06w2sn5 ns:people.person.sibling_s ?y .\n?y ns:people.sibling_relationship.sibling ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxnnwq",
+            "EntityName": "Jaxon Bieber"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1",
+    "RawQuestion": "what character did natalie portman play in star wars?",
+    "ProcessedQuestion": "what character did natalie portman play in star wars",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09l3p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09l3p ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.0ddt_ .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drf_",
+            "EntityName": "Padmé Amidala"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3",
+    "RawQuestion": "what country is the grand bahama island in?",
+    "ProcessedQuestion": "what country is the grand bahama island in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03st9j)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03st9j ns:location.location.containedby ?x .\n?x ns:base.biblioness.bibs_location.loc_type ?sk0 .\nFILTER (str(?sk0) = \"Country\")\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0160w",
+            "EntityName": "Bahamas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-5",
+    "RawQuestion": "what character did john noble play in lord of the rings?",
+    "ProcessedQuestion": "what character did john noble play in lord of the rings",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02fgm7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02fgm7 ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.017gm7 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gp7f",
+            "EntityName": "Denethor II"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-6",
+    "RawQuestion": "who does joakim noah play for?",
+    "ProcessedQuestion": "who does joakim noah play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c2yrf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c2yrf ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jm74",
+            "EntityName": "Chicago Bulls"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-7",
+    "RawQuestion": "where are the nfl redskins from?",
+    "ProcessedQuestion": "where are the nfl redskins from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.084l5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.084l5 ns:sports.sports_team.location ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0rh6k",
+            "EntityName": "Washington, D.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-12",
+    "RawQuestion": "who did draco malloy end up marrying?",
+    "ProcessedQuestion": "who did draco malloy end up marrying",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c2m4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c2m4 ns:fictional_universe.fictional_character.married_to ?y .\n?y ns:fictional_universe.marriage_of_fictional_characters.spouses ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09k254x",
+            "EntityName": "Astoria Greengrass"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-13",
+    "RawQuestion": "which countries border the us?",
+    "ProcessedQuestion": "which countries border the us",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b90_r",
+            "EntityName": "Mexico"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-14",
+    "RawQuestion": "where is rome italy located on a map?",
+    "ProcessedQuestion": "where is rome italy located on a map",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c62 ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rjj",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04q_g",
+            "EntityName": "Lazio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.098phg",
+            "EntityName": "Province of Rome"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-17",
+    "RawQuestion": "which kennedy died first?",
+    "ProcessedQuestion": "which kennedy died first",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE { \n  ns:m.0fbrl ns:people.family.members ?x .  # Kennedy Family\n  ?x ns:people.deceased_person.date_of_death ?d .\n}\nORDER BY ?d\nLIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.020t1x",
+            "EntityName": "Joseph P. Kennedy, Jr."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-18",
+    "RawQuestion": "what books did beverly cleary right?",
+    "ProcessedQuestion": "what books did beverly cleary right",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.018rv0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.018rv0 ns:book.author.book_editions_published ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028x_cs",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xt1p",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xtdc",
+            "EntityName": "Ramona Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xv2w",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xwl9",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xxhr",
+            "EntityName": "Ralph S. Mouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028xy3z",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028y2s9",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028y956",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028y9dq",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028yfm2",
+            "EntityName": "Ramona Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028yj26",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028yk65",
+            "EntityName": "Ramona and Her Mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028ykn_",
+            "EntityName": "Ramona's World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028ykwy",
+            "EntityName": "Ramona's World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028ylj8",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028ypwp",
+            "EntityName": "Ramona and Her Mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3cd",
+            "EntityName": "Petey's bedtime story"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3cv",
+            "EntityName": "The Ralph Mouse Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3d1",
+            "EntityName": "Ramona Quimby, Age 8"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3d8",
+            "EntityName": "Two times the fun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3dq",
+            "EntityName": "Socks."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3fc",
+            "EntityName": "The Luckiest Girl (rack) (Cleary Reissue)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3fl",
+            "EntityName": "Ellen Tebbits (rpkg) (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3ft",
+            "EntityName": "Querido señor Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3g7",
+            "EntityName": "Emily's Runaway Imagination (rpkg)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3gg",
+            "EntityName": "Ramona and her mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3gx",
+            "EntityName": "The growing-up feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3hb",
+            "EntityName": "Ramona forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3hs",
+            "EntityName": "Ramona la chinche"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3j6",
+            "EntityName": "Otis Spofford (rpkg)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3jf",
+            "EntityName": "Ramona's world"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3k2",
+            "EntityName": "Ramona and her father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3kj",
+            "EntityName": "Ellen Tebbits CD"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3kr",
+            "EntityName": "A girl from Yamhill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3l5",
+            "EntityName": "Muggie Maggie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3lm",
+            "EntityName": "My own two feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3m1",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3mh",
+            "EntityName": "Ribsy CD"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3mq",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3n4",
+            "EntityName": "Ralph S. Mouse CD"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3nc",
+            "EntityName": "Fifteen (rack) (Cleary Reissue)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3nl",
+            "EntityName": "Beverly Cleary First Love Treasury Three Complete Novels"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3nt",
+            "EntityName": "Jean and Johnny (rack) (Cleary Reissue)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3p0",
+            "EntityName": "Janet's thingamajigs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3pg",
+            "EntityName": "Lucky Chuck"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3px",
+            "EntityName": "The Ramona Collection, Vol. 1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3q3",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3qb",
+            "EntityName": "The Best of Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3qk",
+            "EntityName": "Sister of the Bride (rack) (Cleary Reissue)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3qs",
+            "EntityName": "Mitch and Amy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3r6",
+            "EntityName": "Ramona empieza el curso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3rn",
+            "EntityName": "The hullabaloo ABC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3s2",
+            "EntityName": "Ramona y su madre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tv3sj",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yr2",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_ys3",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_ysc",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_ysv",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yv1",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yv9",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yvk",
+            "EntityName": "Dear Mr Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yvt",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yw1",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yw9",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_ywk",
+            "EntityName": "Dear Mr.Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_ywz",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yxd",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yxp",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yyd",
+            "EntityName": "Dear Mr. Henshaw (rpkg) (HarperClassics)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_yyn",
+            "EntityName": "Dear Mr. Henshaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_z_9",
+            "EntityName": "Dear Mr. Henshaw (M-Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_zy_",
+            "EntityName": "Dear Mr Henshaw (Media Gram Newbery Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_zyh",
+            "EntityName": "Dear Mr. Henshaw (A Dell Yearling Book)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v_zyr",
+            "EntityName": "Dear Mr. Henshaw (Teacher Guide)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r7_",
+            "EntityName": "Henry and Ribsy."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r7h",
+            "EntityName": "Henry and Ribsy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r8f",
+            "EntityName": "Henry and Ribsy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r8p",
+            "EntityName": "Henry and Ribsy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r8y",
+            "EntityName": "Henry and Ribsy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r9c",
+            "EntityName": "HENRY AND RIBSY (Henry Huggins (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r9m",
+            "EntityName": "Henry and Ribsy (Henry Huggins (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0r9w",
+            "EntityName": "Henry and Ribsy (Henry Huggins (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0rb4",
+            "EntityName": "HENRY AND RIBSY (Henry Huggins (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v0rbn",
+            "EntityName": "Henry and Ribsy (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qh1",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qhs",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qjt",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qk1",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qkj",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qks",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5ql0",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5ql8",
+            "EntityName": "Henry Huggins (Spanish edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qlj",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5qls",
+            "EntityName": "Henry Huggins (Henry Huggins Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5sh3",
+            "EntityName": "Henry Huggins: Henry Huggins : Henry and Beezus : Henry and the Paper Route"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5shd",
+            "EntityName": "Henry Huggins (50th Anniversary Edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5shx",
+            "EntityName": "Henry Huggins (Morrow Junior Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5sj4",
+            "EntityName": "Henry Huggins (versión en español)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5sjf",
+            "EntityName": "Henry Huggins (Morrow Junior Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v5sln",
+            "EntityName": "Henry Huggins (50th Anniversary Edition: Includes an Interview with the Author)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vbl",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vc0",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vcq",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vdc",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vdm",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vdw",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vf3",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vfd",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vfp",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vfy",
+            "EntityName": "Runaway Ralph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vk0",
+            "EntityName": "Runaway Ralph (Ralph S. Mouse)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v8vkj",
+            "EntityName": "Runaway Ralph (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93_5",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93_f",
+            "EntityName": "The mouse and the motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93_w",
+            "EntityName": "The Mouse and the Motorcycle (Spanish edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93v3",
+            "EntityName": "The mouse and the motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93wl",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93x3",
+            "EntityName": "Mouse and the Motorcycle, The"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93xc",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93y3",
+            "EntityName": "Mouse and the Motorcycle, The"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93ym",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93yw",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93zc",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93zn",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v93zx",
+            "EntityName": "Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v9403",
+            "EntityName": "The Mouse and the Motorcycle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v9411",
+            "EntityName": "The Mouse and the Motorcycle (Spanish edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v941l",
+            "EntityName": "The Mouse and the Motorcycle CD"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v9514",
+            "EntityName": "The Mouse and the Motorcycle Read-Aloud Edition"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vbc_w",
+            "EntityName": "Ralph S. Mouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vbd10",
+            "EntityName": "Ralph S.Mouse (Handi-read)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vbd19",
+            "EntityName": "Ralph S. Mouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vbd1k",
+            "EntityName": "Ralph S. Mouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vbd28",
+            "EntityName": "Ralph S. Mouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgm1",
+            "EntityName": "Ellen Tebbits (rpkg)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgn2",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgnb",
+            "EntityName": "Ellen Tebbits (Swr 26)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgnm",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgp9",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgpl",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgpv",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgq2",
+            "EntityName": "Ellen Tebbits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcgr4",
+            "EntityName": "Ellen Tebbits (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcysm",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcytc",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcytm",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcytw",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcyv3",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcyvc",
+            "EntityName": "Sister of the bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcyvs",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vcyw0",
+            "EntityName": "Sister of the Bride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf3h",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf48",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf4s",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf50",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf58",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf60",
+            "EntityName": "Henry Huggins (Henry Huggins Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf6j",
+            "EntityName": "Henry Huggins (Spanish edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf71",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdf7t",
+            "EntityName": "Henry Huggins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdgjp",
+            "EntityName": "Henry Huggins (50th Anniversary Edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdgjy",
+            "EntityName": "Henry Huggins (Morrow Junior Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdgkh",
+            "EntityName": "Henry Huggins: Henry Huggins : Henry and Beezus : Henry and the Paper Route"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdgks",
+            "EntityName": "Henry Huggins (50th Anniversary Edition: Includes an Interview with the Author)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdgl0",
+            "EntityName": "Henry Huggins (Morrow Junior Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdglv",
+            "EntityName": "Henry Huggins (versión en español)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdhv6",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdhy3",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdhyc",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdhyt",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdhz9",
+            "EntityName": "Strider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdm5h",
+            "EntityName": "Otis Spofford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdm5r",
+            "EntityName": "Otis Spofford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdm67",
+            "EntityName": "Otis Spofford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdm78",
+            "EntityName": "Otis Spofford (rpkg)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdt28",
+            "EntityName": "Mitch and Amy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdt3t",
+            "EntityName": "Mitch and Amy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdt5j",
+            "EntityName": "Mitch and Amy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vdt8b",
+            "EntityName": "Mitch and Amy (rpkg)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg42",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg4b",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg4l",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg4v",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg52",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg5n",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg5y",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg65",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg6q",
+            "EntityName": "Socks (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjg77",
+            "EntityName": "Socks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9_3",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9_d",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9_n",
+            "EntityName": "Fifteen (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9_x",
+            "EntityName": "Fifteen (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9fz",
+            "EntityName": "A Girl from Yamhill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9g6",
+            "EntityName": "A Girl from Yamhill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9gg",
+            "EntityName": "A Girl from Yamhill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9gr",
+            "EntityName": "Ramona la chinche"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9k9",
+            "EntityName": "The Growing-Up Feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9l4",
+            "EntityName": "GROWING UP FEET (Young Yearling)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9lg",
+            "EntityName": "My Own Two Feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9lq",
+            "EntityName": "My Own Two Feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9mn",
+            "EntityName": "Growing-Up Feet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9mx",
+            "EntityName": "Ramona Empieza El Curso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9n5",
+            "EntityName": "Ramona empieza el curso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9nf",
+            "EntityName": "Ramona Empieza El Curso / Ramona Quimby, Age 8"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9ps",
+            "EntityName": "Muggie Maggie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9q0",
+            "EntityName": "Muggie Maggie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9qq",
+            "EntityName": "Muggie Maggie (Spanish Edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9rm",
+            "EntityName": "Jean and Johnny (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9rw",
+            "EntityName": "Jean and Johnny"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9sc",
+            "EntityName": "JEAN AND JOHNNY"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9sn",
+            "EntityName": "Jean and Johnny (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9sx",
+            "EntityName": "Luckiest Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9t5",
+            "EntityName": "Jean and Johnny"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9tf",
+            "EntityName": "The Luckiest Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9tq",
+            "EntityName": "Luckiest Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9tz",
+            "EntityName": "The Luckiest Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9v7",
+            "EntityName": "The Luckiest Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9vh",
+            "EntityName": "Jean and Johnny"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9w1",
+            "EntityName": "The Luckiest Girl (An Avon Camelot Book)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9wd",
+            "EntityName": "Lucky Chuck"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9wv",
+            "EntityName": "Lucky Chuck"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9y2",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9yl",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9yv",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9z3",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9zc",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9zm",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vr9zw",
+            "EntityName": "Fifteen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06dr",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06g3",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06gd",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06gn",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06gx",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06h4",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06hd",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06hn",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06j2",
+            "EntityName": "Beezus and Ramona."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06k2",
+            "EntityName": "Beezus and Ramona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w06kb",
+            "EntityName": "Beezus and Ramona (Retail)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f1l",
+            "EntityName": "Ramona Forever (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f1v",
+            "EntityName": "Ramona Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f22",
+            "EntityName": "Ramona Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f2b",
+            "EntityName": "Ramona forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f2t",
+            "EntityName": "Ramona forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f3_",
+            "EntityName": "Ramona Forever (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f38",
+            "EntityName": "Ramona forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f3q",
+            "EntityName": "Ramona Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f48",
+            "EntityName": "RAMONA FOREVER (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f4j",
+            "EntityName": "Ramona Forever (Childrens Literature Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f4s",
+            "EntityName": "Ramona Forever (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f5j",
+            "EntityName": "RAMONA FOREVER (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f5s",
+            "EntityName": "Ramona forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0f66",
+            "EntityName": "RAMONA FOREVER (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hqx",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hr5",
+            "EntityName": "Ramona the brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hs3",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hsc",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hsm",
+            "EntityName": "Ramona the Brave (Ramona)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hsw",
+            "EntityName": "Ramona the Brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ht3",
+            "EntityName": "RAMONA THE BRAVE (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0htc",
+            "EntityName": "Ramona the Brave (Puffin Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0htm",
+            "EntityName": "Ramona the Brave (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0htw",
+            "EntityName": "Ramona the Brave (Ramona Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hv3",
+            "EntityName": "Ramona the brave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hvk",
+            "EntityName": "Ramona the brave."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hwg",
+            "EntityName": "RAMONA THE BRAVE (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0hwq",
+            "EntityName": "Ramona the Brave (Avon Camelot Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j88",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j8t",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j9_",
+            "EntityName": "Ramona the pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j91",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j99",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0j9k",
+            "EntityName": "Ramona the pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jbf",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jbq",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jbz",
+            "EntityName": "Ramona the pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jcf",
+            "EntityName": "Ramona the Pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jcp",
+            "EntityName": "Ramona the pest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jd2",
+            "EntityName": "Ramona the pest."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jdv",
+            "EntityName": "Ramona the Pest (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jtl",
+            "EntityName": "Ramona and Her Mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jv2",
+            "EntityName": "Ramona and her Mother (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jvb",
+            "EntityName": "Ramona and Her Mother (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jvl",
+            "EntityName": "Ramona and Her Mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jvw",
+            "EntityName": "Ramona and her mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jw9",
+            "EntityName": "Ramona and Her Mother (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jws",
+            "EntityName": "Ramona and Her Mother (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jx1",
+            "EntityName": "Ramona and Her Mother(Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jxc",
+            "EntityName": "Ramona and her mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0jxt",
+            "EntityName": "Ramona and Her Mother"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0kr0",
+            "EntityName": "Ramona the Pest (Windrush)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0kr9",
+            "EntityName": "Ramona the Pest (Ramona Quimby (Audio))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0krk",
+            "EntityName": "RAMONA THE PEST (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ksb",
+            "EntityName": "Ramona the Pest (Ramona Quimby (Paperback))"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ksm",
+            "EntityName": "Ramona the Pest (M Books)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0kyg",
+            "EntityName": "Ramona the Pest (Ramona Series)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ndw",
+            "EntityName": "Ramona and Her Father (Ramona)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0nf3",
+            "EntityName": "Ramona and her father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ng0",
+            "EntityName": "Ramona and Her Father (Ramona Quimby)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ng8",
+            "EntityName": "Ramona and her father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ngq",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0ngz",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0nh_",
+            "EntityName": "Ramona and her father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0nh6",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0nhh",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0nhr",
+            "EntityName": "Ramona and Her Father"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w0njf",
+            "EntityName": "Ramona and her father"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-20",
+    "RawQuestion": "where to fly into bali?",
+    "ProcessedQuestion": "where to fly into bali",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bkb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bkb ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?y ns:travel.transportation.mode_of_transportation ns:m.03qb78c .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069hj8",
+            "EntityName": "Ngurah Rai International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-21",
+    "RawQuestion": "who is the prime minister of ethiopia?",
+    "ProcessedQuestion": "who is the prime minister of ethiopia",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019pcs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019pcs ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.060bp .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dl1t3",
+            "EntityName": "Hailemariam Desalegn"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-22",
+    "RawQuestion": "what to see near sedona arizona?",
+    "ProcessedQuestion": "what to see near sedona arizona",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ny57)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ny57 ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026h8t6",
+            "EntityName": "Sycamore Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qswpp",
+            "EntityName": "Sedona International Film Festival"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ty7n",
+            "EntityName": "Sedona Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04crz42",
+            "EntityName": "Bell Rock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xgf_s",
+            "EntityName": "Seven Canyons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07k8z2",
+            "EntityName": "Chapel of the Holy Cross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dlm2c7",
+            "EntityName": "Red Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dqzqc",
+            "EntityName": "Slide Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f44c_",
+            "EntityName": "Oak Creek Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g5qfch",
+            "EntityName": "Honanki"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj9fwx",
+            "EntityName": "Cathedral Rock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-23",
+    "RawQuestion": "what high school did president bill clinton attend?",
+    "ProcessedQuestion": "what high school did president bill clinton attend",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0157m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0157m ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hn6 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crpbj",
+            "EntityName": "Hot Springs High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-24",
+    "RawQuestion": "what form of government does russia have today?",
+    "ProcessedQuestion": "what form of government does russia have today",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06bnz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06bnz ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dw03",
+            "EntityName": "Semi-presidential system"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c9rw5",
+            "EntityName": "Constitutional republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j729",
+            "EntityName": "Federal republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-25",
+    "RawQuestion": "what movies does taylor lautner play in?",
+    "ProcessedQuestion": "what movies does taylor lautner play in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ldhs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ldhs ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.011q0_7k",
+            "EntityName": "Run the Tide"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012z_7zt",
+            "EntityName": "The Ridiculous Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02686wj",
+            "EntityName": "He's a Bully, Charlie Brown"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03nm_fh",
+            "EntityName": "Twilight"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pdh86",
+            "EntityName": "The Twilight Saga: New Moon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_wqk4",
+            "EntityName": "Valentine's Day"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066b_n",
+            "EntityName": "Cheaper by the Dozen 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06crgb",
+            "EntityName": "The Adventures of Sharkboy and Lavagirl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06zs80t",
+            "EntityName": "Shadow Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075wx7_",
+            "EntityName": "Eclipse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.075wx89",
+            "EntityName": "The Twilight Saga: Breaking Dawn - Part 1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07cdy_t",
+            "EntityName": "The Nick and Jessica Variety Hour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bdwfqj",
+            "EntityName": "Northern Lights"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cmdl80",
+            "EntityName": "Abduction"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0djz0rc",
+            "EntityName": "The Twilight Saga: Breaking Dawn - Part 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g_w5hs",
+            "EntityName": "Field of Dreams 2: Lockout"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gx8qcw",
+            "EntityName": "Incarceron"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mzt5cs",
+            "EntityName": "Grown Ups 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngj__s",
+            "EntityName": "Tracers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-26",
+    "RawQuestion": "what year lebron james came to the nba?",
+    "ProcessedQuestion": "what year lebron james came to the nba",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01jz6d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01jz6d ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.season ?x .\n?y ns:sports.sports_award.award ns:m.02yqnh .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07_x8s",
+            "EntityName": "2003–04 NBA season"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-30",
+    "RawQuestion": "which wife did king henry behead?",
+    "ProcessedQuestion": "which wife did king henry behead",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03p77)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03p77 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?x ns:people.deceased_person.cause_of_death ns:m.0jb19 .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09sxn",
+            "EntityName": "Anne Boleyn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crdw",
+            "EntityName": "Catherine Howard"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-31",
+    "RawQuestion": "who was ishmael's mom?",
+    "ProcessedQuestion": "who was ishmael 's mom",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ghr4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ghr4 ns:people.person.parents ?x .\n?x ns:people.person.gender ns:m.02zsn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01sq9c",
+            "EntityName": "Hagar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-32",
+    "RawQuestion": "what was malcolm x trying to accomplish?",
+    "ProcessedQuestion": "what was malcolm x trying to accomplish",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03f2h01)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03f2h01 ns:base.activism.activist.area_of_activism ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074v_1j",
+            "EntityName": "Black Liberation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g4pf68",
+            "EntityName": "African Americans' rights"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-33",
+    "RawQuestion": "where are the netherlands on a world map?",
+    "ProcessedQuestion": "where are the netherlands on a world map",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.059j2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.059j2 ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.049nq",
+            "EntityName": "Kingdom of the Netherlands"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-34",
+    "RawQuestion": "what is the president of brazil?",
+    "ProcessedQuestion": "what is the president of brazil",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.015fr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.015fr ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.060c4 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026m5c8",
+            "EntityName": "Dilma Rousseff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-35",
+    "RawQuestion": "what are the major cities in france?",
+    "ProcessedQuestion": "what are the major cities in france",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f8l9c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f8l9c ns:location.country.capital ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qtj",
+            "EntityName": "Paris"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-37",
+    "RawQuestion": "what sport do the toronto maple leafs play?",
+    "ProcessedQuestion": "what sport do the toronto maple leafs play",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0j6tr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0j6tr ns:base.events.event_presenting_organisation.event_feed ?y .\n?y ns:base.events.event_feed.type_of_event ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03tmr",
+            "EntityName": "Ice Hockey"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-38",
+    "RawQuestion": "what is saint nicholas known for?",
+    "ProcessedQuestion": "what is saint nicholas known for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f9q7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f9q7 ns:book.book_subject.works ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066mx9f",
+            "EntityName": "St. Nicholas of Myra, Bari and Manhattan: Biography of a Legend"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-40",
+    "RawQuestion": "what is cher's son's name?",
+    "ProcessedQuestion": "what is cher 's son 's name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01vtj38)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01vtj38 ns:people.person.children ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w4bt1",
+            "EntityName": "Elijah Blue Allman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0br66",
+            "EntityName": "Chaz Bono"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-42",
+    "RawQuestion": "what party was andrew jackson?",
+    "ProcessedQuestion": "what party was andrew jackson",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0rlz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0rlz ns:government.politician.party ?y .\n?y ns:government.political_party_tenure.party ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.020lwv",
+            "EntityName": "Jacksonian Democratic Party"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07wf9",
+            "EntityName": "Democratic-Republican Party"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d075m",
+            "EntityName": "Democratic Party"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-44",
+    "RawQuestion": "what county is the city of hampton va in?",
+    "ProcessedQuestion": "what county is the city of hampton va in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0mnsf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0mnsf ns:location.hud_county_place.place ?x .\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-45",
+    "RawQuestion": "what is the name of the first harry potter novel?",
+    "ProcessedQuestion": "what is the name of the first harry potter novel",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.078ffw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.078ffw ns:book.literary_series.works_in_this_series ?x .\n?x ns:book.written_work.date_of_first_publication ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_vk",
+            "EntityName": "Harry Potter and the Philosopher's Stone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-47",
+    "RawQuestion": "what county is heathrow airport in?",
+    "ProcessedQuestion": "what county is heathrow airport in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03jn4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03jn4 ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01n7 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04pxy3",
+            "EntityName": "Hillingdon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-49",
+    "RawQuestion": "what movie is josh hutcherson in?",
+    "ProcessedQuestion": "what movie is josh hutcherson in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.08wjf4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.08wjf4 ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11b7k0v3hq",
+            "EntityName": "In Dubious Battle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0135_65p",
+            "EntityName": "The Long Home"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026gt8b",
+            "EntityName": "Bridge to Terabithia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270k40",
+            "EntityName": "Cirque du Freak: The Vampire's Assistant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q02ql",
+            "EntityName": "Firehouse Dog"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qd6h2",
+            "EntityName": "Winged Creatures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047qh9b",
+            "EntityName": "Party Wagon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f8ttb",
+            "EntityName": "Journey to the Center of the Earth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j0_gm",
+            "EntityName": "One Last Ride"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j1g18",
+            "EntityName": "Wilder Days"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j1phy",
+            "EntityName": "Miracle Dogs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05spvb",
+            "EntityName": "Kicking & Screaming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07sbq6c",
+            "EntityName": "Red Dawn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07y296",
+            "EntityName": "Motocross Kids"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09qs_s",
+            "EntityName": "Zathura"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09tqkv2",
+            "EntityName": "The Kids Are All Right"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09v9dsq",
+            "EntityName": "The Forger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09w6br",
+            "EntityName": "The Polar Express"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bcs_f",
+            "EntityName": "RV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crnh6",
+            "EntityName": "Little Manhattan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ds2_k2",
+            "EntityName": "Journey 2: The Mysterious Island"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dzz6g",
+            "EntityName": "American Splendor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g4tknw",
+            "EntityName": "Detention"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gkp_k",
+            "EntityName": "House Blend"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gkz15s",
+            "EntityName": "The Hunger Games"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gy8kqb",
+            "EntityName": "7 Days in Havana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gy8kv2",
+            "EntityName": "The Third Rule"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hhgh69",
+            "EntityName": "Epic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n40qmp",
+            "EntityName": "The Hunger Games: Catching Fire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngvsvk",
+            "EntityName": "The Hunger Games: Mockingjay, Part 1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngvtb_",
+            "EntityName": "The Hunger Games: Mockingjay, Part 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0x1xc_w",
+            "EntityName": "Escobar: Paradise Lost"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-52",
+    "RawQuestion": "where do the san francisco giants play home games?",
+    "ProcessedQuestion": "where do the san francisco giants play home games",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0713r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0713r ns:sports.sports_team.arena_stadium ?x .\n?x ns:architecture.structure.opened ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_gsg",
+            "EntityName": "AT&T Park"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-53",
+    "RawQuestion": "what year did william jennings bryan run for president?",
+    "ProcessedQuestion": "what year did william jennings bryan run for president",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0b3tf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0b3tf ns:base.politicalconventions.presidential_nominee.nominated_at ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b4pfj",
+            "EntityName": "1896 Democratic National Convention"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dv63j",
+            "EntityName": "1908 Democratic National Convention"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fr77c",
+            "EntityName": "1900 Democratic National Convention"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-54",
+    "RawQuestion": "what was the name of frederick douglass book?",
+    "ProcessedQuestion": "what was the name of frederick douglass book",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02zg0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02zg0 ns:book.author.works_written ?x .\n?x ns:common.topic.notable_types ns:m.01xryvm .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c5dpz",
+            "EntityName": "The Heroic Slave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03clq8t",
+            "EntityName": "Life and Times of Frederick Douglass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04kh2k",
+            "EntityName": "Narrative of the Life of Frederick Douglass, an American Slave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.067mzxk",
+            "EntityName": "Escape from slavery"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.067x2lp",
+            "EntityName": "My Bondage and My Freedom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.068c5tc",
+            "EntityName": "Words of Ages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.068jkrg",
+            "EntityName": "Standing with the slave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0697p24",
+            "EntityName": "The mind and heart of Frederick Douglass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06bq6w2",
+            "EntityName": "A Black diplomat in Haiti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06c1dmk",
+            "EntityName": "Three African-American Classics"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06fr4s7",
+            "EntityName": "Life & Times of Frederick Douglas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06jjj7m",
+            "EntityName": "The Life of an American Slave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kf95n",
+            "EntityName": "The claims of the Negro, ethnologically considered"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ktxh7",
+            "EntityName": "Collected Articles Of Frederick Douglass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kvgsm",
+            "EntityName": "The Education of Frederick Douglass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kxqpj",
+            "EntityName": "Negroes and the national war effort"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m91zr",
+            "EntityName": "Frederick Douglass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mj8s0",
+            "EntityName": "The race problem"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkpqq",
+            "EntityName": "Why Is the Negro Lynched"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkz59",
+            "EntityName": "Abolition fanaticism in New York"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mz4m1",
+            "EntityName": "U.S. Grant and the colored people"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06p5ykp",
+            "EntityName": "Thoughts for all time"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06r6hzr",
+            "EntityName": "Why I Became A Woman's Rights Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ry31_",
+            "EntityName": "The Oxford Frederick Douglass reader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06twn1l",
+            "EntityName": "Two Slave Rebellions at Sea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tws33",
+            "EntityName": "Vida de Un Esclavo Americano"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ty1ql",
+            "EntityName": "A Chinese Girl Graduate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vbs0d",
+            "EntityName": "From slave to statesman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1t2v2",
+            "EntityName": "The narrative and selected writings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fpb93x",
+            "EntityName": "The Frederick Douglass Papers, Series 1, Vol. 1: 1841-46"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fpb946",
+            "EntityName": "The Frederick Douglass Papers, Series 2, Vol. 1: Narrative"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50n2g",
+            "EntityName": "The Frederick Douglass Papers, Series 1, Vol. 2: 1847-54"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50n39",
+            "EntityName": "The Frederick Douglass Papers, Series 1, Vol. 3: 1855-63"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50n4h",
+            "EntityName": "The Frederick Douglass Papers, Series 1, Vol. 4: 1864-80"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50n7t",
+            "EntityName": "The Frederick Douglass Papers, Series 1, Vol. 5: 1881-95"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50ngp",
+            "EntityName": "The Frederick Douglass Papers, Series 2, Vol. 2: Bondage and Freedom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50njy",
+            "EntityName": "The Frederick Douglass Papers, Series 2, Vol. 3: Life and Times"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y50nxt",
+            "EntityName": "The Frederick Douglass Papers, Series 3, Vol. 1: 1842-1852"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-55",
+    "RawQuestion": "who was queen victoria's parents called?",
+    "ProcessedQuestion": "who was queen victoria 's parents called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0cw10)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0cw10 ns:people.person.parents ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01c50q",
+            "EntityName": "Prince Edward, Duke of Kent and Strathearn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.024hvp",
+            "EntityName": "Princess Victoria of Saxe-Coburg-Saalfeld"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-56",
+    "RawQuestion": "what movies did sally field win an oscar for?",
+    "ProcessedQuestion": "what movies did sally field win an oscar for",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.01jw4r ns:award.award_winner.awards_won ?y .\t# Sally Field\n  ?y ns:award.award_honor.honored_for ?x .\n  ?y ns:award.award_honor.award ?awd .\n  ?awd ns:award.award_category.category_of ns:m.0g_w .  # Academy Awards\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p_vt",
+            "EntityName": "Norma Rae"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0sxjs",
+            "EntityName": "Places in the Heart"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-57",
+    "RawQuestion": "what is the first book sherlock holmes appeared in?",
+    "ProcessedQuestion": "what is the first book sherlock holmes appeared in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06rkl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06rkl ns:book.book_character.appears_in_book ?x .\n?x ns:book.written_work.date_of_first_publication ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gq2s",
+            "EntityName": "A Study in Scarlet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-60",
+    "RawQuestion": "what countries do people speak portuguese?",
+    "ProcessedQuestion": "what countries do people speak portuguese",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05zjd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05zjd ns:language.human_language.countries_spoken_in ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015fr",
+            "EntityName": "Brazil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nqj",
+            "EntityName": "Cape Verde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kcz",
+            "EntityName": "Equatorial Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02lx0",
+            "EntityName": "Timor-Leste"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034m8",
+            "EntityName": "Guyana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036b_",
+            "EntityName": "Guinea-Bissau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04thp",
+            "EntityName": "Macau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wlh",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r4w",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d05w3",
+            "EntityName": "China"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hg5",
+            "EntityName": "Andorra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hzlz",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-63",
+    "RawQuestion": "who is in the band bush?",
+    "ProcessedQuestion": "who is in the band bush",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01727v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01727v ns:music.musical_group.member ?y .\n?y ns:music.group_membership.member ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.014qv7",
+            "EntityName": "Gavin Rossdale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs4sv",
+            "EntityName": "Robin Goodridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs4t_",
+            "EntityName": "Chris Traynor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs4vw",
+            "EntityName": "Nigel Pulsford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01wrrdk",
+            "EntityName": "Spencer Cobrin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d_qbn",
+            "EntityName": "Dave Parsons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08f647",
+            "EntityName": "Sacha Gervasi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h88bb2",
+            "EntityName": "Sacha Puttnam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j1v9tm",
+            "EntityName": "Corey Britz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0zdb8q6",
+            "EntityName": "Amir"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-64",
+    "RawQuestion": "what was tupac name in juice?",
+    "ProcessedQuestion": "what was tupac name in juice",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07pzc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07pzc ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.08w51z .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h5rvlw",
+            "EntityName": "Bishop"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-66",
+    "RawQuestion": "who does maggie grace play in taken?",
+    "ProcessedQuestion": "who does maggie grace play in taken",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_wpf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_wpf ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.0hhggmy .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g_kvk0",
+            "EntityName": "Kim"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-69",
+    "RawQuestion": "what tv show did joey lawrence play on?",
+    "ProcessedQuestion": "what tv show did joey lawrence play on",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01pr9kj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01pr9kj ns:tv.tv_actor.starring_roles ?y .\n?y ns:tv.regular_tv_appearance.series ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026_g9w",
+            "EntityName": "Run of the House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02xwgb",
+            "EntityName": "Blossom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036y7h",
+            "EntityName": "Gimme a Break!"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b6kw6d",
+            "EntityName": "Melissa & Joey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g0tw9",
+            "EntityName": "Brotherly Love"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0lc1qx5",
+            "EntityName": "Bow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-71",
+    "RawQuestion": "what character did brian austin green play on 90210?",
+    "ProcessedQuestion": "what character did brian austin green play on 90210",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0n2bh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0n2bh ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.character ?x .\n?y ns:tv.regular_tv_appearance.actor ns:m.01npcy7 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0220tgn",
+            "EntityName": "David Silver"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-73",
+    "RawQuestion": "what form of government was practiced in sparta?",
+    "ProcessedQuestion": "what form of government was practiced in sparta",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09472)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09472 ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mlzp",
+            "EntityName": "Diarchy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04szc",
+            "EntityName": "Monarchy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cx9",
+            "EntityName": "Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09dcy",
+            "EntityName": "Aristocracy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-74",
+    "RawQuestion": "when did the colorado rockies go to the world series?",
+    "ProcessedQuestion": "when did the colorado rockies go to the world series",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.0fjp3 ns:sports.sports_championship.events ?x . # World Series\n  {\n    { ?x ns:sports.sports_championship_event.runner_up ns:m.01ync . } # Colorado Rockies\n    UNION\n    { ?x ns:sports.sports_championship_event.champion ns:m.01ync . } # Colorado Rockies\n  }\n  ?x ns:time.event.start_date ?d .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0268bkj",
+            "EntityName": "2007 World Series"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-76",
+    "RawQuestion": "what college did matt lauer attend?",
+    "ProcessedQuestion": "what college did matt lauer attend",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.049_zz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.049_zz ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02fy0z",
+            "EntityName": "Ohio University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-77",
+    "RawQuestion": "where to go in london england?",
+    "ProcessedQuestion": "where to go in london england",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jpl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jpl ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012vvtp_",
+            "EntityName": "Travefy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136mc",
+            "EntityName": "Tate Gallery, Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013y0_",
+            "EntityName": "London Paddington station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013yrz",
+            "EntityName": "Science Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.017_lw",
+            "EntityName": "British Museum Reading Room"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018g60",
+            "EntityName": "Royal Albert Hall, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018yyl",
+            "EntityName": "Euston railway station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0198g",
+            "EntityName": "Buckingham Palace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019k9x",
+            "EntityName": "Smithfield, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d_0p",
+            "EntityName": "Hyde Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hb3",
+            "EntityName": "British Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hc38",
+            "EntityName": "Apsley House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k804",
+            "EntityName": "London Palladium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lpg6",
+            "EntityName": "Regent's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01t372",
+            "EntityName": "Natural History Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tp60",
+            "EntityName": "Strand, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w0yg",
+            "EntityName": "Sir John Soane's Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x3nm",
+            "EntityName": "Royal Institution"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x6xn",
+            "EntityName": "National Maritime Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xrzb",
+            "EntityName": "London Victoria station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xzg6",
+            "EntityName": "Queen's House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021mgt",
+            "EntityName": "Museum of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022pjp",
+            "EntityName": "St. James's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v7z",
+            "EntityName": "Central London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026ydc",
+            "EntityName": "Big Ben"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270g5",
+            "EntityName": "London Charterhouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0272nt3",
+            "EntityName": "Tramp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mg5r",
+            "EntityName": "City University London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mv8x",
+            "EntityName": "National Portrait Gallery, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q6xg0",
+            "EntityName": "Polish Institute and Sikorski Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02sfxg",
+            "EntityName": "Wallace Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yfnd",
+            "EntityName": "Wasps RFC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03825f",
+            "EntityName": "Horniman Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gm6z",
+            "EntityName": "Diana, Princess of Wales Memorial Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03l0pt",
+            "EntityName": "Henman Hill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m401",
+            "EntityName": "Olympia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0414y7c",
+            "EntityName": "Wellcome Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043mxr",
+            "EntityName": "Serpentine Galleries"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.045ffb",
+            "EntityName": "The Clink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04d1hw7",
+            "EntityName": "The Building Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04dn_hk",
+            "EntityName": "New London Architecture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jgv",
+            "EntityName": "London Underground"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mmgh",
+            "EntityName": "Chessington World of Adventures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ttyf",
+            "EntityName": "Museum of London Docklands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vflw",
+            "EntityName": "Hippodrome, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055whd",
+            "EntityName": "G-A-Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05f3pf0",
+            "EntityName": "Madame Tussauds London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fl7q",
+            "EntityName": "V&A Museum of Childhood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pq2k",
+            "EntityName": "Design Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q3_3",
+            "EntityName": "Bank of England Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r48r",
+            "EntityName": "Churchill War Rooms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s6ns",
+            "EntityName": "Jewish Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05t7yp",
+            "EntityName": "Earls Court Exhibition Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05xz1j",
+            "EntityName": "National Police Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060yf",
+            "EntityName": "Palace of Westminster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w3j7k",
+            "EntityName": "Chinawhite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07gyc",
+            "EntityName": "London Eye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07n8hk",
+            "EntityName": "Leighton House Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nb5",
+            "EntityName": "Tate Modern, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nqn",
+            "EntityName": "Tower of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bll4mn",
+            "EntityName": "Chokushi-Mon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz5j",
+            "EntityName": "Waterlily House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz9r",
+            "EntityName": "The Nash Conservatory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bvqq",
+            "EntityName": "Westminster Abbey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0rj",
+            "EntityName": "London Marathon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dplh",
+            "EntityName": "University College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fg05k",
+            "EntityName": "Duke of York's Headquarters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggp4",
+            "EntityName": "Tower Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjv_",
+            "EntityName": "University of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gl6x",
+            "EntityName": "Imperial College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gsxw",
+            "EntityName": "Trafalgar Square"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hsb3",
+            "EntityName": "London School of Economics and Political Science"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2g8sh",
+            "EntityName": "Imperial War Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32g13",
+            "EntityName": "William Wilkins's Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32kvf",
+            "EntityName": "Sainsbury Wing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j53x",
+            "EntityName": "London Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jx0nq8",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2c9hx",
+            "EntityName": "RAF Bomber Command Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m6q6",
+            "EntityName": "Barbican Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nb1f",
+            "EntityName": "Holloway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nblr",
+            "EntityName": "Newington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nc61",
+            "EntityName": "Southgate, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncpy",
+            "EntityName": "Wallington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncv_",
+            "EntityName": "Whetstone, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncy4",
+            "EntityName": "Wimbledon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p0jt",
+            "EntityName": "Liverpool Street station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p1tx",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p77g",
+            "EntityName": "London Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdb059",
+            "EntityName": "Selfridges, Oxford Street"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pwzt",
+            "EntityName": "St Paul's Cathedral"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w1d3n8",
+            "EntityName": "Crystal Palace Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0z8h65p",
+            "EntityName": "Sutcliffe Park"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-78",
+    "RawQuestion": "what school did joan miro attend?",
+    "ProcessedQuestion": "what school did joan miro attend",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0g_6k)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0g_6k ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w5jjm",
+            "EntityName": "Cercle Artístic de Sant Lluc"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-83",
+    "RawQuestion": "when did the new york knicks win a championship?",
+    "ProcessedQuestion": "when did the new york knicks win a championship",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm3v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm3v ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1kg",
+            "EntityName": "1973 NBA Finals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1x4",
+            "EntityName": "1970 NBA Finals"
+          }
+        ]
+      }
+    ]
+  }
+]

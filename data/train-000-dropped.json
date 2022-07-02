@@ -1,0 +1,655 @@
+[
+  {
+    "QuestionId": "WebQTrn-20",
+    "RawQuestion": "where to fly into bali?",
+    "ProcessedQuestion": "where to fly into bali",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bkb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bkb ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?y ns:travel.transportation.mode_of_transportation ns:m.03qb78c .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069hj8",
+            "EntityName": "Ngurah Rai International Airport"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-22",
+    "RawQuestion": "what to see near sedona arizona?",
+    "ProcessedQuestion": "what to see near sedona arizona",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ny57)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ny57 ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026h8t6",
+            "EntityName": "Sycamore Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qswpp",
+            "EntityName": "Sedona International Film Festival"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ty7n",
+            "EntityName": "Sedona Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04crz42",
+            "EntityName": "Bell Rock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xgf_s",
+            "EntityName": "Seven Canyons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07k8z2",
+            "EntityName": "Chapel of the Holy Cross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dlm2c7",
+            "EntityName": "Red Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dqzqc",
+            "EntityName": "Slide Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f44c_",
+            "EntityName": "Oak Creek Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g5qfch",
+            "EntityName": "Honanki"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj9fwx",
+            "EntityName": "Cathedral Rock"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-32",
+    "RawQuestion": "what was malcolm x trying to accomplish?",
+    "ProcessedQuestion": "what was malcolm x trying to accomplish",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03f2h01)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03f2h01 ns:base.activism.activist.area_of_activism ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074v_1j",
+            "EntityName": "Black Liberation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g4pf68",
+            "EntityName": "African Americans' rights"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-38",
+    "RawQuestion": "what is saint nicholas known for?",
+    "ProcessedQuestion": "what is saint nicholas known for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f9q7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f9q7 ns:book.book_subject.works ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066mx9f",
+            "EntityName": "St. Nicholas of Myra, Bari and Manhattan: Biography of a Legend"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-44",
+    "RawQuestion": "what county is the city of hampton va in?",
+    "ProcessedQuestion": "what county is the city of hampton va in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0mnsf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0mnsf ns:location.hud_county_place.place ?x .\n}\n",
+        "Answers": []
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-74",
+    "RawQuestion": "when did the colorado rockies go to the world series?",
+    "ProcessedQuestion": "when did the colorado rockies go to the world series",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.0fjp3 ns:sports.sports_championship.events ?x . # World Series\n  {\n    { ?x ns:sports.sports_championship_event.runner_up ns:m.01ync . } # Colorado Rockies\n    UNION\n    { ?x ns:sports.sports_championship_event.champion ns:m.01ync . } # Colorado Rockies\n  }\n  ?x ns:time.event.start_date ?d .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0268bkj",
+            "EntityName": "2007 World Series"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-77",
+    "RawQuestion": "where to go in london england?",
+    "ProcessedQuestion": "where to go in london england",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jpl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jpl ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012vvtp_",
+            "EntityName": "Travefy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136mc",
+            "EntityName": "Tate Gallery, Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013y0_",
+            "EntityName": "London Paddington station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013yrz",
+            "EntityName": "Science Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.017_lw",
+            "EntityName": "British Museum Reading Room"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018g60",
+            "EntityName": "Royal Albert Hall, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018yyl",
+            "EntityName": "Euston railway station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0198g",
+            "EntityName": "Buckingham Palace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019k9x",
+            "EntityName": "Smithfield, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d_0p",
+            "EntityName": "Hyde Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hb3",
+            "EntityName": "British Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hc38",
+            "EntityName": "Apsley House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k804",
+            "EntityName": "London Palladium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lpg6",
+            "EntityName": "Regent's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01t372",
+            "EntityName": "Natural History Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tp60",
+            "EntityName": "Strand, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w0yg",
+            "EntityName": "Sir John Soane's Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x3nm",
+            "EntityName": "Royal Institution"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x6xn",
+            "EntityName": "National Maritime Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xrzb",
+            "EntityName": "London Victoria station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xzg6",
+            "EntityName": "Queen's House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021mgt",
+            "EntityName": "Museum of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022pjp",
+            "EntityName": "St. James's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v7z",
+            "EntityName": "Central London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026ydc",
+            "EntityName": "Big Ben"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270g5",
+            "EntityName": "London Charterhouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0272nt3",
+            "EntityName": "Tramp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mg5r",
+            "EntityName": "City University London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mv8x",
+            "EntityName": "National Portrait Gallery, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q6xg0",
+            "EntityName": "Polish Institute and Sikorski Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02sfxg",
+            "EntityName": "Wallace Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yfnd",
+            "EntityName": "Wasps RFC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03825f",
+            "EntityName": "Horniman Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gm6z",
+            "EntityName": "Diana, Princess of Wales Memorial Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03l0pt",
+            "EntityName": "Henman Hill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m401",
+            "EntityName": "Olympia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0414y7c",
+            "EntityName": "Wellcome Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043mxr",
+            "EntityName": "Serpentine Galleries"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.045ffb",
+            "EntityName": "The Clink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04d1hw7",
+            "EntityName": "The Building Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04dn_hk",
+            "EntityName": "New London Architecture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jgv",
+            "EntityName": "London Underground"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mmgh",
+            "EntityName": "Chessington World of Adventures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ttyf",
+            "EntityName": "Museum of London Docklands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vflw",
+            "EntityName": "Hippodrome, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055whd",
+            "EntityName": "G-A-Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05f3pf0",
+            "EntityName": "Madame Tussauds London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fl7q",
+            "EntityName": "V&A Museum of Childhood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pq2k",
+            "EntityName": "Design Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q3_3",
+            "EntityName": "Bank of England Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r48r",
+            "EntityName": "Churchill War Rooms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s6ns",
+            "EntityName": "Jewish Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05t7yp",
+            "EntityName": "Earls Court Exhibition Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05xz1j",
+            "EntityName": "National Police Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060yf",
+            "EntityName": "Palace of Westminster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w3j7k",
+            "EntityName": "Chinawhite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07gyc",
+            "EntityName": "London Eye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07n8hk",
+            "EntityName": "Leighton House Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nb5",
+            "EntityName": "Tate Modern, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nqn",
+            "EntityName": "Tower of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bll4mn",
+            "EntityName": "Chokushi-Mon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz5j",
+            "EntityName": "Waterlily House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz9r",
+            "EntityName": "The Nash Conservatory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bvqq",
+            "EntityName": "Westminster Abbey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0rj",
+            "EntityName": "London Marathon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dplh",
+            "EntityName": "University College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fg05k",
+            "EntityName": "Duke of York's Headquarters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggp4",
+            "EntityName": "Tower Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjv_",
+            "EntityName": "University of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gl6x",
+            "EntityName": "Imperial College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gsxw",
+            "EntityName": "Trafalgar Square"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hsb3",
+            "EntityName": "London School of Economics and Political Science"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2g8sh",
+            "EntityName": "Imperial War Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32g13",
+            "EntityName": "William Wilkins's Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32kvf",
+            "EntityName": "Sainsbury Wing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j53x",
+            "EntityName": "London Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jx0nq8",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2c9hx",
+            "EntityName": "RAF Bomber Command Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m6q6",
+            "EntityName": "Barbican Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nb1f",
+            "EntityName": "Holloway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nblr",
+            "EntityName": "Newington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nc61",
+            "EntityName": "Southgate, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncpy",
+            "EntityName": "Wallington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncv_",
+            "EntityName": "Whetstone, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncy4",
+            "EntityName": "Wimbledon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p0jt",
+            "EntityName": "Liverpool Street station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p1tx",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p77g",
+            "EntityName": "London Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdb059",
+            "EntityName": "Selfridges, Oxford Street"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pwzt",
+            "EntityName": "St Paul's Cathedral"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w1d3n8",
+            "EntityName": "Crystal Palace Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0z8h65p",
+            "EntityName": "Sutcliffe Park"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-83",
+    "RawQuestion": "when did the new york knicks win a championship?",
+    "ProcessedQuestion": "when did the new york knicks win a championship",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm3v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm3v ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1kg",
+            "EntityName": "1973 NBA Finals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1x4",
+            "EntityName": "1970 NBA Finals"
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  }
+]

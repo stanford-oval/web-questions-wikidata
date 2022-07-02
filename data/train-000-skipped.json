@@ -1,0 +1,58 @@
+[
+  {
+    "QuestionId": "WebQTrn-71",
+    "RawQuestion": "what character did brian austin green play on 90210?",
+    "ProcessedQuestion": "what character did brian austin green play on 90210",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0n2bh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0n2bh ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.character ?x .\n?y ns:tv.regular_tv_appearance.actor ns:m.01npcy7 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0220tgn",
+            "EntityName": "David Silver"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-6",
+    "RawQuestion": "who does joakim noah play for?",
+    "ProcessedQuestion": "who does joakim noah play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c2yrf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c2yrf ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jm74",
+            "EntityName": "Chicago Bulls"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-40",
+    "RawQuestion": "what is cher's son's name?",
+    "ProcessedQuestion": "what is cher 's son 's name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01vtj38)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01vtj38 ns:people.person.children ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w4bt1",
+            "EntityName": "Elijah Blue Allman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0br66",
+            "EntityName": "Chaz Bono"
+          }
+        ]
+      }
+    ]
+  }
+]
