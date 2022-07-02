@@ -57,14 +57,16 @@ class Annotator extends events.EventEmitter {
             }
             // drop an example, and continue to the next one
             if (line === 'd' || line.startsWith('d ')) {
-                this._ex!.comment = line.substring(2).trim();
+                if (line.length > 1)
+                    this._ex!.Comment = line.substring(2).trim();
                 this.emit('dropped', this._ex);
                 this.next();
                 return;
             }
             // skip an example, and continue to the next one
             if (line === 's' || line.startsWith('s ')) {
-                this._ex!.comment = line.substring(2).trim();
+                if (line.length > 1)
+                    this._ex!.Comment = line.substring(2).trim();
                 this.emit('skipped', this._ex);
                 this.next();
                 return;
@@ -75,10 +77,12 @@ class Annotator extends events.EventEmitter {
                 return;
             }
             // accept an annotation, and continue to the next example
-            if (line === 'y') {
+            if (line === 'y' || line.startsWith('y ')) {
                 console.log('Example annotated.\n');
                 this._ex!.Parses[0].Sparql = this._sparql.join(' ');
                 this._ex!.Parses[0].Answers = this._answers;
+                if (line.length > 1)
+                    this._ex!.Comment = line.substring(2).trim();
                 this.emit('annotated', this._ex);
                 this.next();
                 return;
@@ -204,7 +208,9 @@ function main() {
             `"d": drop the example (the example can not be annotated),` +
             `"d $comment": drop the example with some comment.` +
             `"s": skip the example (to be annotated later),` +
-            `"s $comment": skip the example with some comment.`
+            `"s $comment": skip the example with some comment.` + 
+            `"y": accept the annotation` +
+            `"y $comment": accept the annotation with some comment`
     });
     parser.add_argument('input', {
         help: `The script expects a tsv input file with columns: id, utterance, preprocessed, target_code`

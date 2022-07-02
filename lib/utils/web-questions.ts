@@ -3,7 +3,7 @@ export interface WebQuestionExample {
     RawQuestion : string,
     ProcessedQuestion : string,
     Parses : WebQuestionParse[],
-    comment ?: string
+    Comment ?: string
 }
 
 export interface WebQuestionParse {
