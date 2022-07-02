@@ -239,6 +239,10 @@ function main() {
     annotator.next();
 
     function quit() {
+        console.log('\n');
+        console.log(`Annotated: ${annotated.length}`);
+        console.log(`Dropped: ${dropped.length}`);
+        console.log(`Skipped: ${skipped.length}`);
         fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
         fs.writeFileSync(args.dropped, JSON.stringify(dropped, null, 2));
         fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));
