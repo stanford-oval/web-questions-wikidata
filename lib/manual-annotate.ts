@@ -97,7 +97,6 @@ class Annotator extends events.EventEmitter {
             this._answers = [];
             for (const item of response) {
                 const values : any[] = Object.values(item);
-                this._answers = [];
                 for (const v of values) {
                     if (v.value.startsWith(ENTITY_PREFIX)) {
                         const qid = v.value.slice(ENTITY_PREFIX.length);
