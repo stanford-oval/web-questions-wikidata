@@ -12,7 +12,8 @@ export const PREFIXES = {
     'wdt': 'http://www.wikidata.org/prop/direct/',
     'p': 'http://www.wikidata.org/prop/',
     'ps': 'http://www.wikidata.org/prop/statement/',
-    'pq': 'http://www.wikidata.org/prop/qualifier/'
+    'pq': 'http://www.wikidata.org/prop/qualifier/',
+    'xsd': 'http://www.w3.org/2001/XMLSchema#'
 };
 
 export function postprocessSparql(sparql : string) {
