@@ -1,0 +1,378 @@
+[
+  {
+    "QuestionId": "WebQTrn-160",
+    "RawQuestion": "who was the apostle paul considered to be?",
+    "ProcessedQuestion": "who was the apostle paul considered to be",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.060nc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.060nc ns:fictional_universe.person_in_fiction.representations_in_fiction ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.042gzwd",
+            "EntityName": "Paul the Apostle"
+          }
+        ]
+      }
+    ],
+    "Comment": "Ambiguous"
+  },
+  {
+    "QuestionId": "WebQTrn-167",
+    "RawQuestion": "where did pres clinton go to college?",
+    "ProcessedQuestion": "where did pres clinton go to college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0157m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0157m ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02bq1j",
+            "EntityName": "Yale Law School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ckl3",
+            "EntityName": "Edmund A. Walsh School of Foreign Service"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tgn",
+            "EntityName": "University of Oxford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08815",
+            "EntityName": "University Yale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pspl",
+            "EntityName": "Georgetown University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ymf1",
+            "EntityName": "University College, Oxford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-168",
+    "RawQuestion": "what was the name of the original seattle baseball team?",
+    "ProcessedQuestion": "what was the name of the original seattle baseball team",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0fq2vj2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0fq2vj2 ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Seattle Pilots",
+            "EntityName": null
+          }
+        ]
+      }
+    ],
+    "Comment": "Information not available"
+  },
+  {
+    "QuestionId": "WebQTrn-103",
+    "RawQuestion": "who are the current senators from missouri?",
+    "ProcessedQuestion": "who are the current senators from missouri",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04ych)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04ych ns:government.political_district.representatives ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.office_position_or_title ns:m.02_7l8y .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_6h2",
+            "EntityName": "Kit Bond"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ftf7",
+            "EntityName": "Carl Schurz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lz7x",
+            "EntityName": "James Shields"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nxh8",
+            "EntityName": "Thomas Hart Benton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01qpdm",
+            "EntityName": "Thomas Eagleton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026wyq",
+            "EntityName": "Jean Carnahan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02dn7",
+            "EntityName": "David Rice Atchison"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034c_8",
+            "EntityName": "Francis Preston Blair, Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034fn4",
+            "EntityName": "Roy Blunt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037hdg",
+            "EntityName": "Benjamin Gratz Brown"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03fj2d",
+            "EntityName": "Stuart Symington"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03lzzf",
+            "EntityName": "Lewis F. Linn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rgjk",
+            "EntityName": "George Graham Vest"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v57p",
+            "EntityName": "Forrest C. Donnell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.040_w4",
+            "EntityName": "Claire McCaskill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.044h4",
+            "EntityName": "John Danforth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0456m1",
+            "EntityName": "Bennett Champ Clark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.046c6",
+            "EntityName": "John Ashcroft"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0479cgd",
+            "EntityName": "Maria Chappelle-Nadal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jm0l",
+            "EntityName": "Francis Cockrell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04zhz3",
+            "EntityName": "James P. Kem"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07cprm",
+            "EntityName": "David Barton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dsyg",
+            "EntityName": "Harry B. Hawes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07snmv",
+            "EntityName": "William Warner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tcrh",
+            "EntityName": "Trusten Polk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08z75j",
+            "EntityName": "Edward V. Long"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.093_82",
+            "EntityName": "James A. Reed"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09bg4l",
+            "EntityName": "Harry S. Truman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09svb6",
+            "EntityName": "Xenophon P. Wilfley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09svlz",
+            "EntityName": "William J. Stone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_spc",
+            "EntityName": "Waldo P. Johnson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c894n",
+            "EntityName": "George Howard Williams"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cvw31",
+            "EntityName": "Daniel T. Jewett"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cy__7",
+            "EntityName": "Henry S. Geyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cz5hb",
+            "EntityName": "John B. Henderson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cz5sb",
+            "EntityName": "Roscoe C. Patterson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cz5yw",
+            "EntityName": "Frank P. Briggs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cz689",
+            "EntityName": "Alexander Buckner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cz6bq",
+            "EntityName": "James S. Green"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d01f2",
+            "EntityName": "Robert Wilson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d01ls",
+            "EntityName": "Charles D. Drake"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d03c7",
+            "EntityName": "Lewis V. Bogy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d03f9",
+            "EntityName": "David H. Armstrong"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0449",
+            "EntityName": "Selden P. Spencer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d04bk",
+            "EntityName": "Thomas C. Hennings, Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj1dy",
+            "EntityName": "Jim Talent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-116",
+    "RawQuestion": "what countries did queen victoria reign over?",
+    "ProcessedQuestion": "what countries did queen victoria reign over",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0cw10)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0cw10 ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.jurisdiction_of_office ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-129",
+    "RawQuestion": "who is the current president of the dominican republic in 2010?",
+    "ProcessedQuestion": "who is the current president of the dominican republic in 2010",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.027rn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.027rn ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.060c4 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2010-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2010-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_vvc",
+            "EntityName": "Leonel Fernández"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-142",
+    "RawQuestion": "where did c.s. lewis go to college?",
+    "ProcessedQuestion": "where did c.s. lewis go to college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01wd02c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01wd02c ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tgn",
+            "EntityName": "University of Oxford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ymf1",
+            "EntityName": "University College, Oxford"
+          }
+        ]
+      }
+    ]
+  }
+]
