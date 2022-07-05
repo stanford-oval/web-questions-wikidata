@@ -374,5 +374,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTrn-139",
+    "RawQuestion": "who plays lola bunny in the looney tunes show?",
+    "ProcessedQuestion": "who plays lola bunny in the looney tunes show",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0534r8)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0534r8 ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.film ns:m.04j2p8f .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fm5ld",
+            "EntityName": "Britt McKillip"
+          }
+        ]
+      }
+    ]
   }
 ]
