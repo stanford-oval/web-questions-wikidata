@@ -16,9 +16,10 @@ export const PREFIXES = {
     'xsd': 'http://www.w3.org/2001/XMLSchema#'
 };
 
-export function postprocessSparql(sparql : string) {
+export function postprocessSparql(sparql : string, oneline = false) {
     // remove prefixes for simplicity
-    return sparql.replace(/PREFIX [\w]+: <[^>]+\s*>/g, '').trim();
+    const postprocessed = sparql.replace(/PREFIX [\w]+: <[^>]+\s*>/g, '').trim();
+    return oneline ? postprocessed.replace(/\s+/g, ' ') : postprocessed;
 }
 
 const SQLITE_SCHEMA = `
