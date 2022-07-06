@@ -5,7 +5,7 @@
     "ProcessedQuestion": "what is the name of justin bieber brother",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q34086 wdt:P3373 ?x . ?x wdt:P21 wd:Q6581097 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q34086 wdt:P3373 ?x. ?x wdt:P21 wd:Q6581097. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -22,7 +22,7 @@
     "ProcessedQuestion": "what character did natalie portman play in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165713 p:P161 ?p. ?p ps:P161 wd:Q37876. ?p pq:P453 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165713 p:P161 ?p. ?p ps:P161 wd:Q37876; pq:P453 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -39,7 +39,7 @@
     "ProcessedQuestion": "what country is the grand bahama island in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q866345 wdt:P17 ?x.}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q866345 wdt:P17 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -56,7 +56,7 @@
     "ProcessedQuestion": "what character did john noble play in lord of the rings",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q164963 p:P161 ?p . ?p ps:P161 wd:Q312399. ?p pq:P453 ?x.}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q164963 p:P161 ?p. ?p ps:P161 wd:Q312399; pq:P453 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -90,7 +90,7 @@
     "ProcessedQuestion": "who did draco malloy end up marrying",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q179641 wdt:P26 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q179641 wdt:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -129,7 +129,7 @@
     "ProcessedQuestion": "where is rome italy located on a map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q220 wdt:P625 ?x .}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q220 wdt:P625 ?x. }",
         "Answers": [
           {
             "AnswerType": "Value",
@@ -146,7 +146,7 @@
     "ProcessedQuestion": "which kennedy died first",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P53 wd:Q34821. ?x wdt:P570 ?y } order by ?y limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P53 wd:Q34821; wdt:P570 ?y. } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -330,7 +330,7 @@
     "ProcessedQuestion": "who is the prime minister of ethiopia",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q115 wdt:P6 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q115 wdt:P6 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -347,7 +347,7 @@
     "ProcessedQuestion": "what high school did president bill clinton attend",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1124 wdt:P69 ?x . ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1124 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -364,7 +364,7 @@
     "ProcessedQuestion": "what form of government does russia have today",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q159 wdt:P122 ?x .}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q159 wdt:P122 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -503,7 +503,7 @@
     "ProcessedQuestion": "what year lebron james came to the nba",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q36159 p:P54 ?p . ?p ps:P54 ?y. ?y wdt:P361+ wd:Q155223. ?p pq:P580 ?x. } order by ?x limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q36159 p:P54 ?p. ?p ps:P54 ?y. ?y wdt:P361+ wd:Q155223. ?p pq:P580 ?x. } ORDER BY ?x LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Value",
@@ -520,7 +520,7 @@
     "ProcessedQuestion": "which wife did king henry behead",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38370 wdt:P26 ?x. ?x wdt:P509 wd:Q204933 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38370 wdt:P26 ?x. ?x wdt:P509 wd:Q204933. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -542,7 +542,7 @@
     "ProcessedQuestion": "who was ishmael 's mom",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q183403 wdt:P25 ?x .}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q183403 wdt:P25 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -559,7 +559,7 @@
     "ProcessedQuestion": "where are the netherlands on a world map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q55 wdt:P625 ?x . }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q55 wdt:P625 ?x. }",
         "Answers": [
           {
             "AnswerType": "Value",
@@ -576,7 +576,7 @@
     "ProcessedQuestion": "what is the president of brazil",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q115 wdt:P35 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q115 wdt:P35 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -593,7 +593,7 @@
     "ProcessedQuestion": "what are the major cities in france",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q142 wdt:P36 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q142 wdt:P36 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -610,7 +610,7 @@
     "ProcessedQuestion": "what sport do the toronto maple leafs play",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q203384 wdt:P641 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q203384 wdt:P641 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -632,7 +632,7 @@
     "ProcessedQuestion": "what party was andrew jackson",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11817 wdt:P102 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11817 wdt:P102 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -649,7 +649,7 @@
     "ProcessedQuestion": "what is the name of the first harry potter novel",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P179 wd:Q8337. ?x wdt:P577 ?y } order by ?y limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P179 wd:Q8337; wdt:P577 ?y. } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -666,7 +666,7 @@
     "ProcessedQuestion": "what county is heathrow airport in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8691 wdt:P131 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8691 wdt:P131 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -890,7 +890,7 @@
     "ProcessedQuestion": "where do the san francisco giants play home games",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q308966 wdt:P115 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q308966 wdt:P115 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -907,7 +907,7 @@
     "ProcessedQuestion": "what year did william jennings bryan run for president",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q205282 wdt:P3602 ?y. ?y wdt:P31/wdt:P279* wd:Q47566 . ?y wdt:P585 ?x .}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q205282 wdt:P3602 ?y. ?y wdt:P31/wdt:P279* wd:Q47566; wdt:P585 ?x. }",
         "Answers": [
           {
             "AnswerType": "Value",
@@ -929,7 +929,7 @@
     "ProcessedQuestion": "what was the name of frederick douglass book",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q215562 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q215562. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1006,7 +1006,7 @@
     "ProcessedQuestion": "who was queen victoria 's parents called",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { {wd:Q9439 wdt:P22 ?x} UNION {wd:Q9439 wdt:P25 ?x} }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { { wd:Q9439 wdt:P22 ?x. } UNION { wd:Q9439 wdt:P25 ?x. } }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1028,7 +1028,7 @@
     "ProcessedQuestion": "what movies did sally field win an oscar for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q187033 p:P166 ?p. ?p ps:P166 ?y. ?y wdt:P31/wdt:P279* wd:Q19020. ?p pq:P1686 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q187033 p:P166 ?p. ?p ps:P166 ?y. ?y wdt:P31/wdt:P279* wd:Q19020. ?p pq:P1686 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1050,7 +1050,7 @@
     "ProcessedQuestion": "what is the first book sherlock holmes appeared in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P674 wd:Q4653. ?x wdt:P577 ?y} order by ?y limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P674 wd:Q4653; wdt:P577 ?y. } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1067,7 +1067,7 @@
     "ProcessedQuestion": "what countries do people speak portuguese",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q6256. ?x wdt:P2936 wd:Q5146 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q6256; wdt:P2936 wd:Q5146. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1134,7 +1134,7 @@
     "ProcessedQuestion": "who is in the band bush",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q247949 wdt:P527 ?x .}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q247949 wdt:P527 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1161,7 +1161,7 @@
     "ProcessedQuestion": "what was tupac name in juice",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q642419 p:P161 ?p. ?p ps:P161 wd:Q6107 . ?p pq:P453 ?x}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q642419 p:P161 ?p. ?p ps:P161 wd:Q6107; pq:P453 ?x. }",
         "Answers": []
       }
     ],
@@ -1173,7 +1173,7 @@
     "ProcessedQuestion": "who does maggie grace play in taken",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q277080 p:P161 ?p. ?p ps:P161 wd:Q218542. ?p pq:P453 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q277080 p:P161 ?p. ?p ps:P161 wd:Q218542; pq:P453 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1190,7 +1190,7 @@
     "ProcessedQuestion": "what tv show did joey lawrence play on",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q5398426. ?x wdt:P161 wd:Q550395.}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q5398426; wdt:P161 wd:Q550395. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1227,7 +1227,7 @@
     "ProcessedQuestion": "what form of government was practiced in sparta",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5690 wdt:P122 ?x}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5690 wdt:P122 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1249,7 +1249,7 @@
     "ProcessedQuestion": "what college did matt lauer attend",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1100609 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1100609 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1266,7 +1266,7 @@
     "ProcessedQuestion": "what school did joan miro attend",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q152384 wdt:P69 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q152384 wdt:P69 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

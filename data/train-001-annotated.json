@@ -5,7 +5,7 @@
     "ProcessedQuestion": "where is jack daniels factory",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q1251750 . ?y wdt:P137 wd:Q371068 . ?y wdt:P131 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q1251750; wdt:P137 wd:Q371068; wdt:P131 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -22,7 +22,7 @@
     "ProcessedQuestion": "what language do the speak in pakistan",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q843 wdt:P37 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q843 wdt:P37 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -49,7 +49,7 @@
     "ProcessedQuestion": "where is santa clara university",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q992830 wdt:P131 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q992830 wdt:P131 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -66,7 +66,7 @@
     "ProcessedQuestion": "where did timothy mcveigh go to prison",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q220850 wdt:P2632 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q220850 wdt:P2632 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -88,7 +88,7 @@
     "ProcessedQuestion": "who miley cyrus engaged to",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4235 wdt:P26 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4235 wdt:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -105,7 +105,7 @@
     "ProcessedQuestion": "who is robert downey jr wife",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165219 wdt:P26 ?x}",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165219 wdt:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -122,7 +122,7 @@
     "ProcessedQuestion": "what awards has louis sachar won",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q553137 wdt:P166 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q553137 wdt:P166 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -159,7 +159,7 @@
     "ProcessedQuestion": "who was the president after jfk died",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696 . ?p pq:P580 ?y. wd:Q9696 p:P39 ?q . ?q ps:P39 wd:Q11696 . ?q pq:P580 ?z filter (?y > ?z ) } order by ?y limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696; pq:P580 ?y. wd:Q9696 p:P39 ?q. ?q ps:P39 wd:Q11696; pq:P580 ?z. FILTER(?y > ?z) } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -176,7 +176,7 @@
     "ProcessedQuestion": "what is the local language of israel",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q801 wdt:P2936 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q801 wdt:P2936 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -303,7 +303,7 @@
     "ProcessedQuestion": "what city and state was the air force academy established",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1331280 wdt:P131 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1331280 wdt:P131 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -320,7 +320,7 @@
     "ProcessedQuestion": "what religion are people in russia",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q159 wdt:P3075 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q159 wdt:P3075 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -337,7 +337,7 @@
     "ProcessedQuestion": "what did shawnee smith play in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P161 wd:Q233313 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P161 wd:Q233313. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -514,7 +514,7 @@
     "ProcessedQuestion": "where did dr seuss go to school",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q298685 wdt:P69 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q298685 wdt:P69 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -536,7 +536,7 @@
     "ProcessedQuestion": "what team does luis suarez play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q26517 wdt:P54 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q26517 wdt:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -553,7 +553,7 @@
     "ProcessedQuestion": "who plays meg in family guy",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p . ?p ps:P725 ?x . ?p pq:P453 wd:Q908772 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q908772. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -570,7 +570,7 @@
     "ProcessedQuestion": "what high school did tim allen go to",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q208408 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826 }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q208408 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -587,7 +587,7 @@
     "ProcessedQuestion": "what is the world 's tallest building in dubai called",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q41176. ?x wdt:P2048 ?y. ?x wdt:P131 wd:Q613. } order by desc(?y) limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q41176; wdt:P2048 ?y; wdt:P131 wd:Q613. } ORDER BY DESC (?y) LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -604,7 +604,7 @@
     "ProcessedQuestion": "what year did tut became king",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q12154 p:P39 ?p. ?p ps:P39 wd:Q37110. ?p pq:P580 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q12154 p:P39 ?p. ?p ps:P39 wd:Q37110; pq:P580 ?x. }",
         "Answers": [
           {
             "AnswerType": "Value",
@@ -621,7 +621,7 @@
     "ProcessedQuestion": "who has been married to julia roberts",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q40523 p:P26/ps:P26 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q40523 p:P26/ps:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -643,7 +643,7 @@
     "ProcessedQuestion": "who does brandon dubinsky play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q898139 wdt:P54 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q898139 wdt:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -670,7 +670,7 @@
     "ProcessedQuestion": "who all has dated taylor swift",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q26876 p:P451/ps:P451 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q26876 p:P451/ps:P451 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -732,7 +732,7 @@
     "ProcessedQuestion": "what is the dominant language in israel",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q801 wdt:P37 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q801 wdt:P37 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -749,7 +749,7 @@
     "ProcessedQuestion": "what are the main languages of nigeria",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1033 wdt:P37 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1033 wdt:P37 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -771,7 +771,7 @@
     "ProcessedQuestion": "who did rufus wainwright married",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192402 wdt:P26 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192402 wdt:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -793,7 +793,7 @@
     "ProcessedQuestion": "who is the president of the european union 2011",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q740126. ?p pq:P580 ?y. ?p pq:P582 ?z. filter (?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime && ?z > \"2011-01-01T00:00:00Z\"^^xsd:dateTime) }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q740126; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?z > \"2011-01-01T00:00:00Z\"^^xsd:dateTime)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -810,7 +810,7 @@
     "ProcessedQuestion": "what school did cassie bernall go to",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76085 wdt:P69 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76085 wdt:P69 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -827,7 +827,7 @@
     "ProcessedQuestion": "what did st. matthew do",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43600 wdt:P106 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43600 wdt:P106 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -854,7 +854,7 @@
     "ProcessedQuestion": "who did axl rose marry",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11885 wdt:P26 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11885 wdt:P26 ?x. }",
         "Answers": []
       }
     ],
@@ -866,7 +866,7 @@
     "ProcessedQuestion": "who was elected president of the philippines",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q928 wdt:P35 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q928 wdt:P35 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -883,7 +883,7 @@
     "ProcessedQuestion": "what instrument does justin bieber",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q34086 wdt:P1303 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q34086 wdt:P1303 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -915,7 +915,7 @@
     "ProcessedQuestion": "what team did shaq play for first",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q169452 p:P54 ?p. ?p ps:P54 ?x. ?p pq:P580 ?y } order by ?y limit 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q169452 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y. } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -932,7 +932,7 @@
     "ProcessedQuestion": "who do derek fisher play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q314621 wdt:P54 ?x }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q314621 wdt:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
