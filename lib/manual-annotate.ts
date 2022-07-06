@@ -8,18 +8,11 @@ import {
     preprocessWebQuestionsSparql,
     WebQuestionAnswer
 } from './utils/web-questions';
-import { 
-    Parser, 
-    SparqlParser, 
-    Generator,
-    SparqlGenerator
-} from 'sparqljs';
 import {
     ENTITY_PREFIX,
-    PROPERTY_PREFIX,
-    PREFIXES,
-    postprocessSparql
+    PROPERTY_PREFIX
 } from './utils/wikidata';
+import { Normalizer } from './sparql-normalizer';
 import WikidataUtils from './utils/wikidata';
 import { FB2WDMapper } from './utils/mappings';
 
@@ -29,9 +22,8 @@ class Annotator extends events.EventEmitter {
     private _nextExample : Iterator<WebQuestionExample>;
     private _sparql : string[];
     private _answers : WebQuestionAnswer[];
-    private _parser : SparqlParser;
-    private _generator : SparqlGenerator;
     private _wikidata : WikidataUtils;
+    private _normalizer : Normalizer;
     private _mapper : FB2WDMapper;
 
     constructor(rl : readline.Interface, 
@@ -44,9 +36,8 @@ class Annotator extends events.EventEmitter {
         this._nextExample = [...examples, ...skipped][Symbol.iterator]();
         this._sparql = [];
         this._answers = [];
-        this._parser = new Parser({ prefixes: PREFIXES });
-        this._generator = new Generator({ prefixes: PREFIXES });
         this._wikidata = new WikidataUtils('wikidata.sqlite');
+        this._normalizer = new Normalizer();
         this._mapper = new FB2WDMapper();
 
         rl.on('line', async (line) => {
@@ -79,7 +70,7 @@ class Annotator extends events.EventEmitter {
             // accept an annotation, and continue to the next example
             if (line === 'y' || line.startsWith('y ')) {
                 console.log('Example annotated.\n');
-                this._ex!.Parses[0].Sparql = this._sparql.join(' ');
+                this._ex!.Parses[0].Sparql = this._normalizeSparql(this._sparql.join(' '), true);
                 this._ex!.Parses[0].Answers = this._answers;
                 if (line.length > 1)
                     this._ex!.Comment = line.substring(2).trim();
@@ -95,7 +86,7 @@ class Annotator extends events.EventEmitter {
 
     private async _testSparql(sparql : string) {
         try {
-            const normalized = this._normalizeSparql(sparql);
+            const normalized = this._normalizeSparql(sparql, false);
             console.log('After normalization:\n' + normalized);
             const response = await this._wikidata.query(sparql);
             this._answers = [];
@@ -131,10 +122,8 @@ class Annotator extends events.EventEmitter {
         }
     }
 
-    private _normalizeSparql(sparql : string) {
-        const parsed = this._parser.parse(sparql);
-        const normalized = this._generator.stringify(parsed);
-        return postprocessSparql(normalized);
+    private _normalizeSparql(sparql : string, oneline : boolean) {
+        return this._normalizer.normalize(sparql, oneline);
     }
 
     private _init() {
