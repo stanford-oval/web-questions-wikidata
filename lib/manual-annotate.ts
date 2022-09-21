@@ -114,7 +114,7 @@ class Annotator extends events.EventEmitter {
             console.log('Wikidata answers:', wdAnswers.join(', '));
             const fbAnswers = this._ex!.Parses[0].Answers.map((a) => a.EntityName ?? a.AnswerArgument);
             console.log('Freebase answers:', fbAnswers.join(', '));
-            console.log('\nDoes the result look good? y/n/d');
+            console.log('\nDoes the result look good? y/n/s/d');
         } catch(e) {
             console.log('Failed to run the SPARQL: ', (e as Error).message);
             console.log('Try rewrite the SPARQL.\n');
