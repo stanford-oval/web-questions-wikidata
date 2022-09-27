@@ -48,7 +48,10 @@ m.03_r3: Jamaica (http://www.wikidata.org/entity/Q766)
 Here, the entity Jamaica is provided, while the Wikidata equivlent property for `language_spoken` is unknown.
 A trick is to ctrl+click the link for Jamaica to quickly check what properties are there for the entity. 
 
-Then the annotator can start typing in the SPARQL for Wikidata. Line breaks are allowed when annotating. 
+Then the annotator can start typing in the SPARQL for Wikidata. 
+For entity variables, use `x`, `y`, `z`, `w`, in order of their appearance in the triples. 
+For predicate variables, use `p`, `q`. 
+Line breaks are allowed when annotating. 
 To consecutive line breaks will inform the system to take the input and verify it. 
 It will check the basic syntax and normalize the SPARQL, then it will run the SPARQL against the Wikidata SPARQL endpoint to retrieve the answers: 
 
