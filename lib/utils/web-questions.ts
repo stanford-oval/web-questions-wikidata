@@ -45,7 +45,7 @@ export function preprocessWebQuestionsSparql(sparql : string) {
     sparql = sparql.replace(`FILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))`, '');
     sparql = sparql.replace(`FILTER (!isLiteral(?x) OR (lang(?x) = '' OR lang(?x) = 'en'))`, '');
     sparql = sparql.replace(/[\n]+/g, '\n');
-    sparql = sparql.replace(/ OR /g, '||');
+    sparql = sparql.replace(/ OR /g, ' || ');
     sparql = sparql.replace(`Having COUNT(?city) = 2`, `Having (COUNT(?city) = 2)`);
     return sparql;
 }

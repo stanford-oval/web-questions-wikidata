@@ -36,6 +36,9 @@ import {
     FB2WDMapper
 } from './utils/mappings';
 import {
+    PatternMatcher
+} from './utils/pattern-matcher';
+import {
     loadExample,
     preprocessWebQuestionsSparql,
     WebQuestionParse
@@ -45,6 +48,7 @@ export default class FB2WDConverter {
     private parser : SparqlParser;
     private generator : SparqlGenerator;
     private mapper : FB2WDMapper;
+    private matcher : PatternMatcher;
     private wikidata : WikidataUtils;
     public counter : Record<string, number>;
     public missingEntityMappings : Set<string>;
@@ -54,6 +58,7 @@ export default class FB2WDConverter {
         this.parser = new Parser({ prefixes: { ...FB_PREFIXES, ...WD_PREFIXES } });
         this.generator = new Generator({ prefixes: WD_PREFIXES });
         this.mapper = new FB2WDMapper();
+        this.matcher = new PatternMatcher(this.mapper);
         this.wikidata = wikidata;
         this.counter = {};
         this.missingEntityMappings = new Set();
@@ -138,6 +143,12 @@ export default class FB2WDConverter {
     }
 
     async convert(sparql : string) {
+        const match = this.matcher.match(sparql);
+        if (match) {
+            this.count('success');
+            return match;
+        }
+
         const preprocessedSparql = preprocessWebQuestionsSparql(sparql);
         try {
             const parsed = this.parser.parse(preprocessedSparql) as SelectQuery|AskQuery;
