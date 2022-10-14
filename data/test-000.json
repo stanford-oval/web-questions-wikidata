@@ -1,54 +1,5 @@
 [
   {
-    "QuestionId": "WebQTest-0",
-    "RawQuestion": "what does jamaican people speak?",
-    "ProcessedQuestion": "what does jamaican people speak",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_r3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_r3 ns:location.country.languages_spoken ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01428y",
-            "EntityName": "Jamaican English"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04ygk0",
-            "EntityName": "Jamaican Creole English Language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-1",
-    "RawQuestion": "what did james k polk do before he was president?",
-    "ProcessedQuestion": "what did james k polk do before he was president",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    SELECT ?pFrom \n    WHERE {\n      ns:m.042f1 ns:government.politician.government_positions_held ?y . # James K. Polk\n      ?y ns:government.government_position_held.office_position_or_title ?x ; \n         ns:government.government_position_held.basic_title ns:m.060c4 ; # President\n         ns:government.government_position_held.from ?pFrom .\n    }\n  }\n  ns:m.042f1 ns:government.politician.government_positions_held ?y . # James K. Polk\n  ?y ns:government.government_position_held.office_position_or_title ?x ; \n     ns:government.government_position_held.from ?from .\n  \n  FILTER(xsd:dateTime(?pFrom) - xsd:dateTime(?from) > 0)\n}",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02_bcst",
-            "EntityName": "United States Representative"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04x_n9q",
-            "EntityName": "Governor of Tennessee"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cgqx",
-            "EntityName": "Speaker of the United States House of Representatives"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "QuestionId": "WebQTest-3",
     "RawQuestion": "who plays ken barlow in coronation street?",
     "ProcessedQuestion": "who plays ken barlow in coronation street",
@@ -60,121 +11,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "m.01j_gs",
             "EntityName": "William Roache"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-8",
-    "RawQuestion": "what else did ben franklin invent?",
-    "ProcessedQuestion": "what else did ben franklin invent",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019fz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019fz ns:law.inventor.inventions ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0135nr",
-            "EntityName": "Lightning rod"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.013cqs",
-            "EntityName": "Bifocals"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01zh8g",
-            "EntityName": "Glass harmonica"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.029mmz",
-            "EntityName": "Franklin stove"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-9",
-    "RawQuestion": "who was richard nixon married to?",
-    "ProcessedQuestion": "who was richard nixon married to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c97)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c97 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.023v03",
-            "EntityName": "Pat Nixon"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-12",
-    "RawQuestion": "who is governor of ohio 2011?",
-    "ProcessedQuestion": "who is governor of ohio 2011",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05kkh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05kkh ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.0fkvn .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2011-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2011-01-01\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02zzm_",
-            "EntityName": "John Kasich"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0340r0",
-            "EntityName": "Return J. Meigs, Jr."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.039rqy",
-            "EntityName": "Ted Strickland"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-13",
-    "RawQuestion": "who was vice president after kennedy died?",
-    "ProcessedQuestion": "who was vice president after kennedy died",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d3k14)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d3k14 ns:government.us_president.vice_president ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f7fy",
-            "EntityName": "Lyndon B. Johnson"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-14",
-    "RawQuestion": "where is the fukushima daiichi nuclear plant located?",
-    "ProcessedQuestion": "where is the fukushima daiichi nuclear plant located",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02vkzy2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02vkzy2 ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03_3d",
-            "EntityName": "Japan"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03k_g5",
-            "EntityName": "Okuma"
           }
         ]
       }
@@ -240,560 +76,6 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-26",
-    "RawQuestion": "what to do today in atlanta with kids?",
-    "ProcessedQuestion": "what to do today in atlanta with kids",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.013yq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.013yq ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0130ft",
-            "EntityName": "Atlanta Symphony Orchestra"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.020fp1",
-            "EntityName": "Turner Field"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027r6hr",
-            "EntityName": "Cobb Energy Performing Arts Centre"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027t71h",
-            "EntityName": "Four Seasons Hotel Atlanta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.029fnx",
-            "EntityName": "Underground Atlanta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02jnft",
-            "EntityName": "Atlanta Marriott Marquis"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wl1b",
-            "EntityName": "Georgia World Congress Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02xmrp",
-            "EntityName": "The Tabernacle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.030pkm",
-            "EntityName": "Peachtree Road Race"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.033h7k",
-            "EntityName": "Georgia Aquarium"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.038bv6",
-            "EntityName": "Georgia Dome"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.038gvs",
-            "EntityName": "Philips Arena"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.039xmp",
-            "EntityName": "Omni Coliseum"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03cspcp",
-            "EntityName": "Hyatt Regency Atlanta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03l1zc",
-            "EntityName": "Centennial Olympic Park"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03q1hw",
-            "EntityName": "Zoo Atlanta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03sm22",
-            "EntityName": "Six Flags Over Georgia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03spbl",
-            "EntityName": "Six Flags White Water"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03wm34",
-            "EntityName": "Atlanta Cyclorama & Civil War Museum"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03xrf5",
-            "EntityName": "Georgia State Capitol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04_mbv",
-            "EntityName": "World of Coca-Cola"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04d135",
-            "EntityName": "CNN Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04htb5",
-            "EntityName": "Fernbank Science Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04jny9",
-            "EntityName": "Fernbank Museum of Natural History"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04qrhq",
-            "EntityName": "Fox Theatre"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050m_5",
-            "EntityName": "Woodruff Arts Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050mtz",
-            "EntityName": "Margaret Mitchell House & Museum"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050my1",
-            "EntityName": "Martin Luther King, Jr. National Historic Site"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050n0y",
-            "EntityName": "Atlanta History Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05c25f2",
-            "EntityName": "Variety Playhouse"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06bxs4",
-            "EntityName": "Jimmy Carter Library and Museum"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b5g4p",
-            "EntityName": "Masquerade"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c3cp2",
-            "EntityName": "Arbor Place Mall"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fpmfg",
-            "EntityName": "Atlanta Ballet"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gln9p",
-            "EntityName": "Center for Puppetry Arts"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j28sdt",
-            "EntityName": "Atlanta Jewish Film Festival"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-28",
-    "RawQuestion": "what electorate does anna bligh represent?",
-    "ProcessedQuestion": "what electorate does anna bligh represent",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.072_m3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.072_m3 ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.district_represented ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026q11g",
-            "EntityName": "Electoral district of South Brisbane"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-31",
-    "RawQuestion": "where did andy murray started playing tennis?",
-    "ProcessedQuestion": "where did andy murray started playing tennis",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03wc52)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03wc52 ns:tennis.tennis_player.year_turned_pro ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "2005",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-32",
-    "RawQuestion": "what is the australian dollar called?",
-    "ProcessedQuestion": "what is the australian dollar called",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0kz1h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0kz1h ns:finance.currency.currency_code ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "AUD",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-34",
-    "RawQuestion": "who did cam newton sign with?",
-    "ProcessedQuestion": "who did cam newton sign with",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02phnp7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02phnp7 ns:base.schemastaging.athlete_extra.salary ?y .\n?y ns:base.schemastaging.athlete_salary.team ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01y3c",
-            "EntityName": "Carolina Panthers"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-36",
-    "RawQuestion": "what highschool did harper lee go to?",
-    "ProcessedQuestion": "what highschool did harper lee go to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bq7x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bq7x ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:education.educational_institution.school_type ns:m.0bpgx .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0crdc8g",
-            "EntityName": "Monroe County High School"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-38",
-    "RawQuestion": "who did george w. bush run against for the second term?",
-    "ProcessedQuestion": "who did george w. bush run against for the second term",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n\tns:m.04qwhs ns:government.election.campaigns ?y .\n\t?y ns:government.election_campaign.candidate ?x .\nFILTER (?x != ns:m.09b6zr)\n}",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.033tf9",
-            "EntityName": "Michael Peroutka"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03vyyd",
-            "EntityName": "Gene Amondson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dnh",
-            "EntityName": "Ralph Nader"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d3qd0",
-            "EntityName": "John Kerry"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-39",
-    "RawQuestion": "who is niall ferguson's wife?",
-    "ProcessedQuestion": "who is niall ferguson 's wife",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.033mkn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.033mkn ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\nFILTER(NOT EXISTS {?y ns:people.marriage.from ?sk0} || \nEXISTS {?y ns:people.marriage.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.marriage.to ?sk2} || \nEXISTS {?y ns:people.marriage.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03k5sq",
-            "EntityName": "Ayaan Hirsi Ali"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-41",
-    "RawQuestion": "where is the galapagos islands located on a world map?",
-    "ProcessedQuestion": "where is the galapagos islands located on a world map",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016zjj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016zjj ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02k1b",
-            "EntityName": "Ecuador"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03660b",
-            "EntityName": "Galápagos Province"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05rgl",
-            "EntityName": "Pacific Ocean"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-42",
-    "RawQuestion": "what are the songs that justin bieber wrote?",
-    "ProcessedQuestion": "what are the songs that justin bieber wrote",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06w2sn5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06w2sn5 ns:music.composer.compositions ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0116pj4q",
-            "EntityName": "Lolly"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.012k_48s",
-            "EntityName": "Home to Mama"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09v3gb4",
-            "EntityName": "Baby"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bbvzq2",
-            "EntityName": "Never Let You Go"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bbz4p9",
-            "EntityName": "Eenie Meenie"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bmc2ql",
-            "EntityName": "Somebody to Love"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c3vvnk",
-            "EntityName": "Never Say Never"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fqlv5l",
-            "EntityName": "Bigger"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g5b0p2",
-            "EntityName": "Pray"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g5q9ky",
-            "EntityName": "First Dance"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j4453t",
-            "EntityName": "Live My Life"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j64n8c",
-            "EntityName": "Boyfriend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jwqwyx",
-            "EntityName": "Turn to You (Mother's Day Dedication)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jwx2_w",
-            "EntityName": "Die in Your Arms"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jxk_hq",
-            "EntityName": "Thought Of You"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jxk_kq",
-            "EntityName": "Beauty And A Beat"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jxkzb9",
-            "EntityName": "All Around The World"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0k0l2vf",
-            "EntityName": "As Long as You Love Me"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0qfpkqq",
-            "EntityName": "Right Here"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0rytzvz",
-            "EntityName": "#thatPower"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0y6b7k5",
-            "EntityName": "Heartbreaker"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ynrkyl",
-            "EntityName": "All That Matters"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0yt1lb9",
-            "EntityName": "Hold Tight"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0yt3yyw",
-            "EntityName": "Wait for a Minute"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0yt3zg2",
-            "EntityName": "Recovery"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0z6sgcx",
-            "EntityName": "Bad Day"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0zbv_v0",
-            "EntityName": "All Bad"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0zdkrym",
-            "EntityName": "PYD"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0zg6nnd",
-            "EntityName": "Change Me"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0zgb5ny",
-            "EntityName": "Roller Coaster"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0zmzvrc",
-            "EntityName": "Confident"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-44",
-    "RawQuestion": "what is the state flower of arizona?",
-    "ProcessedQuestion": "what is the state flower of arizona",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0vmt)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0vmt ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.04627gn .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0m5w_",
-            "EntityName": "Saguaro"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-46",
-    "RawQuestion": "what year did president william henry harrison take office?",
-    "ProcessedQuestion": "what year did president william henry harrison take office",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0835q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0835q ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.from ?x .\n?y ns:government.government_position_held.office_position_or_title ns:m.060d2 .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "1841-03-04",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
     "QuestionId": "WebQTest-48",
     "RawQuestion": "where are samsung based?",
     "ProcessedQuestion": "where are samsung based",
@@ -805,151 +87,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "m.02j2b1",
             "EntityName": "Suwon"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-49",
-    "RawQuestion": "what did the islamic people believe in?",
-    "ProcessedQuestion": "what did the islamic people believe in",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0flw86)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0flw86 ns:religion.religion.beliefs ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.019vqj",
-            "EntityName": "Mahdi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01bbmp",
-            "EntityName": "Tawhid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.024b22",
-            "EntityName": "Prophets in Islam"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.025w817",
-            "EntityName": "Predestination in Islam"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wvcg4",
-            "EntityName": "Entering Heaven alive"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04xy3",
-            "EntityName": "Monotheism"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0698fs",
-            "EntityName": "Islamic view of angels"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06rvp0",
-            "EntityName": "Qiyamah"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.074hw",
-            "EntityName": "Sharia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07bfrc",
-            "EntityName": "Masih ad-Dajjal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07r6vw",
-            "EntityName": "Islamic holy books"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09kb_2",
-            "EntityName": "God in Islam"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hr6vbp",
-            "EntityName": "Ṭūbā"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-51",
-    "RawQuestion": "who will play mr gray in the film?",
-    "ProcessedQuestion": "who will play mr gray in the film",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0nfjvrm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0nfjvrm ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fs4kv",
-            "EntityName": "Jamie Dornan"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-54",
-    "RawQuestion": "what country did adolf hitler control?",
-    "ProcessedQuestion": "what country did adolf hitler control",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_m9_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_m9_ ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.jurisdiction_of_office ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059z0",
-            "EntityName": "Nazi Germany"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-58",
-    "RawQuestion": "who did jackie robinson first play for?",
-    "ProcessedQuestion": "who did jackie robinson first play for",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0443c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0443c ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n?y ns:sports.sports_team_roster.from ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fbtm7",
-            "EntityName": "UCLA Bruins football"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-59",
-    "RawQuestion": "when did annie open?",
-    "ProcessedQuestion": "when did annie open",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01_1m4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01_1m4 ns:theater.play.date_of_first_performance ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "1976-08-10",
-            "EntityName": null
           }
         ]
       }
@@ -988,1779 +125,6 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-62",
-    "RawQuestion": "what was jesse james killed with?",
-    "ProcessedQuestion": "what was jesse james killed with",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02khkd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02khkd ns:people.deceased_person.cause_of_death ?x .\n?x ns:freebase.linguistic_hint.subject_form ?sk0 .\nFILTER (str(?sk0) = \"Firearms\")\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.034qg",
-            "EntityName": "Firearm"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-63",
-    "RawQuestion": "who was vp for lincoln?",
-    "ProcessedQuestion": "who was vp for lincoln",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gzh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gzh ns:government.us_president.vice_president ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03mpk",
-            "EntityName": "Hannibal Hamlin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0rmg",
-            "EntityName": "Andrew Johnson"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-64",
-    "RawQuestion": "what other books did charles dickens write?",
-    "ProcessedQuestion": "what other books did charles dickens write",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01v9724)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01v9724 ns:book.author.book_editions_published ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.028x_z3",
-            "EntityName": "The Old Curiosity Shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.028y4jr",
-            "EntityName": "The Old Curiosity Shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dcd",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dcw",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_ddb",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_ddt",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_df8",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dfr",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dg5",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dgn",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dh3",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dhl",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_djh",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dql",
-            "EntityName": "The life and adventures of Nicholas Nickleby"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_dqx",
-            "EntityName": "The life and adventures of Nicholas Nickleby"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_fzb",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_hj1",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_hjf",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_kp7",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_kpq",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_kqs",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t_kr7",
-            "EntityName": "Oliver Twist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzqhs",
-            "EntityName": "The cricket on the hearth"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzqjs",
-            "EntityName": "The cricket on the hearth"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tztj0",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tztjh",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tztjz",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzw25",
-            "EntityName": "Our mutual friend."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzxdm",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzxf2",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tzxfk",
-            "EntityName": "Our mutual friend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_cp5",
-            "EntityName": "The old curiosity shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_cpx",
-            "EntityName": "The old curiosity shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_cqc",
-            "EntityName": "The old curiosity shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_ggt",
-            "EntityName": "The old curiosity shop."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_kqz",
-            "EntityName": "The old curiosity shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00pl",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00q2",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00qk",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00r8",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00s0",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00sh",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00st",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00t8",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00tr",
-            "EntityName": "Bleak house"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00vg",
-            "EntityName": "Bleak House."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00vy",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00w7",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00wq",
-            "EntityName": "Bleak House."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00x5",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00xn",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00y3",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00yl",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v00zw",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v015x",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0176",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v017p",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0184",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v018m",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0192",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v019k",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01b8",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01cz",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01df",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01dx",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01fd",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01fw",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01gc",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01gv",
-            "EntityName": "Great expectations."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01h9",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v01j0",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v02_r",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v02z9",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v02zk",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v030g",
-            "EntityName": "Hard times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03bs",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03c7",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03d5",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03tx",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03vv",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v03wk",
-            "EntityName": "Bleak House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v05lp",
-            "EntityName": "Great Expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07k8",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07kr",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07l4",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07ly",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07mp",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07nn",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07p3",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07pl",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v07q1",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rjz",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rkf",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rkx",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rlt",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rm8",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rml",
-            "EntityName": "The Mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rn2",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rnd",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rnw",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0rqd",
-            "EntityName": "The mystery of Edwin Drood"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v45",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v5p",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v64",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v6m",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v72",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v7k",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v80",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v8h",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v8z",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0v9z",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0vbq",
-            "EntityName": "David Copperfield."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0ws9",
-            "EntityName": "The Pickwick papers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wt5",
-            "EntityName": "The Pickwick papers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wtn",
-            "EntityName": "The Pickwick Papers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wv3",
-            "EntityName": "The Pickwick papers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wwg",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wy1",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0wzg",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v0x0w",
-            "EntityName": "David Copperfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v2xs6",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v2xsp",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v2xt4",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v2xtm",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v2xv2",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v3014",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v301v",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v302s",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v303_",
-            "EntityName": "Little Dorrit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v4zb0",
-            "EntityName": "Sketches by Boz"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v4zbs",
-            "EntityName": "Sketches by Boz"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v504r",
-            "EntityName": "Sketches by Boz"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p1n",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p2p",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p3f",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p3v",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p47",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p4q",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5p5d",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5q3s",
-            "EntityName": "Martin Chuzzlewit"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5vb4",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5vbn",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5vcc",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5vcv",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5vd4",
-            "EntityName": "Dombey and Son."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5x2r",
-            "EntityName": "Dombey and son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5x3d",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v5y5v",
-            "EntityName": "Dombey and Son"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb00",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb09",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb0l",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb0w",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb1_",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb14",
-            "EntityName": "A Christmas Carol (Reissue)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb1f",
-            "EntityName": "A Christmas Carol (Reissue)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb1q",
-            "EntityName": "A Christmas Carol (Reissue)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb29",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb2m",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb2y",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb37",
-            "EntityName": "A Christmas Carol (Dramascripts)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb3k",
-            "EntityName": "A Christmas Carol. (Lernmaterialien)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb3w",
-            "EntityName": "A Christmas Carol (Dramascripts)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb44",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb4g",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb4s",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb51",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb5c",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb5n",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb5z",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb67",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb6k",
-            "EntityName": "A Christmas Carol (Soundings)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb6v",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb74",
-            "EntityName": "A Christmas Carol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb7g",
-            "EntityName": "A Christmas Carol (R)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb7r",
-            "EntityName": "A CHRISTMAS CAROL"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb81",
-            "EntityName": "A Christmas Carol. (Lernmaterialien)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb8r",
-            "EntityName": "A Christmas Carol. (Lernmaterialien)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb91",
-            "EntityName": "A Christmas Carol (Puffin Choice)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb9b",
-            "EntityName": "A Christmas Carol (Puffin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb9m",
-            "EntityName": "A Christmas Carol (Puffin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqb9x",
-            "EntityName": "A Christmas Carol (Puffin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbb5",
-            "EntityName": "A Christmas Carol (Classics Illustrated)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbbg",
-            "EntityName": "A Christmas Carol (Scholastic Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbbr",
-            "EntityName": "A Christmas Carol (Apple Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbc0",
-            "EntityName": "A Christmas Carol (Whole Story)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbcb",
-            "EntityName": "A Christmas Carol (Whole Story)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbcn",
-            "EntityName": "A Christmas Carol (Aladdin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbcz",
-            "EntityName": "A Christmas Carol (Bantam Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbd8",
-            "EntityName": "A Christmas Carol (Ladybird Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbdl",
-            "EntityName": "A Christmas Carol (Watermill Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbdw",
-            "EntityName": "A Christmas Carol (Watermill Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbf5",
-            "EntityName": "A Christmas Carol (Bantam Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbfg",
-            "EntityName": "A Christmas Carol (Large Print)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbfs",
-            "EntityName": "A Christmas Carol (Radio Theatre)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbg1",
-            "EntityName": "A Christmas Carol (Radio Theatre)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbgb",
-            "EntityName": "A Christmas Carol (Great Stories)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbgn",
-            "EntityName": "A Christmas Carol (Saddleback Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbgz",
-            "EntityName": "A Christmas Carol (Illustrated Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbh7",
-            "EntityName": "A Christmas Carol (Audio Editions)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbhj",
-            "EntityName": "A Christmas Carol (Family Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbht",
-            "EntityName": "A Christmas Carol (Large Print)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbj3",
-            "EntityName": "A Christmas Carol (Cover to Cover)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbjd",
-            "EntityName": "A Christmas Carol (Classic Fiction)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbjp",
-            "EntityName": "A Christmas Carol (Classic Fiction)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbjz",
-            "EntityName": "A Christmas Carol (Pacemaker Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbk8",
-            "EntityName": "A Christmas Carol (Tor Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbkk",
-            "EntityName": "A Christmas Carol (Pacemaker Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbkv",
-            "EntityName": "A Christmas Carol (Children's Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbl6",
-            "EntityName": "A Christmas Carol (Acting Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqblj",
-            "EntityName": "A Christmas Carol (Classic Collection)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqblv",
-            "EntityName": "A Christmas Carol (Limited Editions)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbm_",
-            "EntityName": "A Christmas Carol (Clear Print)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbm3",
-            "EntityName": "A Christmas Carol (Take Part)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbmf",
-            "EntityName": "A Christmas Carol (Cp 1135)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbmq",
-            "EntityName": "A Christmas Carol (Enriched Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbn9",
-            "EntityName": "A Christmas Carol (Illustrated Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbnm",
-            "EntityName": "A Christmas Carol (Value Books)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbny",
-            "EntityName": "A Christmas Carol (Penguin Student Editions)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbp6",
-            "EntityName": "A Christmas Carol (Ladybird Children's Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbpl",
-            "EntityName": "A Christmas Carol (Penguin Readers, Level 2)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbpx",
-            "EntityName": "A Christmas Carol (Usborne Young Reading)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbq6",
-            "EntityName": "A Christmas Carol (Read & Listen Books)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbqj",
-            "EntityName": "A Christmas Carol (Through the Magic Window Series)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbqv",
-            "EntityName": "A Christmas Carol (Illustrated Classics (Graphic Novels))"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbr3",
-            "EntityName": "A Christmas Carol (Classic Books on Cassettes Collection)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbrf",
-            "EntityName": "A Christmas Carol (Classics for Young Adults and Adults)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbrr",
-            "EntityName": "A Christmas Carol (Green Integer, 50)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbs1",
-            "EntityName": "A Christmas Carol (Chrysalis Children's Classics Series)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbsc",
-            "EntityName": "A Christmas Carol (Wordsworth Collection) (Wordsworth Collection)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbsz",
-            "EntityName": "A Christmas Carol (Everyman's Library Children's Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbt8",
-            "EntityName": "A Christmas Carol (Dramascripts Classic Texts)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbtl",
-            "EntityName": "A Christmas Carol (Thornes Classic Novels)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbtx",
-            "EntityName": "A Christmas Carol (Young Reading Series 2)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbv6",
-            "EntityName": "A Christmas Carol (Penguin Student Editions)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbvj",
-            "EntityName": "A Christmas Carol (Nelson Graded Readers)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbvx",
-            "EntityName": "A Christmas Carol (Oxford Bookworms Library)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbw5",
-            "EntityName": "A Christmas Carol (The Kennett Library)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbwg",
-            "EntityName": "A Christmas Carol (Gollancz Children's Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbws",
-            "EntityName": "A Christmas Carol (Webster's Portuguese Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbx2",
-            "EntityName": "A Christmas Carol (Webster's Korean Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbxd",
-            "EntityName": "A Christmas Carol (Classic, Picture, Ladybird)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqbxq",
-            "EntityName": "A Christmas Carol (New Longman Literature)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yqby0",
-            "EntityName": "A Christmas Carol (Children's Theatre Playscript)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjhl",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjj0",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjjh",
-            "EntityName": "Great expectations."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjjs",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjk_",
-            "EntityName": "Great Expectations."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjk7",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.051jjkj",
-            "EntityName": "Great expectations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cj_7",
-            "EntityName": "A Tale of Two Cities (10 Cassettes)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cj_j",
-            "EntityName": "A Tale of Two Cities (Student's Novels)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cj_t",
-            "EntityName": "A Tale of Two Cities (Oxford Playscripts)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjld",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjlp",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjlz",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjm7",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjmj",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjmv",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjn_",
-            "EntityName": "A Tale of Two Cities (Soundings)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjn3",
-            "EntityName": "A TALE OF TWO CITIES"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjnd",
-            "EntityName": "A Tale of Two Cities"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjnq",
-            "EntityName": "A Tale of Two Cities (Dramatized)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjp8",
-            "EntityName": "A Tale of Two Cities (Masterworks)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjpl",
-            "EntityName": "A Tale of Two Cities (Puffin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjpw",
-            "EntityName": "A Tale of Two Cities (Penguin Popular Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjq_",
-            "EntityName": "A Tale of Two Cities (Illustrated Junior Library)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjq4",
-            "EntityName": "A Tale of Two Cities (Prentice Hall Science)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjqf",
-            "EntityName": "A Tale of Two Cities (Penguin Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjqq",
-            "EntityName": "A Tale of Two Cities (Silver Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjr8",
-            "EntityName": "A Tale of Two Cities (Signet Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjrk",
-            "EntityName": "A Tale of Two Cities (Signet Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjrv",
-            "EntityName": "A Tale of Two Cities (Everyman's Library (Paper))"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjs_",
-            "EntityName": "A Tale of Two Cities (Bantam Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjs3",
-            "EntityName": "A Tale of Two Cities (Classic Retelling)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjsd",
-            "EntityName": "A Tale of Two Cities (Dover Thrift Editions)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjsq",
-            "EntityName": "A Tale of Two Cities (Enriched Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjt9",
-            "EntityName": "A Tale of Two Cities (Paperback Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjtm",
-            "EntityName": "A Tale of Two Cities (Ladybird Children's Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjty",
-            "EntityName": "A Tale of Two Cities (Bantam Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjv6",
-            "EntityName": "A Tale of Two Cities (Courage Literary Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjvj",
-            "EntityName": "A Tale of Two Cities (Saddleback Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjvv",
-            "EntityName": "A Tale of Two Cities (Illustrated Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjw_",
-            "EntityName": "A Tale of Two Cities (Collector's Library)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjw3",
-            "EntityName": "A Tale of Two Cities (Cover to Cover Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjwd",
-            "EntityName": "A Tale of Two Cities (Cover to Cover Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjwp",
-            "EntityName": "A Tale of Two Cities (Classics Illustrated Notes)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjx9",
-            "EntityName": "A Tale Of Two Cities (Adult Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjxl",
-            "EntityName": "A Tale of Two Cities (The Classic Collection)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjxw",
-            "EntityName": "A Tale of Two Cities (Konemann Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjy5",
-            "EntityName": "A Tale of Two Cities (Wordsworth Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjyh",
-            "EntityName": "A Tale of Two Cities (Everyman's Library Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjyt",
-            "EntityName": "A Tale of Two Cities (Naxos AudioBooks)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjz2",
-            "EntityName": "A Tale of Two Cities (Oxford Bookworms Library)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjzc",
-            "EntityName": "A Tale of Two Cities (Acting Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjzn",
-            "EntityName": "A Tale of Two Cities (Tor Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059cjzy",
-            "EntityName": "A Tale of Two Cities (Longman Fiction)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck02",
-            "EntityName": "A Tale of Two Cities (Progressive English)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck0d",
-            "EntityName": "A Tale of Two Cities (Everyman Paperbacks)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck0p",
-            "EntityName": "A Tale of Two Cities (Piccolo Books)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck0z",
-            "EntityName": "A Tale of Two Cities (Macmillan Students' Novels)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck17",
-            "EntityName": "A Tale of Two Cities (Dramascripts S.)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck1j",
-            "EntityName": "A Tale of Two Cities (Simple English)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck1v",
-            "EntityName": "A Tale of Two Cities (Classics Illustrated)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck23",
-            "EntityName": "A Tale of Two Cities (Adopted Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck2f",
-            "EntityName": "A Tale of Two Cities (Compact English Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck2r",
-            "EntityName": "A Tale of Two Cities (Pacemaker Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck30",
-            "EntityName": "A Tale of Two Cities (Unabridged Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck39",
-            "EntityName": "A Tale of Two Cities (Dodo Press)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck3m",
-            "EntityName": "A Tale of Two Cities (Large Print Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck3y",
-            "EntityName": "A Tale of Two Cities (Clear Print)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck47",
-            "EntityName": "A Tale of Two Cities (Cyber Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck4t",
-            "EntityName": "A Tale of Two Cities (Cyber Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck55",
-            "EntityName": "A Tale of Two Cities (Ultimate Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck5g",
-            "EntityName": "A Tale of Two Cities (BBC Audio Series)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck5r",
-            "EntityName": "A Tale of Two Cities (Illustrated Classics)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck61",
-            "EntityName": "A Tale of Two Cities (Cassette (1 Hr).)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck6b",
-            "EntityName": "A Tale Of Two Cities (Adult Classics in Audio)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck6m",
-            "EntityName": "A Tale of Two Cities (Classic Fiction)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck6x",
-            "EntityName": "A Tale of Two Cities (New Oxford Illustrated Dickens)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck75",
-            "EntityName": "A Tale of Two Cities (The Greatest Historical Novels)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck7h",
-            "EntityName": "A Tale of Two Cities (Penguin Readers, Level 5)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck7t",
-            "EntityName": "A Tale of Two Cities (Collected Works of Charles Dickens)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck8_",
-            "EntityName": "A Tale of Two Cities (Classic Literature with Classical Music)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck82",
-            "EntityName": "A Tale of Two Cities (Amsco Literature Program - N 380 ALS)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck8d",
-            "EntityName": "A Tale of Two Cities (Unabridged Classics for High School and Adults)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck8p",
-            "EntityName": "A Tale of Two Cities (Barnes & Noble Classics Series)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck98",
-            "EntityName": "A Tale of Two Cities (Bookcassette(r) Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck9k",
-            "EntityName": "A Tale of Two Cities (Webster's Chinese-Simplified Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ck9w",
-            "EntityName": "A Tale of Two Cities (Webster's German Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckb5",
-            "EntityName": "A Tale of Two Cities (Webster's Italian Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckbt",
-            "EntityName": "A Tale of Two Cities (Webster's Chinese-Traditional Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckc3",
-            "EntityName": "A Tale of Two Cities (Webster's Portuguese Thesaurus Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckcf",
-            "EntityName": "A Tale of Two Cities (Longman Classics, Stage 2)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckcr",
-            "EntityName": "A Tale of Two Cities (Lake Illustrated Classics, Collection 2)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckd1",
-            "EntityName": "A Tale of Two Cities (Isis Clear Type Classic)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckdc",
-            "EntityName": "A Tale Of Two Cities (Classic Books on Cassettes Collection)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckdn",
-            "EntityName": "A Tale of Two Cities (40th Anniversary Edition)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckdy",
-            "EntityName": "A Tale of Two Cities (Lake Illustrated Classics, Collection 2)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckf7",
-            "EntityName": "A Tale of Two Cities (Unabridged Classics for High School and Adults)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059ckfj",
-            "EntityName": "A Tale of Two Cities (Unabridged Classics for High School and Adults)"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-65",
-    "RawQuestion": "who was the first dictator of the soviet union?",
-    "ProcessedQuestion": "who was the first dictator of the soviet union",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05vz3zq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05vz3zq ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.from ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05wh0sh",
-            "EntityName": "Vladimir Lenin"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "QuestionId": "WebQTest-68",
     "RawQuestion": "who plays the voice of kitt in knight rider?",
     "ProcessedQuestion": "who plays the voice of kitt in knight rider",
@@ -2778,130 +142,6 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-71",
-    "RawQuestion": "who did michael j fox marry?",
-    "ProcessedQuestion": "who did michael j fox marry",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0hz_1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0hz_1 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gpck",
-            "EntityName": "Tracy Pollan"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-72",
-    "RawQuestion": "what battles did stonewall jackson fight in?",
-    "ProcessedQuestion": "what battles did stonewall jackson fight in",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07r8h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07r8h ns:military.military_commander.military_commands ?y .\n?y ns:military.military_command.military_conflict ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01_nvh",
-            "EntityName": "First Battle of Winchester"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01xvgq",
-            "EntityName": "How Few Remain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.021h20",
-            "EntityName": "Jackson's Valley Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02bckn",
-            "EntityName": "Battle of Chantilly"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02p037",
-            "EntityName": "Battle of Harpers Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02q5_1r",
-            "EntityName": "Romney Expedition"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_mz",
-            "EntityName": "Battle of Cedar Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_qr",
-            "EntityName": "First Battle of Rappahannock Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_xx",
-            "EntityName": "Manassas Station Operations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqvv",
-            "EntityName": "Battle of White Oak Swamp"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt8k",
-            "EntityName": "Battle of Hoke's Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyf2",
-            "EntityName": "Battle of Hancock"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyvq",
-            "EntityName": "First Battle of Kernstown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyw1",
-            "EntityName": "Battle of McDowell"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyxv",
-            "EntityName": "Battle of Front Royal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vz0r",
-            "EntityName": "Battle of Port Republic"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d0mw",
-            "EntityName": "Battle of Chancellorsville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f777",
-            "EntityName": "Second Battle of Bull Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0kbq",
-            "EntityName": "American Civil War"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "QuestionId": "WebQTest-73",
     "RawQuestion": "what language do the maasai tribe speak?",
     "ProcessedQuestion": "what language do the maasai tribe speak",
@@ -2913,23 +153,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "m.064kl7",
             "EntityName": "Maasai Language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-74",
-    "RawQuestion": "who did benjamin franklin get married to?",
-    "ProcessedQuestion": "who did benjamin franklin get married to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019fz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019fz ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.01bl8s .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b15_0",
-            "EntityName": "Deborah Read"
           }
         ]
       }
@@ -3178,81 +401,57 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-77",
-    "RawQuestion": "what capital of austria?",
-    "ProcessedQuestion": "what capital of austria",
+    "QuestionId": "WebQTest-84",
+    "RawQuestion": "what type of music did john lennon sing?",
+    "ProcessedQuestion": "what type of music did john lennon sing",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0h7x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0h7x ns:location.country.capital ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01vsl3_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01vsl3_ ns:music.artist.genre ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0fhp9",
-            "EntityName": "Vienna"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-78",
-    "RawQuestion": "what type of cancer did eva peron have?",
-    "ProcessedQuestion": "what type of cancer did eva peron have",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0dltj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0dltj ns:people.deceased_person.cause_of_death ?x .\n?x ns:people.cause_of_death.parent_cause_of_death ns:m.0qcr0 .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d_bk",
-            "EntityName": "Cervical cancer"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-83",
-    "RawQuestion": "which countries speak german officially?",
-    "ProcessedQuestion": "which countries speak german officially",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04306rv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04306rv ns:language.human_language.countries_spoken_in ?x .\n?x ns:location.country.official_language ns:m.04306rv .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0154j",
-            "EntityName": "Belgium"
+            "AnswerArgument": "m.02k_kn",
+            "EntityName": "Soft rock"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0345h",
-            "EntityName": "Germany"
+            "AnswerArgument": "m.02yv6b",
+            "EntityName": "Blues rock"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.03f2w",
-            "EntityName": "East Germany"
+            "AnswerArgument": "m.03ckfl9",
+            "EntityName": "Experimental music"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04g61",
-            "EntityName": "Luxembourg"
+            "AnswerArgument": "m.05bt6j",
+            "EntityName": "Pop rock"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04j53",
-            "EntityName": "Liechtenstein"
+            "AnswerArgument": "m.05w3f",
+            "EntityName": "Psychedelic rock"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.06mzp",
-            "EntityName": "Switzerland"
+            "AnswerArgument": "m.064t9",
+            "EntityName": "Pop music"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0h7x",
-            "EntityName": "Austria"
+            "AnswerArgument": "m.06by7",
+            "EntityName": "Rock music"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08jyyk",
+            "EntityName": "Experimental rock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cx7f",
+            "EntityName": "Art rock"
           }
         ]
       }
@@ -3281,262 +480,39 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-86",
-    "RawQuestion": "which country does greenland belong to?",
-    "ProcessedQuestion": "which country does greenland belong to",
+    "QuestionId": "WebQTest-102",
+    "RawQuestion": "who played barbara gordon batgirl?",
+    "ProcessedQuestion": "who played barbara gordon batgirl",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035v3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035v3 ns:location.administrative_division.country ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03hvfx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03hvfx ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0k6nt",
-            "EntityName": "Denmark"
+            "AnswerArgument": "m.041w0w1",
+            "EntityName": "Ilyssa Fradin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0443_w",
+            "EntityName": "Melinda McGraw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0y54_x6",
+            "EntityName": "Hannah Gunn"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-88",
-    "RawQuestion": "who is willow smith mom name?",
-    "ProcessedQuestion": "who is willow smith mom name",
+    "QuestionId": "WebQTest-111",
+    "RawQuestion": "where is the carpathian mountain range located?",
+    "ProcessedQuestion": "where is the carpathian mountain range located",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03gq433)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03gq433 ns:people.person.parents ?x .\n?x ns:people.person.gender ns:m.02zsn .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01j7z7",
-            "EntityName": "Jada Pinkett Smith"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-89",
-    "RawQuestion": "what do you call the chinese writing system?",
-    "ProcessedQuestion": "what do you call the chinese writing system",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01r2l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01r2l ns:language.human_language.writing_system ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.014lbg",
-            "EntityName": "Nüshu script"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01mw7r",
-            "EntityName": "Simplified Chinese character"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01nf5z",
-            "EntityName": "Traditional Chinese characters"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050fyz",
-            "EntityName": "'Phags-pa script"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0mmzb",
-            "EntityName": "Chinese characters"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-90",
-    "RawQuestion": "who played on the jeffersons?",
-    "ProcessedQuestion": "who played on the jeffersons",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02f8jf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02f8jf ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02_yyp",
-            "EntityName": "Sherman Hemsley"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02_z06",
-            "EntityName": "Isabel Sanford"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0279gxy",
-            "EntityName": "Damon Evans"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0279gyz",
-            "EntityName": "Berlinda Tolbert"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03h436",
-            "EntityName": "Roxie Roker"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03k25c",
-            "EntityName": "Zara Cully"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03zwg4",
-            "EntityName": "Marla Gibbs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06b_nc",
-            "EntityName": "Franklin Cover"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c6b4y",
-            "EntityName": "Paul Benedict"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0clm34",
-            "EntityName": "Mike Evans"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gydmc",
-            "EntityName": "Jay Hammer"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-91",
-    "RawQuestion": "what is the name of the san francisco newspaper?",
-    "ProcessedQuestion": "what is the name of the san francisco newspaper",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d6lp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d6lp ns:periodicals.newspaper_circulation_area.newspapers ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0_l9flk",
-            "EntityName": "Dock of the Bay"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01v9vx",
-            "EntityName": "San Francisco Chronicle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01yrn5",
-            "EntityName": "Sing Tao Daily"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0271stb",
-            "EntityName": "The Daily Alta California"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rnd80",
-            "EntityName": "San Francisco Bay Times"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03g_4mj",
-            "EntityName": "Free Society"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03l2ys",
-            "EntityName": "San Francisco Bay Guardian"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03x7zl",
-            "EntityName": "San Francisco Bay View"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04j38b3",
-            "EntityName": "Synapse"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04tk4gw",
-            "EntityName": "California Star"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04zg67",
-            "EntityName": "The Golden Era"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06_gr",
-            "EntityName": "The San Francisco Examiner"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.085z3r",
-            "EntityName": "San Francisco Foghorn"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09573v",
-            "EntityName": "San Francisco Call"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09jj5c",
-            "EntityName": "Street Sheet"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b44w3m",
-            "EntityName": "San Francisco News-Call Bulletin Newspaper"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bsjtf",
-            "EntityName": "AsianWeek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d3zvq",
-            "EntityName": "San Francisco Daily"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f83cz",
-            "EntityName": "Bay Area Reporter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hqgb4v",
-            "EntityName": "San Francisco Business Times"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-93",
-    "RawQuestion": "what continent does armenia belong to?",
-    "ProcessedQuestion": "what continent does armenia belong to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jgx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jgx ns:base.locations.countries.continent ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0cdsk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0cdsk ns:location.location.containedby ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -3548,777 +524,906 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-95",
-    "RawQuestion": "what was the title of the book charles darwin wrote?",
-    "ProcessedQuestion": "what was the title of the book charles darwin wrote",
+    "QuestionId": "WebQTest-114",
+    "RawQuestion": "who did the voice of darth vader in episode 3?",
+    "ProcessedQuestion": "who did the voice of darth vader in episode 3",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01lwx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01lwx ns:book.author.works_written ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f2y0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f2y0 ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.film ns:m.0fdv3 .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.010rjsvs",
-            "EntityName": "Charles Darwin's zoology notes & specimen lists from H.M.S. Beagle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.010sfr1g",
-            "EntityName": "Charles Darwin's letters"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01qq45",
-            "EntityName": "The Voyage of the Beagle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02l2z6",
-            "EntityName": "The Descent of Man, and Selection in Relation to Sex"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02pzzmw",
-            "EntityName": "The zoology of the voyage of H.M.S. Beagle during the years 1832-1836"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03d86kx",
-            "EntityName": "The Effects of Cross and Self Fertilisation in the Vegetable Kingdom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39p_",
-            "EntityName": "On evolution"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39qh",
-            "EntityName": "A student's introduction to Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39qr",
-            "EntityName": "The Structure and Distribution of Coral Reefs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39r_",
-            "EntityName": "On Natural Selection"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39rr",
-            "EntityName": "From so simple a beginning"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04t39s7",
-            "EntityName": "Charles Darwin's natural selection"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bktj1",
-            "EntityName": "The Different Forms of Flowers on Plants of the Same Species"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bpwfw",
-            "EntityName": "South American Geology"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bpwqc",
-            "EntityName": "The Life and Letters of Charles Darwin Volume 1"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bpwrk",
-            "EntityName": "The Life and Letters of Charles Darwin Volume 2"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bpx28",
-            "EntityName": "The Essential Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05bpx3p",
-            "EntityName": "Evolutionary Writings: Including the Autobiographies"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05f3_5v",
-            "EntityName": "Fertilisation of Orchids"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05f3187",
-            "EntityName": "The Formation of Vegetable Mould through the Action of Worms"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05kdgws",
-            "EntityName": "The Darwin Reader First Edition"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05kdgx0",
-            "EntityName": "The Darwin Reader Second Edition"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05nhwt",
-            "EntityName": "The Autobiography of Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05pskf",
-            "EntityName": "The Expression of the Emotions in Man and Animals"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.062rrx",
-            "EntityName": "Darwin from Insectivorous Plants to Worms"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.067jgzq",
-            "EntityName": "The principal works"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.067q6ks",
-            "EntityName": "ontstaan der soorten door natuurlijke teeltkeus"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0682dh_",
-            "EntityName": "More Letters of Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0685fg8",
-            "EntityName": "Der Ausdruck der Gemüthsbewegungen bei dem Menschen und den Thieren"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.068kgmb",
-            "EntityName": "Wu zhong qi yuan"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.068zv2w",
-            "EntityName": "The collected papers of Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0698p22",
-            "EntityName": "Reise eines Naturforschers um die Welt"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.069gx8t",
-            "EntityName": "Rejse om jorden"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.069j1zn",
-            "EntityName": "Das Variiren der Thiere und Pflanzen im Zustande der Domestication"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.069mjtn",
-            "EntityName": "Leben und Briefe von Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06bk806",
-            "EntityName": "La faculté motrice dans les plantes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06by4cp",
-            "EntityName": "Darwin for Today"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06c2mtr",
-            "EntityName": "Die Bewegungen und Lebensweise der kletternden Pflanzen"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06c6q4x",
-            "EntityName": "red notebook of Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06c9lwy",
-            "EntityName": "Darwin en Patagonia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06cbh6d",
-            "EntityName": "Die geschlechtliche Zuchtwahl"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06cjxqf",
-            "EntityName": "Het uitdrukken van emoties bij mens en dier"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06cnkd2",
-            "EntityName": "variëeren der huisdieren en cultuurplanten"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06cvnt5",
-            "EntityName": "To the members of the Down Friendly Club"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06czk9t",
-            "EntityName": "Letters from C. Darwin, Esq., to A. Hancock, Esq"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dgzf9",
-            "EntityName": "Cartas de Darwin 18251859"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dhg29",
-            "EntityName": "Darwin and Henslow"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dhg2k",
-            "EntityName": "Darwin's notebooks on transmutation of species"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dp_0n",
-            "EntityName": "El Origin De Las Especies"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dplrp",
-            "EntityName": "A Darwin Selection"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dv5j2",
-            "EntityName": "Vospominanii︠a︡ o razvitii moego uma i kharaktera"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06f6v8g",
-            "EntityName": "Voyage d'un naturaliste autour du monde"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fdzsg",
-            "EntityName": "Théorie de l'évolution"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fkngp",
-            "EntityName": "Notebooks on transmutation of species"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fp6__",
-            "EntityName": "Darwin on humus and the earthworm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fz4ys",
-            "EntityName": "Opshṭamung fun menshen"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06g77fm",
-            "EntityName": "Über den Bau und die Verbreitung der Corallen-Riffe"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06ggf11",
-            "EntityName": "Darwin Compendium"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06gx9nb",
-            "EntityName": "The geology of the voyage of H.M.S. Beagle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06gxb0v",
-            "EntityName": "Gesammelte kleinere Schriften"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06h4s28",
-            "EntityName": "The portable Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06h96f4",
-            "EntityName": "H.M.S. Beagle in South America"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06hggft",
-            "EntityName": "Diario del Viaje de Un Naturalista Alrededor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06hks6x",
-            "EntityName": "Reise um die Welt 1831 - 36"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06hv624",
-            "EntityName": "Viaje de Un Naturalista Alrededor del Mundo 2 Vol"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06hxnc2",
-            "EntityName": "Die fundamente zur entstehung der arten"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06hz4px",
-            "EntityName": "Metaphysics, Materialism, & the evolution of mind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06j18wj",
-            "EntityName": "Über die Wege der Hummel-Männchen"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06j8lmr",
-            "EntityName": "The education of Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jbq8m",
-            "EntityName": "monograph on the sub-class Cirripedia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jc2s7",
-            "EntityName": "The Orgin of Species"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jcl9b",
-            "EntityName": "Questions about the breeding of animals"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jj8zx",
-            "EntityName": "Kleinere geologische Abhandlungen"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jw00r",
-            "EntityName": "Darwin Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06jygl6",
-            "EntityName": "Les mouvements et les habitudes des plantes grimpantes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06k4hmf",
-            "EntityName": "Les récifs de corail, leur structure et leur distribution"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06k7t44",
-            "EntityName": "Die Entstehung der Arten durch natürliche Zuchtwahl"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06km_gd",
-            "EntityName": "Del Plata a Tierra del Fuego"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06kmynd",
-            "EntityName": "Darwinism stated by Darwin himself"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06l7w7c",
-            "EntityName": "Human nature, Darwin's view"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06lcpyv",
-            "EntityName": "The action of carbonate of ammonia on the roots of certain plants"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06m68vy",
-            "EntityName": "Darwin-Wallace"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mc3j5",
-            "EntityName": "Die Wirkungen der Kreuz- und Selbst-Befruchtung im Pflanzenreich"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mmypb",
-            "EntityName": "From Darwin's unpublished notebooks"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06msmgd",
-            "EntityName": "Beagle letters"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mwj8z",
-            "EntityName": "The living thoughts of Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mx6qb",
-            "EntityName": "Notes on the fertilization of orchids"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06n4jwv",
-            "EntityName": "Volcanic Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06n65g8",
-            "EntityName": "Darwin's journal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06n8gzr",
-            "EntityName": "Memorias y epistolario íntimo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06n8zlx",
-            "EntityName": "On the tendency of species to form varieties"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06ndlh7",
-            "EntityName": "Darwin's Ornithological notes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06nhv9s",
-            "EntityName": "Proiskhozhdenie vidov"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06nxw56",
-            "EntityName": "The Power of Movement in Plants"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06p4t1s",
-            "EntityName": "Seul celui qui change reste fidèle à lui-même"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06pw5vt",
-            "EntityName": "Les moyens d'expression chez les animaux"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06px17_",
-            "EntityName": "Part I: Contributions to the Theory of Natural Selection / Part II"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06q9dnn",
-            "EntityName": "Resa kring jorden"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06qr9xq",
-            "EntityName": "Tesakneri tsagumě"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06qs0k_",
-            "EntityName": "La vie et la correspondance de Charles Darwin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06qxf6m",
-            "EntityName": "Evolution by natural selection"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06r08pz",
-            "EntityName": "Motsa ha-minim"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06r9mwf",
-            "EntityName": "La descendance de l'homme et la s©Øelection sexuelle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06rg6nf",
-            "EntityName": "Un mémoire inédit de Charles Darwin sur l'instinct"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06sh5th",
-            "EntityName": "Die verschiedenen Blütenformen an Pflanzen der nämlichen Art"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06syjt2",
-            "EntityName": "Darwin's insects"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06tjzfj",
-            "EntityName": "Diary of the voyage of H.M.S. Beagle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06tz8bh",
-            "EntityName": "geneseōs tōn eidōn"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07kbf6f",
-            "EntityName": "Insectivorous Plants"
-          },
+            "AnswerArgument": "m.0f276",
+            "EntityName": "Hayden Christensen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-115",
+    "RawQuestion": "what super bowl did peyton manning win?",
+    "ProcessedQuestion": "what super bowl did peyton manning win",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?z\nWHERE {\n  ns:m.027jv8 ns:sports.pro_athlete.teams ?y .\n  ?y ns:sports.sports_team_roster.team ?x . #team\n  ?x ns:sports.sports_team.championships ?z . # super bowls\n  ?z ns:common.topic.notable_types ns:m.01xljv1 . #super bowl\n  ?z ns:sports.sports_championship_event.champion ?c .\n  ?z ns:time.event.start_date ?a .\n  \n  # Check the time overlap\n  FILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \n             EXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \n             FILTER(xsd:datetime(?sk1) - xsd:datetime(?a) <= 0) })\n\n  FILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \n             EXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \n             FILTER(xsd:datetime(?sk3) - xsd:datetime(?a) >= 0 ) }) \n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04k5qm",
+            "EntityName": "Super Bowl XLI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-116",
+    "RawQuestion": "which country was justin bieber born in?",
+    "ProcessedQuestion": "which country was justin bieber born in",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n\tns:m.06w2sn5 ns:people.person.place_of_birth ?y .\n\t?y ns:location.location.containedby ?x .\n\t?x ns:common.topic.notable_types ns:m.01mp .  #Country\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-119",
+    "RawQuestion": "who plays london tipton in suite life on deck?",
+    "ProcessedQuestion": "who plays london tipton in suite life on deck",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03mj4jm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03mj4jm ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.07g8r3 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pmzb",
+            "EntityName": "Brenda Song"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-139",
+    "RawQuestion": "where is the nra headquarters located?",
+    "ProcessedQuestion": "where is the nra headquarters located",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0j6f9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0j6f9 ns:organization.organization.headquarters ?y .\n?y ns:location.mailing_address.citytown ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mnzd",
+            "EntityName": "Fairfax"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-145",
+    "RawQuestion": "what college did albert einstein go to?",
+    "ProcessedQuestion": "what college did albert einstein go to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jcx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jcx ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dyk8",
+            "EntityName": "ETH Zurich"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tpvt",
+            "EntityName": "University of Zurich"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-157",
+    "RawQuestion": "where is mission san buenaventura located?",
+    "ProcessedQuestion": "where is mission san buenaventura located",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gbsb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gbsb ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.07kd9wf",
-            "EntityName": "The Variation of Animals and Plants under Domestication"
+            "AnswerArgument": "m.01zs2h_",
+            "EntityName": "93001"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhjdm2",
-            "EntityName": "Charles Darwin, 1809-1882--Anton Dohrn, 1840-1909"
+            "AnswerArgument": "m.0l38x",
+            "EntityName": "Ventura County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-161",
+    "RawQuestion": "what university did gordon brown attend?",
+    "ProcessedQuestion": "what university did gordon brown attend",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03f77)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03f77 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h6rm",
+            "EntityName": "University of Edinburgh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-162",
+    "RawQuestion": "what countries does greece share borders with?",
+    "ProcessedQuestion": "what countries does greece share borders with",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035qy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035qy ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015qh",
+            "EntityName": "Bulgaria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01znc_",
+            "EntityName": "Turkey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bjv6",
+            "EntityName": "Republic of Macedonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jdx",
+            "EntityName": "Albania"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-173",
+    "RawQuestion": "what countries are part of the baltic?",
+    "ProcessedQuestion": "what countries are part of the baltic",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019tjm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019tjm ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kmm",
+            "EntityName": "Estonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g5k",
+            "EntityName": "Latvia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gzd",
+            "EntityName": "Lithuania"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-175",
+    "RawQuestion": "where did joe flacco attend college?",
+    "ProcessedQuestion": "where did joe flacco attend college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03d4lw7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03d4lw7 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01swxv",
+            "EntityName": "University of Delaware"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-176",
+    "RawQuestion": "who is emma stone father?",
+    "ProcessedQuestion": "who is emma stone father",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09yhzs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09yhzs ns:people.person.parents ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gx3qys",
+            "EntityName": "Jeff Stone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-184",
+    "RawQuestion": "what state does romney live in?",
+    "ProcessedQuestion": "what state does romney live in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0271_s)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0271_s ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n?x ns:common.topic.notable_types ns:m.0kpys4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05k7sb",
+            "EntityName": "Massachusetts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-189",
+    "RawQuestion": "what region of the world is egypt associated with?",
+    "ProcessedQuestion": "what region of the world is egypt associated with",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02k54)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02k54 ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01nt .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wsz",
+            "EntityName": "Middle East"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-191",
+    "RawQuestion": "where did drew brees go to college wikianswers?",
+    "ProcessedQuestion": "where did drew brees go to college wikianswers",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.030bdd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.030bdd ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02bb47",
+            "EntityName": "Stanford Graduate School of Business"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05x_5",
+            "EntityName": "Purdue University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-194",
+    "RawQuestion": "where did the iroquois indians come from?",
+    "ProcessedQuestion": "where did the iroquois indians come from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03x1x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03x1x ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05kr_",
+            "EntityName": "Ontario"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0694j",
+            "EntityName": "Québec"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-195",
+    "RawQuestion": "what kind of guitar did george harrison use?",
+    "ProcessedQuestion": "what kind of guitar did george harrison use",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03bnv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03bnv ns:music.guitarist.guitars_played ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02m873",
+            "EntityName": "Fender Stratocaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pqjvz",
+            "EntityName": "Rickenbacker 360/12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-209",
+    "RawQuestion": "where is laos in world map?",
+    "ProcessedQuestion": "where is laos in world map",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04hhv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04hhv ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01nt .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.073q1",
+            "EntityName": "Southeast Asia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-211",
+    "RawQuestion": "what countries are near italy?",
+    "ProcessedQuestion": "what countries are near italy",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03rjj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03rjj ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mzp",
+            "EntityName": "Switzerland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t8v",
+            "EntityName": "Slovenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f8l9c",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h7x",
+            "EntityName": "Austria"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-214",
+    "RawQuestion": "which continents were part of the roman empire?",
+    "ProcessedQuestion": "which continents were part of the roman empire",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06cmp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06cmp ns:location.location.partially_contained_by ?y .\n?y ns:location.partial_containment_relationship.partially_contained_by ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j9z",
+            "EntityName": "Europe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wsz",
+            "EntityName": "Middle East"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05g2v",
+            "EntityName": "North Africa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-216",
+    "RawQuestion": "where are the gobi desert located on a map?",
+    "ProcessedQuestion": "where are the gobi desert located on a map",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ff0d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ff0d ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w8f",
+            "EntityName": "Mongolia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-224",
+    "RawQuestion": "where did william morris go to college?",
+    "ProcessedQuestion": "where did william morris go to college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.08304)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.08304 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tgn",
+            "EntityName": "University of Oxford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ylvj",
+            "EntityName": "Exeter College, Oxford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-225",
+    "RawQuestion": "what state is mount st. helens in?",
+    "ProcessedQuestion": "what state is mount st. helens in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.094xz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.094xz ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.0kpys4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.081yw",
+            "EntityName": "Washington"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-234",
+    "RawQuestion": "what countries does the panama canal go through?",
+    "ProcessedQuestion": "what countries does the panama canal go through",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.066rl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.066rl ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qx1",
+            "EntityName": "Panama"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-240",
+    "RawQuestion": "what colleges did albert einstein teach at?",
+    "ProcessedQuestion": "what colleges did albert einstein teach at",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jcx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jcx ns:people.person.employment_history ?y .\n?y ns:business.employment_tenure.company ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0194_r",
+            "EntityName": "Institute for Advanced Study"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dyk8",
+            "EntityName": "ETH Zurich"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tpvt",
+            "EntityName": "University of Zurich"
           },
-          {
+          {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhjdm8",
-            "EntityName": "On a remarkable bar of sandstone off Pernambuco"
+            "AnswerArgument": "m.09hgk",
+            "EntityName": "Charles University in Prague"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhjdmk",
-            "EntityName": "The voyage of Charles Darwin"
-          },
-          {
+            "AnswerArgument": "m.0lvng",
+            "EntityName": "Leiden University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-247",
+    "RawQuestion": "where did flemish people come from?",
+    "ProcessedQuestion": "where did flemish people come from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.018hlv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.018hlv ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhjdmn",
-            "EntityName": "Works"
+            "AnswerArgument": "m.0154j",
+            "EntityName": "Belgium"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bqqynz",
-            "EntityName": "Geological observations on the volcanic islands and parts of South America visited during the voyage of H.M.S. 'Beagle"
+            "AnswerArgument": "m.015fr",
+            "EntityName": "Brazil"
           },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bqqyp6",
-            "EntityName": "Journal of researches into the natural history and geology of the countries visited during the voyage round the world of the H. M. S. 'Beagle' under the command of Captain Fitz Roy, R. N"
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chghy",
+            "EntityName": "Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1lr",
-            "EntityName": "Charles Darwin"
+            "AnswerArgument": "m.0f8l9c",
+            "EntityName": "France"
           },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1ly",
-            "EntityName": "Charles Darwin on the routes of male humble bees"
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hzlz",
+            "EntityName": "South Africa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-251",
+    "RawQuestion": "what type of currency do they use in england?",
+    "ProcessedQuestion": "what type of currency do they use in england",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02jx1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02jx1 ns:location.country.currency_used ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nv4h",
+            "EntityName": "Pound sterling"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-253",
+    "RawQuestion": "what countries included in the uk?",
+    "ProcessedQuestion": "what countries included in the uk",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ssc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ssc ns:base.aareas.schema.administrative_area.administrative_children ?x .\n?x ns:base.aareas.schema.administrative_area.administrative_area_type ns:m.0hzjlmp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jx1",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05bcl",
+            "EntityName": "Northern Ireland"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1m3",
-            "EntityName": "Charles Darwin's marginalia"
+            "AnswerArgument": "m.06q1r",
+            "EntityName": "Scotland"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1m6",
-            "EntityName": "Darwin"
-          },
+            "AnswerArgument": "m.0j5g9",
+            "EntityName": "Wales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-265",
+    "RawQuestion": "which airport to fly into rome?",
+    "ProcessedQuestion": "which airport to fly into rome",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c62 ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1mh",
-            "EntityName": "Evolution"
+            "AnswerArgument": "m.01ky5r",
+            "EntityName": "Leonardo da Vinci–Fiumicino Airport"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1ml",
-            "EntityName": "Evolution and natural selection"
-          },
+            "AnswerArgument": "m.033_52",
+            "EntityName": "Ciampino–G. B. Pastine International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-269",
+    "RawQuestion": "where does delaware river start?",
+    "ProcessedQuestion": "where does delaware river start",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0dtzd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0dtzd ns:geography.river.origin ?x .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1ms",
-            "EntityName": "The foundations of the Origin of species"
+            "AnswerArgument": "m.032h51",
+            "EntityName": "West Branch Delaware River"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1mz",
-            "EntityName": "Monographs of the fossil Lepadidae and the fossil Balanidae"
-          },
+            "AnswerArgument": "m.036r_7",
+            "EntityName": "Mount Jefferson"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-273",
+    "RawQuestion": "when did michael jordan return to the nba?",
+    "ProcessedQuestion": "when did michael jordan return to the nba",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.pro_athlete.sports_played_professionally ?y .\n?y ns:sports.pro_sports_played.career_start ?x .\n?y ns:sports.pro_sports_played.sport ns:m.018w8 .\n}\n",
+        "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1n1",
-            "EntityName": "On the origin of species by means of natural selection"
-          },
+            "AnswerType": "Value",
+            "AnswerArgument": "1984",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-282",
+    "RawQuestion": "which countries share a border with russia?",
+    "ProcessedQuestion": "which countries share a border with russia",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06bnz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06bnz ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0c1t1nb",
-            "EntityName": "Origins"
+            "AnswerArgument": "m.0163v",
+            "EntityName": "Belarus"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0cc54s",
-            "EntityName": "The Life of Erasmus Darwin"
+            "AnswerArgument": "m.02kmm",
+            "EntityName": "Estonia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0d_3d1b",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 1: 1821-1836"
+            "AnswerArgument": "m.02vzc",
+            "EntityName": "Finland"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0d_472q",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 2: 1837-1843"
+            "AnswerArgument": "m.047lj",
+            "EntityName": "Kazakhstan"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0bz0f",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 3: 1844-1846"
+            "AnswerArgument": "m.04g5k",
+            "EntityName": "Latvia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0c_dr",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 8: 1860"
+            "AnswerArgument": "m.04gzd",
+            "EntityName": "Lithuania"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0c2xv",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 4: 1847-1850"
+            "AnswerArgument": "m.04w8f",
+            "EntityName": "Mongolia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0c7c3",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 5: 1851-1855"
+            "AnswerArgument": "m.05b4w",
+            "EntityName": "Norway"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0ccfx",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 6: 1856-1857"
+            "AnswerArgument": "m.05b7q",
+            "EntityName": "North Korea"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0cnxy",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 7: 1858-1859"
+            "AnswerArgument": "m.05qhw",
+            "EntityName": "Poland"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0dh7c",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 9: 1861"
+            "AnswerArgument": "m.07t21",
+            "EntityName": "Ukraine"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0dvyt",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 10: 1862"
+            "AnswerArgument": "m.0d05w3",
+            "EntityName": "China"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0fhpx",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 11: 1863"
+            "AnswerArgument": "m.0d0kn",
+            "EntityName": "Georgia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0fsbb",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 12: 1864"
-          },
+            "AnswerArgument": "m.0jhd",
+            "EntityName": "Azerbaijan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-298",
+    "RawQuestion": "what year did the orioles go to the world series?",
+    "ProcessedQuestion": "what year did the orioles go to the world series",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01d6g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01d6g ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0g5py",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 13: 1865"
+            "AnswerArgument": "m.046_p6",
+            "EntityName": "1983 World Series"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0gnbh",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 14: 1866"
+            "AnswerArgument": "m.04jg7y",
+            "EntityName": "1970 World Series"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0hdk1",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 15: 1867"
-          },
+            "AnswerArgument": "m.04td_d",
+            "EntityName": "1966 World Series"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-303",
+    "RawQuestion": "where did margaret hoover go to college?",
+    "ProcessedQuestion": "where did margaret hoover go to college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03m6921)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03m6921 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0jl1d",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 18: 1870"
+            "AnswerArgument": "m.01g7_r",
+            "EntityName": "Bryn Mawr College"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0jl1p",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 17: 1869"
-          },
+            "AnswerArgument": "m.02pdhz",
+            "EntityName": "Davidson College"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-304",
+    "RawQuestion": "what is jamie oliver children names?",
+    "ProcessedQuestion": "what is jamie oliver children names",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01myph)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01myph ns:people.person.children ?x .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0f0jl1z",
-            "EntityName": "The Correspondence of Charles Darwin, Volume 16: 1868"
+            "AnswerArgument": "m.0b7m2p0",
+            "EntityName": "Petal Blossom Rainbow Oliver"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0hhv3fy",
-            "EntityName": "On the Movements and Habits of Climbing Plants"
+            "AnswerArgument": "m.0b7m2p7",
+            "EntityName": "Daisy Boo Pamela Oliver"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0kfq8k8",
-            "EntityName": "Geological Observations on the Volcanic Islands"
+            "AnswerArgument": "m.0b7m2pg",
+            "EntityName": "Poppy Honey Rosie Oliver"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0kfsvj7",
-            "EntityName": "Geological Observations on South America"
-          },
+            "AnswerArgument": "m.0gyd_td",
+            "EntityName": "Buddy Bear Maurice Oliver"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-305",
+    "RawQuestion": "where does bradley walsh live?",
+    "ProcessedQuestion": "where does bradley walsh live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05h48b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05h48b ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\nFILTER(NOT EXISTS {?y ns:people.place_lived.end_date ?sk0} || \nEXISTS {?y ns:people.place_lived.end_date ?sk1 . \nFILTER(xsd:datetime(?sk1) >= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.place_lived.start_date ?sk2} || \nEXISTS {?y ns:people.place_lived.start_date ?sk3 . \nFILTER(xsd:datetime(?sk3) <= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4rxbs",
-            "EntityName": "A Monograph on the Fossil Balanidæ and Verrucidæ of Great Britain"
+            "AnswerArgument": "m.030qb3t",
+            "EntityName": "Los Angeles"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4rydg",
-            "EntityName": "A Monograph of the Sub-class Cirripedia, with Figures of all the Species. The Balanidae (or Sessile Cirripedes); the Verrucidae, etc."
-          },
+            "AnswerArgument": "m.0h7h6",
+            "EntityName": "Toronto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-311",
+    "RawQuestion": "where is the ufc headquarters?",
+    "ProcessedQuestion": "where is the ufc headquarters",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016r3g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016r3g ns:organization.organization.headquarters ?y .\n?y ns:location.mailing_address.citytown ?x .\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4ryn4",
-            "EntityName": "A Monograph on the Fossil Lepadidae, or, Pedunculated Cirripedes of Great Britain"
-          },
+            "AnswerArgument": "m.0cv3w",
+            "EntityName": "Las Vegas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-313",
+    "RawQuestion": "who does albert pujols play for 2012?",
+    "ProcessedQuestion": "who does albert pujols play for 2012",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035gcb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035gcb ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2012-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2012-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4ryvd",
-            "EntityName": "A Monograph of the Sub-class Cirripedia, with Figures of all the Species. The Lepadidae; or, Pedunculated Cirripedes."
+            "AnswerArgument": "m.04wmvz",
+            "EntityName": "Los Angeles Angels of Anaheim"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4rzcc",
-            "EntityName": "Geology from A Manual of scientific enquiry; prepared for the use of Her Majesty's Navy: and adapted for travellers in general"
+            "AnswerArgument": "m.0f3wm2",
+            "EntityName": "Scottsdale Scorpions"
           }
         ]
       }

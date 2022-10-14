@@ -1,0 +1,1046 @@
+[
+  {
+    "QuestionId": "WebQTest-656",
+    "RawQuestion": "who is the president of costa rica in 2012?",
+    "ProcessedQuestion": "who is the president of costa rica in 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q27977064; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z > \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q57321",
+            "EntityName": "Laura Chinchilla"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-661",
+    "RawQuestion": "who did nasri play for before arsenal?",
+    "ProcessedQuestion": "who did nasri play for before arsenal",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1920 p:P54 ?p. ?p ps:P54 ?x; pq:P582 ?y. wd:Q1920 p:P54 ?q. ?q ps:P54 wd:Q9617; pq:P580 ?z. FILTER(?y <= ?z) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q132885",
+            "EntityName": "Olympique de Marseille"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1277549",
+            "EntityName": "France national under-21 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1450557",
+            "EntityName": "France national under-18 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1450568",
+            "EntityName": "France national under-17 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2701714",
+            "EntityName": "France national under-19 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3590033",
+            "EntityName": "France national under-16 association football team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-664",
+    "RawQuestion": "what was firefox programmed in?",
+    "ProcessedQuestion": "what was firefox programmed in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q698 wdt:P277 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q575650",
+            "EntityName": "Rust"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q726218",
+            "EntityName": "XML User Interface Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2005",
+            "EntityName": "JavaScript"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2407",
+            "EntityName": "C++"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15777",
+            "EntityName": "C"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q46441",
+            "EntityName": "Cascading Style Sheets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-666",
+    "RawQuestion": "where is isthmus of panama located on the map?",
+    "ProcessedQuestion": "where is isthmus of panama located on the map",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182139 wdt:P625 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-79.0 9.0)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-671",
+    "RawQuestion": "who are the senators of hawaii 2012?",
+    "ProcessedQuestion": "who are the senators of hawaii 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498906; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101499026; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) } }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q359366",
+            "EntityName": "Daniel Akaka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q312845",
+            "EntityName": "Daniel Inouye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1827902",
+            "EntityName": "Brian Schatz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-673",
+    "RawQuestion": "where did robert kardashian go to college?",
+    "ProcessedQuestion": "where did robert kardashian go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1816737 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q846829",
+            "EntityName": "USC Marshall School of Business"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262663",
+            "EntityName": "University of San Diego"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4614",
+            "EntityName": "University of Southern California"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7896235",
+            "EntityName": "University of San Diego School of Law"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-677",
+    "RawQuestion": "after how many years are the olympic games held?",
+    "ProcessedQuestion": "after how many years are the olympic games held",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5389 wdt:P2257 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "4",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-680",
+    "RawQuestion": "what team did aguero play for?",
+    "ProcessedQuestion": "what team did aguero play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q119562 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79800",
+            "EntityName": "Argentina national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q214978",
+            "EntityName": "Club Atlético Independiente"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1187790",
+            "EntityName": "Argentina national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2462207",
+            "EntityName": "Argentina national under-23 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2902690",
+            "EntityName": "Argentina national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7156",
+            "EntityName": "FC Barcelona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8701",
+            "EntityName": "Atlético Madrid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q50602",
+            "EntityName": "Manchester City F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-681",
+    "RawQuestion": "who is the president of the european union 2012?",
+    "ProcessedQuestion": "who is the president of the european union 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q740126; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17905",
+            "EntityName": "Martin Schulz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55910",
+            "EntityName": "Jerzy Buzek"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-683",
+    "RawQuestion": "what year was kenya moore crowned miss usa?",
+    "ProcessedQuestion": "what year was kenya moore crowned miss usa",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P1346 wd:Q447710; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1993-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-685",
+    "RawQuestion": "where does chef ina garten live?",
+    "ProcessedQuestion": "where does chef ina garten live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q273371 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-694",
+    "RawQuestion": "who is the prime minister of jamaica west indies?",
+    "ProcessedQuestion": "who is the prime minister of jamaica west indies",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q766 wdt:P6 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q505200",
+            "EntityName": "Andrew Holness"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-695",
+    "RawQuestion": "what role did paul mccartney play in the beatles?",
+    "ProcessedQuestion": "what role did paul mccartney play in the beatles",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1299 p:P527 ?p. ?p ps:P527 wd:Q2599; pq:P3831 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q177220",
+            "EntityName": "singer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1278335",
+            "EntityName": "instrumentalist"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-696",
+    "RawQuestion": "when did juventus win the champions league?",
+    "ProcessedQuestion": "when did juventus win the champions league",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P3450 wd:Q18756; wdt:P1346 wd:Q1422. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q642844",
+            "EntityName": "1984–85 European Cup"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26170",
+            "EntityName": "1995–96 UEFA Champions League"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-699",
+    "RawQuestion": "what is the capital of australia victoria state?",
+    "ProcessedQuestion": "what is the capital of australia victoria state",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q36687 wdt:P36 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3141",
+            "EntityName": "Melbourne"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-701",
+    "RawQuestion": "what team is reggie bush on 2011?",
+    "ProcessedQuestion": "what team is reggie bush on 2011",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q555271 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2011-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-702",
+    "RawQuestion": "what highschool did emily osment go to?",
+    "ProcessedQuestion": "what highschool did emily osment go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q188401 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-706",
+    "RawQuestion": "where did troy aikman play football?",
+    "ProcessedQuestion": "where did troy aikman play football",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q525002 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q204862",
+            "EntityName": "Dallas Cowboys"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10608114",
+            "EntityName": "Oklahoma Sooners football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-708",
+    "RawQuestion": "who won fa cup 1976?",
+    "ProcessedQuestion": "who won fa cup 1976",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3736714 wdt:P1346 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18732",
+            "EntityName": "Southampton F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-711",
+    "RawQuestion": "who plays chuck bass in gossip girl?",
+    "ProcessedQuestion": "who plays chuck bass in gossip girl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q5398426; p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2336506. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q297198",
+            "EntityName": "Ed Westwick"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-712",
+    "RawQuestion": "what countries have territories in oceania?",
+    "ProcessedQuestion": "what countries have territories in oceania",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P30 wd:Q538; wdt:P31 wd:Q6256. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q408",
+            "EntityName": "Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q664",
+            "EntityName": "New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q672",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q683",
+            "EntityName": "Samoa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q686",
+            "EntityName": "Vanuatu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q685",
+            "EntityName": "Solomon Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q691",
+            "EntityName": "Papua New Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q695",
+            "EntityName": "Palau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q697",
+            "EntityName": "Nauru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q702",
+            "EntityName": "Federated States of Micronesia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q710",
+            "EntityName": "Kiribati"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q709",
+            "EntityName": "Marshall Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q712",
+            "EntityName": "Fiji"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q252",
+            "EntityName": "Indonesia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16644",
+            "EntityName": "Northern Mariana Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26988",
+            "EntityName": "Cook Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34020",
+            "EntityName": "Niue"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-716",
+    "RawQuestion": "what language group does germany belong to?",
+    "ProcessedQuestion": "what language group does germany belong to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q188 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106937689",
+            "EntityName": "South Germanic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26721",
+            "EntityName": "West Germanic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q52040",
+            "EntityName": "High German"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-728",
+    "RawQuestion": "what is the name of the speaker of the house of representatives now 2011?",
+    "ProcessedQuestion": "what is the name of the speaker of the house of representatives now 2011",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q912994 wdt:P1308 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q170581",
+            "EntityName": "Nancy Pelosi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-729",
+    "RawQuestion": "who plays stanley hudson?",
+    "ProcessedQuestion": "who plays stanley hudson",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q7599690. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1050211",
+            "EntityName": "Leslie David Baker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-740",
+    "RawQuestion": "who was selena gomez in barney and friends?",
+    "ProcessedQuestion": "who was selena gomez in barney and friends",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q213588 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q83287. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-741",
+    "RawQuestion": "who plays caesar flickerman in the hunger games?",
+    "ProcessedQuestion": "who plays caesar flickerman in the hunger games",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q212965 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q14329656. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q223117",
+            "EntityName": "Stanley Tucci"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-749",
+    "RawQuestion": "who was president in 1988 in the united states?",
+    "ProcessedQuestion": "who was president in 1988 in the united states",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1989-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1988-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9960",
+            "EntityName": "Ronald Reagan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-751",
+    "RawQuestion": "who owns google 2012?",
+    "ProcessedQuestion": "who owns google 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P355 wd:Q95; wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q92747",
+            "EntityName": "Eric Schmidt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q92764",
+            "EntityName": "Sergey Brin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q849363",
+            "EntityName": "The Vanguard Group"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4934",
+            "EntityName": "Larry Page"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-755",
+    "RawQuestion": "what was bonnie prince charlie full name?",
+    "ProcessedQuestion": "what was bonnie prince charlie full name",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q312581 wdt:P1559 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Charles Edward Stuart",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-756",
+    "RawQuestion": "who makes the voice of stewie griffin?",
+    "ProcessedQuestion": "who makes the voice of stewie griffin",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q837909. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q188492",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-758",
+    "RawQuestion": "who is the governor of indiana 2009?",
+    "ProcessedQuestion": "who is the governor of indiana 2009",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16147601 wdt:P1308 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23016975",
+            "EntityName": "Eric Holcomb"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-759",
+    "RawQuestion": "who brad pitt has dated?",
+    "ProcessedQuestion": "who brad pitt has dated",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35332 wdt:P26|wdt:P451 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13909",
+            "EntityName": "Angelina Jolie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q32522",
+            "EntityName": "Jennifer Aniston"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q230523",
+            "EntityName": "Juliette Lewis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34460",
+            "EntityName": "Gwyneth Paltrow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-764",
+    "RawQuestion": "where did john mayer go to college?",
+    "ProcessedQuestion": "where did john mayer go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q215215 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q248970",
+            "EntityName": "Berklee College of Music"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-768",
+    "RawQuestion": "who owns volkswagen car company?",
+    "ProcessedQuestion": "who owns volkswagen car company",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P355 wd:Q246; wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1529289",
+            "EntityName": "Hannoversche Beteiligungsgesellschaft"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1571175",
+            "EntityName": "Qatar Investment Authority"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2104551",
+            "EntityName": "Porsche Automobil Holding SE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-769",
+    "RawQuestion": "which is the main train station in rome?",
+    "ProcessedQuestion": "which is the main train station in rome",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q18543139; wdt:P131 wd:Q220. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-771",
+    "RawQuestion": "who is the newly elected governor of california?",
+    "ProcessedQuestion": "who is the newly elected governor of california",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q887010 wdt:P1308 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q461391",
+            "EntityName": "Gavin Newsom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-772",
+    "RawQuestion": "who plays roxanne in ghost rider?",
+    "ProcessedQuestion": "who plays roxanne in ghost rider",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41754 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q7372377. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q170606",
+            "EntityName": "Eva Mendes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-773",
+    "RawQuestion": "where is the sony ericsson company?",
+    "ProcessedQuestion": "where is the sony ericsson company",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q376692 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q190088",
+            "EntityName": "Minato-ku"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-777",
+    "RawQuestion": "where is the main headquarters of google?",
+    "ProcessedQuestion": "where is the main headquarters of google",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q95 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q694178",
+            "EntityName": "Googleplex"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-779",
+    "RawQuestion": "where does carlos santana live?",
+    "ProcessedQuestion": "where does carlos santana live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q819016 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-782",
+    "RawQuestion": "what countries does nafta include?",
+    "ProcessedQuestion": "what countries does nafta include",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q181574 wdt:P527 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96",
+            "EntityName": "Mexico"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-785",
+    "RawQuestion": "who does michael keaton play in cars?",
+    "ProcessedQuestion": "who does michael keaton play in cars",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182153 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q138005; pq:P453 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26807260",
+            "EntityName": "Chick Hicks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-788",
+    "RawQuestion": "what is the holy book of the buddhist religion?",
+    "ProcessedQuestion": "what is the holy book of the buddhist religion",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q748 wdt:P457 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1321432",
+            "EntityName": "Tripitaka"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-794",
+    "RawQuestion": "who does the voice for darth vader?",
+    "ProcessedQuestion": "who does the voice for darth vader",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q51752. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q312535",
+            "EntityName": "Matt Lanter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3851679",
+            "EntityName": "Mat Lucas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-798",
+    "RawQuestion": "what states share a border with tennessee?",
+    "ProcessedQuestion": "what states share a border with tennessee",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1509 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1370",
+            "EntityName": "Virginia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1428",
+            "EntityName": "Georgia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1454",
+            "EntityName": "North Carolina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1494",
+            "EntityName": "Mississippi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1581",
+            "EntityName": "Missouri"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1603",
+            "EntityName": "Kentucky"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1612",
+            "EntityName": "Arkansas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q173",
+            "EntityName": "Alabama"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "QuestionId": "WebQTest-663",
+    "RawQuestion": "what age did william penn get married?",
+    "ProcessedQuestion": "what age did william penn get married",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.083qr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.083qr ns:people.person.spouse_s ?y .\n?y ns:people.marriage.from ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1672-04-04",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-676",
+    "RawQuestion": "what did the akkadian empire include?",
+    "ProcessedQuestion": "what did the akkadian empire include",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0q_7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0q_7 ns:location.location.contains ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n541jb",
+            "EntityName": "Akkad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-678",
+    "RawQuestion": "what system of government does guyana have?",
+    "ProcessedQuestion": "what system of government does guyana have",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.034m8)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.034m8 ns:location.country.form_of_government ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dw03",
+            "EntityName": "Semi-presidential system"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fpfn",
+            "EntityName": "Unitary state"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06cx9",
+            "EntityName": "Republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-792",
+    "RawQuestion": "when did roth ira originate?",
+    "ProcessedQuestion": "when did roth ira originate",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.023_lp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.023_lp ns:symbols.namesake.named_after ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.023xsb",
+            "EntityName": "William V. Roth, Jr."
+          }
+        ]
+      }
+    ]
+  }
+]

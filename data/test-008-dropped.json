@@ -1,0 +1,34 @@
+[
+  {
+    "QuestionId": "WebQTest-1399",
+    "RawQuestion": "what products does the united states export?",
+    "ProcessedQuestion": "what products does the united states export",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9wp2",
+            "EntityName": "Food Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd_n",
+            "EntityName": "Pharmaceutical Preparation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtf10",
+            "EntityName": "Industrial Organic Chemicals, NEC"
+          }
+        ]
+      }
+    ]
+  }
+]

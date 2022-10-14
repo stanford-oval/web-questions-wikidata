@@ -17,8 +17,10 @@ export class PatternMatcher {
                 raw[example.QuestionId] = example.Parses[0].Sparql;
         }
         const annotated : Record<string, string> = {};
-        for (const fname of ['train-000-annotated.json', 'train-001-annotated.json']) {
-            const examples = JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data', fname), 'utf-8'));
+        const dirCont = fs.readdirSync( path.join(__dirname, '../../../data/annotated') );
+        const annotatedFiles = dirCont.filter( (fname) => fname.match(/.*\.(json?)/ig));
+        for (const fname of annotatedFiles) {
+            const examples = JSON.parse(fs.readFileSync(path.join(__dirname, '../../../data/annotated', fname), 'utf-8'));
             for (const example of examples) 
                 annotated[example.QuestionId] = example.Parses[0].Sparql;
         }
@@ -48,7 +50,7 @@ export class PatternMatcher {
             if (!this._mapper.hasEntity(entity))
                 return;
             const qid = this._mapper.map(entity)!;
-            wdSPARQL.replace(new RegExp(qid, 'g'), `_e_` + i);
+            wdSPARQL = wdSPARQL.replace(new RegExp(qid, 'g'), `_e_` + i);
         }
         wdSPARQL = wdSPARQL.replace(/\s+/g, ' ');
         this._patterns[preprocessedSPARQL] = wdSPARQL;

@@ -1,0 +1,102 @@
+[
+  {
+    "QuestionId": "WebQTest-550",
+    "RawQuestion": "what is ryan seacrest radio show?",
+    "ProcessedQuestion": "what is ryan seacrest radio show",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02b9g4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02b9g4 ns:broadcast.artist.content ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ttn8",
+            "EntityName": "American Top 40"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047m5ls",
+            "EntityName": "On Air with Ryan Seacrest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-555",
+    "RawQuestion": "what did drew barrymore go to rehab for?",
+    "ProcessedQuestion": "what did drew barrymore go to rehab for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.026c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.026c1 ns:celebrities.celebrity.substance_abuse_problems ?y .\n?y ns:celebrities.substance_abuse_problem.substance ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012mj",
+            "EntityName": "Alcoholic beverage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0256b",
+            "EntityName": "Cocaine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-609",
+    "RawQuestion": "who played jeannie?",
+    "ProcessedQuestion": "who played jeannie",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.025m13)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.025m13 ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.04lqy4g .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034jjp",
+            "EntityName": "Barbara Eden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-619",
+    "RawQuestion": "who played victoria barkley?",
+    "ProcessedQuestion": "who played victoria barkley",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.030k44)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.030k44 ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.09cyx23 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bw6y",
+            "EntityName": "Barbara Stanwyck"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-652",
+    "RawQuestion": "what kind of hispanic is selena gomez?",
+    "ProcessedQuestion": "what kind of hispanic is selena gomez",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gs6vr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gs6vr ns:people.person.ethnicity ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09k5jvk",
+            "EntityName": "Mexicans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0xnvg",
+            "EntityName": "Italian American"
+          }
+        ]
+      }
+    ]
+  }
+]

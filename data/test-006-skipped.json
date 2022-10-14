@@ -1,0 +1,90 @@
+[
+  {
+    "QuestionId": "WebQTest-1061",
+    "RawQuestion": "where does greek language come from?",
+    "ProcessedQuestion": "where does greek language come from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0349s)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0349s ns:base.rosetta.languoid.parent ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tk2xx",
+            "EntityName": "Attic Group"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1074",
+    "RawQuestion": "who is lamar odom playing for this year?",
+    "ProcessedQuestion": "who is lamar odom playing for this year",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02_nkp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02_nkp ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s9mb",
+            "EntityName": "Saski Baskonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jm3v",
+            "EntityName": "New York Knicks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jmcv",
+            "EntityName": "Dallas Mavericks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jmjr",
+            "EntityName": "Los Angeles Clippers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jmk7",
+            "EntityName": "Los Angeles Lakers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1108",
+    "RawQuestion": "what radio station is npr on in nyc?",
+    "ProcessedQuestion": "what radio station is npr on in nyc",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c0sl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c0sl ns:broadcast.radio_network.affiliates ?y .\n?y ns:broadcast.radio_affiliation_duration.station ?x .\n?x ns:broadcast.broadcast.area_served ns:m.02_286 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_3by",
+            "EntityName": "WNYC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1127",
+    "RawQuestion": "which country in north america is divided into provinces?",
+    "ProcessedQuestion": "which country in north america is divided into provinces",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n    ns:m.059g4 ns:location.location.contains ?x .  # North America\n    ?x ns:common.topic.notable_types ns:m.01mp . # Country\n    ?x ns:location.location.contains ?y .\n    ?y ns:common.topic.notable_types ?t . \n# All the possible \"province\" type\nFILTER ((?t = ns:m.01nm) ||\n(?t = ns:m.02_1y_9) ||\n(?t = ns:m.02_3ny_) ||\n(?t = ns:m.02_3phk) ||\n(?t = ns:m.02_3r2r) ||\n(?t = ns:m.02_3rt3) ||\n(?t = ns:m.02_3zf4) ||\n(?t = ns:m.02_40h1) ||\n(?t = ns:m.02_96lm) ||\n(?t = ns:m.02yxk5c) ||\n(?t = ns:m.02zd6yn) ||\n(?t = ns:m.03z96kq) ||\n(?t = ns:m.04g7rg9) ||\n(?t = ns:m.04js0h5) ||\n(?t = ns:m.065rjpr) ||\n(?t = ns:m.078_8dm) ||\n(?t = ns:m.0hzcb3l) ||\n(?t = ns:m.0hzcb5p) ||\n(?t = ns:m.0hzcb69) ||\n(?t = ns:m.0hzcb7p) ||\n(?t = ns:m.0hzcd76) ||\n(?t = ns:m.0hzcd7v) ||\n(?t = ns:m.0hzcdb0) ||\n(?t = ns:m.0hzcdd6) ||\n(?t = ns:m.0hzcdlq) ||\n(?t = ns:m.0hzcdmg) ||\n(?t = ns:m.0hzcdrj) ||\n(?t = ns:m.0hzcdzg) ||\n(?t = ns:m.0hzcdzv) ||\n(?t = ns:m.0hzcf4d) ||\n(?t = ns:m.0hzcf50) ||\n(?t = ns:m.0hzcfdx) ||\n(?t = ns:m.0hzcffv) ||\n(?t = ns:m.0hzcfgg) ||\n(?t = ns:m.0hzcfj0) ||\n(?t = ns:m.0hzcfm2) ||\n(?t = ns:m.0hzcfpz) ||\n(?t = ns:m.0hzcfsv) ||\n(?t = ns:m.0hzcfyb) ||\n(?t = ns:m.0hzcg20) ||\n(?t = ns:m.0hzcg90) ||\n(?t = ns:m.0hzcgdz) ||\n(?t = ns:m.0hzcgfl) ||\n(?t = ns:m.0hzcggv) ||\n(?t = ns:m.0hzcgj2) ||\n(?t = ns:m.0hzcgk4) ||\n(?t = ns:m.0hzcgny) ||\n(?t = ns:m.0hzcgqt) ||\n(?t = ns:m.0hzcgsp) ||\n(?t = ns:m.0hzcgvh) ||\n(?t = ns:m.0hzcgvw) ||\n(?t = ns:m.0hzcgxf) ||\n(?t = ns:m.0hzcjv6) ||\n(?t = ns:m.0hzcjvv) ||\n(?t = ns:m.0hzcjxq) ||\n(?t = ns:m.0hzck_1) ||\n(?t = ns:m.0hzck1r) ||\n(?t = ns:m.0hzck47) ||\n(?t = ns:m.0hzck7p) ||\n(?t = ns:m.0hzckbh) ||\n(?t = ns:m.0hzckgc) ||\n(?t = ns:m.0hzcklh) ||\n(?t = ns:m.0hzckv_) ||\n(?t = ns:m.0hzckvp) ||\n(?t = ns:m.0hzckwy) ||\n(?t = ns:m.0hzcl1k) ||\n(?t = ns:m.0hzcl2t) ||\n(?t = ns:m.0hzfxh6) ||\n(?t = ns:m.0hzfxjh) ||\n(?t = ns:m.0hzfxny) ||\n(?t = ns:m.0hzfxv1) ||\n(?t = ns:m.0hzfxx7) ||\n(?t = ns:m.0hzfxzs) ||\n(?t = ns:m.0hzfy0d) ||\n(?t = ns:m.0hz_gjz) ||\n(?t = ns:m.0hzjldq) ||\n(?t = ns:m.0hzjm9b) ||\n(?t = ns:m.0hzjmf9) ||\n(?t = ns:m.0hzjmjf) ||\n(?t = ns:m.0hzjmlj) ||\n(?t = ns:m.0hzjmm6) ||\n(?t = ns:m.0hzjmmx) ||\n(?t = ns:m.0j1zd59) ||\n(?t = ns:m.0j1zd5w) )\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          }
+        ]
+      }
+    ]
+  }
+]

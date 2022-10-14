@@ -1,0 +1,13 @@
+[
+  {
+    "QuestionId": "WebQTest-722",
+    "RawQuestion": "what is the name of the book hitler wrote in jail?",
+    "ProcessedQuestion": "what is the name of the book hitler wrote in jail",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n  FILTER (xsd:dateTime(?d) - xsd:dateTime(?from) >= 0)\n  FILTER (xsd:dateTime(?to) - xsd:dateTime(?d) >= 0)\n}",
+        "Answers": []
+      }
+    ]
+  }
+]

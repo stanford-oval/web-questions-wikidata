@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 import * as argparse from 'argparse';
 import { 
     Parser, 
@@ -175,6 +176,21 @@ export default class FB2WDConverter {
     }
 }
 
+async function loadDropped() {
+    const rPath = path.relative(__dirname, 'data/dropped');
+    const dir = fs.readdirSync(path.join(__dirname, rPath));
+    const files = dir.filter( (fname) => fname.match(/.*\.(json?)/ig));
+    let items : any = {};
+    for (const fname of files) {
+        const examples = JSON.parse(fs.readFileSync(path.join(__dirname, rPath, fname), 'utf-8'));
+        for (const ex of examples) {
+            const key = ex.QuestionId;
+            items[key] = ex.RawQuestion;
+        }
+    }
+    return items;
+}
+
 async function main() {
     const parser = new argparse.ArgumentParser({
         add_help : true,
@@ -192,15 +208,25 @@ async function main() {
         required: true,
         help: 'path to the file for skipped examples'
     });
+    parser.add_argument('--dropped', {
+        required: false,
+        help: 'path to the file for skipped examples'
+    });
     const args = parser.parse_args();
     const fbQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
+    const droppedQuestions = await loadDropped();
     const wikidata = new WikidataUtils('wikidata.sqlite');
     const converter = new FB2WDConverter(wikidata);
     const annotated = [];
     const skipped = [];
+    const dropped = [];
     for (const ex of fbQuestions.Questions) {
         const example = loadExample(ex);
         const noAnswer = example.Parses[0].Answers.length === 0;
+        if (ex.QuestionId in droppedQuestions) {
+            dropped.push(example);
+            continue;
+        }
         let skip = true;
         for (const p of example.Parses) {
             const converted = await converter.convert(p.Sparql);
@@ -249,11 +275,17 @@ async function main() {
     console.log(converter.counter);
     console.log('Annotated: ', annotated.length);
     console.log('Skipped: ', skipped.length);
+    console.log('Dropped: ', dropped.length);
     fs.writeFileSync('data/missing-entity-mappings.tsv', [...converter.missingEntityMappings].join('\n'));
     fs.writeFileSync('data/missing-property-mappings.tsv', [...converter.missingPropertyMappings].join('\n'));
     fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
-    fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));    
+    fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));
+    fs.writeFileSync(args.dropped, JSON.stringify(dropped, null, 2));    
 }
 
-if (require.main === module)
+if (require.main === module) {
+    const hrstart = process.hrtime();
     main();
+    const hrend = process.hrtime(hrstart);
+    console.log('Execution time: %ds %dms', hrend[0], hrend[1] / 1000000);
+}

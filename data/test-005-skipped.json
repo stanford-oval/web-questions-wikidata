@@ -1,0 +1,49 @@
+[
+  {
+    "QuestionId": "WebQTest-1021",
+    "RawQuestion": "what happened at benghazi?",
+    "ProcessedQuestion": "what happened at benghazi",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01czt9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01czt9 ns:location.location.events ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136_03w",
+            "EntityName": "Operation Dignity Battle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136zn1t",
+            "EntityName": "Battle of Benina Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gg5z_1",
+            "EntityName": "First Battle of Benghazi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj8wbw",
+            "EntityName": "Second Battle of Benghazi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m1x86k",
+            "EntityName": "2012 U.S. diplomatic missions attacks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n4bfmd",
+            "EntityName": "2012 Benghazi attack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w1f1vz",
+            "EntityName": "2013 Benghazi conflict"
+          }
+        ]
+      }
+    ]
+  }
+]

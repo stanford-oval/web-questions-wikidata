@@ -1,0 +1,124 @@
+[
+  {
+    "QuestionId": "WebQTest-1204",
+    "RawQuestion": "where did the anasazi indians live?",
+    "ProcessedQuestion": "where did the anasazi indians live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0lyq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0lyq ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027v6g",
+            "EntityName": "Four Corners"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1217",
+    "RawQuestion": "what is monta ellis career high points?",
+    "ProcessedQuestion": "what is monta ellis career high points",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06rsnl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06rsnl ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.award ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06js8m",
+            "EntityName": "NBA Most Improved Player Award"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1233",
+    "RawQuestion": "what are the colors of the ny giants?",
+    "ProcessedQuestion": "what are the colors of the ny giants",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05gg4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05gg4 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01g5v",
+            "EntityName": "Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036k5h",
+            "EntityName": "Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06fvc",
+            "EntityName": "Red"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1234",
+    "RawQuestion": "what business did andrew carnegie dominate?",
+    "ProcessedQuestion": "what business did andrew carnegie dominate",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0vdk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0vdk ns:base.kwebbase.kwtopic.disciplines ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "financier",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "steel",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1292",
+    "RawQuestion": "which barcelona airport is closest to the port?",
+    "ProcessedQuestion": "which barcelona airport is closest to the port",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f62 ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013q7r",
+            "EntityName": "Barcelona–El Prat Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1294",
+    "RawQuestion": "what country did hitler invade that started ww2?",
+    "ProcessedQuestion": "what country did hitler invade that started ww2",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.081pw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.081pw ns:time.event.includes_event ?x .\n?x ns:time.event.start_date ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gmbk71",
+            "EntityName": "Battle of Falmouth"
+          }
+        ]
+      }
+    ]
+  }
+]
