@@ -1,0 +1,2119 @@
+[
+  {
+    "QuestionId": "WebQTest-1489",
+    "RawQuestion": "what character did billy d williams play in star wars?",
+    "ProcessedQuestion": "what character did billy d williams play in star wars",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q7353334 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q358345; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1495",
+    "RawQuestion": "where does airtran airways fly?",
+    "ProcessedQuestion": "where does airtran airways fly",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q406695 wdt:P113 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q94895",
+            "EntityName": "Baltimore/Washington International Thurgood Marshall Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q214861",
+            "EntityName": "Hartsfield–Jackson Atlanta International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q537950",
+            "EntityName": "Milwaukee Mitchell International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q929859",
+            "EntityName": "Orlando International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1500",
+    "RawQuestion": "where is olympic national park located?",
+    "ProcessedQuestion": "where is olympic national park located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q372093 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q111904",
+            "EntityName": "Mason County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q156306",
+            "EntityName": "Clallam County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q384737",
+            "EntityName": "Jefferson County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q493222",
+            "EntityName": "Grays Harbor County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1508",
+    "RawQuestion": "when did bill clinton go to college?",
+    "ProcessedQuestion": "when did bill clinton go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1124 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q128047",
+            "EntityName": "Walsh School of Foreign Service"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1143289",
+            "EntityName": "Yale Law School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1510",
+    "RawQuestion": "what are staffordshire terriers?",
+    "ProcessedQuestion": "what are staffordshire terriers",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q39285 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q144",
+            "EntityName": "dog"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1518",
+    "RawQuestion": "what countries are involved in the nafta?",
+    "ProcessedQuestion": "what countries are involved in the nafta",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q181574 wdt:P527 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96",
+            "EntityName": "Mexico"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1519",
+    "RawQuestion": "what continent is cayman islands located?",
+    "ProcessedQuestion": "what continent is cayman islands located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5785 wdt:P30 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49",
+            "EntityName": "North America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1522",
+    "RawQuestion": "who does kroy biermann play football for?",
+    "ProcessedQuestion": "who does kroy biermann play football for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6439123 wdt:P54 ?x. ?x wdt:P31 wd:Q17156793. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q272059",
+            "EntityName": "Atlanta Falcons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6904264",
+            "EntityName": "Montana Grizzlies football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1523",
+    "RawQuestion": "when is the last time the pittsburgh steelers won a superbowl?",
+    "ProcessedQuestion": "when is the last time the pittsburgh steelers won a superbowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q191477; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2009-02-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1524",
+    "RawQuestion": "who invented islamic religion?",
+    "ProcessedQuestion": "who invented islamic religion",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q432 wdt:P112 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9458",
+            "EntityName": "Muhammad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1533",
+    "RawQuestion": "what planet did luke skywalker came from?",
+    "ProcessedQuestion": "what planet did luke skywalker came from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51746 wdt:P19 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3225233",
+            "EntityName": "Polis Massa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1534",
+    "RawQuestion": "who are the coaches for the oakland raiders?",
+    "ProcessedQuestion": "who are the coaches for the oakland raiders",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q324523 wdt:P286 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q365882",
+            "EntityName": "Jon Gruden"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1535",
+    "RawQuestion": "where was the first microsoft headquarters located?",
+    "ProcessedQuestion": "where was the first microsoft headquarters located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2283 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q223718",
+            "EntityName": "Redmond"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1536",
+    "RawQuestion": "where did john steinbeck go to college?",
+    "ProcessedQuestion": "where did john steinbeck go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q39212 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41506",
+            "EntityName": "Stanford University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1544",
+    "RawQuestion": "who was president after william henry harrison?",
+    "ProcessedQuestion": "who was president after william henry harrison",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696; pq:P580 ?y. wd:Q11869 p:P39 ?q. ?q ps:P39 wd:Q11696; pq:P580 ?z. FILTER(?y > ?z) FILTER(?y > ?z) } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11881",
+            "EntityName": "John Tyler"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1546",
+    "RawQuestion": "where did rick santorum attend high school?",
+    "ProcessedQuestion": "where did rick santorum attend high school",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q155985 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5002649",
+            "EntityName": "Butler Senior High School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5043289",
+            "EntityName": "Carmel High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1547",
+    "RawQuestion": "what is the title of george bush's new book?",
+    "ProcessedQuestion": "what is the title of george bush 's new book",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q207; wdt:P577 ?y; wdt:P31 wd:Q7725634. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29097574",
+            "EntityName": "Portraits of Courage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1551",
+    "RawQuestion": "what year did seattle seahawks go to the super bowl?",
+    "ProcessedQuestion": "what year did seattle seahawks go to the super bowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1923 wd:Q221878; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2014-02-02T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2015-02-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2006-02-05T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1553",
+    "RawQuestion": "where does sami yusuf live?",
+    "ProcessedQuestion": "where does sami yusuf live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q558226 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1556",
+    "RawQuestion": "when's the last time the mets won the world series?",
+    "ProcessedQuestion": "when 's the last time the mets won the world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q692417. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1986-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1558",
+    "RawQuestion": "who is john cena married to?",
+    "ProcessedQuestion": "who is john cena married to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q44437 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1562",
+    "RawQuestion": "what countries constitute the eu?",
+    "ProcessedQuestion": "what countries constitute the eu",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q458 wdt:P527 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q67147037",
+            "EntityName": "European Union border"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q27",
+            "EntityName": "Republic of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28",
+            "EntityName": "Hungary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29",
+            "EntityName": "Spain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34",
+            "EntityName": "Sweden"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35",
+            "EntityName": "Denmark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q32",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q33",
+            "EntityName": "Finland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q38",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36",
+            "EntityName": "Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37",
+            "EntityName": "Lithuania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40",
+            "EntityName": "Austria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41",
+            "EntityName": "Greece"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q45",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55",
+            "EntityName": "Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q183",
+            "EntityName": "Germany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q191",
+            "EntityName": "Estonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q211",
+            "EntityName": "Latvia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q214",
+            "EntityName": "Slovakia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q215",
+            "EntityName": "Slovenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q213",
+            "EntityName": "Czech Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q218",
+            "EntityName": "Romania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219",
+            "EntityName": "Bulgaria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q224",
+            "EntityName": "Croatia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q229",
+            "EntityName": "Cyprus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q233",
+            "EntityName": "Malta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1563",
+    "RawQuestion": "what are all the countries in north africa?",
+    "ProcessedQuestion": "what are all the countries in north africa",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q27381 wdt:P527 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q948",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1016",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5823",
+            "EntityName": "Ceuta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6250",
+            "EntityName": "Western Sahara"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79",
+            "EntityName": "Egypt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1566",
+    "RawQuestion": "what kind of guitar john mayer?",
+    "ProcessedQuestion": "what kind of guitar john mayer",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P279* wd:Q6607; wdt:P1535 wd:Q215215. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1567",
+    "RawQuestion": "what cancer did patrick swayze?",
+    "ProcessedQuestion": "what cancer did patrick swayze",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q49004 wdt:P509 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q212961",
+            "EntityName": "pancreatic cancer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1571",
+    "RawQuestion": "what is sir isaac newton theory?",
+    "ProcessedQuestion": "what is sir isaac newton theory",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x wdt:P31/wdt:P279* wd:Q408891; wdt:P61 wd:Q935. } UNION { ?x wdt:P31/wdt:P279* wd:Q408891; wdt:P138 wd:Q935. } }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134465",
+            "EntityName": "Newton's law of universal gravitation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2397319",
+            "EntityName": "Newton's second law of motion for constant mass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2902868",
+            "EntityName": "Newton's law of cooling"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3235565",
+            "EntityName": "Newton's third law of motion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3235671",
+            "EntityName": "Newton's first law"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12040853",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1575",
+    "RawQuestion": "what products and\\/or services does google offer customers?",
+    "ProcessedQuestion": "what products and\\/or services does google offer customers",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q95 wdt:P1830 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79564",
+            "EntityName": "Google Now"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q135622",
+            "EntityName": "Google Translate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q164203",
+            "EntityName": "VirusTotal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q166561",
+            "EntityName": "Google Fiber"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q170438",
+            "EntityName": "111 Eighth Avenue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q171186",
+            "EntityName": "Blogger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q183480",
+            "EntityName": "Google AdSense"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q185179",
+            "EntityName": "Knol"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q206033",
+            "EntityName": "Google Books"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q207656",
+            "EntityName": "Apache Wave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q213602",
+            "EntityName": "Google Street View"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219885",
+            "EntityName": "Google Videos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q220577",
+            "EntityName": "Google Analytics"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q231396",
+            "EntityName": "Orkut"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q239516",
+            "EntityName": "Panoramio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q271982",
+            "EntityName": "Google Ads"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q305910",
+            "EntityName": "iGoogle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q306623",
+            "EntityName": "elgooG"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q328216",
+            "EntityName": "Google Search Console"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q369089",
+            "EntityName": "Google Arts & Culture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q371060",
+            "EntityName": "Google Reader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q431241",
+            "EntityName": "Google Labs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q473873",
+            "EntityName": "Vevo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q476786",
+            "EntityName": "Google Buzz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q494817",
+            "EntityName": "Google Scholar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q509284",
+            "EntityName": "Google Workspace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q521550",
+            "EntityName": "Google Images"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q540202",
+            "EntityName": "Google Cloud Print"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q623456",
+            "EntityName": "Google Sites"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q648625",
+            "EntityName": "Google Knowledge Graph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q664672",
+            "EntityName": "Google Code Search"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q694178",
+            "EntityName": "Googleplex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q776845",
+            "EntityName": "FeedBurner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q840820",
+            "EntityName": "Google Groups"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q844992",
+            "EntityName": "Dodgeball"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q847115",
+            "EntityName": "Google Trends"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q848618",
+            "EntityName": "Google Notebook"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q913902",
+            "EntityName": "Google account"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q963120",
+            "EntityName": "Google Developers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q974700",
+            "EntityName": "Google Sky"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1011979",
+            "EntityName": "Google Latitude"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1011981",
+            "EntityName": "Google China"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1012004",
+            "EntityName": "Google Public DNS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1047941",
+            "EntityName": "Picasa Web Albums"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1122325",
+            "EntityName": "Gears"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1138257",
+            "EntityName": "Google Map Maker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1139551",
+            "EntityName": "Jaiku"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1198691",
+            "EntityName": "Google Finance"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1211075",
+            "EntityName": "Chrome Web Store"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1296464",
+            "EntityName": "Google Health"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1424622",
+            "EntityName": "Google Answers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1433417",
+            "EntityName": "Google Shopping"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1537675",
+            "EntityName": "Trimble 3D Warehouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1537673",
+            "EntityName": "Google Contacts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1537691",
+            "EntityName": "Google Optimize"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1575434",
+            "EntityName": "Metaweb"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1816282",
+            "EntityName": "On2 Technologies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1827543",
+            "EntityName": "Google Chrome Experiments"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1983108",
+            "EntityName": "Google Questions and Answers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2067785",
+            "EntityName": "Google Alerts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2233943",
+            "EntityName": "Google Programmable Search Engine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2327932",
+            "EntityName": "Google Moon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2334242",
+            "EntityName": "Google Pay Send"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2452519",
+            "EntityName": "Google Friend Connect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2605933",
+            "EntityName": "Google Hacking Database"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2673730",
+            "EntityName": "GOOG-411"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2736257",
+            "EntityName": "Google Voice Search"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2737191",
+            "EntityName": "Google Mars"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2737647",
+            "EntityName": "Pyra Labs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3110754",
+            "EntityName": "Google Catalogs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3110761",
+            "EntityName": "Google Offers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3235742",
+            "EntityName": "Google Patents"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3238742",
+            "EntityName": "Google Bookmarks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3306902",
+            "EntityName": "Google Blog Search"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3630287",
+            "EntityName": "Google Image Labeler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3631285",
+            "EntityName": "Aardvark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3773423",
+            "EntityName": "Google Public Data Explorer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4039596",
+            "EntityName": "google.by"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4605228",
+            "EntityName": "Google Cloud Storage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4759462",
+            "EntityName": "Android sculptures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4860420",
+            "EntityName": "Barely Political"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4904867",
+            "EntityName": "BigQuery"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5090112",
+            "EntityName": "Chelsea Market"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583801",
+            "EntityName": "Google Workspace Marketplace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583816",
+            "EntityName": "Google Chrome extension"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583830",
+            "EntityName": "Google Dictionary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583836",
+            "EntityName": "Google Flights"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583843",
+            "EntityName": "Google Help Forums"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583847",
+            "EntityName": "Google Image Swirl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q356",
+            "EntityName": "Google+"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q866",
+            "EntityName": "YouTube"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9334",
+            "EntityName": "Gmail"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9340",
+            "EntityName": "Google Drive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9366",
+            "EntityName": "Google Search"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12013",
+            "EntityName": "Google Maps"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12020",
+            "EntityName": "Google News"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15330",
+            "EntityName": "Waymo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q42274",
+            "EntityName": "Google Earth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51712",
+            "EntityName": "Google Voice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q58508",
+            "EntityName": "meebo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5583854",
+            "EntityName": "Google Moderator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6547045",
+            "EntityName": "like.com"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6994244",
+            "EntityName": "Neotonic Software"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7333756",
+            "EntityName": "RightsFlow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7854718",
+            "EntityName": "Google Keep"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7948665",
+            "EntityName": "WDYL"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10847349",
+            "EntityName": "goo.gl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11775280",
+            "EntityName": "Google Tag Manager"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14799884",
+            "EntityName": "Google Fonts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15023900",
+            "EntityName": "Lifescape"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15733006",
+            "EntityName": "DeepMind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16049689",
+            "EntityName": ".みんな"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16638513",
+            "EntityName": "Google Garage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16927666",
+            "EntityName": "Google Traffic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16927802",
+            "EntityName": "Google Express"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16972647",
+            "EntityName": "Google Chrome App"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17081187",
+            "EntityName": "Terra Bella"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17385422",
+            "EntityName": "Google Domains"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18275458",
+            "EntityName": "Google Directory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18357313",
+            "EntityName": "Inbox by Gmail"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18859887",
+            "EntityName": "Project Zero"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19758689",
+            "EntityName": "Google Store"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20007086",
+            "EntityName": "Google Photos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20573011",
+            "EntityName": ".gle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20573262",
+            "EntityName": ".google"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20671898",
+            "EntityName": "Google Link Graph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21614062",
+            "EntityName": "Google Fi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22077991",
+            "EntityName": "Google Santa Tracker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22906681",
+            "EntityName": "BebaPay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25422520",
+            "EntityName": "Google Nearline"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28000367",
+            "EntityName": "Lift Labs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41750199",
+            "EntityName": "Google Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48817537",
+            "EntityName": "Tenor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56512593",
+            "EntityName": "Google Dataset Search"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q63481268",
+            "EntityName": "Alooma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q110544181",
+            "EntityName": "Google Bus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1587",
+    "RawQuestion": "who does chris hemsworth have a baby with?",
+    "ProcessedQuestion": "who does chris hemsworth have a baby with",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P22 wd:Q54314; wdt:P25 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q230123",
+            "EntityName": "Elsa Pataky"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1589",
+    "RawQuestion": "where is the mts iceplex in winnipeg?",
+    "ProcessedQuestion": "where is the mts iceplex in winnipeg",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6381818 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1948",
+            "EntityName": "Manitoba"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1590",
+    "RawQuestion": "what are the most popular religions in israel?",
+    "ProcessedQuestion": "what are the most popular religions in israel",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q801 wdt:P3075 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q163943",
+            "EntityName": "Druze"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q432",
+            "EntityName": "Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5043",
+            "EntityName": "Christianity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9268",
+            "EntityName": "Judaism"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1592",
+    "RawQuestion": "what are all the songs justin bieber wrote?",
+    "ProcessedQuestion": "what are all the songs justin bieber wrote",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P86 wd:Q34086. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3565773",
+            "EntityName": "All Around the World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15630210",
+            "EntityName": "Roller Coaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37210766",
+            "EntityName": "Friends"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61080298",
+            "EntityName": "Take You"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61080296",
+            "EntityName": "Catching Feelings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79646941",
+            "EntityName": "Yummy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83975347",
+            "EntityName": "Get Me"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84491474",
+            "EntityName": "Intentions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84925511",
+            "EntityName": "Yummy (Summer Walker Remix)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q99441275",
+            "EntityName": "Holy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q102104614",
+            "EntityName": "Monster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q104612841",
+            "EntityName": "Anyone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108170457",
+            "EntityName": "Don't Go"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1600",
+    "RawQuestion": "what honor did agatha christie receive in 1971?",
+    "ProcessedQuestion": "what honor did agatha christie receive in 1971",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35064 p:P166 ?p. ?p ps:P166 ?x; pq:P585 ?y. FILTER((?y >= \"1971-01-01T00:00:00Z\"^^xsd:dateTime) && (?y < \"1972-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12201434",
+            "EntityName": "Dame Commander of the Order of the British Empire"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1603",
+    "RawQuestion": "what is the sacred text of daoism?",
+    "ProcessedQuestion": "what is the sacred text of daoism",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9598 wdt:P92 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134425",
+            "EntityName": "Tao Te Ching"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1604",
+    "RawQuestion": "what countries speak english natively?",
+    "ProcessedQuestion": "what countries speak english natively",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P37 wd:Q1860; wdt:P31 wd:Q6256. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q258",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q334",
+            "EntityName": "Singapore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q408",
+            "EntityName": "Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q664",
+            "EntityName": "New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q668",
+            "EntityName": "India"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q672",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q683",
+            "EntityName": "Samoa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q686",
+            "EntityName": "Vanuatu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q685",
+            "EntityName": "Solomon Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q691",
+            "EntityName": "Papua New Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q695",
+            "EntityName": "Palau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q697",
+            "EntityName": "Nauru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q702",
+            "EntityName": "Federated States of Micronesia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q710",
+            "EntityName": "Kiribati"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q709",
+            "EntityName": "Marshall Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q712",
+            "EntityName": "Fiji"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q734",
+            "EntityName": "Guyana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q754",
+            "EntityName": "Trinidad and Tobago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q757",
+            "EntityName": "Saint Vincent and the Grenadines"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q763",
+            "EntityName": "Saint Kitts and Nevis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q760",
+            "EntityName": "Saint Lucia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q766",
+            "EntityName": "Jamaica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q769",
+            "EntityName": "Grenada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q778",
+            "EntityName": "The Bahamas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q781",
+            "EntityName": "Antigua and Barbuda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q784",
+            "EntityName": "Dominica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q27",
+            "EntityName": "Republic of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25",
+            "EntityName": "Wales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114",
+            "EntityName": "Kenya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q117",
+            "EntityName": "Ghana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q145",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q233",
+            "EntityName": "Malta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1165546",
+            "EntityName": "Kingdom of Mosquitia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q921",
+            "EntityName": "Brunei"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q924",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q928",
+            "EntityName": "Philippines"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q954",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q953",
+            "EntityName": "Zambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q958",
+            "EntityName": "South Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q963",
+            "EntityName": "Botswana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q967",
+            "EntityName": "Burundi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q986",
+            "EntityName": "Eritrea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1005",
+            "EntityName": "The Gambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1009",
+            "EntityName": "Cameroon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1014",
+            "EntityName": "Liberia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1013",
+            "EntityName": "Lesotho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1020",
+            "EntityName": "Malawi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1030",
+            "EntityName": "Namibia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1033",
+            "EntityName": "Nigeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1037",
+            "EntityName": "Rwanda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1042",
+            "EntityName": "Seychelles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1044",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16644",
+            "EntityName": "Northern Mariana Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26273",
+            "EntityName": "Sint Maarten"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26988",
+            "EntityName": "Cook Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34020",
+            "EntityName": "Niue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34754",
+            "EntityName": "Somaliland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1608",
+    "RawQuestion": "what language is mainly spoken in egypt?",
+    "ProcessedQuestion": "what language is mainly spoken in egypt",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q79 wdt:P2936 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5348443",
+            "EntityName": "Egyptian Sign Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20639851",
+            "EntityName": "Kenzi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29919",
+            "EntityName": "Egyptian Arabic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q33025",
+            "EntityName": "Beja"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36155",
+            "EntityName": "Coptic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36814",
+            "EntityName": "Siwa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56467",
+            "EntityName": "Modern Standard Arabic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56503",
+            "EntityName": "Libyan Arabic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56592",
+            "EntityName": "Saʽidi Arabic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56714",
+            "EntityName": "Bedawi Arabic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1609",
+    "RawQuestion": "who played alf on tv show?",
+    "ProcessedQuestion": "who played alf on tv show",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31/wdt:P279* wd:Q5398426; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q8964731. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1232858",
+            "EntityName": "Paul Fusco"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1612",
+    "RawQuestion": "what type of art did raphael sanzio create?",
+    "ProcessedQuestion": "what type of art did raphael sanzio create",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5597 wdt:P136 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134307",
+            "EntityName": "portrait"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q742333",
+            "EntityName": "history painting"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1400853",
+            "EntityName": "portrait painting"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2839016",
+            "EntityName": "allegory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2864737",
+            "EntityName": "religious art"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3374376",
+            "EntityName": "mythological painting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1615",
+    "RawQuestion": "what football team does mike wright play for?",
+    "ProcessedQuestion": "what football team does mike wright play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6849338 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q193390",
+            "EntityName": "New England Patriots"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5120214",
+            "EntityName": "Cincinnati Bearcats football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107877167",
+            "EntityName": "Ashland Eagles football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1618",
+    "RawQuestion": "what teams has manny ramirez played for?",
+    "ProcessedQuestion": "what teams has manny ramirez played for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q375648 p:P54 ?p. ?p ps:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q213959",
+            "EntityName": "Boston Red Sox"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q335169",
+            "EntityName": "Chicago White Sox"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q642553",
+            "EntityName": "Cleveland Guardians"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q650865",
+            "EntityName": "Tampa Bay Rays"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2184204",
+            "EntityName": "Sacramento River Cats"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1622",
+    "RawQuestion": "what ocean is around hawaii?",
+    "ProcessedQuestion": "what ocean is around hawaii",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q68740 wdt:P206 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q98",
+            "EntityName": "Pacific Ocean"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1626",
+    "RawQuestion": "who wrote st trinians?",
+    "ProcessedQuestion": "who wrote st trinians",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3495306 wdt:P50 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q500700",
+            "EntityName": "Ronald Searle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1631",
+    "RawQuestion": "who is the texas state senator?",
+    "ProcessedQuestion": "who is the texas state senator",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498950; pq:P580 ?y. } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101499077; pq:P580 ?y. } } ORDER BY DESC (?y) LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q719568",
+            "EntityName": "John Cornyn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2036942",
+            "EntityName": "Ted Cruz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1633",
+    "RawQuestion": "what genre of art is the mona lisa?",
+    "ProcessedQuestion": "what genre of art is the mona lisa",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q12418 wdt:P136 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134307",
+            "EntityName": "portrait"
+          }
+        ]
+      }
+    ]
+  }
+]
