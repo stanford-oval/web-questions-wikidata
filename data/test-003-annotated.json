@@ -123,7 +123,7 @@
     "ProcessedQuestion": "who are the senators of hawaii 2012",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498906; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101499026; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) } }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y; pq:P582 ?z. ?w wdt:P131 wd:Q782. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
         "Answers": [
           {
             "AnswerType": "Entity",

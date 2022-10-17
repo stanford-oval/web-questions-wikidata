@@ -6,7 +6,7 @@ This only covers simple questions that are very straightforward.
 For example, the following command will automatically convert the training data. 
 
 ```bash
-node dist/lib/fb2wd.js -i data/train.json --annotated data/train-auto-annotated.json --skipped data/train-auto-skipped.json --dropped data/train-auto-dropped.json
+node dist/lib/fb2wd.js -i data/train.json --annotated data/train-auto-annotated.json --skipped data/train-skipped.json --dropped data/train-auto-dropped.json
 ```
 
 For test data.

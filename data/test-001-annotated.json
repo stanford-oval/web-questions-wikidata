@@ -753,7 +753,7 @@
     "ProcessedQuestion": "who are the senators of virginia 2013",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498883; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2014-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498993; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2014-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) } }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y; pq:P582 ?z. ?w wdt:P131 wd:Q1370. FILTER((?y < \"2014-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) }",
         "Answers": [
           {
             "AnswerType": "Entity",

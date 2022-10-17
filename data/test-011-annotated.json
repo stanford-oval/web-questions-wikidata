@@ -128,7 +128,7 @@
     "ProcessedQuestion": "who are the senators of new jersey now",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498869; pq:P580 ?y. } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498980; pq:P580 ?y. } } ORDER BY DESC (?y) LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y. ?w wdt:P131 wd:Q1408. } ORDER BY DESC (?y) LIMIT 2",
         "Answers": [
           {
             "AnswerType": "Entity",
