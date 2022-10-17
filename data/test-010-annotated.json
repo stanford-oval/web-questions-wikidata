@@ -1,1 +1,982 @@
-[]
+[
+  {
+    "QuestionId": "WebQTest-1634",
+    "RawQuestion": "who does peter griffin voice?",
+    "ProcessedQuestion": "who does peter griffin voice",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q28465. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q188492",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1637",
+    "RawQuestion": "what are the catholic holy days?",
+    "ProcessedQuestion": "what are the catholic holy days",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q1197685; wdt:P140 wd:Q1841. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3538509",
+            "EntityName": "Feast of the Immaculate Conception"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1643",
+    "RawQuestion": "who does the voice for chucky in child's play?",
+    "ProcessedQuestion": "who does the voice for chucky in child 's play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q935945 p:P161|p:P725 ?p. ?p ps:P161|ps:P725 ?x; pq:P453 wd:Q25097. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q329734",
+            "EntityName": "Brad Dourif"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1644",
+    "RawQuestion": "what did mary wollstonecraft fight for?",
+    "ProcessedQuestion": "what did mary wollstonecraft fight for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q101638 wdt:P800 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q300646",
+            "EntityName": "A Vindication of the Rights of Woman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1754997",
+            "EntityName": "Letters Written During a Short Residence in Sweden, Norway, and Denmark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1649",
+    "RawQuestion": "what was dr seuss real name?",
+    "ProcessedQuestion": "what was dr seuss real name",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q298685 wdt:P1477 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Theodor Seuss Geisel",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1654",
+    "RawQuestion": "what are bigos?",
+    "ProcessedQuestion": "what are bigos",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q598222 wdt:P361|wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q756020",
+            "EntityName": "Polish cuisine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1503789",
+            "EntityName": "Ukrainian cuisine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1850480",
+            "EntityName": "Belarusian cuisine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19360432",
+            "EntityName": "Lithuanian cuisine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12505",
+            "EntityName": "Russian cuisine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2920963",
+            "EntityName": "stew"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2095",
+            "EntityName": "food"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1657",
+    "RawQuestion": "when did shaq come into the nba?",
+    "ProcessedQuestion": "when did shaq come into the nba",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q169452 p:P54 ?p. ?p ps:P54 ?y; pq:P580 ?x. ?y wdt:P118 wd:Q155223. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1992-06-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1661",
+    "RawQuestion": "who was the voice of darth vader in the original star wars movie?",
+    "ProcessedQuestion": "who was the voice of darth vader in the original star wars movie",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q17738 p:P161|p:P725 ?p. ?p ps:P161|ps:P725 ?x; pq:P453 wd:Q12206942. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q128379",
+            "EntityName": "David Prowse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q203960",
+            "EntityName": "James Earl Jones"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1663",
+    "RawQuestion": "what music did louis armstrong play?",
+    "ProcessedQuestion": "what music did louis armstrong play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1779 wdt:P136 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8341",
+            "EntityName": "jazz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1665",
+    "RawQuestion": "where is the latin language from?",
+    "ProcessedQuestion": "where is the latin language from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q397 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85380120",
+            "EntityName": "Southern European languages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q33478",
+            "EntityName": "Latino-Faliscan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1670",
+    "RawQuestion": "who is tatyana ali parents?",
+    "ProcessedQuestion": "who is tatyana ali parents",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q240541 wdt:P22|wdt:P25 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1672",
+    "RawQuestion": "what language do the maasai speak?",
+    "ProcessedQuestion": "what language do the maasai speak",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q163022 wdt:P103 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35787",
+            "EntityName": "Maasai"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1675",
+    "RawQuestion": "where do the appalachian mountains run through?",
+    "ProcessedQuestion": "where do the appalachian mountains run through",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q93332 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724",
+            "EntityName": "Maine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q759",
+            "EntityName": "New Hampshire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q771",
+            "EntityName": "Massachusetts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q779",
+            "EntityName": "Connecticut"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1370",
+            "EntityName": "Virginia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1371",
+            "EntityName": "West Virginia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1384",
+            "EntityName": "New York"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1391",
+            "EntityName": "Maryland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1397",
+            "EntityName": "Ohio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1400",
+            "EntityName": "Pennsylvania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1408",
+            "EntityName": "New Jersey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1428",
+            "EntityName": "Georgia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1454",
+            "EntityName": "North Carolina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1456",
+            "EntityName": "South Carolina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1509",
+            "EntityName": "Tennessee"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1603",
+            "EntityName": "Kentucky"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1952",
+            "EntityName": "Nova Scotia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1965",
+            "EntityName": "New Brunswick"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2003",
+            "EntityName": "Newfoundland and Labrador"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16551",
+            "EntityName": "Vermont"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q173",
+            "EntityName": "Alabama"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q176",
+            "EntityName": "Quebec"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34617",
+            "EntityName": "Saint Pierre and Miquelon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1680",
+    "RawQuestion": "when was the last time the orioles won the world series?",
+    "ProcessedQuestion": "when was the last time the orioles won the world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q650816. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1983-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1686",
+    "RawQuestion": "who is the governor of arizona 2009?",
+    "ProcessedQuestion": "who is the governor of arizona 2009",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q29514606; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2010-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2009-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q229032",
+            "EntityName": "Janet Napolitano"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q236941",
+            "EntityName": "Jan Brewer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1690",
+    "RawQuestion": "where is electrolux based?",
+    "ProcessedQuestion": "where is electrolux based",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q505922 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1754",
+            "EntityName": "Stockholm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1695",
+    "RawQuestion": "when did truman become president?",
+    "ProcessedQuestion": "when did truman become president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11613 p:P39 ?p. ?p ps:P39 ?y; pq:P580 ?x. ?y wdt:P279* wd:Q30461. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1945-04-12T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1701",
+    "RawQuestion": "what county is st paul minnesota in?",
+    "ProcessedQuestion": "what county is st paul minnesota in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q28848 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q491201",
+            "EntityName": "Ramsey County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1705",
+    "RawQuestion": "where was franz ferdinand from?",
+    "ProcessedQuestion": "where was franz ferdinand from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q173180 wdt:P495|wdt:P740 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4093",
+            "EntityName": "Glasgow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q145",
+            "EntityName": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1707",
+    "RawQuestion": "who plays lex luthor on smallville?",
+    "ProcessedQuestion": "who plays lex luthor on smallville",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q180228 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q735712. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q215488",
+            "EntityName": "Lucas Grabeel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q311613",
+            "EntityName": "Michael Rosenbaum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1711",
+    "RawQuestion": "when was the last time the la kings won a playoff series?",
+    "ProcessedQuestion": "when was the last time the la kings won a playoff series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q211872; wdt:P585 ?x; wdt:P1346 wd:Q203008. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2014-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1713",
+    "RawQuestion": "what disease did abraham lincoln had?",
+    "ProcessedQuestion": "what disease did abraham lincoln had",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q91 wdt:P1050 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1714",
+    "RawQuestion": "who is vancouver canucks coach?",
+    "ProcessedQuestion": "who is vancouver canucks coach",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192890 wdt:P286 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1715",
+    "RawQuestion": "where did cs lewis wrote?",
+    "ProcessedQuestion": "where did cs lewis wrote",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9204 wdt:P551 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10686",
+            "EntityName": "Belfast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34217",
+            "EntityName": "Oxford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1719",
+    "RawQuestion": "who was married to jane wyman?",
+    "ProcessedQuestion": "who was married to jane wyman",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q95055 wdt:P26 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3752636",
+            "EntityName": "Fred Karger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q75763258",
+            "EntityName": "Myron Futterman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q104766344",
+            "EntityName": "Ernest Wyman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9960",
+            "EntityName": "Ronald Reagan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1724",
+    "RawQuestion": "when did arsenal won the league?",
+    "ProcessedQuestion": "when did arsenal won the league",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31* wd:Q4484477; wdt:P1346 wd:Q9617; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1971-05-08T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1979-05-12T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1950-04-29T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1993-05-20T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1998-05-16T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2002-05-04T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2003-05-17T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1936-04-25T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2005-05-21T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1930-04-26T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2014-05-17T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2015-05-30T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2017-05-27T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2020-08-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1729",
+    "RawQuestion": "what was the name of henry viii first wife?",
+    "ProcessedQuestion": "what was the name of henry viii first wife",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38370 p:P26 ?p. ?p ps:P26 ?x; pq:P580 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q162819",
+            "EntityName": "Catherine of Aragon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1731",
+    "RawQuestion": "what is president nixon's first name?",
+    "ProcessedQuestion": "what is president nixon 's first name",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9588 wdt:P735 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1249148",
+            "EntityName": "Richard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q101251048",
+            "EntityName": "Milhous"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1733",
+    "RawQuestion": "who or what influenced frank lloyd wright?",
+    "ProcessedQuestion": "who or what influenced frank lloyd wright",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5604 wdt:P737 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1734",
+    "RawQuestion": "what year did houston rockets win their first championship?",
+    "ProcessedQuestion": "what year did houston rockets win their first championship",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q842375; wdt:P1346 wd:Q161345; wdt:P585 ?x. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1994-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1735",
+    "RawQuestion": "where do most of the people live in russia?",
+    "ProcessedQuestion": "where do most of the people live in russia",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31* wd:Q7930989; wdt:P17 wd:Q159; wdt:P1082 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q649",
+            "EntityName": "Moscow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1736",
+    "RawQuestion": "where is holy roman empire located?",
+    "ProcessedQuestion": "where is holy roman empire located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q12548 wdt:P30 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q46",
+            "EntityName": "Europe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1738",
+    "RawQuestion": "who plays nicholas newman on the young and the restless?",
+    "ProcessedQuestion": "who plays nicholas newman on the young and the restless",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q849627 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q3339669. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q59522",
+            "EntityName": "Joshua Morrow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1739",
+    "RawQuestion": "who is the voice of eric cartman on south park?",
+    "ProcessedQuestion": "who is the voice of eric cartman on south park",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16538 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q47352. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1741",
+    "RawQuestion": "where is the headquarters of bank of america?",
+    "ProcessedQuestion": "where is the headquarters of bank of america",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q487907 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q586913",
+            "EntityName": "Bank of America Financial Center"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1748",
+    "RawQuestion": "through which countries of the sahel does the niger river flow?",
+    "ProcessedQuestion": "through which countries of the sahel does the niger river flow",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3542 wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912",
+            "EntityName": "Mali"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q962",
+            "EntityName": "Benin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1006",
+            "EntityName": "Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1032",
+            "EntityName": "Niger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1033",
+            "EntityName": "Nigeria"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1750",
+    "RawQuestion": "what city does paul ryan live in?",
+    "ProcessedQuestion": "what city does paul ryan live in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q203966 p:P551 ?p. ?p ps:P551 ?x. ?x ((wdt:P31*)/(wdt:P279*)) wd:Q7930989. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1751",
+    "RawQuestion": "what city is acadia university in?",
+    "ProcessedQuestion": "what city is acadia university in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q337382 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q475953",
+            "EntityName": "Wolfville"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1759",
+    "RawQuestion": "what 3 states border florida?",
+    "ProcessedQuestion": "what 3 states border florida",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q812 wdt:P47 ?x. } LIMIT 3",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1428",
+            "EntityName": "Georgia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q173",
+            "EntityName": "Alabama"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1760",
+    "RawQuestion": "who plays ziva david on ncis?",
+    "ProcessedQuestion": "who plays ziva david on ncis",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4525 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q839093. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q230647",
+            "EntityName": "Cote de Pablo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1761",
+    "RawQuestion": "who ruled after king henry viii died?",
+    "ProcessedQuestion": "who ruled after king henry viii died",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q18810062; pq:P580 ?y. wd:Q38370 p:P39 ?q. ?q ps:P39 wd:Q18810062; pq:P580 ?z. FILTER(?y > ?z) } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83229",
+            "EntityName": "Edward VI of England"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1764",
+    "RawQuestion": "where is daud ibrahim?",
+    "ProcessedQuestion": "where is daud ibrahim",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q553191 wdt:P551 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24238356",
+            "EntityName": "unknown"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1769",
+    "RawQuestion": "where is the city wales?",
+    "ProcessedQuestion": "where is the city wales",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q25 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q145",
+            "EntityName": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  }
+]

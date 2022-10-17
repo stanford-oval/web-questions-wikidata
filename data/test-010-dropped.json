@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "QuestionId": "WebQTest-1635",
+    "RawQuestion": "when did tony romo got drafted?",
+    "ProcessedQuestion": "when did tony romo got drafted",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.097yk7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.097yk7 ns:sports.pro_athlete.career_start ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2002",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1698",
+    "RawQuestion": "where do burmese cats originate from?",
+    "ProcessedQuestion": "where do burmese cats originate from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01mvkt)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01mvkt ns:biology.animal_breed.place_of_origin ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xn_",
+            "EntityName": "Myanmar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07f1x",
+            "EntityName": "Thailand"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1708",
+    "RawQuestion": "what are dallas cowboys colors?",
+    "ProcessedQuestion": "what are dallas cowboys colors",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02896)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02896 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01g5v",
+            "EntityName": "Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rnmb",
+            "EntityName": "Navy Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03vtbc",
+            "EntityName": "Silver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kqt3",
+            "EntityName": "Royal blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1753",
+    "RawQuestion": "what countries does tomtom western europe include?",
+    "ProcessedQuestion": "what countries does tomtom western europe include",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03p3m2y)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03p3m2y ns:base.schemastaging.organization_extra.phone_number ?y .\n?y ns:base.schemastaging.phone_sandbox.service_location ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0154j",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mzp",
+            "EntityName": "Switzerland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chghy",
+            "EntityName": "Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f8l9c",
+            "EntityName": "France"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1771",
+    "RawQuestion": "what is the islamic belief?",
+    "ProcessedQuestion": "what is the islamic belief",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0flw86)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0flw86 ns:religion.religion.beliefs ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019vqj",
+            "EntityName": "Mahdi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01bbmp",
+            "EntityName": "Tawhid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.024b22",
+            "EntityName": "Prophets in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025w817",
+            "EntityName": "Predestination in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wvcg4",
+            "EntityName": "Entering Heaven alive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xy3",
+            "EntityName": "Monotheism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0698fs",
+            "EntityName": "Islamic view of angels"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06rvp0",
+            "EntityName": "Qiyamah"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074hw",
+            "EntityName": "Sharia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07bfrc",
+            "EntityName": "Masih ad-Dajjal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07r6vw",
+            "EntityName": "Islamic holy books"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09kb_2",
+            "EntityName": "God in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hr6vbp",
+            "EntityName": "Ṭūbā"
+          }
+        ]
+      }
+    ]
+  }
+]

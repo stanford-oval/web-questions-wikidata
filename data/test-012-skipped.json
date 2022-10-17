@@ -1,0 +1,76 @@
+[
+  {
+    "QuestionId": "WebQTest-2020",
+    "RawQuestion": "what are the mountains in northern italy called?",
+    "ProcessedQuestion": "what are the mountains in northern italy called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01cg88)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01cg88 ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Apennine Mountains",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1955",
+    "RawQuestion": "who are the judges appointed in the supreme court?",
+    "ProcessedQuestion": "who are the judges appointed in the supreme court",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07sz1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07sz1 ns:law.court.judges ?y .\n?y ns:law.judicial_tenure.judge ?x .\nFILTER(NOT EXISTS {?y ns:law.judicial_tenure.from_date ?sk0} || \nEXISTS {?y ns:law.judicial_tenure.from_date ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:law.judicial_tenure.to_date ?sk2} || \nEXISTS {?y ns:law.judicial_tenure.to_date ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_4j",
+            "EntityName": "Clarence Thomas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0166zk",
+            "EntityName": "Antonin Scalia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016m0v",
+            "EntityName": "Stephen Breyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0199pk",
+            "EntityName": "Ruth Bader Ginsburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019s7r",
+            "EntityName": "Anthony Kennedy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gnxk",
+            "EntityName": "Samuel Alito"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066vhq",
+            "EntityName": "John Roberts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06lnfm",
+            "EntityName": "Elena Kagan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06lvrr",
+            "EntityName": "Sonia Sotomayor"
+          }
+        ]
+      }
+    ]
+  }
+]

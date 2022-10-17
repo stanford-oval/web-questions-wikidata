@@ -731,12 +731,12 @@
     "ProcessedQuestion": "who is the governor of indiana 2009",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16147601 wdt:P1308 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q16147601; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2010-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2009-01-01T00:00:00Z\"^^xsd:dateTime)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q23016975",
-            "EntityName": "Eric Holcomb"
+            "AnswerArgument": "Q351330",
+            "EntityName": "Mitch Daniels"
           }
         ]
       }

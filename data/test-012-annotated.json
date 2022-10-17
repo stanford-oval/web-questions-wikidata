@@ -1,0 +1,938 @@
+[
+  {
+    "QuestionId": "WebQTest-1933",
+    "RawQuestion": "what year did adam morrison get drafted?",
+    "ProcessedQuestion": "what year did adam morrison get drafted",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q350464 p:P647 ?y. ?y pq:P585 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1935",
+    "RawQuestion": "what college did maya moore go to?",
+    "ProcessedQuestion": "what college did maya moore go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q609527 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49206",
+            "EntityName": "University of Connecticut"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1936",
+    "RawQuestion": "when was the last time the dodgers won a championship?",
+    "ProcessedQuestion": "when was the last time the dodgers won a championship",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q334634. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2020-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1938",
+    "RawQuestion": "where did robin williams get married?",
+    "ProcessedQuestion": "where did robin williams get married",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q83338 p:P26 ?y. ?y pq:P2842 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q125733",
+            "EntityName": "St. Helena"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1940",
+    "RawQuestion": "who do islamic people follow?",
+    "ProcessedQuestion": "who do islamic people follow",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P1049 wd:Q432. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q70899",
+            "EntityName": "Adam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2095353",
+            "EntityName": "God in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9077",
+            "EntityName": "Moses"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9181",
+            "EntityName": "Abraham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1942",
+    "RawQuestion": "who was in the israeli palestinian conflict?",
+    "ProcessedQuestion": "who was in the israeli palestinian conflict",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q151622 wdt:P710 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q117907",
+            "EntityName": "Islamic Jihad Movement in Palestine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29075570",
+            "EntityName": "All-Palestine Protectorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q801",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26683",
+            "EntityName": "Palestine Liberation Organization"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q38799",
+            "EntityName": "Hamas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39760",
+            "EntityName": "Gaza Strip"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q42620",
+            "EntityName": "Palestinian National Authority"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1943",
+    "RawQuestion": "who founded the afl?",
+    "ProcessedQuestion": "who founded the afl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q464508 wdt:P112 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1946",
+    "RawQuestion": "what is the country code for mexico?",
+    "ProcessedQuestion": "what is the country code for mexico",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q96 wdt:P984 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "MEX",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1956",
+    "RawQuestion": "which country in europe has the largest land area?",
+    "ProcessedQuestion": "which country in europe has the largest land area",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q6256; wdt:P30 wd:Q46; wdt:P2046 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q159",
+            "EntityName": "Russia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1957",
+    "RawQuestion": "when did kaley cuoco join charmed?",
+    "ProcessedQuestion": "when did kaley cuoco join charmed",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P179 wd:Q162371; wdt:P577 ?x; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 wd:Q16759. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2005-11-13T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1960",
+    "RawQuestion": "when was the last time the toronto maple leafs win the stanley cup?",
+    "ProcessedQuestion": "when was the last time the toronto maple leafs win the stanley cup",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q203384; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1963",
+    "RawQuestion": "what position did vince lombardi play?",
+    "ProcessedQuestion": "what position did vince lombardi play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q553321 wdt:P413 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1964",
+    "RawQuestion": "who played stanley kowalski in a streetcar named desire movie?",
+    "ProcessedQuestion": "who played stanley kowalski in a streetcar named desire movie",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q212129 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q3496842. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34012",
+            "EntityName": "Marlon Brando"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1965",
+    "RawQuestion": "who did the voice for lola bunny?",
+    "ProcessedQuestion": "who did the voice for lola bunny",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q1575844. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q189489",
+            "EntityName": "Zendaya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262910",
+            "EntityName": "Kath Soucie"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1966",
+    "RawQuestion": "what book did charles darwin wrote in 1859?",
+    "ProcessedQuestion": "what book did charles darwin wrote in 1859",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q1035; wdt:P577 ?y. FILTER((?y < \"1860-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"1859-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20968204",
+            "EntityName": "On the Origin of Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20124",
+            "EntityName": "On the Origin of Species"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1972",
+    "RawQuestion": "where did john franklin live?",
+    "ProcessedQuestion": "where did john franklin live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1647693 p:P551 ?y. ?y ps:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1975",
+    "RawQuestion": "what was the last movie sean connery was in?",
+    "ProcessedQuestion": "what was the last movie sean connery was in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q11424; wdt:P577 ?y; p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q4573. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7526129",
+            "EntityName": "Sir Billi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1976",
+    "RawQuestion": "what team did drogba play for?",
+    "ProcessedQuestion": "what team did drogba play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q48892 p:P54 ?p. ?p ps:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q111516",
+            "EntityName": "Phoenix Rising FC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q132885",
+            "EntityName": "Olympique de Marseille"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q167615",
+            "EntityName": "CF Montréal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q175145",
+            "EntityName": "Ivory Coast national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q210864",
+            "EntityName": "Le Mans U.C. 72"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q459148",
+            "EntityName": "En Avant de Guingamp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q495299",
+            "EntityName": "Galatasaray S.K."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q725367",
+            "EntityName": "Shanghai Shenhua F.C."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9616",
+            "EntityName": "Chelsea F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1977",
+    "RawQuestion": "where did crabtree go to college?",
+    "ProcessedQuestion": "where did crabtree go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2351787 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1981",
+    "RawQuestion": "what state did john adams live in?",
+    "ProcessedQuestion": "what state did john adams live in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11806 wdt:P551 ?x. ?x wdt:P31/wdt:P279* wd:Q35657. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q771",
+            "EntityName": "Massachusetts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1987",
+    "RawQuestion": "what materials did eduardo paolozzi use in his work?",
+    "ProcessedQuestion": "what materials did eduardo paolozzi use in his work",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P170 wd:Q165397; wdt:P186 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q127418",
+            "EntityName": "ink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q500548",
+            "EntityName": "glue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12981547",
+            "EntityName": "India ink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15918049",
+            "EntityName": "white card"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11427",
+            "EntityName": "steel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11472",
+            "EntityName": "paper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34095",
+            "EntityName": "bronze"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2996907",
+            "EntityName": "cobblestone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21279007",
+            "EntityName": "wove paper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23757",
+            "EntityName": "limestone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1990",
+    "RawQuestion": "who plays timon's voice in the lion king?",
+    "ProcessedQuestion": "who plays timon 's voice in the lion king",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q36479 p:P161|p:P725 ?p. ?p ps:P161|ps:P725 ?x; pq:P453 wd:Q2691406. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q491264",
+            "EntityName": "Nathan Lane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1991",
+    "RawQuestion": "what part of the country is ohio in?",
+    "ProcessedQuestion": "what part of the country is ohio in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1397 wdt:P361 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q186545",
+            "EntityName": "Midwestern United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q578170",
+            "EntityName": "contiguous United States"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1992",
+    "RawQuestion": "which island is kailua on?",
+    "ProcessedQuestion": "which island is kailua on",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P527 wd:Q532459; wdt:P31/wdt:P279* wd:Q205895. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1994",
+    "RawQuestion": "what did whoopi goldberg won a grammy for?",
+    "ProcessedQuestion": "what did whoopi goldberg won a grammy for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q41254; wdt:P1346 wd:Q49001. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1997",
+    "RawQuestion": "who does owen schmitt play for?",
+    "ProcessedQuestion": "who does owen schmitt play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3887743 p:P54 ?p. ?p ps:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219714",
+            "EntityName": "Philadelphia Eagles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q221878",
+            "EntityName": "Seattle Seahawks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q324523",
+            "EntityName": "Las Vegas Raiders"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1999",
+    "RawQuestion": "what religions are popular in france?",
+    "ProcessedQuestion": "what religions are popular in france",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q142 wdt:P140 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2001",
+    "RawQuestion": "who won the 2000 fa cup final?",
+    "ProcessedQuestion": "who won the 2000 fa cup final",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q4484477; wdt:P1346 ?x; wdt:P585 ?y. FILTER((?y < \"2001-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"2000-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9616",
+            "EntityName": "Chelsea F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2005",
+    "RawQuestion": "who plays bob kelso in scrubs?",
+    "ProcessedQuestion": "who plays bob kelso in scrubs",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q485668 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2532197. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q471921",
+            "EntityName": "Ken Jenkins"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2009",
+    "RawQuestion": "where does tim cook work?",
+    "ProcessedQuestion": "where does tim cook work",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q265852 wdt:P108 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q483915",
+            "EntityName": "Nike"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q312",
+            "EntityName": "Apple Inc."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37156",
+            "EntityName": "IBM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2010",
+    "RawQuestion": "what degrees does romney have?",
+    "ProcessedQuestion": "what degrees does romney have",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4496 p:P69 ?p. ?p ps:P69 ?y; pq:P512 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1540185",
+            "EntityName": "Juris Doctor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2013",
+    "RawQuestion": "where to stay in chicago tourist?",
+    "ProcessedQuestion": "where to stay in chicago tourist",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q27686; wdt:P131 wd:Q1297. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3350186",
+            "EntityName": "Virgin Hotels Chicago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3564923",
+            "EntityName": "Wabash Avenue YMCA"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3047559",
+            "EntityName": "Edgewater Beach Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q786387",
+            "EntityName": "Reliance Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1925179",
+            "EntityName": "Carbide & Carbon Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2099561",
+            "EntityName": "Hilton Chicago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96967195",
+            "EntityName": "Viceroy Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97693850",
+            "EntityName": "Grant Park Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q104856299",
+            "EntityName": "Marriott Marquis Chicago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106731213",
+            "EntityName": "Hotel Trenier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107168152",
+            "EntityName": "Manor House Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107690208",
+            "EntityName": "Hotel Monogram"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107894111",
+            "EntityName": "Hotel Brookmont"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107894912",
+            "EntityName": "Southway Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107895741",
+            "EntityName": "Ritz Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107897530",
+            "EntityName": "Claridge Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107899875",
+            "EntityName": "Grand Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107910133",
+            "EntityName": "Franklin Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108141927",
+            "EntityName": "Huntington Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108142389",
+            "EntityName": "Vincennes Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108142590",
+            "EntityName": "Tyson Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60750645",
+            "EntityName": "Union Park Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q78511255",
+            "EntityName": "Hotel Del Prado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4883691",
+            "EntityName": "Belle Shore Apartment Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5305603",
+            "EntityName": "Drake Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5457264",
+            "EntityName": "Flamingo-on-the-Lake Apartments"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6044861",
+            "EntityName": "InterContinental Chicago Magnificent Mile, an IHG Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6237101",
+            "EntityName": "John H. Stroger, Jr. Hospital of Cook County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7501429",
+            "EntityName": "Shoreland Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7961605",
+            "EntityName": "Waldorf-Astoria Hotel and Residence Tower"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8045951",
+            "EntityName": "YMCA Hotel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17039466",
+            "EntityName": "Wolf Point South Tower"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18155373",
+            "EntityName": "Old Chicago Main Post Office Twin Towers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28227657",
+            "EntityName": "Lexington Hotel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2014",
+    "RawQuestion": "what type of breast cancer did sheryl crow have?",
+    "ProcessedQuestion": "what type of breast cancer did sheryl crow have",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q200586 wdt:P1050 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2019",
+    "RawQuestion": "who did morgan freeman marry?",
+    "ProcessedQuestion": "who did morgan freeman marry",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q48337 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2021",
+    "RawQuestion": "what influenced john steinbeck to start writing?",
+    "ProcessedQuestion": "what influenced john steinbeck to start writing",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q39212 wdt:P737 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2023",
+    "RawQuestion": "where are the nato headquarters located?",
+    "ProcessedQuestion": "where are the nato headquarters located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q7184 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q239",
+            "EntityName": "Brussels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2024",
+    "RawQuestion": "in which state was the battle of antietam fought?",
+    "ProcessedQuestion": "in which state was the battle of antietam fought",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q719252 wdt:P276 ?p. ?p wdt:P131+ ?x. ?x wdt:P31 wd:Q35657. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1391",
+            "EntityName": "Maryland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2027",
+    "RawQuestion": "what team did david beckham play for before la galaxy?",
+    "ProcessedQuestion": "what team did david beckham play for before la galaxy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q10520 p:P54 ?p. ?p ps:P54 ?x; pq:P582 ?y. wd:Q10520 p:P54 ?q. ?q ps:P54 wd:Q204357; pq:P580 ?z. FILTER(?y < ?z) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q204238",
+            "EntityName": "England national under-21 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049171",
+            "EntityName": "England national under-18 association football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18656",
+            "EntityName": "Manchester United F.C."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19612",
+            "EntityName": "Preston North End F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2028",
+    "RawQuestion": "who is the current leader of france 2010?",
+    "ProcessedQuestion": "who is the current leader of france 2010",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q142 p:P35 ?p. ?p ps:P35 ?x; pq:P580 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3052772",
+            "EntityName": "Emmanuel Macron"
+          }
+        ]
+      }
+    ]
+  }
+]

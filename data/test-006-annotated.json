@@ -1364,7 +1364,7 @@
     "ProcessedQuestion": "who originally voiced meg on family guy",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q908772 p:P725 ?p. ?p ps:P725 ?x; pq:P580 ?y; pq:P10663 ?z. ?z wdt:P179 wd:Q5930. } ORDER BY ?y LIMIT 1",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P179 wd:Q5930; wdt:P580 ?y. ?p wdt:P527 ?z. ?z p:P725 ?w. ?w ps:P725 ?x; pq:P453 wd:Q908772. } ORDER BY ?y LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",

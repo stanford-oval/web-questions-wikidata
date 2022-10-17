@@ -43233,7 +43233,7 @@
     "ProcessedQuestion": "who are serena williams parents",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { wd:Q11459 wdt:P22 ?x. } UNION { wd:Q11459 wdt:P25 ?x. } }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11459 wdt:P22|wdt:P25 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -65176,7 +65176,7 @@
     "ProcessedQuestion": "who is michael j fox parents",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { wd:Q395274 wdt:P22 ?x. } UNION { wd:Q395274 wdt:P25 ?x. } }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q395274 wdt:P22|wdt:P25 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "QuestionId": "WebQTest-1655",
+    "RawQuestion": "where are ike and tina turner's children?",
+    "ProcessedQuestion": "where are ike and tina turner 's children",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01vwyqp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01vwyqp ns:people.person.children ?x .\n?x ns:people.person.parents ns:m.0dbzg .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggl36p",
+            "EntityName": "Ronnie Turner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j5dh53",
+            "EntityName": "Raymond Craig Turner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1706",
+    "RawQuestion": "what was benedict arnold most famous for?",
+    "ProcessedQuestion": "what was benedict arnold most famous for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.025_0c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.025_0c ns:base.honouriam.dishonoured_person.dishonor_bestowed ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07y2zxd",
+            "EntityName": "Traitor"
+          }
+        ]
+      }
+    ]
+  }
+]
