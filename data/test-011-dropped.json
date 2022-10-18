@@ -225,5 +225,27 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1855",
+    "RawQuestion": "what airport do you fly into in paris?",
+    "ProcessedQuestion": "what airport do you fly into in paris",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05qtj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05qtj ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l525",
+            "EntityName": "Paris Orly Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0qk79",
+            "EntityName": "Charles de Gaulle Airport"
+          }
+        ]
+      }
+    ]
   }
 ]

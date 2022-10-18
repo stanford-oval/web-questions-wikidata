@@ -1659,5 +1659,52 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-585",
+    "RawQuestion": "what did king henry viii rule?",
+    "ProcessedQuestion": "what did king henry viii rule",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38370 wdt:P97 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q180729",
+            "EntityName": "Prince of Wales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q337222",
+            "EntityName": "Duke of York"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1277249",
+            "EntityName": "Earl of Chester"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2494846",
+            "EntityName": "Duke of Cornwall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18810062",
+            "EntityName": "monarch of England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18810066",
+            "EntityName": "monarch of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q111722873",
+            "EntityName": "Lord of Ireland"
+          }
+        ]
+      }
+    ]
   }
 ]

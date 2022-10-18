@@ -98,5 +98,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-628",
+    "RawQuestion": "what animal represents california?",
+    "ProcessedQuestion": "what animal represents california",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01n7q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01n7q ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.0462793 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.046279b",
+            "EntityName": "California grizzly bear"
+          }
+        ]
+      }
+    ]
   }
 ]
