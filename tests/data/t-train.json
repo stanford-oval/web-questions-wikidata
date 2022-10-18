@@ -1,0 +1,96 @@
+{
+    "Version": "1.0",
+    "FreebaseVersion": "2015-08-09",
+    "Questions": [
+      {
+        "QuestionId": "WebQTrn-0",
+        "RawQuestion": "what is the name of justin bieber brother?",
+        "ProcessedQuestion": "what is the name of justin bieber brother",
+        "Parses": [
+          {
+            "ParseId": "WebQTrn-0.P0",
+            "AnnotatorId": 1,
+            "AnnotatorComment": {
+              "ParseQuality": "Complete",
+              "QuestionQuality": "Good",
+              "Confidence": "Normal",
+              "FreeFormComment": "First-round parse verification"
+            },
+            "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06w2sn5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06w2sn5 ns:people.person.sibling_s ?y .\n?y ns:people.sibling_relationship.sibling ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+            "PotentialTopicEntityMention": "justin bieber",
+            "TopicEntityName": "Justin Bieber",
+            "TopicEntityMid": "m.06w2sn5",
+            "InferentialChain": [
+              "people.person.sibling_s",
+              "people.sibling_relationship.sibling"
+            ],
+            "Constraints": [
+              {
+                "Operator": "Equal",
+                "ArgumentType": "Entity",
+                "Argument": "m.05zppz",
+                "EntityName": "Male",
+                "SourceNodeIndex": 1,
+                "NodePredicate": "people.person.gender",
+                "ValueType": "String"
+              }
+            ],
+            "Time": null,
+            "Order": null,
+            "Answers": [
+              {
+                "AnswerType": "Entity",
+                "AnswerArgument": "m.0gxnnwq",
+                "EntityName": "Jaxon Bieber"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "QuestionId": "WebQTrn-1",
+        "RawQuestion": "what character did natalie portman play in star wars?",
+        "ProcessedQuestion": "what character did natalie portman play in star wars",
+        "Parses": [
+          {
+            "ParseId": "WebQTrn-1.P0",
+            "AnnotatorId": 2,
+            "AnnotatorComment": {
+              "ParseQuality": "Complete",
+              "QuestionQuality": "Good",
+              "Confidence": "Normal",
+              "FreeFormComment": ""
+            },
+            "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09l3p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09l3p ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.0ddt_ .\n}\n",
+            "PotentialTopicEntityMention": "natalie portman",
+            "TopicEntityName": "Natalie Portman",
+            "TopicEntityMid": "m.09l3p",
+            "InferentialChain": [
+              "film.actor.film",
+              "film.performance.character"
+            ],
+            "Constraints": [
+              {
+                "Operator": "Equal",
+                "ArgumentType": "Entity",
+                "Argument": "m.0ddt_",
+                "EntityName": "Star Wars Episode I: The Phantom Menace",
+                "SourceNodeIndex": 0,
+                "NodePredicate": "film.performance.film",
+                "ValueType": "String"
+              }
+            ],
+            "Time": null,
+            "Order": null,
+            "Answers": [
+              {
+                "AnswerType": "Entity",
+                "AnswerArgument": "m.0drf_",
+                "EntityName": "Padmé Amidala"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}
