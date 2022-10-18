@@ -6,13 +6,13 @@ This only covers simple questions that are very straightforward.
 For example, the following command will automatically convert the training data. 
 
 ```bash
-node dist/lib/fb2wd.js -i data/train.json --annotated data/train-auto-annotated.json --skipped data/train-skipped.json --dropped data/train-auto-dropped.json
+node dist/lib/fb2wd.js -i data/train.json -r data/annotated -d data/dropped --annotated data/train-auto-annotated.json --skipped data/train-auto-skipped.json --dropped data/train-auto-dropped.json
 ```
 
 For test data.
 
 ```bash
-node dist/lib/fb2wd.js -i data/test.json --annotated data/test-auto-annotated.json --skipped data/test-auto-skipped.json --dropped data/test-auto-dropped.json
+node dist/lib/fb2wd.js -i data/test.json -r data/annotated -d data/dropped --annotated data/test-auto-annotated.json --skipped data/test-auto-skipped.json --dropped data/test-auto-dropped.json
 ```
 
 
@@ -21,7 +21,7 @@ node dist/lib/fb2wd.js -i data/test.json --annotated data/test-auto-annotated.js
 To annotate the skipped examples in auto conversion, first run the following command to split the train set into batches:
 
 ```bash
-node dist/lib/split-data.js --prefix train data/train-skipped.json 
+node dist/lib/split-data.js --prefix train data/train-auto-skipped.json 
 ```
 
 This will generate files `data/train-000.json`, `data/train-001.json`, etc. 
