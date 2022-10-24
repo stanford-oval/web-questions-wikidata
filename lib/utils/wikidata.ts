@@ -16,7 +16,8 @@ export const PREFIXES = {
     'xsd': 'http://www.w3.org/2001/XMLSchema#',
     'wikibase': 'http://wikiba.se/ontology#',
     'bd': 'http://www.bigdata.com/rdf#',
-    'schema': 'http://schema.org/'
+    'schema': 'http://schema.org/',
+    'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'
 };
 
 export function postprocessSparql(sparql : string, oneline = false) {
