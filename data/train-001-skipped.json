@@ -1,0 +1,24 @@
+[
+  {
+    "QuestionId": "WebQTrn-301",
+    "RawQuestion": "which city held the summer olympics twice?",
+    "ProcessedQuestion": "which city held the summer olympics twice",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?city \nWHERE {\n  ns:m.06vvk ns:time.recurring_event.instances ?y . # Summer Olympic Games\n  ?y ns:olympics.olympic_games.host_city ?city .\n}\nGROUP BY ?city\nHaving COUNT(?city) = 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030qb3t",
+            "EntityName": "Los Angeles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qtj",
+            "EntityName": "Paris"
+          }
+        ]
+      }
+    ]
+  }
+]

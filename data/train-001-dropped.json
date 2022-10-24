@@ -1,0 +1,122 @@
+[
+  {
+    "QuestionId": "WebQTrn-258",
+    "RawQuestion": "what are major exports of the usa?",
+    "ProcessedQuestion": "what are major exports of the usa",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9wp2",
+            "EntityName": "Food Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd_n",
+            "EntityName": "Pharmaceutical Preparation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtf10",
+            "EntityName": "Industrial Organic Chemicals, NEC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-267",
+    "RawQuestion": "what other countries does canada trade with?",
+    "ProcessedQuestion": "what other countries does canada trade with",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    ns:m.0d060g ns:location.statistical_region.places_exported_to ?y . # Canada\n    ?y ns:location.imports_and_exports.exported_to ?x .\n  }\n  UNION\n  {\n    ns:m.0d060g ns:location.statistical_region.places_exported_from ?y . # Canada\n    ?y ns:location.imports_and_exports.exported_from ?x .\n  }\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_3d",
+            "EntityName": "Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-299",
+    "RawQuestion": "what's the book hitler wrote in prison?",
+    "ProcessedQuestion": "what 's the book hitler wrote in prison",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n\n  FILTER (?d > ?from)\n  FILTER (?d > ?to)\n}",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-306",
+    "RawQuestion": "what does australia export?",
+    "ProcessedQuestion": "what does australia export",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chghy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chghy ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h66y8",
+            "EntityName": "Energy industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hkf",
+            "EntityName": "Agriculture"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-328",
+    "RawQuestion": "what is the name of the book hitler wrote while in prison?",
+    "ProcessedQuestion": "what is the name of the book hitler wrote while in prison",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n\n  FILTER (xsd:dateTime(?d) - xsd:dateTime(?from) >= 0)\n  FILTER (xsd:dateTime(?to) - xsd:dateTime(?d) >= 0)\n}",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-339",
+    "RawQuestion": "when was the musical annie written?",
+    "ProcessedQuestion": "when was the musical annie written",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01_1m4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01_1m4 ns:theater.play.date_of_first_performance ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1976-08-10",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

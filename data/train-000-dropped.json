@@ -1,0 +1,75 @@
+[
+  {
+    "QuestionId": "WebQTrn-188",
+    "RawQuestion": "who did jon gosselin cheat with?",
+    "ProcessedQuestion": "who did jon gosselin cheat with",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.046s1z1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.046s1z1 ns:base.popstra.celebrity.infidelity_perpetrator ?y .\n?y ns:base.popstra.infidelity.participant ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064vnc0",
+            "EntityName": "Deanna Hummel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-224",
+    "RawQuestion": "what happened to daddy yankee?",
+    "ProcessedQuestion": "what happened to daddy yankee",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01wbl_r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01wbl_r ns:base.disaster2.injured_person.injuries ?y .\n?y ns:base.disaster2.injury.type_of_event ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.032s66",
+            "EntityName": "Gunshot"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-231",
+    "RawQuestion": "which airport to fly in rome?",
+    "ProcessedQuestion": "which airport to fly in rome",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c62 ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ky5r",
+            "EntityName": "Leonardo da Vinci–Fiumicino Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033_52",
+            "EntityName": "Ciampino–G. B. Pastine International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-168",
+    "RawQuestion": "what was the name of the original seattle baseball team?",
+    "ProcessedQuestion": "what was the name of the original seattle baseball team",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0fq2vj2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0fq2vj2 ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Seattle Pilots",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

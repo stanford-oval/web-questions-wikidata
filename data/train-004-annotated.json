@@ -1,0 +1,2020 @@
+[
+  {
+    "QuestionId": "WebQTrn-685",
+    "RawQuestion": "who was king or queen after victoria?",
+    "ProcessedQuestion": "who was king or queen after victoria",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q111722535; pq:P580 ?y. wd:Q9439 p:P39 ?q. ?q ps:P39 wd:Q111722535; pq:P580 ?z. FILTER(?y > ?z) } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20875",
+            "EntityName": "Edward VII"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-687",
+    "RawQuestion": "when was the last time the oakland raiders were in the super bowl?",
+    "ProcessedQuestion": "when was the last time the oakland raiders were in the super bowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1923 wd:Q324523; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2003-01-26T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-704",
+    "RawQuestion": "where is eu headquarters located?",
+    "ProcessedQuestion": "where is eu headquarters located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q458 wdt:P159 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1842",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6602",
+            "EntityName": "Strasbourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q239",
+            "EntityName": "Brussels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-708",
+    "RawQuestion": "what countries are in the andean region?",
+    "ProcessedQuestion": "what countries are in the andean region",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5456 wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q298",
+            "EntityName": "Chile"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q414",
+            "EntityName": "Argentina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q419",
+            "EntityName": "Peru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q717",
+            "EntityName": "Venezuela"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q739",
+            "EntityName": "Colombia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q736",
+            "EntityName": "Ecuador"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q750",
+            "EntityName": "Bolivia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-714",
+    "RawQuestion": "what year did pete rose play?",
+    "ProcessedQuestion": "what year did pete rose play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q739866 wdt:P2031 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1963-04-08T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-715",
+    "RawQuestion": "where does kyla ross live?",
+    "ProcessedQuestion": "where does kyla ross live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q602218 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-724",
+    "RawQuestion": "what is calabria italy?",
+    "ProcessedQuestion": "what is calabria italy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q1458 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "region of Italy",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-728",
+    "RawQuestion": "what years did andrew jackson run for president?",
+    "ProcessedQuestion": "what years did andrew jackson run for president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q47566; wdt:P726 wd:Q11817; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1832-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1828-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1824-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-729",
+    "RawQuestion": "what 4 countries make up great britain?",
+    "ProcessedQuestion": "what 4 countries make up great britain",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q145 wdt:P150 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22",
+            "EntityName": "Scotland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26",
+            "EntityName": "Northern Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25",
+            "EntityName": "Wales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-735",
+    "RawQuestion": "who was josh groban in crazy stupid love?",
+    "ProcessedQuestion": "who was josh groban in crazy stupid love",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q519490 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q218083; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-738",
+    "RawQuestion": "what did the scientist thomson discover?",
+    "ProcessedQuestion": "what did the scientist thomson discover",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P61 wd:Q47285. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q354724",
+            "EntityName": "electromagnetic waveguide"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4339620",
+            "EntityName": "discovery of electrons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2225",
+            "EntityName": "electron"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-740",
+    "RawQuestion": "where did martin luther king junior go to college?",
+    "ProcessedQuestion": "where did martin luther king junior go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8027 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q687514",
+            "EntityName": "Crozer Theological Seminary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4948187",
+            "EntityName": "Boston University School of Theology"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5031983",
+            "EntityName": "Candler School of Theology"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49110",
+            "EntityName": "Boston University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-741",
+    "RawQuestion": "who was carrie underwood in soul surfer?",
+    "ProcessedQuestion": "who was carrie underwood in soul surfer",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1156089 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q215546. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-742",
+    "RawQuestion": "who plays lois griffin in family guy?",
+    "ProcessedQuestion": "who plays lois griffin in family guy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q853073. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q116219",
+            "EntityName": "Alex Borstein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-743",
+    "RawQuestion": "what did julian fellowes write?",
+    "ProcessedQuestion": "what did julian fellowes write",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P170 wd:Q336018. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83071",
+            "EntityName": "Downton Abbey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48816554",
+            "EntityName": "The Gilded Age"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65120601",
+            "EntityName": "Belgravia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q87202931",
+            "EntityName": "The English Game"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-745",
+    "RawQuestion": "who does the islam worship?",
+    "ProcessedQuestion": "who does the islam worship",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P1049 wd:Q432. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q70899",
+            "EntityName": "Adam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2095353",
+            "EntityName": "God in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9077",
+            "EntityName": "Moses"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9181",
+            "EntityName": "Abraham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-746",
+    "RawQuestion": "who was married to lance armstrong?",
+    "ProcessedQuestion": "who was married to lance armstrong",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2172 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-752",
+    "RawQuestion": "who was the leader of the soviet union in 1945?",
+    "ProcessedQuestion": "who was the leader of the soviet union in 1945",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q15180 p:P6 ?p. ?p ps:P6 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1946-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1945-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q855",
+            "EntityName": "Joseph Stalin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-753",
+    "RawQuestion": "who does john beck play for?",
+    "ProcessedQuestion": "who does john beck play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6221292 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q212654",
+            "EntityName": "Washington Commanders"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q223243",
+            "EntityName": "Miami Dolphins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q223514",
+            "EntityName": "Houston Texans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q276539",
+            "EntityName": "Baltimore Ravens"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q919062",
+            "EntityName": "BC Lions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3632326",
+            "EntityName": "BYU Cougars football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-754",
+    "RawQuestion": "what god do catholics believe in?",
+    "ProcessedQuestion": "what god do catholics believe in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P1049 wd:Q1841. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3526571",
+            "EntityName": "Theodotus of Cyrenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3842727",
+            "EntityName": "Our Lady of Porto Salvo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61870814",
+            "EntityName": "Avertanus of Lucca"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31877",
+            "EntityName": "Our Lady of Guadalupe, Mexico"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-756",
+    "RawQuestion": "where did robbie hummel go to high school?",
+    "ProcessedQuestion": "where did robbie hummel go to high school",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1571580 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7912572",
+            "EntityName": "Valparaiso High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-757",
+    "RawQuestion": "what year did the cleveland indians go to the world series?",
+    "ProcessedQuestion": "what year did the cleveland indians go to the world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P3450 wd:Q265538; p:P1923 ?z; wdt:P585 ?x. ?z ps:P1923 wd:Q642553. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2016-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-758",
+    "RawQuestion": "who owns the cleveland browns?",
+    "ProcessedQuestion": "who owns the cleveland browns",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q223527 wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6200312",
+            "EntityName": "Jimmy Haslam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16186267",
+            "EntityName": "Dee Haslam"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-761",
+    "RawQuestion": "who does danneel harris play on one tree hill?",
+    "ProcessedQuestion": "who does danneel harris play on one tree hill",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q203385 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q230176; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-762",
+    "RawQuestion": "what inspired michelangelo?",
+    "ProcessedQuestion": "what inspired michelangelo",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5592 wdt:P737|wdt:P1066 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q191423",
+            "EntityName": "Domenico Ghirlandaio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q250414",
+            "EntityName": "Poliziano"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q828363",
+            "EntityName": "Bertoldo di Giovanni"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-766",
+    "RawQuestion": "where does liz mcclarnon live?",
+    "ProcessedQuestion": "where does liz mcclarnon live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q258010 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-771",
+    "RawQuestion": "what was omar epps first movie?",
+    "ProcessedQuestion": "what was omar epps first movie",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q297334. ?x wdt:P577 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q642419",
+            "EntityName": "Juice"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-772",
+    "RawQuestion": "who did the baltimore ravens draft in 2011?",
+    "ProcessedQuestion": "who did the baltimore ravens draft in 2011",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P647 ?p. ?p ps:P647 wd:Q276539; pq:P585 ?y. FILTER((?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"2011-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-773",
+    "RawQuestion": "who won the governor election in puerto rico?",
+    "ProcessedQuestion": "who won the governor election in puerto rico",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q456951 wdt:P1308 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2277878",
+            "EntityName": "Pedro Pierluisi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-776",
+    "RawQuestion": "what college did joe namath go to?",
+    "ProcessedQuestion": "what college did joe namath go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q720558 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q492318",
+            "EntityName": "University of Alabama"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-784",
+    "RawQuestion": "who does michael oher play for in 2009?",
+    "ProcessedQuestion": "who does michael oher play for in 2009",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q977601 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2010-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2009-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-785",
+    "RawQuestion": "what years did barry bonds play?",
+    "ProcessedQuestion": "what years did barry bonds play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q314712 wdt:P1344 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q128559",
+            "EntityName": "2007 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q516947",
+            "EntityName": "2000 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q924097",
+            "EntityName": "1996 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1649091",
+            "EntityName": "1988 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1649712",
+            "EntityName": "1998 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1649722",
+            "EntityName": "1997 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1649741",
+            "EntityName": "1995 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2390139",
+            "EntityName": "2006 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2392480",
+            "EntityName": "1994 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2392515",
+            "EntityName": "2005 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2606383",
+            "EntityName": "2004 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2628150",
+            "EntityName": "2002 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2628156",
+            "EntityName": "2003 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2628391",
+            "EntityName": "2001 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273486",
+            "EntityName": "1986 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273491",
+            "EntityName": "1989 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273488",
+            "EntityName": "1987 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273489",
+            "EntityName": "1990 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273494",
+            "EntityName": "1993 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273492",
+            "EntityName": "1991 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273493",
+            "EntityName": "1992 Major League Baseball season"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4273496",
+            "EntityName": "1999 Major League Baseball season"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-792",
+    "RawQuestion": "who owns skywest?",
+    "ProcessedQuestion": "who owns skywest",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q773662 wdt:P749 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7537214",
+            "EntityName": "SkyWest, Inc."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-796",
+    "RawQuestion": "where do logan browning live?",
+    "ProcessedQuestion": "where do logan browning live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1965719 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-800",
+    "RawQuestion": "where is lake waynoka ohio?",
+    "ProcessedQuestion": "where is lake waynoka ohio",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q111977403 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q111575",
+            "EntityName": "Brown County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-806",
+    "RawQuestion": "where are the pyramids of giza located?",
+    "ProcessedQuestion": "where are the pyramids of giza located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q13217298 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30832",
+            "EntityName": "Giza Governorate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-811",
+    "RawQuestion": "what province is canada's capital located in?",
+    "ProcessedQuestion": "what province is canada 's capital located in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16 wdt:P36 ?y. ?y wdt:P131+ ?x. ?x wdt:P31/wdt:P279* wd:Q34876. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1904",
+            "EntityName": "Ontario"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-816",
+    "RawQuestion": "what college did kerry collins?",
+    "ProcessedQuestion": "what college did kerry collins",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3195497 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q739627",
+            "EntityName": "Pennsylvania State University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-821",
+    "RawQuestion": "what are all the songs nicki minaj is in?",
+    "ProcessedQuestion": "what are all the songs nicki minaj is in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P175 wd:Q162202. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q116082",
+            "EntityName": "Freedom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q127368",
+            "EntityName": "Pink Friday: Reloaded Tour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q129684",
+            "EntityName": "Pink Friday"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q133755",
+            "EntityName": "Beauty and a Beat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q184920",
+            "EntityName": "Till the World Ends"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q289736",
+            "EntityName": "Pink Friday: Roman Reloaded – The Re-Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q431441",
+            "EntityName": "Dance (Ass)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q537994",
+            "EntityName": "Automatic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q558993",
+            "EntityName": "Pink Friday: Roman Reloaded"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q581181",
+            "EntityName": "Massive Attack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q602716",
+            "EntityName": "Make Me Proud"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q621997",
+            "EntityName": "Va Va Voom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q623131",
+            "EntityName": "The Boys"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q630335",
+            "EntityName": "I Am Your Leader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q630340",
+            "EntityName": "Roman in Moscow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q642723",
+            "EntityName": "Pound the Alarm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q645342",
+            "EntityName": "Where Them Girls At"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q666144",
+            "EntityName": "Did It On'em"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q719712",
+            "EntityName": "Super Bass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q737879",
+            "EntityName": "Fly"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q746862",
+            "EntityName": "Give Me All Your Luvin'"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q751446",
+            "EntityName": "Beez in the Trap"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q812930",
+            "EntityName": "Beam Me Up Scotty"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q822006",
+            "EntityName": "You the Boss"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q849352",
+            "EntityName": "Y.U. Mad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q860732",
+            "EntityName": "Get Low"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q903409",
+            "EntityName": "Starships"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q904141",
+            "EntityName": "Raining Men"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q905076",
+            "EntityName": "Up Out My Face"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912878",
+            "EntityName": "Pink Friday World Tour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q918718",
+            "EntityName": "Woohoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q939762",
+            "EntityName": "Turn Me On"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1291140",
+            "EntityName": "Right by My Side"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1526804",
+            "EntityName": "Girls Fall Like Dominoes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1777439",
+            "EntityName": "2012"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1956347",
+            "EntityName": "My Chick Bad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2007185",
+            "EntityName": "Roman's Revenge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2416813",
+            "EntityName": "Monster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2532410",
+            "EntityName": "Your Love"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2615062",
+            "EntityName": "Pink Friday Tour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2628337",
+            "EntityName": "Stupid Hoe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2628904",
+            "EntityName": "Right Thru Me"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2631116",
+            "EntityName": "Moment 4 Life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2711490",
+            "EntityName": "Check It Out"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2713822",
+            "EntityName": "Champion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2777844",
+            "EntityName": "Roman Reloaded"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2949782",
+            "EntityName": "Come on a Cone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3072775",
+            "EntityName": "Fire Burns"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3120802",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3125147",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3247624",
+            "EntityName": "Lil Freak"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3297379",
+            "EntityName": "Masquerade"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3514259",
+            "EntityName": "Take It to the Head"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3622081",
+            "EntityName": "Whip It"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3623032",
+            "EntityName": "I Get Crazy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3790029",
+            "EntityName": "I Ain't Thru"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3905221",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3986455",
+            "EntityName": "The Creep"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4949175",
+            "EntityName": "Bottoms Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5553926",
+            "EntityName": "Get It All"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5719379",
+            "EntityName": "Barbie World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5976885",
+            "EntityName": "I Don't Give A"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6422914",
+            "EntityName": "Knockout"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6533830",
+            "EntityName": "Letting Go (Dutty Love)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6763599",
+            "EntityName": "Marilyn Monroe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7111578",
+            "EntityName": "Out of My Mind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7196008",
+            "EntityName": "Pink Friday: The Pinkprint"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7362002",
+            "EntityName": "Roman Holiday"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7897938",
+            "EntityName": "Up All Night"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8015887",
+            "EntityName": "Sucka Free"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10295500",
+            "EntityName": "High School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10299291",
+            "EntityName": "I'm the Best"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12270692",
+            "EntityName": "I'm Legit"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12270792",
+            "EntityName": "Playtime Is Over"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12270975",
+            "EntityName": "Young Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13534623",
+            "EntityName": "Freaks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13771829",
+            "EntityName": "I'm Out"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14085705",
+            "EntityName": "Somebody Else"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14541643",
+            "EntityName": "Tapout"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15401753",
+            "EntityName": "Love More"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15819565",
+            "EntityName": "The Pinkprint"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15989121",
+            "EntityName": "Lookin Ass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16626058",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16930604",
+            "EntityName": "Pills N Potions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17041661",
+            "EntityName": "Yasss Bish"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17468562",
+            "EntityName": "Bang Bang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17485058",
+            "EntityName": "Anaconda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18164533",
+            "EntityName": "Touchin, Lovin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18392185",
+            "EntityName": "Only"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18469570",
+            "EntityName": "Up In Flames"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18568479",
+            "EntityName": "Bed of Lies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18609953",
+            "EntityName": "The Pinkprint Tour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18636032",
+            "EntityName": "All Things Go"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18636077",
+            "EntityName": "Hey Mama"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18636142",
+            "EntityName": "Throw Sum Mo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18702139",
+            "EntityName": "Feeling Myself"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18786466",
+            "EntityName": "The Night Is Still Young"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19264025",
+            "EntityName": "Truffle Butter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19363407",
+            "EntityName": "Get On Your Knees"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20046281",
+            "EntityName": "Bitch I'm Madonna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20646870",
+            "EntityName": "All Eyes on You"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20925628",
+            "EntityName": "Trini Dem Girls"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26714829",
+            "EntityName": "Sugilite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26764060",
+            "EntityName": "Side to Side"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q27929592",
+            "EntityName": "Black Barbies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28835046",
+            "EntityName": "Swalla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28923771",
+            "EntityName": "No Frauds"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28935108",
+            "EntityName": "Changed It"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28935137",
+            "EntityName": "Regret in Your Tears"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29018762",
+            "EntityName": "Light My Body Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29982196",
+            "EntityName": "Swish Swish"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30106080",
+            "EntityName": "Rake It Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30125075",
+            "EntityName": "Kissing Strangers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31193275",
+            "EntityName": "Automatic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q42598513",
+            "EntityName": "MotorSport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q45109558",
+            "EntityName": "She for Keeps"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48779758",
+            "EntityName": "The Way Life Goes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51840972",
+            "EntityName": "Chun-Li"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51858952",
+            "EntityName": "Barbie Tingz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q52866322",
+            "EntityName": "Queen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q53111287",
+            "EntityName": "Ball For Me"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54918200",
+            "EntityName": "Bed"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54926030",
+            "EntityName": "Rich Sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54943737",
+            "EntityName": "2015 Nicki Minaj concert in Oberhausen, Germany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55064462",
+            "EntityName": "Big Bank"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55141261",
+            "EntityName": "The Nicki Wrld Tour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55437202",
+            "EntityName": "Nicki Minaj's performance at the BET Awards 2018"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55692348",
+            "EntityName": "YG, 2 Chainz, Nicki Minaj, Big Sean's performance at the BET Awards 2018"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55739747",
+            "EntityName": "Fefe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56102742",
+            "EntityName": "Barbie Dreams"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56152806",
+            "EntityName": "Ganja Burn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56247953",
+            "EntityName": "Idol"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56284611",
+            "EntityName": "Nicki Minaj's performance at the 2018 MTV Video Music Awards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56303075",
+            "EntityName": "Majesty"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56878266",
+            "EntityName": "Woman Like Me"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885815",
+            "EntityName": "Dreams '07"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885855",
+            "EntityName": "Can't Stop Won't Stop"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885853",
+            "EntityName": "Wuchoo Know"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885858",
+            "EntityName": "Click Clack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885859",
+            "EntityName": "40 Bars"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885856",
+            "EntityName": "Playtime Is Over"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885857",
+            "EntityName": "Jump Off '07"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885862",
+            "EntityName": "N.I.G.G.A.S."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885863",
+            "EntityName": "Sunshine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885860",
+            "EntityName": "Dilly Dally"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885861",
+            "EntityName": "Warning"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885866",
+            "EntityName": "I'm Cumin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885867",
+            "EntityName": "Freestyle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885864",
+            "EntityName": "Letcha Go"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885865",
+            "EntityName": "Sticks in My Bun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885870",
+            "EntityName": "Encore '07"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885868",
+            "EntityName": "Hood Story"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56885869",
+            "EntityName": "Ease Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q58690598",
+            "EntityName": "No Candle No Light"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q59126034",
+            "EntityName": "Good Form"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60463112",
+            "EntityName": "Blazin'"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60744747",
+            "EntityName": "Dip"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60787015",
+            "EntityName": "Touch Down"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61701670",
+            "EntityName": "Dumb Blonde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q63704527",
+            "EntityName": "Wobble Up"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q64755607",
+            "EntityName": "Megatron"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65044185",
+            "EntityName": "Make Love"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q66363968",
+            "EntityName": "Hot Girl Summer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q76359437",
+            "EntityName": "Tusa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83634294",
+            "EntityName": "Say So"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84105601",
+            "EntityName": "Nice to Meet Ya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84523978",
+            "EntityName": "Yikes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q95567642",
+            "EntityName": "Trollz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96192597",
+            "EntityName": "No Flag"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96254176",
+            "EntityName": "Thought I Knew You"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q99231579",
+            "EntityName": "Oh My Gawd"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q100740809",
+            "EntityName": "Expensive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106670305",
+            "EntityName": "Anybody"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106929687",
+            "EntityName": "Seeing Green"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q110822752",
+            "EntityName": "Do We Have a Problem?"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q110903321",
+            "EntityName": "Bussin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q113500192",
+            "EntityName": "Super Freaky Girl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q113646249",
+            "EntityName": "Queen Radio: Volume 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-823",
+    "RawQuestion": "what college did magic johnson go to?",
+    "ProcessedQuestion": "what college did magic johnson go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q134183 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q270222",
+            "EntityName": "Michigan State University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-825",
+    "RawQuestion": "what to see in chicago downtown?",
+    "ProcessedQuestion": "what to see in chicago downtown",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q570116; wdt:P131 wd:Q1297. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1414079",
+            "EntityName": "Museum of Science and Industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1276053",
+            "EntityName": "Oriental Institute"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43153888",
+            "EntityName": "Navy Pier Ferris Wheel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5305600",
+            "EntityName": "Drake Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q118142",
+            "EntityName": "Museum of Contemporary Art, Chicago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q239303",
+            "EntityName": "Art Institute of Chicago"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963315",
+            "EntityName": "Chicago History Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3336910",
+            "EntityName": "National Museum of Mexican Art"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3486881",
+            "EntityName": "Smart Museum of Art"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1122595",
+            "EntityName": "Field Museum of Natural History"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6059089",
+            "EntityName": "Intuit: The Center for Intuitive and Outsider Art"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5953637",
+            "EntityName": "Hyde Park Art Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q358052",
+            "EntityName": "Adler Planetarium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7160706",
+            "EntityName": "Peggy Notebaert Nature Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q69904757",
+            "EntityName": "Rhona Hoffman Gallery"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q112081342",
+            "EntityName": "WNDR Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q840284",
+            "EntityName": "Museum of Broadcast Communications"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1582905",
+            "EntityName": "Hull House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963292",
+            "EntityName": "Chicago Architecture Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15961479",
+            "EntityName": "Irish American Heritage Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15961503",
+            "EntityName": "DANK Haus German American Cultural Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15975388",
+            "EntityName": "Barack Obama Presidential Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16237358",
+            "EntityName": "Cliff Dwellers Club"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85797680",
+            "EntityName": "Roger Brown Study Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1435136",
+            "EntityName": "Leather Archives and Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19864096",
+            "EntityName": "American Writers Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5428531",
+            "EntityName": "Facets Multi-Media"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5531450",
+            "EntityName": "Gene Siskel Film Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24061530",
+            "EntityName": "Chicago Design Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48966124",
+            "EntityName": "Chicago Maritime Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25247412",
+            "EntityName": "Garfield Park Conservatory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65064012",
+            "EntityName": "International Sports Hall of Fame"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q102283031",
+            "EntityName": "A. Philip Randolph Pullman Porter Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2389341",
+            "EntityName": "Riverview Park (Chicago)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q158989",
+            "EntityName": "Buckingham Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q109495100",
+            "EntityName": "Shit Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q589099",
+            "EntityName": "Cloud Gate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29294",
+            "EntityName": "Willis Tower"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3337338",
+            "EntityName": "Navy Pier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19866505",
+            "EntityName": "Chicago Athenaeum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7752704",
+            "EntityName": "The Museum of Classic Chicago Television"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q588030",
+            "EntityName": "Pritzker Military Museum & Library"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7878483",
+            "EntityName": "Ukrainian National Museum"
+          }
+        ]
+      }
+    ]
+  }
+]

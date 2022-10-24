@@ -1,0 +1,198 @@
+[
+  {
+    "QuestionId": "WebQTrn-705",
+    "RawQuestion": "who runs the cornelia marie now?",
+    "ProcessedQuestion": "who runs the cornelia marie now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02qn24x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02qn24x ns:boats.ship.owners ?y .\n?y ns:boats.ship_ownership.owner ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2sdt9",
+            "EntityName": "Jake Harris"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2sdtm",
+            "EntityName": "F/V Cornelia Marie, LLC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2sdty",
+            "EntityName": "Josh Harris"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-720",
+    "RawQuestion": "what are the major imports of the united states?",
+    "ProcessedQuestion": "what are the major imports of the united states",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.statistical_region.major_imports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd_n",
+            "EntityName": "Pharmaceutical Preparation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xm3m",
+            "EntityName": "Petroleum industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09j2d",
+            "EntityName": "Clothing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_jw",
+            "EntityName": "Furniture"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-721",
+    "RawQuestion": "what are the team colors for the pittsburgh steelers?",
+    "ProcessedQuestion": "what are the team colors for the pittsburgh steelers",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05tfm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05tfm ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019sc",
+            "EntityName": "Black"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l849",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-730",
+    "RawQuestion": "where did madoff live in nyc?",
+    "ProcessedQuestion": "where did madoff live in nyc",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.051znky)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.051znky ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n?x ns:location.location.containedby ns:m.02_286 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cc56",
+            "EntityName": "Manhattan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ccvx",
+            "EntityName": "Queens"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-748",
+    "RawQuestion": "who did john fox coach for?",
+    "ProcessedQuestion": "who did john fox coach for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06_73l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06_73l ns:sports.sports_team_coach.teams_coached ?y .\n?y ns:sports.sports_team_coach_tenure.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01y3c",
+            "EntityName": "Carolina Panthers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0289q",
+            "EntityName": "Denver Broncos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-751",
+    "RawQuestion": "what did farrah have surgery for?",
+    "ProcessedQuestion": "what did farrah have surgery for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01j851)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01j851 ns:medicine.notable_person_with_medical_condition.condition ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vxm4",
+            "EntityName": "Anal cancer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-764",
+    "RawQuestion": "who was the colts coach in 2011?",
+    "ProcessedQuestion": "who was the colts coach in 2011",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03wnh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03wnh ns:american_football.football_team.historical_coaching_staff ?y .\n?y ns:american_football.football_historical_coach_position.coach ?x .\nFILTER(NOT EXISTS {?y ns:american_football.football_historical_coach_position.from ?sk0} || \nEXISTS {?y ns:american_football.football_historical_coach_position.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2011-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:american_football.football_historical_coach_position.to ?sk2} || \nEXISTS {?y ns:american_football.football_historical_coach_position.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2011-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bjdtb",
+            "EntityName": "Jim Caldwell"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-770",
+    "RawQuestion": "what airport is close to daytona beach florida?",
+    "ProcessedQuestion": "what airport is close to daytona beach florida",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0rsjf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0rsjf ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w45sm",
+            "EntityName": "Spruce Creek Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03byvk1",
+            "EntityName": "Massey Ranch Airpark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07jwl0",
+            "EntityName": "Daytona Beach International Airport"
+          }
+        ]
+      }
+    ]
+  }
+]

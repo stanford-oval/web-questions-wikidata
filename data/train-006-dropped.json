@@ -1,0 +1,69 @@
+[
+  {
+    "QuestionId": "WebQTrn-1016",
+    "RawQuestion": "what did richard arkwright contribute to the industrial revolution?",
+    "ProcessedQuestion": "what did richard arkwright contribute to the industrial revolution",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01tglh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01tglh ns:law.inventor.inventions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03lqnn",
+            "EntityName": "Water frame"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.052wmn",
+            "EntityName": "Spinning frame"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1097",
+    "RawQuestion": "what is the new orleans hornets new name?",
+    "ProcessedQuestion": "what is the new orleans hornets new name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm6n)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm6n ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "New Orleans Pelicans",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1099",
+    "RawQuestion": "who is hugh hefner dating now in 2012?",
+    "ProcessedQuestion": "who is hugh hefner dating now in 2012",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03pvt)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03pvt ns:celebrities.celebrity.sexual_relationships ?y .\n?y ns:celebrities.romantic_relationship.celebrity ?x .\n?y ns:celebrities.romantic_relationship.relationship_type ns:m.02_7k44 .\n?y ns:celebrities.romantic_relationship.start_date ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fk86h",
+            "EntityName": "Izabella St. James"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1113",
+    "RawQuestion": "where was hockey world cup 2010 held?",
+    "ProcessedQuestion": "where was hockey world cup 2010 held",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03ss21)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03ss21 ns:time.recurring_event.instances ?x .\nFILTER(NOT EXISTS {?x ns:time.event.start_date ?sk0} || \nEXISTS {?x ns:time.event.start_date ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2010-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?x ns:time.event.end_date ?sk2} || \nEXISTS {?x ns:time.event.end_date ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2010-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": []
+      }
+    ]
+  }
+]

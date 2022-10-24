@@ -353,17 +353,12 @@
     "ProcessedQuestion": "who is louisiana state senator",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101499042; pq:P580 ?y. } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498918; pq:P580 ?y. } } ORDER BY DESC (?y) LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y; pq:P582 ?z. ?w wdt:P131 wd:Q1588. } ORDER BY DESC (?x) LIMIT 2",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q6250211",
-            "EntityName": "John Neely Kennedy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q861999",
-            "EntityName": "Bill Cassidy"
+            "AnswerArgument": "Q22338",
+            "EntityName": "Mary Landrieu"
           }
         ]
       }

@@ -1,0 +1,295 @@
+[
+  {
+    "QuestionId": "WebQTrn-832",
+    "RawQuestion": "with which countries does south africa trade?",
+    "ProcessedQuestion": "with which countries does south africa trade",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.0hzlz)\n\t{ \n\t  ns:m.0hzlz ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.0hzlz ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wlh",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088q4",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-858",
+    "RawQuestion": "which countries does south africa export to?",
+    "ProcessedQuestion": "which countries does south africa export to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0hzlz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0hzlz ns:location.statistical_region.places_exported_to ?y .\n?y ns:location.imports_and_exports.exported_to ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-861",
+    "RawQuestion": "who did george lucas get engaged to?",
+    "ProcessedQuestion": "who did george lucas get engaged to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0343h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0343h ns:celebrities.celebrity.sexual_relationships ?y .\n?y ns:celebrities.romantic_relationship.celebrity ?x .\n?y ns:celebrities.romantic_relationship.relationship_type ns:m.02_99rl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q3xjl",
+            "EntityName": "Mellody Hobson"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-870",
+    "RawQuestion": "what was the milwaukee brewers old name?",
+    "ProcessedQuestion": "what was the milwaukee brewers old name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.051vz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.051vz ns:sports.sports_team.previously_known_as ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fq2vj2",
+            "EntityName": "Seattle Pilots"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-873",
+    "RawQuestion": "what airport is in kauai hawaii?",
+    "ProcessedQuestion": "what airport is in kauai hawaii",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.014wxc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.014wxc ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0_rq2",
+            "EntityName": "Lihue Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n5fw",
+            "EntityName": "Honolulu International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01r3l2",
+            "EntityName": "Kahului Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02k5j7",
+            "EntityName": "Kona International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398q8",
+            "EntityName": "Dillingham Airfield"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398qm",
+            "EntityName": "Hana Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398qz",
+            "EntityName": "Kalaupapa Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398r_",
+            "EntityName": "Molokai Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398r9",
+            "EntityName": "Kapalua Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398rn",
+            "EntityName": "Lanai Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398sb",
+            "EntityName": "Hilo International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398sq",
+            "EntityName": "Waimea-Kohala Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.039g2f",
+            "EntityName": "Kalaeloa Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.039ggn",
+            "EntityName": "Port Allen Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.039ghr",
+            "EntityName": "Upolu Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cybt3",
+            "EntityName": "Marine Corps Air Station Kaneohe Bay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gddb",
+            "EntityName": "Pacific Missile Range Facility"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07kd9xk",
+            "EntityName": "French Frigate Shoals Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08jyt_",
+            "EntityName": "Princeville Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09gkgdn",
+            "EntityName": "Kaanapali Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hhhg6t",
+            "EntityName": "Waikoloa Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0s059",
+            "EntityName": "Wheeler Army Airfield"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-881",
+    "RawQuestion": "what three continents touch the atlantic ocean?",
+    "ProcessedQuestion": "what three continents touch the atlantic ocean",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0j3b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0j3b ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mh .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j9z",
+            "EntityName": "Europe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-893",
+    "RawQuestion": "what does the name rome mean?",
+    "ProcessedQuestion": "what does the name rome mean",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c62 ns:symbols.namesake.named_after ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ghqr",
+            "EntityName": "Romulus and Remus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-962",
+    "RawQuestion": "who played forrest gump as a kid?",
+    "ProcessedQuestion": "who played forrest gump as a kid",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bdjd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bdjd ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0264f7h .\n?y ns:film.performance.character_note ?sk0 .\nFILTER (str(?sk0) = \"Young Forrest\")\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ptwkr",
+            "EntityName": "Michael Connor Humphreys"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-977",
+    "RawQuestion": "who does debbie dingle go out with?",
+    "ProcessedQuestion": "who does debbie dingle go out with",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09rj2g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09rj2g ns:fictional_universe.fictional_character.romantically_involved_with ?y .\n?y ns:fictional_universe.romantic_involvement.partner ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08_8bk",
+            "EntityName": "Jasmine Thomas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.080fx8",
+            "EntityName": "Scott Windsor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.082d3t",
+            "EntityName": "Andy Sugden"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dj3x6",
+            "EntityName": "Eli Dingle"
+          }
+        ]
+      }
+    ]
+  }
+]

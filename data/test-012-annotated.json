@@ -208,8 +208,14 @@
     "ProcessedQuestion": "when was the last time the toronto maple leafs win the stanley cup",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q203384; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
-        "Answers": []
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q211872; wdt:P1346 wd:Q203384; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1967-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
       }
     ]
   },
