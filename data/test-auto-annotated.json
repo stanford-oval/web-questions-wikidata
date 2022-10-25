@@ -3122,67 +3122,42 @@
     "ProcessedQuestion": "what was the title of the book charles darwin wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1035 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1035 wdt:P800 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q520549",
-            "EntityName": "geologist"
+            "AnswerArgument": "Q917790",
+            "EntityName": "The Formation of Vegetable Mould through the Action of Worms"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q852389",
-            "EntityName": "beekeeper"
+            "AnswerArgument": "Q941356",
+            "EntityName": "Insectivorous Plants"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q864503",
-            "EntityName": "biologist"
+            "AnswerArgument": "Q1165434",
+            "EntityName": "The Descent of Man, and Selection in Relation to Sex"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q2374149",
-            "EntityName": "botanist"
+            "AnswerArgument": "Q1192325",
+            "EntityName": "The Expression of the Emotions in Man and Animals"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q3055126",
-            "EntityName": "entomologist"
+            "AnswerArgument": "Q1768515",
+            "EntityName": "The Voyage of the Beagle"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q3579035",
-            "EntityName": "travel writer"
+            "AnswerArgument": "Q4354654",
+            "EntityName": "The Power of Movement in Plants"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q4964182",
-            "EntityName": "philosopher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11900058",
-            "EntityName": "explorer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q16831721",
-            "EntityName": "ethologist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q16868721",
-            "EntityName": "carcinologist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q18805",
-            "EntityName": "naturalist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q36180",
-            "EntityName": "writer"
+            "AnswerArgument": "Q20124",
+            "EntityName": "On the Origin of Species"
           }
         ]
       }
@@ -64318,7 +64293,7 @@
     "ProcessedQuestion": "who has ray allen dated",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q208623 wdt:P26 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q208623 p:P451|p:P26 ?p. ?p ps:P451|ps:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

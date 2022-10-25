@@ -49263,7 +49263,7 @@
     "ProcessedQuestion": "what district does john cornyn represent",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q719568 p:P39 ?p. ?p pq:P768 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q170581 p:P39 ?p. ?p pq:P580 ?z; pq:P768 ?x. } ORDER BY DESC (?z) LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",

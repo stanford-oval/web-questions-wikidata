@@ -2020,7 +2020,7 @@
     "ProcessedQuestion": "what a city in montana",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1212 wdt:P36 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q515; wdt:P131+ wd:Q1212. } LIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",

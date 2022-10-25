@@ -748,7 +748,7 @@
     "ProcessedQuestion": "who brad pitt has dated",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35332 wdt:P26|wdt:P451 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35332 p:P451|p:P26 ?p. ?p ps:P451|ps:P26 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
