@@ -1,0 +1,192 @@
+[
+  {
+    "QuestionId": "WebQTrn-1325",
+    "RawQuestion": "who are iran's major trading partners?",
+    "ProcessedQuestion": "who are iran 's major trading partners",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.03shp)\n\t{ \n\t  ns:m.03shp ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.03shp ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01f08r",
+            "EntityName": "Dubai"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sj3",
+            "EntityName": "Madagascar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1341",
+    "RawQuestion": "what is the boston celtics current roster?",
+    "ProcessedQuestion": "what is the boston celtics current roster",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bwjj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bwjj ns:sports.sports_team.roster ?y .\n?y ns:sports.sports_team_roster.player ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03s55y",
+            "EntityName": "Gerald Wallace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f06_h",
+            "EntityName": "Tyler Zeller"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04qt10b",
+            "EntityName": "Phil Farbman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fwz1x",
+            "EntityName": "Colton Iverson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p32hd",
+            "EntityName": "Evan Turner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p60sr",
+            "EntityName": "Marcus Thornton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w7hfh",
+            "EntityName": "Avery Bradley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fcql",
+            "EntityName": "Brandon Bass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b6ld_",
+            "EntityName": "Jeff Green"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bh9jqp",
+            "EntityName": "Jared Sullinger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cf5jm",
+            "EntityName": "Rajon Rondo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crf9w7",
+            "EntityName": "Kelly Olynyk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h54fs7",
+            "EntityName": "Vítor Faverani"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4_l_p",
+            "EntityName": "Erik Murphy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4dndk",
+            "EntityName": "Rodney McGruder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j50hx6",
+            "EntityName": "Phil Pressey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdn6hb",
+            "EntityName": "Marcus Smart"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdp4dt",
+            "EntityName": "James Young"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w2ypr6",
+            "EntityName": "Tim Frazier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w6vh_2",
+            "EntityName": "Dwight Powell"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1344",
+    "RawQuestion": "who plays ray barone?",
+    "ProcessedQuestion": "who plays ray barone",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05h7f2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05h7f2 ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01h910",
+            "EntityName": "Ray Romano"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1356",
+    "RawQuestion": "what major airport is near destin florida?",
+    "ProcessedQuestion": "what major airport is near destin florida",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0rp8x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0rp8x ns:location.location.nearby_airports ?x .\n?x ns:aviation.airport.number_of_runways ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01q6d0",
+            "EntityName": "Destin–Fort Walton Beach Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1394",
+    "RawQuestion": "what country does turkey trade with?",
+    "ProcessedQuestion": "what country does turkey trade with",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.01znc_)\n\t{ \n\t  ns:m.01znc_ ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.01znc_ ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h3y",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jdx",
+            "EntityName": "Albania"
+          }
+        ]
+      }
+    ]
+  }
+]

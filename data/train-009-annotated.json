@@ -1,0 +1,2788 @@
+[
+  {
+    "QuestionId": "WebQTrn-1424",
+    "RawQuestion": "where is oceania on a map?",
+    "ProcessedQuestion": "where is oceania on a map",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q538 wdt:P625 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(166.0 -21.0)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1428",
+    "RawQuestion": "when was the last time the ny giants played in the superbowl?",
+    "ProcessedQuestion": "when was the last time the ny giants played in the superbowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q190618; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2012-02-05T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1430",
+    "RawQuestion": "who was the president of pakistan in 1980?",
+    "ProcessedQuestion": "who was the president of pakistan in 1980",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q473984; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1981-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1980-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q200499",
+            "EntityName": "Muhammad Zia-ul-Haq"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1431",
+    "RawQuestion": "which college did barack obama attend?",
+    "ProcessedQuestion": "which college did barack obama attend",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49122",
+            "EntityName": "Harvard Law School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1346110",
+            "EntityName": "Occidental College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13371",
+            "EntityName": "Harvard University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49088",
+            "EntityName": "Columbia University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036763",
+            "EntityName": "University of Chicago Law School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1435",
+    "RawQuestion": "what teams played in the 2010 stanley cup?",
+    "ProcessedQuestion": "what teams played in the 2010 stanley cup",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q211872; wdt:P585 ?y; wdt:P1923 ?x. FILTER((?y < \"2011-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"2010-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q192083",
+            "EntityName": "Philadelphia Flyers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q209636",
+            "EntityName": "Chicago Blackhawks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1436",
+    "RawQuestion": "what colony is john adams from?",
+    "ProcessedQuestion": "what colony is john adams from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11806 p:P19 ?p. ?p ps:P19 ?y; pq:P131 ?x. ?x wdt:P31/wdt:P279* wd:Q133156. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2079909",
+            "EntityName": "Province of Massachusetts Bay"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1437",
+    "RawQuestion": "what countries do germany border?",
+    "ProcessedQuestion": "what countries do germany border",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q183 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35",
+            "EntityName": "Denmark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q32",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39",
+            "EntityName": "Switzerland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36",
+            "EntityName": "Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40",
+            "EntityName": "Austria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55",
+            "EntityName": "Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q213",
+            "EntityName": "Czech Republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1439",
+    "RawQuestion": "what language do the assyrians speak?",
+    "ProcessedQuestion": "what language do the assyrians speak",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41137 wdt:P2936 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28602",
+            "EntityName": "Aramaic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35518",
+            "EntityName": "Akkadian"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1440",
+    "RawQuestion": "who plays mary jane in spiderman 3?",
+    "ProcessedQuestion": "who plays mary jane in spiderman 3",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182212 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q63729056. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q76478",
+            "EntityName": "Kirsten Dunst"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1443",
+    "RawQuestion": "when president lincoln was elected?",
+    "ProcessedQuestion": "when president lincoln was elected",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q91 p:P39 ?y. ?y ps:P39 wd:Q1467287; pq:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1860-11-06T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1444",
+    "RawQuestion": "when was the last time the oakland raiders won the super bowl?",
+    "ProcessedQuestion": "when was the last time the oakland raiders won the super bowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q324523; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1981-01-25T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1446",
+    "RawQuestion": "where is devon sawa now?",
+    "ProcessedQuestion": "where is devon sawa now",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q317308 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1452",
+    "RawQuestion": "where does the spanish language come from?",
+    "ProcessedQuestion": "where does the spanish language come from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1321 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q71924",
+            "EntityName": "Castilian languages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1377152",
+            "EntityName": "West Iberian"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1454",
+    "RawQuestion": "where does ryan lochte live now?",
+    "ProcessedQuestion": "where does ryan lochte live now",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q201517 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1457",
+    "RawQuestion": "what is capital city of ontario?",
+    "ProcessedQuestion": "what is capital city of ontario",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1904 wdt:P36 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q172",
+            "EntityName": "Toronto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1458",
+    "RawQuestion": "what money is used in england?",
+    "ProcessedQuestion": "what money is used in england",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q21 wdt:P38 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25224",
+            "EntityName": "pound sterling"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1460",
+    "RawQuestion": "who is the voice of lois from family guy?",
+    "ProcessedQuestion": "who is the voice of lois from family guy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P161|p:P725 ?p. ?p ps:P161|ps:P725 ?x; pq:P453 wd:Q853073. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q116219",
+            "EntityName": "Alex Borstein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1461",
+    "RawQuestion": "what was walt disney's first cartoon called?",
+    "ProcessedQuestion": "what was walt disney 's first cartoon called",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P179 wd:Q56070713; p:P571 ?p. ?p pq:P580 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134430",
+            "EntityName": "Snow White and the Seven Dwarfs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1462",
+    "RawQuestion": "what did mary harris jones accomplish?",
+    "ProcessedQuestion": "what did mary harris jones accomplish",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q107082 wdt:P166 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1967852",
+            "EntityName": "National Women's Hall of Fame"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17277947",
+            "EntityName": "Labor Hall of Honor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1465",
+    "RawQuestion": "where is ellis park rugby stadium?",
+    "ProcessedQuestion": "where is ellis park rugby stadium",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182081 wdt:P276 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34647",
+            "EntityName": "Johannesburg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1466",
+    "RawQuestion": "what does the letters eu stand for?",
+    "ProcessedQuestion": "what does the letters eu stand for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q458 wdt:P1448 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Union européenne",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Europese Unie",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Европейски съюз",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Evropská unie",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Den Europæiske Union",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Europäische Union",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Ευρωπαϊκή Ένωση",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "European Union",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Unión Europea",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Euroopa Liit",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Euroopan unioni",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "An tAontas Eorpach",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Europska unija",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Európai Unió",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Unione europea",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Europos Sąjunga",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Eiropas Savienība",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Unjoni Ewropea",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Unia Europejska",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "União Europeia",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Uniunea Europeană",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Európska únia",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Evropska unija",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Europeiska unionen",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Union Eoropea",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1467",
+    "RawQuestion": "what are the 5 countries in the united kingdom?",
+    "ProcessedQuestion": "what are the 5 countries in the united kingdom",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q145 wdt:P150 ?x. } LIMIT 5",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22",
+            "EntityName": "Scotland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26",
+            "EntityName": "Northern Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25",
+            "EntityName": "Wales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1469",
+    "RawQuestion": "who is the state senator of kentucky?",
+    "ProcessedQuestion": "who is the state senator of kentucky",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y. ?w wdt:P131 wd:Q1603. } ORDER BY DESC (?y) LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q355522",
+            "EntityName": "Mitch McConnell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q463557",
+            "EntityName": "Rand Paul"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1472",
+    "RawQuestion": "who is playing jason morgan on general hospital?",
+    "ProcessedQuestion": "who is playing jason morgan on general hospital",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1136370 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q6163143. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7612113",
+            "EntityName": "Steve Burton"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1476",
+    "RawQuestion": "who nikki reed play in twilight?",
+    "ProcessedQuestion": "who nikki reed play in twilight",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q60506 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q234847; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1477",
+    "RawQuestion": "who does blake griffin play for in the nba?",
+    "ProcessedQuestion": "who does blake griffin play for in the nba",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q309783 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q131371",
+            "EntityName": "Boston Celtics"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q169661",
+            "EntityName": "Detroit Pistons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q572134",
+            "EntityName": "Brooklyn Nets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7082332",
+            "EntityName": "Oklahoma Sooners men's basketball"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1479",
+    "RawQuestion": "what are bridgit mendler's parents names?",
+    "ProcessedQuestion": "what are bridgit mendler 's parents names",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q213736 wdt:P22|wdt:P25 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1485",
+    "RawQuestion": "what was francisco vasquez de coronado known for?",
+    "ProcessedQuestion": "what was francisco vasquez de coronado known for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q271974 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Spanish explorer of the American southwest",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1486",
+    "RawQuestion": "what form of government does greece use?",
+    "ProcessedQuestion": "what form of government does greece use",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41 wdt:P122 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4198907",
+            "EntityName": "parliamentary republic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1488",
+    "RawQuestion": "who was the original voice of meg on family guy?",
+    "ProcessedQuestion": "who was the original voice of meg on family guy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q908772. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37628",
+            "EntityName": "Mila Kunis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1494",
+    "RawQuestion": "what are all of michael jackson albums?",
+    "ProcessedQuestion": "what are all of michael jackson albums",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q482994; wdt:P175 wd:Q2831. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q112057700",
+            "EntityName": "Thriller 40"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q223743",
+            "EntityName": "Blood on the Dance Floor: HIStory in the Mix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q268138",
+            "EntityName": "The Ultimate Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q381033",
+            "EntityName": "Michael"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q386290",
+            "EntityName": "One Night in Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q431436",
+            "EntityName": "Bad 25"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q507175",
+            "EntityName": "The Best of Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q625491",
+            "EntityName": "One Day in Your Life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q691128",
+            "EntityName": "Hello World: The Motown Solo Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q719955",
+            "EntityName": "Number Ones"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q731387",
+            "EntityName": "HIStory on Film, Volume II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q745960",
+            "EntityName": "Thriller 25"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q772092",
+            "EntityName": "Anthology"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q782406",
+            "EntityName": "The Essential Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q838009",
+            "EntityName": "Visionary: The Video Singles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q845397",
+            "EntityName": "Michael Jackson's This Is It"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q847322",
+            "EntityName": "Farewell My Summer Love 1984"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q848961",
+            "EntityName": "King of Pop"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19060",
+            "EntityName": "Got to Be There"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25151",
+            "EntityName": "50 Best Songs – The Motown Years: Michael Jackson & The Jackson 5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25158",
+            "EntityName": "Love Songs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43733",
+            "EntityName": "Live at Wembley July 16, 1988"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44104",
+            "EntityName": "Dangerous"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44142",
+            "EntityName": "Bad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44185",
+            "EntityName": "Ben"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44209",
+            "EntityName": "Music & Me"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44247",
+            "EntityName": "Forever, Michael"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44289",
+            "EntityName": "Off the Wall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44320",
+            "EntityName": "Thriller"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44347",
+            "EntityName": "HIStory: Past, Present and Future, Book I"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44376",
+            "EntityName": "Invincible"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107267805",
+            "EntityName": "Ghosts Deluxe Collector Box Set – Limited Edition"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107291009",
+            "EntityName": "Tour Souvenir Pack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11337210",
+            "EntityName": "ベンのテーマ〜ベスト・オブ・マイケル・ジャクソン"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11339647",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11849642",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11855678",
+            "EntityName": "DMC Megamix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11855763",
+            "EntityName": "Dangerous Remix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11897112",
+            "EntityName": "The Bad Mixes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11897255",
+            "EntityName": "The Michael Jackson Mix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11897317",
+            "EntityName": "The Sound"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11897367",
+            "EntityName": "Their Very Best - Back To Back"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11898946",
+            "EntityName": "Twelves"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15937848",
+            "EntityName": "The Indispensable Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15990452",
+            "EntityName": "Xscape"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16639963",
+            "EntityName": "Then, Now, Forever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689614",
+            "EntityName": "HIStory Begins..."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689612",
+            "EntityName": "Highlights From The Ultimate Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689616",
+            "EntityName": "HIStory LIFEstyle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689625",
+            "EntityName": "Instrumental Version Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689660",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689671",
+            "EntityName": "Limited Edition Minimax CD"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689678",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689676",
+            "EntityName": "Majesty 1992"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689714",
+            "EntityName": "Signature Series"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689719",
+            "EntityName": "Singles Souvenir Pack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689731",
+            "EntityName": "Super Hits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18689740",
+            "EntityName": "The 12\" Mixes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19864284",
+            "EntityName": "Thriller 25 – Limited Japanese Single Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28497572",
+            "EntityName": "Japan Broadcast 1987"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q38885410",
+            "EntityName": "Scream (Michael Jackson album)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56376009",
+            "EntityName": "Dangerous – The Remix Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107262948",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q941927",
+            "EntityName": "Video Greatest Hits – HIStory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1070240",
+            "EntityName": "The Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1144719",
+            "EntityName": "Immortal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1638445",
+            "EntityName": "Icon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1650850",
+            "EntityName": "Dangerous: The Short Films"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1767895",
+            "EntityName": "E.T. the Extra-Terrestrial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2452326",
+            "EntityName": "The Original Soul of Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2452347",
+            "EntityName": "Looking Back to Yesterday"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2469838",
+            "EntityName": "King of Pop – The Dutch Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2610358",
+            "EntityName": "A Collection of Michael Jackson's Oldies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2705133",
+            "EntityName": "The Wiz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2735957",
+            "EntityName": "The Remix Suite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3116033",
+            "EntityName": "Greatest Hits - HIStory Volume I"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3289744",
+            "EntityName": "The Stripped Mixes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3556002",
+            "EntityName": "The Definitive Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3597497",
+            "EntityName": "14 Greatest Hits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3597850",
+            "EntityName": "18 Greatest Hits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3598083",
+            "EntityName": "The Best of Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3618468",
+            "EntityName": "Anthology – The Best of Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3683676",
+            "EntityName": "Colour Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3772880",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3856188",
+            "EntityName": "Michael Jackson & The Jackson 5 - Great Songs and Performances That Inspired The Motown 25th Anniversary Television Special"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3866436",
+            "EntityName": "Motown's Greatest Hits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3866437",
+            "EntityName": "Motown Legends - Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3866440",
+            "EntityName": "Motown Superstar Series Vol. 7 – Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3932441",
+            "EntityName": "Remixes and Rarities"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3939795",
+            "EntityName": "Motown Legends - Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3987375",
+            "EntityName": "The Great Love Songs of Michael Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5411165",
+            "EntityName": "Best 1200"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5411335",
+            "EntityName": "The Essential Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5490092",
+            "EntityName": "The Medleys"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9032270",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10320079",
+            "EntityName": "Love Songs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10499976",
+            "EntityName": "Early Classics"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10506993",
+            "EntityName": "Goin Places"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11313403",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1495",
+    "RawQuestion": "where did joe namath live?",
+    "ProcessedQuestion": "where did joe namath live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q720558 p:P551 ?p. ?p ps:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1504",
+    "RawQuestion": "who is ben roethlisberger parents?",
+    "ProcessedQuestion": "who is ben roethlisberger parents",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q537679 wdt:P22|wdt:P25 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1506",
+    "RawQuestion": "what are the zoroastrian scriptures called?",
+    "ProcessedQuestion": "what are the zoroastrian scriptures called",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9601 wdt:P457 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83426",
+            "EntityName": "Avesta"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1511",
+    "RawQuestion": "what year did michael jordan started his career?",
+    "ProcessedQuestion": "what year did michael jordan started his career",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41421 wdt:P2031 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1984-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1513",
+    "RawQuestion": "what kind of guitar does jemaine clement play?",
+    "ProcessedQuestion": "what kind of guitar does jemaine clement play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P279* wd:Q6607; wdt:P1535 wd:Q439315. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1519",
+    "RawQuestion": "who is the falcons quarterback 2012?",
+    "ProcessedQuestion": "who is the falcons quarterback 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P413 wd:Q622747; p:P54 ?p. ?p ps:P54 wd:Q272059; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q984327",
+            "EntityName": "Matt Ryan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1521",
+    "RawQuestion": "what is north dakota state's mascot?",
+    "ProcessedQuestion": "what is north dakota state 's mascot",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2000624 wdt:P822 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1522",
+    "RawQuestion": "what is the work of charles darwin?",
+    "ProcessedQuestion": "what is the work of charles darwin",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q1035. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q375946",
+            "EntityName": "Zoology of the Voyage of H.M.S. Beagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q785958",
+            "EntityName": "The Variation of Animals and Plants under Domestication"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917790",
+            "EntityName": "The Formation of Vegetable Mould through the Action of Worms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q941356",
+            "EntityName": "Insectivorous Plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1165434",
+            "EntityName": "The Descent of Man, and Selection in Relation to Sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1192325",
+            "EntityName": "The Expression of the Emotions in Man and Animals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1755867",
+            "EntityName": "Fertilisation of Orchids"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1768515",
+            "EntityName": "The Voyage of the Beagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1801903",
+            "EntityName": "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2001494",
+            "EntityName": "The Autobiography of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4354654",
+            "EntityName": "The Power of Movement in Plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5535306",
+            "EntityName": "Geological Observations on South America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5535307",
+            "EntityName": "Geological Observations on the Volcanic Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6980616",
+            "EntityName": "Natural Selection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7730156",
+            "EntityName": "The Different Forms of Flowers on Plants of the Same Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7731618",
+            "EntityName": "The Effects of Cross and Self Fertilisation in the Vegetable Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7747177",
+            "EntityName": "The Life of Erasmus Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7767074",
+            "EntityName": "The Structure and Distribution of Coral Reefs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14916812",
+            "EntityName": "On the Movements and Habits of Climbing Plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15632042",
+            "EntityName": "A Naturalist's Voyage Round the World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15632041",
+            "EntityName": "A Naturalist's Voyage Round the World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15632056",
+            "EntityName": "A Naturalist's Voyage Round the World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17113957",
+            "EntityName": "More Letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17141164",
+            "EntityName": "The Life and Letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19020082",
+            "EntityName": "A Biographical Sketch of an Infant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19155422",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19172730",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19172735",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19239765",
+            "EntityName": "Voyage d’un naturaliste autour du monde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19240517",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20968204",
+            "EntityName": "On the Origin of Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21161675",
+            "EntityName": "Die Entstehung der Arten"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21161673",
+            "EntityName": "Die Entstehung der Arten"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21948575",
+            "EntityName": "The Origin of Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24073728",
+            "EntityName": "О происхождении видов (1864)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25493678",
+            "EntityName": "Charles Darwin's theory of evolution"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29031802",
+            "EntityName": "On the Transportal of Erratic Boulders from a lower to a higher level"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40578896",
+            "EntityName": "L’Origine des espèces (1906)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41762310",
+            "EntityName": "A biographical sketch of an infant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44479286",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51285024",
+            "EntityName": "A biographical sketch of an infant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51379273",
+            "EntityName": "The effects of cross and self fertilisation in the vegetable kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51381320",
+            "EntityName": "The descent of man and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51381522",
+            "EntityName": "The descent of man and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51382402",
+            "EntityName": "The origin of species by means of natural selection, or, The preservation of favoured races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51382496",
+            "EntityName": "The formation of vegetable mould, through the action of worms : with observations on their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51391023",
+            "EntityName": "The various contrivances by which orchids are fertilised by insects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51391030",
+            "EntityName": "The movements and habits of climbing plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51392318",
+            "EntityName": "Journal of the proceedings of the Linnean Society. Vol. IV, Zoology"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51394672",
+            "EntityName": "The various contrivances by which orchids are fertilized by insects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51396702",
+            "EntityName": "The formation of vegetable mould, through the action of worms, with observations on their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51398159",
+            "EntityName": "The formation of vegetable mould, through the action of worms, with observations on their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51398884",
+            "EntityName": "The different forms of flowers on plants of the same species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51401102",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51404222",
+            "EntityName": "The variation of animals and plants under domestication"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51406194",
+            "EntityName": "Charles Darwin letters to Asa Gray"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51414775",
+            "EntityName": "The life and letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51414913",
+            "EntityName": "Charles Darwin, his life told in an autobiographical chapter and in a selected series of his published letters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51415556",
+            "EntityName": "The fertilisation of flowers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51420319",
+            "EntityName": "More letters of Charles Darwin. A record of his work in a series of hitherto unpublished letters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51423391",
+            "EntityName": "The descent of man, and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51424772",
+            "EntityName": "Mental evolution in animals. With a posthumous essay on instinct by Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51424866",
+            "EntityName": "The power of movement in plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430218",
+            "EntityName": "The formation of vegetable mould through the action of worms : with observations on their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430239",
+            "EntityName": "A monograph on the sub-class Cirripedia, with figures of all the species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430272",
+            "EntityName": "The origin of species by means of natural selection : or The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430326",
+            "EntityName": "Mental evolution in animals. With a posthumous essay on instinct"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430324",
+            "EntityName": "On the origin of species by means of natural selection, or, The preservation of favoured races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430545",
+            "EntityName": "More letters of Charles Darwin : a record of his work in a series of hitherto unpublished letters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51430575",
+            "EntityName": "The formation of vegetable mould : through the action of worms, with observations on their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51434408",
+            "EntityName": "The life and letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51437034",
+            "EntityName": "Das Abändern der Vögel durch Einfluss des Klima's. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51440515",
+            "EntityName": "The anatomy and philosophy of expression. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51445469",
+            "EntityName": "Die Bastardbefruchtung im Pflanzenreich. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51446043",
+            "EntityName": "Befruchtung der Blumen durch Insekten. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51446416",
+            "EntityName": "Beiträge zur Kenntniss der Befruchtung der vollkommeneren Gewächse. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51446798",
+            "EntityName": "Beyträge zur Anthropologie und allgemeinen Naturgeschichte. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51450355",
+            "EntityName": "The British flora. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51452108",
+            "EntityName": "Calendar of the letters of Charles Robert Darwin to Asa Gray"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51454953",
+            "EntityName": "Cattle: Their breeds, management, and diseases. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51458995",
+            "EntityName": "Considérations sur les céréales, et principalement sur les froments. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51462142",
+            "EntityName": "Darwinism stated by Darwin himself. Characteristic passages from the writings of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51462153",
+            "EntityName": "Die Darwin'sche Theorie und ihre Stellung zu Moral und Religion. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51462367",
+            "EntityName": "De la physionomie et des mouvements d'expression. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51463006",
+            "EntityName": "The Descent of Man And Selection in Relation to Sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51463004",
+            "EntityName": "The descent of man and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51463010",
+            "EntityName": "The Descent of Man And Selection in Relation to Sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51463008",
+            "EntityName": "The descent of man, and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51463566",
+            "EntityName": "Descriptive and physiological botany. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51465185",
+            "EntityName": "The different forms of flowers on plants of the same species /by Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51466260",
+            "EntityName": "The dog. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51466285",
+            "EntityName": "Dogs. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51466436",
+            "EntityName": "The variation of animals & plants under domestication"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51466508",
+            "EntityName": "The dovecote and the aviary. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51468279",
+            "EntityName": "Éléments de tératologie végétale. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51468416",
+            "EntityName": "Elements of physiology. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51468455",
+            "EntityName": "Elements of the comparative anatomy of the vertebrate animals. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51469879",
+            "EntityName": "Essay on the physiognomy of serpents. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51470891",
+            "EntityName": "Evidence as to man's place in nature. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20124",
+            "EntityName": "On the Origin of Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84582564",
+            "EntityName": "The descent of man, and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q93474768",
+            "EntityName": "Het ontstaan der soorten"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q95860617",
+            "EntityName": "Insectenfressende Pflanzen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97495708",
+            "EntityName": "Diario del viaje de un naturalista alrededor del mundo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q98222608",
+            "EntityName": "El origen de las especies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q98226826",
+            "EntityName": "Origen de las especies por medio de la selección natural"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q102487176",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106765273",
+            "EntityName": "Arternes Oprindelse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108913947",
+            "EntityName": "The Balanidae, (or sessile cirripedes); The Verrucidae, ect., ect., ect."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114399752",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51472501",
+            "EntityName": "Die Fauna der Pfahlbauten der Schweiz. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51480426",
+            "EntityName": "The fruits and fruit trees of America. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51481314",
+            "EntityName": "Das Ganze der Taubenzucht. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51483051",
+            "EntityName": "Geological observations on the volcanic islands and parts of South America visited during the voyage of H.M.S. 'Beagle'"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51483528",
+            "EntityName": "Die Getreidearten und Wiesengräser. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51486590",
+            "EntityName": "Handbook to the birds of Australia. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51486588",
+            "EntityName": "Handbook to The birds of Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51488854",
+            "EntityName": "Histoire naturelle générale des règnes organiques. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51489320",
+            "EntityName": "A history of British birds. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51489331",
+            "EntityName": "A history of British fossil mammals and birds. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51490546",
+            "EntityName": "Horses. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51491797",
+            "EntityName": "Der Hund. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51493967",
+            "EntityName": "In Sachen Darwin's insbesondere contra Wigand. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495102",
+            "EntityName": "Insectivorous plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495101",
+            "EntityName": "Insectivorous plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495515",
+            "EntityName": "Intermarriage. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495704",
+            "EntityName": "Introduction á la zoologie générale. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495767",
+            "EntityName": "An introduction to entomology. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51495886",
+            "EntityName": "An introduction to the Trochilidae, or family of humming-birds. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51496906",
+            "EntityName": "Journal of researches into the geology and natural history of the various coutntries visited by H.M.S. Beagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51496904",
+            "EntityName": "Journal of researches during the voyage of H.M.S. Beagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51498644",
+            "EntityName": "Leçons de botanique. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51499286",
+            "EntityName": "The life and letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51499291",
+            "EntityName": "The life and letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51499289",
+            "EntityName": "The life and letters of Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51500964",
+            "EntityName": "Mammalogie ou description des espèces des Mammifères. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51501558",
+            "EntityName": "A manual of elementary geology. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51501669",
+            "EntityName": "Manual of mineralogy. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51501750",
+            "EntityName": "A manual of scientific enquiry : prepared for the use of Her Majesty's Navy and adapted for travellers in general"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51501803",
+            "EntityName": "Manual of the botany of the northern United States. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51503098",
+            "EntityName": "Mémoire sur les Cucurbitacées. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51503791",
+            "EntityName": "Mental evolution in animals / by George John Romanes. With a posthumous essay on instinct / by Charles Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51503792",
+            "EntityName": "Mental evolution in animals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51506334",
+            "EntityName": "A monograph on the fossil Lepadidæ, or, Pedunculated Cirripedes of Great Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51507213",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51508620",
+            "EntityName": "The naturalist in Bermuda. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51508808",
+            "EntityName": "Nature stories from Darwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51508929",
+            "EntityName": "Naturgeschichte der Saeugethiere von Paraguay. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51508935",
+            "EntityName": "Naturgeschichte der Stubenvögel. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51508976",
+            "EntityName": "Die natürliche wagerechte Richtung von Pflanzentheilen. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51512220",
+            "EntityName": "Nouvelles recherches sur l'hybridité dans les végétaux. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51513785",
+            "EntityName": "On parthenogenesis. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51513962",
+            "EntityName": "On the classification and geographical distribution of Crustacea. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514073",
+            "EntityName": "On the domesticated animals of the British islands. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514125",
+            "EntityName": "On the genesis of species. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514226",
+            "EntityName": "On the movements and habits of climbing plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514239",
+            "EntityName": "On the nature of limbs. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514273",
+            "EntityName": "On the origin of species by means of natural selection, or the preservation of favoured races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514418",
+            "EntityName": "On the structure and distribution of coral reefs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514473",
+            "EntityName": "On the variation of species. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51514478",
+            "EntityName": "On the varieties of wheat. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515135",
+            "EntityName": "The origin of species (Harvard Classics edition, 1909)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515137",
+            "EntityName": "Origin of species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515143",
+            "EntityName": "The origin of species by means of natural selecti : or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515141",
+            "EntityName": "The origin of species : by means of natural selection, or, The preservation of favoured races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515146",
+            "EntityName": "Origin of species by means of natural selection, or the preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515145",
+            "EntityName": "The origin of species by means of natural selection : or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515152",
+            "EntityName": "The origin of species by means of natural selection, or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515159",
+            "EntityName": "The origin of species by means of natural selection, or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515156",
+            "EntityName": "The origin of species by means of natural selection, or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515157",
+            "EntityName": "The origin of species by means of natural selection, or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515162",
+            "EntityName": "Origin of species by means of natural selection, or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515163",
+            "EntityName": "The origin of species by means of natural selection; or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515167",
+            "EntityName": "The origin of species by means of natural selection; or, The preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515164",
+            "EntityName": "The origin of species by means of natural selection; or, The preservation of favoured races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515170",
+            "EntityName": "The Origin of Species"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515169",
+            "EntityName": "The origin of species by means of natural selection; or, the preservation of favored races in the struggle for life"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515175",
+            "EntityName": "The origin of species (World's Popular Classics edition)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515195",
+            "EntityName": "The origin of the species by means of natural selection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51515229",
+            "EntityName": "Ornamental and domestic poultry: their history and management. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51516596",
+            "EntityName": "Papers on pollination"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51517852",
+            "EntityName": "Philosophie zoologique. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51518313",
+            "EntityName": "The physiology or mechanism of blushing. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51518484",
+            "EntityName": "Pigeons and rabbits in their wild, domestic and captive states. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51519392",
+            "EntityName": "Insectivorous Plants"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51520030",
+            "EntityName": "Pomologie physiologique. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51520440",
+            "EntityName": "The poultry book. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51521224",
+            "EntityName": "Prehistoric Europe : a geological sketch"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51521754",
+            "EntityName": "Primitive marriage. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51522004",
+            "EntityName": "Principles of comparative physiology. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51522039",
+            "EntityName": "Principles of geology. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51522106",
+            "EntityName": "Principles of the anatomy and physiology of the vegetable cell. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51522759",
+            "EntityName": "Production et fixation des variétés dans les végétaux. : [Supplementary material in Charles Darwin's copy]."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51522889",
+            "EntityName": "Profitable poultry. : [Supplementary material in Charles Darwin's copy]"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54801553",
+            "EntityName": "The zoology of the voyage of H.M.S. Beagle ... during the years 1832-1836"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56101460",
+            "EntityName": "L.—On the agency of bees in the fertilization of papilionaceous flowers, and on the crossing of Kidney Beans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56104290",
+            "EntityName": "XVI.—Notes on the fertilization of orchids"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56141235",
+            "EntityName": "XXIX.—Brief descriptions of several terrestrial Planariæ, and of some remarkable marine species, with an account of their habits"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56160394",
+            "EntityName": "2. On The Modification Of A Race Of Syrian Street-Dogs By Means Of Sexual Selection."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56288566",
+            "EntityName": "On the Two Forms, or Dimorphic Condition, in the Species of Primula, and on their remarkable Sexual Relations"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56445634",
+            "EntityName": "Fertilisation of Orchids"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56658077",
+            "EntityName": "Die Abstammung des Menschen und die geschlechtliche Zuchtwahl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56689790",
+            "EntityName": "The descent of man, and selection in relation to sex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61661293",
+            "EntityName": "The Publication of the 'Origin of Species' — Oct. 3, 1859–dec. 31, 1859"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65524652",
+            "EntityName": "Arternes oprindelse gjennem naturligt udvalg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65528364",
+            "EntityName": "Menneskets afstamning og parringsvalget"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q71933415",
+            "EntityName": "The Parasitic Habits of Molothrus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84191391",
+            "EntityName": "On the Various Contrivances by Which British and Foreign Orchids are Fertilised by Insects, and on the Good Effects of Intercrossing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84467715",
+            "EntityName": "A Biographical Sketch of an Infant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84468743",
+            "EntityName": "A Biographical Sketch of an Infant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1525",
+    "RawQuestion": "where did phil mickelson go to college?",
+    "ProcessedQuestion": "where did phil mickelson go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q325374 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q670897",
+            "EntityName": "Arizona State University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1532",
+    "RawQuestion": "what college did harry s. truman attend?",
+    "ProcessedQuestion": "what college did harry s. truman attend",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11613 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q940690",
+            "EntityName": "University of Missouri–Kansas City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1535",
+    "RawQuestion": "what religion in thailand?",
+    "ProcessedQuestion": "what religion in thailand",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q869 wdt:P140 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1539",
+    "RawQuestion": "who plays paul blart?",
+    "ProcessedQuestion": "who plays paul blart",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q1194768. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1546",
+    "RawQuestion": "what are the names of all the countries in africa?",
+    "ProcessedQuestion": "what are the names of all the countries in africa",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P30 wd:Q15; wdt:P31 wd:Q6256. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q258",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q657",
+            "EntityName": "Chad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79",
+            "EntityName": "Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114",
+            "EntityName": "Kenya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q115",
+            "EntityName": "Ethiopia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q117",
+            "EntityName": "Ghana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912",
+            "EntityName": "Mali"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q916",
+            "EntityName": "Angola"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q924",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q929",
+            "EntityName": "Central African Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q945",
+            "EntityName": "Togo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q948",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q954",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q953",
+            "EntityName": "Zambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q958",
+            "EntityName": "South Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q962",
+            "EntityName": "Benin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q963",
+            "EntityName": "Botswana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q967",
+            "EntityName": "Burundi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q965",
+            "EntityName": "Burkina Faso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q970",
+            "EntityName": "Comoros"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q971",
+            "EntityName": "Republic of the Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q974",
+            "EntityName": "Democratic Republic of the Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q977",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q986",
+            "EntityName": "Eritrea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1006",
+            "EntityName": "Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1007",
+            "EntityName": "Guinea-Bissau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1005",
+            "EntityName": "The Gambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1011",
+            "EntityName": "Cape Verde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1008",
+            "EntityName": "Ivory Coast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1009",
+            "EntityName": "Cameroon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1014",
+            "EntityName": "Liberia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1013",
+            "EntityName": "Lesotho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1019",
+            "EntityName": "Madagascar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1016",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1020",
+            "EntityName": "Malawi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1025",
+            "EntityName": "Mauritania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1030",
+            "EntityName": "Namibia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1029",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1032",
+            "EntityName": "Niger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1033",
+            "EntityName": "Nigeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1039",
+            "EntityName": "São Tomé and Príncipe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1037",
+            "EntityName": "Rwanda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1042",
+            "EntityName": "Seychelles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1041",
+            "EntityName": "Senegal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1044",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1045",
+            "EntityName": "Somalia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34754",
+            "EntityName": "Somaliland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1548",
+    "RawQuestion": "what is the name of the pittsburgh steelers stadium?",
+    "ProcessedQuestion": "what is the name of the pittsburgh steelers stadium",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q191477 wdt:P115 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1067148",
+            "EntityName": "Acrisure Stadium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1557",
+    "RawQuestion": "where did charles drew go to college?",
+    "ProcessedQuestion": "where did charles drew go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1065848 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2154182",
+            "EntityName": "Columbia University Vagelos College of Physicians and Surgeons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49165",
+            "EntityName": "Amherst College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6801306",
+            "EntityName": "McGill University Faculty of Medicine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1559",
+    "RawQuestion": "who voice acts peter griffin?",
+    "ProcessedQuestion": "who voice acts peter griffin",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q28465. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q188492",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1562",
+    "RawQuestion": "what year was michael jordan rookie year?",
+    "ProcessedQuestion": "what year was michael jordan rookie year",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41421 p:P54 ?p. ?p ps:P54 ?y. ?y wdt:P118 wd:Q155223. ?p pq:P580 ?x. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1984-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

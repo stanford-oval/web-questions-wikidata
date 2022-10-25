@@ -1,0 +1,19 @@
+[
+  {
+    "QuestionId": "WebQTrn-1554",
+    "RawQuestion": "when was gardasil released to the public?",
+    "ProcessedQuestion": "when was gardasil released to the public",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0dnv87)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0dnv87 ns:base.bioventurist.product.sales ?y .\n?y ns:base.bioventurist.sales.year ?x .\n}\nORDER BY xsd:datetime(?x)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2006",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]
