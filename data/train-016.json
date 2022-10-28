@@ -1,0 +1,3517 @@
+[
+  {
+    "QuestionId": "WebQTrn-2576",
+    "RawQuestion": "what continent do the falkland islands belong to?",
+    "ProcessedQuestion": "what continent do the falkland islands belong to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02wmy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02wmy ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01mh .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06n3y",
+            "EntityName": "South America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07c5l",
+            "EntityName": "Americas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2578",
+    "RawQuestion": "which states touch canadian soil?",
+    "ProcessedQuestion": "which states touch canadian soil",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.0kpys4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04rrx",
+            "EntityName": "Michigan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059f4",
+            "EntityName": "New Hampshire"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2580",
+    "RawQuestion": "what are the four harry potter house names?",
+    "ProcessedQuestion": "what are the four harry potter house names",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nns:m.0cb3n ns:fictional_universe.fictional_organization.sub_organization_in_fiction ?x .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vhpv1",
+            "EntityName": "Gryffindor House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vhpvc",
+            "EntityName": "Ravenclaw House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vhpvl",
+            "EntityName": "Slytherin House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vhpw2",
+            "EntityName": "Hufflepuff House"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2582",
+    "RawQuestion": "when is the gold cup cheltenham?",
+    "ProcessedQuestion": "when is the gold cup cheltenham",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x \nWHERE {\n  ns:m.03krjv ns:time.recurring_event.instances ?y . # Cheltenham Gold Cup\n  ?y ns:time.event.start_date ?x . \n}\nORDER BY DESC(?x)\nLIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2012-03-16",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2583",
+    "RawQuestion": "where does portuguese originate?",
+    "ProcessedQuestion": "where does portuguese originate",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05zjd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05zjd ns:base.rosetta.languoid.parent ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tk9jx",
+            "EntityName": "Portuguese-Galician Group"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2585",
+    "RawQuestion": "who did howie long married?",
+    "ProcessedQuestion": "who did howie long married",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jg88)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jg88 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hqq859",
+            "EntityName": "Diane Addonizio"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2586",
+    "RawQuestion": "what region of the world is north america in?",
+    "ProcessedQuestion": "what region of the world is north america in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.059g4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.059g4 ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05k3k",
+            "EntityName": "Northern Hemisphere"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07c5l",
+            "EntityName": "Americas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jntd",
+            "EntityName": "Western Hemisphere"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2588",
+    "RawQuestion": "where do navajo indians live?",
+    "ProcessedQuestion": "where do navajo indians live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.08k5jg)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.08k5jg ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0162sr",
+            "EntityName": "Navajo Nation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018hq1",
+            "EntityName": "Southwestern United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n7q",
+            "EntityName": "California"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fjy",
+            "EntityName": "New Mexico"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07srw",
+            "EntityName": "Utah"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0vmt",
+            "EntityName": "Arizona"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2591",
+    "RawQuestion": "who are china's trading partners?",
+    "ProcessedQuestion": "who are china 's trading partners",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.0d05w3)\n\t{ \n\t  ns:m.0d05w3 ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.0d05w3 ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016zwt",
+            "EntityName": "Nepal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01f08r",
+            "EntityName": "Dubai"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01z88t",
+            "EntityName": "Yemen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027jk",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hhv",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sj3",
+            "EntityName": "Madagascar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wlh",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s_2",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fsv",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t_x",
+            "EntityName": "Uzbekistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0853g",
+            "EntityName": "Wellington"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctw_b",
+            "EntityName": "New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h3y",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2592",
+    "RawQuestion": "what character did stan lee create?",
+    "ProcessedQuestion": "what character did stan lee create",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.079vf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.079vf ns:fictional_universe.fictional_character_creator.fictional_characters_created ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11_ym4k45",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11_yy6gz7",
+            "EntityName": "Idunn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11b6pn0q_x",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11b6s_yb0h",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11b72rbf9m",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11dyhwt10",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11dylyhrh",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11vjpfkvh",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.120mhz7c",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.120mt649",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.121cm5gw",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1222ck_3",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.122jr4ch",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.122s94gq",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1230d0r4",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1q54w54ws",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1q5h7_pdq",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1q6f_rqjc",
+            "EntityName": "Spider-Boy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1q6j27ntt",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1s061mwr6",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_kmm",
+            "EntityName": "Eric Lensherr"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_knc",
+            "EntityName": "Quicksilver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.010f6gnl",
+            "EntityName": "Painter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.010fc4z4",
+            "EntityName": "Asbestos Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.011lmc",
+            "EntityName": "J. Jonah Jameson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012645",
+            "EntityName": "Norman Osborn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0127r1",
+            "EntityName": "May Parker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0127rw",
+            "EntityName": "Gwen Stacy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0129mg",
+            "EntityName": "Ben Parker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0134825q",
+            "EntityName": "Roscoe Sweeney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0139tx",
+            "EntityName": "Doctor Strange"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013m9w",
+            "EntityName": "Mister Fantastic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0174sz",
+            "EntityName": "Roderick Kingsley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01j66t",
+            "EntityName": "The Human Torch"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01j8n4",
+            "EntityName": "Susan Storm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n470",
+            "EntityName": "Max Dillon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ppxz",
+            "EntityName": "Mary Jane Watson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01s5m5",
+            "EntityName": "Warren Worthington III"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01s6p6",
+            "EntityName": "Sean Cassidy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tj6m",
+            "EntityName": "Vulture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tjb6",
+            "EntityName": "Chameleon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ttp0",
+            "EntityName": "Kraven the Hunter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ttxw",
+            "EntityName": "Dr. Otto Octavius"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ttzc",
+            "EntityName": "Rhino"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tv2_",
+            "EntityName": "Mysterio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tv3w",
+            "EntityName": "Mac Gargan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01wt35",
+            "EntityName": "Wanda Maximoff"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x02p",
+            "EntityName": "Dr. Curt Connors"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x05q",
+            "EntityName": "Shocker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02__12",
+            "EntityName": "Miss Brant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022_9h",
+            "EntityName": "Kang the Conqueror"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022c6j",
+            "EntityName": "Crystal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022f26",
+            "EntityName": "Kingpin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022v5c",
+            "EntityName": "Medusa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022wf3",
+            "EntityName": "Hank McCoy / Beast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0231rq",
+            "EntityName": "Mimic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025_nsv",
+            "EntityName": "Groot"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025_pft",
+            "EntityName": "Kraa the Unhuman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025_qz2",
+            "EntityName": "Zombie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0253r3",
+            "EntityName": "Sandman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025fh",
+            "EntityName": "Professor Charles Xavier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025sv9",
+            "EntityName": "Karen Page"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tgm6",
+            "EntityName": "Hulk 2099"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025xc3",
+            "EntityName": "Harry Osborn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025xcdj",
+            "EntityName": "Doctor Faustus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026018s",
+            "EntityName": "Prester John"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02638y7",
+            "EntityName": "Jester"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0268w55",
+            "EntityName": "Krang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026l0kq",
+            "EntityName": "Kala"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026ljb2",
+            "EntityName": "Kaluu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v46b",
+            "EntityName": "Looter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026vrrv",
+            "EntityName": "Shalla-Bal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270t03",
+            "EntityName": "Jasper Sitwell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0277rvc",
+            "EntityName": "Strongman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0278_rp",
+            "EntityName": "Great Gambonnos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0278fn8",
+            "EntityName": "Live Wire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0278mxs",
+            "EntityName": "Teena the Fat Lady"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0278nd7",
+            "EntityName": "Human Cannonball"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027clp",
+            "EntityName": "Hank Pym"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027dyck",
+            "EntityName": "Fancy Dan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027dycx",
+            "EntityName": "Montana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027fphc",
+            "EntityName": "Fenris Wolf"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027rg5_",
+            "EntityName": "Iron Spawn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027s6xj",
+            "EntityName": "Tim Boo Ba"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027spgp",
+            "EntityName": "Googam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027ssx1",
+            "EntityName": "Gorgilla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027sx8r",
+            "EntityName": "Elektro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027vn0x",
+            "EntityName": "Seeker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027vnck",
+            "EntityName": "Aireo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027yk0",
+            "EntityName": "Toad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027ykr",
+            "EntityName": "Blob"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028131l",
+            "EntityName": "Voice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028d1l",
+            "EntityName": "Eternity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028psq",
+            "EntityName": "Wasp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02bsgc",
+            "EntityName": "Immortus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02cg1r",
+            "EntityName": "Adam Warlock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02cyt",
+            "EntityName": "Daredevil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02dckk",
+            "EntityName": "Impossible Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02fmv_",
+            "EntityName": "Unus the Untouchable"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jftv",
+            "EntityName": "Ben Reilly"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02lw8w",
+            "EntityName": "Nick Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_2yr",
+            "EntityName": "Artemis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_31j",
+            "EntityName": "Athena"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_57_",
+            "EntityName": "Dionysus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_5jy",
+            "EntityName": "Hera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_8w5",
+            "EntityName": "Hermes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_93s",
+            "EntityName": "Neptune"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p6w13",
+            "EntityName": "Zabu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p9tc0",
+            "EntityName": "Ultimate Angel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pb9cx",
+            "EntityName": "Merlin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02psnzr",
+            "EntityName": "Shellshock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pt94p",
+            "EntityName": "Hijacker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q4wj",
+            "EntityName": "Absorbing Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q5xsk",
+            "EntityName": "Galaxy Master"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q7zvg",
+            "EntityName": "Sentry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qz0s8",
+            "EntityName": "Randy Robertson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r5_79",
+            "EntityName": "Plunderer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r5j77",
+            "EntityName": "Burglar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r7y2d",
+            "EntityName": "Elaine Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r7z6v",
+            "EntityName": "Norton McCoy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r7z75",
+            "EntityName": "Edna McCoy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rpk8f",
+            "EntityName": "Ape-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ryx9q",
+            "EntityName": "Imperial Hydra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rzct1",
+            "EntityName": "Marvel Boy (Robert Grayson)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02smwd",
+            "EntityName": "Franklin Richards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vmgvl",
+            "EntityName": "Franklin Storm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vpz45",
+            "EntityName": "Giganto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vqf_y",
+            "EntityName": "Amphibion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vxz85",
+            "EntityName": "The Finisher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vzzf1",
+            "EntityName": "Behemoth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w03rb",
+            "EntityName": "Blockbuster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w2_5t",
+            "EntityName": "Bulldozer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w3lch",
+            "EntityName": "Captain Barracuda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w9dgy",
+            "EntityName": "Cerberus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ww66l",
+            "EntityName": "Crusher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x0tml",
+            "EntityName": "Dredmund the Druid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z2btg",
+            "EntityName": "Freak"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z4c75",
+            "EntityName": "Gregory Gideon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030t_m",
+            "EntityName": "Flash Thompson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030t95",
+            "EntityName": "Rawhide Kid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030vjt",
+            "EntityName": "Ned Leeds"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030xwy",
+            "EntityName": "Owl"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.031mrq",
+            "EntityName": "Count Nefaria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033_mv",
+            "EntityName": "Living Tribunal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03434h",
+            "EntityName": "High Evolutionary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034hc_",
+            "EntityName": "Uatu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034qd2",
+            "EntityName": "Clint Barton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034qgf",
+            "EntityName": "Black Widow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0350p5",
+            "EntityName": "Dormammu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035jph",
+            "EntityName": "Mephisto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036btq",
+            "EntityName": "Fin Fang Foom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036pl_",
+            "EntityName": "Ka-Zar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036r_y",
+            "EntityName": "Klaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037qwf",
+            "EntityName": "Tigra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03bw_jk",
+            "EntityName": "Ant-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c19_p",
+            "EntityName": "Crime Master"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c67ny",
+            "EntityName": "Master Khan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c6skz",
+            "EntityName": "Metal Master"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c873g",
+            "EntityName": "Mogul of the Mystic Mountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c9cn_",
+            "EntityName": "Mordred"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cc5nv",
+            "EntityName": "Orikal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cdg3v",
+            "EntityName": "Punisher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ch_b0",
+            "EntityName": "Tana Nile"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03chykv",
+            "EntityName": "Fred Duncan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cjjq4",
+            "EntityName": "Tiboro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cjn6x",
+            "EntityName": "Tomazooma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cjtxj",
+            "EntityName": "Tumbler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ckkrl",
+            "EntityName": "Veritas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03clh8j",
+            "EntityName": "Xemu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03clhkg",
+            "EntityName": "Xorr the God-Jewel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03clj_5",
+            "EntityName": "Zarek"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cqmgv",
+            "EntityName": "Analyzer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cs6cl",
+            "EntityName": "Black Knight"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03cs6px",
+            "EntityName": "Black Knight"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d3v5",
+            "EntityName": "Spider-Slayer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ff9",
+            "EntityName": "Galactus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03flpm",
+            "EntityName": "Mastermind (Jason Wyngarde)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03fv8v",
+            "EntityName": "Master Mold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03fzs7",
+            "EntityName": "Glenn Talbot"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gy0l",
+            "EntityName": "Rick Jones"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h0_3",
+            "EntityName": "Death-Stalker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h0yq",
+            "EntityName": "Emil Blonsky"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h17n",
+            "EntityName": "Balder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h1st",
+            "EntityName": "Baron Mordo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h4lwd",
+            "EntityName": "Living Brain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hww5",
+            "EntityName": "Betty Ross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03jz83",
+            "EntityName": "Baron Strucker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03jzpq",
+            "EntityName": "Baron Zemo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m465k",
+            "EntityName": "Mother Night"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m68hr",
+            "EntityName": "Maestro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qdffk",
+            "EntityName": "Janus the Nega-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qfsfr",
+            "EntityName": "Amalgam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qfwmv",
+            "EntityName": "Amun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qh7n0",
+            "EntityName": "Agent X"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qp7v",
+            "EntityName": "Man-Thing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t6vv",
+            "EntityName": "She-Hulk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wd___",
+            "EntityName": "Acrobat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wf8vc",
+            "EntityName": "Administrator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wfgq3",
+            "EntityName": "Aggamon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wfrvp",
+            "EntityName": "Albino"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xm2j",
+            "EntityName": "Odin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03yby46",
+            "EntityName": "Agon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03zw5",
+            "EntityName": "Bobby Drake / Iceman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_0x9",
+            "EntityName": "Two-Gun Kid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_jn5",
+            "EntityName": "Dark Beast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_vd8",
+            "EntityName": "Falcon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0403rnx",
+            "EntityName": "Maha Yogi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04052pr",
+            "EntityName": "Alibar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043jlt3",
+            "EntityName": "Ho Yinsen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.044l2v",
+            "EntityName": "Black Panther"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0468zl",
+            "EntityName": "Liz Allan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04697h",
+            "EntityName": "Foggy Nelson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0470s",
+            "EntityName": "Jean Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047bhrl",
+            "EntityName": "Sleeper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.048s6g",
+            "EntityName": "Alicia Masters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04f340c",
+            "EntityName": "Magneto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g2wn5",
+            "EntityName": "Monsteroso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h0_n",
+            "EntityName": "Wonder Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h09l",
+            "EntityName": "Doctor Druid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h0jj",
+            "EntityName": "Fixer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h123",
+            "EntityName": "Vision"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j0v7",
+            "EntityName": "Titanium Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j53k",
+            "EntityName": "Marvel Boy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jflzm",
+            "EntityName": "Bluebird"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n5dvm",
+            "EntityName": "Reaper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04snsb",
+            "EntityName": "Jackal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04x9xv",
+            "EntityName": "Cobra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04y25m",
+            "EntityName": "Abner Jenkins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04zyqkd",
+            "EntityName": "Farley Stillwell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0523z9",
+            "EntityName": "Super-Skrull"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0572mc",
+            "EntityName": "Ego the Living Planet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.057r94",
+            "EntityName": "John Jameson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0585yc",
+            "EntityName": "Batroc the Leaper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0599bt",
+            "EntityName": "Molecule Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059ghr",
+            "EntityName": "Mister Hyde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059lty",
+            "EntityName": "Clea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059ppc",
+            "EntityName": "Karnak"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05bq7h",
+            "EntityName": "Black Bolt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05btzr",
+            "EntityName": "Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05c8qc",
+            "EntityName": "Gargantus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05ddy2",
+            "EntityName": "Leader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dvl9",
+            "EntityName": "Plantman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dvn3",
+            "EntityName": "Mole Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dvq5",
+            "EntityName": "Super-Adaptoid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dyyk",
+            "EntityName": "MODOK"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05gjjg",
+            "EntityName": "Wizard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05gskc",
+            "EntityName": "Executioner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05h7r8",
+            "EntityName": "Air-Walker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pnb1",
+            "EntityName": "Loki"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05rxv0",
+            "EntityName": "Joseph"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sdnt",
+            "EntityName": "Wyatt Wingfoot"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tyg5",
+            "EntityName": "Robbie Robertson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05w5mj",
+            "EntityName": "Lady Octopus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05w7s8",
+            "EntityName": "Ultimate Thor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.062f9y",
+            "EntityName": "Spider-Man 2099"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06412s",
+            "EntityName": "Frederick Foswell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064dg0",
+            "EntityName": "Gorgon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.065_kxm",
+            "EntityName": "Morrat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.065l70",
+            "EntityName": "Gladiator (Melvin Potter)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066w6k",
+            "EntityName": "Iron Lad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ddqh",
+            "EntityName": "Annihilus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ddry",
+            "EntityName": "Blastaar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dkjh",
+            "EntityName": "Edwin Jarvis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dxs2",
+            "EntityName": "Enchantress"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06hz4r",
+            "EntityName": "Mad Thinker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06m654",
+            "EntityName": "Richard Fisk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06qdgf",
+            "EntityName": "Trapster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sb3d",
+            "EntityName": "Ancient One"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06spjx",
+            "EntityName": "Silvermane"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t26j",
+            "EntityName": "Puppet Master"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t5xn",
+            "EntityName": "Diablo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t63q",
+            "EntityName": "Dragon Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06v943",
+            "EntityName": "Swordsman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vj9_",
+            "EntityName": "Ultimate Nick Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06vnrm",
+            "EntityName": "Willie Lumpkin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w6zmg",
+            "EntityName": "Odinsword"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ys2",
+            "EntityName": "Peter Parker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ztwhx",
+            "EntityName": "George Stacy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07_6np",
+            "EntityName": "Nightmare"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.072wch",
+            "EntityName": "Spider-Ham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0736ml",
+            "EntityName": "Hate-Monger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076d25",
+            "EntityName": "Kate "
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076xvd7",
+            "EntityName": "Tricephalous"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.079pb",
+            "EntityName": "Sentinel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.079qw",
+            "EntityName": "Silver Surfer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07bd9w",
+            "EntityName": "Purple Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07bs4d",
+            "EntityName": "Supreme Intelligence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07cvlr",
+            "EntityName": "Whirlwind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07d1nd",
+            "EntityName": "Spidercide"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07d932",
+            "EntityName": "Stilt-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dms_",
+            "EntityName": "Heimdall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07j7m7",
+            "EntityName": "Stranger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07jhhf",
+            "EntityName": "Thunderbolt Ross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07lfdr",
+            "EntityName": "Bolivar Trask"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ngcz",
+            "EntityName": "Lockjaw"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07p9fs",
+            "EntityName": "Tinkerer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07rgn",
+            "EntityName": "Bruce Banner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07rzr_",
+            "EntityName": "Erik Josten"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ywfd",
+            "EntityName": "Vanisher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07yxbm",
+            "EntityName": "Zarrko"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07yyr5",
+            "EntityName": "Destroyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07yzvh",
+            "EntityName": "Grey Gargoyle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07zt69",
+            "EntityName": "Leap-Frog"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08073x",
+            "EntityName": "Molten Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0810fv",
+            "EntityName": "Red Ghost"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08565y",
+            "EntityName": "Agamotto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.085bjl",
+            "EntityName": "Crimson Dynamo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.087656",
+            "EntityName": "Homer the Happy Ghost"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.087k52",
+            "EntityName": "Mentallo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08bq_w",
+            "EntityName": "Destroyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08drdp",
+            "EntityName": "Ronan the Accuser"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08dsz7",
+            "EntityName": "Grizzly"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08ggjd",
+            "EntityName": "Cyttorak"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08kbrw",
+            "EntityName": "Boomerang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08kzmr",
+            "EntityName": "Collector"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08r7ym",
+            "EntityName": "Captain Marvel (Mar-Vell)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08tnry",
+            "EntityName": "Ravonna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08tzwn",
+            "EntityName": "Kangaroo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08vwxk",
+            "EntityName": "Agatha Harkness"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08x89h",
+            "EntityName": "Nefarius"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08xcq6",
+            "EntityName": "H.E.R.B.I.E."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08xny6",
+            "EntityName": "Infinity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08zx6c",
+            "EntityName": "Prowler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.090ky4",
+            "EntityName": "Madame Masque"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.092_ll",
+            "EntityName": "Xemnu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.097vys",
+            "EntityName": "Egghead"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09dyx8",
+            "EntityName": "Space Phantom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09gjzj8",
+            "EntityName": "Gnatman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09hgm0",
+            "EntityName": "Volstagg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09hgp2",
+            "EntityName": "Fandral"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09hgsy",
+            "EntityName": "Hogun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09hnzs",
+            "EntityName": "Ravage 2099"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09jfls",
+            "EntityName": "Scarecrow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09lq55",
+            "EntityName": "Attuma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09mnx6",
+            "EntityName": "Sif"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09nyk7",
+            "EntityName": "Dum Dum Dugan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09pfxr",
+            "EntityName": "Wrecker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09t3m9",
+            "EntityName": "Radioactive Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09t5qr",
+            "EntityName": "Blonde Phantom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09vgkq",
+            "EntityName": "Living Laser"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09zvbs",
+            "EntityName": "Sara Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b11b2",
+            "EntityName": "Spencer Smythe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b5lgh",
+            "EntityName": "Tyrannus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b9fng",
+            "EntityName": "Ringmaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bbvfjz",
+            "EntityName": "Zeus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bgcn_",
+            "EntityName": "Ymir"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bgd80",
+            "EntityName": "Mangog"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bgdf_",
+            "EntityName": "Ulik"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bglvn",
+            "EntityName": "Awesome Android"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkkry",
+            "EntityName": "Vanessa Fisk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkn4r",
+            "EntityName": "Kubik"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnfz6",
+            "EntityName": "Maximus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwjsl",
+            "EntityName": "Spymaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c1ys0",
+            "EntityName": "Man-Beast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c7c9w",
+            "EntityName": "Juggernaut"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c7vhy",
+            "EntityName": "Pluto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c936y",
+            "EntityName": "Ares"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cc568t",
+            "EntityName": "Ultimate Iron Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cc6pfs",
+            "EntityName": "Wong-Chu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cgygk",
+            "EntityName": "Gibbon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chcrf",
+            "EntityName": "Gorilla-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cnfsp",
+            "EntityName": "Happy Hogan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0crjb2z",
+            "EntityName": "Black Widow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs4m",
+            "EntityName": "Doctor Doom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctbql",
+            "EntityName": "Infant Terrible"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctk8h",
+            "EntityName": "Mister Fear"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cvph_",
+            "EntityName": "Growing Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cxdcf",
+            "EntityName": "Hercules"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d1901",
+            "EntityName": "Aged Genghis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d37k3",
+            "EntityName": "Triton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d37v",
+            "EntityName": "Phoenix Force"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0db7qt",
+            "EntityName": "Gargoyle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dc29w",
+            "EntityName": "Pepper Potts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dczs6",
+            "EntityName": "Hippolyta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dmh0q",
+            "EntityName": "Psycho-Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dp7x4",
+            "EntityName": "Destroyer (Charles Stanton)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drtsj",
+            "EntityName": "Blacklash"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drv3m",
+            "EntityName": "Eel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drv7d",
+            "EntityName": "Machinesmith"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drvm3",
+            "EntityName": "Quasimodo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drvry",
+            "EntityName": "Wong"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ds_t9",
+            "EntityName": "Fafnir"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dsgpr",
+            "EntityName": "Surtur"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dspqh",
+            "EntityName": "Morgan le Fay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtcjc",
+            "EntityName": "Night Nurse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtd_6",
+            "EntityName": "Frigga"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtdws",
+            "EntityName": "Karnilla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtf2n",
+            "EntityName": "Geirrodur"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtfs7",
+            "EntityName": "Unicorn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dtn2x",
+            "EntityName": "Bill Foster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dttll",
+            "EntityName": "Jane Foster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dty47",
+            "EntityName": "Molten Man-Thing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dvdls",
+            "EntityName": "Matador"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dvrb9",
+            "EntityName": "Miracle Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dwf41",
+            "EntityName": "Solarman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dwm64",
+            "EntityName": "Hela"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dwxvy",
+            "EntityName": "Volla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dxgjq",
+            "EntityName": "Tyr"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dxnh6",
+            "EntityName": "Zom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dz_yp",
+            "EntityName": "Melter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f_m4d",
+            "EntityName": "Anelle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f1n7j",
+            "EntityName": "Ultimo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f1nd0",
+            "EntityName": "Torgo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f5y0b",
+            "EntityName": "Forbush Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fh46k",
+            "EntityName": "Porcupine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fjdb3",
+            "EntityName": "Kraven the Hunter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fl9gg",
+            "EntityName": "Thor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fnkln",
+            "EntityName": "Ox"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0frt35",
+            "EntityName": "Mendel Stromm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fslqr",
+            "EntityName": "Princess Python"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g25hb",
+            "EntityName": "Man Mountain Marko"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g33rj",
+            "EntityName": "Masked Marauder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g54k_",
+            "EntityName": "Overmind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g9k3t",
+            "EntityName": "Father Time"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj9knb",
+            "EntityName": "Laufey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjcgg_",
+            "EntityName": "Chester Phillips"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjp_8",
+            "EntityName": "Jack Frost"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjrj2",
+            "EntityName": "Dr. John Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gvmkd",
+            "EntityName": "Walking Stiletto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxd3m",
+            "EntityName": "Izzy Cohen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxd5b",
+            "EntityName": "Gabe Jones"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxd6q",
+            "EntityName": "Junior Juniper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxdcw",
+            "EntityName": "Eric Koenig"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxdfy",
+            "EntityName": "Dino Manelli"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxdgm",
+            "EntityName": "Pinky Pinkerton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxdhn",
+            "EntityName": "Rebel Ralston"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxdjp",
+            "EntityName": "Happy Sam Sawyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h1mnr",
+            "EntityName": "Midgard Serpent"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h23h1",
+            "EntityName": "Witness"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h295j",
+            "EntityName": "Enchanters Three"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hnws",
+            "EntityName": "Iron Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jkxrz_",
+            "EntityName": "Yon-Rogg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k1r0",
+            "EntityName": "Thing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0kl3p",
+            "EntityName": "Cyclops"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mzr4",
+            "EntityName": "Lucifer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngtjkz",
+            "EntityName": "Red Barbarian"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p7zs",
+            "EntityName": "Red Skull"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0zrqx6x",
+            "EntityName": "Peggy Carter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0zrsffc",
+            "EntityName": "Zota"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2594",
+    "RawQuestion": "where did rich rodriguez get fired?",
+    "ProcessedQuestion": "where did rich rodriguez get fired",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.091xv3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.091xv3 ns:american_football.football_coach.coaching_history ?y .\n?y ns:american_football.football_historical_coach_position.team ?x .\n?y ns:american_football.football_historical_coach_position.to ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fsb_6",
+            "EntityName": "Michigan Wolverines football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2599",
+    "RawQuestion": "what channel is anderson cooper talk show on?",
+    "ProcessedQuestion": "what channel is anderson cooper talk show on",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03v9lv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03v9lv ns:tv.tv_program.original_network ?y .\n?y ns:tv.tv_network_duration.network ?x .\nFILTER(NOT EXISTS {?y ns:tv.tv_network_duration.from ?sk0} || \nEXISTS {?y ns:tv.tv_network_duration.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:tv.tv_network_duration.to ?sk2} || \nEXISTS {?y ns:tv.tv_network_duration.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05_pvx",
+            "EntityName": "TBS"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2602",
+    "RawQuestion": "what brand of guitar does steve vai play?",
+    "ProcessedQuestion": "what brand of guitar does steve vai play",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01mxt_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01mxt_ ns:music.guitarist.guitars_played ?x .\n?x ns:common.topic.notable_types ns:m.05czz29 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03vk8",
+            "EntityName": "Ibanez"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2604",
+    "RawQuestion": "what prep school did romney attend?",
+    "ProcessedQuestion": "what prep school did romney attend",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0271_s)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0271_s ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:education.educational_institution.school_type ns:m.0m4mb .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01p5_w",
+            "EntityName": "Cranbrook Schools"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2606",
+    "RawQuestion": "what is bethenny frankel husband name?",
+    "ProcessedQuestion": "what is bethenny frankel husband name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_l39)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_l39 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j6k0h7",
+            "EntityName": "Jason Hoppy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2613",
+    "RawQuestion": "who played bob ewell in to kill a mockingbird?",
+    "ProcessedQuestion": "who played bob ewell in to kill a mockingbird",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ccck7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ccck7 ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0r9yvpc .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wcq6q",
+            "EntityName": "James Anderson"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2616",
+    "RawQuestion": "who is kurt busch driving for now?",
+    "ProcessedQuestion": "who is kurt busch driving for now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02llzy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02llzy ns:base.nascar.nascar_driver.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.073mq9",
+            "EntityName": "Team Penske"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2619",
+    "RawQuestion": "who is lamar odom married too?",
+    "ProcessedQuestion": "who is lamar odom married too",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02_nkp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02_nkp ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\nFILTER(NOT EXISTS {?y ns:people.marriage.from ?sk0} || \nEXISTS {?y ns:people.marriage.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.marriage.to ?sk2} || \nEXISTS {?y ns:people.marriage.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043p2f2",
+            "EntityName": "Khloé Kardashian"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2620",
+    "RawQuestion": "where can you buy amazon kindle?",
+    "ProcessedQuestion": "where can you buy amazon kindle",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03d068f)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03d068f ns:base.gadgets.gadget.brand ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mgkg",
+            "EntityName": "Amazon.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2621",
+    "RawQuestion": "who is angelina jolie's husband?",
+    "ProcessedQuestion": "who is angelina jolie 's husband",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f4vbz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f4vbz ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\nFILTER(NOT EXISTS {?y ns:people.marriage.from ?sk0} || \nEXISTS {?y ns:people.marriage.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.marriage.to ?sk2} || \nEXISTS {?y ns:people.marriage.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n?y ns:people.marriage.from ?sk4 .\n}\nORDER BY DESC(xsd:datetime(?sk4))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c6qh",
+            "EntityName": "Brad Pitt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2625",
+    "RawQuestion": "what language do native american indians speak?",
+    "ProcessedQuestion": "what language do native american indians speak",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.059_w)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.059_w ns:people.ethnicity.languages_spoken ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h40lc",
+            "EntityName": "English Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064_8sq",
+            "EntityName": "French"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06nm1",
+            "EntityName": "Spanish Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0t_2",
+            "EntityName": "American English"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2631",
+    "RawQuestion": "what countries are the mediterranean?",
+    "ProcessedQuestion": "what countries are the mediterranean",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04swx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04swx ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01znc_",
+            "EntityName": "Turkey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w58",
+            "EntityName": "Monaco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkj",
+            "EntityName": "Spain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f8l9c",
+            "EntityName": "France"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2632",
+    "RawQuestion": "what city has the largest population in mexico?",
+    "ProcessedQuestion": "what city has the largest population in mexico",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0b90_r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0b90_r ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01m9 .\n?x ns:topic_server.population_number ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sqj",
+            "EntityName": "Mexico City"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2638",
+    "RawQuestion": "what is the state motto of massachusetts?",
+    "ProcessedQuestion": "what is the state motto of massachusetts",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05k7sb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05k7sb ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.0j749 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07f10y",
+            "EntityName": "Ense petit placidam sub libertate quietem"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2640",
+    "RawQuestion": "what type of poetry does john donne write?",
+    "ProcessedQuestion": "what type of poetry does john donne write",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0413p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0413p ns:book.author.school_or_movement ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lw_t",
+            "EntityName": "Metaphysical poets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2646",
+    "RawQuestion": "where did johann sebastian bach live?",
+    "ProcessedQuestion": "where did johann sebastian bach live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_f0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_f0 ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0135kl",
+            "EntityName": "Lüneburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01scv0",
+            "EntityName": "Köthen (Anhalt)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047sq2",
+            "EntityName": "Mühlhausen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04kf4",
+            "EntityName": "Leipzig"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04pwrt",
+            "EntityName": "Arnstadt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064_v2",
+            "EntityName": "Ohrdruf"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cpyv",
+            "EntityName": "Weimar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g8gq",
+            "EntityName": "Eisenach"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2653",
+    "RawQuestion": "what wars have france been involved in?",
+    "ProcessedQuestion": "what wars have france been involved in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f8l9c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f8l9c ns:military.military_combatant.casualties ?y .\n?y ns:military.casualties.military_conflict ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018w0j",
+            "EntityName": "Gulf War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03jyvj",
+            "EntityName": "Battle of Talavera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03jyzf",
+            "EntityName": "Battle of Bussaco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.050g2j",
+            "EntityName": "Battle of Bailén"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.067w82",
+            "EntityName": "Battle of Berezina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.082wl_",
+            "EntityName": "Second Battle of the Aisne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bd_jf",
+            "EntityName": "Battle of Medellín"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c3mz",
+            "EntityName": "Battle of Passchendaele"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hjtz",
+            "EntityName": "Battle of Dien Bien Phu"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2654",
+    "RawQuestion": "who plays moira on the l word?",
+    "ProcessedQuestion": "who plays moira on the l word",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02bf9g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02bf9g ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:g.121_4f1c .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b___n",
+            "EntityName": "Daniela Sea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2655",
+    "RawQuestion": "when did joe mcelderry won x factor?",
+    "ProcessedQuestion": "when did joe mcelderry won x factor",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09d89qd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09d89qd ns:award.competitor.competitions_won ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06wcg5g",
+            "EntityName": "The X Factor (UK) - Season 6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2660",
+    "RawQuestion": "what does a american rottweiler look like?",
+    "ProcessedQuestion": "what does a american rottweiler look like",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01nw62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01nw62 ns:base.petbreeds.dog_breed.color ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019sc",
+            "EntityName": "Black"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037zsb",
+            "EntityName": "Tan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05n23l",
+            "EntityName": "Mahogany"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2664",
+    "RawQuestion": "who are the main trading partners of china?",
+    "ProcessedQuestion": "who are the main trading partners of china",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.0d05w3)\n\t{ \n\t  ns:m.0d05w3 ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.0d05w3 ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016zwt",
+            "EntityName": "Nepal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01f08r",
+            "EntityName": "Dubai"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01z88t",
+            "EntityName": "Yemen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027jk",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hhv",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sj3",
+            "EntityName": "Madagascar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wlh",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s_2",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fsv",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t_x",
+            "EntityName": "Uzbekistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0853g",
+            "EntityName": "Wellington"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctw_b",
+            "EntityName": "New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h3y",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2666",
+    "RawQuestion": "what book did john steinbeck wrote about the people in the dust bowl?",
+    "ProcessedQuestion": "what book did john steinbeck wrote about the people in the dust bowl",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04107)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04107 ns:book.author.works_written ?x .\n?x ns:common.topic.notable_types ns:m.01xryvm .\n?x ns:book.written_work.subjects ns:m.0g89m .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bq9g",
+            "EntityName": "The Grapes of Wrath"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2668",
+    "RawQuestion": "who is the voice of family guys meg griffin?",
+    "ProcessedQuestion": "who is the voice of family guys meg griffin",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035szd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035szd ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.series ns:m.019nnl .\nFILTER(NOT EXISTS {?y ns:tv.regular_tv_appearance.from ?sk0} || \nEXISTS {?y ns:tv.regular_tv_appearance.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:tv.regular_tv_appearance.to ?sk2} || \nEXISTS {?y ns:tv.regular_tv_appearance.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.023v4_",
+            "EntityName": "Mila Kunis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2671",
+    "RawQuestion": "what channel is the mtv vma awards on?",
+    "ProcessedQuestion": "what channel is the mtv vma awards on",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01r470)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01r470 ns:award.award.presented_by ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04rqd",
+            "EntityName": "MTV"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2677",
+    "RawQuestion": "where great britain on the world map?",
+    "ProcessedQuestion": "where great britain on the world map",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.034cm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.034cm ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j9z",
+            "EntityName": "Europe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2682",
+    "RawQuestion": "who does jemaine clement play in despicable me?",
+    "ProcessedQuestion": "who does jemaine clement play in despicable me",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bg539)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bg539 ns:film.actor.film ?y .\n?y ns:film.performance.character ?x .\n?y ns:film.performance.film ns:m.06zkfsy .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.084jfdt",
+            "EntityName": "Jerry the Minion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2683",
+    "RawQuestion": "what year did the vietnam war happen?",
+    "ProcessedQuestion": "what year did the vietnam war happen",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_nf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_nf ns:time.event.start_date ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1955-11-01",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2690",
+    "RawQuestion": "what major landforms are located in egypt?",
+    "ProcessedQuestion": "what major landforms are located in egypt",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nns:m.02k54 ns:location.location.contains ?y .\n?y ns:geography.geographical_feature.category ?x .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012v8q",
+            "EntityName": "Bog"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0284w",
+            "EntityName": "Desert"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ggh49",
+            "EntityName": "Bay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sl2",
+            "EntityName": "Peninsula"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09d_r",
+            "EntityName": "Mountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cn9p5h",
+            "EntityName": "Gulf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2691",
+    "RawQuestion": "who played nba finals 2010?",
+    "ProcessedQuestion": "who played nba finals 2010",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    ns:m.0bx_x85 ns:sports.sports_championship_event.champion ?x .\n  }\n  UNION\n  {\n    ns:m.0bx_x85 ns:sports.sports_championship_event.runner_up ?x . \n  }\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwjj",
+            "EntityName": "Boston Celtics"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jmk7",
+            "EntityName": "Los Angeles Lakers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2693",
+    "RawQuestion": "what state was ronald reagan governor of?",
+    "ProcessedQuestion": "what state was ronald reagan governor of",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c0j)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c0j ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.jurisdiction_of_office ?x .\n?y ns:government.government_position_held.basic_title ns:m.0fkvn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n7q",
+            "EntityName": "California"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2694",
+    "RawQuestion": "what is the most practiced religion in the united states?",
+    "ProcessedQuestion": "what is the most practiced religion in the united states",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.statistical_region.religions ?y .\n?y ns:location.religion_percentage.religion ?x .\n?y ns:location.religion_percentage.percentage ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lp8",
+            "EntityName": "Christianity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2697",
+    "RawQuestion": "what is st james palace?",
+    "ProcessedQuestion": "what is st james palace",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01yv_q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01yv_q ns:architecture.building.building_function ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zp8",
+            "EntityName": "Palace"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2707",
+    "RawQuestion": "what war was woodrow wilson president for?",
+    "ProcessedQuestion": "what war was woodrow wilson president for",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE\n{ \n  {\n    SELECT ?pfrom ?pto\n    WHERE {\n      ns:m.083q7 ns:government.politician.government_positions_held ?y0 .  # Woodrow Wilson  \n      ?y0 ns:government.government_position_held.basic_title ns:m.060c4 ;  # President\n          ns:government.government_position_held.from ?pfrom ;\n          ns:government.government_position_held.to ?pto .\n    }\n  }\n  {\n    SELECT ?from ?to ?x\n    WHERE {\n      ?x ns:common.topic.notable_types ns:m.02h76fz . # Military Conflict\n      ?x ns:time.event.start_date ?from . \n      ?x ns:time.event.end_date ?to . \n      ?x ns:military.military_conflict.combatants ?y .\n      ?y ns:military.military_combatant_group.combatants ns:m.09c7w0 .  # United States of America\n    }\n  }\n  FILTER (?to <= ?pto && ?from >= ?pfrom) \n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0279xc",
+            "EntityName": "Tampico Affair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03x7f6",
+            "EntityName": "United States occupation of Veracruz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043nv9q",
+            "EntityName": "Attack on Orleans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.052hlx",
+            "EntityName": "Battle of the Piave River"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05mx_w4",
+            "EntityName": "Battle of Ambos Nogales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.078bt_",
+            "EntityName": "North Russia Intervention"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09rxr2b",
+            "EntityName": "Action of 21 May 1918"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bhc6zq",
+            "EntityName": "Scuttling of SMS Cormoran"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cm2xh",
+            "EntityName": "World War I"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0drzdzp",
+            "EntityName": "Alice Dollar incident"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dsdpp2",
+            "EntityName": "USS Monocacy incident"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2708",
+    "RawQuestion": "who is carl edwards racing for?",
+    "ProcessedQuestion": "who is carl edwards racing for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.059s1q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.059s1q ns:base.nascar.nascar_driver.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06l92_",
+            "EntityName": "Roush Fenway Racing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2710",
+    "RawQuestion": "where are the florida marlins from?",
+    "ProcessedQuestion": "where are the florida marlins from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02__x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02__x ns:sports.sports_team.location ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03msbs",
+            "EntityName": "Little Havana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f2v0",
+            "EntityName": "Miami"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2711",
+    "RawQuestion": "what is the main religion in eastern europe?",
+    "ProcessedQuestion": "what is the main religion in eastern europe",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n\n    ns:m.09b69 ns:location.location.contains ?y1 .  # Eastern Europe\n    ?y1 ns:common.topic.notable_types ns:m.01mp .   # Country\n    ?y1 ns:location.statistical_region.religions ?y2 . \n    ?y2 ns:location.religion_percentage.religion ?x .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fgks",
+            "EntityName": "Eastern Catholic Churches"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gr6h",
+            "EntityName": "Greek Orthodox Church"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021_vk",
+            "EntityName": "Romanian Orthodox Church"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026pqn",
+            "EntityName": "Nontheism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p0r_s",
+            "EntityName": "Orthodox Christianity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_gx",
+            "EntityName": "Judaism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05sfs",
+            "EntityName": "Protestantism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c8wxp",
+            "EntityName": "Catholicism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0flw86",
+            "EntityName": "Islam"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2714",
+    "RawQuestion": "who nominated stephen g. breyer?",
+    "ProcessedQuestion": "who nominated stephen g. breyer",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016m0v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016m0v ns:people.appointee.position ?y .\n?y ns:people.appointment.appointed_by ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0157m",
+            "EntityName": "Bill Clinton"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2725",
+    "RawQuestion": "what does michael jackson like to eat?",
+    "ProcessedQuestion": "what does michael jackson like to eat",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09889g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09889g ns:food.diet_follower.follows_diet ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07_lq",
+            "EntityName": "Vegetarian food"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2726",
+    "RawQuestion": "who owns the new england patriots football team?",
+    "ProcessedQuestion": "who owns the new england patriots football team",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05g3b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05g3b ns:sports.professional_sports_team.owner_s ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.050kkl",
+            "EntityName": "Robert Kraft"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2729",
+    "RawQuestion": "what airport fly into for maui?",
+    "ProcessedQuestion": "what airport fly into for maui",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jbs5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jbs5 ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01r3l2",
+            "EntityName": "Kahului Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398qm",
+            "EntityName": "Hana Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398r9",
+            "EntityName": "Kapalua Airport"
+          }
+        ]
+      }
+    ]
+  }
+]

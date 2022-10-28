@@ -1,0 +1,1735 @@
+[
+  {
+    "QuestionId": "WebQTrn-2393",
+    "RawQuestion": "who started google?",
+    "ProcessedQuestion": "who started google",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9366 wdt:P112 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q92764",
+            "EntityName": "Sergey Brin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4934",
+            "EntityName": "Larry Page"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2397",
+    "RawQuestion": "what year did arizona diamondbacks win the world series?",
+    "ProcessedQuestion": "what year did arizona diamondbacks win the world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q670376. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2001-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2404",
+    "RawQuestion": "who is jason morgan married to in real life?",
+    "ProcessedQuestion": "who is jason morgan married to in real life",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6163143 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2405",
+    "RawQuestion": "what is colorado's state flower?",
+    "ProcessedQuestion": "what is colorado 's state flower",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1261 p:P2238 ?p. ?p ps:P2238 ?x; pq:P3831 wd:Q506. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2408",
+    "RawQuestion": "which jane austen books are movies?",
+    "ProcessedQuestion": "which jane austen books are movies",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q11424; p:P144 ?p. ?p ps:P144 ?x; pq:P50 wd:Q36322. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2410",
+    "RawQuestion": "where is lanzarote in a world map?",
+    "ProcessedQuestion": "where is lanzarote in a world map",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182432 wdt:P625 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-13.635 29.035)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2414",
+    "RawQuestion": "who plays dante falconeri?",
+    "ProcessedQuestion": "who plays dante falconeri",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q5221164. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3034879",
+            "EntityName": "Dominic Zamprogna"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2416",
+    "RawQuestion": "who is the president of israel 2012?",
+    "ProcessedQuestion": "who is the president of israel 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q327948; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q57410",
+            "EntityName": "Shimon Peres"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2420",
+    "RawQuestion": "where do islamic people go to worship?",
+    "ProcessedQuestion": "where do islamic people go to worship",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P1049 wd:Q432. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q70899",
+            "EntityName": "Adam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2095353",
+            "EntityName": "God in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9077",
+            "EntityName": "Moses"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9181",
+            "EntityName": "Abraham"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2423",
+    "RawQuestion": "what god does taoism believe in?",
+    "ProcessedQuestion": "what god does taoism believe in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P1049 wd:Q9598. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q418226",
+            "EntityName": "Mazu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q704070",
+            "EntityName": "Xuan Wu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q970809",
+            "EntityName": "Immortal Woman He"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1150186",
+            "EntityName": "Three Pure Ones"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2140608",
+            "EntityName": "Fu Xing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2148975",
+            "EntityName": "Luxing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2200117",
+            "EntityName": "Old Man of the South Pole"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2619890",
+            "EntityName": "Magu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3027597",
+            "EntityName": "Taoist deity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8018344",
+            "EntityName": "Guan emperor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10344620",
+            "EntityName": "Donghua Dijun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10941178",
+            "EntityName": "Crown prince Jin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11080510",
+            "EntityName": "Dǒumǔ"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11240567",
+            "EntityName": "Ten Kings of Hell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28410891",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97352661",
+            "EntityName": "Taiyin Xingjun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107096370",
+            "EntityName": "Xiyue Dadi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2431",
+    "RawQuestion": "what year did george washington become the president?",
+    "ProcessedQuestion": "what year did george washington become the president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23 p:P39 ?y. ?y ps:P39 wd:Q11696; pq:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1789-04-30T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2434",
+    "RawQuestion": "who was the first wife of prophet muhammad?",
+    "ProcessedQuestion": "who was the first wife of prophet muhammad",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9458 p:P26 ?p. ?p ps:P26 ?x; pq:P580 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q42034",
+            "EntityName": "Khadija bint Khuwaylid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2436",
+    "RawQuestion": "on which river is paris?",
+    "ProcessedQuestion": "on which river is paris",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q573344; wdt:P131 wd:Q90. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1471",
+            "EntityName": "Seine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2438",
+    "RawQuestion": "who is sherri shepherd's new husband?",
+    "ProcessedQuestion": "who is sherri shepherd 's new husband",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q268549 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2439",
+    "RawQuestion": "who did kevin garnett play for before celtics?",
+    "ProcessedQuestion": "who did kevin garnett play for before celtics",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q189240 p:P54 ?p. ?p ps:P54 ?x; pq:P582 ?y. wd:Q189240 p:P54 ?q. ?q ps:P54 wd:Q131371; pq:P580 ?z. FILTER(?y <= ?z) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q170558",
+            "EntityName": "Minnesota Timberwolves"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2440",
+    "RawQuestion": "who the voice of peter griffin?",
+    "ProcessedQuestion": "who the voice of peter griffin",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q28465. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q188492",
+            "EntityName": "Seth MacFarlane"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2441",
+    "RawQuestion": "what is the name of dawn french's first novel?",
+    "ProcessedQuestion": "what is the name of dawn french 's first novel",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q7725634; wdt:P50 wd:Q236309; wdt:P577 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2446",
+    "RawQuestion": "where does manny pacquiao live?",
+    "ProcessedQuestion": "where does manny pacquiao live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q486359 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2447",
+    "RawQuestion": "when were the duggar kids born?",
+    "ProcessedQuestion": "when were the duggar kids born",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6193704 wdt:P40 ?p. ?p wdt:P569 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1988-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1988-03-03T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1990-01-12T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1991-05-17T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1992-11-04T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1993-12-21T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1997-10-28T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2001-07-07T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2004-05-23T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2005-10-11T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2007-08-02T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2009-12-10T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2011-12-11T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2449",
+    "RawQuestion": "what four countries are in the united kingdom?",
+    "ProcessedQuestion": "what four countries are in the united kingdom",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q145 wdt:P150 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22",
+            "EntityName": "Scotland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26",
+            "EntityName": "Northern Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25",
+            "EntityName": "Wales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2454",
+    "RawQuestion": "what airlines fly into ontario international airport?",
+    "ProcessedQuestion": "what airlines fly into ontario international airport",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x <http://www.wikidata.org/prop/direct/113> wd:Q949831. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2484",
+    "RawQuestion": "what all does stan kroenke own?",
+    "ProcessedQuestion": "what all does stan kroenke own",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q945207 wdt:P1830 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q337377",
+            "EntityName": "Los Angeles Rams"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9617",
+            "EntityName": "Arsenal F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2485",
+    "RawQuestion": "what countries does china border?",
+    "ProcessedQuestion": "what countries does china border",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q148 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q423",
+            "EntityName": "North Korea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q668",
+            "EntityName": "India"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q711",
+            "EntityName": "Mongolia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q813",
+            "EntityName": "Kyrgyzstan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q819",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q836",
+            "EntityName": "Myanmar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q837",
+            "EntityName": "Nepal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q843",
+            "EntityName": "Pakistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q863",
+            "EntityName": "Tajikistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q881",
+            "EntityName": "Vietnam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q884",
+            "EntityName": "South Korea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q889",
+            "EntityName": "Afghanistan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917",
+            "EntityName": "Bhutan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17",
+            "EntityName": "Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q159",
+            "EntityName": "Russia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q232",
+            "EntityName": "Kazakhstan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2490",
+    "RawQuestion": "what is british columbia?",
+    "ProcessedQuestion": "what is british columbia",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q1973 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "province of Canada",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2499",
+    "RawQuestion": "who did plaxico burress sign with 2012?",
+    "ProcessedQuestion": "who did plaxico burress sign with 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1379303 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2501",
+    "RawQuestion": "who plays lois in family guy?",
+    "ProcessedQuestion": "who plays lois in family guy",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q853073. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q116219",
+            "EntityName": "Alex Borstein"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2502",
+    "RawQuestion": "what state did dwight d. eisenhower live in?",
+    "ProcessedQuestion": "what state did dwight d. eisenhower live in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9916 wdt:P551 ?y. ?y wdt:P131+ ?x. ?x wdt:P31 wd:Q35657. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2505",
+    "RawQuestion": "what is vanderbilt university mascot?",
+    "ProcessedQuestion": "what is vanderbilt university mascot",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q29052 wdt:P822 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2506",
+    "RawQuestion": "what famous book did benjamin franklin wrote?",
+    "ProcessedQuestion": "what famous book did benjamin franklin wrote",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P50 wd:Q34969. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1216281",
+            "EntityName": "The Morals of Chess"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3142253",
+            "EntityName": "Poor Richard's Almanack"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4656501",
+            "EntityName": "A Dissertation on Liberty and Necessity, Pleasure and Pain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7075440",
+            "EntityName": "Observations Concerning the Increase of Mankind, Peopling of Countries, etc."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7714957",
+            "EntityName": "The Autobiography of Benjamin Franklin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7731026",
+            "EntityName": "The Drinker's Dictionary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19033047",
+            "EntityName": "Petition from the Pennsylvania Society for the Abolition of Slavery"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19035229",
+            "EntityName": "Franklin to Abbé Jean-Louis Giraud Soulavie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19096913",
+            "EntityName": "Letter on a Manuscript against the Doctrine of a Particular Providence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19108828",
+            "EntityName": "Experiments and Observations on Electricity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19760849",
+            "EntityName": "Proposals Relating to the Education of Youth in Pensilvania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29106964",
+            "EntityName": "The Autobiography of Benjamin Franklin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54848990",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97621595",
+            "EntityName": "The Casket, or Flowers of Literature, Wit and Sentiment"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q105713533",
+            "EntityName": "Lo camí de la fortuna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108554458",
+            "EntityName": "Benjamin Franklin's Experiments"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108554684",
+            "EntityName": "Benjamin Franklin's autobiographical writings"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2508",
+    "RawQuestion": "where did brian williams go to college?",
+    "ProcessedQuestion": "where did brian williams go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q459695 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4974383",
+            "EntityName": "Brookdale Community College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q179036",
+            "EntityName": "The Catholic University of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q432637",
+            "EntityName": "George Washington University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2512",
+    "RawQuestion": "which island in greece?",
+    "ProcessedQuestion": "which island in greece",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q1402592; wdt:P17|wdt:P131 wd:Q41. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1132928",
+            "EntityName": "Zaforas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1209129",
+            "EntityName": "Diapontia Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1406326",
+            "EntityName": "Gavrionisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1432910",
+            "EntityName": "Taphians"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q131555",
+            "EntityName": "Dodecanese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q170295",
+            "EntityName": "Ionian Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q203447",
+            "EntityName": "Sporades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1631376",
+            "EntityName": "North Aegean islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1664313",
+            "EntityName": "Messenian Oinousses"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1680567",
+            "EntityName": "Koufonisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1722565",
+            "EntityName": "Kalogeroi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1789564",
+            "EntityName": "Tomaronisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q767387",
+            "EntityName": "Echinades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q768065",
+            "EntityName": "Christiana Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q915908",
+            "EntityName": "Dionysades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q485810",
+            "EntityName": "Ananes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q499663",
+            "EntityName": "Saronic Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q585922",
+            "EntityName": "Petalioi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q667536",
+            "EntityName": "East Aegean Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q679972",
+            "EntityName": "Lesser Cyclades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q690837",
+            "EntityName": "Southern Sporades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20917746",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21684526",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21695316",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24881212",
+            "EntityName": "Northern Sporades"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24882330",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24882329",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24888141",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24888226",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24992974",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24997570",
+            "EntityName": "Pontikonisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24997597",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25006631",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25016173",
+            "EntityName": "Nisakia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25018916",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25018954",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25020733",
+            "EntityName": "Kouroukia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25020967",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25020971",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25023178",
+            "EntityName": "Kofinidia islets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25023310",
+            "EntityName": "Korakia islets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25024354",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25024781",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25027761",
+            "EntityName": "Kavaloi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25034613",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25034626",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25034836",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25035036",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25053366",
+            "EntityName": "Kalapodia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25069798",
+            "EntityName": "Glaronisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25081552",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25081738",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25094240",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25094420",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25113974",
+            "EntityName": "Halcyonides Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25116960",
+            "EntityName": "Agiou Stefanou"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25116976",
+            "EntityName": "Katergakia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25116986",
+            "EntityName": "Anthropofagoi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25117012",
+            "EntityName": "Gourna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25117198",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25117269",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25117275",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25117302",
+            "EntityName": "Adelfia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118259",
+            "EntityName": "Avelonisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118298",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118307",
+            "EntityName": "Tourlites"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118324",
+            "EntityName": "Dýo Adelfia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118365",
+            "EntityName": "Refoulia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118371",
+            "EntityName": "Prasonisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118384",
+            "EntityName": "Chaloi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118390",
+            "EntityName": "Pentanisos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118393",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118409",
+            "EntityName": "Dýo Adelfia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25118780",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25123194",
+            "EntityName": "Diaporia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25159955",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q62531595",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65963162",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q86412116",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q113381220",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2119012",
+            "EntityName": "Imia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2647539",
+            "EntityName": "Alkyonides Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5305672",
+            "EntityName": "Drakoneras"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5383222",
+            "EntityName": "Epirot Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12279142",
+            "EntityName": "Drenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12876187",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12880076",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12880600",
+            "EntityName": "Makares"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12885115",
+            "EntityName": "Sybota Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16328073",
+            "EntityName": "Oinousses Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16330724",
+            "EntityName": "Antiparos island group"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17577254",
+            "EntityName": "Laouses"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2513",
+    "RawQuestion": "who has won the most fa cup?",
+    "ProcessedQuestion": "who has won the most fa cup",
+    "Parses": [
+      {
+        "Sparql": "SELECT ?x (COUNT(?x) AS ?y) WHERE { ?p wdt:P31 wd:Q4484477; wdt:P1346 ?x. } GROUP BY ?xORDER BY DESC(?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9617",
+            "EntityName": "Arsenal F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2517",
+    "RawQuestion": "when did hurricane irene hit ct?",
+    "ProcessedQuestion": "when did hurricane irene hit ct",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q187621 wdt:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2011-08-21T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2518",
+    "RawQuestion": "who did michael jackson play in the wiz?",
+    "ProcessedQuestion": "who did michael jackson play in the wiz",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q428158 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q2831; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2525",
+    "RawQuestion": "where did jerry spinelli go to college?",
+    "ProcessedQuestion": "where did jerry spinelli go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q563118 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q193727",
+            "EntityName": "Johns Hopkins University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1520129",
+            "EntityName": "Gettysburg College"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2526",
+    "RawQuestion": "what is the zip code for cordova tn?",
+    "ProcessedQuestion": "what is the zip code for cordova tn",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5170040 wdt:P281 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2535",
+    "RawQuestion": "who was the prime minister of canada in 1998?",
+    "ProcessedQuestion": "who was the prime minister of canada in 1998",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q839078; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1999-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1998-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q128543",
+            "EntityName": "Jean Chrétien"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2536",
+    "RawQuestion": "what did ron howard direct?",
+    "ProcessedQuestion": "what did ron howard direct",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P57 wd:Q103646. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106428",
+            "EntityName": "Apollo 13"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q131864",
+            "EntityName": "Dr. Seuss' How the Grinch Stole Christmas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q160560",
+            "EntityName": "The Da Vinci Code"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q164103",
+            "EntityName": "A Beautiful Mind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q192934",
+            "EntityName": "Angels & Demons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q386291",
+            "EntityName": "EDtv"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q499371",
+            "EntityName": "Backdraft"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q515931",
+            "EntityName": "Willow"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q647546",
+            "EntityName": "Cinderella Man"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q669675",
+            "EntityName": "Gung Ho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q691672",
+            "EntityName": "Frost/Nixon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q752362",
+            "EntityName": "Ransom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q839341",
+            "EntityName": "Far and Away"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q997228",
+            "EntityName": "Night Shift"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1105463",
+            "EntityName": "Cocoon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1127184",
+            "EntityName": "Splash"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1137831",
+            "EntityName": "Parenthood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1210206",
+            "EntityName": "The Dilemma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1637139",
+            "EntityName": "The Missing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1747211",
+            "EntityName": "The Paper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1747227",
+            "EntityName": "Grand Theft Auto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1768437",
+            "EntityName": "Rush"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3402424",
+            "EntityName": "Presidential Reunion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15052329",
+            "EntityName": "Made in America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15079316",
+            "EntityName": "In the Heart of the Sea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18192306",
+            "EntityName": "Inferno"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18914916",
+            "EntityName": "Cotton Candy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20649252",
+            "EntityName": "Skyward"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24055095",
+            "EntityName": "The Beatles: Eight Days a Week"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q27038847",
+            "EntityName": "Solo: A Star Wars Story"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q27962582",
+            "EntityName": "Robert Langdon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29474217",
+            "EntityName": "Genius"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30806135",
+            "EntityName": "Through the Magic Pyramid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51964873",
+            "EntityName": "Star Wars Anthology"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60738400",
+            "EntityName": "Pavarotti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65090738",
+            "EntityName": "Hillbilly Elegy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q66891813",
+            "EntityName": "Chapter One"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q67225012",
+            "EntityName": "The Shrinking of Treehorn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96314873",
+            "EntityName": "Rebuilding Paradise"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q105962844",
+            "EntityName": "Thirteen Lives"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2540",
+    "RawQuestion": "what inspired monet?",
+    "ProcessedQuestion": "what inspired monet",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q296 wdt:P737 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2542",
+    "RawQuestion": "where does kaka live?",
+    "ProcessedQuestion": "where does kaka live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q531814 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2548",
+    "RawQuestion": "what college did charles richard drew go to?",
+    "ProcessedQuestion": "what college did charles richard drew go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1065848 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2154182",
+            "EntityName": "Columbia University Vagelos College of Physicians and Surgeons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49165",
+            "EntityName": "Amherst College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6801306",
+            "EntityName": "McGill University Faculty of Medicine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2551",
+    "RawQuestion": "where did the oakland raiders move from?",
+    "ProcessedQuestion": "where did the oakland raiders move from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q324523 wdt:P159 ?y; p:P159 ?p. ?p ps:P159 ?x. FILTER(?x NOT IN(?y)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17042",
+            "EntityName": "Oakland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65",
+            "EntityName": "Los Angeles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2556",
+    "RawQuestion": "what are some of the religions in australia?",
+    "ProcessedQuestion": "what are some of the religions in australia",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q408 wdt:P140 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2559",
+    "RawQuestion": "what type of political system is headed by queen elizabeth ii?",
+    "ProcessedQuestion": "what type of political system is headed by queen elizabeth ii",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31 wd:Q6256; p:P35 ?p. ?p ps:P35 wd:Q9682; wdt:P122 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2572",
+    "RawQuestion": "which states does the connecticut river flow through?",
+    "ProcessedQuestion": "which states does the connecticut river flow through",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q379648 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q759",
+            "EntityName": "New Hampshire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q771",
+            "EntityName": "Massachusetts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q779",
+            "EntityName": "Connecticut"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16551",
+            "EntityName": "Vermont"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2573",
+    "RawQuestion": "what are the biggest cities in illinois?",
+    "ProcessedQuestion": "what are the biggest cities in illinois",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q515; wdt:P131+ wd:Q1204; wdt:P1082 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1297",
+            "EntityName": "Chicago"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2575",
+    "RawQuestion": "which province in canada is the most populated?",
+    "ProcessedQuestion": "which province in canada is the most populated",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q11828004; wdt:P1082 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1904",
+            "EntityName": "Ontario"
+          }
+        ]
+      }
+    ]
+  }
+]

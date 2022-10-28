@@ -1,0 +1,807 @@
+[
+  {
+    "QuestionId": "WebQTrn-1880",
+    "RawQuestion": "what disease did abe lincoln have?",
+    "ProcessedQuestion": "what disease did abe lincoln have",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q91 wdt:P1050 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1884",
+    "RawQuestion": "what represents ghana?",
+    "ProcessedQuestion": "what represents ghana",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q117 wdt:P2238 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1888",
+    "RawQuestion": "when did carolina hurricanes win the cup?",
+    "ProcessedQuestion": "when did carolina hurricanes win the cup",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q211872; wdt:P585 ?x; wdt:P1346 wd:Q201857. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2006-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1889",
+    "RawQuestion": "who does jr smith play for 2012?",
+    "ProcessedQuestion": "who does jr smith play for 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q669334 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1890",
+    "RawQuestion": "who currently owns the steelers?",
+    "ProcessedQuestion": "who currently owns the steelers",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q191477 wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7366343",
+            "EntityName": "Rooney family"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1895",
+    "RawQuestion": "what did maria theresa rule?",
+    "ProcessedQuestion": "what did maria theresa rule",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q131706 wdt:P97 ?p. ?p wdt:P17 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1898",
+    "RawQuestion": "which countries share borders with spain?",
+    "ProcessedQuestion": "which countries share borders with spain",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q29 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1410",
+            "EntityName": "Gibraltar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q45",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q228",
+            "EntityName": "Andorra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1901",
+    "RawQuestion": "what state did roger sherman represent at the constitutional convention?",
+    "ProcessedQuestion": "what state did roger sherman represent at the constitutional convention",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q405475 p:P710 ?p. ?p ps:P710 wd:Q354721; pq:P768 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q779",
+            "EntityName": "Connecticut"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1906",
+    "RawQuestion": "what is the philadelphia church of god?",
+    "ProcessedQuestion": "what is the philadelphia church of god",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q7182646 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "church based in Edmond, Oklahoma",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1907",
+    "RawQuestion": "where did david duke go to college?",
+    "ProcessedQuestion": "where did david duke go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q163042 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1521725",
+            "EntityName": "Louisiana State University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2493687",
+            "EntityName": "Interregional Academy of Personnel Management"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1922",
+    "RawQuestion": "who played princess leia's mother in star wars?",
+    "ProcessedQuestion": "who played princess leia 's mother in star wars",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51797 wdt:P25 ?z. ?w wdt:P179 wd:Q22092344; p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 ?y. FILTER(?y = ?z) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37876",
+            "EntityName": "Natalie Portman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1925",
+    "RawQuestion": "where donald trump went to college?",
+    "ProcessedQuestion": "where donald trump went to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q22686 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q130965",
+            "EntityName": "Fordham University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1329269",
+            "EntityName": "The Wharton School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7013764",
+            "EntityName": "New York Military Academy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49117",
+            "EntityName": "University of Pennsylvania"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1929",
+    "RawQuestion": "what year did yankees win their first world series?",
+    "ProcessedQuestion": "what year did yankees win their first world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q213417. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1923-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1933",
+    "RawQuestion": "what is st francis patron saint of?",
+    "ProcessedQuestion": "what is st francis patron saint of",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q676555 wdt:P2925 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q215536",
+            "EntityName": "merchant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2249676",
+            "EntityName": "environment"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9295862",
+            "EntityName": "Third Order of Saint Francis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18425404",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q729",
+            "EntityName": "animal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q38",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q62",
+            "EntityName": "San Francisco"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1937",
+    "RawQuestion": "who does larry david play in seinfeld?",
+    "ProcessedQuestion": "who does larry david play in seinfeld",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23733 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q23728; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1939",
+    "RawQuestion": "what political experience did abraham lincoln have?",
+    "ProcessedQuestion": "what political experience did abraham lincoln have",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q91 p:P39 ?p. ?p ps:P39 ?x. ?x wdt:P31|wdt:P279+ wd:Q17279032. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11696",
+            "EntityName": "President of the United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13218630",
+            "EntityName": "United States representative"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17495450",
+            "EntityName": "member of the Illinois House of Representatives"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1943",
+    "RawQuestion": "what division is cincinnati bengals in?",
+    "ProcessedQuestion": "what division is cincinnati bengals in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q223511 wdt:P361 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q278064",
+            "EntityName": "AFC North"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1946",
+    "RawQuestion": "what countries include western europe?",
+    "ProcessedQuestion": "what countries include western europe",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q27496 wdt:P527 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q32",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39",
+            "EntityName": "Switzerland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40",
+            "EntityName": "Austria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55",
+            "EntityName": "Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q183",
+            "EntityName": "Germany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q235",
+            "EntityName": "Monaco"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1949",
+    "RawQuestion": "what is the legislature of missouri called?",
+    "ProcessedQuestion": "what is the legislature of missouri called",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1581 wdt:P194 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6879566",
+            "EntityName": "Missouri General Assembly"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1952",
+    "RawQuestion": "what college did jerry rice attend?",
+    "ProcessedQuestion": "what college did jerry rice attend",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q505423 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1953",
+    "RawQuestion": "who is liz lemon marrying on 30 rock?",
+    "ProcessedQuestion": "who is liz lemon marrying on 30 rock",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3835664 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1957",
+    "RawQuestion": "where did the name rome come from?",
+    "ProcessedQuestion": "where did the name rome come from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q220 wdt:P138 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1959",
+    "RawQuestion": "who was the governor of missouri in 1996?",
+    "ProcessedQuestion": "who was the governor of missouri in 1996",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q20801667; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1997-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1996-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q538609",
+            "EntityName": "Mel Carnahan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1962",
+    "RawQuestion": "who played carl fredricksen in up?",
+    "ProcessedQuestion": "who played carl fredricksen in up",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q174811 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q3658760. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1965",
+    "RawQuestion": "who won the super bowl xliv 2010?",
+    "ProcessedQuestion": "who won the super bowl xliv 2010",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q32096; wdt:P1346 ?x; wdt:P585 ?y. FILTER((?y < \"2011-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"2010-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q172435",
+            "EntityName": "New Orleans Saints"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1989",
+    "RawQuestion": "what country was the treaty of versailles written?",
+    "ProcessedQuestion": "what country was the treaty of versailles written",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8736 wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1990",
+    "RawQuestion": "what is st mary mascot?",
+    "ProcessedQuestion": "what is st mary mascot",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q7401829 wdt:P822 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1995",
+    "RawQuestion": "where did sir ernest shackleton live?",
+    "ProcessedQuestion": "where did sir ernest shackleton live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q957543 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1997",
+    "RawQuestion": "where did the welsh language originate from?",
+    "ProcessedQuestion": "where did the welsh language originate from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9309 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q156877",
+            "EntityName": "Brythonic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q593069",
+            "EntityName": "Western Brittonic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2001",
+    "RawQuestion": "who did alf's voice?",
+    "ProcessedQuestion": "who did alf 's voice",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q264221. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2006",
+    "RawQuestion": "what magazine did edgar allan poe work for?",
+    "ProcessedQuestion": "what magazine did edgar allan poe work for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16867 p:P108 ?p. ?p ps:P108 ?x. ?x wdt:P31 wd:Q41298. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2008",
+    "RawQuestion": "where did chickasaw indians live?",
+    "ProcessedQuestion": "where did chickasaw indians live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q622728 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2011",
+    "RawQuestion": "who plays batman in 2012?",
+    "ProcessedQuestion": "who plays batman in 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?w; wdt:P580 ?y; wdt:P582 ?z. ?w ps:P725|ps:P161 ?x; pq:P453 wd:Q2695156. FILTER((?y >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?z < \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2013",
+    "RawQuestion": "what time is world cup soccer?",
+    "ProcessedQuestion": "what time is world cup soccer",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q19317 wdt:P2257 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "4",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2016",
+    "RawQuestion": "where does selena gomez live right now 2010?",
+    "ProcessedQuestion": "where does selena gomez live right now 2010",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q83287 wdt:P551 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65",
+            "EntityName": "Los Angeles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2017",
+    "RawQuestion": "who is the member of rajya sabha?",
+    "ProcessedQuestion": "who is the member of rajya sabha",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P39 wd:Q244730. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20065246",
+            "EntityName": "Savita Behen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21176276",
+            "EntityName": "Bekal Utsahi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2022",
+    "RawQuestion": "what other writers influenced charles dickens?",
+    "ProcessedQuestion": "what other writers influenced charles dickens",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5686 wdt:P737 ?x. ?x wdt:P106 wd:Q36180. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2027",
+    "RawQuestion": "what is daniel radcliffe name in the woman in black?",
+    "ProcessedQuestion": "what is daniel radcliffe name in the woman in black",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q841274 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q38119; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2029",
+    "RawQuestion": "where was battle of verdun located?",
+    "ProcessedQuestion": "where was battle of verdun located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q130847 wdt:P276 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q154748",
+            "EntityName": "Verdun"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2035",
+    "RawQuestion": "where did paul rudd go to high school?",
+    "ProcessedQuestion": "where did paul rudd go to high school",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q276525 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7491549",
+            "EntityName": "Shawnee Mission West High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2040",
+    "RawQuestion": "what american penny is worth money?",
+    "ProcessedQuestion": "what american penny is worth money",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q161604 wdt:P3934 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "0.01",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2043",
+    "RawQuestion": "who plays noah bennet?",
+    "ProcessedQuestion": "who plays noah bennet",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q1063270. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q137688",
+            "EntityName": "Jack Coleman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2045",
+    "RawQuestion": "who won american idol 2006 season 5?",
+    "ProcessedQuestion": "who won american idol 2006 season 5",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2666341 wdt:P1346 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q316644",
+            "EntityName": "Taylor Hicks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2058",
+    "RawQuestion": "who was president when nelson rockefeller was vice president?",
+    "ProcessedQuestion": "who was president when nelson rockefeller was vice president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?y. ?y ps:P39 wd:Q11696; pq:P580 ?p; pq:P582 ?q. wd:Q11237 p:P39 ?z. ?z ps:P39 wd:Q11699; pq:P580 ?w; pq:P582 ?v. FILTER((?w >= ?p) && (?v <= ?q)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9582",
+            "EntityName": "Gerald Ford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2059",
+    "RawQuestion": "what year magic johnson retired?",
+    "ProcessedQuestion": "what year magic johnson retired",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q134183 p:P54 ?p. ?p pq:P582 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1996-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2062",
+    "RawQuestion": "who plays young john winchester in supernatural?",
+    "ProcessedQuestion": "who plays young john winchester in supernatural",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q130585 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q1088616. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q342665",
+            "EntityName": "Jeffrey Dean Morgan"
+          }
+        ]
+      }
+    ]
+  }
+]

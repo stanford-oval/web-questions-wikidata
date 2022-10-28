@@ -1,0 +1,157 @@
+[
+  {
+    "QuestionId": "WebQTrn-2065",
+    "RawQuestion": "what region is manchester england?",
+    "ProcessedQuestion": "what region is manchester england",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.052bw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.052bw ns:location.capital_of_administrative_division.capital_of ?y .\n?y ns:location.administrative_division_capital_relationship.administrative_division ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jt34wk",
+            "EntityName": "North West England"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2135",
+    "RawQuestion": "who played heath barkley?",
+    "ProcessedQuestion": "who played heath barkley",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05psqzd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05psqzd ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vz7q",
+            "EntityName": "Travis Fimmel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2210",
+    "RawQuestion": "what does canada export and import the most?",
+    "ProcessedQuestion": "what does canada export and import the most",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025rs2z",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tnyc",
+            "EntityName": "Lumber"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9v41",
+            "EntityName": "Wheat Farming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vwm",
+            "EntityName": "Crude Petroleum and Natural Gas Extraction"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vxr",
+            "EntityName": "Bituminous Coal Underground Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vy9",
+            "EntityName": "Iron Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vzm",
+            "EntityName": "Copper Ore and Nickel Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9w46",
+            "EntityName": "Electric Power Generation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xw9",
+            "EntityName": "Pulp, Paper, and Paperboard Mills"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y3r",
+            "EntityName": "Pharmaceutical and Medicine Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y6g",
+            "EntityName": "Primary Aluminum Production"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd8p",
+            "EntityName": "Vegetable Oil Mills, Except Corn, Cottonseed, and Soybeans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtfwz",
+            "EntityName": "Aircraft"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2222",
+    "RawQuestion": "what airport fly into miami?",
+    "ProcessedQuestion": "what airport fly into miami",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f2v0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f2v0 ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nlly",
+            "EntityName": "Fort Lauderdale–Hollywood International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0yt9j",
+            "EntityName": "Miami International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2229",
+    "RawQuestion": "where were the chickasaw indians located?",
+    "ProcessedQuestion": "where were the chickasaw indians located",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0n0y5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0n0y5 ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05mph",
+            "EntityName": "Oklahoma"
+          }
+        ]
+      }
+    ]
+  }
+]
