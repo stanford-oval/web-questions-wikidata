@@ -94,5 +94,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1108",
+    "RawQuestion": "what radio station is npr on in nyc?",
+    "ProcessedQuestion": "what radio station is npr on in nyc",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c0sl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c0sl ns:broadcast.radio_network.affiliates ?y .\n?y ns:broadcast.radio_affiliation_duration.station ?x .\n?x ns:broadcast.broadcast.area_served ns:m.02_286 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_3by",
+            "EntityName": "WNYC"
+          }
+        ]
+      }
+    ]
   }
 ]

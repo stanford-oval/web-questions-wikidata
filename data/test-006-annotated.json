@@ -1981,5 +1981,91 @@
         "Answers": []
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1061",
+    "RawQuestion": "where does greek language come from?",
+    "ProcessedQuestion": "where does greek language come from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9129 wdt:P279 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2042538",
+            "EntityName": "Hellenic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85380120",
+            "EntityName": "Southern European languages"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1074",
+    "RawQuestion": "who is lamar odom playing for this year?",
+    "ProcessedQuestion": "who is lamar odom playing for this year",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q296403 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q121783",
+            "EntityName": "Los Angeles Lakers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q132893",
+            "EntityName": "Dallas Mavericks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q169138",
+            "EntityName": "Miami Heat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q976396",
+            "EntityName": "Los Angeles Clippers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7320948",
+            "EntityName": "Rhode Island Rams men's basketball"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q54927",
+            "EntityName": "Saski Baskonia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1127",
+    "RawQuestion": "which country in north america is divided into provinces?",
+    "ProcessedQuestion": "which country in north america is divided into provinces",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31/wdt:P279 wd:Q34876; wdt:P17 ?y. ?x wdt:P31 wd:Q6256; wdt:P361 wd:Q49. FILTER(?y = ?x) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          }
+        ]
+      }
+    ]
   }
 ]

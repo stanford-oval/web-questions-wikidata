@@ -1199,5 +1199,22 @@
         "Answers": []
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTrn-1090",
+    "RawQuestion": "where do most chinese live?",
+    "ProcessedQuestion": "where do most chinese live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P17 wd:Q148; wdt:P1082 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q148",
+            "EntityName": "People's Republic of China"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1209,5 +1209,27 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTrn-301",
+    "RawQuestion": "which city held the summer olympics twice?",
+    "ProcessedQuestion": "which city held the summer olympics twice",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x (COUNT(DISTINCT *) AS ?y) WHERE { wd:Q159821 wdt:P527 ?p. ?p wdt:P276 ?x. ?x wdt:P31/wdt:P279* wd:Q515. } GROUP BY ?x HAVING (?y = 2)",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q340",
+            "EntityName": "Montreal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12892",
+            "EntityName": "Antwerp"
+          }
+        ]
+      }
+    ]
   }
 ]

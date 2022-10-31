@@ -2115,5 +2115,119 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1577",
+    "RawQuestion": "who did cliff lee play for last year?",
+    "ProcessedQuestion": "who did cliff lee play for last year",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q978930 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q329816",
+            "EntityName": "Texas Rangers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q466586",
+            "EntityName": "Seattle Mariners"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q642553",
+            "EntityName": "Cleveland Guardians"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q650840",
+            "EntityName": "Philadelphia Phillies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4791844",
+            "EntityName": "Arkansas Razorbacks baseball"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1597",
+    "RawQuestion": "what kind of products does nike sell?",
+    "ProcessedQuestion": "what kind of products does nike sell",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q483915 wdt:P1056 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q161928",
+            "EntityName": "footwear"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q768186",
+            "EntityName": "sports equipment"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11460",
+            "EntityName": "clothing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1617",
+    "RawQuestion": "what did nicholas copernicus discover?",
+    "ProcessedQuestion": "what did nicholas copernicus discover",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P61 wd:Q619. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1537",
+    "RawQuestion": "what did niels bohr discover about the atomic structure?",
+    "ProcessedQuestion": "what did niels bohr discover about the atomic structure",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P61 wd:Q7085. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1136644",
+            "EntityName": "correspondence principle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4094391",
+            "EntityName": "Bohr model of the chemical bond"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1539",
+    "RawQuestion": "who is ryan reynolds married to 2012?",
+    "ProcessedQuestion": "who is ryan reynolds married to 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192682 p:P26 ?p. ?p ps:P26 ?x; pq:P580 ?y. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q162959",
+            "EntityName": "Blake Lively"
+          }
+        ]
+      }
+    ]
   }
 ]

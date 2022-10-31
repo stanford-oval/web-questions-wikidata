@@ -1701,5 +1701,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-602",
+    "RawQuestion": "what part of the country is new england?",
+    "ProcessedQuestion": "what part of the country is new england",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q18389 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "region of the northeasternmost United States",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1406,5 +1406,62 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1478",
+    "RawQuestion": "who are the 9 justices of the supreme court 2011?",
+    "ProcessedQuestion": "who are the 9 justices of the supreme court 2011",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P39 ?y. ?y wdt:P279 wd:Q20706330. } LIMIT 9",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q166436",
+            "EntityName": "Bushrod Washington"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q186278",
+            "EntityName": "Mahlon Pitney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q202276",
+            "EntityName": "Benjamin Robbins Curtis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q252739",
+            "EntityName": "Lewis F. Powell, Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q285521",
+            "EntityName": "Samuel Chase"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q311562",
+            "EntityName": "William Rehnquist"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q312348",
+            "EntityName": "Thurgood Marshall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q313252",
+            "EntityName": "Charles Evans Hughes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q318143",
+            "EntityName": "Abe Fortas"
+          }
+        ]
+      }
+    ]
   }
 ]

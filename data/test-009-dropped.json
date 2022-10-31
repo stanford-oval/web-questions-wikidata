@@ -15,5 +15,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1555",
+    "RawQuestion": "what is the parliament of nepal called?",
+    "ProcessedQuestion": "what is the parliament of nepal called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c5yqk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c5yqk ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Parliament of Nepal",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
   }
 ]

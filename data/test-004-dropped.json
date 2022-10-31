@@ -215,5 +215,22 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-800",
+    "RawQuestion": "what war did the us lose the most soldiers?",
+    "ProcessedQuestion": "what war did the us lose the most soldiers",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:military.military_combatant.casualties ?y .\n?y ns:military.casualties.military_conflict ?x .\n?y ns:military.casualties.lower_estimate ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.081pw",
+            "EntityName": "World War II"
+          }
+        ]
+      }
+    ]
   }
 ]

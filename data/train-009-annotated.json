@@ -2784,5 +2784,27 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTrn-1496",
+    "RawQuestion": "who is my state senator and representative minnesota?",
+    "ProcessedQuestion": "who is my state senator and representative minnesota",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y; pq:P582 ?z. ?w wdt:P131 wd:Q1527. } ORDER BY DESC (?x) LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49216",
+            "EntityName": "Walter Mondale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22237",
+            "EntityName": "Amy Klobuchar"
+          }
+        ]
+      }
+    ]
   }
 ]

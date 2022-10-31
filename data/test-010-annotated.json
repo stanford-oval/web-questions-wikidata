@@ -978,5 +978,44 @@
         ]
       }
     ]
+  },
+  {
+    "QuestionId": "WebQTest-1655",
+    "RawQuestion": "where are ike and tina turner's children?",
+    "ProcessedQuestion": "where are ike and tina turner 's children",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x wdt:P22|wdt:P25 wd:Q131814. } UNION { ?x wdt:P22|wdt:P25 wd:Q208871. } }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16799152",
+            "EntityName": "Ronnie Turner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16799123",
+            "EntityName": "Raymond Craig Turner"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1706",
+    "RawQuestion": "what was benedict arnold most famous for?",
+    "ProcessedQuestion": "what was benedict arnold most famous for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q298237 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "American military officer during the Revolutionary War (1740–1801)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
   }
 ]
