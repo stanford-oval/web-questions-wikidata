@@ -1,0 +1,295 @@
+[
+  {
+    "QuestionId": "WebQTrn-3420",
+    "RawQuestion": "which airport is closest to barcelona port?",
+    "ProcessedQuestion": "which airport is closest to barcelona port",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f62 ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013q7r",
+            "EntityName": "Barcelona–El Prat Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3455",
+    "RawQuestion": "what airport do you fly into maui?",
+    "ProcessedQuestion": "what airport do you fly into maui",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jbs5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jbs5 ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01r3l2",
+            "EntityName": "Kahului Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398qm",
+            "EntityName": "Hana Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0398r9",
+            "EntityName": "Kapalua Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3458",
+    "RawQuestion": "what are the main imports and exports of afghanistan?",
+    "ProcessedQuestion": "what are the main imports and exports of afghanistan",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jdd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jdd ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9v6s",
+            "EntityName": "Fruit and Tree Nut Farming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xck",
+            "EntityName": "Carpet and Rug Mills"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pg4",
+            "EntityName": "Opium"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3489",
+    "RawQuestion": "what is the australian open called?",
+    "ProcessedQuestion": "what is the australian open called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05ftlg)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05ftlg ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Australian Open",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3496",
+    "RawQuestion": "what country does mexico trade with?",
+    "ProcessedQuestion": "what country does mexico trade with",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.0b90_r)\n\t{ \n\t  ns:m.0b90_r ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.0b90_r ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r4w",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3517",
+    "RawQuestion": "what color are the arizona cardinals uniforms?",
+    "ProcessedQuestion": "what color are the arizona cardinals uniforms",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ws7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ws7 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019sc",
+            "EntityName": "Black"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wkwg",
+            "EntityName": "Cardinal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3523",
+    "RawQuestion": "what did the harlem renaissance created?",
+    "ProcessedQuestion": "what did the harlem renaissance created",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019y_2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019y_2 ns:book.book_subject.works ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bm0crh",
+            "EntityName": "Harlem Renaissance Way Down South"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bvbrrh",
+            "EntityName": "The Life, Times, and Legacies of Lena Horne Special Feature Parts 1 and 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g98xzj",
+            "EntityName": "The Wisdom of W.E.B. Du Bois"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gw8fc1",
+            "EntityName": "The Approaching 100th Anniversary of the Harlem Renaissance (part 2)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxmy6l",
+            "EntityName": "Harlem Renaissance Dialogues (part 4): Kareem Abdul-Jabbar and Giants of the Renaissance"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxmyjk",
+            "EntityName": "Harlem Renaissance Dialogues (part 3): A Poet Rediscovered in The Great Debaters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxmyk3",
+            "EntityName": "Harlem Renaissance Dialogues (part 5): The Need to Know and the Value of Legacy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxnkj8",
+            "EntityName": "Harlem Renaissance Dialogues (Part 1): Living and Writing Black History"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxnksh",
+            "EntityName": "Harlem Renaissance Dialogues (Part 2): Savannah and the Harlem Renaissance"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxq34z",
+            "EntityName": "Harlem Renaissance Dialogues (Part 6): Publishing Trends and Modern Readers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxq399",
+            "EntityName": "Harlem Renaissance Dialogues (Part 7): The Renaissance and Contemporary Issues"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h2x8v6",
+            "EntityName": "Looking at the World through Michael Jackson's Left Eye (Part 2)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hgc8tl",
+            "EntityName": "Songs of My People Art Exhibition Opens at Penn Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hnx0cj",
+            "EntityName": "Countdown of 10 Amazing Moments from the Year 2011: No. 6 Sonny Rollins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hpxc1b",
+            "EntityName": "On the Shoulders of Giants: My Journey Through the Harlem Rennaissance"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pxynmm",
+            "EntityName": "The Young Poet and the Painter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0z842cv",
+            "EntityName": "Text and Meaning in Langston Hughes' The Negro Artist and the Racial Mountain"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3543",
+    "RawQuestion": "what countries does japan export to?",
+    "ProcessedQuestion": "what countries does japan export to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_3d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_3d ns:location.statistical_region.places_exported_to ?y .\n?y ns:location.imports_and_exports.exported_to ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01f08r",
+            "EntityName": "Dubai"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047t_",
+            "EntityName": "Kiribati"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fsv",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3559",
+    "RawQuestion": "what season did jason priestley leave 90210?",
+    "ProcessedQuestion": "what season did jason priestley leave 90210",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0n2bh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0n2bh ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.seasons ?x .\n?y ns:tv.regular_tv_appearance.actor ns:m.01gc7h .\n?x ns:tv.tv_series_season.to ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05dqhjw",
+            "EntityName": "Beverly Hills, 90210 - Season 7"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,859 @@
+[
+  {
+    "QuestionId": "WebQTrn-3707",
+    "RawQuestion": "when is the last time chicago bulls won a championship?",
+    "ProcessedQuestion": "when is the last time chicago bulls won a championship",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm74)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm74 ns:sports.sports_team.championships ?x .\n?x ns:time.event.start_date ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04zt01",
+            "EntityName": "1998 NBA Finals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3709",
+    "RawQuestion": "what is the holy book in taoism?",
+    "ProcessedQuestion": "what is the holy book in taoism",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07gvx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07gvx ns:religion.religion.texts ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0164zy",
+            "EntityName": "Zhuang Zhou"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02czn",
+            "EntityName": "Tao Te Ching"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ydb",
+            "EntityName": "I Ching"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05blr4",
+            "EntityName": "Daozang"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3713",
+    "RawQuestion": "when is the diwali festival?",
+    "ProcessedQuestion": "when is the diwali festival",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019fpj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019fpj ns:time.holiday.day_of_year ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04rc2q7",
+            "EntityName": "29 Ashwin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3714",
+    "RawQuestion": "what professional baseball team did michael jordan play for?",
+    "ProcessedQuestion": "what professional baseball team did michael jordan play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n?x ns:common.topic.notable_types ns:m.0256985 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.031pds",
+            "EntityName": "Birmingham Barons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f3wm2",
+            "EntityName": "Scottsdale Scorpions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3720",
+    "RawQuestion": "what countries are included in the netherlands?",
+    "ProcessedQuestion": "what countries are included in the netherlands",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.059j2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.059j2 ns:base.aareas.schema.administrative_area.administrative_children ?x .\n?x ns:common.topic.notable_types ns:m.02_3phk .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_vs",
+            "EntityName": "Friesland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04q42",
+            "EntityName": "Limburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07371",
+            "EntityName": "South Holland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bt5w",
+            "EntityName": "Flevoland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d8rs",
+            "EntityName": "Groningen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d9rp",
+            "EntityName": "Utrecht"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dqyc",
+            "EntityName": "Zeeland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fcrg",
+            "EntityName": "North Brabant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fqww",
+            "EntityName": "Drenthe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fqxc",
+            "EntityName": "Overijssel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fqxw",
+            "EntityName": "Gelderland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fqyc",
+            "EntityName": "North Holland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3723",
+    "RawQuestion": "what year did the florida marlins win their 2nd world series title?",
+    "ProcessedQuestion": "what year did the florida marlins win their 2nd world series title",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02__x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02__x ns:sports.sports_team.championships ?x .\n?x ns:time.event.start_date ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\nOFFSET 1\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3725",
+    "RawQuestion": "what guitar does duane allman play?",
+    "ProcessedQuestion": "what guitar does duane allman play",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01qyy3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01qyy3 ns:music.guitarist.guitars_played ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j9dp",
+            "EntityName": "Gibson Les Paul"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3727",
+    "RawQuestion": "what is the biggest country in europe by population?",
+    "ProcessedQuestion": "what is the biggest country in europe by population",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02j9z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02j9z ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n?x ns:topic_server.population_number ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0345h",
+            "EntityName": "Germany"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3728",
+    "RawQuestion": "what team does hank baskett play for 2011 season?",
+    "ProcessedQuestion": "what team does hank baskett play for 2011 season",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d81yf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d81yf ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2011-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2011-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051q5",
+            "EntityName": "Minnesota Vikings"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3730",
+    "RawQuestion": "what are the african nations?",
+    "ProcessedQuestion": "what are the african nations",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0dg3n1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0dg3n1 ns:base.locations.continents.countries_within ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0164v",
+            "EntityName": "Benin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0166v",
+            "EntityName": "Botswana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01699",
+            "EntityName": "Burkina Faso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0169t",
+            "EntityName": "Burundi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019pcs",
+            "EntityName": "Ethiopia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019rg5",
+            "EntityName": "Kenya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n6c",
+            "EntityName": "Comoros"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nln",
+            "EntityName": "Cameroon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nqj",
+            "EntityName": "Cape Verde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nyl",
+            "EntityName": "Central African Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01p1b",
+            "EntityName": "Chad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01rxw",
+            "EntityName": "Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027jk",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02k54",
+            "EntityName": "Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kcz",
+            "EntityName": "Equatorial Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02khs",
+            "EntityName": "Eritrea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03548",
+            "EntityName": "Gabon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035dk",
+            "EntityName": "Ghana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03676",
+            "EntityName": "Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036b_",
+            "EntityName": "Guinea-Bissau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gqr",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hvw",
+            "EntityName": "Lesotho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04hzj",
+            "EntityName": "Liberia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sj3",
+            "EntityName": "Madagascar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tr1",
+            "EntityName": "Malawi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v09",
+            "EntityName": "Mali"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vjh",
+            "EntityName": "Mauritania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vs9",
+            "EntityName": "Mauritius"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wgh",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04wlh",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05bmq",
+            "EntityName": "Namibia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05cc1",
+            "EntityName": "Niger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05cgv",
+            "EntityName": "Nigeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05rznz",
+            "EntityName": "South Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dfg",
+            "EntityName": "Rwanda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s_2",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06srk",
+            "EntityName": "Senegal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sw9",
+            "EntityName": "Seychelles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tgw",
+            "EntityName": "Somalia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06tw8",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06v36",
+            "EntityName": "Swaziland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dzf",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07f5x",
+            "EntityName": "Togo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fj_",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tp2",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088q4",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088vb",
+            "EntityName": "Zambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088xp",
+            "EntityName": "Democratic Republic of the Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fv4v",
+            "EntityName": "Ivory Coast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h3y",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hdx8",
+            "EntityName": "Gambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hzlz",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j681",
+            "EntityName": "São Tomé and Príncipe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3740",
+    "RawQuestion": "what are the major imports and exports of canada?",
+    "ProcessedQuestion": "what are the major imports and exports of canada",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025rs2z",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tnyc",
+            "EntityName": "Lumber"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9v41",
+            "EntityName": "Wheat Farming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vwm",
+            "EntityName": "Crude Petroleum and Natural Gas Extraction"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vxr",
+            "EntityName": "Bituminous Coal Underground Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vy9",
+            "EntityName": "Iron Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vzm",
+            "EntityName": "Copper Ore and Nickel Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9w46",
+            "EntityName": "Electric Power Generation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xw9",
+            "EntityName": "Pulp, Paper, and Paperboard Mills"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y3r",
+            "EntityName": "Pharmaceutical and Medicine Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y6g",
+            "EntityName": "Primary Aluminum Production"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd8p",
+            "EntityName": "Vegetable Oil Mills, Except Corn, Cottonseed, and Soybeans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtfwz",
+            "EntityName": "Aircraft"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3741",
+    "RawQuestion": "what other political offices has obama been in?",
+    "ProcessedQuestion": "what other political offices has obama been in",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  FILTER (?x != ns:m.02mjmr)\n  ns:m.02mjmr ns:government.politician.government_positions_held ?y .\n  ?y ns:government.government_position_held.office_position_or_title ?x ;\n     ns:government.government_position_held.to ?d .  # the position has ended; not the current position\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_7l8y",
+            "EntityName": "United States Senator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_w_sv",
+            "EntityName": "Illinois State Senator"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3743",
+    "RawQuestion": "what to do in venice beach ca?",
+    "ProcessedQuestion": "what to do in venice beach ca",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_fl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_fl ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01z4sg",
+            "EntityName": "Muscle Beach"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027l5dg",
+            "EntityName": "Venice United Methodist Church"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rfng5",
+            "EntityName": "Binoculars Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047b_hk",
+            "EntityName": "Venice Canal Historic District"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047c1tt",
+            "EntityName": "Venice Branch"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p3m29",
+            "EntityName": "Beyond Baroque Literary Arts Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09z99h",
+            "EntityName": "First Lutheran Church of Venice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f7zgx",
+            "EntityName": "Social and Public Art Resource Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fy0rf",
+            "EntityName": "L.A. Louver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hr5dd1",
+            "EntityName": "72 Market Street Oyster Bar and Grill"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3744",
+    "RawQuestion": "what college did russell wilson go to?",
+    "ProcessedQuestion": "what college did russell wilson go to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05c10yf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05c10yf ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01yx1b",
+            "EntityName": "University of Wisconsin-Madison"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jkhr",
+            "EntityName": "North Carolina State University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3747",
+    "RawQuestion": "what is wrong with robin roberts?",
+    "ProcessedQuestion": "what is wrong with robin roberts",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06k3_t)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06k3_t ns:medicine.notable_person_with_medical_condition.condition ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019gky",
+            "EntityName": "Myelodysplastic syndrome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j8hd",
+            "EntityName": "Breast cancer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3754",
+    "RawQuestion": "what team does pudge rodriguez play for?",
+    "ProcessedQuestion": "what team does pudge rodriguez play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02p6g7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02p6g7 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n?y ns:sports.sports_team_roster.from ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02d02",
+            "EntityName": "Detroit Tigers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3758",
+    "RawQuestion": "what empire did maria theresa rule?",
+    "ProcessedQuestion": "what empire did maria theresa rule",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0czh6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0czh6 ns:royalty.monarch.kingdom ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d8l",
+            "EntityName": "Bohemia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gj2",
+            "EntityName": "Hungary"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3763",
+    "RawQuestion": "what country is russia close to?",
+    "ProcessedQuestion": "what country is russia close to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06bnz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06bnz ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0163v",
+            "EntityName": "Belarus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kmm",
+            "EntityName": "Estonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vzc",
+            "EntityName": "Finland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047lj",
+            "EntityName": "Kazakhstan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g5k",
+            "EntityName": "Latvia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gzd",
+            "EntityName": "Lithuania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w8f",
+            "EntityName": "Mongolia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05b4w",
+            "EntityName": "Norway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05b7q",
+            "EntityName": "North Korea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qhw",
+            "EntityName": "Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t21",
+            "EntityName": "Ukraine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d05w3",
+            "EntityName": "China"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0kn",
+            "EntityName": "Georgia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jhd",
+            "EntityName": "Azerbaijan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3764",
+    "RawQuestion": "who is the coach of inter milan now?",
+    "ProcessedQuestion": "who is the coach of inter milan now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03x6m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03x6m ns:sports.sports_team.coaches ?y .\n?y ns:sports.sports_team_coach_tenure.coach ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_coach_tenure.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_coach_tenure.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_coach_tenure.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_coach_tenure.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026g1wf",
+            "EntityName": "Walter Mazzarri"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04z69t",
+            "EntityName": "Giuseppe Baresi"
+          }
+        ]
+      }
+    ]
+  }
+]

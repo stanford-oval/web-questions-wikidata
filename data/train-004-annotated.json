@@ -298,7 +298,7 @@
     "ProcessedQuestion": "who plays lois griffin in family guy",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725 ?p. ?p ps:P725 ?x; pq:P453 wd:Q853073. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5930 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q853073. }",
         "Answers": [
           {
             "AnswerType": "Entity",

@@ -1,0 +1,3243 @@
+[
+  {
+    "QuestionId": "WebQTrn-3227",
+    "RawQuestion": "what did skinner believe?",
+    "ProcessedQuestion": "what did skinner believe",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q213195 wdt:P140 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3228",
+    "RawQuestion": "when did babe ruth start playing baseball in the mlb?",
+    "ProcessedQuestion": "when did babe ruth start playing baseball in the mlb",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q213812 p:P54 ?p. ?p ps:P54 ?y. ?y wdt:P118 wd:Q1163715. ?p pq:P580 ?x. } ORDER BY ?x LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3230",
+    "RawQuestion": "who plays marlo on the wire?",
+    "ProcessedQuestion": "who plays marlo on the wire",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q478360 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q6771900. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3232",
+    "RawQuestion": "who was the first actor to play edward quartermaine?",
+    "ProcessedQuestion": "who was the first actor to play edward quartermaine",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y; wdt:P580 ?z. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q5344929. } ORDER BY ?z LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3233",
+    "RawQuestion": "where did the founder of google go to college?",
+    "ProcessedQuestion": "where did the founder of google go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q95 wdt:P112 ?p. ?p wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41506",
+            "EntityName": "Stanford University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q230492",
+            "EntityName": "University of Michigan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q503415",
+            "EntityName": "University of Maryland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3239",
+    "RawQuestion": "who coached the dallas cowboys in 1996?",
+    "ProcessedQuestion": "who coached the dallas cowboys in 1996",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q204862 p:P286 ?p. ?p ps:P286 ?x; pq:P580 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3243",
+    "RawQuestion": "who does hank baskett play for now nov 2010?",
+    "ProcessedQuestion": "who does hank baskett play for now nov 2010",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1433425 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q193753",
+            "EntityName": "Indianapolis Colts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219714",
+            "EntityName": "Philadelphia Eagles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q221150",
+            "EntityName": "Minnesota Vikings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17107975",
+            "EntityName": "New Mexico Lobos football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3244",
+    "RawQuestion": "who was the president of the us in 1971?",
+    "ProcessedQuestion": "who was the president of the us in 1971",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"1972-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"1971-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9588",
+            "EntityName": "Richard Nixon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3245",
+    "RawQuestion": "what team did ronaldo play for?",
+    "ProcessedQuestion": "what team did ronaldo play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q529207 p:P54 ?p. ?p ps:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83459",
+            "EntityName": "Brazil national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q188277",
+            "EntityName": "Cruzeiro E.C."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q899189",
+            "EntityName": "Brazil Olympic football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2402747",
+            "EntityName": "Brazil national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q631",
+            "EntityName": "Inter Milan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1543",
+            "EntityName": "A.C. Milan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7156",
+            "EntityName": "FC Barcelona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8682",
+            "EntityName": "Real Madrid CF"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11938",
+            "EntityName": "PSV Eindhoven"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35933",
+            "EntityName": "S.C. Corinthians Paulista"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3251",
+    "RawQuestion": "what college is in greeley colorado?",
+    "ProcessedQuestion": "what college is in greeley colorado",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q38723; wdt:P131+ wd:Q94274. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1783608",
+            "EntityName": "University of Northern Colorado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4697183",
+            "EntityName": "Aims Community College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6899371",
+            "EntityName": "Monfort College of Business"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3253",
+    "RawQuestion": "what is the official state flower of arizona?",
+    "ProcessedQuestion": "what is the official state flower of arizona",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q816 p:P2238 ?p. ?p ps:P2238 ?x; pq:P3831 wd:Q506. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3255",
+    "RawQuestion": "where is pyramids located in egypt?",
+    "ProcessedQuestion": "where is pyramids located in egypt",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31/wdt:P279* wd:Q12516; wdt:P17 wd:Q79; wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q81788",
+            "EntityName": "Giza"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q203299",
+            "EntityName": "Faiyum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30656",
+            "EntityName": "Faiyum Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30682",
+            "EntityName": "Matrouh Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30805",
+            "EntityName": "Cairo Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30832",
+            "EntityName": "Giza Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29937",
+            "EntityName": "Aswan Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29965",
+            "EntityName": "Asyut Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30675",
+            "EntityName": "Minya Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30683",
+            "EntityName": "Beni Suef Governorate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79",
+            "EntityName": "Egypt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3256",
+    "RawQuestion": "what games did bungie make?",
+    "ProcessedQuestion": "what games did bungie make",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P178 wd:Q735267. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q137802",
+            "EntityName": "Halo 3"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q210275",
+            "EntityName": "Destiny"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q252804",
+            "EntityName": "Halo 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q276217",
+            "EntityName": "Halo: Combat Evolved"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q283878",
+            "EntityName": "Halo: Reach"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q795399",
+            "EntityName": "Marathon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1573435",
+            "EntityName": "Oni"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1628364",
+            "EntityName": "Halo 3: ODST"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1747150",
+            "EntityName": "Halo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2290426",
+            "EntityName": "Myth: The Fallen Lords"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2331763",
+            "EntityName": "Myth II: Soulblighter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2406955",
+            "EntityName": "Halo Waypoint"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2641836",
+            "EntityName": "Marathon 2: Durandal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2756410",
+            "EntityName": "Marathon Infinity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6869370",
+            "EntityName": "Minotaur: The Labyrinths of Crete"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7096709",
+            "EntityName": "Operation: Desert Storm (video game)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7144890",
+            "EntityName": "Pathways into Darkness"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20992360",
+            "EntityName": "Destiny: The Taken King"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24952170",
+            "EntityName": "Destiny: Rise of Iron"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29045915",
+            "EntityName": "Destiny 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q58447640",
+            "EntityName": "Destiny 2: Forsaken"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61467755",
+            "EntityName": "Destiny SHAREfactory Theme"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65040618",
+            "EntityName": "Destiny 2: Shadowkeep"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97930215",
+            "EntityName": "Destiny 2: Beyond Light"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108532561",
+            "EntityName": "Destiny 2: The Witch Queen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3267",
+    "RawQuestion": "where was ancient carthage located?",
+    "ProcessedQuestion": "where was ancient carthage located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6343 wdt:P131|wdt:P17|wdt:P276|wdt:P706 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q948",
+            "EntityName": "Tunisia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3273",
+    "RawQuestion": "who plays kenneth on 30 rock?",
+    "ProcessedQuestion": "who plays kenneth on 30 rock",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2057720 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q6390576. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3280",
+    "RawQuestion": "who owns the steelers football team?",
+    "ProcessedQuestion": "who owns the steelers football team",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q191477 wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7366343",
+            "EntityName": "Rooney family"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3282",
+    "RawQuestion": "who played howard stern in private parts?",
+    "ProcessedQuestion": "who played howard stern in private parts",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q781344 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q348603. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3283",
+    "RawQuestion": "when countries joined the european union?",
+    "ProcessedQuestion": "when countries joined the european union",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q458 p:P150 ?p. ?p pq:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1973-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1981-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1958-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1986-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1995-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2004-05-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2007-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2013-07-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3291",
+    "RawQuestion": "when did kerry run for president?",
+    "ProcessedQuestion": "when did kerry run for president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q47566; wdt:P726 wd:Q22316; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2004-11-02T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3295",
+    "RawQuestion": "who are senators from utah?",
+    "ProcessedQuestion": "who are senators from utah",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y. ?w wdt:P131 wd:Q829. } ORDER BY DESC (?y) LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4496",
+            "EntityName": "Mitt Romney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q627098",
+            "EntityName": "Mike Lee"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3300",
+    "RawQuestion": "where is rihanna from ethnically?",
+    "ProcessedQuestion": "where is rihanna from ethnically",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q36844 wdt:P172 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3301",
+    "RawQuestion": "where was the assyrian civilization located?",
+    "ProcessedQuestion": "where was the assyrian civilization located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41137 wdt:P131|wdt:P17|wdt:P276|wdt:P706 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3302",
+    "RawQuestion": "what did baron de montesquieu die from?",
+    "ProcessedQuestion": "what did baron de montesquieu die from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q15975 wdt:P509 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3303",
+    "RawQuestion": "who are the current senators from illinois?",
+    "ProcessedQuestion": "who are the current senators from illinois",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y. ?w wdt:P131 wd:Q1204. } ORDER BY DESC (?y) LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q434804",
+            "EntityName": "Dick Durbin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3036410",
+            "EntityName": "Tammy Duckworth"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3311",
+    "RawQuestion": "what car models does gm make?",
+    "ProcessedQuestion": "what car models does gm make",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q3231690; wdt:P176|wdt:P1716 ?p. ?p wdt:P749 wd:Q81965. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q185469",
+            "EntityName": "Holden Coupe 60"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q195318",
+            "EntityName": "Buick Skyhawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q263694",
+            "EntityName": "Holden Commodore (VB)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q490781",
+            "EntityName": "Holden WM Caprice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q498843",
+            "EntityName": "Buick LaCrosse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q615359",
+            "EntityName": "Holden Commodore (VH)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q651942",
+            "EntityName": "Bu Century"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q739622",
+            "EntityName": "Holden Torana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q783655",
+            "EntityName": "Holden Adventra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q851651",
+            "EntityName": "Buick Roadmaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q907899",
+            "EntityName": "Buick Special"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q910129",
+            "EntityName": "Holden Gemini"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q910477",
+            "EntityName": "Buick Centurion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q913680",
+            "EntityName": "Holden Brougham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q914061",
+            "EntityName": "Buick Apollo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q915531",
+            "EntityName": "Holden Camira"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q916237",
+            "EntityName": "Holden Standard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917214",
+            "EntityName": "Holden Commodore (VZ)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917224",
+            "EntityName": "Holden Commodore (VN)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917230",
+            "EntityName": "Holden Commodore (VT)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917236",
+            "EntityName": "Holden Commodore (VX)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917243",
+            "EntityName": "Holden Commodore (VP)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917250",
+            "EntityName": "Holden Commodore (VL)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917457",
+            "EntityName": "Holden VK Commodore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917466",
+            "EntityName": "Holden Commodore (VC)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917472",
+            "EntityName": "Holden Commodore (VS)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q917477",
+            "EntityName": "Holden Commodore (VY)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q936505",
+            "EntityName": "GMC Acadia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q938763",
+            "EntityName": "Holden One Tonner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q967782",
+            "EntityName": "Buick Super"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002735",
+            "EntityName": "Buick Excelle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002745",
+            "EntityName": "Buick Estate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002748",
+            "EntityName": "Buick Electra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002761",
+            "EntityName": "Buick Invicta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002771",
+            "EntityName": "Buick Limited"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002777",
+            "EntityName": "Buick Marquette"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002780",
+            "EntityName": "Buick Master Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002784",
+            "EntityName": "Buick Modell 10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002785",
+            "EntityName": "Buick Modell 19"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002790",
+            "EntityName": "Buick Modell 5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002791",
+            "EntityName": "Buick Modell 26"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002797",
+            "EntityName": "Buick Model B"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002803",
+            "EntityName": "Buick Modell D"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002804",
+            "EntityName": "Buick Modell B-55"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002809",
+            "EntityName": "Buick Opel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002815",
+            "EntityName": "Buick LeSabre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002813",
+            "EntityName": "Buick Lucerne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002838",
+            "EntityName": "Buick Park Avenue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002842",
+            "EntityName": "Buick Reatta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002843",
+            "EntityName": "Buick Rainier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002847",
+            "EntityName": "Buick Rendezvous"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002854",
+            "EntityName": "Buick Serie D-Four"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002857",
+            "EntityName": "Buick Serie D-Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002869",
+            "EntityName": "Buick Sport Wagon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002874",
+            "EntityName": "Buick Standard Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002872",
+            "EntityName": "Buick Regal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002887",
+            "EntityName": "Buick Somerset"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002897",
+            "EntityName": "Buick Riviera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002922",
+            "EntityName": "Buick Wildcat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1002939",
+            "EntityName": "Buick Terraza"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1030898",
+            "EntityName": "Holden Astra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1233963",
+            "EntityName": "GMC Vandura"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1340926",
+            "EntityName": "GMC Syclone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1485939",
+            "EntityName": "GMC Envoy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1485946",
+            "EntityName": "GMC Sierra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1485944",
+            "EntityName": "GMC Typhoon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1485959",
+            "EntityName": "GMC Terrain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1810225",
+            "EntityName": "Buick Skylark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4986350",
+            "EntityName": "Buick Bengal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4986368",
+            "EntityName": "Buick Velite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5513742",
+            "EntityName": "GMC Sprint"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5513752",
+            "EntityName": "GMC motorhome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12063229",
+            "EntityName": "GMC Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15790194",
+            "EntityName": "Buick Model 41"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15790195",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15790196",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17461003",
+            "EntityName": "Buick Envision"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26897869",
+            "EntityName": "Buick Encore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39079985",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q50828663",
+            "EntityName": "Buick GL6"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55356792",
+            "EntityName": "Buick Enclave C1YB"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q55407772",
+            "EntityName": "Buick Enclave GMT967"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65046637",
+            "EntityName": "Buick Encore GX"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85387520",
+            "EntityName": "GMC Hummer EV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q119352",
+            "EntityName": "Chevrolet Parkwood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q226062",
+            "EntityName": "Chevrolet Impala"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q255738",
+            "EntityName": "Chevrolet Lakewood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q282151",
+            "EntityName": "Chevrolet SSR"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q287723",
+            "EntityName": "Chevrolet Malibu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q317181",
+            "EntityName": "Holden Commodore (VF)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q371349",
+            "EntityName": "Daewoo Tacuma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q374643",
+            "EntityName": "Daewoo Matiz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q482542",
+            "EntityName": "Chevrolet Captiva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q488154",
+            "EntityName": "Chevrolet Aveo T200"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q493989",
+            "EntityName": "Daewoo Lacetti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q494469",
+            "EntityName": "Daewoo Magnus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q495422",
+            "EntityName": "Daewoo Tosca"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q514347",
+            "EntityName": "Chevrolet Biscayne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q578898",
+            "EntityName": "Chevrolet Citation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q594120",
+            "EntityName": "Chevrolet Monte Carlo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q610395",
+            "EntityName": "Chevrolet Sail"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q632802",
+            "EntityName": "Chevrolet Cavalier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q648394",
+            "EntityName": "Chevrolet Avalanche"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q664833",
+            "EntityName": "Chevrolet Lumina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q740890",
+            "EntityName": "Chevrolet Caprice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q768705",
+            "EntityName": "Chevrolet 150"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q859501",
+            "EntityName": "Chevrolet Suburban"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q871329",
+            "EntityName": "Chevrolet Silverado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912754",
+            "EntityName": "Chevrolet Fleetline"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q913175",
+            "EntityName": "Chevrolet Kingswood Estate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q927395",
+            "EntityName": "Chevrolet Volt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q942751",
+            "EntityName": "Chevrolet Corvette C6 ZR1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q947917",
+            "EntityName": "Chevrolet Chevy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q976347",
+            "EntityName": "Chevrolet Montana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1070999",
+            "EntityName": "Chevrolet 1S"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071019",
+            "EntityName": "Chevrolet 490"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071030",
+            "EntityName": "Chevrolet Beauville"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071036",
+            "EntityName": "Chevrolet Astro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071037",
+            "EntityName": "Chevrolet Agile"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071042",
+            "EntityName": "Chevrolet Beretta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071064",
+            "EntityName": "Chevrolet Brookwood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1293457",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1337662",
+            "EntityName": "Holden Hurricane"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1422924",
+            "EntityName": "Holden Commodore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1450851",
+            "EntityName": "Holden Kingswood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1456542",
+            "EntityName": "Holden HZ"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1514821",
+            "EntityName": "Holden Apollo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1531455",
+            "EntityName": "Holden Nova"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1541682",
+            "EntityName": "Holden Commodore (VE)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624338",
+            "EntityName": "Holden ECOmmodore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624336",
+            "EntityName": "Holden Captiva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624343",
+            "EntityName": "Holden Efijy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624340",
+            "EntityName": "Holden Barina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624341",
+            "EntityName": "Holden EH"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624352",
+            "EntityName": "Holden HX"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624362",
+            "EntityName": "Holden Rodeo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624366",
+            "EntityName": "Holden SSX"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624364",
+            "EntityName": "Holden SST"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624384",
+            "EntityName": "Holden UTEster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624389",
+            "EntityName": "Holden Caprice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624392",
+            "EntityName": "Holden Ute"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624393",
+            "EntityName": "Holden Commodore (VR)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624402",
+            "EntityName": "Holden Vectra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1836966",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2014148",
+            "EntityName": "Holden VQ Caprice"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2623379",
+            "EntityName": "Bedford Rascal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2637853",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2719221",
+            "EntityName": "Holden Jackaroo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2779218",
+            "EntityName": "Holden FJ"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2779629",
+            "EntityName": "Holden WK"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5879559",
+            "EntityName": "Holden Suburban"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14232282",
+            "EntityName": "Holden Sunbird"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14552175",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17189350",
+            "EntityName": "Holden Special"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21011937",
+            "EntityName": "Holden Belmont"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29856",
+            "EntityName": "Chevrolet Spin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31905",
+            "EntityName": "Chevrolet Orlando"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39632",
+            "EntityName": "Chevrolet HHR"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071069",
+            "EntityName": "Chevrolet Capitol"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071074",
+            "EntityName": "Chevrolet Bel Air"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071075",
+            "EntityName": "Chevrolet C/K"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071078",
+            "EntityName": "Chevrolet S-10 Blazer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071103",
+            "EntityName": "Chevrolet Celebrity"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071100",
+            "EntityName": "Chevrolet Chevette"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071104",
+            "EntityName": "Chevrolet Classic Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071105",
+            "EntityName": "Chevrolet Classic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071111",
+            "EntityName": "Chevrolet Copper-Cooled"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071109",
+            "EntityName": "Chevrolet Chevelle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071114",
+            "EntityName": "Chevrolet Confederate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071115",
+            "EntityName": "Chevrolet Corsa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071134",
+            "EntityName": "Chevrolet Corvette (C4)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071132",
+            "EntityName": "Chevrolet Corvette C5-R"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071143",
+            "EntityName": "Chevrolet Colorado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071140",
+            "EntityName": "Chevrolet Corsica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071151",
+            "EntityName": "Chevrolet Corvair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071164",
+            "EntityName": "Chevrolet Delray"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071170",
+            "EntityName": "Chevrolet 210"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071177",
+            "EntityName": "Chevrolet Fleetmaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071183",
+            "EntityName": "Chevrolet Greenbrier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071185",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071190",
+            "EntityName": "Chevrolet Handyman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071195",
+            "EntityName": "Chevrolet Independence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071193",
+            "EntityName": "Chevrolet El Camino"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071199",
+            "EntityName": "Chevrolet Equinox"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071202",
+            "EntityName": "Chevrolet International"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071201",
+            "EntityName": "Chevrolet Express"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071207",
+            "EntityName": "Chevrolet Kadett"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071208",
+            "EntityName": "Chevrolet Kingswood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071215",
+            "EntityName": "Chevrolet Light Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071213",
+            "EntityName": "Chevrolet Lanos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071216",
+            "EntityName": "Chevrolet LUV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071230",
+            "EntityName": "Chevrolet National"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071229",
+            "EntityName": "Chevrolet Lumina APV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071236",
+            "EntityName": "Chevrolet Nubira"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071251",
+            "EntityName": "Chevrolet Monza (Brazil)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071255",
+            "EntityName": "Chevrolet Opala"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071252",
+            "EntityName": "Chevrolet Omega"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071257",
+            "EntityName": "Chevrolet Nomad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071269",
+            "EntityName": "Chevrolet Serie D"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071274",
+            "EntityName": "Chevrolet Serie F"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071273",
+            "EntityName": "Chevrolet Series H"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071283",
+            "EntityName": "Chevrolet Special Deluxe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071280",
+            "EntityName": "Chevrolet S-10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071286",
+            "EntityName": "Chevrolet Standard Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071287",
+            "EntityName": "Chevrolet Stylemaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071289",
+            "EntityName": "Chevrolet Superior"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071293",
+            "EntityName": "Chevrolet Sprint"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071299",
+            "EntityName": "Chevrolet Tavera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071300",
+            "EntityName": "Chevrolet Townsman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071304",
+            "EntityName": "Chevrolet Universal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071315",
+            "EntityName": "Chevrolet Trax"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071318",
+            "EntityName": "Chevrolet Van"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071321",
+            "EntityName": "Chevrolet Trailblazer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071327",
+            "EntityName": "Chevrolet Traverse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071328",
+            "EntityName": "Chevrolet Uplander"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071334",
+            "EntityName": "Chevrolet Yeoman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1071344",
+            "EntityName": "Chevrolet Venture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1119538",
+            "EntityName": "Chevrolet Corvette C6"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1135703",
+            "EntityName": "Chevrolet Corvette C2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1135711",
+            "EntityName": "Chevrolet Corvette C5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1135708",
+            "EntityName": "Chevrolet Corvette C1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1135709",
+            "EntityName": "Chevrolet Corvette C3"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1135713",
+            "EntityName": "Chevrolet Corvette C7"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1138991",
+            "EntityName": "Yenko Camaro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1157103",
+            "EntityName": "Daewoo-Chevrolet 1700"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1303236",
+            "EntityName": "Chevrolet Vega"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1517511",
+            "EntityName": "Chevrolet Chevy II / Nova"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1638129",
+            "EntityName": "Yenko Stinger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1787432",
+            "EntityName": "General Motors Sequel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2636249",
+            "EntityName": "Lada  Niva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2705865",
+            "EntityName": "Chevrolet K5 Blazer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963102",
+            "EntityName": "Chevrolet Astra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963103",
+            "EntityName": "Chevrolet Chevy C2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963106",
+            "EntityName": "Chevrolet Prisma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963107",
+            "EntityName": "Chevrolet Groove"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963111",
+            "EntityName": "Chevrolet Vectra"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963108",
+            "EntityName": "Chevrolet Celta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2963114",
+            "EntityName": "Chevrolet Tracker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2980988",
+            "EntityName": "Chevrolet Camaro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3540623",
+            "EntityName": "Chevrolet Onix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3560516",
+            "EntityName": "Chevrolet Camaro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3560561",
+            "EntityName": "Chevrolet Camaro (third generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3667307",
+            "EntityName": "Chevrolet Corvette Z06"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4036098",
+            "EntityName": "Chevrolet Cobalt SS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4036099",
+            "EntityName": "Chevrolet Deluxe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4176357",
+            "EntityName": "Chevrolet Corvette C5 Z06"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094379",
+            "EntityName": "Chevrolet Camaro (first generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094377",
+            "EntityName": "Chevrolet 400"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q517677",
+            "EntityName": "Oldsmobile Vista Cruiser"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q533618",
+            "EntityName": "Oldsmobile Cutlass Ciera"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q597457",
+            "EntityName": "Oldsmobile Starfire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q625034",
+            "EntityName": "Oldsmobile Omega"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q685847",
+            "EntityName": "Oldsmobile Series 70"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q797856",
+            "EntityName": "Oldsmobile Model 42"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q932527",
+            "EntityName": "Oldsmobile Achieva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q962634",
+            "EntityName": "Oldsmobile Silhouette"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q964261",
+            "EntityName": "Oldsmobile Alero"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1295031",
+            "EntityName": "Oldsmobile Six"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1310003",
+            "EntityName": "Oldsmobile Model 43"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1340552",
+            "EntityName": "Oldsmobile Series 40"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1379348",
+            "EntityName": "Oldsmobile Cutlass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1397142",
+            "EntityName": "Oldsmobile Series 28"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1471140",
+            "EntityName": "Oldsmobile Firenza"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1502235",
+            "EntityName": "Oldsmobile Series L"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1533481",
+            "EntityName": "Oldsmobile Model 20"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1535891",
+            "EntityName": "Oldsmobile Custom Cruiser"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094382",
+            "EntityName": "Chevrolet Camaro (second generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094383",
+            "EntityName": "Chevrolet Caprice 9C1 Police"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094380",
+            "EntityName": "Chevrolet Camaro B4C"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094387",
+            "EntityName": "Chevrolet Constantia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094385",
+            "EntityName": "Chevrolet Chevelle Laguna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094393",
+            "EntityName": "Chevrolet Cosworth Vega"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094399",
+            "EntityName": "Chevrolet D-20"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094396",
+            "EntityName": "Chevrolet Eagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094402",
+            "EntityName": "Chevrolet Impala"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094405",
+            "EntityName": "Chevrolet Master"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094410",
+            "EntityName": "Chevrolet S-10 EV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094414",
+            "EntityName": "Chevrolet Series AA Capitol"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094415",
+            "EntityName": "Chevrolet Series AB National"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094418",
+            "EntityName": "Chevrolet Series AD Universal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094419",
+            "EntityName": "Chevrolet Series AE Independence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094416",
+            "EntityName": "Chevrolet Sequel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094417",
+            "EntityName": "Chevrolet Series AC International"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094420",
+            "EntityName": "Chevrolet Series BA Confederate"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094424",
+            "EntityName": "Chevrolet Series M"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5094429",
+            "EntityName": "Chevrolet Triax"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8038350",
+            "EntityName": "Chevrolet Viva"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9745467",
+            "EntityName": "Chevrolet Cruze hatchback"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10877707",
+            "EntityName": "Chevrolet Impala (fourth generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14515874",
+            "EntityName": "Chevrolet Spark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14516280",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14754999",
+            "EntityName": "Chevrolet Trax Concept"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18342957",
+            "EntityName": "Chevrolet Veraneio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18370336",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19580435",
+            "EntityName": "Chevrolet Bolt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20747810",
+            "EntityName": "Yenko Deuce"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24283954",
+            "EntityName": "Chevrolet Matiz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24953104",
+            "EntityName": "Chevrolet Spark EV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25386754",
+            "EntityName": "Chevrolet Lova RV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28217006",
+            "EntityName": "Chevrolet Chevy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30645114",
+            "EntityName": "Chevrolet Astrovette"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43977275",
+            "EntityName": "Chevrolet Monza (USA)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q44954522",
+            "EntityName": "Chevrolet El Camino"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q57578549",
+            "EntityName": "Chevrolet Cruze J300"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q57580232",
+            "EntityName": "Chevrolet Cruze"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q59780361",
+            "EntityName": "Chevrolet Orlando (2018)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q59823750",
+            "EntityName": "Chevrolet Spark M300"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q59823936",
+            "EntityName": "Chevrolet Spark M400"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q60851987",
+            "EntityName": "Chevrolet Corvette C8"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q63481262",
+            "EntityName": "Chevrolet Monza"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q64578458",
+            "EntityName": "Chevrolet Tracker (2019)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65162789",
+            "EntityName": "Chevrolet Cobalt (GMX 001)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q82654604",
+            "EntityName": "Chevrolet Trailblazer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q86680300",
+            "EntityName": "Chevrolet TrailBlazer (2001)‎"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q105533198",
+            "EntityName": "Chevrolet Bolt EUV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q111685242",
+            "EntityName": "Chevrolet Seeker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q966877",
+            "EntityName": "Saturn Vue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1324293",
+            "EntityName": "Saturn Sky"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1516438",
+            "EntityName": "Saturn L-Series"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1537791",
+            "EntityName": "Oldsmobile Toronado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1596010",
+            "EntityName": "Oldsmobile Model S"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1617795",
+            "EntityName": "Oldsmobile Curved Dash"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1636557",
+            "EntityName": "Oldsmobile Light Eight"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1690846",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1710930",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1713753",
+            "EntityName": "Oldsmobile Intrigue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1749996",
+            "EntityName": "Oldsmobile F-Series"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1816582",
+            "EntityName": "Oldsmobile 88"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1848136",
+            "EntityName": "Oldsmobile 98"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1859849",
+            "EntityName": "Saturn S-Series"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1968408",
+            "EntityName": "Saturn Ion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2002196",
+            "EntityName": "Oldsmobile Cutlass Calais"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018806",
+            "EntityName": "Oldsmobile Series 60"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018812",
+            "EntityName": "Oldsmobile 80"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018821",
+            "EntityName": "Oldsmobile 442"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018846",
+            "EntityName": "Oldsmobile Aurora"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018849",
+            "EntityName": "Oldsmobile Bravada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018857",
+            "EntityName": "Oldsmobile F-85"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018871",
+            "EntityName": "Oldsmobile Cutlass Supreme"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018874",
+            "EntityName": "Oldsmobile Hurst/Olds"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018881",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018886",
+            "EntityName": "Oldsmobile Model 30"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018884",
+            "EntityName": "Oldsmobile Limited"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018889",
+            "EntityName": "Oldsmobile Model A"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018895",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018893",
+            "EntityName": "Oldsmobile Model D"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018899",
+            "EntityName": "Oldsmobile Model X"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018897",
+            "EntityName": "Oldsmobile Model M"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018901",
+            "EntityName": "Oldsmobile Model Z"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018906",
+            "EntityName": "Oldsmobile Series 22"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2018912",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2732507",
+            "EntityName": "Saturn Outlook"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2791004",
+            "EntityName": "Oldsmobile Super 88"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3243758",
+            "EntityName": "Saturn Relay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3266957",
+            "EntityName": "Saturn Aura"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7085743",
+            "EntityName": "Oldsmobile Jetstar I"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7426783",
+            "EntityName": "Saturn Curve"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14552214",
+            "EntityName": "Oldsmobile LSS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20826065",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23637382",
+            "EntityName": "Oldsmobile Golden Rocket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q822682",
+            "EntityName": "Opel K-180"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1624334",
+            "EntityName": "Holden Cruze"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2334320",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2358707",
+            "EntityName": "Holden Monaro Coupé"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2920478",
+            "EntityName": "Holden EK"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5533939",
+            "EntityName": "Geo Metro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6064249",
+            "EntityName": "Alpheon (car model)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7236706",
+            "EntityName": "Powerglide"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7277542",
+            "EntityName": "RPO ZR2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9745558",
+            "EntityName": "Chevrolet Marajó"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12012915",
+            "EntityName": "Holden HQ"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14375674",
+            "EntityName": "Daewoo Damas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18463584",
+            "EntityName": "Chevrolet Brasil 6500"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18619730",
+            "EntityName": "Chevrolet AK-Series"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18890245",
+            "EntityName": "Chevrolet Volt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19608699",
+            "EntityName": "Chevrolet Tru 140S"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20059792",
+            "EntityName": "Chevrolet Chevy 500"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21233131",
+            "EntityName": "Chevrolet Camaro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29467141",
+            "EntityName": "GX-2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q32523642",
+            "EntityName": "Chevrolet Brasil 3100"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q47988557",
+            "EntityName": "Chevrolet Series F"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q56527867",
+            "EntityName": "Holden Commodore (VS)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q65230545",
+            "EntityName": "Chevrolet Cavalier (2016)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90021930",
+            "EntityName": "Chevrolet Corvette C7 Grand Sport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90022298",
+            "EntityName": "Chevrolet Camaro ZL1 (fifth generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90022671",
+            "EntityName": "Chevrolet Chevelle (Third-generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90023725",
+            "EntityName": "Chevrolet El Camino (3rd generation)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90023737",
+            "EntityName": "1965 Chevrolet Impala SS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q90995292",
+            "EntityName": "Buick Riviera (E-body; 1971-1973)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q110443064",
+            "EntityName": "Chevrolet Silverado EV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q110443261",
+            "EntityName": "Chevrolet Equinox EV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q112418361",
+            "EntityName": "2022 Chevrolet Detroit Grand Prix"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3312",
+    "RawQuestion": "which legend of zelda game is the first?",
+    "ProcessedQuestion": "which legend of zelda game is the first",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P179 wd:Q12393; wdt:P577 ?y. } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q12395",
+            "EntityName": "The Legend of Zelda"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3315",
+    "RawQuestion": "what years have the steelers won the super bowl?",
+    "ProcessedQuestion": "what years have the steelers won the super bowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q191477; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1975-01-01T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1976-01-18T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1979-01-21T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1980-01-20T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2006-02-05T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2009-02-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3317",
+    "RawQuestion": "what countries does britain own?",
+    "ProcessedQuestion": "what countries does britain own",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q145 wdt:P150 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22",
+            "EntityName": "Scotland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21",
+            "EntityName": "England"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26",
+            "EntityName": "Northern Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25",
+            "EntityName": "Wales"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3319",
+    "RawQuestion": "who played dorothy in the film wizard of oz?",
+    "ProcessedQuestion": "who played dorothy in the film wizard of oz",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q193695 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2583524. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3322",
+    "RawQuestion": "what countries are on the mediterranean sea?",
+    "ProcessedQuestion": "what countries are on the mediterranean sea",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4918 wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219060",
+            "EntityName": "State of Palestine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q801",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q822",
+            "EntityName": "Lebanon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q858",
+            "EntityName": "Syria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q948",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1016",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29",
+            "EntityName": "Spain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q38",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43",
+            "EntityName": "Turkey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q41",
+            "EntityName": "Greece"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79",
+            "EntityName": "Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q215",
+            "EntityName": "Slovenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q222",
+            "EntityName": "Albania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q224",
+            "EntityName": "Croatia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q225",
+            "EntityName": "Bosnia and Herzegovina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q229",
+            "EntityName": "Cyprus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q235",
+            "EntityName": "Monaco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q233",
+            "EntityName": "Malta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q236",
+            "EntityName": "Montenegro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3324",
+    "RawQuestion": "who plays jim halpert?",
+    "ProcessedQuestion": "who plays jim halpert",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q2013030. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q313039",
+            "EntityName": "John Krasinski"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3328",
+    "RawQuestion": "who succeeded william mckinley as president?",
+    "ProcessedQuestion": "who succeeded william mckinley as president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q11696; pq:P580 ?y. wd:Q35041 p:P39 ?q. ?q ps:P39 wd:Q11696; pq:P580 ?z. FILTER(?y > ?z) } ORDER BY ?y LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q33866",
+            "EntityName": "Theodore Roosevelt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3329",
+    "RawQuestion": "where does jamie chung live?",
+    "ProcessedQuestion": "where does jamie chung live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q232642 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3330",
+    "RawQuestion": "what george washington carver famous for?",
+    "ProcessedQuestion": "what george washington carver famous for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q296898 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "African American botanist and inventor (1864-1943)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3334",
+    "RawQuestion": "who voices ray in archer?",
+    "ProcessedQuestion": "who voices ray in archer",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 ?x; pq:P453 wd:Q632670. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3339",
+    "RawQuestion": "who plays lola bunny on the looney tunes show?",
+    "ProcessedQuestion": "who plays lola bunny on the looney tunes show",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16518263 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q1575844. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3343",
+    "RawQuestion": "what cities are included in maricopa county?",
+    "ProcessedQuestion": "what cities are included in maricopa county",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q515; wdt:P131 wd:Q58691. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16556",
+            "EntityName": "Phoenix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49261",
+            "EntityName": "Mesa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49272",
+            "EntityName": "Chandler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51682",
+            "EntityName": "Glendale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51687",
+            "EntityName": "Surprise"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q51685",
+            "EntityName": "Tempe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49221",
+            "EntityName": "Scottsdale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79434",
+            "EntityName": "El Mirage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79437",
+            "EntityName": "Litchfield Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79449",
+            "EntityName": "Avondale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79457",
+            "EntityName": "Goodyear"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79829",
+            "EntityName": "Apache Junction"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79898",
+            "EntityName": "Tolleson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q986528",
+            "EntityName": "Buckeye"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3344",
+    "RawQuestion": "where did frank baum live?",
+    "ProcessedQuestion": "where did frank baum live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q207544 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3348",
+    "RawQuestion": "what characters does todd haberkorn voice?",
+    "ProcessedQuestion": "what characters does todd haberkorn voice",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725 ?y. ?y ps:P725 wd:Q7812408; pq:P453 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3704333",
+            "EntityName": "Death the Kid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3357",
+    "RawQuestion": "what albums did john frusciante play on?",
+    "ProcessedQuestion": "what albums did john frusciante play on",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q482994; wdt:P175 wd:Q188980. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q899625",
+            "EntityName": "Curtains"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q971762",
+            "EntityName": "Inside of Emptiness"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1048154",
+            "EntityName": "The Empyrean"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1633278",
+            "EntityName": "Niandra Lades and Usually Just a T-Shirt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1753543",
+            "EntityName": "To Record Only Water for Ten Days"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1753779",
+            "EntityName": "The Will to Death"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1754143",
+            "EntityName": "Smile from the Streets You Hold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1754170",
+            "EntityName": "Shadows Collide with People"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1754482",
+            "EntityName": "DC EP"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1755942",
+            "EntityName": "From the Sounds Inside"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1756764",
+            "EntityName": "A Sphere in the Heart of Silence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3601671",
+            "EntityName": "ATP Festival"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3835267",
+            "EntityName": "Live at Paradiso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6593749",
+            "EntityName": "PBX Funicular Intaglio Zone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7089810",
+            "EntityName": "Omar Rodriguez Lopez & John Frusciante"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15845940",
+            "EntityName": "Enclosure"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19264021",
+            "EntityName": "Trickfinger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23763033",
+            "EntityName": "Renoise Tracks 2009-2011"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48836210",
+            "EntityName": "Live at Angel Orenzas, NY"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85738311",
+            "EntityName": "4-Track Guitar Music"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q96340841",
+            "EntityName": "She Smiles Because She Presses the Button"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q102041718",
+            "EntityName": "Maya (John Frusciante album)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3359",
+    "RawQuestion": "what did martin luther king jr do in his life?",
+    "ProcessedQuestion": "what did martin luther king jr do in his life",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8027 wdt:P135 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q76611",
+            "EntityName": "nonviolence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13406660",
+            "EntityName": "civil rights movements"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q97304502",
+            "EntityName": "labor movement in the United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q48537",
+            "EntityName": "civil rights movement"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3364",
+    "RawQuestion": "what children's books did suzanne collins wrote?",
+    "ProcessedQuestion": "what children 's books did suzanne collins wrote",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q7725634; wdt:P136 wd:Q111984153; wdt:P50 wd:Q228624. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q837140",
+            "EntityName": "Catching Fire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11678",
+            "EntityName": "The Hunger Games"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40354",
+            "EntityName": "Mockingjay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11679",
+            "EntityName": "The Hunger Games"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3387",
+    "RawQuestion": "who plays tommy oliver in power rangers?",
+    "ProcessedQuestion": "who plays tommy oliver in power rangers",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q513809 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2706884. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3391",
+    "RawQuestion": "when was the first pope of the catholic church?",
+    "ProcessedQuestion": "when was the first pope of the catholic church",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q19546 wdt:P571 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "0033-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

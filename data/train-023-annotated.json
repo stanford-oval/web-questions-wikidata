@@ -1,0 +1,766 @@
+[
+  {
+    "QuestionId": "WebQTrn-3707",
+    "RawQuestion": "when is the last time chicago bulls won a championship?",
+    "ProcessedQuestion": "when is the last time chicago bulls won a championship",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q842375; wdt:P1346 wd:Q128109; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1998-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3709",
+    "RawQuestion": "what is the holy book in taoism?",
+    "ProcessedQuestion": "what is the holy book in taoism",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9598 wdt:P92 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134425",
+            "EntityName": "Tao Te Ching"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3714",
+    "RawQuestion": "what professional baseball team did michael jordan play for?",
+    "ProcessedQuestion": "what professional baseball team did michael jordan play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41421 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q847017; wdt:P641 wd:Q5369. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2747877",
+            "EntityName": "Birmingham Barons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3476102",
+            "EntityName": "Scottsdale Scorpions"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3720",
+    "RawQuestion": "what countries are included in the netherlands?",
+    "ProcessedQuestion": "what countries are included in the netherlands",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q55 wdt:P150 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q694",
+            "EntityName": "South Holland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q701",
+            "EntityName": "North Holland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q707",
+            "EntityName": "Flevoland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q705",
+            "EntityName": "Zeeland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q752",
+            "EntityName": "Groningen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q770",
+            "EntityName": "Friesland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q775",
+            "EntityName": "Gelderland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q772",
+            "EntityName": "Drenthe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q773",
+            "EntityName": "Overijssel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q776",
+            "EntityName": "Utrecht"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1093",
+            "EntityName": "Limburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1101",
+            "EntityName": "North Brabant"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25396",
+            "EntityName": "Bonaire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25528",
+            "EntityName": "Saba"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26180",
+            "EntityName": "Sint Eustatius"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3723",
+    "RawQuestion": "what year did the florida marlins win their 2nd world series title?",
+    "ProcessedQuestion": "what year did the florida marlins win their 2nd world series title",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q652879. } ORDER BY ?x OFFSET 1 LIMIT 1",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3725",
+    "RawQuestion": "what guitar does duane allman play?",
+    "ProcessedQuestion": "what guitar does duane allman play",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P279* wd:Q6607; wdt:P1535 wd:Q313820. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3727",
+    "RawQuestion": "what is the biggest country in europe by population?",
+    "ProcessedQuestion": "what is the biggest country in europe by population",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q6256; wdt:P30 wd:Q46; wdt:P1082 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q159",
+            "EntityName": "Russia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3728",
+    "RawQuestion": "what team does hank baskett play for 2011 season?",
+    "ProcessedQuestion": "what team does hank baskett play for 2011 season",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1433425 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2011-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3730",
+    "RawQuestion": "what are the african nations?",
+    "ProcessedQuestion": "what are the african nations",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q15 wdt:P527+ ?x. ?x wdt:P31 wd:Q6256. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q258",
+            "EntityName": "South Africa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262",
+            "EntityName": "Algeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q657",
+            "EntityName": "Chad"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q794",
+            "EntityName": "Iran"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q796",
+            "EntityName": "Iraq"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q801",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q810",
+            "EntityName": "Jordan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q822",
+            "EntityName": "Lebanon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q858",
+            "EntityName": "Syria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912",
+            "EntityName": "Mali"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q916",
+            "EntityName": "Angola"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q924",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q929",
+            "EntityName": "Central African Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q945",
+            "EntityName": "Togo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q948",
+            "EntityName": "Tunisia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q954",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q953",
+            "EntityName": "Zambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q958",
+            "EntityName": "South Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q962",
+            "EntityName": "Benin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q963",
+            "EntityName": "Botswana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q967",
+            "EntityName": "Burundi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q965",
+            "EntityName": "Burkina Faso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q970",
+            "EntityName": "Comoros"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q971",
+            "EntityName": "Republic of the Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q974",
+            "EntityName": "Democratic Republic of the Congo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q977",
+            "EntityName": "Djibouti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q986",
+            "EntityName": "Eritrea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1006",
+            "EntityName": "Guinea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1007",
+            "EntityName": "Guinea-Bissau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1005",
+            "EntityName": "The Gambia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1011",
+            "EntityName": "Cape Verde"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1008",
+            "EntityName": "Ivory Coast"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1009",
+            "EntityName": "Cameroon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1014",
+            "EntityName": "Liberia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1013",
+            "EntityName": "Lesotho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1019",
+            "EntityName": "Madagascar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1016",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1020",
+            "EntityName": "Malawi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1025",
+            "EntityName": "Mauritania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1030",
+            "EntityName": "Namibia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1029",
+            "EntityName": "Mozambique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1032",
+            "EntityName": "Niger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1033",
+            "EntityName": "Nigeria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1039",
+            "EntityName": "São Tomé and Príncipe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1037",
+            "EntityName": "Rwanda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1042",
+            "EntityName": "Seychelles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1041",
+            "EntityName": "Senegal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1044",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1045",
+            "EntityName": "Somalia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43",
+            "EntityName": "Turkey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q79",
+            "EntityName": "Egypt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114",
+            "EntityName": "Kenya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q115",
+            "EntityName": "Ethiopia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q117",
+            "EntityName": "Ghana"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3741",
+    "RawQuestion": "what other political offices has obama been in?",
+    "ProcessedQuestion": "what other political offices has obama been in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 p:P39 ?p. ?p ps:P39 ?x. ?x ((wdt:P31*)/(wdt:P279*)) wd:Q294414. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11696",
+            "EntityName": "President of the United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4416090",
+            "EntityName": "United States senator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20058778",
+            "EntityName": "member of the State Senate of Illinois"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3743",
+    "RawQuestion": "what to do in venice beach ca?",
+    "ProcessedQuestion": "what to do in venice beach ca",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q570116; wdt:P131 wd:Q773853. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3744",
+    "RawQuestion": "what college did russell wilson go to?",
+    "ProcessedQuestion": "what college did russell wilson go to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1149781 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q838330",
+            "EntityName": "University of Wisconsin–Madison"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1132346",
+            "EntityName": "North Carolina State University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3747",
+    "RawQuestion": "what is wrong with robin roberts?",
+    "ProcessedQuestion": "what is wrong with robin roberts",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2041541 wdt:P1050 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3754",
+    "RawQuestion": "what team does pudge rodriguez play for?",
+    "ProcessedQuestion": "what team does pudge rodriguez play for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q706908 wdt:P54 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q213417",
+            "EntityName": "New York Yankees"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q329816",
+            "EntityName": "Texas Rangers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q650855",
+            "EntityName": "Detroit Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q825838",
+            "EntityName": "Washington Nationals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q848117",
+            "EntityName": "Houston Astros"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3758",
+    "RawQuestion": "what empire did maria theresa rule?",
+    "ProcessedQuestion": "what empire did maria theresa rule",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q131706 wdt:P97 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q166886",
+            "EntityName": "duke"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2058509",
+            "EntityName": "Duke of Brabant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3763",
+    "RawQuestion": "what country is russia close to?",
+    "ProcessedQuestion": "what country is russia close to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q159 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16150196",
+            "EntityName": "Donetsk People's Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16746854",
+            "EntityName": "Luhansk People's Republic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q31354462",
+            "EntityName": "Republic of Abkhazia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114318324",
+            "EntityName": "Kherson State"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q423",
+            "EntityName": "North Korea"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q458",
+            "EntityName": "European Union"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q711",
+            "EntityName": "Mongolia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23427",
+            "EntityName": "South Ossetia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17",
+            "EntityName": "Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20",
+            "EntityName": "Norway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q34",
+            "EntityName": "Sweden"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q33",
+            "EntityName": "Finland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36",
+            "EntityName": "Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q37",
+            "EntityName": "Lithuania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q148",
+            "EntityName": "People's Republic of China"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q184",
+            "EntityName": "Belarus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q191",
+            "EntityName": "Estonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q211",
+            "EntityName": "Latvia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q212",
+            "EntityName": "Ukraine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q227",
+            "EntityName": "Azerbaijan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q230",
+            "EntityName": "Georgia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q232",
+            "EntityName": "Kazakhstan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3764",
+    "RawQuestion": "who is the coach of inter milan now?",
+    "ProcessedQuestion": "who is the coach of inter milan now",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q631 wdt:P286 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q314670",
+            "EntityName": "Simone Inzaghi"
+          }
+        ]
+      }
+    ]
+  }
+]

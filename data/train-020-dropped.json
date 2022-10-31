@@ -1,0 +1,128 @@
+[
+  {
+    "QuestionId": "WebQTrn-3226",
+    "RawQuestion": "who plays sarah marshall?",
+    "ProcessedQuestion": "who plays sarah marshall",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02825kb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02825kb ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.04hyh27 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04qt29",
+            "EntityName": "Kristen Bell"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3248",
+    "RawQuestion": "how old is the current president of north korea?",
+    "ProcessedQuestion": "how old is the current president of north korea",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.05b7q ns:government.governmental_jurisdiction.governing_officials ?y1 .  # North Korea\n  ?y1 ns:government.government_position_held.office_holder ?y2 ;\n      ns:government.government_position_held.basic_title ns:m.060c4 . # President\n  ?y2 ns:people.person.date_of_birth ?x .\n\n# Current\nFILTER(NOT EXISTS {?y1 ns:government.government_position_held.to ?sk0} || \n           EXISTS {?y1 ns:government.government_position_held.to ?sk1 . \n                   FILTER(xsd:datetime(?sk1) > \"2015-08-10\"^^xsd:dateTime) })\n\n# Alive (Kim Il-sung remains the \"Eternal President of the Republic\" forever...)\nFILTER(NOT EXISTS {?y2 ns:people.deceased_person.date_of_death ?sk0} || \n           EXISTS {?y2 ns:people.deceased_person.date_of_death ?sk1 . \n                   FILTER(xsd:datetime(?sk1) > \"2015-08-10\"^^xsd:dateTime) })\n}",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3258",
+    "RawQuestion": "what type of laws did mary harris jones demand?",
+    "ProcessedQuestion": "what type of laws did mary harris jones demand",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01l0km)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01l0km ns:base.activism.activist.area_of_activism ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qc82m",
+            "EntityName": "Children's rights"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.048g08",
+            "EntityName": "Labor rights"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3308",
+    "RawQuestion": "what countries do new zealand export to?",
+    "ProcessedQuestion": "what countries do new zealand export to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ctw_b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ctw_b ns:location.statistical_region.places_exported_to ?y .\n?y ns:location.imports_and_exports.exported_to ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_3d",
+            "EntityName": "Japan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047t_",
+            "EntityName": "Kiribati"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07fsv",
+            "EntityName": "Tuvalu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chghy",
+            "EntityName": "Australia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3336",
+    "RawQuestion": "what does uvm stand for college?",
+    "ProcessedQuestion": "what does uvm stand for college",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01q7q2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01q7q2 ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "University of Vermont",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3388",
+    "RawQuestion": "what year did dwight howard won the slam dunk contest?",
+    "ProcessedQuestion": "what year did dwight howard won the slam dunk contest",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02fg_f)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02fg_f ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.season ?x .\n?y ns:sports.sports_award.award ns:m.05p84m .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dsb05",
+            "EntityName": "2007–08 NBA season"
+          }
+        ]
+      }
+    ]
+  }
+]

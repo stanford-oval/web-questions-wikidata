@@ -16,7 +16,7 @@
     "ProcessedQuestion": "what office does hillary clinton hold",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6294 p:P39 ?p. ?p ps:P39 ?x. ?x wdt:P31 wd:Q294414. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6294 p:P39 ?p. ?p ps:P39 ?x. ?x ((wdt:P31*)/(wdt:P279*)) wd:Q294414. }",
         "Answers": [
           {
             "AnswerType": "Entity",
