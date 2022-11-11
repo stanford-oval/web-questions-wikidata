@@ -71,7 +71,7 @@
     "ProcessedQuestion": "who is my state senator arizona",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101498900; pq:P580 ?y. } UNION { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 wd:Q101499013; pq:P580 ?y. } } ORDER BY DESC (?y) LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y. ?w wdt:P131 wd:Q816 } ORDER BY DESC (?y) LIMIT 2",
         "Answers": [
           {
             "AnswerType": "Entity",
