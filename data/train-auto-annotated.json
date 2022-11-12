@@ -69888,7 +69888,7 @@
     "ProcessedQuestion": "which college did obama graduated",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -69899,11 +69899,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q13371",
             "EntityName": "Harvard University"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q49088",
-            "EntityName": "Columbia University"
           }
         ]
       }
@@ -118101,17 +118096,12 @@
     "ProcessedQuestion": "what college did joe namath attend",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q720558 wdt:P69 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q720558 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q492318",
             "EntityName": "University of Alabama"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4878076",
-            "EntityName": "Beaver Falls High School"
           }
         ]
       }
