@@ -25420,42 +25420,12 @@
     "ProcessedQuestion": "what is james madison most famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11813 wdt:P39 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q11813 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q912994",
-            "EntityName": "Speaker of the United States House of Representatives"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1467287",
-            "EntityName": "President-elect of the United States"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q13218630",
-            "EntityName": "United States representative"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q18694588",
-            "EntityName": "Member of the United States House of Representatives from Virginia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q20065408",
-            "EntityName": "member of the Virginia House of Delegates"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11696",
-            "EntityName": "President of the United States"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q14213",
-            "EntityName": "United States Secretary of State"
+            "AnswerType": "Value",
+            "AnswerArgument": "president of the United States from 1809 to 1817",
+            "EntityName": null
           }
         ]
       }
@@ -31392,32 +31362,12 @@
     "ProcessedQuestion": "what was christiaan barnard famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q188803 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q188803 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q551835",
-            "EntityName": "physician writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q774306",
-            "EntityName": "surgeon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q19842026",
-            "EntityName": "cardiac surgeon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q36180",
-            "EntityName": "writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q39631",
-            "EntityName": "physician"
+            "AnswerType": "Value",
+            "AnswerArgument": "South African cardiac surgeon",
+            "EntityName": null
           }
         ]
       }
@@ -38640,22 +38590,12 @@
     "ProcessedQuestion": "what was van gogh famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5582 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q5582 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1028181",
-            "EntityName": "painter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11569986",
-            "EntityName": "printmaker"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q15296811",
-            "EntityName": "drawer"
+            "AnswerType": "Value",
+            "AnswerArgument": "Dutch post-impressionist painter (1853–1890)",
+            "EntityName": null
           }
         ]
       }
@@ -69899,6 +69839,16 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q13371",
             "EntityName": "Harvard University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49088",
+            "EntityName": "Columbia University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036763",
+            "EntityName": "University of Chicago Law School"
           }
         ]
       }
@@ -82003,7 +81953,7 @@
     "ProcessedQuestion": "what did john howard study at university",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51330 p:P69 ?p. ?p ps:P69 ?y; pq:P512 ?x. ?y wdt:P31/wdt:P279* wd:Q3918. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51330 p:P69 ?p. ?p ps:P69 ?y; pq:P512 ?x. ?y wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -82092,22 +82042,17 @@
     "ProcessedQuestion": "from which university did president obama receive his bachelor 's degree",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q76 p:P69 ?p. ?p ps:P69 ?x; pq:P512 ?y. ?y wdt:P31 wd:Q163727. ?x wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1346110",
-            "EntityName": "Occidental College"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q13371",
-            "EntityName": "Harvard University"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q49088",
             "EntityName": "Columbia University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036763",
+            "EntityName": "University of Chicago Law School"
           }
         ]
       }
@@ -85091,27 +85036,12 @@
     "ProcessedQuestion": "what was irving langmuir famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q184286 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q184286 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q169470",
-            "EntityName": "physicist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q593644",
-            "EntityName": "chemist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2310145",
-            "EntityName": "meteorologist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3400985",
-            "EntityName": "academic"
+            "AnswerType": "Value",
+            "AnswerArgument": "American chemist and physicist",
+            "EntityName": null
           }
         ]
       }
@@ -87110,22 +87040,12 @@
     "ProcessedQuestion": "what was elijah mccoy famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1329419 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q1329419 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q81096",
-            "EntityName": "engineer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q107711",
-            "EntityName": "firefighter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q205375",
-            "EntityName": "inventor"
+            "AnswerType": "Value",
+            "AnswerArgument": "American engineer",
+            "EntityName": null
           }
         ]
       }
@@ -90980,8 +90900,13 @@
     "ProcessedQuestion": "what degree did martin luther king get",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8027 p:P69 ?p. ?p ps:P69 ?y; pq:P512 ?x. ?y wdt:P31/wdt:P279* wd:Q3918. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8027 p:P69 ?p. ?p ps:P69 ?y; pq:P512 ?x. ?y wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1765120",
+            "EntityName": "Bachelor of Arts"
+          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q752297",
@@ -93891,8 +93816,13 @@
     "ProcessedQuestion": "what university did donald trump graduate from",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q22686 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q3918. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q22686 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
         "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7013764",
+            "EntityName": "New York Military Academy"
+          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q130965",
@@ -94918,17 +94848,12 @@
     "ProcessedQuestion": "what is isaac newton famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q935 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q935 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q170790",
-            "EntityName": "mathematician"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4964182",
-            "EntityName": "philosopher"
+            "AnswerType": "Value",
+            "AnswerArgument": "English physicist and mathematician (1642–1727)",
+            "EntityName": null
           }
         ]
       }
@@ -97230,12 +97155,12 @@
     "ProcessedQuestion": "what is jackie kennedy famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165421 wdt:P39 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q165421 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q7166256",
-            "EntityName": "First Lady of the United States"
+            "AnswerType": "Value",
+            "AnswerArgument": "First Lady of the United States (1961—1963)",
+            "EntityName": null
           }
         ]
       }
@@ -101932,37 +101857,12 @@
     "ProcessedQuestion": "what is ryan seacrest famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q299266 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q299266 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q578109",
-            "EntityName": "television producer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q947873",
-            "EntityName": "television presenter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2405480",
-            "EntityName": "voice actor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2722764",
-            "EntityName": "radio personality"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3282637",
-            "EntityName": "film producer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q33999",
-            "EntityName": "actor"
+            "AnswerType": "Value",
+            "AnswerArgument": "American television host, radio host and television producer",
+            "EntityName": null
           }
         ]
       }
@@ -118696,47 +118596,12 @@
     "ProcessedQuestion": "what is janelle monae famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q234356 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q234356 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q183945",
-            "EntityName": "record producer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q488205",
-            "EntityName": "singer-songwriter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q805221",
-            "EntityName": "ballet dancer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1062433",
-            "EntityName": "chanteuse"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q10800557",
-            "EntityName": "film actor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q55960555",
-            "EntityName": "recording artist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q33999",
-            "EntityName": "actor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q36834",
-            "EntityName": "composer"
+            "AnswerType": "Value",
+            "AnswerArgument": "American singer",
+            "EntityName": null
           }
         ]
       }
@@ -119322,47 +119187,12 @@
     "ProcessedQuestion": "what is thomas edison 's most famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8743 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q8743 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q81096",
-            "EntityName": "engineer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q131524",
-            "EntityName": "entrepreneur"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q169470",
-            "EntityName": "physicist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q170790",
-            "EntityName": "mathematician"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q205375",
-            "EntityName": "inventor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2526255",
-            "EntityName": "film director"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q28389",
-            "EntityName": "screenwriter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q43845",
-            "EntityName": "businessperson"
+            "AnswerType": "Value",
+            "AnswerArgument": "American inventor and businessman (1847–1931)",
+            "EntityName": null
           }
         ]
       }
@@ -122309,72 +122139,12 @@
     "ProcessedQuestion": "what was alice walker famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q215868 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q215868 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q974144",
-            "EntityName": "educator"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1021386",
-            "EntityName": "civil rights advocate"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1622272",
-            "EntityName": "university teacher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3282637",
-            "EntityName": "film producer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4853732",
-            "EntityName": "children's writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q6625963",
-            "EntityName": "novelist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11774202",
-            "EntityName": "essayist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q15949613",
-            "EntityName": "short story writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q61048378",
-            "EntityName": "climate activist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q28389",
-            "EntityName": "screenwriter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q33999",
-            "EntityName": "actor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q36180",
-            "EntityName": "writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q49757",
-            "EntityName": "poet"
+            "AnswerType": "Value",
+            "AnswerArgument": "American author and activist",
+            "EntityName": null
           }
         ]
       }
@@ -126052,57 +125822,12 @@
     "ProcessedQuestion": "who is galileo galilei and what is he famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q307 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q307 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q81096",
-            "EntityName": "engineer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q155647",
-            "EntityName": "astrologer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q169470",
-            "EntityName": "physicist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q170790",
-            "EntityName": "mathematician"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q205375",
-            "EntityName": "inventor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q270141",
-            "EntityName": "polymath"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1622272",
-            "EntityName": "university teacher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4964182",
-            "EntityName": "philosopher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q901",
-            "EntityName": "scientist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11063",
-            "EntityName": "astronomer"
+            "AnswerType": "Value",
+            "AnswerArgument": "Italian polymath",
+            "EntityName": null
           }
         ]
       }
@@ -130920,77 +130645,12 @@
     "ProcessedQuestion": "what is jonathan swift famous for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q41166 wdt:P106 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q41166 schema:description ?x. } }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q662729",
-            "EntityName": "public figure"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1476215",
-            "EntityName": "human rights activist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3409375",
-            "EntityName": "Anglican priest"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4853732",
-            "EntityName": "children's writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q4964182",
-            "EntityName": "philosopher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q6051619",
-            "EntityName": "opinion journalist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q6625963",
-            "EntityName": "novelist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q9334029",
-            "EntityName": "satirist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q11774202",
-            "EntityName": "essayist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q12144794",
-            "EntityName": "prosaist"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q16254673",
-            "EntityName": "pamphleteer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q18844224",
-            "EntityName": "science fiction writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q36180",
-            "EntityName": "writer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q49757",
-            "EntityName": "poet"
+            "AnswerType": "Value",
+            "AnswerArgument": "Anglo-Irish satirist and essayist (1667–1745)",
+            "EntityName": null
           }
         ]
       }
