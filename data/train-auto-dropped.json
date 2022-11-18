@@ -1,0 +1,3548 @@
+[
+  {
+    "QuestionId": "WebQTrn-20",
+    "RawQuestion": "where to fly into bali?",
+    "ProcessedQuestion": "where to fly into bali",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bkb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bkb ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?y ns:travel.transportation.mode_of_transportation ns:m.03qb78c .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069hj8",
+            "EntityName": "Ngurah Rai International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-22",
+    "RawQuestion": "what to see near sedona arizona?",
+    "ProcessedQuestion": "what to see near sedona arizona",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ny57)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ny57 ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026h8t6",
+            "EntityName": "Sycamore Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qswpp",
+            "EntityName": "Sedona International Film Festival"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ty7n",
+            "EntityName": "Sedona Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04crz42",
+            "EntityName": "Bell Rock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xgf_s",
+            "EntityName": "Seven Canyons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07k8z2",
+            "EntityName": "Chapel of the Holy Cross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dlm2c7",
+            "EntityName": "Red Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dqzqc",
+            "EntityName": "Slide Rock State Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f44c_",
+            "EntityName": "Oak Creek Canyon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g5qfch",
+            "EntityName": "Honanki"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gj9fwx",
+            "EntityName": "Cathedral Rock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-32",
+    "RawQuestion": "what was malcolm x trying to accomplish?",
+    "ProcessedQuestion": "what was malcolm x trying to accomplish",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03f2h01)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03f2h01 ns:base.activism.activist.area_of_activism ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074v_1j",
+            "EntityName": "Black Liberation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g4pf68",
+            "EntityName": "African Americans' rights"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-38",
+    "RawQuestion": "what is saint nicholas known for?",
+    "ProcessedQuestion": "what is saint nicholas known for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f9q7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f9q7 ns:book.book_subject.works ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.066mx9f",
+            "EntityName": "St. Nicholas of Myra, Bari and Manhattan: Biography of a Legend"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-44",
+    "RawQuestion": "what county is the city of hampton va in?",
+    "ProcessedQuestion": "what county is the city of hampton va in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0mnsf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0mnsf ns:location.hud_county_place.place ?x .\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-74",
+    "RawQuestion": "when did the colorado rockies go to the world series?",
+    "ProcessedQuestion": "when did the colorado rockies go to the world series",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.0fjp3 ns:sports.sports_championship.events ?x . # World Series\n  {\n    { ?x ns:sports.sports_championship_event.runner_up ns:m.01ync . } # Colorado Rockies\n    UNION\n    { ?x ns:sports.sports_championship_event.champion ns:m.01ync . } # Colorado Rockies\n  }\n  ?x ns:time.event.start_date ?d .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0268bkj",
+            "EntityName": "2007 World Series"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-77",
+    "RawQuestion": "where to go in london england?",
+    "ProcessedQuestion": "where to go in london england",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jpl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jpl ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012vvtp_",
+            "EntityName": "Travefy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0136mc",
+            "EntityName": "Tate Gallery, Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013y0_",
+            "EntityName": "London Paddington station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.013yrz",
+            "EntityName": "Science Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.017_lw",
+            "EntityName": "British Museum Reading Room"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018g60",
+            "EntityName": "Royal Albert Hall, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018yyl",
+            "EntityName": "Euston railway station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0198g",
+            "EntityName": "Buckingham Palace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019k9x",
+            "EntityName": "Smithfield, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d_0p",
+            "EntityName": "Hyde Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hb3",
+            "EntityName": "British Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01hc38",
+            "EntityName": "Apsley House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k804",
+            "EntityName": "London Palladium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lpg6",
+            "EntityName": "Regent's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01t372",
+            "EntityName": "Natural History Museum, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01tp60",
+            "EntityName": "Strand, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01w0yg",
+            "EntityName": "Sir John Soane's Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x3nm",
+            "EntityName": "Royal Institution"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01x6xn",
+            "EntityName": "National Maritime Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xrzb",
+            "EntityName": "London Victoria station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xzg6",
+            "EntityName": "Queen's House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021mgt",
+            "EntityName": "Museum of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.022pjp",
+            "EntityName": "St. James's Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v7z",
+            "EntityName": "Central London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026ydc",
+            "EntityName": "Big Ben"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0270g5",
+            "EntityName": "London Charterhouse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0272nt3",
+            "EntityName": "Tramp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mg5r",
+            "EntityName": "City University London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mv8x",
+            "EntityName": "National Portrait Gallery, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q6xg0",
+            "EntityName": "Polish Institute and Sikorski Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02sfxg",
+            "EntityName": "Wallace Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yfnd",
+            "EntityName": "Wasps RFC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03825f",
+            "EntityName": "Horniman Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gm6z",
+            "EntityName": "Diana, Princess of Wales Memorial Fountain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03l0pt",
+            "EntityName": "Henman Hill"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m401",
+            "EntityName": "Olympia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0414y7c",
+            "EntityName": "Wellcome Collection"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043mxr",
+            "EntityName": "Serpentine Galleries"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.045ffb",
+            "EntityName": "The Clink"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04d1hw7",
+            "EntityName": "The Building Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04dn_hk",
+            "EntityName": "New London Architecture"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jgv",
+            "EntityName": "London Underground"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mmgh",
+            "EntityName": "Chessington World of Adventures"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ttyf",
+            "EntityName": "Museum of London Docklands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vflw",
+            "EntityName": "Hippodrome, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055whd",
+            "EntityName": "G-A-Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05f3pf0",
+            "EntityName": "Madame Tussauds London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fl7q",
+            "EntityName": "V&A Museum of Childhood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05pq2k",
+            "EntityName": "Design Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q3_3",
+            "EntityName": "Bank of England Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r48r",
+            "EntityName": "Churchill War Rooms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s6ns",
+            "EntityName": "Jewish Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05t7yp",
+            "EntityName": "Earls Court Exhibition Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05xz1j",
+            "EntityName": "National Police Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060yf",
+            "EntityName": "Palace of Westminster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w3j7k",
+            "EntityName": "Chinawhite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07gyc",
+            "EntityName": "London Eye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07n8hk",
+            "EntityName": "Leighton House Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nb5",
+            "EntityName": "Tate Modern, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07nqn",
+            "EntityName": "Tower of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bll4mn",
+            "EntityName": "Chokushi-Mon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz5j",
+            "EntityName": "Waterlily House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bnlz9r",
+            "EntityName": "The Nash Conservatory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bvqq",
+            "EntityName": "Westminster Abbey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d0rj",
+            "EntityName": "London Marathon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dplh",
+            "EntityName": "University College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fg05k",
+            "EntityName": "Duke of York's Headquarters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggp4",
+            "EntityName": "Tower Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gjv_",
+            "EntityName": "University of London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gl6x",
+            "EntityName": "Imperial College London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gsxw",
+            "EntityName": "Trafalgar Square"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hsb3",
+            "EntityName": "London School of Economics and Political Science"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j2g8sh",
+            "EntityName": "Imperial War Museum London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32g13",
+            "EntityName": "William Wilkins's Building"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j32kvf",
+            "EntityName": "Sainsbury Wing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j53x",
+            "EntityName": "London Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jx0nq8",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2c9hx",
+            "EntityName": "RAF Bomber Command Memorial"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m6q6",
+            "EntityName": "Barbican Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nb1f",
+            "EntityName": "Holloway"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nblr",
+            "EntityName": "Newington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nc61",
+            "EntityName": "Southgate, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncpy",
+            "EntityName": "Wallington, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncv_",
+            "EntityName": "Whetstone, London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ncy4",
+            "EntityName": "Wimbledon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p0jt",
+            "EntityName": "Liverpool Street station"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p1tx",
+            "EntityName": "Victoria and Albert Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p77g",
+            "EntityName": "London Bridge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pdb059",
+            "EntityName": "Selfridges, Oxford Street"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pwzt",
+            "EntityName": "St Paul's Cathedral"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0w1d3n8",
+            "EntityName": "Crystal Palace Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0z8h65p",
+            "EntityName": "Sutcliffe Park"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-83",
+    "RawQuestion": "when did the new york knicks win a championship?",
+    "ProcessedQuestion": "when did the new york knicks win a championship",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm3v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm3v ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1kg",
+            "EntityName": "1973 NBA Finals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1x4",
+            "EntityName": "1970 NBA Finals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-100",
+    "RawQuestion": "when will oscar pistorius compete?",
+    "ProcessedQuestion": "when will oscar pistorius compete",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f1lfn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f1lfn ns:sports.pro_athlete.sports_played_professionally ?y .\n?y ns:sports.pro_sports_played.sport ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bynt",
+            "EntityName": "Track and field athletics"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-101",
+    "RawQuestion": "what years have the dallas cowboys won the superbowl?",
+    "ProcessedQuestion": "what years have the dallas cowboys won the superbowl",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02896)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02896 ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076n1",
+            "EntityName": "Super Bowl VI"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076q3",
+            "EntityName": "Super Bowl XII"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076vy",
+            "EntityName": "Super Bowl XXVII"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076w8",
+            "EntityName": "Super Bowl XXVIII"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076wz",
+            "EntityName": "Super Bowl XXX"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-107",
+    "RawQuestion": "what planes does the navy have?",
+    "ProcessedQuestion": "what planes does the navy have",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07wg3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07wg3 ns:aviation.aircraft_owner.aircraft_fleet_composition ?y .\n?y ns:aviation.aircraft_ownership_count.aircraft_model ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_78k",
+            "EntityName": "Lockheed T-33"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015mr2",
+            "EntityName": "Lockheed P-3 Orion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0190bf",
+            "EntityName": "Boeing E-6 Mercury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019ybf",
+            "EntityName": "Douglas A-1 Skyraider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d1vk",
+            "EntityName": "Grumman C-2 Greyhound"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d1wc",
+            "EntityName": "Northrop Grumman EA-6B Prowler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fwhv",
+            "EntityName": "Brewster F2A Buffalo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fz62",
+            "EntityName": "Grumman S-2 Tracker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gktp",
+            "EntityName": "McDonnell F2H Banshee"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01h0j_",
+            "EntityName": "McDonnell F3H Demon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01q56x",
+            "EntityName": "Piper PA-23"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01qt7l",
+            "EntityName": "Consolidated PBY Catalina"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01th1l",
+            "EntityName": "McDonnell Douglas C-9"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01th28",
+            "EntityName": "Beechcraft C-12 Huron"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01th5y",
+            "EntityName": "Boeing C-40 Clipper"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02_31",
+            "EntityName": "Northrop F-5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0215vw",
+            "EntityName": "Cessna T-37 Tweet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0218q9",
+            "EntityName": "Vought F-8 Crusader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.021dzj",
+            "EntityName": "Grumman A-6 Intruder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025t0cp",
+            "EntityName": "McDonnell Douglas T-45 Goshawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026_wns",
+            "EntityName": "Boeing EA-18G Growler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026b4k6",
+            "EntityName": "Felixstowe F.2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027d6qr",
+            "EntityName": "Vought O2U Corsair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.027h4z2",
+            "EntityName": "Douglas BTD Destroyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0284nrp",
+            "EntityName": "Felixstowe F.5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0284qjd",
+            "EntityName": "Felixstowe F.3"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.028qtn",
+            "EntityName": "Douglas A-4 Skyhawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.029xc9",
+            "EntityName": "Douglas D-558-2 Skyrocket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02b_90",
+            "EntityName": "North American A-5 Vigilante"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02b_9h",
+            "EntityName": "North American AJ Savage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02b_c4",
+            "EntityName": "LTV A-7 Corsair II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02bvmx",
+            "EntityName": "Douglas A-3 Skywarrior"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02c7x1",
+            "EntityName": "Douglas C-54 Skymaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02f6_0",
+            "EntityName": "Douglas F3D Skyknight"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02f6k6",
+            "EntityName": "Grumman F-11 Tiger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02f6xj",
+            "EntityName": "North American FJ-2/-3 Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02f728",
+            "EntityName": "Grumman E-1 Tracer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02gm3t",
+            "EntityName": "Douglas F4D Skyray"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02gmxc",
+            "EntityName": "IAI Kfir"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02gnvc",
+            "EntityName": "Grumman F9F Panther"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02gsw8",
+            "EntityName": "Sikorsky SH-60 Seahawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02hf73",
+            "EntityName": "Lockheed P-2 Neptune"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02hgdf",
+            "EntityName": "Martin P4M Mercator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02j2m1",
+            "EntityName": "Martin P5M Marlin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jhvq",
+            "EntityName": "Martin P6M SeaMaster"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jphj",
+            "EntityName": "Grumman TBF Avenger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jyqf",
+            "EntityName": "Douglas TBD Devastator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jzg6",
+            "EntityName": "Consolidated TBY Sea Wolf"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02k3by",
+            "EntityName": "Gulfstream G550"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kt__",
+            "EntityName": "Douglas SBD Dauntless"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kvgs",
+            "EntityName": "Grumman F4F Wildcat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kvl7",
+            "EntityName": "Grumman C-1 Trader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kwf2",
+            "EntityName": "Douglas F5D Skylancer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02l7dc",
+            "EntityName": "Convair F2Y Sea Dart"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02lgh0",
+            "EntityName": "Curtiss SB2C Helldiver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02lwks",
+            "EntityName": "North American T-2 Buckeye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mbkm",
+            "EntityName": "Grumman F6F Hellcat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mq0r",
+            "EntityName": "Convair R3Y Tradewind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02nsdk",
+            "EntityName": "Martin AM Mauler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02nxnq",
+            "EntityName": "Grumman F7F Tigercat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p3dr",
+            "EntityName": "Grumman F8F Bearcat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p9d7",
+            "EntityName": "Grumman F-9 Cougar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q3bq2",
+            "EntityName": "Aeromarine 40"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q3f6k",
+            "EntityName": "Aeromarine 700"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q64hp",
+            "EntityName": "Boeing Model 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qf2g",
+            "EntityName": "Beechcraft T-6 Texan II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qh5r3",
+            "EntityName": "Douglas T2D"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rjf7",
+            "EntityName": "McDonnell Douglas A-12 Avenger II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rksz",
+            "EntityName": "Sikorsky CH-53E Super Stallion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rpfq8",
+            "EntityName": "Bell HSL"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02srhl",
+            "EntityName": "Vought OS2U Kingfisher"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02swn1",
+            "EntityName": "R38-class airship"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_0by",
+            "EntityName": "O-1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_dwm",
+            "EntityName": "C-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_hr2",
+            "EntityName": "D-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_jmz",
+            "EntityName": "E-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_js2",
+            "EntityName": "F-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_jyy",
+            "EntityName": "H-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v98n",
+            "EntityName": "Douglas DC-2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v9d_",
+            "EntityName": "Douglas DC-5"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vkx4q",
+            "EntityName": "Curtiss 18"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vz86r",
+            "EntityName": "Consolidated NY"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w96kv",
+            "EntityName": "Kinner Envoy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wk3n",
+            "EntityName": "Ryan FR Fireball"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wm9b",
+            "EntityName": "Grumman G-21 Goose"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x59mj",
+            "EntityName": "Curtiss Model H"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ys63",
+            "EntityName": "Douglas A-26 Invader"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.032hh7",
+            "EntityName": "Northrop Grumman X-47A Pegasus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0337v",
+            "EntityName": "Grumman F-14 Tomcat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0338t",
+            "EntityName": "Vought F4U Corsair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033j1",
+            "EntityName": "McDonnell Douglas F-4 Phantom II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033jk",
+            "EntityName": "McDonnell FH Phantom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033yz",
+            "EntityName": "Lockheed Martin F-35 Lightning II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0368p9",
+            "EntityName": "Beechcraft King Air"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036hlm",
+            "EntityName": "Boeing P-8 Poseidon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03byfdv",
+            "EntityName": "Consolidated P2Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03byfqv",
+            "EntityName": "Curtiss-Wright CW-22"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ggkw",
+            "EntityName": "Boeing F/A-18E/F Super Hornet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h12lx",
+            "EntityName": "Cox-Klemin XS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h17zs",
+            "EntityName": "Elias EM"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03h4kwk",
+            "EntityName": "Curtiss Model R"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hfxjq",
+            "EntityName": "Consolidated XP4Y Corregidor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hl3yp",
+            "EntityName": "Loening OL"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hl7_s",
+            "EntityName": "Martin MO"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hl89q",
+            "EntityName": "Martin BM"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hljgk",
+            "EntityName": "Timm N2T Tutor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03mdh_g",
+            "EntityName": "Dornier Do H"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rr_r",
+            "EntityName": "North American T-28 Trojan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03sdzs",
+            "EntityName": "Beechcraft T-34 Mentor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wc70c",
+            "EntityName": "Great Lakes BG"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wh52c",
+            "EntityName": "Martin T3M"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wj9j",
+            "EntityName": "Vought SB2U Vindicator"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xx1b",
+            "EntityName": "Vought F7U Cutlass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ydkd_",
+            "EntityName": "Martin T4M"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0400lj",
+            "EntityName": "Bell D-188A"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04042s3",
+            "EntityName": "Curtiss XBTC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.040k78",
+            "EntityName": "Douglas A2D Skyshark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0416m9k",
+            "EntityName": "North American FJ-1 Fury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.041fc9",
+            "EntityName": "Douglas F6D Missileer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043t0c",
+            "EntityName": "Martin PBM Mariner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0462dy3",
+            "EntityName": "Sikorsky S-52"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047mskq",
+            "EntityName": "DRS RQ-15 Neptune"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0496sl",
+            "EntityName": "Martin JRM Mars"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04k9_k",
+            "EntityName": "Vought XF5U"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mx2q",
+            "EntityName": "Grumman G-44 Widgeon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04t_14",
+            "EntityName": "Beechcraft AQM-37 Jayhawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05jl5v",
+            "EntityName": "Convair XFY Pogo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qjvt",
+            "EntityName": "Sikorsky H-34"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qvnz",
+            "EntityName": "Douglas DT"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_yb_",
+            "EntityName": "Grumman FF"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060cbm",
+            "EntityName": "Douglas Dolphin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06982q",
+            "EntityName": "Piasecki HUP Retriever"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06d2bb",
+            "EntityName": "Boeing XPBB Sea Ranger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06d2jp",
+            "EntityName": "Brewster SB2A Buccaneer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06d2rt",
+            "EntityName": "Grumman F2F"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dts5",
+            "EntityName": "Curtiss SBC Helldiver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06dv1y",
+            "EntityName": "Grumman F3F"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06gwz4",
+            "EntityName": "Sikorsky S-70"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kv38",
+            "EntityName": "Northrop BQM-74 Chukar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06l82j",
+            "EntityName": "Bell XFL Airabonita"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06l8r_",
+            "EntityName": "Boeing XF8B"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sc8j",
+            "EntityName": "Curtiss XF14C"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06swnt",
+            "EntityName": "Goodyear F2G Corsair"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07_nbx",
+            "EntityName": "G-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.072kpc",
+            "EntityName": "Lockheed T2V SeaStar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0733xl",
+            "EntityName": "North American Sabreliner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076b62",
+            "EntityName": "Consolidated PB4Y-2 Privateer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076bjz",
+            "EntityName": "Consolidated PB2Y Coronado"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07995",
+            "EntityName": "Lockheed S-3 Viking"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0799l",
+            "EntityName": "Kaman SH-2 Seasprite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ct4k",
+            "EntityName": "Consolidated R2Y"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07g6fn",
+            "EntityName": "Boeing Insitu ScanEagle"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07jtsf",
+            "EntityName": "Grumman J2F Duck"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07wqf1",
+            "EntityName": "Canadair CL-84"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.082h36",
+            "EntityName": "J-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.082l8d",
+            "EntityName": "M-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.086lk9",
+            "EntityName": "N-class blimp"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.089kxl",
+            "EntityName": "Temco TT Pinto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08n134",
+            "EntityName": "Gyrodyne QH-50 DASH"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08nh10",
+            "EntityName": "Curtiss F11C Goshawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08nlr9",
+            "EntityName": "Northrop BT"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08rh6b",
+            "EntityName": "Bell 412"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09_9gc",
+            "EntityName": "Northrop Grumman MQ-8 Fire Scout"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.090mrd",
+            "EntityName": "Vultee XA-41"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.090s1s",
+            "EntityName": "Grumman AF Guardian"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.091337",
+            "EntityName": "Hall XPTBH"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.091b6h",
+            "EntityName": "Curtiss SC Seahawk"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09kzcn",
+            "EntityName": "Lockheed XFV"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bjdk8",
+            "EntityName": "Vought FU"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0brlxt",
+            "EntityName": "Vought VE-7"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bs_hh",
+            "EntityName": "Naval Aircraft Factory TS"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cghn",
+            "EntityName": "McDonnell Douglas F/A-18 Hornet"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ctnbm",
+            "EntityName": "Northrop Grumman X-47B"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dvdbt",
+            "EntityName": "Felixstowe F5L"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fjqh",
+            "EntityName": "Northrop Grumman E-2 Hawkeye"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fzq8m",
+            "EntityName": "Rockwell XFV-12"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gpdy6",
+            "EntityName": "Aeromarine 39"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0swl8s6",
+            "EntityName": "Lockheed Martin Sea Ghost"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-113",
+    "RawQuestion": "what's the national sport of puerto rico?",
+    "ProcessedQuestion": "what 's the national sport of puerto rico",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05r7t)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05r7t ns:sports.sports_team_location.teams ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p6lm8",
+            "EntityName": "Capitanes de Arecibo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03wcnxr",
+            "EntityName": "Puerto Rico men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047g442",
+            "EntityName": "Puerto Rico women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h5_c",
+            "EntityName": "Puerto Rico national football team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-123",
+    "RawQuestion": "where does asiana airlines fly to?",
+    "ProcessedQuestion": "where does asiana airlines fly to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01wykn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01wykn ns:aviation.airline.airports_served ?y .\n?y ns:aviation.airline_airport_presence.airport ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01nfl1",
+            "EntityName": "Sydney Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p1l2",
+            "EntityName": "John F. Kennedy International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-126",
+    "RawQuestion": "where to visit near bangkok?",
+    "ProcessedQuestion": "where to visit near bangkok",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0fn2g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0fn2g ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01c1gj",
+            "EntityName": "Wat Phra Kaew"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01d1vz",
+            "EntityName": "Thonburi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02816l2",
+            "EntityName": "Bangkok Aquarium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02jh89",
+            "EntityName": "Grand Palace"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pksll",
+            "EntityName": "Samutprakarn Crocodile Farm and Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vnrfw",
+            "EntityName": "Bangkok National Museum"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wwf3f",
+            "EntityName": "Dusit Zoo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03300t",
+            "EntityName": "Khaosan Road"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hlbr1",
+            "EntityName": "Jim Thompson House"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hp67d",
+            "EntityName": "Ananta Samakhom Throne Hall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03nr91r",
+            "EntityName": "Siam Park City"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t0m6",
+            "EntityName": "Democracy Monument"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047sllp",
+            "EntityName": "Safari World"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04q452",
+            "EntityName": "Wat Pho"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s69t",
+            "EntityName": "Wat Arun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06nynb",
+            "EntityName": "Wat Benchamabophit"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07_w5j",
+            "EntityName": "Vimanmek Mansion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07cz23",
+            "EntityName": "Erawan Shrine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07dj1f",
+            "EntityName": "Wat Ratchanatdaram"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07qb9k",
+            "EntityName": "Wat Suthat"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.080c8kl",
+            "EntityName": "Golden Buddha"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09dnj5",
+            "EntityName": "Chatuchak Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09qjqb",
+            "EntityName": "Bangkok International Trade and Exhibition Centre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09rxcz",
+            "EntityName": "Lumphini Park"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fp635",
+            "EntityName": "Rajamangala Stadium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h6w70",
+            "EntityName": "Wat Saket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0vb3kfz",
+            "EntityName": "Magic Land"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-138",
+    "RawQuestion": "what bible does the catholic church follow?",
+    "ProcessedQuestion": "what bible does the catholic church follow",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c8wxp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c8wxp ns:religion.religion.texts ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015j7",
+            "EntityName": "The Bible"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01dfl",
+            "EntityName": "Book of Nehemiah"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05crg",
+            "EntityName": "New Testament"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05ld9",
+            "EntityName": "Old Testament"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-143",
+    "RawQuestion": "what did nick clegg study at university?",
+    "ProcessedQuestion": "what did nick clegg study at university",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.036547)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.036547 ns:people.person.education ?y .\n?y ns:education.education.major_field_of_study ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r79",
+            "EntityName": "Political philosophy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074n0",
+            "EntityName": "Social anthropology"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-147",
+    "RawQuestion": "what did rob kardashian get surgery for?",
+    "ProcessedQuestion": "what did rob kardashian get surgery for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.043n6dp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.043n6dp ns:medicine.notable_person_with_medical_condition.condition ?x .\n?x ns:medicine.disease.medical_specialties ns:m.0396b .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jbx2",
+            "EntityName": "Appendicitis"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-158",
+    "RawQuestion": "what cities does ryanair fly to?",
+    "ProcessedQuestion": "what cities does ryanair fly to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01m_zd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01m_zd ns:aviation.airline.airports_served ?y .\n?y ns:aviation.airline_airport_presence.cities_served ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015g7",
+            "EntityName": "Bratislava"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01f62",
+            "EntityName": "Barcelona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01jp4s",
+            "EntityName": "Bergamo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.029v4j",
+            "EntityName": "Faro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02cft",
+            "EntityName": "Dublin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02hgz",
+            "EntityName": "Derry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jpl",
+            "EntityName": "London"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05l64",
+            "EntityName": "Oslo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mxs",
+            "EntityName": "Stockholm"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09tlh",
+            "EntityName": "Nottingham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0clz7",
+            "EntityName": "Cork"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0lvv8",
+            "EntityName": "Carcassonne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0zc6",
+            "EntityName": "Alicante"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-441",
+    "RawQuestion": "what sports do they do in canada?",
+    "ProcessedQuestion": "what sports do they do in canada",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-441.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "canada",
+        "TopicEntityName": "Canada",
+        "TopicEntityMid": "m.0d060g",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02py_tx",
+            "EntityName": "Canada Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r0htt",
+            "EntityName": "Canada Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z6d6n",
+            "EntityName": "Canada women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035tjy",
+            "EntityName": "Canada men's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037qf6",
+            "EntityName": "Canadian National Men's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hggnl",
+            "EntityName": "Canada men's national junior ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qkv16",
+            "EntityName": "Canada men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qnf8s",
+            "EntityName": "Canada women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03y8wtx",
+            "EntityName": "Canada women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043q413",
+            "EntityName": "Canada men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0478z33",
+            "EntityName": "Canada men's national floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04cys3k",
+            "EntityName": "Canada men's national inline hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g1h9d",
+            "EntityName": "Canada national badminton team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jfltf",
+            "EntityName": "Canada women's national softball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04t88g",
+            "EntityName": "Canadian National Women's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.053r9v9",
+            "EntityName": "Canada women's national under-18 ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055_233",
+            "EntityName": "Canada men's national under-19 floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05b__p7",
+            "EntityName": "Canada national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zf1x",
+            "EntityName": "Canada women's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_8jv",
+            "EntityName": "Canada national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0639sd",
+            "EntityName": "Canada national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.096fft",
+            "EntityName": "Northwind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0blnl8",
+            "EntityName": "Canada national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bmkh28",
+            "EntityName": "SpiderTech-C10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dq638",
+            "EntityName": "Canada men's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fkjqy",
+            "EntityName": "Canada national bandy team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gf59h",
+            "EntityName": "Canada national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h2rrm",
+            "EntityName": "Canada women's national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h6125",
+            "EntityName": "Canada men's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h625n",
+            "EntityName": "Canada women's national field hockey team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1370",
+    "RawQuestion": "what are the main sports in new zealand?",
+    "ProcessedQuestion": "what are the main sports in new zealand",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-1370.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "?? missing "
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ctw_b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ctw_b ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "new zealand",
+        "TopicEntityName": "New Zealand",
+        "TopicEntityMid": "m.0ctw_b",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0148q6",
+            "EntityName": "New Zealand national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0260pzv",
+            "EntityName": "New Zealand women's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02fbb5",
+            "EntityName": "New Zealand national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02q1tv9",
+            "EntityName": "New Zealand Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r5mr_",
+            "EntityName": "New Zealand Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wbmc2",
+            "EntityName": "New Zealand men's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03_44z",
+            "EntityName": "New Zealand national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0341ld",
+            "EntityName": "New Zealand Warriors"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1rs_",
+            "EntityName": "New Zealand national korfball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03svm9",
+            "EntityName": "New Zealand national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03yj5rj",
+            "EntityName": "New Zealand national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03yj691",
+            "EntityName": "New Zealand women's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0400zd",
+            "EntityName": "New Zealand national netball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04cyzks",
+            "EntityName": "Junior Kiwis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04d0vm",
+            "EntityName": "New Zealand national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g2874",
+            "EntityName": "New Zealand national badminton team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04h1bh",
+            "EntityName": "Wheel Blacks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04j9x_0",
+            "EntityName": "New Zealand women's national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jntyb",
+            "EntityName": "New Zealand women's national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05szm73",
+            "EntityName": "New Zealand men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06qvwt",
+            "EntityName": "New Zealand women's national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06rnv3",
+            "EntityName": "A1 Team New Zealand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07djk2",
+            "EntityName": "New Zealand A cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09bnzz",
+            "EntityName": "New Zealand national Australian rules football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09nm9w",
+            "EntityName": "New Zealand women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_76q",
+            "EntityName": "Junior All Blacks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f4rf7",
+            "EntityName": "New Zealand women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fyd4k",
+            "EntityName": "Stone Brothers Racing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1841",
+    "RawQuestion": "what are popular sports in spain?",
+    "ProcessedQuestion": "what are popular sports in spain",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-1841.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "spain",
+        "TopicEntityName": "Spain",
+        "TopicEntityMid": "m.06mkj",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026p7n3",
+            "EntityName": "Spain national beach handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w64f",
+            "EntityName": "Spain national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c1fqp",
+            "EntityName": "Spain men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d3f5r",
+            "EntityName": "Basket Zaragoza 2002"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d3y56",
+            "EntityName": "CB 1939 Canarias"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04lht1r",
+            "EntityName": "Spain women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04lhy9w",
+            "EntityName": "CB Sant Josep"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051zfgq",
+            "EntityName": "Spain women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s9mb",
+            "EntityName": "Saski Baskonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w8y2x",
+            "EntityName": "Obradoiro CAB"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07kfw9h",
+            "EntityName": "CB Avenida"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08_r59",
+            "EntityName": "CB Estudiantes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08dv_k",
+            "EntityName": "Baloncesto Málaga"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.093fgz",
+            "EntityName": "Real Madrid Baloncesto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09ctgt",
+            "EntityName": "Joventut Badalona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b7611s",
+            "EntityName": "Ros Casares Valencia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkk7d",
+            "EntityName": "CB Sevilla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkln2",
+            "EntityName": "CB Breogán"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bklw1",
+            "EntityName": "Valencia BC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bklzm",
+            "EntityName": "Bàsquet Manresa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ddl_r",
+            "EntityName": "San Sebastián Gipuzkoa BC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dl843",
+            "EntityName": "CB Murcia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fbjwn",
+            "EntityName": "Spain national handball team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1858",
+    "RawQuestion": "what sport is popular in china?",
+    "ProcessedQuestion": "what sport is popular in china",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-1858.P0",
+        "AnnotatorId": 2,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d05w3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d05w3 ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "china",
+        "TopicEntityName": "China",
+        "TopicEntityMid": "m.0d05w3",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026p73l",
+            "EntityName": "China women's national softball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026wfcr",
+            "EntityName": "China national under-23 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_3xb",
+            "EntityName": "China Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r4hn_",
+            "EntityName": "China Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_s16",
+            "EntityName": "China men's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c1v2g",
+            "EntityName": "China women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1rtp",
+            "EntityName": "China national korfball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gt8qn",
+            "EntityName": "China women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03lygq",
+            "EntityName": "China national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qhjj9",
+            "EntityName": "China women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qhjys",
+            "EntityName": "China men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03tx5m",
+            "EntityName": "Shanghai Sharks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ylztx",
+            "EntityName": "China women's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_12zx",
+            "EntityName": "China men's national junior ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043rwjh",
+            "EntityName": "China national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gqs4t",
+            "EntityName": "China men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gwb2l",
+            "EntityName": "China women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mz1tr",
+            "EntityName": "China national beach soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n0n07",
+            "EntityName": "China national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n43m5",
+            "EntityName": "China women's national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n4zfv",
+            "EntityName": "China national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n53nh",
+            "EntityName": "China women's national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n5qgw",
+            "EntityName": "China national futsal team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04qbn26",
+            "EntityName": "Qingdao DoubleStar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051xccw",
+            "EntityName": "Zhejiang Lions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0521w0d",
+            "EntityName": "Tianjin Ronggang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p_j5",
+            "EntityName": "Liaoning Flying Leopards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q1_v",
+            "EntityName": "Bayi Rockets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q1wm",
+            "EntityName": "Beijing Ducks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q21y",
+            "EntityName": "Jilin Northeast Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q230",
+            "EntityName": "Foshan Dralions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q24s",
+            "EntityName": "Shandong Lions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q264",
+            "EntityName": "Shanxi Zhongyu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q26v",
+            "EntityName": "Jiangsu Dragons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q27j",
+            "EntityName": "Guangdong Southern Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q2bb",
+            "EntityName": "Zhejiang Golden Bulls"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q2d5",
+            "EntityName": "Fujian Sturgeons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qdgz",
+            "EntityName": "China women's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069_v9b",
+            "EntityName": "Bayi Yiyang High-Tech District"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074zsw",
+            "EntityName": "China women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08x_xh",
+            "EntityName": "Dongguan Leopards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwvnm",
+            "EntityName": "China national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gczkp",
+            "EntityName": "China men's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0glgx6",
+            "EntityName": "China national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h31g8",
+            "EntityName": "China women's national cricket team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1887",
+    "RawQuestion": "what sports do canadians like?",
+    "ProcessedQuestion": "what sports do canadians like",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-1887.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "?? sport "
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "canadians",
+        "TopicEntityName": "Canada",
+        "TopicEntityMid": "m.0d060g",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02py_tx",
+            "EntityName": "Canada Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r0htt",
+            "EntityName": "Canada Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z6d6n",
+            "EntityName": "Canada women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035tjy",
+            "EntityName": "Canada men's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037qf6",
+            "EntityName": "Canadian National Men's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hggnl",
+            "EntityName": "Canada men's national junior ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qkv16",
+            "EntityName": "Canada men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qnf8s",
+            "EntityName": "Canada women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03y8wtx",
+            "EntityName": "Canada women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043q413",
+            "EntityName": "Canada men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0478z33",
+            "EntityName": "Canada men's national floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04cys3k",
+            "EntityName": "Canada men's national inline hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g1h9d",
+            "EntityName": "Canada national badminton team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jfltf",
+            "EntityName": "Canada women's national softball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04t88g",
+            "EntityName": "Canadian National Women's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.053r9v9",
+            "EntityName": "Canada women's national under-18 ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055_233",
+            "EntityName": "Canada men's national under-19 floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05b__p7",
+            "EntityName": "Canada national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zf1x",
+            "EntityName": "Canada women's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_8jv",
+            "EntityName": "Canada national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0639sd",
+            "EntityName": "Canada national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.096fft",
+            "EntityName": "Northwind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0blnl8",
+            "EntityName": "Canada national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bmkh28",
+            "EntityName": "SpiderTech-C10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dq638",
+            "EntityName": "Canada men's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fkjqy",
+            "EntityName": "Canada national bandy team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gf59h",
+            "EntityName": "Canada national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h2rrm",
+            "EntityName": "Canada women's national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h6125",
+            "EntityName": "Canada men's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h625n",
+            "EntityName": "Canada women's national field hockey team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2327",
+    "RawQuestion": "what are the different sports in the philippines?",
+    "ProcessedQuestion": "what are the different sports in the philippines",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-2327.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "Normal",
+          "FreeFormComment": "First-round parse verification"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05v8c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05v8c ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "philippines",
+        "TopicEntityName": "Philippines",
+        "TopicEntityMid": "m.05v8c",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04k3r_",
+            "EntityName": "Philippines national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07k3_n0",
+            "EntityName": "Philippines men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ll4ndn",
+            "EntityName": "Laos FC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2415",
+    "RawQuestion": "what sports are played in canada?",
+    "ProcessedQuestion": "what sports are played in canada",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-2415.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "canada",
+        "TopicEntityName": "Canada",
+        "TopicEntityMid": "m.0d060g",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02py_tx",
+            "EntityName": "Canada Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r0htt",
+            "EntityName": "Canada Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z6d6n",
+            "EntityName": "Canada women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035tjy",
+            "EntityName": "Canada men's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037qf6",
+            "EntityName": "Canadian National Men's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03hggnl",
+            "EntityName": "Canada men's national junior ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qkv16",
+            "EntityName": "Canada men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qnf8s",
+            "EntityName": "Canada women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03y8wtx",
+            "EntityName": "Canada women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043q413",
+            "EntityName": "Canada men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0478z33",
+            "EntityName": "Canada men's national floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04cys3k",
+            "EntityName": "Canada men's national inline hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g1h9d",
+            "EntityName": "Canada national badminton team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jfltf",
+            "EntityName": "Canada women's national softball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04t88g",
+            "EntityName": "Canadian National Women's Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.053r9v9",
+            "EntityName": "Canada women's national under-18 ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.055_233",
+            "EntityName": "Canada men's national under-19 floorball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05b__p7",
+            "EntityName": "Canada national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zf1x",
+            "EntityName": "Canada women's national soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_8jv",
+            "EntityName": "Canada national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0639sd",
+            "EntityName": "Canada national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.096fft",
+            "EntityName": "Northwind"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0blnl8",
+            "EntityName": "Canada national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bmkh28",
+            "EntityName": "SpiderTech-C10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dq638",
+            "EntityName": "Canada men's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fkjqy",
+            "EntityName": "Canada national bandy team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gf59h",
+            "EntityName": "Canada national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h2rrm",
+            "EntityName": "Canada women's national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h6125",
+            "EntityName": "Canada men's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h625n",
+            "EntityName": "Canada women's national field hockey team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2623",
+    "RawQuestion": "what sports do people in france play?",
+    "ProcessedQuestion": "what sports do people in france play",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-2623.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f8l9c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f8l9c ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "france",
+        "TopicEntityName": "France",
+        "TopicEntityMid": "m.0f8l9c",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l3vx",
+            "EntityName": "France national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0265nmb",
+            "EntityName": "Orléans Loiret Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026t7kv",
+            "EntityName": "France women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pnh1c",
+            "EntityName": "France Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r4ht3",
+            "EntityName": "France Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r6fjx",
+            "EntityName": "France men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z62d_",
+            "EntityName": "France women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c621f",
+            "EntityName": "France men's national pitch and putt team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1s0h",
+            "EntityName": "France national korfball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03nt95f",
+            "EntityName": "France national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t49_",
+            "EntityName": "France national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v1tr",
+            "EntityName": "France national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047v1fz",
+            "EntityName": "France women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059_t25",
+            "EntityName": "France women's national under-18 ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05syjdc",
+            "EntityName": "France national speedway team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05syms_",
+            "EntityName": "France men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.060wcb",
+            "EntityName": "France national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069wlg",
+            "EntityName": "ASVEL Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06b2z2",
+            "EntityName": "Limoges CSP"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06drlz",
+            "EntityName": "France women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06gd7y",
+            "EntityName": "Strasbourg IG"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076_dy9",
+            "EntityName": "French Luge Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09d8qr",
+            "EntityName": "France men's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b_nwg",
+            "EntityName": "France national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b25q4",
+            "EntityName": "Élan Béarnais Pau-Orthez"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dghw5",
+            "EntityName": "BCM Gravelines"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dghwk",
+            "EntityName": "Cholet Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dghx8",
+            "EntityName": "Chorale Roanne Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dgj84",
+            "EntityName": "Le Mans Sarthe Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fyyrw",
+            "EntityName": "Tarbes Gespe Bigorre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gksy2",
+            "EntityName": "France national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gnygq",
+            "EntityName": "France women's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j7lffx",
+            "EntityName": "CJM Bourges Basket"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3554",
+    "RawQuestion": "what sports do they have in china?",
+    "ProcessedQuestion": "what sports do they have in china",
+    "Parses": [
+      {
+        "ParseId": "WebQTrn-3554.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d05w3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d05w3 ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "china",
+        "TopicEntityName": "China",
+        "TopicEntityMid": "m.0d05w3",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026p73l",
+            "EntityName": "China women's national softball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026wfcr",
+            "EntityName": "China national under-23 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_3xb",
+            "EntityName": "China Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r4hn_",
+            "EntityName": "China Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02v_s16",
+            "EntityName": "China men's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c1v2g",
+            "EntityName": "China women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1rtp",
+            "EntityName": "China national korfball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gt8qn",
+            "EntityName": "China women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03lygq",
+            "EntityName": "China national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qhjj9",
+            "EntityName": "China women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qhjys",
+            "EntityName": "China men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03tx5m",
+            "EntityName": "Shanghai Sharks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ylztx",
+            "EntityName": "China women's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04_12zx",
+            "EntityName": "China men's national junior ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043rwjh",
+            "EntityName": "China national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gqs4t",
+            "EntityName": "China men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gwb2l",
+            "EntityName": "China women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mz1tr",
+            "EntityName": "China national beach soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n0n07",
+            "EntityName": "China national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n43m5",
+            "EntityName": "China women's national under-20 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n4zfv",
+            "EntityName": "China national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n53nh",
+            "EntityName": "China women's national under-17 football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n5qgw",
+            "EntityName": "China national futsal team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04qbn26",
+            "EntityName": "Qingdao DoubleStar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051xccw",
+            "EntityName": "Zhejiang Lions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0521w0d",
+            "EntityName": "Tianjin Ronggang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p_j5",
+            "EntityName": "Liaoning Flying Leopards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q1_v",
+            "EntityName": "Bayi Rockets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q1wm",
+            "EntityName": "Beijing Ducks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q21y",
+            "EntityName": "Jilin Northeast Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q230",
+            "EntityName": "Foshan Dralions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q24s",
+            "EntityName": "Shandong Lions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q264",
+            "EntityName": "Shanxi Zhongyu"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q26v",
+            "EntityName": "Jiangsu Dragons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q27j",
+            "EntityName": "Guangdong Southern Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q2bb",
+            "EntityName": "Zhejiang Golden Bulls"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05q2d5",
+            "EntityName": "Fujian Sturgeons"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05qdgz",
+            "EntityName": "China women's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.069_v9b",
+            "EntityName": "Bayi Yiyang High-Tech District"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074zsw",
+            "EntityName": "China women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08x_xh",
+            "EntityName": "Dongguan Leopards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwvnm",
+            "EntityName": "China national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gczkp",
+            "EntityName": "China men's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0glgx6",
+            "EntityName": "China national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h31g8",
+            "EntityName": "China women's national cricket team"
+          }
+        ]
+      }
+    ]
+  }
+]
