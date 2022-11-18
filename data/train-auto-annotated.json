@@ -36019,7 +36019,7 @@
     "ProcessedQuestion": "where did martin luther live in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9554 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9554 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -37415,7 +37415,7 @@
     "ProcessedQuestion": "where did bob dylan live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q392 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q392 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -43604,7 +43604,7 @@
     "ProcessedQuestion": "where did jrr tolkien live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q892 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q892 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -48292,17 +48292,17 @@
     "ProcessedQuestion": "what country did osama bin laden live in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1317 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1317 p:P551 ?p. ?p ps:P551 ?y. ?y wdt:P17 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q3065522",
-            "EntityName": "Osama bin Laden's compound in Abbottabad"
+            "AnswerArgument": "Q843",
+            "EntityName": "Pakistan"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q7105667",
-            "EntityName": "Osama bin Laden's house in Khartoum"
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
           }
         ]
       }
@@ -96338,7 +96338,7 @@
     "ProcessedQuestion": "where did tennessee williams live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q134262 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q134262 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -99287,14 +99287,8 @@
     "ProcessedQuestion": "where does eddie bravo teach",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5335870 wdt:P551 ?x. }",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q34006",
-            "EntityName": "Hollywood"
-          }
-        ]
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5335870 wdt:P108 ?x. }",
+        "Answers": []
       }
     ]
   },
@@ -101229,7 +101223,7 @@
     "ProcessedQuestion": "where did lauren conrad live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q230169 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q230169 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -122144,7 +122138,7 @@
     "ProcessedQuestion": "where did jimmy hoffa live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q317638 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q317638 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -122271,7 +122265,7 @@
     "ProcessedQuestion": "where did elvis presley live before he died",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q303 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q303 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

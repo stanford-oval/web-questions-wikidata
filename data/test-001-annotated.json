@@ -684,7 +684,7 @@
     "ProcessedQuestion": "where was teddy roosevelt 's house",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q33866 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q33866 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

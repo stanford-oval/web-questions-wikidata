@@ -1691,7 +1691,7 @@
     "ProcessedQuestion": "where did charles darwin and his wife live",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1035 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1035 p:P551 ?p. ?p ps:P551 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

@@ -265,27 +265,22 @@
     "ProcessedQuestion": "what state did george washington live in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23 wdt:P551 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23 p:P551 ?p. ?p ps:P551 ?y. ?y wdt:P131+ ?x. ?x wdt:P31 wd:Q35657. }",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q494413",
-            "EntityName": "Westmoreland County"
+            "AnswerArgument": "Q1370",
+            "EntityName": "Virginia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q731635",
-            "EntityName": "Mount Vernon"
+            "AnswerArgument": "Q1384",
+            "EntityName": "New York"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q1345",
-            "EntityName": "Philadelphia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q60",
-            "EntityName": "New York City"
+            "AnswerArgument": "Q1400",
+            "EntityName": "Pennsylvania"
           }
         ]
       }

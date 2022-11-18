@@ -393,7 +393,7 @@
     "ProcessedQuestion": "what state did john adams live in",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11806 wdt:P551 ?x. ?x wdt:P31/wdt:P279* wd:Q35657. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11806 p:P551 ?p. ?p ps:P551 ?x. ?x wdt:P31/wdt:P279* wd:Q35657. }",
         "Answers": [
           {
             "AnswerType": "Entity",
