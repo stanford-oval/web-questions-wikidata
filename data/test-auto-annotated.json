@@ -51540,12 +51540,17 @@
     "ProcessedQuestion": "where is the illinois river on a map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8321 wdt:P131 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8321 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1204",
-            "EntityName": "Illinois"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-90.4542 38.9703)",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-88.2603 41.3936)",
+            "EntityName": null
           }
         ]
       }
@@ -68644,12 +68649,12 @@
     "ProcessedQuestion": "where is tunis on a map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q948 wdt:P30 ?x. } LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q948 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q15",
-            "EntityName": "Africa"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(10.0 34.0)",
+            "EntityName": null
           }
         ]
       }
