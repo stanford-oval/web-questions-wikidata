@@ -1933,7 +1933,7 @@
     "ProcessedQuestion": "what role did george lucas play in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q42051 p:P161 ?p. ?p ps:P161 wd:Q38222; pq:P453 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P8345 wd:Q462; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 wd:Q38222; pq:P453 ?x. }",
         "Answers": []
       }
     ]

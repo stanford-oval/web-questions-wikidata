@@ -22,7 +22,7 @@
     "ProcessedQuestion": "what character did natalie portman play in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165713 p:P161 ?p. ?p ps:P161 wd:Q37876; pq:P453 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P8345 wd:Q462; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 wd:Q37876; pq:P453 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -28077,7 +28077,7 @@
     "ProcessedQuestion": "who plays princess padme in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q51789. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P8345 wd:Q462; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q51789. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -43692,7 +43692,7 @@
     "ProcessedQuestion": "what was liam neeson 's character in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165713 p:P161 ?p. ?p ps:P161 wd:Q58444; pq:P453 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P8345 wd:Q462; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 wd:Q58444; pq:P453 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -102601,13 +102601,8 @@
     "ProcessedQuestion": "who played princess leia in star wars movies",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q51797. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q11424; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q51797. }",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q792660",
-            "EntityName": "Ilona Bencze"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q108941",
@@ -102617,16 +102612,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q432995",
             "EntityName": "Allie Haze"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3663587",
-            "EntityName": "Catherine Taber"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q112147625",
-            "EntityName": "Vivien Lyra Blair"
           }
         ]
       }

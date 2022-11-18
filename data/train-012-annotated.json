@@ -176,8 +176,18 @@
     "ProcessedQuestion": "who played princess leia 's mother in star wars",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51797 wdt:P25 ?z. ?w wdt:P179 wd:Q22092344; p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 ?y. FILTER(?y = ?z) }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q51797 wdt:P25 ?z. ?w wdt:P8345 wd:Q462; p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 ?y. FILTER(?y = ?z) }",
         "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3663587",
+            "EntityName": "Catherine Taber"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13938",
+            "EntityName": "Grey DeLisle"
+          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q37876",
