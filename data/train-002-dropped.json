@@ -34,33 +34,6 @@
     ]
   },
   {
-    "QuestionId": "WebQTrn-434",
-    "RawQuestion": "what is the atlanta braves mascot?",
-    "ProcessedQuestion": "what is the atlanta braves mascot",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0x2p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0x2p ns:sports.sports_team.team_mascot ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07vbb7",
-            "EntityName": "Homer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07vbfd",
-            "EntityName": "Rally"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07vbvp",
-            "EntityName": "Chief Noc-A-Homa"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "QuestionId": "WebQTrn-486",
     "RawQuestion": "what airport in paris?",
     "ProcessedQuestion": "what airport in paris",
