@@ -257,7 +257,7 @@
     "ProcessedQuestion": "what books did beverly cleary right",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1316719 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q1316719. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -2164,8 +2164,24 @@
     "ProcessedQuestion": "what did st. matthew do",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43600 wdt:P800 ?x. }",
-        "Answers": []
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43600 wdt:P106 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q285101",
+            "EntityName": "publican"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q831474",
+            "EntityName": "presbyter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1139055",
+            "EntityName": "tax collector"
+          }
+        ]
       }
     ]
   },
@@ -2841,7 +2857,7 @@
     "ProcessedQuestion": "what other books did jules verne wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q33977 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q33977. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -29476,7 +29492,7 @@
     "ProcessedQuestion": "what book did niccolo machiavelli write",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1399 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q1399. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -33339,7 +33355,7 @@
     "ProcessedQuestion": "what books did aristotle wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q868 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q868. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -49822,7 +49838,7 @@
     "ProcessedQuestion": "what books did jules verne wright",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q33977 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q33977. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -76247,7 +76263,7 @@
     "ProcessedQuestion": "what books did lincoln write",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q91 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q91. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -84908,7 +84924,7 @@
     "ProcessedQuestion": "what book did jacob riis wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q379211 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q379211. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -86163,7 +86179,7 @@
     "ProcessedQuestion": "what books did frances hodgson burnett wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q276028 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q276028. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -86281,7 +86297,7 @@
     "ProcessedQuestion": "what books did robert burns wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q81960 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q81960. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -90899,7 +90915,7 @@
     "ProcessedQuestion": "what books has elie wiesel written",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q18391 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q18391. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -98524,7 +98540,7 @@
     "ProcessedQuestion": "what did roald dahl write",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q25161 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q25161. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -124361,7 +124377,7 @@
     "ProcessedQuestion": "what did jean jacques rousseau write",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6527 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q6527. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -128747,7 +128763,7 @@
     "ProcessedQuestion": "what did james madison wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11813 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q11813. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -129892,7 +129908,7 @@
     "ProcessedQuestion": "what was the name of the book that charles darwin wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1035 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q1035. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -130076,7 +130092,7 @@
     "ProcessedQuestion": "what did charles dickens writer",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5686 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q5686. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -130805,7 +130821,7 @@
     "ProcessedQuestion": "what book did w.e.b. dubois wrote",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q158060 wdt:P800 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q47461344; wdt:P50 wd:Q158060. }",
         "Answers": [
           {
             "AnswerType": "Entity",
