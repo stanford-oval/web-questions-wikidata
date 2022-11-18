@@ -66347,7 +66347,7 @@
     "ProcessedQuestion": "where is mali located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q912 wdt:P30 ?x. } LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q912 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q912)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -72991,7 +72991,7 @@
     "ProcessedQuestion": "where is burundi country",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q967 wdt:P30 ?x. } LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q967 wdt:P30 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -73157,7 +73157,7 @@
     "ProcessedQuestion": "what region is turkey considered",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43 wdt:P30 ?x. } LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q43 wdt:P30 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",

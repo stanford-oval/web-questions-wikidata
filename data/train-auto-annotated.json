@@ -39090,7 +39090,7 @@
     "ProcessedQuestion": "where is spain exactly located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q29 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q29 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q29)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -39773,7 +39773,7 @@
     "ProcessedQuestion": "where is the mozambique located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1029 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1029 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q1029)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -40367,7 +40367,7 @@
     "ProcessedQuestion": "where is azerbaijan",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q227 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q227 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q227)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -59376,7 +59376,7 @@
     "ProcessedQuestion": "where is hong kong china",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8646 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8646 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q8646)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -99053,7 +99053,7 @@
     "ProcessedQuestion": "where is somalia located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1045 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1045 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q1045)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -100109,7 +100109,7 @@
     "ProcessedQuestion": "where is bosnia",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q225 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q225 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q225)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -125088,7 +125088,7 @@
     "ProcessedQuestion": "where is danish located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q35)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -125745,7 +125745,7 @@
     "ProcessedQuestion": "where is angola located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q916 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q916 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q916)) }",
         "Answers": [
           {
             "AnswerType": "Entity",

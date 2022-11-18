@@ -409,17 +409,12 @@
     "ProcessedQuestion": "where is el salvador located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q792 wdt:P30|wdt:P17 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q792 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q792)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q49",
             "EntityName": "North America"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q792",
-            "EntityName": "El Salvador"
           }
         ]
       }
@@ -501,7 +496,7 @@
     "ProcessedQuestion": "where great britain located",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23666 wdt:P17|wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q23666 wdt:P30|wdt:P17 ?x. FILTER(?x not in (wd:Q23666)) }",
         "Answers": [
           {
             "AnswerType": "Entity",
