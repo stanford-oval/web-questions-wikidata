@@ -35973,12 +35973,12 @@
     "ProcessedQuestion": "where is singapore on a world map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q334 wdt:P30 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q334 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q48",
-            "EntityName": "Asia"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(103.8 1.3)",
+            "EntityName": null
           }
         ]
       }
@@ -59618,12 +59618,12 @@
     "ProcessedQuestion": "where is the capital of canada on the map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16 wdt:P36 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16 wdt:P36 ?p. ?p wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1930",
-            "EntityName": "Ottawa"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-75.695 45.424722222)",
+            "EntityName": null
           }
         ]
       }
@@ -70325,11 +70325,11 @@
     "ProcessedQuestion": "what is the capital city of canada on a map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16 wdt:P625 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16 wdt:P36 ?p. ?p wdt:P625 ?x. }",
         "Answers": [
           {
             "AnswerType": "Value",
-            "AnswerArgument": "Point(-109.0 56.0)",
+            "AnswerArgument": "Point(-75.695 45.424722222)",
             "EntityName": null
           }
         ]
@@ -96501,12 +96501,12 @@
     "ProcessedQuestion": "where is port st lucie florida on the map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q667749 wdt:P131 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q667749 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q494564",
-            "EntityName": "St. Lucie County"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-80.355 27.275833333)",
+            "EntityName": null
           }
         ]
       }

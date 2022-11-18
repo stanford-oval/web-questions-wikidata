@@ -613,12 +613,12 @@
     "ProcessedQuestion": "where is the galapagos islands located on a world map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38095 wdt:P131 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q38095 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q475038",
-            "EntityName": "Galápagos Province"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(-90.55 -0.666666666)",
+            "EntityName": null
           }
         ]
       }
@@ -9416,12 +9416,12 @@
     "ProcessedQuestion": "where is the seychelles on world map",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1042 wdt:P30 ?x. } LIMIT 2",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1042 wdt:P625 ?x. }",
         "Answers": [
           {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q15",
-            "EntityName": "Africa"
+            "AnswerType": "Value",
+            "AnswerArgument": "Point(52.766667 -7.1)",
+            "EntityName": null
           }
         ]
       }
