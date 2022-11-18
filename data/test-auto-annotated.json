@@ -24427,12 +24427,22 @@
     "ProcessedQuestion": "what are the major cities in ukraine",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q212 wdt:P36 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q1637706; wdt:P17 wd:Q212. }",
         "Answers": [
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q1899",
             "EntityName": "Kyiv"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36036",
+            "EntityName": "Lviv"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q42308",
+            "EntityName": "Kharkiv"
           }
         ]
       }
