@@ -564,7 +564,7 @@
     "ProcessedQuestion": "what team did adrian peterson play for in college",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q373983 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q373983 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
         "Answers": [
           {
             "AnswerType": "Entity",

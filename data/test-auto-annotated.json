@@ -446,7 +446,7 @@
     "ProcessedQuestion": "who did cam newton sign with",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q591678 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q591678 p:P54 ?p. ?p ps:p54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -4896,7 +4896,7 @@
     "ProcessedQuestion": "who did tim tebow play college football for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q517467 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q517467 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -40534,7 +40534,7 @@
     "ProcessedQuestion": "who has stephen ireland played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q113916 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q113916 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -74234,7 +74234,7 @@
     "ProcessedQuestion": "where does marta play soccer",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q228616 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q228616 wdt:P54 ?x. ?x wdt:P641 wd:Q2736. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -78210,44 +78210,8 @@
     "ProcessedQuestion": "what wnba team is diana taurasi on",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q240726 wdt:P54 ?x. }",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1274643",
-            "EntityName": "Phoenix Mercury"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1404649",
-            "EntityName": "Fenerbahçe Women's Basketball"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2430030",
-            "EntityName": "UMMC Ekaterinburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2466116",
-            "EntityName": "WBC Dynamo Moscow"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2724835",
-            "EntityName": "WBC Spartak Moscow Region"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q5161554",
-            "EntityName": "UConn Huskies women's basketball"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q65413",
-            "EntityName": "Galatasaray SK"
-          }
-        ]
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q240726 wdt:P54 ?x. ?x wdt:P118 wd:Q2593221. }",
+        "Answers": []
       }
     ]
   },

@@ -28689,7 +28689,7 @@
     "ProcessedQuestion": "who does kris humphries play for in the nba",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 wdt:P54 ?x. ?x wdt:P118 wd:Q155223. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -28725,11 +28725,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q572134",
             "EntityName": "Brooklyn Nets"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q6868278",
-            "EntityName": "Minnesota Golden Gophers men's basketball"
           }
         ]
       }
@@ -29075,7 +29070,7 @@
     "ProcessedQuestion": "who did aaron rodgers play college football 4",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q302581 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q302581 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -29381,7 +29376,7 @@
     "ProcessedQuestion": "who did johnny bench play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1155003 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1155003 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -30173,7 +30168,7 @@
     "ProcessedQuestion": "what teams did charles barkley",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192707 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192707 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -31040,7 +31035,7 @@
     "ProcessedQuestion": "where did matt barnes play",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q555396 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q555396 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -33149,7 +33144,7 @@
     "ProcessedQuestion": "who all has jason kidd played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q221341 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q221341 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -35549,7 +35544,7 @@
     "ProcessedQuestion": "what clubs has peter crouch played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q180939 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q180939 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -37126,7 +37121,7 @@
     "ProcessedQuestion": "what teams has lionel messi played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q615 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q615 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -38467,22 +38462,12 @@
     "ProcessedQuestion": "who does tim howard play for club",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q200785 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q200785 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q847017. }",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q164134",
-            "EntityName": "United States men's national soccer team"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q204220",
             "EntityName": "New York Red Bulls"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q287804",
-            "EntityName": "United States men's national under-20 soccer team"
           },
           {
             "AnswerType": "Entity",
@@ -38493,11 +38478,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q946483",
             "EntityName": "Generation Adidas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q3590572",
-            "EntityName": "United States men's national under-23 soccer team"
           },
           {
             "AnswerType": "Entity",
@@ -47708,7 +47688,7 @@
     "ProcessedQuestion": "who did david villa play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q83006 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q83006 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -49957,17 +49937,12 @@
     "ProcessedQuestion": "what club team is diego forlan on",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q261534 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q261534 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q847017. }",
         "Answers": [
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q80845",
             "EntityName": "S.C. Internacional"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q134916",
-            "EntityName": "Uruguay national football team"
           },
           {
             "AnswerType": "Entity",
@@ -49983,11 +49958,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q994224",
             "EntityName": "Extremadura UD"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2442864",
-            "EntityName": "Uruguay national under-20 football team"
           },
           {
             "AnswerType": "Entity",
@@ -60206,7 +60176,7 @@
     "ProcessedQuestion": "who did mike tomlin play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q371118 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q371118 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -66875,7 +66845,7 @@
     "ProcessedQuestion": "what teams did gretzky play on",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -66989,7 +66959,7 @@
     "ProcessedQuestion": "who did wayne gretzky play 4",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -67430,7 +67400,7 @@
     "ProcessedQuestion": "who all has steve nash played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192955 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192955 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -69966,7 +69936,7 @@
     "ProcessedQuestion": "what club did santi cazorla play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q185225 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q185225 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -76512,7 +76482,7 @@
     "ProcessedQuestion": "who did troy aikman play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q525002 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q525002 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -80961,7 +80931,7 @@
     "ProcessedQuestion": "who has dirk nowitzki played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q44068 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q44068 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -81044,13 +81014,8 @@
     "ProcessedQuestion": "what club team does ronaldinho play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q39444 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q39444 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q847017. }",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q83459",
-            "EntityName": "Brazil national football team"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q221695",
@@ -81073,23 +81038,8 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "Q899189",
-            "EntityName": "Brazil Olympic football team"
-          },
-          {
-            "AnswerType": "Entity",
             "AnswerArgument": "Q1424072",
             "EntityName": "Independiente Santa Fe"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2308235",
-            "EntityName": "Brazil national under-20 football team"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2402747",
-            "EntityName": "Brazil national under-17 football team"
           },
           {
             "AnswerType": "Entity",
@@ -81769,7 +81719,7 @@
     "ProcessedQuestion": "what basketball team does kris humphrey play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 wdt:P54 ?x. ?x wdt:P31 wd:Q13393265. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -85221,7 +85171,7 @@
     "ProcessedQuestion": "what team did john madden play football for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1345694 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1345694 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -85507,7 +85457,7 @@
     "ProcessedQuestion": "what 4 teams did wayne gretzky play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q209518 p:P54 ?p. ?p ps:P54 ?x. } LIMIT 4",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -85523,21 +85473,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q205973",
             "EntityName": "Edmonton Oilers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q207735",
-            "EntityName": "St. Louis Blues"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q503739",
-            "EntityName": "Indianapolis Racers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1502560",
-            "EntityName": "Sault Ste. Marie Greyhounds"
           },
           {
             "AnswerType": "Entity",
@@ -90861,7 +90796,7 @@
     "ProcessedQuestion": "what team did doug williams play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q951164 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q951164 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -91810,7 +91745,7 @@
     "ProcessedQuestion": "what football teams did emmitt smith play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1338802 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1338802 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -92741,7 +92676,7 @@
     "ProcessedQuestion": "what college did kris humphries play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 wdt:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q363421 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q18558301. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -95001,7 +94936,7 @@
     "ProcessedQuestion": "what team did albert pujols play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q148726 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q148726 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -95837,7 +95772,7 @@
     "ProcessedQuestion": "who has tim howard played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q200785 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q200785 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -96080,7 +96015,7 @@
     "ProcessedQuestion": "who did warren moon play for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q126710 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q126710 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -98843,13 +98778,8 @@
     "ProcessedQuestion": "what clubs has messi played for",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q615 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q615 p:P54 ?p. ?p ps:P54 ?x. ?x wdt:P31/wdt:P279* wd:Q847017. }",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q79800",
-            "EntityName": "Argentina national football team"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "Q221882",
@@ -98859,26 +98789,6 @@
             "AnswerType": "Entity",
             "AnswerArgument": "Q483020",
             "EntityName": "Paris Saint-Germain F.C."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q1187790",
-            "EntityName": "Argentina national under-20 football team"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2346842",
-            "EntityName": "FC Barcelona C"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q2462207",
-            "EntityName": "Argentina national under-23 football team"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "Q13562063",
-            "EntityName": "FC Barcelona Juvenil A"
           },
           {
             "AnswerType": "Entity",

@@ -160,7 +160,7 @@
     "ProcessedQuestion": "what team did howie long",
     "Parses": [
       {
-        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q962794 wdt:P54 ?x. }",
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q962794 p:P54 ?p. ?p ps:P54 ?x. }",
         "Answers": [
           {
             "AnswerType": "Entity",
