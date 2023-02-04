@@ -1,0 +1,41 @@
+[
+  {
+    "QuestionId": "WebQTrn-1182",
+    "RawQuestion": "who is the current queen of australia?",
+    "ProcessedQuestion": "who is the current queen of australia",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chghy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chghy ns:royalty.kingdom.rulers ?x .\n?x ns:common.topic.notable_types ns:m.04fnrhx .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d1_f",
+            "EntityName": "Elizabeth II"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1270",
+    "RawQuestion": "who plays sarah wittle in jumanji?",
+    "ProcessedQuestion": "who plays sarah wittle in jumanji",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09w353)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09w353 ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0b3x5zt .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015pvh",
+            "EntityName": "Bonnie Hunt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ktdw_",
+            "EntityName": "Laura Bell Bundy"
+          }
+        ]
+      }
+    ]
+  }
+]

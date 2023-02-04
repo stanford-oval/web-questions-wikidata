@@ -1,0 +1,1456 @@
+[
+  {
+    "QuestionId": "WebQTrn-2232",
+    "RawQuestion": "who did deborah sampson married?",
+    "ProcessedQuestion": "who did deborah sampson married",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q3020894 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2234",
+    "RawQuestion": "who played mickey on days of our lives?",
+    "ProcessedQuestion": "who played mickey on days of our lives",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q185059 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2094650. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2238",
+    "RawQuestion": "what team does reggie bush play for 2011?",
+    "ProcessedQuestion": "what team does reggie bush play for 2011",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q555271 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2012-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2011-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2246",
+    "RawQuestion": "what country surrounds spain?",
+    "ProcessedQuestion": "what country surrounds spain",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q29 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1028",
+            "EntityName": "Morocco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1410",
+            "EntityName": "Gibraltar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q45",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q142",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q228",
+            "EntityName": "Andorra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2255",
+    "RawQuestion": "who invented morse code?",
+    "ProcessedQuestion": "who invented morse code",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q79897 wdt:P61 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q75698",
+            "EntityName": "Samuel Finley Breese Morse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q454292",
+            "EntityName": "Alfred Vail"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2260",
+    "RawQuestion": "where did william howard taft go to high school?",
+    "ProcessedQuestion": "where did william howard taft go to high school",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q35648 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2266",
+    "RawQuestion": "what two countries share a border with the great lakes?",
+    "ProcessedQuestion": "what two countries share a border with the great lakes",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q7347 wdt:P17 ?x. } LIMIT 2",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30",
+            "EntityName": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2267",
+    "RawQuestion": "what year did dwayne wade came to the nba?",
+    "ProcessedQuestion": "what year did dwayne wade came to the nba",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q31683 p:P54 ?p. ?p ps:P54 ?y; pq:P580 ?x. ?y wdt:P118 wd:Q155223. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2003-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2269",
+    "RawQuestion": "where did jackie kennedy go to college?",
+    "ProcessedQuestion": "where did jackie kennedy go to college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165421 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q49204",
+            "EntityName": "Smith College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q209842",
+            "EntityName": "University of Paris"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q333886",
+            "EntityName": "Georgetown University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q432637",
+            "EntityName": "George Washington University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2093794",
+            "EntityName": "Vassar College"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2271",
+    "RawQuestion": "what religion does tom cruise follow?",
+    "ProcessedQuestion": "what religion does tom cruise follow",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q37079 wdt:P140 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q131036",
+            "EntityName": "Scientology"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2278",
+    "RawQuestion": "where did ayn rand live?",
+    "ProcessedQuestion": "where did ayn rand live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q132524 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2279",
+    "RawQuestion": "when was the civil war in libya?",
+    "ProcessedQuestion": "when was the civil war in libya",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q81545 wdt:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2011-02-15T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2282",
+    "RawQuestion": "what influenced roy lichtenstein artwork?",
+    "ProcessedQuestion": "what influenced roy lichtenstein artwork",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q151679 wdt:P737 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2283",
+    "RawQuestion": "what state did romney governor?",
+    "ProcessedQuestion": "what state did romney governor",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q4496 p:P39 ?p. ?p ps:P39 ?y. ?y wdt:P279 wd:Q889821; wdt:P1001 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q771",
+            "EntityName": "Massachusetts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2284",
+    "RawQuestion": "which countries border lake victoria?",
+    "ProcessedQuestion": "which countries border lake victoria",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5505 wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q924",
+            "EntityName": "Tanzania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1036",
+            "EntityName": "Uganda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q114",
+            "EntityName": "Kenya"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2294",
+    "RawQuestion": "who is steve nash married to?",
+    "ProcessedQuestion": "who is steve nash married to",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q192955 wdt:P26 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2301",
+    "RawQuestion": "who does paul wesley play in 24?",
+    "ProcessedQuestion": "who does paul wesley play in 24",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q56194 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q270149; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2302",
+    "RawQuestion": "what continent is australia in?",
+    "ProcessedQuestion": "what continent is australia in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q408 wdt:P30 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q538",
+            "EntityName": "Insular Oceania"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2304",
+    "RawQuestion": "where is spanish springs nv?",
+    "ProcessedQuestion": "where is spanish springs nv",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q376269 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1227",
+            "EntityName": "Nevada"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2307",
+    "RawQuestion": "where did richard nixon go to high school?",
+    "ProcessedQuestion": "where did richard nixon go to high school",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9588 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5508304",
+            "EntityName": "Fullerton Union High School"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7996874",
+            "EntityName": "Whittier High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2308",
+    "RawQuestion": "who stars in the movie fred claus?",
+    "ProcessedQuestion": "who stars in the movie fred claus",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1212854 wdt:P161 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q107730",
+            "EntityName": "Vince Vaughn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q134077",
+            "EntityName": "Rachel Weisz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q193676",
+            "EntityName": "Ludacris"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q208649",
+            "EntityName": "Paul Giamatti"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219373",
+            "EntityName": "Elizabeth Banks"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q229241",
+            "EntityName": "Miranda Richardson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q310947",
+            "EntityName": "Stephen Baldwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q342665",
+            "EntityName": "Jeffrey Dean Morgan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q544465",
+            "EntityName": "Kathy Bates"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q554506",
+            "EntityName": "Liam James"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q888721",
+            "EntityName": "Bobb'e J. Thompson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q959153",
+            "EntityName": "Frank Stallone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q967130",
+            "EntityName": "John Michael Higgins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q981821",
+            "EntityName": "Burn Gorman"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2469915",
+            "EntityName": "Dylan Minnette"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2647961",
+            "EntityName": "Allan Corduner"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3807968",
+            "EntityName": "Jeremy Swift"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3998508",
+            "EntityName": "Trevor Peacock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7781490",
+            "EntityName": "Theo Stevenson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q25144",
+            "EntityName": "Kevin Spacey"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2310",
+    "RawQuestion": "where did madoff live?",
+    "ProcessedQuestion": "where did madoff live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q14043 wdt:P551 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2315",
+    "RawQuestion": "who are the senators of kansas 2013?",
+    "ProcessedQuestion": "who are the senators of kansas 2013",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q4416090; pq:P768 ?w; pq:P580 ?y; pq:P582 ?z. ?w wdt:P131 wd:Q1558. FILTER((?y < \"2014-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1365787",
+            "EntityName": "Jerry Moran"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q538375",
+            "EntityName": "Pat Roberts"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2316",
+    "RawQuestion": "what influenced jackson pollock's work?",
+    "ProcessedQuestion": "what influenced jackson pollock 's work",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q37571 wdt:P737 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2322",
+    "RawQuestion": "who played darth vader in the original star wars movies?",
+    "ProcessedQuestion": "who played darth vader in the original star wars movies",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q17738 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q12206942. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q128379",
+            "EntityName": "David Prowse"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q203960",
+            "EntityName": "James Earl Jones"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2324",
+    "RawQuestion": "what team did joe hart play for before man city?",
+    "ProcessedQuestion": "what team did joe hart play for before man city",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q187184 p:P54 ?p. ?p ps:P54 ?x; pq:P582 ?y. wd:Q10520 p:P54 ?q. ?q ps:P54 wd:Q50602; pq:P580 ?z. FILTER(?y < ?z) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2328",
+    "RawQuestion": "who won the presidential race in venezuela?",
+    "ProcessedQuestion": "who won the presidential race in venezuela",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31 wd:Q858439; wdt:P17 wd:Q717; wdt:P991 ?x; wdt:P585 ?y. } ORDER BY DESC (?y) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q58132",
+            "EntityName": "Nicolás Maduro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2329",
+    "RawQuestion": "where did willy wonka take place?",
+    "ProcessedQuestion": "where did willy wonka take place",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q466605 wdt:P8411 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q83405",
+            "EntityName": "factory"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2336",
+    "RawQuestion": "what college did lee corso attend?",
+    "ProcessedQuestion": "what college did lee corso attend",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6513335 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2348",
+    "RawQuestion": "what state is george washington university located in?",
+    "ProcessedQuestion": "what state is george washington university located in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q432637 wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q495310",
+            "EntityName": "Loudoun County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q61",
+            "EntityName": "Washington, D.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2349",
+    "RawQuestion": "what is the state bird and flower of michigan?",
+    "ProcessedQuestion": "what is the state bird and flower of michigan",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { { wd:Q1166 p:P2238 ?p. ?p ps:P2238 ?x; pq:P3831 wd:Q5113. } UNION { wd:Q1166 p:P2238 ?p. ?p ps:P2238 ?x; pq:P3831 wd:Q506. } }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q460967",
+            "EntityName": "American Robin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q89",
+            "EntityName": "apple"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2352",
+    "RawQuestion": "who are the judges of the supreme court?",
+    "ProcessedQuestion": "who are the judges of the supreme court",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P39 ?y. ?y wdt:P279 wd:Q20706330. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q310829",
+            "EntityName": "John Marshall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q310847",
+            "EntityName": "John Jay"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q311197",
+            "EntityName": "Earl Warren"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q346685",
+            "EntityName": "Warren E. Burger"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q359470",
+            "EntityName": "Roger B. Taney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q433051",
+            "EntityName": "Salmon P. Chase"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q460151",
+            "EntityName": "Fred M. Vinson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q515858",
+            "EntityName": "Oliver Ellsworth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q943046",
+            "EntityName": "Melville Fuller"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1349419",
+            "EntityName": "Morrison Waite"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5889298",
+            "EntityName": "Thomas Johnson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6395324",
+            "EntityName": "Ketanji Brown Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15488345",
+            "EntityName": "Neil Gorsuch"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23908883",
+            "EntityName": "Roy Ashland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29863844",
+            "EntityName": "Amy Coney Barrett"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11153",
+            "EntityName": "John Roberts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35648",
+            "EntityName": "William Howard Taft"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q166436",
+            "EntityName": "Bushrod Washington"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q186278",
+            "EntityName": "Mahlon Pitney"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q202276",
+            "EntityName": "Benjamin Robbins Curtis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q252739",
+            "EntityName": "Lewis F. Powell, Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q285521",
+            "EntityName": "Samuel Chase"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q311562",
+            "EntityName": "William Rehnquist"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q312348",
+            "EntityName": "Thurgood Marshall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q313252",
+            "EntityName": "Charles Evans Hughes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q318143",
+            "EntityName": "Abe Fortas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q360574",
+            "EntityName": "Oliver Wendell Holmes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q365181",
+            "EntityName": "James Wilson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q370781",
+            "EntityName": "John Rutledge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q374427",
+            "EntityName": "David Davis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q432726",
+            "EntityName": "James F. Byrnes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q459752",
+            "EntityName": "Hugo Black"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q472547",
+            "EntityName": "David Souter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q505450",
+            "EntityName": "Robert H. Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q507075",
+            "EntityName": "Stanley Matthews"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q507177",
+            "EntityName": "Harold Hitz Burton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q520840",
+            "EntityName": "Louis Brandeis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q579228",
+            "EntityName": "Levi Woodbury"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q654559",
+            "EntityName": "Howell Edmunds Jackson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q703968",
+            "EntityName": "Owen Roberts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q706463",
+            "EntityName": "Edward Douglass White"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q707528",
+            "EntityName": "William R. Day"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q709513",
+            "EntityName": "Arthur Goldberg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q717401",
+            "EntityName": "William J. Brennan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724116",
+            "EntityName": "Thomas Campbell Clark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724204",
+            "EntityName": "James Clark McReynolds"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724329",
+            "EntityName": "Nathan Clifford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724503",
+            "EntityName": "William Henry Moody"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q724941",
+            "EntityName": "Joseph McKenna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q726427",
+            "EntityName": "Philip Pendleton Barbour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q729054",
+            "EntityName": "William Paterson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q778866",
+            "EntityName": "John Blair Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q817637",
+            "EntityName": "Benjamin N. Cardozo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q887724",
+            "EntityName": "Frank Murphy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q915480",
+            "EntityName": "Henry Baldwin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q926834",
+            "EntityName": "John McKinley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q942386",
+            "EntityName": "Harlan F. Stone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q957749",
+            "EntityName": "John Marshall Harlan II"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q958904",
+            "EntityName": "Byron White"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1064300",
+            "EntityName": "Charles Evans Whittaker"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1234235",
+            "EntityName": "Stephen Johnson Field"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1238208",
+            "EntityName": "Peter Vivian Daniel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1250079",
+            "EntityName": "James Moore Wayne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1261880",
+            "EntityName": "Smith Thompson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1293854",
+            "EntityName": "Edward Terry Sanford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1323255",
+            "EntityName": "Harry Blackmun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1359993",
+            "EntityName": "Potter Stewart"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1368374",
+            "EntityName": "Joseph Story"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1371498",
+            "EntityName": "John McLean"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1391996",
+            "EntityName": "William O. Douglas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1395635",
+            "EntityName": "Pierce Butler"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1403472",
+            "EntityName": "Felix Frankfurter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1404270",
+            "EntityName": "Willis Van Devanter"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1427073",
+            "EntityName": "William Johnson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1489164",
+            "EntityName": "Gabriel Duvall"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1508251",
+            "EntityName": "George Shiras, Jr."
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1508314",
+            "EntityName": "George Sutherland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1521765",
+            "EntityName": "Noah Haynes Swayne"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1549250",
+            "EntityName": "Lucius Q. C. Lamar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1587475",
+            "EntityName": "Joseph P. Bradley"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1606519",
+            "EntityName": "Henry Billings Brown"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1606548",
+            "EntityName": "Henry Brockholst Livingston"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1626713",
+            "EntityName": "Wiley Rutledge"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1627868",
+            "EntityName": "Horace Gray"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1627872",
+            "EntityName": "Horace Harmon Lurton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1648806",
+            "EntityName": "Robert Cooper Grier"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1699162",
+            "EntityName": "John Archibald Campbell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1699569",
+            "EntityName": "John Catron"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1700452",
+            "EntityName": "John Hessin Clarke"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1700972",
+            "EntityName": "John Marshall Harlan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1707930",
+            "EntityName": "Joseph Rucker Lamar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1714230",
+            "EntityName": "Robert Trimble"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1717971",
+            "EntityName": "Samuel Nelson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1771524",
+            "EntityName": "Stanley Forman Reed"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1849894",
+            "EntityName": "Sherman Minton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2063381",
+            "EntityName": "William Cushing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2174811",
+            "EntityName": "Rufus W. Peckham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2218019",
+            "EntityName": "Samuel Blatchford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2218270",
+            "EntityName": "Samuel Freeman Miller"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2427667",
+            "EntityName": "Thomas Todd"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2545208",
+            "EntityName": "Ward Hunt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2578164",
+            "EntityName": "William Burnham Woods"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2580679",
+            "EntityName": "William Strong"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2622090",
+            "EntityName": "Alfred Moore"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4962244",
+            "EntityName": "Brett Kavanaugh"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5235764",
+            "EntityName": "David Josiah Brewer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11107",
+            "EntityName": "Sonia Sotomayor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11105",
+            "EntityName": "Elena Kagan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11109",
+            "EntityName": "John Paul Stevens"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11116",
+            "EntityName": "Ruth Bader Ginsburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11124",
+            "EntityName": "Stephen Breyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11132",
+            "EntityName": "Sandra Day O'Connor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11138",
+            "EntityName": "Samuel Alito"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11142",
+            "EntityName": "Clarence Thomas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11156",
+            "EntityName": "Antonin Scalia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11171",
+            "EntityName": "Anthony Kennedy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24389",
+            "EntityName": "Edward Douglass White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2353",
+    "RawQuestion": "who is the president of brazil now?",
+    "ProcessedQuestion": "who is the president of brazil now",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q5176750 wdt:P1308 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10304982",
+            "EntityName": "Jair Bolsonaro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2354",
+    "RawQuestion": "what years have the ravens won the super bowl?",
+    "ProcessedQuestion": "what years have the ravens won the super bowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q276539; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2001-01-28T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2013-02-03T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2356",
+    "RawQuestion": "what year did the mets win their first world series?",
+    "ProcessedQuestion": "what year did the mets win their first world series",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P3450 wd:Q265538; p:P1346 ?y; wdt:P585 ?x. ?y ps:P1346 wd:Q692417. } ORDER BY ?x LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1969-01-01T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2357",
+    "RawQuestion": "who was leonardo da vinci teacher?",
+    "ProcessedQuestion": "who was leonardo da vinci teacher",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q762 wdt:P1066 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q183458",
+            "EntityName": "Andrea del Verrocchio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q321563",
+            "EntityName": "Paolo dal Pozzo Toscanelli"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q26648",
+            "EntityName": "John Argyropoulos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2358",
+    "RawQuestion": "where did newt gingrich attend college?",
+    "ProcessedQuestion": "where did newt gingrich attend college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q182788 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1193547",
+            "EntityName": "Tulane University"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7851946",
+            "EntityName": "Tulane University School of Liberal Arts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q621043",
+            "EntityName": "Emory University"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2361",
+    "RawQuestion": "where did joe namath attend college?",
+    "ProcessedQuestion": "where did joe namath attend college",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q720558 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q38723. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q492318",
+            "EntityName": "University of Alabama"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2365",
+    "RawQuestion": "what does beth tweddle compete in?",
+    "ProcessedQuestion": "what does beth tweddle compete in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q259259 wdt:P641 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q326827",
+            "EntityName": "artistic gymnastics"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2370",
+    "RawQuestion": "who is playing bilbo in the hobbit movie?",
+    "ProcessedQuestion": "who is playing bilbo in the hobbit movie",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P179 wd:Q1187415; p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q185737. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2372",
+    "RawQuestion": "when did kennedy get elected?",
+    "ProcessedQuestion": "when did kennedy get elected",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q9696 p:P39 ?y. ?y ps:P39 wd:Q1467287; pq:P580 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1960-11-08T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2374",
+    "RawQuestion": "who is the actor that plays rico in hannah montana?",
+    "ProcessedQuestion": "who is the actor that plays rico in hannah montana",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q126631 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q126631. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2377",
+    "RawQuestion": "where is colombia the country?",
+    "ProcessedQuestion": "where is colombia the country",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q739 wdt:P361|wdt:P30|wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18",
+            "EntityName": "South America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q739",
+            "EntityName": "Colombia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2378",
+    "RawQuestion": "who does jodelle ferland play in eclipse?",
+    "ProcessedQuestion": "who does jodelle ferland play in eclipse",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q217010 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 wd:Q144785; pq:P453 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2391",
+    "RawQuestion": "what religion is sammy davis jr?",
+    "ProcessedQuestion": "what religion is sammy davis jr",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q297816 wdt:P140 ?x. }",
+        "Answers": []
+      }
+    ]
+  }
+]

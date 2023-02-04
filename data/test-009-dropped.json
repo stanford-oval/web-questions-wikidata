@@ -1,0 +1,36 @@
+[
+  {
+    "QuestionId": "WebQTest-1607",
+    "RawQuestion": "who won fedex cup 2012?",
+    "ProcessedQuestion": "who won fedex cup 2012",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.08q5ws)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.08q5ws ns:sports.sports_award_type.winners ?y .\n?y ns:sports.sports_award.award_winner ?x .\n?y ns:sports.sports_award.season ns:m.0hrfg40 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vnxb_",
+            "EntityName": "Brandt Snedeker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1555",
+    "RawQuestion": "what is the parliament of nepal called?",
+    "ProcessedQuestion": "what is the parliament of nepal called",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c5yqk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c5yqk ns:type.object.name ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "Parliament of Nepal",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

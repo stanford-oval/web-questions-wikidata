@@ -1,0 +1,19 @@
+[
+  {
+    "QuestionId": "WebQTest-523",
+    "RawQuestion": "what is the largest nation in europe?",
+    "ProcessedQuestion": "what is the largest nation in europe",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02j9z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02j9z ns:base.locations.continents.countries_within ?x .\n?x ns:topic_server.population_number ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06bnz",
+            "EntityName": "Russia"
+          }
+        ]
+      }
+    ]
+  }
+]

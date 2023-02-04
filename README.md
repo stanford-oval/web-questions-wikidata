@@ -6,20 +6,32 @@ This only covers simple questions that are very straightforward.
 For example, the following command will automatically convert the training data. 
 
 ```bash
-node dist/lib/fb2wd.js -i data/train.json --annotated data/train-auto-annotated.json --skipped data/train-skipped.json
+node dist/lib/fb2wd.js -i data/train.json -r data/annotated -d data/dropped --annotated data/train-auto-annotated.json --skipped data/train-auto-skipped.json --dropped data/train-auto-dropped.json
+```
+
+For test data.
+
+```bash
+node dist/lib/fb2wd.js -i data/test.json -r data/annotated -d data/dropped --annotated data/test-auto-annotated.json --skipped data/test-auto-skipped.json --dropped data/test-auto-dropped.json
 ```
 
 
 ## Manual conversion
 
-To annotate the skipped examples in auto conversion, first run the following command to split it into batches:
+To annotate the skipped examples in auto conversion, first run the following command to split the train set into batches:
 
 ```bash
-node dist/lib/splitdata.js --prefix train data/train-skipped.json 
+node dist/lib/split-data.js --prefix train data/train-auto-skipped.json 
 ```
 
 This will generate files `data/train-000.json`, `data/train-001.json`, etc. 
 By default, there are 50 examples in each batch. This makes it easy to have multiple people working on the anntoation.
+
+Run the same command to split the test set into batches:
+
+```bash
+node dist/lib/split-data.js --prefix test data/test-skipped.json 
+```
 
 Then, run the following command to annotate a single batch:
 
@@ -52,7 +64,7 @@ Then the annotator can start typing in the SPARQL for Wikidata.
 For entity variables, use `x`, `y`, `z`, `w`, in order of their appearance in the triples. 
 For predicate variables, use `p`, `q`. 
 Line breaks are allowed when annotating. 
-To consecutive line breaks will inform the system to take the input and verify it. 
+Two consecutive line breaks will inform the system to take the input and verify it. 
 It will check the basic syntax and normalize the SPARQL, then it will run the SPARQL against the Wikidata SPARQL endpoint to retrieve the answers: 
 
 ```

@@ -1,0 +1,68 @@
+[
+  {
+    "QuestionId": "WebQTrn-378",
+    "RawQuestion": "who were the major trade partners of russia?",
+    "ProcessedQuestion": "who were the major trade partners of russia",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\tFILTER (?x != ns:m.06bnz)\n\t{ \n\t  ns:m.06bnz ns:location.statistical_region.places_exported_to ?y .\n\t  ?y ns:location.imports_and_exports.exported_to ?x . \n\t}\n\tUNION\n\t{\n\t  ns:m.06bnz ns:location.statistical_region.places_imported_from ?y .\n\t  ?y ns:location.imports_and_exports.imported_from ?x . \n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t_x",
+            "EntityName": "Uzbekistan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-408",
+    "RawQuestion": "what airport is closest to sandals grande in st lucia?",
+    "ProcessedQuestion": "what airport is closest to sandals grande in st lucia",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06s0l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06s0l ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02zrg2",
+            "EntityName": "George F. L. Charles Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-486",
+    "RawQuestion": "what airport in paris?",
+    "ProcessedQuestion": "what airport in paris",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05qtj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05qtj ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l525",
+            "EntityName": "Paris Orly Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pp90s",
+            "EntityName": "Orly Air Base"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03tjk2",
+            "EntityName": "Beauvais–Tillé Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0qk79",
+            "EntityName": "Charles de Gaulle Airport"
+          }
+        ]
+      }
+    ]
+  }
+]

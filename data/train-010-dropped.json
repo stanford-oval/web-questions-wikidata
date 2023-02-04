@@ -1,0 +1,86 @@
+[
+  {
+    "QuestionId": "WebQTrn-1565",
+    "RawQuestion": "what airport is closest to ithaca ny?",
+    "ProcessedQuestion": "what airport is closest to ithaca ny",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03v_5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03v_5 ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs0p",
+            "EntityName": "Ithaca Tompkins Regional Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1579",
+    "RawQuestion": "where do you fly into for destin?",
+    "ProcessedQuestion": "where do you fly into for destin",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0rp8x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0rp8x ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.mode_of_transportation ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01q6d0",
+            "EntityName": "Destin–Fort Walton Beach Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1639",
+    "RawQuestion": "what was the name of the book hitler wrote while in prison?",
+    "ProcessedQuestion": "what was the name of the book hitler wrote while in prison",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n\n  FILTER (?d > ?from)\n  FILTER (?d > ?to)\n}",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1641",
+    "RawQuestion": "what is the name of the main train station in san francisco?",
+    "ProcessedQuestion": "what is the name of the main train station in san francisco",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d6lp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d6lp ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?y ns:travel.transportation.mode_of_transportation ns:m.07jdr .\n?x ns:location.location.containedby ns:m.0d6lp .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r817z",
+            "EntityName": "San Francisco 4th and King Street Station"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1675",
+    "RawQuestion": "which airport is closest to the city of chicago?",
+    "ProcessedQuestion": "which airport is closest to the city of chicago",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01_d4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01_d4 ns:location.location.nearby_airports ?x .\n?x ns:location.location.containedby ns:m.01_d4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ky66",
+            "EntityName": "O'Hare International Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l1jx",
+            "EntityName": "Chicago Midway International Airport"
+          }
+        ]
+      }
+    ]
+  }
+]

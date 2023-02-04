@@ -1,0 +1,75 @@
+[
+  {
+    "QuestionId": "WebQTest-1968",
+    "RawQuestion": "what was the cause of death for laci peterson?",
+    "ProcessedQuestion": "what was the cause of death for laci peterson",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f6vb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f6vb ns:people.deceased_person.cause_of_death ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051_y",
+            "EntityName": "Murder"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1979",
+    "RawQuestion": "who is number 22 on miami dolphins?",
+    "ProcessedQuestion": "who is number 22 on miami dolphins",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04vn5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04vn5 ns:sports.sports_team.roster ?y .\n?y ns:sports.sports_team_roster.player ?x .\n?y ns:sports.sports_team_roster.number ?sk0 .\nFILTER (str(?sk0) = \"22\")\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk1} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk2 . \nFILTER(xsd:datetime(?sk2) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk3} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk4 . \nFILTER(xsd:datetime(?sk4) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0q3yxb2",
+            "EntityName": "Jamar Taylor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2000",
+    "RawQuestion": "who played berger in sex and the city?",
+    "ProcessedQuestion": "who played berger in sex and the city",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0l76z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0l76z ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.0c7lfjk .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02bpxg",
+            "EntityName": "Ron Livingston"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-2006",
+    "RawQuestion": "what race is vanessa carlton?",
+    "ProcessedQuestion": "what race is vanessa carlton",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02sj66)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02sj66 ns:people.person.ethnicity ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05t0ydg",
+            "EntityName": "Scandinavians"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g6ff",
+            "EntityName": "Russian"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "QuestionId": "WebQTrn-2740",
+    "RawQuestion": "who plays alan parrish in jumanji?",
+    "ProcessedQuestion": "who plays alan parrish in jumanji",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09w353)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09w353 ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0d3n58 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dzf_",
+            "EntityName": "Robin Williams"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fgl6t",
+            "EntityName": "Adam Hann-Byrd"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2789",
+    "RawQuestion": "what unicef stands for?",
+    "ProcessedQuestion": "what unicef stands for",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.0fxc0 ns:common.topic.alias ?x .\n  FILTER (lang(?x) = 'en')\n}",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "United Nations Children's Fund",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2792",
+    "RawQuestion": "who does the uk trade with?",
+    "ProcessedQuestion": "who does the uk trade with",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    ns:m.07ssc ns:location.statistical_region.places_exported_to ?y . # United Kingdom\n    ?y ns:location.imports_and_exports.exported_to ?x .\n  }\n  UNION\n  {\n    ns:m.07ssc ns:location.statistical_region.places_exported_from ?y . # United Kingdom\n    ?y ns:location.imports_and_exports.exported_from ?x .\n  }\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s_2",
+            "EntityName": "Sierra Leone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0d060g",
+            "EntityName": "Canada"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j4b",
+            "EntityName": "Angola"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n3g",
+            "EntityName": "Anguilla"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2793",
+    "RawQuestion": "what color are the baltimore ravens?",
+    "ProcessedQuestion": "what color are the baltimore ravens",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ct6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ct6 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019sc",
+            "EntityName": "Black"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l849",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09ggk",
+            "EntityName": "Purple"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2811",
+    "RawQuestion": "what airport is closest to cancun?",
+    "ProcessedQuestion": "what airport is closest to cancun",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01q98m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01q98m ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fkzs",
+            "EntityName": "Cancún International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2819",
+    "RawQuestion": "what are the major sports played in venezuela?",
+    "ProcessedQuestion": "what are the major sports played in venezuela",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ylj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ylj ns:sports.sports_team_location.teams ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03mf9_m",
+            "EntityName": "Venezuela women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03w9ng1",
+            "EntityName": "Venezuela men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03zkr8",
+            "EntityName": "Venezuela national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0kn5hg6",
+            "EntityName": "Cocodrilos de Caracas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2846",
+    "RawQuestion": "who plays stacey in zoey 101?",
+    "ProcessedQuestion": "who plays stacey in zoey 101",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0558_d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0558_d ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.0gxv6w2 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0p52s",
+            "EntityName": "Jamie Lynn Spears"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2862",
+    "RawQuestion": "what is the postcode for seoul south korea?",
+    "ProcessedQuestion": "what is the postcode for seoul south korea",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0hsqf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0hsqf ns:location.citytown.postal_codes ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cvrg0c",
+            "EntityName": "139-799"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2882",
+    "RawQuestion": "what company did verizon used to be?",
+    "ProcessedQuestion": "what company did verizon used to be",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07_dn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07_dn ns:organization.organization.spun_off_from ?y .\n?y ns:organization.organization_spin_off.parent_company ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dk11j",
+            "EntityName": "AT&T Corporation"
+          }
+        ]
+      }
+    ]
+  }
+]

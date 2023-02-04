@@ -1,0 +1,1447 @@
+[
+  {
+    "QuestionId": "WebQTest-31",
+    "RawQuestion": "where did andy murray started playing tennis?",
+    "ProcessedQuestion": "where did andy murray started playing tennis",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03wc52)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03wc52 ns:tennis.tennis_player.year_turned_pro ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2005",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-44",
+    "RawQuestion": "what is the state flower of arizona?",
+    "ProcessedQuestion": "what is the state flower of arizona",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0vmt)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0vmt ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.04627gn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0m5w_",
+            "EntityName": "Saguaro"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-49",
+    "RawQuestion": "what did the islamic people believe in?",
+    "ProcessedQuestion": "what did the islamic people believe in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0flw86)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0flw86 ns:religion.religion.beliefs ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019vqj",
+            "EntityName": "Mahdi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01bbmp",
+            "EntityName": "Tawhid"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.024b22",
+            "EntityName": "Prophets in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025w817",
+            "EntityName": "Predestination in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wvcg4",
+            "EntityName": "Entering Heaven alive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04xy3",
+            "EntityName": "Monotheism"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0698fs",
+            "EntityName": "Islamic view of angels"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06rvp0",
+            "EntityName": "Qiyamah"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.074hw",
+            "EntityName": "Sharia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07bfrc",
+            "EntityName": "Masih ad-Dajjal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07r6vw",
+            "EntityName": "Islamic holy books"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09kb_2",
+            "EntityName": "God in Islam"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hr6vbp",
+            "EntityName": "Ṭūbā"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-51",
+    "RawQuestion": "who will play mr gray in the film?",
+    "ProcessedQuestion": "who will play mr gray in the film",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0nfjvrm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0nfjvrm ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fs4kv",
+            "EntityName": "Jamie Dornan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-59",
+    "RawQuestion": "when did annie open?",
+    "ProcessedQuestion": "when did annie open",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01_1m4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01_1m4 ns:theater.play.date_of_first_performance ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1976-08-10",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-123",
+    "RawQuestion": "what all does google now do?",
+    "ProcessedQuestion": "what all does google now do",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.045c7b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.045c7b ns:business.consumer_company.products ?y .\n?y ns:business.company_product_relationship.consumer_product ?x .\nFILTER(NOT EXISTS {?y ns:business.company_product_relationship.from_date ?sk0} || \nEXISTS {?y ns:business.company_product_relationship.from_date ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:business.company_product_relationship.to_date ?sk2} || \nEXISTS {?y ns:business.company_product_relationship.to_date ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.010pkp62",
+            "EntityName": "Google Classroom"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03w9g0f",
+            "EntityName": "Google Drive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.064qgt0",
+            "EntityName": "Apache Wave"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ny5h",
+            "EntityName": "Google Earth"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b6g2kz",
+            "EntityName": "Google Buzz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dm258",
+            "EntityName": "Google Docs, Sheets, and Slides"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fpj3tb",
+            "EntityName": "Nexus S"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j7m2zm",
+            "EntityName": "Google Glass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k0p036",
+            "EntityName": "Nexus 7"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k2998k",
+            "EntityName": "Nexus Q"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0nb7n8f",
+            "EntityName": "Nexus 10"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pb8gtr",
+            "EntityName": "Google Maps"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0wf0rgl",
+            "EntityName": "Chromecast"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-238",
+    "RawQuestion": "who did the chargers draft in 2011?",
+    "ProcessedQuestion": "who did the chargers draft in 2011",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06rpd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06rpd ns:sports.professional_sports_team.draft_picks ?y .\n?y ns:sports.sports_league_draft_pick.player ?x .\n?y ns:sports.sports_league_draft_pick.draft ns:m.05sys3j .\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-258",
+    "RawQuestion": "which of the following does australia export the most?",
+    "ProcessedQuestion": "which of the following does australia export the most",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chghy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chghy ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h66y8",
+            "EntityName": "Energy industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hkf",
+            "EntityName": "Agriculture"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-278",
+    "RawQuestion": "who's dating claire danes?",
+    "ProcessedQuestion": "who 's dating claire danes",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01gq0b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01gq0b ns:celebrities.celebrity.sexual_relationships ?y .\n?y ns:celebrities.romantic_relationship.celebrity ?x .\n?y ns:celebrities.romantic_relationship.relationship_type ns:m.02_7k44 .\nFILTER(NOT EXISTS {?y ns:celebrities.romantic_relationship.start_date ?sk0} || \nEXISTS {?y ns:celebrities.romantic_relationship.start_date ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:celebrities.romantic_relationship.end_date ?sk2} || \nEXISTS {?y ns:celebrities.romantic_relationship.end_date ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02tc5y",
+            "EntityName": "Hugh Dancy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-279",
+    "RawQuestion": "what county is st paul va in?",
+    "ProcessedQuestion": "what county is st paul va in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.013nm2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.013nm2 ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.0kpym_ .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mmy6",
+            "EntityName": "Wise County"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mn3x",
+            "EntityName": "Russell County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-281",
+    "RawQuestion": "what type of sports do japanese play?",
+    "ProcessedQuestion": "what type of sports do japanese play",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03_3d)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03_3d ns:sports.sports_team_location.teams ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02ppd68",
+            "EntityName": "Japan women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rkd3c",
+            "EntityName": "Japan men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xh50",
+            "EntityName": "Japan national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05p71j1",
+            "EntityName": "Japan women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09gqcv",
+            "EntityName": "Japan national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f9d97",
+            "EntityName": "Japan national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0qfps15",
+            "EntityName": "Bridgestone-Anchor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0t_dl1j",
+            "EntityName": "Burning"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-284",
+    "RawQuestion": "where did the latin language originate from?",
+    "ProcessedQuestion": "where did the latin language originate from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04h9h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04h9h ns:language.human_language.language_family ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t28",
+            "EntityName": "Italic languages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v09",
+            "EntityName": "Indo-European languages"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-302",
+    "RawQuestion": "what are the official colors of the dallas cowboys?",
+    "ProcessedQuestion": "what are the official colors of the dallas cowboys",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02896)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02896 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01g5v",
+            "EntityName": "Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rnmb",
+            "EntityName": "Navy Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03vtbc",
+            "EntityName": "Silver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06kqt3",
+            "EntityName": "Royal blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-317",
+    "RawQuestion": "where does russia import from?",
+    "ProcessedQuestion": "where does russia import from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06bnz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06bnz ns:location.statistical_region.places_imported_from ?y .\n?y ns:location.imports_and_exports.imported_from ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t_x",
+            "EntityName": "Uzbekistan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-362",
+    "RawQuestion": "when did conflict start in ireland?",
+    "ProcessedQuestion": "when did conflict start in ireland",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.012wgb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.012wgb ns:location.location.events ?x .\n?x ns:common.topic.notable_types ns:m.02h76fz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.016j83",
+            "EntityName": "Irish War of Independence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01gqg3",
+            "EntityName": "Nine Years' War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037pbp",
+            "EntityName": "Irish Confederate Wars"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03kz35",
+            "EntityName": "Irish Rebellion of 1798"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03r8xj",
+            "EntityName": "Wars of the Three Kingdoms"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xvj",
+            "EntityName": "Irish Civil War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ymyvf",
+            "EntityName": "Siege of Smerwick"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0455n7",
+            "EntityName": "Anglo-Spanish War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0467ph",
+            "EntityName": "Williamite War in Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.046d2r",
+            "EntityName": "Jacobite risings"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04qbccl",
+            "EntityName": "Expédition d'Irlande"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.053997",
+            "EntityName": "Irish Rebellion of 1641"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0554yw",
+            "EntityName": "Cromwellian conquest of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05cfx7",
+            "EntityName": "Desmond Rebellions"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05ch2v",
+            "EntityName": "Nine Years' War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05mwtnl",
+            "EntityName": "Planned French invasion of Britain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08zy1f",
+            "EntityName": "Sack of Dun Gallimhe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08zyvy",
+            "EntityName": "Battle of Tochar Cruachain-Bri-Ele"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08zz2w",
+            "EntityName": "Battle of Ros-Mhic-Thriúin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09gdz49",
+            "EntityName": "Guerrilla phase of the Irish Civil War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09qgbg",
+            "EntityName": "Battle of Affane"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bh75th",
+            "EntityName": "Siege of Drogheda"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bmf9lh",
+            "EntityName": "Battle of the Curragh"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c414c",
+            "EntityName": "Battle of Knockdoe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c43s6",
+            "EntityName": "Irish Free State offensive"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c9_fj",
+            "EntityName": "Siege of Waterford"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cffgq",
+            "EntityName": "Norman invasion of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cnvmv",
+            "EntityName": "Bruce campaign in Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ddfcvb",
+            "EntityName": "Battle of Belahoe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fmqqy",
+            "EntityName": "Second Desmond Rebellion"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fzqxy",
+            "EntityName": "Battle of Glentaisie"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gmdvwg",
+            "EntityName": "Siege of Wexford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-390",
+    "RawQuestion": "when was the last time the toronto maple leafs were in the stanley cup finals?",
+    "ProcessedQuestion": "when was the last time the toronto maple leafs were in the stanley cup finals",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ?x ns:sports.sports_championship_event.championship ns:m.0hn79\n  {\n    ?x ns:sports.sports_championship_event.champion ns:m.0j6tr . # Toronto Maple Leafs\n  }\n  UNION\n  {\n    ?x ns:sports.sports_championship_event.runner_up ns:m.0j6tr . # Toronto Maple Leafs\n  }\n  ?x ns:time.event.start_date ?st .\n}\nORDER BY DESC(xsd:datetime(?st))\nLIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03by199",
+            "EntityName": "1967 Stanley Cup Finals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-399",
+    "RawQuestion": "what disease does robin roberts have?",
+    "ProcessedQuestion": "what disease does robin roberts have",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06k3_t)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06k3_t ns:medicine.notable_person_with_medical_condition.condition ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.019gky",
+            "EntityName": "Myelodysplastic syndrome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j8hd",
+            "EntityName": "Breast cancer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-402",
+    "RawQuestion": "what does joey jordison play in slipknot?",
+    "ProcessedQuestion": "what does joey jordison play in slipknot",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01wt4wc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01wt4wc ns:music.group_member.membership ?y .\n?y ns:music.group_membership.role ?x .\n?y ns:music.group_membership.group ns:m.0ntq7 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02hnl",
+            "EntityName": "Drums"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-408",
+    "RawQuestion": "who was the first president of the afl?",
+    "ProcessedQuestion": "who was the first president of the afl",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ysy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ysy ns:organization.organization.founders ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01wtr5",
+            "EntityName": "Lamar Hunt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035yc3",
+            "EntityName": "Bud Adams"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-428",
+    "RawQuestion": "what states make up the midwest us?",
+    "ProcessedQuestion": "what states make up the midwest us",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0q76g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0q76g ns:location.location.contains ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03kch9",
+            "EntityName": "Avenue of the Saints"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03pz_y",
+            "EntityName": "West North Central States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03pzys",
+            "EntityName": "East North Central States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03s0w",
+            "EntityName": "Iowa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v0t",
+            "EntityName": "Illinois"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03v1s",
+            "EntityName": "Indiana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0488g",
+            "EntityName": "Kansas"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04rrx",
+            "EntityName": "Michigan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ych",
+            "EntityName": "Missouri"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ykg",
+            "EntityName": "Minnesota"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fhy",
+            "EntityName": "Nebraska"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fky",
+            "EntityName": "North Dakota"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05kkh",
+            "EntityName": "Ohio"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mz5",
+            "EntityName": "South Dakota"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0824r",
+            "EntityName": "Wisconsin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0t8xg",
+            "EntityName": "Council Grove"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-776",
+    "RawQuestion": "what sport is popular in italy?",
+    "ProcessedQuestion": "what sport is popular in italy",
+    "Parses": [
+      {
+        "ParseId": "WebQTest-776.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "Normal",
+          "FreeFormComment": ""
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03rjj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03rjj ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "italy",
+        "TopicEntityName": "Italy",
+        "TopicEntityMid": "m.03rjj",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.11x7vhqcx",
+            "EntityName": ""
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01_lhg",
+            "EntityName": "Italy national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026pr5r",
+            "EntityName": "Italy women's national beach handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026r5sg",
+            "EntityName": "Italy women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026xx_g",
+            "EntityName": "Italy men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026yzx0",
+            "EntityName": "Italy national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02py_ct",
+            "EntityName": "Italy Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r4hv4",
+            "EntityName": "Italy Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wcqls",
+            "EntityName": "Italy national futsal team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x8htg",
+            "EntityName": "Dinamo Basket Sassari"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x92lv",
+            "EntityName": "Partenope Napoli"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yjv4",
+            "EntityName": "Fortitudo Pallacanestro Bologna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yjwb",
+            "EntityName": "Virtus Pallacanestro Bologna"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z136v",
+            "EntityName": "Juvecaserta Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z68lf",
+            "EntityName": "Italy women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c622g",
+            "EntityName": "Italy men's national pitch and putt team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03t962",
+            "EntityName": "Italy national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03y9nqh",
+            "EntityName": "Italy women's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.041bcz",
+            "EntityName": "Olimpia Milano"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n2m87",
+            "EntityName": "Italy national speedway team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tgph",
+            "EntityName": "Victoria Libertas Pesaro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05yxjr",
+            "EntityName": "Italy national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_8_s",
+            "EntityName": "Italy national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s6pr",
+            "EntityName": "Italy women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0746dd",
+            "EntityName": "Mens Sana 1871 Basket"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07lwfq",
+            "EntityName": "Italy national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07v93_",
+            "EntityName": "Team Liquigas-Cannondale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09bl55",
+            "EntityName": "Pallacanestro Varese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09d34d",
+            "EntityName": "Pallacanestro Treviso"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09zc0d",
+            "EntityName": "Italy men's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b_2gr",
+            "EntityName": "Italy women's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwf1x",
+            "EntityName": "Italy national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f0tjt",
+            "EntityName": "Pallacanestro Cantù"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f0vc8",
+            "EntityName": "S.S. Felice Scandone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f0vk_",
+            "EntityName": "Pallacanestro Virtus Roma"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j289d9",
+            "EntityName": "AS Vicenza"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1082",
+    "RawQuestion": "what are the sports in spain?",
+    "ProcessedQuestion": "what are the sports in spain",
+    "Parses": [
+      {
+        "ParseId": "WebQTest-1082.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "spain",
+        "TopicEntityName": "Spain",
+        "TopicEntityMid": "m.06mkj",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026p7n3",
+            "EntityName": "Spain national beach handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02w64f",
+            "EntityName": "Spain national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c1fqp",
+            "EntityName": "Spain men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d3f5r",
+            "EntityName": "Basket Zaragoza 2002"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d3y56",
+            "EntityName": "CB 1939 Canarias"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04lht1r",
+            "EntityName": "Spain women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04lhy9w",
+            "EntityName": "CB Sant Josep"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051zfgq",
+            "EntityName": "Spain women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05s9mb",
+            "EntityName": "Saski Baskonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06w8y2x",
+            "EntityName": "Obradoiro CAB"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07kfw9h",
+            "EntityName": "CB Avenida"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08_r59",
+            "EntityName": "CB Estudiantes"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08dv_k",
+            "EntityName": "Baloncesto Málaga"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.093fgz",
+            "EntityName": "Real Madrid Baloncesto"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09ctgt",
+            "EntityName": "Joventut Badalona"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0b7611s",
+            "EntityName": "Ros Casares Valencia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkk7d",
+            "EntityName": "CB Sevilla"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bkln2",
+            "EntityName": "CB Breogán"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bklw1",
+            "EntityName": "Valencia BC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bklzm",
+            "EntityName": "Bàsquet Manresa"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ddl_r",
+            "EntityName": "San Sebastián Gipuzkoa BC"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dl843",
+            "EntityName": "CB Murcia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fbjwn",
+            "EntityName": "Spain national handball team"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1084",
+    "RawQuestion": "what sports do people play in poland?",
+    "ProcessedQuestion": "what sports do people play in poland",
+    "Parses": [
+      {
+        "ParseId": "WebQTest-1084.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05qhw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05qhw ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "poland",
+        "TopicEntityName": "Poland",
+        "TopicEntityMid": "m.05qhw",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025wfz7",
+            "EntityName": "Poland national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026prdm",
+            "EntityName": "Poland women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026xnhs",
+            "EntityName": "Poland men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r6q5w",
+            "EntityName": "Poland women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037p7l",
+            "EntityName": "Asseco Gdynia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037p8c",
+            "EntityName": "KK Włocławek"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037ph0",
+            "EntityName": "Turów Zgorzelec"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03b6j8",
+            "EntityName": "Poland national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gv21b",
+            "EntityName": "Stal Gorzów Wielkopolski"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047d9d5",
+            "EntityName": "Śląsk Wrocław"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.051zxkk",
+            "EntityName": "GTŻ Grudziądz"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dd9mps",
+            "EntityName": "Basket Zielona Góra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1838",
+    "RawQuestion": "what sports are popular in germany?",
+    "ProcessedQuestion": "what sports are popular in germany",
+    "Parses": [
+      {
+        "ParseId": "WebQTest-1838.P0",
+        "AnnotatorId": 1,
+        "AnnotatorComment": {
+          "ParseQuality": "Complete",
+          "QuestionQuality": "Good",
+          "Confidence": "VeryLow",
+          "FreeFormComment": "??"
+        },
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0345h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0345h ns:sports.sports_team_location.teams ?x .\n}\n",
+        "PotentialTopicEntityMention": "germany",
+        "TopicEntityName": "Germany",
+        "TopicEntityMid": "m.0345h",
+        "InferentialChain": [
+          "sports.sports_team_location.teams"
+        ],
+        "Constraints": [],
+        "Time": null,
+        "Order": null,
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01l3wr",
+            "EntityName": "Germany national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025t26l",
+            "EntityName": "Germany national cricket team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025wfyk",
+            "EntityName": "Germany national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0260p73",
+            "EntityName": "Germany women's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026f3ys",
+            "EntityName": "Germany women's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026pb10",
+            "EntityName": "Germany national beach handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026pr2_",
+            "EntityName": "Germany women's national beach handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026t7lw",
+            "EntityName": "Germany women's national handball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pnhdq",
+            "EntityName": "Germany Davis Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r4j0b",
+            "EntityName": "Germany Fed Cup team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z6g34",
+            "EntityName": "Germany women's national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030rdb",
+            "EntityName": "Germany women's national football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03c38d5",
+            "EntityName": "Germany men's national volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1r7t",
+            "EntityName": "Germany national korfball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03m3xhy",
+            "EntityName": "Germany national rugby league team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03sx6f",
+            "EntityName": "German National Ice Hockey Team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0414tdm",
+            "EntityName": "Germany national baseball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.043rstb",
+            "EntityName": "Germany national badminton team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047nfps",
+            "EntityName": "Germany national American football team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04cxm_7",
+            "EntityName": "Germany men's national inline hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gk22b",
+            "EntityName": "Germany national beach soccer team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jd6b6",
+            "EntityName": "Germany men's national water polo team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04jgf73",
+            "EntityName": "Germany women's national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mx1yr",
+            "EntityName": "Germany national speedway team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04q8nzj",
+            "EntityName": "Germany men's national pitch and putt team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.053gfcl",
+            "EntityName": "Germany women's national under-18 ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05c03j9",
+            "EntityName": "Germany national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05prqw",
+            "EntityName": "Germany women's national ice hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06y3b4",
+            "EntityName": "Germany national basketball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ldyjt",
+            "EntityName": "Germany U20 women's volleyball team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bs6dhl",
+            "EntityName": "FC Bayern Munich"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0by0kb9",
+            "EntityName": "BG Göttingen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cksc_",
+            "EntityName": "Alba Berlin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cvc05",
+            "EntityName": "Germany national rugby union team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dt889",
+            "EntityName": "Brose Baskets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h167w",
+            "EntityName": "Germany men's national field hockey team"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h407v",
+            "EntityName": "Telekom Baskets Bonn"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h408w",
+            "EntityName": "Skyliners Frankfurt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h40db",
+            "EntityName": "Köln 99ers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h40f0",
+            "EntityName": "Bayer Giants Leverkusen"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h40k4",
+            "EntityName": "EWE Baskets Oldenburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h40lj",
+            "EntityName": "QTSV Quackenbrück"
+          }
+        ]
+      }
+    ]
+  }
+]

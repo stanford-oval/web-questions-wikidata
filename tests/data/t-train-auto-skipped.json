@@ -1,0 +1,19 @@
+[
+  {
+    "QuestionId": "WebQTrn-0",
+    "RawQuestion": "what is the name of justin bieber brother?",
+    "ProcessedQuestion": "what is the name of justin bieber brother",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06w2sn5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06w2sn5 ns:people.person.sibling_s ?y .\n?y ns:people.sibling_relationship.sibling ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gxnnwq",
+            "EntityName": "Jaxon Bieber"
+          }
+        ]
+      }
+    ]
+  }
+]

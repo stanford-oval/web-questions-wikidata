@@ -1,0 +1,83 @@
+[
+  {
+    "QuestionId": "WebQTrn-2921",
+    "RawQuestion": "who started the federal reserve board?",
+    "ProcessedQuestion": "who started the federal reserve board",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02xmb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02xmb ns:organization.organization.founders ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02yy8",
+            "EntityName": "Franklin D. Roosevelt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03gfcd",
+            "EntityName": "Carter Glass"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05n2sf",
+            "EntityName": "Paul Warburg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083q7",
+            "EntityName": "Woodrow Wilson"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2985",
+    "RawQuestion": "where to fly in for galapagos islands?",
+    "ProcessedQuestion": "where to fly in for galapagos islands",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016zjj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016zjj ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0405q0f",
+            "EntityName": "Seymour Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0405q2v",
+            "EntityName": "San Cristóbal Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3003",
+    "RawQuestion": "what do ethiopia import and export?",
+    "ProcessedQuestion": "what do ethiopia import and export",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019pcs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019pcs ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9x1t",
+            "EntityName": "Coffee and Tea Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xnr",
+            "EntityName": "Leather and Hide Tanning and Finishing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qb65t",
+            "EntityName": "Livestock Merchant Wholesalers"
+          }
+        ]
+      }
+    ]
+  }
+]

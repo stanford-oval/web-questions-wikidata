@@ -13,7 +13,11 @@ export const PREFIXES = {
     'p': 'http://www.wikidata.org/prop/',
     'ps': 'http://www.wikidata.org/prop/statement/',
     'pq': 'http://www.wikidata.org/prop/qualifier/',
-    'xsd': 'http://www.w3.org/2001/XMLSchema#'
+    'xsd': 'http://www.w3.org/2001/XMLSchema#',
+    'wikibase': 'http://wikiba.se/ontology#',
+    'bd': 'http://www.bigdata.com/rdf#',
+    'schema': 'http://schema.org/',
+    'rdfs': 'http://www.w3.org/2000/01/rdf-schema#'
 };
 
 export function postprocessSparql(sparql : string, oneline = false) {

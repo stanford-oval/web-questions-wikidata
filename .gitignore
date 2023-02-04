@@ -1,5 +1,6 @@
 dist
 node_modules
+**/.vscode/
 
 annotated.tsv
 dropped.tsv
@@ -10,10 +11,17 @@ data/*
 !data/train-0*.json
 !data/test-0*.json
 !data/train-auto-annotated.json
+!data/train-auto-dropped.json
+!data/train-auto-skipped.json
 !data/test-auto-annotated.json
+!data/test-auto-dropped.json
+!data/test-auto-skipped.json
 !data/train.json
 !data/test.json
 !data/entity-mappings.json
 
 data-test
 
+pattern*.json
+!data/annotated/*
+!data/dropped/*

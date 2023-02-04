@@ -1,18 +1,19 @@
 {
   "name": "web-questions",
+  "main": "dist/lib/fb2wd.js",
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./lib",
     "prepare": "tsc --build"
   },
   "dependencies": {
-    "JSONStream": "^1.3.5",
     "argparse": "^2.0.1",
+    "JSONStream": "^1.3.5",
     "sparqljs": "^3.5.1",
     "sqlite3": "^5.0.2",
-    "typescript": "^4.5.2",
-    "wikibase-sdk": "^7.14.2",
     "thingpedia": "git+https://github.com/stanford-oval/thingpedia-api.git#wip/fix-helper",
-    "thingtalk": "git+https://github.com/stanford-oval/thingtalk.git#wip/qald"
+    "thingtalk": "git+https://github.com/stanford-oval/thingtalk.git#wip/qald",
+    "typescript": "^4.5.2",
+    "wikibase-sdk": "^7.14.2"
   },
   "devDependencies": {
     "@types/argparse": "^2.0.10",

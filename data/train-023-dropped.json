@@ -1,0 +1,101 @@
+[
+  {
+    "QuestionId": "WebQTrn-3713",
+    "RawQuestion": "when is the diwali festival?",
+    "ProcessedQuestion": "when is the diwali festival",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.019fpj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.019fpj ns:time.holiday.day_of_year ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04rc2q7",
+            "EntityName": "29 Ashwin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3740",
+    "RawQuestion": "what are the major imports and exports of canada?",
+    "ProcessedQuestion": "what are the major imports and exports of canada",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015smg",
+            "EntityName": "Automotive industry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025rs2z",
+            "EntityName": "Gold"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tnyc",
+            "EntityName": "Lumber"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9v41",
+            "EntityName": "Wheat Farming"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vwm",
+            "EntityName": "Crude Petroleum and Natural Gas Extraction"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vxr",
+            "EntityName": "Bituminous Coal Underground Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vy9",
+            "EntityName": "Iron Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9vzm",
+            "EntityName": "Copper Ore and Nickel Ore Mining"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9w46",
+            "EntityName": "Electric Power Generation"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9xw9",
+            "EntityName": "Pulp, Paper, and Paperboard Mills"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y3r",
+            "EntityName": "Pharmaceutical and Medicine Manufacturing"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03q9y6g",
+            "EntityName": "Primary Aluminum Production"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtd8p",
+            "EntityName": "Vegetable Oil Mills, Except Corn, Cottonseed, and Soybeans"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qtfwz",
+            "EntityName": "Aircraft"
+          }
+        ]
+      }
+    ]
+  }
+]

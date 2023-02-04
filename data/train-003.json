@@ -1,3156 +1,143 @@
 [
   {
-    "QuestionId": "WebQTrn-240",
-    "RawQuestion": "what year was the great san francisco fire?",
-    "ProcessedQuestion": "what year was the great san francisco fire",
+    "QuestionId": "WebQTrn-524",
+    "RawQuestion": "where do houston aeros play?",
+    "ProcessedQuestion": "where do houston aeros play",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f6rm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f6rm ns:time.event.start_date ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.068hn0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.068hn0 ns:sports.sports_team.arena_stadium ?x .\n?x ns:architecture.structure.opened ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
         "Answers": [
           {
-            "AnswerType": "Value",
-            "AnswerArgument": "1906-04-18",
-            "EntityName": null
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01txlf",
+            "EntityName": "Lakewood Church Central Campus"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-241",
-    "RawQuestion": "what countries share borders with france?",
-    "ProcessedQuestion": "what countries share borders with france",
+    "QuestionId": "WebQTrn-527",
+    "RawQuestion": "what year did brandon roy get drafted?",
+    "ProcessedQuestion": "what year did brandon roy get drafted",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f8l9c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f8l9c ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0cf_p_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0cf_p_ ns:sports.drafted_athlete.drafted ?y .\n?y ns:sports.sports_league_draft_pick.draft ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0154j",
-            "EntityName": "Belgium"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0345h",
-            "EntityName": "Germany"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03rjj",
-            "EntityName": "Italy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04g61",
-            "EntityName": "Luxembourg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w58",
-            "EntityName": "Monaco"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mkj",
-            "EntityName": "Spain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mzp",
-            "EntityName": "Switzerland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07ssc",
-            "EntityName": "United Kingdom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hg5",
-            "EntityName": "Andorra"
+            "AnswerArgument": "m.09th87",
+            "EntityName": "2006 NBA draft"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-242",
-    "RawQuestion": "what did patrick swayze sing?",
-    "ProcessedQuestion": "what did patrick swayze sing",
+    "QuestionId": "WebQTrn-529",
+    "RawQuestion": "what is pennsylvania's state flower called?",
+    "ProcessedQuestion": "what is pennsylvania 's state flower called",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02h3tp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02h3tp ns:music.artist.track ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05tbn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05tbn ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.04627gn .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.010fyfc",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fhpy55",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g0szh8",
-            "EntityName": "She's Like The Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g7rg7k",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g93m8p",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0lr1bk",
-            "EntityName": "Raising Heaven (In Hell Tonight)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0lr1c6",
-            "EntityName": "Cliff's Edge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0nn3wj9",
-            "EntityName": "She's Like the Wind (Dança Quente)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0q19z6",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0rsh2gn",
-            "EntityName": "She's Like the Wind"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0sjjh13",
-            "EntityName": "She's Like the Wind (Dirty Dancing)"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0x4dsp",
-            "EntityName": "Brothers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0yhl4q",
-            "EntityName": "She's Like the Wind"
+            "AnswerArgument": "m.04bxc",
+            "EntityName": "Kalmia latifolia"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-243",
-    "RawQuestion": "what style of art is salvador dali?",
-    "ProcessedQuestion": "what style of art is salvador dali",
+    "QuestionId": "WebQTrn-531",
+    "RawQuestion": "what religions are found in australia?",
+    "ProcessedQuestion": "what religions are found in australia",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09_xn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09_xn ns:visual_art.visual_artist.art_forms ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chghy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chghy ns:location.statistical_region.religions ?y .\n?y ns:location.religion_percentage.religion ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02csf",
-            "EntityName": "Drawing"
+            "AnswerArgument": "m.092bf5",
+            "EntityName": "Buddhism"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.05qdh",
-            "EntityName": "Painting"
+            "AnswerArgument": "m.0c8wxp",
+            "EntityName": "Catholicism"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.05wkw",
-            "EntityName": "Photography"
+            "AnswerArgument": "m.0flw86",
+            "EntityName": "Islam"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.06msq",
-            "EntityName": "Sculpture"
+            "AnswerArgument": "m.0n2g",
+            "EntityName": "Anglicanism"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-246",
-    "RawQuestion": "what are the three major rivers in south america?",
-    "ProcessedQuestion": "what are the three major rivers in south america",
+    "QuestionId": "WebQTrn-532",
+    "RawQuestion": "what college did drew bledsoe?",
+    "ProcessedQuestion": "what college did drew bledsoe",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06n3y)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06n3y ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01xs05k .\n?x ns:geography.river.discharge ?sk0 .\n}\nORDER BY DESC(xsd:float(?sk0))\nLIMIT 3\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03mswq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03mswq ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01tl45",
-            "EntityName": "Rio Negro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0lzjs",
-            "EntityName": "Orinoco"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0sd7",
-            "EntityName": "Amazon River"
+            "AnswerArgument": "m.01h8rk",
+            "EntityName": "Washington State University"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-247",
-    "RawQuestion": "what other discoveries did isaac newton discover?",
-    "ProcessedQuestion": "what other discoveries did isaac newton discover",
+    "QuestionId": "WebQTrn-535",
+    "RawQuestion": "what is guatemala current system of government?",
+    "ProcessedQuestion": "what is guatemala current system of government",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03s9v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03s9v ns:law.inventor.inventions ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0345_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0345_ ns:location.country.form_of_government ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01nhc9",
-            "EntityName": "Reflecting telescope"
+            "AnswerArgument": "m.01d9r3",
+            "EntityName": "Presidential system"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.079vqm",
-            "EntityName": "Pet door"
+            "AnswerArgument": "m.01fpfn",
+            "EntityName": "Unitary state"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c9rw5",
+            "EntityName": "Constitutional republic"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-249",
-    "RawQuestion": "who is tia and tamera mowry parents?",
-    "ProcessedQuestion": "who is tia and tamera mowry parents",
+    "QuestionId": "WebQTrn-538",
+    "RawQuestion": "which countries does russia border?",
+    "ProcessedQuestion": "which countries does russia border",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054xvs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054xvs ns:people.person.parents ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06bnz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06bnz ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
         "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b_x1n8",
-            "EntityName": "Darlene Mowry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gygc8m",
-            "EntityName": "Tim Mowry"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-250",
-    "RawQuestion": "what political party was lincoln?",
-    "ProcessedQuestion": "what political party was lincoln",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gzh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gzh ns:government.politician.party ?y .\n?y ns:government.political_party_tenure.party ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07wbk",
-            "EntityName": "Republican Party"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07wdw",
-            "EntityName": "Whig Party"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d9fdp",
-            "EntityName": "National Union Party"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g7ly4",
-            "EntityName": "Illinois Republican Party"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-252",
-    "RawQuestion": "what kind of government is china?",
-    "ProcessedQuestion": "what kind of government is china",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d05w3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d05w3 ns:location.country.form_of_government ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01fkst",
-            "EntityName": "Communist state"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.025tbxf",
-            "EntityName": "Socialist state"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0py4y",
-            "EntityName": "Single-party state"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-253",
-    "RawQuestion": "where is the nation of greece located?",
-    "ProcessedQuestion": "where is the nation of greece located",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035qy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035qy ns:base.locations.countries.continent ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02j9z",
-            "EntityName": "Europe"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-254",
-    "RawQuestion": "what three countries does mexico border?",
-    "ProcessedQuestion": "what three countries does mexico border",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0b90_r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0b90_r ns:location.location.adjoin_s ?y .\n?y ns:location.adjoining_relationship.adjoins ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0164b",
-            "EntityName": "Belize"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0345_",
-            "EntityName": "Guatemala"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09c7w0",
-            "EntityName": "United States of America"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-256",
-    "RawQuestion": "which countries have english as native language?",
-    "ProcessedQuestion": "which countries have english as native language",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02h40lc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02h40lc ns:language.human_language.main_country ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.014tss",
-            "EntityName": "Kingdom of Great Britain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03rt9",
-            "EntityName": "Republic of Ireland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07ssc",
-            "EntityName": "United Kingdom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09c7w0",
-            "EntityName": "United States of America"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0chghy",
-            "EntityName": "Australia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ctw_b",
-            "EntityName": "New Zealand"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d060g",
-            "EntityName": "Canada"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-258",
-    "RawQuestion": "what are major exports of the usa?",
-    "ProcessedQuestion": "what are major exports of the usa",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09c7w0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09c7w0 ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.015smg",
-            "EntityName": "Automotive industry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03q9wp2",
-            "EntityName": "Food Manufacturing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03qtd_n",
-            "EntityName": "Pharmaceutical Preparation"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03qtf10",
-            "EntityName": "Industrial Organic Chemicals, NEC"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-259",
-    "RawQuestion": "what shows did kellie martin star in?",
-    "ProcessedQuestion": "what shows did kellie martin star in",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03kcyd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03kcyd ns:tv.tv_actor.starring_roles ?y .\n?y ns:tv.regular_tv_appearance.series ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0180mw",
-            "EntityName": "ER"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.025v6tf",
-            "EntityName": "Father Murphy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026h12p",
-            "EntityName": "ABC Weekend Special"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027z1w1",
-            "EntityName": "Mystery Woman"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02s17g",
-            "EntityName": "Mr. Belvedere"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03q1mg",
-            "EntityName": "The Tracey Ullman Show"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03v_dq",
-            "EntityName": "Life Goes On"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03vn46",
-            "EntityName": "Taz-Mania"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03wrwt",
-            "EntityName": "Life with Lucy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05nlzq",
-            "EntityName": "A Pup Named Scooby-Doo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07cf_d1",
-            "EntityName": "Crisis Center"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08znxc",
-            "EntityName": "Christy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d7bm_",
-            "EntityName": "Potato Head Kids"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-261",
-    "RawQuestion": "where is whistler mountain located?",
-    "ProcessedQuestion": "where is whistler mountain located",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02pg6z3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02pg6z3 ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.015jr",
-            "EntityName": "British Columbia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0183r6",
-            "EntityName": "Coast Mountains"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.019f_v",
-            "EntityName": "North American Cordillera"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01jwb2",
-            "EntityName": "Pacific Coast Ranges"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059g4",
-            "EntityName": "North America"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05q3snr",
-            "EntityName": "Fitzsimmons Range"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08p698",
-            "EntityName": "Pacific Ranges"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08pqh0",
-            "EntityName": "Garibaldi Ranges"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d060g",
-            "EntityName": "Canada"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-264",
-    "RawQuestion": "who is julia roberts married to 2012?",
-    "ProcessedQuestion": "who is julia roberts married to 2012",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.046zh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.046zh ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n?y ns:people.marriage.from ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07207k8",
-            "EntityName": "Daniel Moder"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-265",
-    "RawQuestion": "what sport does rebecca adlington compete in?",
-    "ProcessedQuestion": "what sport does rebecca adlington compete in",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.047tr42)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.047tr42 ns:olympics.olympic_athlete.country ?y .\n?y ns:olympics.olympic_athlete_affiliation.sport ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06z6r",
-            "EntityName": "Swimming"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-266",
-    "RawQuestion": "when did the christchurch quake happened?",
-    "ProcessedQuestion": "when did the christchurch quake happened",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gg9kfr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gg9kfr ns:time.event.start_date ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "2011-02-22",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-267",
-    "RawQuestion": "what other countries does canada trade with?",
-    "ProcessedQuestion": "what other countries does canada trade with",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    ns:m.0d060g ns:location.statistical_region.places_exported_to ?y . # Canada\n    ?y ns:location.imports_and_exports.exported_to ?x .\n  }\n  UNION\n  {\n    ns:m.0d060g ns:location.statistical_region.places_exported_from ?y . # Canada\n    ?y ns:location.imports_and_exports.exported_from ?x .\n  }\n}",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03_3d",
-            "EntityName": "Japan"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07ssc",
-            "EntityName": "United Kingdom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09c7w0",
-            "EntityName": "United States of America"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-269",
-    "RawQuestion": "who played mason capwell?",
-    "ProcessedQuestion": "who played mason capwell",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04f3bz1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04f3bz1 ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04qpl4",
-            "EntityName": "Terry Lester"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dvmd",
-            "EntityName": "Leonardo DiCaprio"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-270",
-    "RawQuestion": "what is james madison most famous for?",
-    "ProcessedQuestion": "what is james madison most famous for",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0424m)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0424m ns:common.topic.notable_types ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01xljv7",
-            "EntityName": "US President"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-273",
-    "RawQuestion": "during what war did abraham lincoln serve as president?",
-    "ProcessedQuestion": "during what war did abraham lincoln serve as president",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE\n{ \n  {\n    SELECT ?pfrom ?pto\n    WHERE {\n      ns:m.0gzh ns:government.politician.government_positions_held ?y0 .  # Abraham Lincoln\n      ?y0 ns:government.government_position_held.basic_title ns:m.060c4 ;  # President\n          ns:government.government_position_held.from ?pfrom ;\n          ns:government.government_position_held.to ?pto .\n    }\n  }\n  {\n    SELECT ?from ?to ?x\n    WHERE {\n      ?x ns:common.topic.notable_types ns:m.02h76fz . # Military Conflict\n      ?x ns:time.event.start_date ?from . \n      ?x ns:time.event.end_date ?to . \n      ?x ns:military.military_conflict.combatants ?y .\n      ?y ns:military.military_combatant_group.combatants ns:m.09c7w0 .  # United States of America\n    }\n  }\n  FILTER (?to <= ?pto && ?from >= ?pfrom) \n}",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01_jcc",
-            "EntityName": "Battle of Kirksville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01_nvh",
-            "EntityName": "First Battle of Winchester"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.011j1n",
-            "EntityName": "Second Battle of Fort Fisher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0127mr",
-            "EntityName": "Battle of Shiloh"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.012lb3ht",
-            "EntityName": "Battle of Malvern Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01bdmj",
-            "EntityName": "Battle of Olustee"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01d10b",
-            "EntityName": "Battle of Five Forks"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01d1bc",
-            "EntityName": "Battle of Chickamauga"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01h9__",
-            "EntityName": "Battle of New Market"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01h9zd",
-            "EntityName": "First Battle of Bull Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01hcwf",
-            "EntityName": "Battle of Piedmont"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01jnm",
-            "EntityName": "Battle of Gettysburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01jqty",
-            "EntityName": "Siege of Yorktown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01lb7p",
-            "EntityName": "Battle of Hampton Roads"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01mwkx",
-            "EntityName": "Siege of Port Hudson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01rmc_",
-            "EntityName": "Battle of Prairie Grove"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01rq2g",
-            "EntityName": "Battle of Pea Ridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01tctp",
-            "EntityName": "Battle of Helena"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02_brm",
-            "EntityName": "Battle of Resaca"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02_pps",
-            "EntityName": "Atlanta Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0201mt",
-            "EntityName": "Shimonoseki Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.020xgz",
-            "EntityName": "Battle of Mansfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.021368",
-            "EntityName": "Battle of Fort Henry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0215v5",
-            "EntityName": "Battle of Fort Donelson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.021cgr",
-            "EntityName": "Battle of Cotton Plant"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.021g_3",
-            "EntityName": "Battle of Missionary Ridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0260tjv",
-            "EntityName": "Battle of Salyersville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02610kt",
-            "EntityName": "Battle of Marianna"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026jwxl",
-            "EntityName": "Battle of Fort McAllister"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026jxbb",
-            "EntityName": "Battle of St. Johns Bluff"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026kl1q",
-            "EntityName": "Battle of Altamaha Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026lr88",
-            "EntityName": "Battle of Plymouth"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026mqb6",
-            "EntityName": "Defense of Cincinnati"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026n_8l",
-            "EntityName": "Battle of Bayou Bourbeux"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026q2m",
-            "EntityName": "Battle of Franklin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026r2j8",
-            "EntityName": "Battle of Wood Lake"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026vrtx",
-            "EntityName": "First Battle of Deep Bottom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026xjym",
-            "EntityName": "Battle of Birch Coulee"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026y0k_",
-            "EntityName": "Skirmish of Sporting Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0274p9q",
-            "EntityName": "Battle of Lower Sioux Agency"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0274q23",
-            "EntityName": "Battles of New Ulm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0278ps7",
-            "EntityName": "Battle of Strasburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027ky0t",
-            "EntityName": "Battle of Staunton River Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027ljsd",
-            "EntityName": "Battle of Walkerton"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027n0pn",
-            "EntityName": "Battle of Sappony Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027r0yc",
-            "EntityName": "Battle of Darbytown and New Market Roads"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027w8gv",
-            "EntityName": "Battle of Simmon's Bluff"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0285k1q",
-            "EntityName": "Raid at Combahee Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02bckn",
-            "EntityName": "Battle of Chantilly"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02dtsm",
-            "EntityName": "Bear River Massacre"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02gq54",
-            "EntityName": "Battle of Perryville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02grlk",
-            "EntityName": "Battle of Nashville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02kq7j",
-            "EntityName": "Battle of Philippi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02n29c",
-            "EntityName": "Battle of South Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02n4sf",
-            "EntityName": "Battle of Richmond"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02p037",
-            "EntityName": "Battle of Harpers Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02q6q3y",
-            "EntityName": "Battle of Summit Point"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qjlpy",
-            "EntityName": "Battle of Old River Lake"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qmj9b",
-            "EntityName": "Battle of Cabin Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qn058",
-            "EntityName": "Battle of Middle Boggy Depot"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02r0nzw",
-            "EntityName": "First Battle of Donaldsonville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02r3tph",
-            "EntityName": "First Battle of Dalton"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02r3wns",
-            "EntityName": "Battle of Yellow Bayou"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rh2xr",
-            "EntityName": "Second Battle of Charleston Harbor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rxytz",
-            "EntityName": "Battle of Corrick's Ford"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02tqnn",
-            "EntityName": "Battle of Glorieta Pass"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02vqtj4",
-            "EntityName": "Battle of Fort De Russy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02vqtnm",
-            "EntityName": "Battle of Smithfield Crossing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02vr32l",
-            "EntityName": "Battle of Okolona"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02w_lzy",
-            "EntityName": "Battle of Young's Point"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02w_zkd",
-            "EntityName": "Battle of Unison"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02w6dx",
-            "EntityName": "Battle of Bayou Fourche"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wgp9",
-            "EntityName": "Battle of Island Number Ten"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wwy9z",
-            "EntityName": "Second Battle of Donaldsonville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wx6tm",
-            "EntityName": "Battle of Stirling's Plantation"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wxvg4",
-            "EntityName": "First Battle of Charleston Harbor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wxvp0",
-            "EntityName": "Battle of Grimball's Landing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02z3j7",
-            "EntityName": "Battle of Wilson's Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02z81w",
-            "EntityName": "Battle of Kinston"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03_fgh",
-            "EntityName": "Battle of Killdeer Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.030hvz",
-            "EntityName": "Battle of Peachtree Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.033fhg",
-            "EntityName": "Second Battle of Springfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.035qs3",
-            "EntityName": "Battle of New Bern"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03d0zpv",
-            "EntityName": "Battle of Marion"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03d1yrv",
-            "EntityName": "Battle of Cole Camp"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gqsqh",
-            "EntityName": "Battle of Charlestown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03grhnf",
-            "EntityName": "Siege of Suffolk"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gxtjr",
-            "EntityName": "Battle of Rogersville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03h51s5",
-            "EntityName": "Action at Mount Zion Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03npjh",
-            "EntityName": "Battle of Cedar Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03nq_bp",
-            "EntityName": "Skirmish at Island Mound"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03ns5zj",
-            "EntityName": "Skirmish at Blackwater Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03qk902",
-            "EntityName": "Battle of Moore's Mill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03sfn7",
-            "EntityName": "Dakota War of 1862"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04_fjb",
-            "EntityName": "Battle of Hoover's Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04_rk7",
-            "EntityName": "Battle of Bentonville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04_rm0",
-            "EntityName": "Battle of Averasborough"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0408x8",
-            "EntityName": "Battle of Baxter Springs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0408yr",
-            "EntityName": "Lawrence Massacre"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0408zg",
-            "EntityName": "Battle of Marais des Cygnes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.040908",
-            "EntityName": "Battle of Mine Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.043t65",
-            "EntityName": "Battle of Mobile Bay"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.049385",
-            "EntityName": "Battle of Lewis's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04f7283",
-            "EntityName": "Tullahoma Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04gkn_b",
-            "EntityName": "Wheeler's October 1863 Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04gq6pd",
-            "EntityName": "Beefsteak Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04hfdj",
-            "EntityName": "Battle of Brandy Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04hsqs",
-            "EntityName": "New Mexico Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04hsxk",
-            "EntityName": "Battle of Fort Pillow"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04jfvq",
-            "EntityName": "Battle of Cane Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04jm6ks",
-            "EntityName": "Fight at Aldie"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04jnfr",
-            "EntityName": "Second Battle of Rappahannock Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04lf234",
-            "EntityName": "Battle of Frederick"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04m_sdr",
-            "EntityName": "Battle of Funkstown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04mdfq",
-            "EntityName": "Battle of Kennesaw Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04mxdhl",
-            "EntityName": "The Harmony Skirmish"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04n24jg",
-            "EntityName": "Second Dranesville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04n48df",
-            "EntityName": "Battle of the Cumberland Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04py5h",
-            "EntityName": "Battle of Monocacy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04sdc1",
-            "EntityName": "Battle of Day's Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_mz",
-            "EntityName": "Battle of Cedar Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_qr",
-            "EntityName": "First Battle of Rappahannock Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v_xx",
-            "EntityName": "Manassas Station Operations"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vcpg",
-            "EntityName": "Battle of Decatur"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vpy2",
-            "EntityName": "Battle of Athens"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vq09",
-            "EntityName": "Battle of Williamsburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vq22",
-            "EntityName": "Battle of Eltham's Landing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vq5c",
-            "EntityName": "Battle of Drewry's Bluff"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vq7k",
-            "EntityName": "Battle of Hanover Court House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vq8y",
-            "EntityName": "Battle of Seven Pines"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqf8",
-            "EntityName": "Battle of Oak Grove"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqhq",
-            "EntityName": "Battle of Beaver Dam Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqpt",
-            "EntityName": "Battle of Gaines's Mill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqrm",
-            "EntityName": "Battle of Garnett's & Golding's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqsq",
-            "EntityName": "Battle of Savage's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqvv",
-            "EntityName": "Battle of White Oak Swamp"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vqyp",
-            "EntityName": "Battle of Glendale"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vsss",
-            "EntityName": "Battle of Aquia Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vsx8",
-            "EntityName": "Battle of Big Bethel"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt02",
-            "EntityName": "Battle of Rich Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt0t",
-            "EntityName": "Battle of Kessler's Cross Lanes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt1v",
-            "EntityName": "Battle of Carnifex Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt26",
-            "EntityName": "Battle of Cheat Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt4b",
-            "EntityName": "Battle of Greenbrier River"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt63",
-            "EntityName": "Battle of Camp Allegheny"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vt8k",
-            "EntityName": "Battle of Hoke's Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vtbt",
-            "EntityName": "Battle of Blackburn's Ford"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vtsl",
-            "EntityName": "Battle of Hatteras Inlet Batteries"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vtx6",
-            "EntityName": "Battle of Dranesville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyf2",
-            "EntityName": "Battle of Hancock"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyp4",
-            "EntityName": "Siege of Fort Macon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyqj",
-            "EntityName": "Battle of South Mills"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vysl",
-            "EntityName": "Battle of Tranter's Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyvq",
-            "EntityName": "First Battle of Kernstown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyw1",
-            "EntityName": "Battle of McDowell"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyxv",
-            "EntityName": "Battle of Front Royal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vyzx",
-            "EntityName": "Battle of Cross Keys"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vz0r",
-            "EntityName": "Battle of Port Republic"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vzq_",
-            "EntityName": "Battle of Fort Blakely"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w00d",
-            "EntityName": "Battle of Thoroughfare Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w10t",
-            "EntityName": "Battle of Shepherdstown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w34l",
-            "EntityName": "Battle of White Hall"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w38b",
-            "EntityName": "Battle of Goldsboro Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w3jh",
-            "EntityName": "Battle of Fort Anderson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w3md",
-            "EntityName": "Battle of Washington"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w3r2",
-            "EntityName": "Battle of Suffolk"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w4rx",
-            "EntityName": "Battle of Suffolk"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wb1w",
-            "EntityName": "Second Battle of Winchester"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wb2k",
-            "EntityName": "Battle of Aldie"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wb6h",
-            "EntityName": "Battle of Middleburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wbfj",
-            "EntityName": "Battle of Upperville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wbgy",
-            "EntityName": "Battle of Hanover"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wbkc",
-            "EntityName": "Battle of Williamsport"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wbrz",
-            "EntityName": "Battle of Boonsboro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wbtc",
-            "EntityName": "Battle of Manassas Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04ww3h",
-            "EntityName": "Battle of Roanoke Island"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04y99rf",
-            "EntityName": "Battle of Britton's Lane"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04zt56",
-            "EntityName": "Battle of Ezra Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04zyvzx",
-            "EntityName": "Battle of Laredo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.050qj4",
-            "EntityName": "Battle of Lovejoy's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.053b_d",
-            "EntityName": "First Battle of Fort Fisher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.053cmb",
-            "EntityName": "Battle of Wilmington"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.053klp",
-            "EntityName": "Battle of Westport"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.053wv9",
-            "EntityName": "Battle of Fort Ridgely"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0541vp",
-            "EntityName": "Battle of Chaffin's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.054pn2",
-            "EntityName": "Battle of Appomattox Court House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.054y4f",
-            "EntityName": "Battle of Selma"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0569tz",
-            "EntityName": "Third Battle of Winchester"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.056rdtd",
-            "EntityName": "Battle of Todd's Tavern"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.058_ys",
-            "EntityName": "Battle of Spanish Fort"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0589d3",
-            "EntityName": "Second Battle of Kernstown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0594s6",
-            "EntityName": "Battle of Cool Spring"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0594t7",
-            "EntityName": "Battle of Moorefield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0594tl",
-            "EntityName": "Battle of Rutherford's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0594xd",
-            "EntityName": "Battle of Lynchburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0594zj",
-            "EntityName": "Battle of Fisher's Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05951b",
-            "EntityName": "Battle of Yellow Tavern"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059twk",
-            "EntityName": "Battle of Jackson, Mississippi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05fll8",
-            "EntityName": "Second Battle of Chattanooga"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05g2zy",
-            "EntityName": "Battle of Chalk Bluff"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05g37v",
-            "EntityName": "Battle of Devil's Backbone"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05g3dg",
-            "EntityName": "Battle of Elkin's Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gs6c",
-            "EntityName": "Battle of Sailor's Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gw_k",
-            "EntityName": "Battle of Mount Zion Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwnr",
-            "EntityName": "Battle of Dandridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwr8",
-            "EntityName": "Battle of Blountville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwrm",
-            "EntityName": "Battle of Bean's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwrz",
-            "EntityName": "Battle of Collierville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gws9",
-            "EntityName": "Battle of Campbell's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwt0",
-            "EntityName": "Battle of Columbia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwtq",
-            "EntityName": "Battle of Carthage"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwvd",
-            "EntityName": "Battle of Clark's Mill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwvr",
-            "EntityName": "Battle of Dry Wood Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gww2",
-            "EntityName": "Battle of Fort Davidson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwwf",
-            "EntityName": "Battle of Glasgow, Missouri"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwws",
-            "EntityName": "Battle of Fredericktown"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwx3",
-            "EntityName": "Battle of Hartville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwxg",
-            "EntityName": "First Battle of Independence"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwy4",
-            "EntityName": "Second Battle of Independence"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwyh",
-            "EntityName": "First Battle of Lexington"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwyv",
-            "EntityName": "Second Battle of Lexington"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwzj",
-            "EntityName": "Battle of Little Blue River"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gwzw",
-            "EntityName": "Battle of Lone Jack"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx07",
-            "EntityName": "Battle of Byram's Ford"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx0y",
-            "EntityName": "Battle of Belmont"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx18",
-            "EntityName": "First Battle of Newtonia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx1m",
-            "EntityName": "Second Battle of Newtonia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx1z",
-            "EntityName": "Battle of Roan's Tan Yard"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx29",
-            "EntityName": "First Battle of Springfield"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx2n",
-            "EntityName": "Battle of Blue Springs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx3b",
-            "EntityName": "Battle of Bull's Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx40",
-            "EntityName": "Battle of Hartsville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx51",
-            "EntityName": "Battle of Johnsonville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx5r",
-            "EntityName": "First Battle of Murfreesboro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx6f",
-            "EntityName": "Third Battle of Murfreesboro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx7g",
-            "EntityName": "Battle of Spring Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx8h",
-            "EntityName": "Battle of Wauhatchie"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05gx8v",
-            "EntityName": "Second Battle of Ream's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05h76z",
-            "EntityName": "Battle of Mill Springs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05h7hy",
-            "EntityName": "Battle of Middle Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05hbr7",
-            "EntityName": "Battle of Allatoona"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05hbw1",
-            "EntityName": "Battle of Munfordville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05hg_x",
-            "EntityName": "Battle of Utoy Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05hh0_",
-            "EntityName": "Battle of Jonesborough"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05jzx8",
-            "EntityName": "Second Battle of Petersburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05k0fs",
-            "EntityName": "Third Battle of Petersburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05k4d6",
-            "EntityName": "Battle of White Oak Road"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05k53r",
-            "EntityName": "First Battle of Petersburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05kxs5",
-            "EntityName": "Battle of Mine Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lhjg",
-            "EntityName": "Battle of Wilson's Wharf"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lhjt",
-            "EntityName": "Battle of Totopotomoy Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lhpt",
-            "EntityName": "Battle of Haw's Shop"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05ljch",
-            "EntityName": "Battle of Old Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05ljqd",
-            "EntityName": "Battle of Trevilian Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05ljvy",
-            "EntityName": "Battle of Saint Mary's Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lv52",
-            "EntityName": "Northern Virginia Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lz6n",
-            "EntityName": "Battle of Jerusalem Plank Road"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05lzsh",
-            "EntityName": "Battle of Globe Tavern"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05q4nlk",
-            "EntityName": "Wilson–Kautz Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05rqjw",
-            "EntityName": "Battle of Milliken's Bend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05rrnr",
-            "EntityName": "Battle of Big Black River Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.061btl",
-            "EntityName": "Battle of Dead Buffalo Lake"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.064fvn",
-            "EntityName": "Battle of Davis's Cross Roads"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.064jxc",
-            "EntityName": "First Battle of Fort Wagner"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.064jxq",
-            "EntityName": "Second Battle of Fort Wagner"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.065ytw",
-            "EntityName": "Battle of Adairsville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.067qwb",
-            "EntityName": "Battle of Picacho Pass"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.069b97",
-            "EntityName": "Second Battle of Corinth"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.069jlc",
-            "EntityName": "Battle of Iuka"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06cscq",
-            "EntityName": "Battle of Valverde"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fsvy",
-            "EntityName": "Red River Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06j20n",
-            "EntityName": "Battle of Chusto-Talasah"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06j9yt",
-            "EntityName": "Battle of Dallas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06s62j",
-            "EntityName": "First Battle of Mesilla"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06vw6h",
-            "EntityName": "Morgan's Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07406q",
-            "EntityName": "Battle of Poison Spring"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0760h_",
-            "EntityName": "Battle of Marks' Mills"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.076v1nl",
-            "EntityName": "Battle of Albuquerque"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07sckn6",
-            "EntityName": "Battle of Lookout Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07z_9s",
-            "EntityName": "Battle of Wyse Fork"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.080lrsm",
-            "EntityName": "Battle of Noonday Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.080m6m",
-            "EntityName": "Battle of Secessionville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0848xb",
-            "EntityName": "Battle of Peralta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.086b0x",
-            "EntityName": "Battle of Peebles's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.086cwd",
-            "EntityName": "Battle of Boydton Plank Road"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08bwll",
-            "EntityName": "Battle of Salineville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08hwt_",
-            "EntityName": "Battle of Jenkins' Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08jc5x",
-            "EntityName": "Battle of Prairie D'Ane"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08wwwx",
-            "EntityName": "Battle of Portland Harbor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0910j5",
-            "EntityName": "Battle of Hatcher's Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.093yh0",
-            "EntityName": "Battle of Crampton's Gap"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.097_v4",
-            "EntityName": "Siege of Fort Pulaski"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.097bj9",
-            "EntityName": "Battle of Port Gibson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0980ts",
-            "EntityName": "Battle of Meridian"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09cfc2",
-            "EntityName": "Battle of Chickasaw Bayou"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09g06r",
-            "EntityName": "Battle of Whitestone Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09gpf2h",
-            "EntityName": "Battle of Scary Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09mnpy",
-            "EntityName": "St. Albans Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09p16y",
-            "EntityName": "Capture of New Orleans"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09q9fk",
-            "EntityName": "Battle of Cumberland Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09qtwz",
-            "EntityName": "Battle of Morton's Ford"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09tynk",
-            "EntityName": "Battle of Raymond"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09vnrv",
-            "EntityName": "Siege of Fort Morgan"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09w5kg",
-            "EntityName": "Siege of Fort Gaines"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09y05h",
-            "EntityName": "Battle of Appomattox Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b07pv",
-            "EntityName": "Battle of Tupelo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b0m7k",
-            "EntityName": "Battle of Rivers' Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b6m8l1",
-            "EntityName": "Yazoo Pass Expedition"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b8hhm",
-            "EntityName": "Battle of Princeton Court House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b95hy",
-            "EntityName": "Battle of Carlisle"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9hmq",
-            "EntityName": "First Battle of Auburn"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9hqg",
-            "EntityName": "Second Battle of Auburn"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9hsy",
-            "EntityName": "Battle of Bristoe Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9j73",
-            "EntityName": "Battle of Port Walthall Junction"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9jbl",
-            "EntityName": "Battle of Chester Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9jd9",
-            "EntityName": "Battle of Proctor's Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b9jhr",
-            "EntityName": "Battle of Ware Bottom Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bb3k9",
-            "EntityName": "Battle of Darbytown Road"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bcttq",
-            "EntityName": "Battle of Sutherland's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bcv8k",
-            "EntityName": "Battle of High Bridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bcxk5",
-            "EntityName": "Second Battle of Fort Sumter"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bh9cmn",
-            "EntityName": "Steele's Bayou Expedition"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhqll",
-            "EntityName": "Battle of Grand Gulf"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhqnn",
-            "EntityName": "Battle of Snyder's Bluff"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhqsf",
-            "EntityName": "Battle of Goodrich's Landing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhwg5",
-            "EntityName": "Battle of Honey Springs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjhgv",
-            "EntityName": "Battle of Paducah"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjhnv",
-            "EntityName": "Battle of Rocky Face Ridge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjhsp",
-            "EntityName": "Battle of New Hope Church"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjhvs",
-            "EntityName": "Battle of Pickett's Mill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjhy8",
-            "EntityName": "Battle of Marietta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjj25",
-            "EntityName": "Battle of Kolb's Farm"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjj4n",
-            "EntityName": "Second Battle of Dalton"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjrvc",
-            "EntityName": "Battle of Waynesboro, Georgia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bmcfsw",
-            "EntityName": "Capture of Tucson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bmjdp0",
-            "EntityName": "Battle of the Head of Passes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bn0th",
-            "EntityName": "Battle of Monett's Ferry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bn0vx",
-            "EntityName": "Battle of Pleasant Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bx8kv",
-            "EntityName": "Battle of Port Royal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0by0g9m",
-            "EntityName": "Battle of Corpus Christi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c3m1g",
-            "EntityName": "Battle of Forts Jackson and St. Philip"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c7m42",
-            "EntityName": "Battle of Griswoldville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c7mp0",
-            "EntityName": "Battle of Buck Head Creek"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c7pkn",
-            "EntityName": "Battle of Honey Hill"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cl_mk",
-            "EntityName": "Battle of Stanwix Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cnxpw9",
-            "EntityName": "Capture of Columbia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d0mw",
-            "EntityName": "Battle of Chancellorsville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d0yp",
-            "EntityName": "Battle of the Wilderness"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d20b",
-            "EntityName": "Battle of Spotsylvania Court House"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d220",
-            "EntityName": "Battle of Cold Harbor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dgkk",
-            "EntityName": "Battle of the Crater"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dhj9j",
-            "EntityName": "Battle of Old Fort Wayne"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dxc0s",
-            "EntityName": "Battle of Fort Bisland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dyqyz",
-            "EntityName": "Battle of Irish Bend"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dys72",
-            "EntityName": "Battle of Vermillion Bayou"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f210v",
-            "EntityName": "Battle of Camp Wildcat"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f2283",
-            "EntityName": "Battle of Barbourville"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f777",
-            "EntityName": "Second Battle of Bull Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fgkhp",
-            "EntityName": "Second Battle of Deep Bottom"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g01wl",
-            "EntityName": "Battle of Amelia Springs"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g041x",
-            "EntityName": "Battle of Rice's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g7yf6",
-            "EntityName": "Battle of Monroe's Crossroads"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ggmx4",
-            "EntityName": "Battle of Baton Rouge"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ghmbc",
-            "EntityName": "Battle of Athens"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gkklc",
-            "EntityName": "Battle of Rowlett's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gp2jz",
-            "EntityName": "Battle of Droop Mountain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gpm0n",
-            "EntityName": "First Battle of Ream's Station"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gpsbc",
-            "EntityName": "First Battle of Sabine Pass"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gx2vg0",
-            "EntityName": "Stoneman's 1865 Raid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h1bkdx",
-            "EntityName": "Capture of Plymouth"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h1gmls",
-            "EntityName": "Battle of Trent's Reach"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h1hwvh",
-            "EntityName": "Western Virginia Campaign"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hc50",
-            "EntityName": "Battle of Brice's Crossroads"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0kbcg",
-            "EntityName": "Siege of Petersburg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0lkxb",
-            "EntityName": "Battle of Antietam"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-274",
-    "RawQuestion": "who are shakespeare's parents names?",
-    "ProcessedQuestion": "who are shakespeare 's parents names",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.081k8)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.081k8 ns:people.person.parents ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01stsq",
-            "EntityName": "John Shakespeare"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01xgc7",
-            "EntityName": "Mary Shakespeare"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-275",
-    "RawQuestion": "where is she from shakira?",
-    "ProcessedQuestion": "where is she from shakira",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01wj18h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01wj18h ns:music.artist.origin ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01ls2",
-            "EntityName": "Colombia"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-277",
-    "RawQuestion": "who did hera marry?",
-    "ProcessedQuestion": "who did hera marry",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03g3c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03g3c ns:fictional_universe.fictional_character.married_to ?y .\n?y ns:fictional_universe.marriage_of_fictional_characters.spouses ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bbvfjz",
-            "EntityName": "Zeus"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-278",
-    "RawQuestion": "what type of guitar does kirk hammett play?",
-    "ProcessedQuestion": "what type of guitar does kirk hammett play",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0489w)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0489w ns:music.group_member.instruments_played ?x .\n?x ns:music.instrument.family ns:m.0342h .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.018vs",
-            "EntityName": "Bass guitar"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-279",
-    "RawQuestion": "what language they speak in the philippines?",
-    "ProcessedQuestion": "what language they speak in the philippines",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05v8c)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05v8c ns:location.country.official_language ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01jb8r",
-            "EntityName": "Filipino language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02h40lc",
-            "EntityName": "English Language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-280",
-    "RawQuestion": "where is the kakadu national park located?",
-    "ProcessedQuestion": "where is the kakadu national park located",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0psgs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0psgs ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05ff6",
-            "EntityName": "Northern Territory"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-283",
-    "RawQuestion": "what year did william mckinley became president?",
-    "ProcessedQuestion": "what year did william mckinley became president",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.083p7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.083p7 ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.from ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "1892-01-11",
-            "EntityName": null
-          },
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "1897-03-04",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-284",
-    "RawQuestion": "what date did kennedy become president?",
-    "ProcessedQuestion": "what date did kennedy become president",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d3k14)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d3k14 ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.from ?x .\n?y ns:government.government_position_held.basic_title ns:m.060c4 .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Value",
-            "AnswerArgument": "1961-01-20",
-            "EntityName": null
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-286",
-    "RawQuestion": "who owns aston martin 2012?",
-    "ProcessedQuestion": "who owns aston martin 2012",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ywc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ywc ns:organization.organization.leadership ?y .\n?y ns:organization.leadership.person ?x .\n?y ns:organization.leadership.title ?sk0 .\nFILTER (str(?sk0) = \"Chief Executive Officer\")\nFILTER(NOT EXISTS {?y ns:organization.leadership.from ?sk1} || \nEXISTS {?y ns:organization.leadership.from ?sk2 . \nFILTER(xsd:datetime(?sk2) <= \"2012-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:organization.leadership.to ?sk3} || \nEXISTS {?y ns:organization.leadership.to ?sk4 . \nFILTER(xsd:datetime(?sk4) >= \"2012-01-01\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05wck4",
-            "EntityName": "Ulrich Bez"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-287",
-    "RawQuestion": "what disease has jack osbourne got?",
-    "ProcessedQuestion": "what disease has jack osbourne got",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02348n)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02348n ns:medicine.notable_person_with_medical_condition.condition ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dcqh",
-            "EntityName": "Multiple sclerosis"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-289",
-    "RawQuestion": "who will david beckham play for in 2013?",
-    "ProcessedQuestion": "who will david beckham play for in 2013",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02d9k)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02d9k ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2013-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2013-01-01\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01_1kk",
-            "EntityName": "Paris Saint-Germain F.C."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-290",
-    "RawQuestion": "what language they speak in taiwan?",
-    "ProcessedQuestion": "what language they speak in taiwan",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06f32)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06f32 ns:location.country.official_language ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0653m",
-            "EntityName": "Standard Chinese"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-291",
-    "RawQuestion": "who owns the toronto maple leafs?",
-    "ProcessedQuestion": "who owns the toronto maple leafs",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0j6tr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0j6tr ns:sports.professional_sports_team.owner_s ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06p05l",
-            "EntityName": "Maple Leaf Sports & Entertainment"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-293",
-    "RawQuestion": "what are the basic beliefs of sikhism?",
-    "ProcessedQuestion": "what are the basic beliefs of sikhism",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06yyp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06yyp ns:religion.religion.beliefs ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.017kx3",
-            "EntityName": "Saṃsāra"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02fbl",
-            "EntityName": "Dharma"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.049hc",
-            "EntityName": "Karma"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04xy3",
-            "EntityName": "Monotheism"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06fmt",
-            "EntityName": "Reincarnation"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c576t",
-            "EntityName": "Pyaar"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-295",
-    "RawQuestion": "who was liz taylor married too?",
-    "ProcessedQuestion": "who was liz taylor married too",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bmh4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bmh4 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01tj5w5",
-            "EntityName": "Eddie Fisher"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01w8b5",
-            "EntityName": "John Warner"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02h__m",
-            "EntityName": "Michael Wilding"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02j06h",
-            "EntityName": "Conrad Hilton, Jr."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.063v2l",
-            "EntityName": "Mike Todd"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bhgvg",
-            "EntityName": "Larry Fortensky"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cg9f",
-            "EntityName": "Richard Burton"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-296",
-    "RawQuestion": "where was the ancient region of mesopotamia?",
-    "ProcessedQuestion": "where was the ancient region of mesopotamia",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0524v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0524v ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wsz",
-            "EntityName": "Middle East"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-297",
-    "RawQuestion": "who was real housewives brandi married to?",
-    "ProcessedQuestion": "who was real housewives brandi married to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0h94rm6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0h94rm6 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06xt6v",
-            "EntityName": "Eddie Cibrian"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-299",
-    "RawQuestion": "what's the book hitler wrote in prison?",
-    "ProcessedQuestion": "what 's the book hitler wrote in prison",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n\n  FILTER (?d > ?from)\n  FILTER (?d > ?to)\n}",
-        "Answers": []
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-300",
-    "RawQuestion": "where is the ottoman empire located?",
-    "ProcessedQuestion": "where is the ottoman empire located",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05kyr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05kyr ns:location.location.containedby ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01ffbn",
-            "EntityName": "Near East"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-301",
-    "RawQuestion": "which city held the summer olympics twice?",
-    "ProcessedQuestion": "which city held the summer olympics twice",
-    "Parses": [
-      {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?city \nWHERE {\n  ns:m.06vvk ns:time.recurring_event.instances ?y . # Summer Olympic Games\n  ?y ns:olympics.olympic_games.host_city ?city .\n}\nGROUP BY ?city\nHaving COUNT(?city) = 2",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.030qb3t",
-            "EntityName": "Los Angeles"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05qtj",
-            "EntityName": "Paris"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-302",
-    "RawQuestion": "who are the green bay packers owned by?",
-    "ProcessedQuestion": "who are the green bay packers owned by",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03b3j)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03b3j ns:sports.professional_sports_team.owner_s ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0c24nj",
-            "EntityName": "Green Bay Packers Board of Directors"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-303",
-    "RawQuestion": "what inspired langston hughes to write poetry?",
-    "ProcessedQuestion": "what inspired langston hughes to write poetry",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bv62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bv62 ns:influence.influence_node.influenced_by ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.085gk",
-            "EntityName": "Walt Whitman"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-304",
-    "RawQuestion": "what languages are there in switzerland?",
-    "ProcessedQuestion": "what languages are there in switzerland",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mzp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mzp ns:location.country.languages_spoken ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02bjrlw",
-            "EntityName": "Italian Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04306rv",
-            "EntityName": "German Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.064_8sq",
-            "EntityName": "French"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06ctk",
-            "EntityName": "Romansh language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-306",
-    "RawQuestion": "what does australia export?",
-    "ProcessedQuestion": "what does australia export",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chghy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chghy ns:location.statistical_region.major_exports ?y .\n?y ns:location.imports_exports_by_industry.industry ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02h66y8",
-            "EntityName": "Energy industry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hkf",
-            "EntityName": "Agriculture"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-310",
-    "RawQuestion": "who is married to garry trudeau?",
-    "ProcessedQuestion": "who is married to garry trudeau",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.037w1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.037w1 ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01v3pj",
-            "EntityName": "Jane Pauley"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-312",
-    "RawQuestion": "what language do they speak in northern ireland?",
-    "ProcessedQuestion": "what language do they speak in northern ireland",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05bcl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05bcl ns:location.country.official_language ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0165vf",
-            "EntityName": "Ulster Scots dialects"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02h40lc",
-            "EntityName": "English Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03x42",
-            "EntityName": "Irish"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTrn-313",
-    "RawQuestion": "what countries make up continental europe?",
-    "ProcessedQuestion": "what countries make up continental europe",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02j9z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02j9z ns:base.locations.continents.countries_within ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0154j",
-            "EntityName": "Belgium"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.015qh",
-            "EntityName": "Bulgaria"
-          },
           {
             "AnswerType": "Entity",
             "AnswerArgument": "m.0163v",
             "EntityName": "Belarus"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0166b",
-            "EntityName": "Bosnia and Herzegovina"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01mjq",
-            "EntityName": "Czech Republic"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01pj7",
-            "EntityName": "Croatia"
           },
           {
             "AnswerType": "Entity",
@@ -3164,38 +151,8 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0345h",
-            "EntityName": "Germany"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.035qy",
-            "EntityName": "Greece"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gj2",
-            "EntityName": "Hungary"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03rj0",
-            "EntityName": "Iceland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03rjj",
-            "EntityName": "Italy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03rt9",
-            "EntityName": "Republic of Ireland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04fh3",
-            "EntityName": "Republic of Kosovo"
+            "AnswerArgument": "m.047lj",
+            "EntityName": "Kazakhstan"
           },
           {
             "AnswerType": "Entity",
@@ -3204,43 +161,13 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04g61",
-            "EntityName": "Luxembourg"
-          },
-          {
-            "AnswerType": "Entity",
             "AnswerArgument": "m.04gzd",
             "EntityName": "Lithuania"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04j53",
-            "EntityName": "Liechtenstein"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v3q",
-            "EntityName": "Malta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w4s",
-            "EntityName": "Moldova"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w58",
-            "EntityName": "Monaco"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.056vv",
-            "EntityName": "Montenegro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.059j2",
-            "EntityName": "Netherlands"
+            "AnswerArgument": "m.04w8f",
+            "EntityName": "Mongolia"
           },
           {
             "AnswerType": "Entity",
@@ -3249,58 +176,13 @@
           },
           {
             "AnswerType": "Entity",
+            "AnswerArgument": "m.05b7q",
+            "EntityName": "North Korea"
+          },
+          {
+            "AnswerType": "Entity",
             "AnswerArgument": "m.05qhw",
             "EntityName": "Poland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05r4w",
-            "EntityName": "Portugal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06bnz",
-            "EntityName": "Russia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06c1y",
-            "EntityName": "Romania"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mkj",
-            "EntityName": "Spain"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mzp",
-            "EntityName": "Switzerland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06npd",
-            "EntityName": "Slovakia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06sff",
-            "EntityName": "San Marino"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06t8v",
-            "EntityName": "Slovenia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.077qn",
-            "EntityName": "Serbia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07ssc",
-            "EntityName": "United Kingdom"
           },
           {
             "AnswerType": "Entity",
@@ -3309,13 +191,8 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.07ytt",
-            "EntityName": "Vatican City"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bjv6",
-            "EntityName": "Republic of Macedonia"
+            "AnswerArgument": "m.0d05w3",
+            "EntityName": "China"
           },
           {
             "AnswerType": "Entity",
@@ -3324,55 +201,1092 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0d0vqn",
-            "EntityName": "Sweden"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h7x",
-            "EntityName": "Austria"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hg5",
-            "EntityName": "Andorra"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jdx",
-            "EntityName": "Albania"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jgx",
-            "EntityName": "Armenia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0k6nt",
-            "EntityName": "Denmark"
+            "AnswerArgument": "m.0jhd",
+            "EntityName": "Azerbaijan"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTrn-314",
-    "RawQuestion": "what do abrahamic religions have in common?",
-    "ProcessedQuestion": "what do abrahamic religions have in common",
+    "QuestionId": "WebQTrn-543",
+    "RawQuestion": "who played lois lane in superman 1?",
+    "ProcessedQuestion": "who played lois lane in superman 1",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0f_h6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0f_h6 ns:religion.religion.practices ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04pzy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04pzy ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.film ns:m.01_mdl .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01zky",
-            "EntityName": "Circumcision"
+            "AnswerArgument": "m.04mlmx",
+            "EntityName": "Margot Kidder"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-552",
+    "RawQuestion": "when was bill clinton elected president?",
+    "ProcessedQuestion": "when was bill clinton elected president",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?dt\nWHERE {\n  ?e ns:government.election.winner  ns:m.0157m ; # Bill Clinton\n     ns:government.election.office  ns:m.060d2 ; # President of the United States\n     ns:government.election.election_year ?dt  .\n}",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1992",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1992-11-03",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1996",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1996-11-05",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-555",
+    "RawQuestion": "when michael jordan got drafted?",
+    "ProcessedQuestion": "when michael jordan got drafted",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.drafted_athlete.drafted ?y .\n?y ns:sports.sports_league_draft_pick.draft ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06jncs",
+            "EntityName": "1984 NBA draft"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-557",
+    "RawQuestion": "who played dorothy in the wizard of oz movie?",
+    "ProcessedQuestion": "who played dorothy in the wizard of oz movie",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02q52q)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02q52q ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.020hj1 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g10g",
+            "EntityName": "Judy Garland"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-559",
+    "RawQuestion": "what college did james franco go to?",
+    "ProcessedQuestion": "what college did james franco go to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05bnp0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05bnp0 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vg13",
+            "EntityName": "Brooklyn College"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04xy3",
-            "EntityName": "Monotheism"
+            "AnswerArgument": "m.025rrjh",
+            "EntityName": "Columbia University School of the Arts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02s62q",
+            "EntityName": "Rhode Island School of Design"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ysv6",
+            "EntityName": "Warren Wilson College"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04b_46",
+            "EntityName": "Tisch School of the Arts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08815",
+            "EntityName": "University Yale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09f2j",
+            "EntityName": "University of California, Los Angeles"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-560",
+    "RawQuestion": "how many teams are there in the ncaa football?",
+    "ProcessedQuestion": "how many teams are there in the ncaa football",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gh43)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gh43 ns:sports.sports_league.teams ?y .\n?y ns:sports.sports_league_participation.team ?x .\n?x ns:common.topic.notable_types ns:m.01xljyt .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pd1tf",
+            "EntityName": "Stanford Cardinal football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07k53y",
+            "EntityName": "USC Trojans football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07kcvl",
+            "EntityName": "Miami Hurricanes football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.086hg9",
+            "EntityName": "Auburn Tigers football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bjkk9",
+            "EntityName": "Nebraska Cornhuskers football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fbq2n",
+            "EntityName": "Oregon Ducks football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fht9f",
+            "EntityName": "LSU Tigers football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fjzsy",
+            "EntityName": "Ohio State Buckeyes football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0frm7n",
+            "EntityName": "Penn State Nittany Lions football"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0fsb_6",
+            "EntityName": "Michigan Wolverines football"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-561",
+    "RawQuestion": "who is garrett pretty little liars?",
+    "ProcessedQuestion": "who is garrett pretty little liars",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.09v38qj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.09v38qj ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.0h5dyd5 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwl3d",
+            "EntityName": "Yani Gellman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-564",
+    "RawQuestion": "what religion was john f kennedy?",
+    "ProcessedQuestion": "what religion was john f kennedy",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d3k14)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d3k14 ns:base.popstra.celebrity.religion ?y .\n?y ns:base.popstra.religion_choice.religion ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c8wxp",
+            "EntityName": "Catholicism"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-565",
+    "RawQuestion": "where was the earthquake in chile 2010?",
+    "ProcessedQuestion": "where was the earthquake in chile 2010",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bmhrmh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bmhrmh ns:event.disaster.areas_affected ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036fp1",
+            "EntityName": "Maule Region"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-571",
+    "RawQuestion": "where did kate middleton go to prep school?",
+    "ProcessedQuestion": "where did kate middleton go to prep school",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05mnc3)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05mnc3 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:education.educational_institution.school_type ns:m.07g47h .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gmdq9d",
+            "EntityName": "St Andrew's School, Pangbourne"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-573",
+    "RawQuestion": "what did hans oersted discovered in 1819?",
+    "ProcessedQuestion": "what did hans oersted discovered in 1819",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0265qkf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0265qkf ns:chemistry.element_discoverer.discovered ?x .\nFILTER(NOT EXISTS {?x ns:chemistry.chemical_element.discovery_date ?sk0} || \nEXISTS {?x ns:chemistry.chemical_element.discovery_date ?sk1 . \nFILTER(xsd:datetime(?sk1) >= \"1819-01-01\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?x ns:chemistry.chemical_element.discovery_date ?sk2} || \nEXISTS {?x ns:chemistry.chemical_element.discovery_date ?sk3 . \nFILTER(xsd:datetime(?sk3) <= \"1819-12-31\"^^xsd:dateTime) })\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-574",
+    "RawQuestion": "what is the very first harry potter book?",
+    "ProcessedQuestion": "what is the very first harry potter book",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03647x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03647x ns:book.book_character.appears_in_book ?x .\n?x ns:book.written_work.date_written ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_vk",
+            "EntityName": "Harry Potter and the Philosopher's Stone"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-584",
+    "RawQuestion": "where was hackney 2012 held?",
+    "ProcessedQuestion": "where was hackney 2012 held",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0yx1g5l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0yx1g5l ns:time.event.locations ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.031dy5",
+            "EntityName": "Hackney Marshes"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-592",
+    "RawQuestion": "who sang for pink floyd?",
+    "ProcessedQuestion": "who sang for pink floyd",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  {\n    ns:m.01wv9xn ns:music.musical_group.member ?y .\n    ?y ns:music.group_membership.member ?x ;\n       ns:music.group_membership.role ns:m.0290ngj . #vocals\n  }\n  UNION\n  {\n    ns:m.01wv9xn ns:music.musical_group.member ?y .\n    ?y ns:music.group_membership.member ?x ;\n       ns:music.group_membership.role ns:m.0_sv_90 . #lead vocals\n  }\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.017g21",
+            "EntityName": "Roger Waters"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs4f3",
+            "EntityName": "Syd Barrett"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01vs4ff",
+            "EntityName": "David Gilmour"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.032t2z",
+            "EntityName": "Richard Wright"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-595",
+    "RawQuestion": "what shows did henry winkler produce?",
+    "ProcessedQuestion": "what shows did henry winkler produce",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.024jwt)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.024jwt ns:tv.tv_producer.programs_produced ?y .\n?y ns:tv.tv_producer_term.program ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01fj53",
+            "EntityName": "MacGyver"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.026v67_",
+            "EntityName": "Who Are the DeBolts? And Where Did They Get Nineteen Kids?"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z2yth",
+            "EntityName": "Dallas Reunion: The Return to Southfork"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04mzj0q",
+            "EntityName": "Dead Man's Gun"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zswr",
+            "EntityName": "So Weird"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0744n6",
+            "EntityName": "Mr. Sunshine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dbm1y",
+            "EntityName": "WinTuition"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-596",
+    "RawQuestion": "what state was texaco gas founded?",
+    "ProcessedQuestion": "what state was texaco gas founded",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0g499)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0g499 ns:organization.organization.place_founded ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0104lr",
+            "EntityName": "Beaumont"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-598",
+    "RawQuestion": "who is the senator of connecticut 2010?",
+    "ProcessedQuestion": "who is the senator of connecticut 2010",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01x73)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01x73 ns:government.political_district.representatives ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.office_position_or_title ns:m.02_7l8y .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2010-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2010-01-01\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xcly",
+            "EntityName": "Chris Dodd"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0jw5r",
+            "EntityName": "Joe Lieberman"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-599",
+    "RawQuestion": "when was the last time the dallas cowboys went to the super bowl?",
+    "ProcessedQuestion": "when was the last time the dallas cowboys went to the super bowl",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.06x5s ns:sports.sports_championship.events ?x . # Super Bowl\n  {\n    { ?x ns:sports.sports_championship_event.runner_up ns:m.02896  . } # Dallas Cowboys\n    UNION\n    { ?x ns:sports.sports_championship_event.champion ns:m.02896 . } # Dallas Cowboys\n  }\n  ?x ns:time.event.start_date ?d .\n}\nORDER BY DESC(?d)\nLIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.076wz",
+            "EntityName": "Super Bowl XXX"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-611",
+    "RawQuestion": "what position did george washington serve in the constitutional convention?",
+    "ProcessedQuestion": "what position did george washington serve in the constitutional convention",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.034rd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.034rd ns:government.politician.government_positions_held ?y .\n?y ns:government.government_position_held.office_position_or_title ?x .\n?y ns:government.government_position_held.governmental_body ns:m.09k5k .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09ryhrh",
+            "EntityName": "Delegate to the Continental Congress"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-612",
+    "RawQuestion": "where is the 2012 ncaa basketball tournament?",
+    "ProcessedQuestion": "where is the 2012 ncaa basketball tournament",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.080nmfs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.080nmfs ns:time.event.locations ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01mq08",
+            "EntityName": "Talking Stick Resort Arena"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01n31w",
+            "EntityName": "Moda Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02b99h",
+            "EntityName": "Edward Jones Dome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02hqj2",
+            "EntityName": "TD Garden"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02p_rvk",
+            "EntityName": "Consol Energy Center"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02y3xn",
+            "EntityName": "Mercedes-Benz Superdome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02z6zt",
+            "EntityName": "Bridgestone Arena"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0328cp",
+            "EntityName": "Nationwide Arena"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.038bv6",
+            "EntityName": "Georgia Dome"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.039nbl",
+            "EntityName": "Greensboro Coliseum Complex"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0635xb",
+            "EntityName": "The Pit"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0635y4",
+            "EntityName": "UD Arena"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.063ypc",
+            "EntityName": "CenturyLink Center Omaha"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f0fv9",
+            "EntityName": "KFC Yum! Center"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-613",
+    "RawQuestion": "what episode did kate leave ncis?",
+    "ProcessedQuestion": "what episode did kate leave ncis",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03m8sg)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03m8sg ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.to ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.07wp6d .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2012-02-07",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-614",
+    "RawQuestion": "where are the seneca indians now?",
+    "ProcessedQuestion": "where are the seneca indians now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.028yj0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.028yj0 ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rby",
+            "EntityName": "New York"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05kr_",
+            "EntityName": "Ontario"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-615",
+    "RawQuestion": "what did farrah dad do?",
+    "ProcessedQuestion": "what did farrah dad do",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.01j851 ns:people.person.parents ?y . # Farrah Fawcett\n  ?y ns:people.person.gender ns:m.05zppz . # Male\n  ?y ns:people.person.profession ?x .\n}",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-618",
+    "RawQuestion": "what college did lil wayne graduated from?",
+    "ProcessedQuestion": "what college did lil wayne graduated from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016kjs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016kjs ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?y ns:education.education.degree ns:m.02h4rq6 .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02gnrt",
+            "EntityName": "University of Phoenix"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-620",
+    "RawQuestion": "who does kurt busch drive for now?",
+    "ProcessedQuestion": "who does kurt busch drive for now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02llzy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02llzy ns:base.nascar.nascar_driver.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.073mq9",
+            "EntityName": "Team Penske"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-621",
+    "RawQuestion": "what years did the knicks win the championship?",
+    "ProcessedQuestion": "what years did the knicks win the championship",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jm3v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jm3v ns:sports.sports_team.championships ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1kg",
+            "EntityName": "1973 NBA Finals"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cs1x4",
+            "EntityName": "1970 NBA Finals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-624",
+    "RawQuestion": "what state did thomas jefferson live in?",
+    "ProcessedQuestion": "what state did thomas jefferson live in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07cbs)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07cbs ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n?x ns:common.topic.notable_types ns:m.0kpys4 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07z1m",
+            "EntityName": "Virginia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-627",
+    "RawQuestion": "what was richard wright known for?",
+    "ProcessedQuestion": "what was richard wright known for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bv6k)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bv6k ns:common.topic.notable_types ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xryvt",
+            "EntityName": "Author"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-630",
+    "RawQuestion": "what was the name of wright brothers plane?",
+    "ProcessedQuestion": "what was the name of wright brothers plane",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0fzv_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0fzv_ ns:aviation.aircraft_manufacturer.aircraft_models_made ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "g.1hb_g613l",
+            "EntityName": "Wright Model EX"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.025tb9v",
+            "EntityName": "1902 Wright Glider"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x015_",
+            "EntityName": "Wright Model B"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02x01s7",
+            "EntityName": "Wright Model C"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0416n2",
+            "EntityName": "Wright Flyer"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bt3mt",
+            "EntityName": "1900 Wright Glider"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-631",
+    "RawQuestion": "where is located university of leeds?",
+    "ProcessedQuestion": "where is located university of leeds",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bzs9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bzs9 ns:location.location.containedby ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04p3c",
+            "EntityName": "Leeds"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ssc",
+            "EntityName": "United Kingdom"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-635",
+    "RawQuestion": "what team did grover cleveland alexander play for?",
+    "ProcessedQuestion": "what team did grover cleveland alexander play for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01zt27)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01zt27 ns:baseball.baseball_player.batting_stats ?y .\n?y ns:baseball.batting_statistics.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01yjl",
+            "EntityName": "Chicago Cubs"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05xvj",
+            "EntityName": "Philadelphia Phillies"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06x68",
+            "EntityName": "St. Louis Cardinals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-645",
+    "RawQuestion": "what movies did luke perry play in?",
+    "ProcessedQuestion": "what movies did luke perry play in",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01g65g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01g65g ns:film.person_or_entity_appearing_in_film.films ?y .\n?y ns:film.personal_film_appearance.film ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gyqzbv",
+            "EntityName": "Battle Scars: The Bud Moore Story"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-654",
+    "RawQuestion": "what was the title of the first book dr. seuss wrote?",
+    "ProcessedQuestion": "what was the title of the first book dr. seuss wrote",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02g3w)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02g3w ns:book.author.works_written ?x .\n?x ns:common.topic.notable_types ns:m.01xryvm .\n?x ns:book.written_work.copyright_date ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.047gx6",
+            "EntityName": "The 500 Hats of Bartholomew Cubbins"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-659",
+    "RawQuestion": "where does joey king live?",
+    "ProcessedQuestion": "where does joey king live",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03yk4pb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03yk4pb ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.030qb3t",
+            "EntityName": "Los Angeles"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cv3w",
+            "EntityName": "Las Vegas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-661",
+    "RawQuestion": "how many australian states and territories?",
+    "ProcessedQuestion": "how many australian states and territories",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x \nWHERE {\n\t{ \n\t  ns:m.0chghy ns:location.country.administrative_divisions ?x .\n\t  ?x ns:common.topic.notable_types ns:m.02xhc47 .  #australian state\n\t}\n\tUNION\n\t{ \n\t  ns:m.0chghy ns:location.country.administrative_divisions ?x .\n\t  ?x ns:common.topic.notable_types ns:m.02_8yfs .  #australian external territory\n\t}\n\tUNION\n\t{ \n\t  ns:m.0chghy ns:location.country.administrative_divisions ?x .\n\t  ?x ns:common.topic.notable_types ns:m.02xhc4k .  #australian territory\n\t}\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01k3pm",
+            "EntityName": "Australian Antarctic Territory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01p88",
+            "EntityName": "Coral Sea Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05ff6",
+            "EntityName": "Northern Territory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05fly",
+            "EntityName": "New South Wales"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mtq",
+            "EntityName": "South Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07cfx",
+            "EntityName": "Tasmania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0847q",
+            "EntityName": "Western Australia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0chgr2",
+            "EntityName": "Victoria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g39h",
+            "EntityName": "Queensland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n3z",
+            "EntityName": "Ashmore and Cartier Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0pmwq",
+            "EntityName": "Jervis Bay Territory"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0vh3",
+            "EntityName": "Australian Capital Territory"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-662",
+    "RawQuestion": "what was manchester united first name?",
+    "ProcessedQuestion": "what was manchester united first name",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.050fh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.050fh ns:sports.sports_team.previously_known_as ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05l1ffz",
+            "EntityName": "Newton Heath L&YR F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-663",
+    "RawQuestion": "who is the governor of hawaii now?",
+    "ProcessedQuestion": "who is the governor of hawaii now",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01lk20)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01lk20 ns:government.government_office_or_title.office_holders ?y .\n?y ns:government.government_position_held.office_holder ?x .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0255rj",
+            "EntityName": "Neil Abercrombie"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-673",
+    "RawQuestion": "what is the jurisdiction of the us supreme court?",
+    "ProcessedQuestion": "what is the jurisdiction of the us supreme court",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07sz1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07sz1 ns:law.court.jurisdiction ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-674",
+    "RawQuestion": "what voice does hank azaria do on the simpsons?",
+    "ProcessedQuestion": "what voice does hank azaria do on the simpsons",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0sw6g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0sw6g ns:tv.tv_actor.starring_roles ?y .\n?y ns:tv.regular_tv_appearance.character ?x .\n?y ns:tv.regular_tv_appearance.special_performance_type ns:m.02nsjvf .\n?y ns:tv.regular_tv_appearance.series ns:m.07c72 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h8_q",
+            "EntityName": "Carl Carlson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h8np",
+            "EntityName": "Moe Szyslak"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h8qy",
+            "EntityName": "Comic Book Guy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h8s3",
+            "EntityName": "Apu Nahasapeemapetilon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h8tq",
+            "EntityName": "Chief Wiggum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-677",
+    "RawQuestion": "what instrument does bela fleck play?",
+    "ProcessedQuestion": "what instrument does bela fleck play",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.017f9r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.017f9r ns:music.musical_group.member ?y .\n?y ns:music.group_membership.role ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018j2",
+            "EntityName": "Banjo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.018vs",
+            "EntityName": "Bass guitar"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03qjg",
+            "EntityName": "Harmonica"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06ncr",
+            "EntityName": "Saxophone"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0l14j_",
+            "EntityName": "Flute"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0l14md",
+            "EntityName": "Percussion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-679",
+    "RawQuestion": "what branch is made up of the house of representatives?",
+    "ProcessedQuestion": "what branch is made up of the house of representatives",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0b3wk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0b3wk ns:government.governmental_body.body_this_is_a_component_of ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07t31",
+            "EntityName": "United States Congress"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-681",
+    "RawQuestion": "where did chancellorsville battle take place?",
+    "ProcessedQuestion": "where did chancellorsville battle take place",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d0mw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d0mw ns:time.event.locations ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07z1m",
+            "EntityName": "Virginia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0mn1p",
+            "EntityName": "Spotsylvania County"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-683",
+    "RawQuestion": "who is playing hawkeye in the avengers movie?",
+    "ProcessedQuestion": "who is playing hawkeye in the avengers movie",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.062zm5h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.062zm5h ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.034qd2 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0blq0z",
+            "EntityName": "Jeremy Renner"
           }
         ]
       }

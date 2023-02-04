@@ -1,927 +1,304 @@
 [
   {
-    "QuestionId": "WebQTest-642",
-    "RawQuestion": "where did vince scully go to college?",
-    "ProcessedQuestion": "where did vince scully go to college",
+    "QuestionId": "WebQTest-1201",
+    "RawQuestion": "who played carlton lassiter on psych?",
+    "ProcessedQuestion": "who played carlton lassiter on psych",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.038gnr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.038gnr ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ds5jv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ds5jv ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.0fdxxb .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.027kp3",
-            "EntityName": "Fordham University"
+            "AnswerArgument": "m.0f8yw1",
+            "EntityName": "Timothy Omundson"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-643",
-    "RawQuestion": "where does princess leia live?",
-    "ProcessedQuestion": "where does princess leia live",
+    "QuestionId": "WebQTest-1204",
+    "RawQuestion": "where did the anasazi indians live?",
+    "ProcessedQuestion": "where did the anasazi indians live",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ddqw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ddqw ns:fictional_universe.fictional_character.places_lived ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0lyq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0lyq ns:people.ethnicity.geographic_distribution ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.065lhy",
-            "EntityName": "Alderaan"
+            "AnswerArgument": "m.027v6g",
+            "EntityName": "Four Corners"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-644",
-    "RawQuestion": "what famous people are from el salvador?",
-    "ProcessedQuestion": "what famous people are from el salvador",
+    "QuestionId": "WebQTest-1205",
+    "RawQuestion": "who plays harley quinn?",
+    "ProcessedQuestion": "who plays harley quinn",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02k8k)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02k8k ns:location.location.people_born_here ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01t93k)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01t93k ns:tv.tv_character.appeared_in_tv_program ?y .\n?y ns:tv.regular_tv_appearance.actor ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "g.11b8058v7j",
-            "EntityName": ""
+            "AnswerArgument": "m.032m91",
+            "EntityName": "Mia Sara"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.010h0d8y",
-            "EntityName": "William Armando"
+            "AnswerArgument": "m.07vqwg",
+            "EntityName": "Hynden Walch"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.011k0bpp",
-            "EntityName": "Victor Lopez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.011k0bx8",
-            "EntityName": "Johnny Lopez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.011v5_6y",
-            "EntityName": "Francisco Funes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.012_0d7s",
-            "EntityName": "Damaris Quéles"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.012_0fc_",
-            "EntityName": "Francisca González"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.012z_6bb",
-            "EntityName": "Ricardo López Tenorio"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01311sns",
-            "EntityName": "Xenia Estrada"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0131y42k",
-            "EntityName": "Mauricio Alvarenga"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.013b7xby",
-            "EntityName": "Milton Palacios"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026xmgs",
-            "EntityName": "Alexander Campos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02phhjj",
-            "EntityName": "Jose Orlando Martinez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02pyjqw",
-            "EntityName": "Mauricio Alonso Rodríguez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qgkkg",
-            "EntityName": "Miguel Cañizalez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qsc86",
-            "EntityName": "Francisco Gavidia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qscbm",
-            "EntityName": "Pedro Geoffroy Rivas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02qsclj",
-            "EntityName": "Camilo Minero"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02v_3hr",
-            "EntityName": "Ana Sol Gutierrez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02vmtpg",
-            "EntityName": "Joel Aguilar"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02x5pqn",
-            "EntityName": "Wilfredo Iraheta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03c250_",
-            "EntityName": "Mauricio Alfaro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03c5z5s",
-            "EntityName": "José Luis Rugamas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03c9124",
-            "EntityName": "Eduardo Hernández"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03cblzx",
-            "EntityName": "Roberto Carlos Martinez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03cfwyh",
-            "EntityName": "José Manfredi Portillo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03chqtt",
-            "EntityName": "Melvin Barrera"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03chr1c",
-            "EntityName": "Pedro Chavarria"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03ck2fb",
-            "EntityName": "José María Cañas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03ctvv4",
-            "EntityName": "Ruben Cedillos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03f4fxd",
-            "EntityName": "Keoki"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03hzxty",
-            "EntityName": "DJ Quest"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03m4f_f",
-            "EntityName": "Prudencia Ayala"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03nxgl4",
-            "EntityName": "Andrés Eduardo Menéndez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03nxqf0",
-            "EntityName": "William Renderos Iraheta"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04_076h",
-            "EntityName": "Laura Molina"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.043ks6h",
-            "EntityName": "Félix Pineda"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04cykvj",
-            "EntityName": "José Castellanos Contreras"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04dyyg2",
-            "EntityName": "Jose Solis"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04f4spb",
-            "EntityName": "Edwin Ramos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04f69lb",
-            "EntityName": "Roberto Rivas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04lhqln",
-            "EntityName": "Alfredo Ruano"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04n3xqn",
-            "EntityName": "Rafael Menjívar Ochoa"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04q8w4h",
-            "EntityName": "Papa A.P."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04y963w",
-            "EntityName": "Elmer Acevedo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04yfkr7",
-            "EntityName": "Armando Chacón"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05b_737",
-            "EntityName": "Saturnino Osorio"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05c2y_f",
-            "EntityName": "Ernesto Aparicio"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05m3gg",
-            "EntityName": "Arturo Armando Molina"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05yr4wm",
-            "EntityName": "Diego Velázquez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05zkrkw",
-            "EntityName": "Miguel Cruz"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05zv1fd",
-            "EntityName": "Juan Rafael Bustillo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.065thkd",
-            "EntityName": "Sarah Ramos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.066127x",
-            "EntityName": "Juan Ramón Sánchez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06w9_j6",
-            "EntityName": "Jorge Búcaro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y1sn",
-            "EntityName": "Tomás Medina"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y1tb",
-            "EntityName": "Doroteo Vasconcelos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y1yh",
-            "EntityName": "Rafael Campo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y1yv",
-            "EntityName": "Francisco Dueñas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y25k",
-            "EntityName": "Gerardo Barrios"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y27b",
-            "EntityName": "Francisco Menéndez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y2bv",
-            "EntityName": "Pedro José Escalón"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y2cw",
-            "EntityName": "Manuel Enrique Araujo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y2kd",
-            "EntityName": "Jorge Meléndez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y2mv",
-            "EntityName": "Salvador Castaneda Castro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06y2q9",
-            "EntityName": "Julio Adalberto Rivera Carballo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07bk65",
-            "EntityName": "Consuelo de Saint Exupéry"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07p8ps",
-            "EntityName": "Rubén Zamora"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07swd6",
-            "EntityName": "Rutilio Grande"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.080bz0l",
-            "EntityName": "Víctor Ramírez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08vz5d",
-            "EntityName": "Nicolas F. Shi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09ggck_",
-            "EntityName": "Eva Dimas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09v1mhy",
-            "EntityName": "Fausto Omar Vásquez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b__gm3",
-            "EntityName": "Steve Montenegro"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b_qjns",
-            "EntityName": "Carlos Linares"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bm9y7c",
-            "EntityName": "Miguel Angel Deras"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cc70k9",
-            "EntityName": "Gualberto Fernández"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cc8gnq",
-            "EntityName": "Paula Heredia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cny39v",
-            "EntityName": "Jorge Rivera"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dbk9r",
-            "EntityName": "Erwin McManus"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dd34w",
-            "EntityName": "Claudia Lars"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dlnrmt",
-            "EntityName": "Victor Manuel Ochoa"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0drw_42",
-            "EntityName": "Raúl Cicero"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ds0ght",
-            "EntityName": "Carlos Barrios"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fbs00",
-            "EntityName": "José Inocencio Alas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gck6d6",
-            "EntityName": "Elena Diaz"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0glt20_",
-            "EntityName": "Patricia Chica"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gx_9sj",
-            "EntityName": "Bernard Lewinsky"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gyr_2r",
-            "EntityName": "Jaime Portillo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gysvkq",
-            "EntityName": "Genaro Sermeño"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h1bw_6",
-            "EntityName": "Ana Maria de Martinez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h1gfdk",
-            "EntityName": "Eduardo \\\"Volkswagen\\\" Hernández"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h2lqh",
-            "EntityName": "Arturo Rivera y Damas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h3cwk",
-            "EntityName": "Enrique Álvarez Córdova"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h3vkz2",
-            "EntityName": "Mario Montoya"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h5595b",
-            "EntityName": "José Francisco Valiente"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h7mwf5",
-            "EntityName": "Norman Quijano"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h8k38b",
-            "EntityName": "Rene Moran"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hr5tm9",
-            "EntityName": "Jose B. Gonzalez"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0hrgx45",
-            "EntityName": "Richard Oriani"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j3y75j",
-            "EntityName": "Alexander Méndoza"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j442fb",
-            "EntityName": "Ángel Orellana"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j9k7c7",
-            "EntityName": "Emilio Guardado"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0j9nts6",
-            "EntityName": "Américo González"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0k_fvt",
-            "EntityName": "Bobby Rivas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0kg2yh2",
-            "EntityName": "Óscar Antonio Ulloa"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0kmy4yx",
-            "EntityName": "Guillermo García"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0knmfg3",
-            "EntityName": "Selvin González"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0knxpym",
-            "EntityName": "William López"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ktzqtz",
-            "EntityName": "Marlon Menjívar"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0n484vf",
-            "EntityName": "Isaías Choto"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ndx3dp",
-            "EntityName": "Takeshi Fujiwara"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0pmg_63",
-            "EntityName": "Mario Wilfredo Contreras"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0q200b9",
-            "EntityName": "Malin Arvidsson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0v_3g3z",
-            "EntityName": "Robert Renderos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0yzmtry",
-            "EntityName": "Santiago \\\"Jimmy\\\" Mellado"
+            "AnswerArgument": "m.08nvh9",
+            "EntityName": "Arleen Sorkin"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-645",
-    "RawQuestion": "what type of art did leonardo da vinci make?",
-    "ProcessedQuestion": "what type of art did leonardo da vinci make",
+    "QuestionId": "WebQTest-1208",
+    "RawQuestion": "who is ruling libya?",
+    "ProcessedQuestion": "who is ruling libya",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04lg6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04lg6 ns:visual_art.visual_artist.art_forms ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04gqr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04gqr ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.09d6p2 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1209",
+    "RawQuestion": "when does ziva start on ncis?",
+    "ProcessedQuestion": "when does ziva start on ncis",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03m8sg)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03m8sg ns:tv.tv_program.regular_cast ?y .\n?y ns:tv.regular_tv_appearance.seasons ?x .\n?y ns:tv.regular_tv_appearance.character ns:m.093xn8 .\n?x ns:tv.tv_series_season.from ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02csf",
-            "EntityName": "Drawing"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05qdh",
-            "EntityName": "Painting"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06msq",
-            "EntityName": "Sculpture"
+            "AnswerArgument": "m.05df6zw",
+            "EntityName": "NCIS - Season 3"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-648",
-    "RawQuestion": "who did kimberly williams marry?",
-    "ProcessedQuestion": "who did kimberly williams marry",
+    "QuestionId": "WebQTest-1210",
+    "RawQuestion": "what is the name of the national anthem of canada ( 2 words )?",
+    "ProcessedQuestion": "what is the name of the national anthem of canada ( 2 words )",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05d5mc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05d5mc ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0d060g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0d060g ns:location.country.national_anthem ?y .\n?y ns:government.national_anthem_of_a_country.anthem ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.03gr7w",
-            "EntityName": "Brad Paisley"
+            "AnswerArgument": "m.05mtn",
+            "EntityName": "O Canada"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-649",
-    "RawQuestion": "what other movies has ryan gosling been in?",
-    "ProcessedQuestion": "what other movies has ryan gosling been in",
+    "QuestionId": "WebQTest-1213",
+    "RawQuestion": "which country was michael jackson born?",
+    "ProcessedQuestion": "which country was michael jackson born",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03m6_z)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03m6_z ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n\tns:m.09889g ns:people.person.place_of_birth ?y .\n\t?y ns:location.location.containedby ?x .\n\t?x ns:common.topic.notable_types ns:m.01mp .  #Country\n}",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "g.11by0vcm_y",
-            "EntityName": "The Big Short"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01262msv",
-            "EntityName": "The Nice Guys"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.023gxx",
-            "EntityName": "Remember the Titans"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.026k37r",
-            "EntityName": "Fracture"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02x0fs9",
-            "EntityName": "Lars and the Real Girl"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02x18l",
-            "EntityName": "Murder by Numbers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.043k1_h",
-            "EntityName": "All Good Things"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.047tsx3",
-            "EntityName": "The Notebook"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04j1bgz",
-            "EntityName": "Nothing Too Good for a Cowboy"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0583wk",
-            "EntityName": "The United States of Leland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05ft32",
-            "EntityName": "The Believer"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08gv6s",
-            "EntityName": "Stay"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.093d8j0",
-            "EntityName": "Blue Valentine"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cyn0z",
-            "EntityName": "The Slaughter Rule"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d78m2r",
-            "EntityName": "I'm Still Here: Real Diaries of Young People Who Lived During the Holocaust"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ddf2bm",
-            "EntityName": "Crazy, Stupid, Love."
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dgrqg",
-            "EntityName": "Half Nelson"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0dryx2",
-            "EntityName": "Logan's Run"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g4vmj8",
-            "EntityName": "Drive"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gg5qcw",
-            "EntityName": "The Ides of March"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gx997r",
-            "EntityName": "Gangster Squad"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gx999d",
-            "EntityName": "The Place Beyond the Pines"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gx99m8",
-            "EntityName": "Only God Forgives"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0nh4bl2",
-            "EntityName": "Weightless"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0v_c6kv",
-            "EntityName": "Drunk History Christmas - Feat. Ryan Gosling, Jim Carrey & Eva Mendes"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0y4qznp",
-            "EntityName": "The Unbelievables"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0z8ngl9",
-            "EntityName": "Touch of Evil"
+            "AnswerArgument": "m.09c7w0",
+            "EntityName": "United States of America"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-650",
-    "RawQuestion": "what political party does julia gillard belong to?",
-    "ProcessedQuestion": "what political party does julia gillard belong to",
+    "QuestionId": "WebQTest-1217",
+    "RawQuestion": "what is monta ellis career high points?",
+    "ProcessedQuestion": "what is monta ellis career high points",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02kx9r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02kx9r ns:government.politician.party ?y .\n?y ns:government.political_party_tenure.party ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06rsnl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06rsnl ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.award ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02w5p3q",
-            "EntityName": "Queensland Labor Party"
+            "AnswerArgument": "m.06js8m",
+            "EntityName": "NBA Most Improved Player Award"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1221",
+    "RawQuestion": "what college did joakim noah?",
+    "ProcessedQuestion": "what college did joakim noah",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0c2yrf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0c2yrf ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0j_sncb",
+            "EntityName": "University of Florida"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1223",
+    "RawQuestion": "who plays billy elliot?",
+    "ProcessedQuestion": "who plays billy elliot",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.016mhd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.016mhd ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0by43z3 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g81j",
+            "EntityName": "Jamie Bell"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0q96",
-            "EntityName": "Australian Labor Party"
+            "AnswerArgument": "m.051zd1n",
+            "EntityName": "Adam Cooper"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-652",
-    "RawQuestion": "what kind of hispanic is selena gomez?",
-    "ProcessedQuestion": "what kind of hispanic is selena gomez",
+    "QuestionId": "WebQTest-1227",
+    "RawQuestion": "what team did howie long?",
+    "ProcessedQuestion": "what team did howie long",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gs6vr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gs6vr ns:people.person.ethnicity ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04jg88)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04jg88 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.09k5jvk",
-            "EntityName": "Mexicans"
+            "AnswerArgument": "m.05l71",
+            "EntityName": "Oakland Raiders"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0xnvg",
-            "EntityName": "Italian American"
+            "AnswerArgument": "m.0crj6pn",
+            "EntityName": "Villanova Wildcats football"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-653",
-    "RawQuestion": "who did denise van outen married?",
-    "ProcessedQuestion": "who did denise van outen married",
+    "QuestionId": "WebQTest-1228",
+    "RawQuestion": "where did the greek alphabet come from?",
+    "ProcessedQuestion": "where did the greek alphabet come from",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02_75_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02_75_ ns:people.person.spouse_s ?y .\n?y ns:people.marriage.spouse ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0358gm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0358gm ns:language.language_writing_system.parent_writing_systems ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02r9lyp",
-            "EntityName": "Lee Mead"
+            "AnswerArgument": "m.0j59b",
+            "EntityName": "Phoenician alphabet"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-656",
-    "RawQuestion": "who is the president of costa rica in 2012?",
-    "ProcessedQuestion": "who is the president of costa rica in 2012",
+    "QuestionId": "WebQTest-1229",
+    "RawQuestion": "what timezone is elizabethtown kentucky?",
+    "ProcessedQuestion": "what timezone is elizabethtown kentucky",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01p8s)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01p8s ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.060c4 .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2012-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2012-01-01\"^^xsd:dateTime) })\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0tdxc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0tdxc ns:location.location.time_zones ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0bh9gpm",
-            "EntityName": "Laura Chinchilla"
+            "AnswerArgument": "m.02hcv8",
+            "EntityName": "Eastern Time Zone"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-661",
-    "RawQuestion": "who did nasri play for before arsenal?",
-    "ProcessedQuestion": "who did nasri play for before arsenal",
+    "QuestionId": "WebQTest-1232",
+    "RawQuestion": "what year was albert pujols rookie year?",
+    "ProcessedQuestion": "what year was albert pujols rookie year",
     "Parses": [
       {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nfilter(?x != ns:m.0xbm)\nns:m.0f2dbm ns:sports.pro_athlete.teams ?z . #Samir Nasri\n?z ns:sports.sports_team_roster.team ns:m.0xbm  . #arsenal\n?z ns:sports.sports_team_roster.from ?from .\nns:m.0f2dbm ns:sports.pro_athlete.teams ?y . #Samir Nasri\n?y ns:sports.sports_team_roster.team ?x .\n?y  ns:sports.sports_team_roster.to ?to .\nFILTER (xsd:dateTime(?from) - xsd:dateTime(?to) >= 0)\n}\nORDER BY Desc(xsd:datetime(?from))\nLIMIT 1",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.035gcb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.035gcb ns:sports.sports_award_winner.awards ?y .\n?y ns:sports.sports_award.season ?x .\n?y ns:sports.sports_award.award ns:m.04yny9t .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02gys2",
-            "EntityName": "Olympique de Marseille"
+            "AnswerArgument": "m.02h7sdf",
+            "EntityName": "2001 Major League Baseball Season"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-663",
-    "RawQuestion": "what age did william penn get married?",
-    "ProcessedQuestion": "what age did william penn get married",
+    "QuestionId": "WebQTest-1233",
+    "RawQuestion": "what are the colors of the ny giants?",
+    "ProcessedQuestion": "what are the colors of the ny giants",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.083qr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.083qr ns:people.person.spouse_s ?y .\n?y ns:people.marriage.from ?x .\n?y ns:people.marriage.type_of_union ns:m.04ztj .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05gg4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05gg4 ns:sports.sports_team.colors ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01g5v",
+            "EntityName": "Blue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.036k5h",
+            "EntityName": "Grey"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06fvc",
+            "EntityName": "Red"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.083jv",
+            "EntityName": "White"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1234",
+    "RawQuestion": "what business did andrew carnegie dominate?",
+    "ProcessedQuestion": "what business did andrew carnegie dominate",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0vdk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0vdk ns:base.kwebbase.kwtopic.disciplines ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Value",
-            "AnswerArgument": "1672-04-04",
+            "AnswerArgument": "financier",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "steel",
             "EntityName": null
           }
         ]
@@ -929,358 +306,700 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-664",
-    "RawQuestion": "what was firefox programmed in?",
-    "ProcessedQuestion": "what was firefox programmed in",
+    "QuestionId": "WebQTest-1237",
+    "RawQuestion": "who did shaq first play for?",
+    "ProcessedQuestion": "who did shaq first play for",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01dyhm)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01dyhm ns:computer.software.languages_used ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.012xdf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.012xdf ns:sports.drafted_athlete.drafted ?y .\n?y ns:sports.sports_league_draft_pick.team ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.011y70",
-            "EntityName": "XUL"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.015tjh",
-            "EntityName": "Cascading Style Sheets"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02p97",
-            "EntityName": "JavaScript"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03cjm6",
-            "EntityName": "XBL"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jgqg",
-            "EntityName": "C++"
+            "AnswerArgument": "m.0jm4b",
+            "EntityName": "Orlando Magic"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-666",
-    "RawQuestion": "where is isthmus of panama located on the map?",
-    "ProcessedQuestion": "where is isthmus of panama located on the map",
+    "QuestionId": "WebQTest-1242",
+    "RawQuestion": "what are all the names of the harry potter books?",
+    "ProcessedQuestion": "what are all the names of the harry potter books",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04zwft)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04zwft ns:location.location.containedby ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03647x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03647x ns:book.book_character.appears_in_book ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.06n3y",
-            "EntityName": "South America"
+            "AnswerArgument": "m.014jst",
+            "EntityName": "Harry Potter and the Order of the Phoenix"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.015pln",
+            "EntityName": "Harry Potter and the Chamber of Secrets"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lr1g",
+            "EntityName": "Harry Potter and the Prisoner of Azkaban"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01m5g_",
+            "EntityName": "Harry Potter and the Goblet of Fire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03bkkv",
+            "EntityName": "Harry Potter and the Deathly Hallows"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06_rf9",
+            "EntityName": "Harry Potter and the Half-Blood Prince"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c_vk",
+            "EntityName": "Harry Potter and the Philosopher's Stone"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-667",
-    "RawQuestion": "what is the capital of republic of ireland?",
-    "ProcessedQuestion": "what is the capital of republic of ireland",
+    "QuestionId": "WebQTest-1245",
+    "RawQuestion": "what countries are in the euro dollar?",
+    "ProcessedQuestion": "what countries are in the euro dollar",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03rt9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03rt9 ns:location.country.capital ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02l6h)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02l6h ns:finance.currency.countries_used ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02cft",
-            "EntityName": "Dublin"
+            "AnswerArgument": "m.014mxp",
+            "EntityName": "Åland Islands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0154j",
+            "EntityName": "Belgium"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ppq",
+            "EntityName": "Cyprus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02kmm",
+            "EntityName": "Estonia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02phy_9",
+            "EntityName": "Collectivity of Saint Martin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02vzc",
+            "EntityName": "Finland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0345h",
+            "EntityName": "Germany"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.035qy",
+            "EntityName": "Greece"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037nm",
+            "EntityName": "Guadeloupe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rjj",
+            "EntityName": "Italy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03rt9",
+            "EntityName": "Republic of Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.049nq",
+            "EntityName": "Kingdom of the Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04dfw1",
+            "EntityName": "Province of Varese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04fh3",
+            "EntityName": "Republic of Kosovo"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g5k",
+            "EntityName": "Latvia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g61",
+            "EntityName": "Luxembourg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04gzd",
+            "EntityName": "Lithuania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04v3q",
+            "EntityName": "Malta"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vg8",
+            "EntityName": "Martinique"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04vws",
+            "EntityName": "Mayotte"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04w58",
+            "EntityName": "Monaco"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.056vv",
+            "EntityName": "Montenegro"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059j2",
+            "EntityName": "Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05r4w",
+            "EntityName": "Portugal"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06mkj",
+            "EntityName": "Spain"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06npd",
+            "EntityName": "Slovakia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06s4c",
+            "EntityName": "Saint Pierre and Miquelon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06sff",
+            "EntityName": "San Marino"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.06t8v",
+            "EntityName": "Slovenia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07ytt",
+            "EntityName": "Vatican City"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.088q4",
+            "EntityName": "Zimbabwe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bwhs8r",
+            "EntityName": "Caribbean special municipalities of the Netherlands"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f8l9c",
+            "EntityName": "France"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggt2",
+            "EntityName": "Varese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h7f9",
+            "EntityName": "Saint Barthélemy"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0h7x",
+            "EntityName": "Austria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hg5",
+            "EntityName": "Andorra"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-668",
-    "RawQuestion": "what has kristen stewart acted in?",
-    "ProcessedQuestion": "what has kristen stewart acted in",
+    "QuestionId": "WebQTest-1249",
+    "RawQuestion": "what is the state flower of new mexico?",
+    "ProcessedQuestion": "what is the state flower of new mexico",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07swvb)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07swvb ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05fjy)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05fjy ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.04627gn .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0_g812d",
-            "EntityName": "Still Alice"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0_vl_q6",
-            "EntityName": "Equals"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0133dmyj",
-            "EntityName": "Billy Lynn's Long Halftime Walk"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0295m6",
-            "EntityName": "Catch That Kid"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.029xhb",
-            "EntityName": "Panic Room"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02nhxs",
-            "EntityName": "Speak"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rj2v7",
-            "EntityName": "What Just Happened"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rx2m5",
-            "EntityName": "Into the Wild"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wgbb",
-            "EntityName": "The Flintstones in Viva Rock Vegas"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02z8bfh",
-            "EntityName": "Fierce People"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03c7twt",
-            "EntityName": "Adventureland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03nm_fh",
-            "EntityName": "Twilight"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04q86tb",
-            "EntityName": "Welcome to the Rileys"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04ynd_",
-            "EntityName": "Cold Creek Manor"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05b3kq9",
-            "EntityName": "Cutlass"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05p5m5f",
-            "EntityName": "The Cake Eaters"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05pdh86",
-            "EntityName": "The Twilight Saga: New Moon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05q7874",
-            "EntityName": "The Runaways"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06wjwv",
-            "EntityName": "The Thirteenth Year"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.075wx7_",
-            "EntityName": "Eclipse"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.075wx89",
-            "EntityName": "The Twilight Saga: Breaking Dawn - Part 1"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.08ldl8",
-            "EntityName": "Undertow"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09bw4_",
-            "EntityName": "Jumper"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09qs_s",
-            "EntityName": "Zathura"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b6hmnc",
-            "EntityName": "The Yellow Handkerchief"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cp0t91",
-            "EntityName": "On the Road"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0cty5n",
-            "EntityName": "The Safety of Objects"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d5jxc",
-            "EntityName": "The Messengers"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0djz0rc",
-            "EntityName": "The Twilight Saga: Breaking Dawn - Part 2"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fjckn",
-            "EntityName": "In the Land of Women"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g5qs2k",
-            "EntityName": "Snow White and the Huntsman"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0n4n1y_",
-            "EntityName": "Snow White and the Huntsman 2"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0w06pqf",
-            "EntityName": "The Big Shoe"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0w06rkh",
-            "EntityName": "Clouds of Sils Maria"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0w1zl9t",
-            "EntityName": "Camp X-Ray"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ywy_65",
-            "EntityName": "American Ultra"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ywy9pl",
-            "EntityName": "Anesthesia"
+            "AnswerArgument": "m.0hzbf1c",
+            "EntityName": "Yucca flower"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-670",
-    "RawQuestion": "what kind of language does egypt speak?",
-    "ProcessedQuestion": "what kind of language does egypt speak",
+    "QuestionId": "WebQTest-1252",
+    "RawQuestion": "who plays eowyn in lord of the rings?",
+    "ProcessedQuestion": "who plays eowyn in lord of the rings",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02k54)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02k54 ns:location.country.official_language ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.017jd9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.017jd9 ns:film.film.starring ?y .\n?y ns:film.performance.actor ?x .\n?y ns:film.performance.character ns:m.0gynx .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.025rvv7",
-            "EntityName": "Modern Standard Arabic"
+            "AnswerArgument": "m.0294fd",
+            "EntityName": "Miranda Otto"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-671",
-    "RawQuestion": "who are the senators of hawaii 2012?",
-    "ProcessedQuestion": "who are the senators of hawaii 2012",
+    "QuestionId": "WebQTest-1256",
+    "RawQuestion": "who did terrell owens play for in 2010?",
+    "ProcessedQuestion": "who did terrell owens play for in 2010",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03gh4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03gh4 ns:government.political_district.representatives ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.jurisdiction_of_office ns:m.09c7w0 .\n?y ns:government.government_position_held.from ?sk0 .\n}\nORDER BY DESC(xsd:datetime(?sk0))\nLIMIT 1\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.027ddp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.027ddp ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2010-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2010-01-01\"^^xsd:dateTime) })\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0357cd",
-            "EntityName": "Mazie Hirono"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-673",
-    "RawQuestion": "where did robert kardashian go to college?",
-    "ProcessedQuestion": "where did robert kardashian go to college",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01x48v)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01x48v ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02rky4",
-            "EntityName": "University of San Diego"
+            "AnswerArgument": "m.01c_d",
+            "EntityName": "Buffalo Bills"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.05pyvz",
-            "EntityName": "University of San Diego School of Law"
+            "AnswerArgument": "m.01y49",
+            "EntityName": "Cincinnati Bengals"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.065y4w7",
-            "EntityName": "University of Southern California"
+            "AnswerArgument": "m.068tx8",
+            "EntityName": "Texas Revolution"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-676",
-    "RawQuestion": "what did the akkadian empire include?",
-    "ProcessedQuestion": "what did the akkadian empire include",
+    "QuestionId": "WebQTest-1260",
+    "RawQuestion": "what year did baltimore ravens win super bowl?",
+    "ProcessedQuestion": "what year did baltimore ravens win super bowl",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0q_7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0q_7 ns:location.location.contains ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ct6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ct6 ns:sports.sports_team.championships ?x .\n?x ns:common.topic.notable_types ns:m.01xljv1 .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0n541jb",
-            "EntityName": "Akkad"
+            "AnswerArgument": "m.076yq",
+            "EntityName": "Super Bowl XXXV"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-677",
-    "RawQuestion": "after how many years are the olympic games held?",
-    "ProcessedQuestion": "after how many years are the olympic games held",
+    "QuestionId": "WebQTest-1262",
+    "RawQuestion": "what part of the country is ohio considered?",
+    "ProcessedQuestion": "what part of the country is ohio considered",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05nd_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05nd_ ns:time.recurring_event.current_frequency ?x .\n?x ns:freebase.unit_profile.dimension ns:m.07c_l .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05kkh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05kkh ns:location.location.containedby ?x .\n?x ns:common.topic.notable_types ns:m.01nt .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03pzys",
+            "EntityName": "East North Central States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0q76g",
+            "EntityName": "Midwestern United States"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1265",
+    "RawQuestion": "what was john tyler?",
+    "ProcessedQuestion": "what was john tyler",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.042dk)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.042dk ns:common.topic.notable_types ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01xljv7",
+            "EntityName": "US President"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1269",
+    "RawQuestion": "where was the boston tea party 1773?",
+    "ProcessedQuestion": "where was the boston tea party 1773",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0ccd96)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0ccd96 ns:time.event.locations ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04n7kgz",
+            "EntityName": "Boston Harbor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1270",
+    "RawQuestion": "what drugs lindsay lohan abuse?",
+    "ProcessedQuestion": "what drugs lindsay lohan abuse",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01pgzn_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01pgzn_ ns:base.popstra.celebrity.substance_abuse ?y .\n?y ns:base.popstra.substance_abuse.substance ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.012mj",
+            "EntityName": "Alcoholic beverage"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0256b",
+            "EntityName": "Cocaine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1271",
+    "RawQuestion": "when did carolina panthers go to superbowl?",
+    "ProcessedQuestion": "when did carolina panthers go to superbowl",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n  ns:m.06x5s ns:time.recurring_event.instances ?x . # Super Bowl instances\n\n  {\n    ?x ns:sports.sports_championship_event.champion ns:m.01y3c . # (Carolina Panthers) \n  }\n  UNION\n  {\n    ?x ns:sports.sports_championship_event.runner_up ns:m.01y3c . # (Carolina Panthers) \n  }\n}",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0277y8",
+            "EntityName": "Super Bowl XXXVIII"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1272",
+    "RawQuestion": "when did the burma cyclone happen?",
+    "ProcessedQuestion": "when did the burma cyclone happen",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.041l08b)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.041l08b ns:meteorology.tropical_cyclone.formed ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2008-04-27",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1274",
+    "RawQuestion": "who won the governor election in texas?",
+    "ProcessedQuestion": "who won the governor election in texas",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07b_l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07b_l ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.0fkvn .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lwvz",
+            "EntityName": "Edward Clark"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01lwx3",
+            "EntityName": "Pendleton Murrah"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01rtbd",
+            "EntityName": "John Connally"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01v2r2",
+            "EntityName": "Ann Richards"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02nlj_",
+            "EntityName": "Rick Perry"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02pv3w",
+            "EntityName": "James Pinckney Henderson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02py7s",
+            "EntityName": "Francis Lubbock"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r_7k",
+            "EntityName": "Mark White"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r_g_",
+            "EntityName": "Dolph Briscoe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rv0t",
+            "EntityName": "Bill Clements"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02wv_6",
+            "EntityName": "W. Lee O'Daniel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.032j8w",
+            "EntityName": "Lawrence Sullivan Ross"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0364z4",
+            "EntityName": "Preston Smith"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037_45",
+            "EntityName": "Hardin Richard Runnels"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.037f5r",
+            "EntityName": "Charles Allen Culberson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03848l",
+            "EntityName": "George Tyler Wood"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03bbm8",
+            "EntityName": "Beauford H. Jester"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03ccjj",
+            "EntityName": "Ross S. Sterling"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03clnj",
+            "EntityName": "Coke R. Stevenson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03d1sj",
+            "EntityName": "Fletcher Stockdale"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03frg9",
+            "EntityName": "Dan Moody"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03htx7",
+            "EntityName": "Miriam A. Ferguson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03r03b",
+            "EntityName": "William P. Hobby"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03vhjr",
+            "EntityName": "Allan Shivers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03x_db",
+            "EntityName": "Richard Coke"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03xxmq",
+            "EntityName": "James E. Ferguson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.03yvp9",
+            "EntityName": "Price Daniel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04g54r",
+            "EntityName": "Andrew Jackson Hamilton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04kn2s",
+            "EntityName": "Elisha M. Pease"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04p5r8",
+            "EntityName": "James Allred"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04sm5m",
+            "EntityName": "Pat Morris Neff"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04tcb9",
+            "EntityName": "Jim Hogg"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rnw",
+            "EntityName": "James W. Throckmorton"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rqc",
+            "EntityName": "Edmund J. Davis"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rsh",
+            "EntityName": "J. W. Henderson"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rty",
+            "EntityName": "Peter Hansborough Bell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rv9",
+            "EntityName": "Richard B. Hubbard"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rvp",
+            "EntityName": "Oran Milo Roberts"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rw1",
+            "EntityName": "John Ireland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rx2",
+            "EntityName": "Joseph D. Sayers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059rxf",
+            "EntityName": "S. W. T. Lanham"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059ryg",
+            "EntityName": "Thomas Mitchell Campbell"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.059ryt",
+            "EntityName": "Oscar Branch Colquitt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.09b6zr",
+            "EntityName": "George W. Bush"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gbjz",
+            "EntityName": "Sam Houston"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1276",
+    "RawQuestion": "when are the summer and winter olympics held?",
+    "ProcessedQuestion": "when are the summer and winter olympics held",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05nd_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05nd_ ns:time.recurring_event.current_frequency ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -1292,910 +1011,219 @@
     ]
   },
   {
-    "QuestionId": "WebQTest-678",
-    "RawQuestion": "what system of government does guyana have?",
-    "ProcessedQuestion": "what system of government does guyana have",
+    "QuestionId": "WebQTest-1277",
+    "RawQuestion": "where is tennessee river?",
+    "ProcessedQuestion": "where is tennessee river",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.034m8)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.034m8 ns:location.country.form_of_government ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01spb0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01spb0 ns:location.location.partially_containedby ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01dw03",
-            "EntityName": "Semi-presidential system"
+            "AnswerArgument": "m.0498y",
+            "EntityName": "Kentucky"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01fpfn",
-            "EntityName": "Unitary state"
+            "AnswerArgument": "m.04tgp",
+            "EntityName": "Mississippi"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.06cx9",
-            "EntityName": "Republic"
+            "AnswerArgument": "m.07h34",
+            "EntityName": "Tennessee"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gyh",
+            "EntityName": "Alabama"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-680",
-    "RawQuestion": "what team did aguero play for?",
-    "ProcessedQuestion": "what team did aguero play for",
+    "QuestionId": "WebQTest-1278",
+    "RawQuestion": "what are some major events in venezuela?",
+    "ProcessedQuestion": "what are some major events in venezuela",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.099vgz)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.099vgz ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.07ylj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.07ylj ns:location.location.events ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01634x",
-            "EntityName": "Manchester City F.C."
+            "AnswerArgument": "g.122dshgz",
+            "EntityName": ""
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02bh_v",
-            "EntityName": "Argentina national football team"
+            "AnswerArgument": "m.0_s2b74",
+            "EntityName": "2014–15 Venezuelan protests"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.047yd6",
-            "EntityName": "Club Atlético Independiente"
+            "AnswerArgument": "m.0_yl8cs",
+            "EntityName": "2014 NACAM Rally Championship"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0lg7v",
-            "EntityName": "Atlético Madrid"
+            "AnswerArgument": "m.01082t0z",
+            "EntityName": "Battle of Santa Inés"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.010pvsz8",
+            "EntityName": "2014 Caribbean Earthquake"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.011nwg_8",
+            "EntityName": "2014 Festival Internacional de Cine Infantil y Juvenil"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.011sm70c",
+            "EntityName": "Dutch–Venezuelan crisis of 1908"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qb83",
+            "EntityName": "Venezuelan War of Independence"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02qlx__",
+            "EntityName": "Battle of La Victoria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02r0mx4",
+            "EntityName": "Machurucuto Incident"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02rf6lc",
+            "EntityName": "2007 RCTV protests"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0461c3",
+            "EntityName": "2002 Venezuelan coup d'état attempt"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.080bblj",
+            "EntityName": "Los Maniceros massacre"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0c0349z",
+            "EntityName": "12th G-15 summit"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0cnymms",
+            "EntityName": "Dutch–Venezuela War"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dgqgqf",
+            "EntityName": "Venezuelan crisis of 1902–03"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ggbq0x",
+            "EntityName": "Bombardment of Fort San Carlos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gys1lh",
+            "EntityName": "2011 ALBA Games"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ryskwc",
+            "EntityName": "2013 Venezuela Transaereo 5074 Britten-Norman Islander crash"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-681",
-    "RawQuestion": "who is the president of the european union 2012?",
-    "ProcessedQuestion": "who is the president of the european union 2012",
+    "QuestionId": "WebQTest-1279",
+    "RawQuestion": "what guitar does corey taylor play?",
+    "ProcessedQuestion": "what guitar does corey taylor play",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0_6t_z8)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0_6t_z8 ns:government.governmental_jurisdiction.governing_officials ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.office_position_or_title ns:m.039h0j .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2012-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2012-01-01\"^^xsd:dateTime) })\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01ttvxc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01ttvxc ns:music.group_member.instruments_played ?x .\n?x ns:music.instrument.family ns:m.0342h .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.036y38",
-            "EntityName": "Jerzy Buzek"
+            "AnswerArgument": "m.018vs",
+            "EntityName": "Bass guitar"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-683",
-    "RawQuestion": "what year was kenya moore crowned miss usa?",
-    "ProcessedQuestion": "what year was kenya moore crowned miss usa",
+    "QuestionId": "WebQTest-1280",
+    "RawQuestion": "who was president after franklin d. roosevelt?",
+    "ProcessedQuestion": "who was president after franklin d. roosevelt",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03lp2g)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03lp2g ns:time.recurring_event.instances ?x .\n?x ns:award.competition.winner ns:m.08cpnf .\n}\n",
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.060d2 ns:government.government_office_or_title.office_holders ?y1 .  # President of the United States\n  ?y1 ns:government.government_position_held.office_holder ns:m.02yy8 ; # Franklin D. Roosevelt\n      ns:government.government_position_held.to ?to .\n\n  ns:m.060d2 ns:government.government_office_or_title.office_holders ?y2 .  # President of the United States\n  ?y2 ns:government.government_position_held.office_holder ?x ;\n      ns:government.government_position_held.to ?from .\n  \n  FILTER(xsd:dateTime(?from) - xsd:dateTime(?to) > 0)\n}\nORDER BY xsd:dateTime(?from)\nLIMIT 1",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02vmzrl",
-            "EntityName": "Miss USA 1993"
+            "AnswerArgument": "m.09bg4l",
+            "EntityName": "Harry S. Truman"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-685",
-    "RawQuestion": "where does chef ina garten live?",
-    "ProcessedQuestion": "where does chef ina garten live",
+    "QuestionId": "WebQTest-1287",
+    "RawQuestion": "what is the state motto of ohio?",
+    "ProcessedQuestion": "what is the state motto of ohio",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0315fl)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0315fl ns:people.person.places_lived ?y .\n?y ns:people.place_lived.location ?x .\nFILTER(NOT EXISTS {?y ns:people.place_lived.end_date ?sk0} || \nEXISTS {?y ns:people.place_lived.end_date ?sk1 . \nFILTER(xsd:datetime(?sk1) >= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:people.place_lived.start_date ?sk2} || \nEXISTS {?y ns:people.place_lived.start_date ?sk3 . \nFILTER(xsd:datetime(?sk3) <= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05kkh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05kkh ns:government.governmental_jurisdiction.official_symbols ?y .\n?y ns:location.location_symbol_relationship.symbol ?x .\n?y ns:location.location_symbol_relationship.Kind_of_symbol ns:m.0j749 .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0cr3d",
-            "EntityName": "Brooklyn"
+            "AnswerArgument": "m.08y6vd",
+            "EntityName": "With God, all things are possible"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-686",
-    "RawQuestion": "when the atlanta braves won the world series?",
-    "ProcessedQuestion": "when the atlanta braves won the world series",
+    "QuestionId": "WebQTest-1292",
+    "RawQuestion": "which barcelona airport is closest to the port?",
+    "ProcessedQuestion": "which barcelona airport is closest to the port",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0x2p)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0x2p ns:sports.sports_team.championships ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01f62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01f62 ns:location.location.nearby_airports ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04j712",
-            "EntityName": "1995 World Series"
+            "AnswerArgument": "m.013q7r",
+            "EntityName": "Barcelona–El Prat Airport"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-688",
-    "RawQuestion": "what kind of language do they speak in iran?",
-    "ProcessedQuestion": "what kind of language do they speak in iran",
+    "QuestionId": "WebQTest-1293",
+    "RawQuestion": "where has the english language evolved from?",
+    "ProcessedQuestion": "where has the english language evolved from",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03shp)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03shp ns:location.country.languages_spoken ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01bcw_",
-            "EntityName": "Azerbaijani language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01m3f7",
-            "EntityName": "Turkmen Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.032f6",
-            "EntityName": "Persian Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gg_5",
-            "EntityName": "Qashqa'i Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03h871",
-            "EntityName": "Luri language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.040blg",
-            "EntityName": "Kumzari Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w042",
-            "EntityName": "Assyrian Neo-Aramaic Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07k3wd",
-            "EntityName": "Khalaj, Turkic Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09hn84",
-            "EntityName": "Mazanderani Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.09k7n_",
-            "EntityName": "Gilaki Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0b1g2",
-            "EntityName": "Kurdish languages"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bqk9s",
-            "EntityName": "Talysh language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fq4jq",
-            "EntityName": "Afshar language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fqmnr",
-            "EntityName": "Khorasani Turkish Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0gl97",
-            "EntityName": "Balochi language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0jzc",
-            "EntityName": "Arabic Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0swlx",
-            "EntityName": "Pashto language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0xrg",
-            "EntityName": "Armenian Language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-689",
-    "RawQuestion": "what was the first language spoken in spain?",
-    "ProcessedQuestion": "what was the first language spoken in spain",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:location.country.official_language ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06nm1",
-            "EntityName": "Spanish Language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-691",
-    "RawQuestion": "what school did miley cyrus?",
-    "ProcessedQuestion": "what school did miley cyrus",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bdxs5)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bdxs5 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0d_s7d",
-            "EntityName": "Heritage Elementary School"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-693",
-    "RawQuestion": "what language do most people speak in afghanistan?",
-    "ProcessedQuestion": "what language do most people speak in afghanistan",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0jdd)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0jdd ns:location.country.languages_spoken ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02hwl5z",
-            "EntityName": "Farsi, Eastern Language"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0swlx",
-            "EntityName": "Pashto language"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-694",
-    "RawQuestion": "who is the prime minister of jamaica west indies?",
-    "ProcessedQuestion": "who is the prime minister of jamaica west indies",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01sm66)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01sm66 ns:government.government_office_or_title.office_holders ?y .\n?y ns:government.government_position_held.office_holder ?x .\n?y ns:government.government_position_held.basic_title ns:m.060bp .\nFILTER(NOT EXISTS {?y ns:government.government_position_held.from ?sk0} || \nEXISTS {?y ns:government.government_position_held.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2015-08-10\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:government.government_position_held.to ?sk2} || \nEXISTS {?y ns:government.government_position_held.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2015-08-10\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0bpvhb",
-            "EntityName": "Portia Simpson-Miller"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-695",
-    "RawQuestion": "what role did paul mccartney play in the beatles?",
-    "ProcessedQuestion": "what role did paul mccartney play in the beatles",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03j24kf)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03j24kf ns:music.group_member.membership ?y .\n?y ns:music.group_membership.role ?x .\n?y ns:music.group_membership.group ns:m.07c0j .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0_sv_90",
-            "EntityName": "Lead Vocals"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01vj9c",
-            "EntityName": "Bass"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03_vpw",
-            "EntityName": "Backing vocalist"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-696",
-    "RawQuestion": "when did juventus win the champions league?",
-    "ProcessedQuestion": "when did juventus win the champions league",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.045xx)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.045xx ns:sports.sports_team.championships ?x .\n?x ns:sports.sports_championship_event.championship ns:m.05nblxt .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02pt_57",
-            "EntityName": "1996 UEFA Champions League Final"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-698",
-    "RawQuestion": "who is robin roberts father?",
-    "ProcessedQuestion": "who is robin roberts father",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06k3_t)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06k3_t ns:people.person.parents ?x .\n?x ns:people.person.gender ns:m.05zppz .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0czc1yg",
-            "EntityName": "Lawrence E. Roberts"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-699",
-    "RawQuestion": "what is the capital of australia victoria state?",
-    "ProcessedQuestion": "what is the capital of australia victoria state",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0chgr2)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0chgr2 ns:base.aareas.schema.administrative_area.capital ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0chgzm",
-            "EntityName": "Melbourne"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-700",
-    "RawQuestion": "where is french spoken most?",
-    "ProcessedQuestion": "where is french spoken most",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.064_8sq)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.064_8sq ns:language.human_language.countries_spoken_in ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0154j",
-            "EntityName": "Belgium"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0162v",
-            "EntityName": "Barbados"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0164v",
-            "EntityName": "Benin"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01699",
-            "EntityName": "Burkina Faso"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0169t",
-            "EntityName": "Burundi"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01n6c",
-            "EntityName": "Comoros"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01nln",
-            "EntityName": "Cameroon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01nyl",
-            "EntityName": "Central African Republic"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01p1b",
-            "EntityName": "Chad"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01ppq",
-            "EntityName": "Cyprus"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01rxw",
-            "EntityName": "Congo"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01xbgx",
-            "EntityName": "Cambodia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027jk",
-            "EntityName": "Djibouti"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.027nb",
-            "EntityName": "Dominica"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02kcz",
-            "EntityName": "Equatorial Guinea"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03_xj",
-            "EntityName": "Jersey"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03548",
-            "EntityName": "Gabon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03676",
-            "EntityName": "Guinea"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03c8mkv",
-            "EntityName": "Habsburg Netherlands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gk2",
-            "EntityName": "Holy Roman Empire"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03gyl",
-            "EntityName": "Haiti"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04g61",
-            "EntityName": "Luxembourg"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04hhv",
-            "EntityName": "Laos"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04hqz",
-            "EntityName": "Lebanon"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04sj3",
-            "EntityName": "Madagascar"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v09",
-            "EntityName": "Mali"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vg8",
-            "EntityName": "Martinique"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vs9",
-            "EntityName": "Mauritius"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04w58",
-            "EntityName": "Monaco"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04wgh",
-            "EntityName": "Morocco"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05cc1",
-            "EntityName": "Niger"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0697s",
-            "EntityName": "Qatar"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06dfg",
-            "EntityName": "Rwanda"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06mzp",
-            "EntityName": "Switzerland"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06srk",
-            "EntityName": "Senegal"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06sw9",
-            "EntityName": "Seychelles"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07fj_",
-            "EntityName": "Tunisia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07ytt",
-            "EntityName": "Vatican City"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07z5n",
-            "EntityName": "Vanuatu"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0f8l9c",
-            "EntityName": "France"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0fv4v",
-            "EntityName": "Ivory Coast"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0g8bw",
-            "EntityName": "South Vietnam"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h3y",
-            "EntityName": "Algeria"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-701",
-    "RawQuestion": "what team is reggie bush on 2011?",
-    "ProcessedQuestion": "what team is reggie bush on 2011",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05cb70)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05cb70 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.from ?sk0} || \nEXISTS {?y ns:sports.sports_team_roster.from ?sk1 . \nFILTER(xsd:datetime(?sk1) <= \"2011-12-31\"^^xsd:dateTime) })\nFILTER(NOT EXISTS {?y ns:sports.sports_team_roster.to ?sk2} || \nEXISTS {?y ns:sports.sports_team_roster.to ?sk3 . \nFILTER(xsd:datetime(?sk3) >= \"2011-01-01\"^^xsd:dateTime) })\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04vn5",
-            "EntityName": "Miami Dolphins"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05g3v",
-            "EntityName": "New Orleans Saints"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-702",
-    "RawQuestion": "what highschool did emily osment go to?",
-    "ProcessedQuestion": "what highschool did emily osment go to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03xnq9_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03xnq9_ ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:base.schemastaging.non_profit_extra.classification ns:m.0ppgzhv .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07q2jh",
-            "EntityName": "Flintridge Preparatory School"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-706",
-    "RawQuestion": "where did troy aikman play football?",
-    "ProcessedQuestion": "where did troy aikman play football",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0dr5g9)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0dr5g9 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02896",
-            "EntityName": "Dallas Cowboys"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-707",
-    "RawQuestion": "who played cletus hogg?",
-    "ProcessedQuestion": "who played cletus hogg",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0bxcc6)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0bxcc6 ns:film.film_character.portrayed_in_films ?y .\n?y ns:film.performance.actor ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04cyn66",
-            "EntityName": "Jack Polick"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-708",
-    "RawQuestion": "who won fa cup 1976?",
-    "ProcessedQuestion": "who won fa cup 1976",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02_p0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02_p0 ns:sports.sports_award_type.winners ?y .\n?y ns:sports.sports_award.award_winner ?x .\n?y ns:sports.sports_award.season ns:m.04gp5lx .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0k_l4",
-            "EntityName": "Southampton F.C."
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-710",
-    "RawQuestion": "what style of art did henri matisse do?",
-    "ProcessedQuestion": "what style of art did henri matisse do",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gct_)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gct_ ns:visual_art.visual_artist.associated_periods_or_movements ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.015r61",
-            "EntityName": "Modern art"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03xj1",
-            "EntityName": "Impressionism"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.049xrv",
-            "EntityName": "Neo-impressionism"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04lx1",
-            "EntityName": "Fauvism"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04y41",
-            "EntityName": "Modernism"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-711",
-    "RawQuestion": "who plays chuck bass in gossip girl?",
-    "ProcessedQuestion": "who plays chuck bass in gossip girl",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0g0jx7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0g0jx7 ns:base.gossipgirl.character.played_by ?x .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02w4x29",
-            "EntityName": "Ed Westwick"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-712",
-    "RawQuestion": "what countries have territories in oceania?",
-    "ProcessedQuestion": "what countries have territories in oceania",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05nrg)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05nrg ns:location.location.contains ?x .\n?x ns:common.topic.notable_types ns:m.01mp .\n}\n",
-        "Answers": [
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.01n8qg",
-            "EntityName": "Solomon Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.020p1",
-            "EntityName": "Cook Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02lx0",
-            "EntityName": "Timor-Leste"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wt0",
-            "EntityName": "Fiji"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.02wzv",
-            "EntityName": "French Polynesia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03188",
-            "EntityName": "Federated States of Micronesia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.034tl",
-            "EntityName": "Guam"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.03ryn",
-            "EntityName": "Indonesia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.047t_",
-            "EntityName": "Kiribati"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.04v6v",
-            "EntityName": "Marshall Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05b2h",
-            "EntityName": "Niue"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05br2",
-            "EntityName": "Nauru"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05c17",
-            "EntityName": "New Caledonia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05cnr",
-            "EntityName": "Northern Mariana Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05cqm",
-            "EntityName": "Norfolk Island"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05qkp",
-            "EntityName": "Papua New Guinea"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05tr7",
-            "EntityName": "Palau"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.05vd5",
-            "EntityName": "Pitcairn Islands"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.06s9y",
-            "EntityName": "Samoa"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07f9q",
-            "EntityName": "Tokelau"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07fb6",
-            "EntityName": "Tonga"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07fsv",
-            "EntityName": "Tuvalu"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.07z5n",
-            "EntityName": "Vanuatu"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.082nw",
-            "EntityName": "Wallis and Futuna"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0chghy",
-            "EntityName": "Australia"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0ctw_b",
-            "EntityName": "New Zealand"
-          },
-          {
-            "AnswerType": "Entity",
-            "AnswerArgument": "m.0h8d",
-            "EntityName": "American Samoa"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-716",
-    "RawQuestion": "what language group does germany belong to?",
-    "ProcessedQuestion": "what language group does germany belong to",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.04306rv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.04306rv ns:language.human_language.language_family ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02h40lc)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02h40lc ns:language.human_language.language_family ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
@@ -2204,175 +1232,402 @@
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.03489",
-            "EntityName": "Germanic languages"
-          },
-          {
-            "AnswerType": "Entity",
             "AnswerArgument": "m.03v09",
             "EntityName": "Indo-European languages"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.082j1s",
+            "EntityName": "Anglo-Frisian languages"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-719",
-    "RawQuestion": "which political party does barack obama represent?",
-    "ProcessedQuestion": "which political party does barack obama represent",
+    "QuestionId": "WebQTest-1294",
+    "RawQuestion": "what country did hitler invade that started ww2?",
+    "ProcessedQuestion": "what country did hitler invade that started ww2",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02mjmr)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02mjmr ns:government.politician.party ?y .\n?y ns:government.political_party_tenure.party ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.081pw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.081pw ns:time.event.includes_event ?x .\n?x ns:time.event.start_date ?sk0 .\n}\nORDER BY xsd:datetime(?sk0)\nLIMIT 1\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0d075m",
-            "EntityName": "Democratic Party"
+            "AnswerArgument": "m.0gmbk71",
+            "EntityName": "Battle of Falmouth"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-722",
-    "RawQuestion": "what is the name of the book hitler wrote in jail?",
-    "ProcessedQuestion": "what is the name of the book hitler wrote in jail",
+    "QuestionId": "WebQTest-1303",
+    "RawQuestion": "what other movies is josh hutcherson in?",
+    "ProcessedQuestion": "what other movies is josh hutcherson in",
     "Parses": [
       {
-        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT  ?x\nWHERE {\n  ns:m.07_m9_ ns:book.book_subject.works ?x .\n  ?x ns:book.written_work.date_written ?d .\n\n  ns:m.07_m9_ ns:base.prison.prisoner.imprisoned ?y .\n  ?y          ns:base.prison.imprisonment.from ?from ;\n              ns:base.prison.imprisonment.to ?to .\n  FILTER (xsd:dateTime(?d) - xsd:dateTime(?from) >= 0)\n  FILTER (xsd:dateTime(?to) - xsd:dateTime(?d) >= 0)\n}",
-        "Answers": []
-      }
-    ]
-  },
-  {
-    "QuestionId": "WebQTest-723",
-    "RawQuestion": "what is there to see in sydney australia?",
-    "ProcessedQuestion": "what is there to see in sydney australia",
-    "Parses": [
-      {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06y57)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06y57 ns:travel.travel_destination.tourist_attractions ?x .\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.08wjf4)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.08wjf4 ns:film.actor.film ?y .\n?y ns:film.performance.film ?x .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0_ymvs4",
-            "EntityName": "Oatley Park, New South Wales"
+            "AnswerArgument": "g.11b7k0v3hq",
+            "EntityName": "In Dubious Battle"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01rfyc",
-            "EntityName": "Port Jackson"
+            "AnswerArgument": "m.0135_65p",
+            "EntityName": "The Long Home"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01xlnqr",
-            "EntityName": "Rose Seidler House"
+            "AnswerArgument": "m.026gt8b",
+            "EntityName": "Bridge to Terabithia"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.020772",
-            "EntityName": "Bondi Beach"
+            "AnswerArgument": "m.0270k40",
+            "EntityName": "Cirque du Freak: The Vampire's Assistant"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0261k3j",
-            "EntityName": "Wild Life Sydney"
+            "AnswerArgument": "m.02q02ql",
+            "EntityName": "Firehouse Dog"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02kwln",
-            "EntityName": "Sydney Film Festival"
+            "AnswerArgument": "m.02qd6h2",
+            "EntityName": "Winged Creatures"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02q0lr",
-            "EntityName": "The Rocks"
+            "AnswerArgument": "m.047qh9b",
+            "EntityName": "Party Wagon"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02x0jgm",
-            "EntityName": "Sydney Markets"
+            "AnswerArgument": "m.04f8ttb",
+            "EntityName": "Journey to the Center of the Earth"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.02x7mq",
-            "EntityName": "Powerhouse Museum"
+            "AnswerArgument": "m.04j0_gm",
+            "EntityName": "One Last Ride"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.040sd3",
-            "EntityName": "Luna Park Sydney"
+            "AnswerArgument": "m.04j1g18",
+            "EntityName": "Wilder Days"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.04dxfg",
-            "EntityName": "City2Surf"
+            "AnswerArgument": "m.04j1phy",
+            "EntityName": "Miracle Dogs"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.05115h",
-            "EntityName": "St Mary's Cathedral, Sydney"
+            "AnswerArgument": "m.05spvb",
+            "EntityName": "Kicking & Screaming"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.06_nm",
-            "EntityName": "Sydney Opera House"
+            "AnswerArgument": "m.07sbq6c",
+            "EntityName": "Red Dawn"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0701q",
-            "EntityName": "Sydney Harbour Bridge"
+            "AnswerArgument": "m.07y296",
+            "EntityName": "Motocross Kids"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0b8fsx",
-            "EntityName": "North Head Quarantine Station"
+            "AnswerArgument": "m.09qs_s",
+            "EntityName": "Zathura"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0cj82q",
-            "EntityName": "Hillsong Church"
+            "AnswerArgument": "m.09tqkv2",
+            "EntityName": "The Kids Are All Right"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0hddw",
-            "EntityName": "Darling Harbour"
+            "AnswerArgument": "m.09v9dsq",
+            "EntityName": "The Forger"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0j2r2w2",
-            "EntityName": "Australian National Maritime Museum"
+            "AnswerArgument": "m.09w6br",
+            "EntityName": "The Polar Express"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0j65cht",
-            "EntityName": "Featherdale Wildlife Park"
+            "AnswerArgument": "m.0bcs_f",
+            "EntityName": "RV"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.0pnrn",
-            "EntityName": "Kamay Botany Bay National Park"
+            "AnswerArgument": "m.0crnh6",
+            "EntityName": "Little Manhattan"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ds2_k2",
+            "EntityName": "Journey 2: The Mysterious Island"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0dzz6g",
+            "EntityName": "American Splendor"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0g4tknw",
+            "EntityName": "Detention"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gkp_k",
+            "EntityName": "House Blend"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gkz15s",
+            "EntityName": "The Hunger Games"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gy8kqb",
+            "EntityName": "7 Days in Havana"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0gy8kv2",
+            "EntityName": "The Third Rule"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0hhgh69",
+            "EntityName": "Epic"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0n40qmp",
+            "EntityName": "The Hunger Games: Catching Fire"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngvsvk",
+            "EntityName": "The Hunger Games: Mockingjay, Part 1"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0ngvtb_",
+            "EntityName": "The Hunger Games: Mockingjay, Part 2"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0x1xc_w",
+            "EntityName": "Escobar: Paradise Lost"
           }
         ]
       }
     ]
   },
   {
-    "QuestionId": "WebQTest-725",
-    "RawQuestion": "what states does the sierra nevada run through?",
-    "ProcessedQuestion": "what states does the sierra nevada run through",
+    "QuestionId": "WebQTest-1307",
+    "RawQuestion": "where did harper lee attend high school?",
+    "ProcessedQuestion": "where did harper lee attend high school",
     "Parses": [
       {
-        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0db94)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0db94 ns:location.location.partially_containedby ?x .\n?x ns:base.biblioness.bibs_location.loc_type ?sk0 .\nFILTER (str(?sk0) = \"State\")\n}\n",
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.01bq7x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.01bq7x ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hn6 .\n}\n",
         "Answers": [
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.01n7q",
-            "EntityName": "California"
+            "AnswerArgument": "m.0crdc8g",
+            "EntityName": "Monroe County High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1308",
+    "RawQuestion": "what college did jrr tolkien go to?",
+    "ProcessedQuestion": "what college did jrr tolkien go to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.041h0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.041h0 ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07tgn",
+            "EntityName": "University of Oxford"
           },
           {
             "AnswerType": "Entity",
-            "AnswerArgument": "m.059_c",
-            "EntityName": "Nevada"
+            "AnswerArgument": "m.0ylvj",
+            "EntityName": "Exeter College, Oxford"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1310",
+    "RawQuestion": "who won the league cup in 2002?",
+    "ProcessedQuestion": "who won the league cup in 2002",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.012dbw)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.012dbw ns:sports.sports_award_type.winners ?y .\n?y ns:sports.sports_award.award_winner ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04ltf",
+            "EntityName": "Liverpool F.C."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1311",
+    "RawQuestion": "what was antoni gaudi inspired by?",
+    "ProcessedQuestion": "what was antoni gaudi inspired by",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0yb0)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0yb0 ns:influence.influence_node.influenced_by ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02mpv",
+            "EntityName": "Eugène Viollet-le-Duc"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.08304",
+            "EntityName": "William Morris"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1312",
+    "RawQuestion": "in what country do people speak danish?",
+    "ProcessedQuestion": "in what country do people speak danish",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0295r)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0295r ns:language.human_language.main_country ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0k6nt",
+            "EntityName": "Denmark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1313",
+    "RawQuestion": "who were demeter's siblings?",
+    "ProcessedQuestion": "who were demeter 's siblings",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0296l)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0296l ns:fictional_universe.fictional_character.siblings ?y .\n?y ns:fictional_universe.sibling_relationship_of_fictional_characters.siblings ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0bbvfjz",
+            "EntityName": "Zeus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1314",
+    "RawQuestion": "where should a family stay in paris?",
+    "ProcessedQuestion": "where should a family stay in paris",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.05qtj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.05qtj ns:travel.travel_destination.accommodation ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.04fcxl",
+            "EntityName": "Hôtel de Crillon"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.056n81",
+            "EntityName": "Hôtel Ritz Paris"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1317",
+    "RawQuestion": "what the largest city in spain?",
+    "ProcessedQuestion": "what the largest city in spain",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06mkj)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06mkj ns:location.location.contains ?x .\n?x ns:base.biblioness.bibs_location.loc_type ?sk0 .\nFILTER (str(?sk0) = \"City\")\n?x ns:topic_server.population_number ?sk1 .\n}\nORDER BY DESC(xsd:float(?sk1))\nLIMIT 1\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01zv_",
+            "EntityName": "Catalonia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1319",
+    "RawQuestion": "who has pudge rodriguez played for?",
+    "ProcessedQuestion": "who has pudge rodriguez played for",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02p6g7)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02p6g7 ns:sports.pro_athlete.teams ?y .\n?y ns:sports.sports_team_roster.team ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02__x",
+            "EntityName": "Miami Marlins"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02d02",
+            "EntityName": "Detroit Tigers"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.07l8x",
+            "EntityName": "Texas Rangers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-1324",
+    "RawQuestion": "what college did john nash go to?",
+    "ProcessedQuestion": "what college did john nash go to",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0pyqh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0pyqh ns:people.person.education ?y .\n?y ns:education.education.institution ?x .\n?x ns:common.topic.notable_types ns:m.01y2hnl .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01q2sk",
+            "EntityName": "Carnegie Mellon College of Engineering"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05zl0",
+            "EntityName": "Princeton University"
           }
         ]
       }

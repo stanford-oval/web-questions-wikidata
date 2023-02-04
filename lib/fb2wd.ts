@@ -1,4 +1,5 @@
 import fs from 'fs';
+import path from 'path';
 import * as argparse from 'argparse';
 import { 
     Parser, 
@@ -54,11 +55,11 @@ export default class FB2WDConverter {
     public missingEntityMappings : Set<string>;
     public missingPropertyMappings : Set<string>;
 
-    constructor(wikidata : WikidataUtils) {
+    constructor(wikidata : WikidataUtils, reference ?: string) {
         this.parser = new Parser({ prefixes: { ...FB_PREFIXES, ...WD_PREFIXES } });
         this.generator = new Generator({ prefixes: WD_PREFIXES });
         this.mapper = new FB2WDMapper();
-        this.matcher = new PatternMatcher(this.mapper);
+        this.matcher = new PatternMatcher(this.mapper, reference);
         this.wikidata = wikidata;
         this.counter = {};
         this.missingEntityMappings = new Set();
@@ -175,6 +176,26 @@ export default class FB2WDConverter {
     }
 }
 
+async function loadFiles(type : string, fPath ?: string|undefined) {
+    if (!fPath) {
+        const rPath = path.relative(__dirname, `data/${type}`);
+        fPath = path.join(__dirname, rPath);
+    }
+    let items : any = {};
+    if (fs.existsSync(fPath)) {
+        const dir = fs.readdirSync(fPath);
+        const files = dir.filter((fname) => fname.match(/.*\.(json?)/ig));
+        for (const fname of files) {
+            const examples = JSON.parse(fs.readFileSync(path.join(fPath, fname), 'utf-8'));
+            for (const ex of examples) {
+                const key = ex.QuestionId;
+                items[key] = ex.RawQuestion;
+            }
+        }
+    }
+    return items;
+}
+
 async function main() {
     const parser = new argparse.ArgumentParser({
         add_help : true,
@@ -182,29 +203,49 @@ async function main() {
     });
     parser.add_argument('-i', '--input', {
         required: true,
-        help: 'path to the input file'
+        help: 'path to the input unannotated file'
+    });
+    parser.add_argument('-r', '--reference', {
+        required: false,
+        help: 'path to the input directory of annotated reference files'
+    });
+    parser.add_argument('-d', '--drop', {
+        required: false,
+        help: 'path to the input directory of dropped samples'
     });
     parser.add_argument('--annotated', {
         required: true,
-        help: 'path to the file for annotated examples'
+        help: 'path to the output file for newly annotated examples'
     });
     parser.add_argument('--skipped', {
         required: true,
-        help: 'path to the file for skipped examples'
+        help: 'path to the output file for newly skipped examples'
+    });
+    parser.add_argument('--dropped', {
+        required: false,
+        help: 'path to the output file for newly dropped examples'
     });
     const args = parser.parse_args();
     const fbQuestions = JSON.parse(fs.readFileSync(args.input, 'utf-8'));
+    const droppedQuestions = await loadFiles('dropped', args.drop);
+    const reference = await loadFiles('annotated');
     const wikidata = new WikidataUtils('wikidata.sqlite');
-    const converter = new FB2WDConverter(wikidata);
+    const converter = new FB2WDConverter(wikidata, args.reference);
     const annotated = [];
     const skipped = [];
+    const dropped = [];
+    const start = Date.now();
     for (const ex of fbQuestions.Questions) {
         const example = loadExample(ex);
         const noAnswer = example.Parses[0].Answers.length === 0;
+        if (ex.QuestionId in droppedQuestions) {
+            dropped.push(example);
+            continue;
+        }
         let skip = true;
         for (const p of example.Parses) {
-            const converted = await converter.convert(p.Sparql);
-            if (!converted)
+            const converted = await converter.convert(p.Sparql); // null if _mapper has no Entity to map
+            if (!converted) 
                 continue;
             
             const sparql = postprocessSparql(converted);
@@ -218,8 +259,9 @@ async function main() {
 
                 // if there is no answer from wikidata, but there is answer in the original dataset
                 // skip
-                if (!noAnswer && rawAnswers.length === 0) 
-                    continue;
+                if (!noAnswer && rawAnswers.length === 0)
+                    if (!(example.QuestionId in reference))
+                        continue;
                 for (const answer of rawAnswers) {
                     if (answer.startsWith(WD_ENTITY_PREFIX)) {
                         const qid = answer.slice(WD_ENTITY_PREFIX.length);
@@ -249,10 +291,14 @@ async function main() {
     console.log(converter.counter);
     console.log('Annotated: ', annotated.length);
     console.log('Skipped: ', skipped.length);
+    console.log('Dropped: ', dropped.length);
     fs.writeFileSync('data/missing-entity-mappings.tsv', [...converter.missingEntityMappings].join('\n'));
     fs.writeFileSync('data/missing-property-mappings.tsv', [...converter.missingPropertyMappings].join('\n'));
     fs.writeFileSync(args.annotated, JSON.stringify(annotated, null, 2));
-    fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));    
+    fs.writeFileSync(args.skipped, JSON.stringify(skipped, null, 2));
+    fs.writeFileSync(args.dropped, JSON.stringify(dropped, null, 2));
+    const end = Date.now();
+    console.log(`Execution Time: ${(end-start)/1000} seconds`);
 }
 
 if (require.main === module)

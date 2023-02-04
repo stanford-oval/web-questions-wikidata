@@ -1,0 +1,63 @@
+[
+  {
+    "QuestionId": "WebQTest-194",
+    "RawQuestion": "where did the iroquois indians come from?",
+    "ProcessedQuestion": "where did the iroquois indians come from",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03x1x)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.03x1x ns:people.ethnicity.geographic_distribution ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05kr_",
+            "EntityName": "Ontario"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0694j",
+            "EntityName": "Québec"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-265",
+    "RawQuestion": "which airport to fly into rome?",
+    "ProcessedQuestion": "which airport to fly into rome",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.06c62)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.06c62 ns:travel.travel_destination.how_to_get_here ?y .\n?y ns:travel.transportation.transport_terminus ?x .\n?x ns:common.topic.notable_types ns:m.01xpjyz .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.01ky5r",
+            "EntityName": "Leonardo da Vinci–Fiumicino Airport"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.033_52",
+            "EntityName": "Ciampino–G. B. Pastine International Airport"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTest-273",
+    "RawQuestion": "when did michael jordan return to the nba?",
+    "ProcessedQuestion": "when did michael jordan return to the nba",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.054c1)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.054c1 ns:sports.pro_athlete.sports_played_professionally ?y .\n?y ns:sports.pro_sports_played.career_start ?x .\n?y ns:sports.pro_sports_played.sport ns:m.018w8 .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "1984",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  }
+]

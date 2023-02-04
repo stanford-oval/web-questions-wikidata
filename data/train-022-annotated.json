@@ -1,0 +1,2239 @@
+[
+  {
+    "QuestionId": "WebQTrn-3561",
+    "RawQuestion": "which three countries share a land border with cambodia?",
+    "ProcessedQuestion": "which three countries share a land border with cambodia",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q424 wdt:P47 ?x. } LIMIT 3",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q819",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q869",
+            "EntityName": "Thailand"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q881",
+            "EntityName": "Vietnam"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3562",
+    "RawQuestion": "what country was juan ponce de leon from?",
+    "ProcessedQuestion": "what country was juan ponce de leon from",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q185974 wdt:P19 ?p. ?p wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q29",
+            "EntityName": "Spain"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3569",
+    "RawQuestion": "who plays marvin eriksen?",
+    "ProcessedQuestion": "who plays marvin eriksen",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p p:P725|p:P161 ?y. ?y ps:P725|ps:P161 ?x; pq:P453 wd:Q50383244. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q591238",
+            "EntityName": "Bill Fagerbakke"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3574",
+    "RawQuestion": "what team does derek fisher play for 2012?",
+    "ProcessedQuestion": "what team does derek fisher play for 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q314621 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3575",
+    "RawQuestion": "what are some important events in ancient egypt?",
+    "ProcessedQuestion": "what are some important events in ancient egypt",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P361 wd:Q11768; wdt:P31/wdt:P279* wd:Q13418847. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q203729",
+            "EntityName": "Battle of Kadesh"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q633560",
+            "EntityName": "Battle of Carchemish"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3578",
+    "RawQuestion": "when did mcgee join the ncis team?",
+    "ProcessedQuestion": "when did mcgee join the ncis team",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q838560 wdt:P4584 ?p. ?p wdt:P577 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2003-11-18T00:00:00Z",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2005-03-24T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3582",
+    "RawQuestion": "what countries are around egypt?",
+    "ProcessedQuestion": "what countries are around egypt",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q79 wdt:P47 ?x. ?x wdt:P31 wd:Q6256. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q801",
+            "EntityName": "Israel"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1016",
+            "EntityName": "Libya"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1049",
+            "EntityName": "Sudan"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3583",
+    "RawQuestion": "what did julia roberts won an oscar for?",
+    "ProcessedQuestion": "what did julia roberts won an oscar for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q19020; wdt:P1346 wd:Q40523. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q103618",
+            "EntityName": "Academy Award for Best Actress"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3584",
+    "RawQuestion": "what year did mitt romney first run for president?",
+    "ProcessedQuestion": "what year did mitt romney first run for president",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?p wdt:P31/wdt:P279* wd:Q858439; wdt:P726 wd:Q4496; wdt:P585 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2012-11-06T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3585",
+    "RawQuestion": "who is engaged to john legend?",
+    "ProcessedQuestion": "who is engaged to john legend",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q44857 wdt:P26 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5111202",
+            "EntityName": "Chrissy Teigen"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3587",
+    "RawQuestion": "who won governor of indiana 2012?",
+    "ProcessedQuestion": "who won governor of indiana 2012",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P39 ?p. ?p ps:P39 wd:Q16147601; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2013-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2012-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q351330",
+            "EntityName": "Mitch Daniels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3588",
+    "RawQuestion": "where did the allied invasion of france take place?",
+    "ProcessedQuestion": "where did the allied invasion of france take place",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q16471 wdt:P276 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15878",
+            "EntityName": "Normandy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3589",
+    "RawQuestion": "where does the st. joe river start?",
+    "ProcessedQuestion": "where does the st. joe river start",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2196805 wdt:P885 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3590",
+    "RawQuestion": "where did alex smith play high school football?",
+    "ProcessedQuestion": "where did alex smith play high school football",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q717897 wdt:P69 ?x. ?x wdt:P31/wdt:P279* wd:Q9826. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5706272",
+            "EntityName": "Helix High School"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3593",
+    "RawQuestion": "who plays kermit in the muppets movie?",
+    "ProcessedQuestion": "who plays kermit in the muppets movie",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q550558 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q1107971. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3600",
+    "RawQuestion": "what city was nelson mandela born in?",
+    "ProcessedQuestion": "what city was nelson mandela born in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q8023 wdt:P19 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1020378",
+            "EntityName": "Mvezo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3607",
+    "RawQuestion": "what country was jesus born?",
+    "ProcessedQuestion": "what country was jesus born",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q302 wdt:P19 ?p. ?p wdt:P17 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219060",
+            "EntityName": "State of Palestine"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3614",
+    "RawQuestion": "what team does lamar odom play for 2013?",
+    "ProcessedQuestion": "what team does lamar odom play for 2013",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q296403 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2014-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2013-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q976396",
+            "EntityName": "Los Angeles Clippers"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3618",
+    "RawQuestion": "what team is hank baskett playing for in 2010?",
+    "ProcessedQuestion": "what team is hank baskett playing for in 2010",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1433425 p:P54 ?p. ?p ps:P54 ?x; pq:P580 ?y; pq:P582 ?z. FILTER((?y < \"2011-01-01T00:00:00Z\"^^xsd:dateTime) && (?z >= \"2010-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3622",
+    "RawQuestion": "what 5 countries border romania?",
+    "ProcessedQuestion": "what 5 countries border romania",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q218 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q403",
+            "EntityName": "Serbia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28",
+            "EntityName": "Hungary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q212",
+            "EntityName": "Ukraine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q219",
+            "EntityName": "Bulgaria"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q217",
+            "EntityName": "Moldova"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3623",
+    "RawQuestion": "when was the last time the kansas city chiefs won a superbowl?",
+    "ProcessedQuestion": "when was the last time the kansas city chiefs won a superbowl",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?y wdt:P31/wdt:P279* wd:Q32096; wdt:P1346 wd:Q223522; wdt:P585 ?x. } ORDER BY DESC (?x) LIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "2020-02-02T00:00:00Z",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3625",
+    "RawQuestion": "where is united arab located?",
+    "ProcessedQuestion": "where is united arab located",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q878 wdt:P131|wdt:P17|wdt:P276|wdt:P706 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q878",
+            "EntityName": "United Arab Emirates"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3630",
+    "RawQuestion": "when did bradley cooper's dad die?",
+    "ProcessedQuestion": "when did bradley cooper 's dad die",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q205707 wdt:P22 ?p. ?p wdt:P570 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3631",
+    "RawQuestion": "which countries border the baltic sea?",
+    "ProcessedQuestion": "which countries border the baltic sea",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q545 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q104662",
+            "EntityName": "Øresund"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3632",
+    "RawQuestion": "what to do in perth scotland?",
+    "ProcessedQuestion": "what to do in perth scotland",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31/wdt:P279* wd:Q570116; wdt:P131 wd:Q203000. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3634",
+    "RawQuestion": "who does christine gregoire represent?",
+    "ProcessedQuestion": "who does christine gregoire represent",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q239366 wdt:P39 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19647220",
+            "EntityName": "Governor of Washington"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3643",
+    "RawQuestion": "what countries and seas border ukraine?",
+    "ProcessedQuestion": "what countries and seas border ukraine",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q212 wdt:P47|wdt:P206 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q458",
+            "EntityName": "European Union"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28",
+            "EntityName": "Hungary"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36",
+            "EntityName": "Poland"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q159",
+            "EntityName": "Russia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q184",
+            "EntityName": "Belarus"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q214",
+            "EntityName": "Slovakia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q218",
+            "EntityName": "Romania"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q217",
+            "EntityName": "Moldova"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3645",
+    "RawQuestion": "where was joe biden a senator?",
+    "ProcessedQuestion": "where was joe biden a senator",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q6279 p:P39 ?p. ?p ps:P39 ?y; pq:P768 ?z. ?y wdt:P279 wd:Q15686806. ?z wdt:P131 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1393",
+            "EntityName": "Delaware"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3649",
+    "RawQuestion": "what year did reggie bush get drafted?",
+    "ProcessedQuestion": "what year did reggie bush get drafted",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q555271 p:P647 ?y. ?y pq:P585 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3650",
+    "RawQuestion": "what was sherlock holmes famous for?",
+    "ProcessedQuestion": "what was sherlock holmes famous for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q4653 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "fictional character (consulting detective) created by Sir Arthur Conan Doyle",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3653",
+    "RawQuestion": "who is roger bacon inventor of?",
+    "ProcessedQuestion": "who is roger bacon inventor of",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P61 wd:Q171677. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3655",
+    "RawQuestion": "what city was woodstock held in?",
+    "ProcessedQuestion": "what city was woodstock held in",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q164815 wdt:P276 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7994968",
+            "EntityName": "White Lake"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3657",
+    "RawQuestion": "what was one thing benjamin franklin is famous for?",
+    "ProcessedQuestion": "what was one thing benjamin franklin is famous for",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". wd:Q34969 schema:description ?x. } }",
+        "Answers": [
+          {
+            "AnswerType": "Value",
+            "AnswerArgument": "American author, printer, political theorist, politician, postmaster, scientist, inventor, civic activist, statesman, diplomat, Founding Father (1706-1790)",
+            "EntityName": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3665",
+    "RawQuestion": "what did atticus finch do?",
+    "ProcessedQuestion": "what did atticus finch do",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q525777 wdt:P106 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q40348",
+            "EntityName": "lawyer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3667",
+    "RawQuestion": "what was james madison's job?",
+    "ProcessedQuestion": "what was james madison 's job",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q11813 p:P39 ?p. ?p ps:P39 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q912994",
+            "EntityName": "Speaker of the United States House of Representatives"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1467287",
+            "EntityName": "President-elect of the United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13218630",
+            "EntityName": "United States representative"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18694588",
+            "EntityName": "Member of the United States House of Representatives from Virginia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20065408",
+            "EntityName": "member of the Virginia House of Delegates"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11696",
+            "EntityName": "President of the United States"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q14213",
+            "EntityName": "United States Secretary of State"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3671",
+    "RawQuestion": "who does queen elizabeth hair?",
+    "ProcessedQuestion": "who does queen elizabeth hair",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x p:P166 ?p. ?p pq:P1686 wd:Q499656. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q166272",
+            "EntityName": "Geoffrey Rush"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1174736",
+            "EntityName": "David Hirschfelder"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3807917",
+            "EntityName": "Jenny Shircore"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3676",
+    "RawQuestion": "who killed david ruffin?",
+    "ProcessedQuestion": "who killed david ruffin",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1176417 wdt:P157 ?x. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3682",
+    "RawQuestion": "what are the different dialects of chinese?",
+    "ProcessedQuestion": "what are the different dialects of chinese",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P31 wd:Q33384; wdt:P279+ wd:Q7850. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q516721",
+            "EntityName": "Ji-Lu Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q662754",
+            "EntityName": "Lan-Yin Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q839295",
+            "EntityName": "Meixian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1064504",
+            "EntityName": "Northeastern Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2128953",
+            "EntityName": "Lower Yangtze Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2169652",
+            "EntityName": "Beijing Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2391532",
+            "EntityName": "Taiwanese Hakka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2597550",
+            "EntityName": "Jiao-Liao Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2609239",
+            "EntityName": "Southwestern Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3048775",
+            "EntityName": "Central Plains Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3443012",
+            "EntityName": "Ying-Yi dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3497239",
+            "EntityName": "Chang-Du dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5207168",
+            "EntityName": "Da-Tong dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6191241",
+            "EntityName": "Ji-Xu Xiang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6735199",
+            "EntityName": "Mai dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6763375",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7012696",
+            "EntityName": "New Xiang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7085453",
+            "EntityName": "Old Xiang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8039107",
+            "EntityName": "Wuhua dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8053438",
+            "EntityName": "Yi-Liu dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10269784",
+            "EntityName": "Yueyang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10895019",
+            "EntityName": "Junjiahua"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10917087",
+            "EntityName": "Ji'an dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11076575",
+            "EntityName": "Fuzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11124731",
+            "EntityName": "Wuhan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11174839",
+            "EntityName": "Yingtan Dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15448670",
+            "EntityName": "Leping dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15929550",
+            "EntityName": "Tingzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001183",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001187",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001190",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001193",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001197",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001200",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001207",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001205",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001211",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001215",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001219",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001222",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001225",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001228",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001235",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001232",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001239",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001242",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001245",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001251",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001254",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001258",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001261",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001267",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001264",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001271",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001274",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001276",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001281",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001287",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001284",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001291",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001294",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001298",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001301",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001307",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001304",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001310",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001314",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19724471",
+            "EntityName": "Changting dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855021",
+            "EntityName": "Nanping dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19952336",
+            "EntityName": "Mandarin dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20707813",
+            "EntityName": "Gyami"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q23808294",
+            "EntityName": "Yong-Quan Xiang"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q30156140",
+            "EntityName": "Dongping dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q39991501",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q43256057",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q64427357",
+            "EntityName": "Chinese in Macau"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q710218",
+            "EntityName": "Wenzhounese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1939756",
+            "EntityName": "Xuanzhou Wu dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2325035",
+            "EntityName": "Wuxi dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2391679",
+            "EntityName": "Siyi dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2779891",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2812583",
+            "EntityName": "Gao-Yang Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3972199",
+            "EntityName": "Ningbo dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5116499",
+            "EntityName": "Chuqu Wu dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5588322",
+            "EntityName": "Goulou Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6191803",
+            "EntityName": "Jiangyin dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6704497",
+            "EntityName": "Luo-Guang Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7267753",
+            "EntityName": "Qin-Lian Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7675988",
+            "EntityName": "Taihu Wu dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7676678",
+            "EntityName": "Taizhou Wu dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8038858",
+            "EntityName": "Wu-Hua Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8039420",
+            "EntityName": "Wuzhou Wu dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8054950",
+            "EntityName": "Yong-Xun Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8060260",
+            "EntityName": "Yuehai Yue"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8070470",
+            "EntityName": "Zhangjiakou–Hohhot dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10919133",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001317",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001323",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001320",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001326",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001330",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001335",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001333",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001343",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001340",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001347",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001350",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001353",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001359",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001356",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001361",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001365",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001368",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001375",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001372",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001378",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001381",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001387",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001384",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001395",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001392",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001399",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001401",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001404",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001409",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001415",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001412",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001419",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001422",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001425",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001428",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001434",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001432",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001438",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001441",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001444",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001448",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001455",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001452",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001458",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001461",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001465",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001471",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001468",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001474",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001478",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001481",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001487",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001484",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001491",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16001493",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16259341",
+            "EntityName": "Jinhui dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q20667193",
+            "EntityName": "Qiong-Lei"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q21005894",
+            "EntityName": "Tongdao Pinghua"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q84302019",
+            "EntityName": "Southern Pinghua"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108909192",
+            "EntityName": "Kongfu dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36718",
+            "EntityName": "Shanghainese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q831744",
+            "EntityName": "Suzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q836038",
+            "EntityName": "Shiqi dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q846599",
+            "EntityName": "Weitou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q934541",
+            "EntityName": "Hainanese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1006919",
+            "EntityName": "Harbin dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1021819",
+            "EntityName": "Changzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1147606",
+            "EntityName": "Beijing dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1375036",
+            "EntityName": "Dalian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1988433",
+            "EntityName": "Leizhou Min"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2074456",
+            "EntityName": "Qingtian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2208940",
+            "EntityName": "Taishanese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2278732",
+            "EntityName": "Sichuanese Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2427960",
+            "EntityName": "Jinxiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2681098",
+            "EntityName": "Nanjing dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3025951",
+            "EntityName": "Weihai dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3044809",
+            "EntityName": "Changsha dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3372400",
+            "EntityName": "Kunming dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3431347",
+            "EntityName": "Luoyang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3431648",
+            "EntityName": "Guanzhong dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3431721",
+            "EntityName": "Mango dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3972406",
+            "EntityName": "Taizhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4415352",
+            "EntityName": "Rui'an dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4934549",
+            "EntityName": "Bobai dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5091311",
+            "EntityName": "Chengdu-Chongqing dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5648144",
+            "EntityName": "Hangzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5894342",
+            "EntityName": "Hong Kong Cantonese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6112340",
+            "EntityName": "Qihai dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6112429",
+            "EntityName": "Quzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6112693",
+            "EntityName": "Jiangshan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6191447",
+            "EntityName": "Jian'ou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6202017",
+            "EntityName": "Jinan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6203399",
+            "EntityName": "Jiujiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6703311",
+            "EntityName": "Zhangzhou Hakka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6867767",
+            "EntityName": "Minjiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7084146",
+            "EntityName": "Old Guangde dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7216573",
+            "EntityName": "Fu'an dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7267815",
+            "EntityName": "Qingdao dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7267981",
+            "EntityName": "Qiyang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7489194",
+            "EntityName": "Shaoxing dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7494349",
+            "EntityName": "Shenyang Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7800220",
+            "EntityName": "Tianjin dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7820911",
+            "EntityName": "Tong-Tai dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7982335",
+            "EntityName": "Wencheng dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8039071",
+            "EntityName": "Wugang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8044409",
+            "EntityName": "Xiguan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8045307",
+            "EntityName": "Xuzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9668261",
+            "EntityName": "Sixian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10878256",
+            "EntityName": "Ürümqi dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10887636",
+            "EntityName": "Baoding dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10891575",
+            "EntityName": "Quanzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10911980",
+            "EntityName": "Shuangfeng dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10922741",
+            "EntityName": "Tangshan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11131903",
+            "EntityName": "Yongzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11141722",
+            "EntityName": "Henan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13574018",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13583347",
+            "EntityName": "Jinhua dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15503785",
+            "EntityName": "Yongjiang small film"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15895753",
+            "EntityName": "Fuqing dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15899756",
+            "EntityName": "Xiapu dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16930647",
+            "EntityName": "Jianyang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17038519",
+            "EntityName": "Hailu Hakka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17050290",
+            "EntityName": "Gangou"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18748007",
+            "EntityName": "Putian"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18748008",
+            "EntityName": "Xianyou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18941249",
+            "EntityName": "Ningde dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18943758",
+            "EntityName": "Houguang dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18943896",
+            "EntityName": "Funing dialects"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18944085",
+            "EntityName": "Gutian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19854038",
+            "EntityName": "Raoping Hakka"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855566",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855654",
+            "EntityName": "Chong'an"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855758",
+            "EntityName": "Zhenghe"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855892",
+            "EntityName": "Songxi"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q22098641",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24205514",
+            "EntityName": "Zhenjiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q85816347",
+            "EntityName": "Wuming Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q92590792",
+            "EntityName": "Jimsar dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q98095139",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q100148307",
+            "EntityName": "Chinese (Hong Kong)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q108909205",
+            "EntityName": "Aoyao dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q113659847",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q9186",
+            "EntityName": "Cantonese"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q35571",
+            "EntityName": "Fuzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q36759",
+            "EntityName": "Teochew"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q262828",
+            "EntityName": "Standard Taiwanese Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q1048980",
+            "EntityName": "Singaporean Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2251677",
+            "EntityName": "Quanzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q2705752",
+            "EntityName": "Amoy dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3236692",
+            "EntityName": "Philippine Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3285446",
+            "EntityName": "Sichuanese Standard Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3846528",
+            "EntityName": "Singaporean Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q3846710",
+            "EntityName": "Zhenan Min"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q4380827",
+            "EntityName": "Taiwanese Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5639063",
+            "EntityName": "Haklau Min"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6368303",
+            "EntityName": "Karamay dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6530337",
+            "EntityName": "Leshan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6673704",
+            "EntityName": "Longdu dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6674568",
+            "EntityName": "Longyan dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6805114",
+            "EntityName": "Medan Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q6963771",
+            "EntityName": "Nanlang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7185155",
+            "EntityName": "Philippine Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7420769",
+            "EntityName": "Sanxiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7489101",
+            "EntityName": "Shantou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q7570322",
+            "EntityName": "Southern Peninsular Malaysian Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8070492",
+            "EntityName": "Zhangzhou dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8070958",
+            "EntityName": "Zhongshan Min"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q8071810",
+            "EntityName": "Zigong dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10869696",
+            "EntityName": "Southeast Asian Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q10914070",
+            "EntityName": "Taichung Accent"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11084544",
+            "EntityName": "Malay Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11089375",
+            "EntityName": "Jinjiang Dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11120689",
+            "EntityName": "Penang Hokkien"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q11131679",
+            "EntityName": "Yong'an dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q13646143",
+            "EntityName": "Malaysian Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15927842",
+            "EntityName": "Taiwan Mandarin (academic concept)"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15937822",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q15941421",
+            "EntityName": "Fujian Mandarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q16241797",
+            "EntityName": "Hui'an dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q17500924",
+            "EntityName": "Zhanjiang dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18119187",
+            "EntityName": "Zhuji dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q18165325",
+            "EntityName": "Mangdarin"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19683211",
+            "EntityName": "Sanming dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q19855966",
+            "EntityName": "Shaxian dialect"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q24841726",
+            "EntityName": "Putonghua"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q98493570",
+            "EntityName": null
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q106560423",
+            "EntityName": "Pontianak Teochew"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3684",
+    "RawQuestion": "who owns the sf giants owner?",
+    "ProcessedQuestion": "who owns the sf giants owner",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q308966 wdt:P127 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q5669632",
+            "EntityName": "Harry Hempstead"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3686",
+    "RawQuestion": "what is the capital of kentucky known for its bluegrass?",
+    "ProcessedQuestion": "what is the capital of kentucky known for its bluegrass",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q1603 wdt:P36 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q28603",
+            "EntityName": "Frankfort"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3690",
+    "RawQuestion": "which countries share land border with vietnam?",
+    "ProcessedQuestion": "which countries share land border with vietnam",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q881 wdt:P47 ?x. }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q424",
+            "EntityName": "Cambodia"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q819",
+            "EntityName": "Laos"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q148",
+            "EntityName": "People's Republic of China"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3695",
+    "RawQuestion": "where in georgia does usher live?",
+    "ProcessedQuestion": "where in georgia does usher live",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q165911 p:P551 ?p. ?p ps:P551 ?x. ?x wdt:P131 wd:Q1428. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3699",
+    "RawQuestion": "who plays riley finn on buffy the vampire slayer?",
+    "ProcessedQuestion": "who plays riley finn on buffy the vampire slayer",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { wd:Q2661631 p:P725|p:P161 ?p. ?p ps:P725|ps:P161 ?x; pq:P453 wd:Q2721925. }",
+        "Answers": []
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-3703",
+    "RawQuestion": "what did charles babbage create in the 1800s?",
+    "ProcessedQuestion": "what did charles babbage create in the 1800s",
+    "Parses": [
+      {
+        "Sparql": "SELECT DISTINCT ?x WHERE { ?x wdt:P61 wd:Q46633; wdt:P575|wdt:P571 ?y. FILTER((?y < \"1900-01-01T00:00:00Z\"^^xsd:dateTime) && (?y >= \"1800-01-01T00:00:00Z\"^^xsd:dateTime)) }",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q279956",
+            "EntityName": "thaumatrope"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q485257",
+            "EntityName": "Analytical Engine"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "Q628007",
+            "EntityName": "difference engine"
+          }
+        ]
+      }
+    ]
+  }
+]

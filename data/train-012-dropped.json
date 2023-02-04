@@ -1,0 +1,75 @@
+[
+  {
+    "QuestionId": "WebQTrn-1924",
+    "RawQuestion": "where is the warmest weather in the united states in december?",
+    "ProcessedQuestion": "where is the warmest weather in the united states in december",
+    "Parses": [
+      {
+        "Sparql": "#MANUAL SPARQL\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\n    ns:m.09c7w0 ns:location.location.contains ?x .  # United States\n    ?x ns:travel.travel_destination.climate  ?y .\n    ?y ns:travel.travel_destination_monthly_climate.month ns:m.028kb . # December\n    ?y ns:travel.travel_destination_monthly_climate.average_max_temp_c ?max_temp . # Average max temp\n}\nORDER BY DESC(xsd:float(?max_temp))\nLIMIT 1",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.0f2v0",
+            "EntityName": "Miami"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-1972",
+    "RawQuestion": "what language did the miwok indians speak?",
+    "ProcessedQuestion": "what language did the miwok indians speak",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02l_wv)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.02l_wv ns:people.ethnicity.languages_spoken ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.02h40lc",
+            "EntityName": "English Language"
+          },
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.05tbtz",
+            "EntityName": "Utian languages"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2037",
+    "RawQuestion": "what was abe lincoln shot with?",
+    "ProcessedQuestion": "what was abe lincoln shot with",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0gzh)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0gzh ns:user.alexander.misc.murdered_person.murder_method ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.034qg",
+            "EntityName": "Firearm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "QuestionId": "WebQTrn-2042",
+    "RawQuestion": "what airport is close to scottsdale arizona?",
+    "ProcessedQuestion": "what airport is close to scottsdale arizona",
+    "Parses": [
+      {
+        "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.0qpqn)\nFILTER (!isLiteral(?x) OR lang(?x) = '' OR langMatches(lang(?x), 'en'))\nns:m.0qpqn ns:location.location.nearby_airports ?x .\n}\n",
+        "Answers": [
+          {
+            "AnswerType": "Entity",
+            "AnswerArgument": "m.054v10",
+            "EntityName": "Scottsdale Airport"
+          }
+        ]
+      }
+    ]
+  }
+]
