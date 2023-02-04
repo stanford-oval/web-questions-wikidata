@@ -63,9 +63,9 @@ export class PatternMatcher {
         wdSPARQL = wdSPARQL.replace(/\s+/g, ' ');
         if (!(preprocessedSPARQL in this._patterns))
             this._patterns[preprocessedSPARQL] = wdSPARQL;
-        if (!(preprocessedSPARQL in this._allPatterns))
+        if (!(preprocessedSPARQL in this._allPatterns)) {
             this._allPatterns[preprocessedSPARQL] = { [wdSPARQL]: 1 };
-        else {
+        } else {
             if (wdSPARQL in this._allPatterns[preprocessedSPARQL])
                 this._allPatterns[preprocessedSPARQL].wdSPARQL =  this._allPatterns[preprocessedSPARQL].wdSPARQL + 1;
             else
