@@ -10,11 +10,18 @@ interface Example {
     query : { sparql : string }
 }
 
+interface Pattern {
+    pattern : string,
+    entities : string[]
+}
+
 class Annotator extends events.EventEmitter {
     private _rl : readline.Interface;
     private _examples : Record<string, Example>;
     private _examplesByPattern : Record<string, Example[]>;
     private _currentExample ?: Example;
+    private _currentExampleOldPattern ?: Pattern;
+    private _currentExampleNewPattern ?: Pattern;
     private _similarExamples : Example[];
     private _similarExampleIndex : number;
 
@@ -27,7 +34,7 @@ class Annotator extends events.EventEmitter {
         this._examplesByPattern = {};
         for (const example of [...trainSet, ...testSet]) {
             this._examples[example.id] = example;
-            const pattern = this._pattern(example.query.sparql)[0];
+            const pattern = this._pattern(example.query.sparql).pattern;
             if (!(pattern in this._examplesByPattern))
                 this._examplesByPattern[pattern] = [];
             this._examplesByPattern[pattern].push(example);
@@ -51,7 +58,10 @@ class Annotator extends events.EventEmitter {
                     return;
                 }
                 this._currentExample = this._examples[id];
+                this._currentExampleOldPattern = this._pattern(this._currentExample!.query.sparql);
                 this._similarExamples = this._findExamplesWithSamePattern();
+                console.log('Id: ' + this._currentExample.id);
+                console.log('Utterance: ' + this._currentExample.question[0].string);
                 rl.setPrompt('Modify the SPARQL here: ');
                 rl.write(this._currentExample.query.sparql.replace(/\s+/, ' '));
                 rl.prompt();
@@ -93,20 +103,29 @@ class Annotator extends events.EventEmitter {
             }
 
             // A new SPARQL is entered
-            const updated = line;
-            this._currentExample!.query.sparql = updated;
-            this._next();
+            if (line.startsWith('SELECT ') || line.startsWith('ASK ') || line.startsWith('PREFIX ')) {
+                const updated = line;
+                this._currentExample!.query.sparql = updated;
+                this._currentExampleNewPattern = this._pattern(updated);
+                this._next();
+                return;
+            }
+
+            console.log('Invalid input, please try again.\n');
         });
     }
 
     private _findExamplesWithSamePattern() : Example[] {
-        const pattern = this._pattern(this._currentExample!.query.sparql)[0];
+        const pattern = this._pattern(this._currentExample!.query.sparql).pattern;
         if (!(pattern in this._examplesByPattern))
             return [];
         return this._examplesByPattern[pattern].filter((e) => e.id !== this._currentExample!.id);
     }
 
     init() {
+        this._currentExample = undefined;
+        this._currentExampleNewPattern = undefined;
+        this._currentExampleOldPattern = undefined;
         this._similarExamples = [];
         this._similarExampleIndex = -1;
         console.log('----------------------------------------------------');
@@ -124,6 +143,7 @@ class Annotator extends events.EventEmitter {
                 console.log(`Found ${this._similarExamples.length} examples with the same pattern.\n`);
             const example = this._similarExamples[this._similarExampleIndex];
             console.log('\nDo you want to apply this change to the following example as well?');
+            console.log('Id: ' + example.id);
             console.log('Utterance: ' + example.question[0].string);
             console.log('SPARQL: ' + example.query.sparql);
             console.log('Updated SPARQL: ' + this._update(example.query.sparql));
@@ -135,7 +155,7 @@ class Annotator extends events.EventEmitter {
         }
     }
 
-    private _pattern(sparql : string) : [string, string[]] {
+    private _pattern(sparql : string) : Pattern {
         let count = 0;
         const entities : string[] = []; 
         for (const match of sparql.match(/(?<=wd:)Q[0-9]+/g) ?? []) {
@@ -143,15 +163,19 @@ class Annotator extends events.EventEmitter {
             entities.push(match);
             count ++;
         }
-        return [sparql, entities];
+        return { pattern: sparql, entities };
     }
 
     private _update(sparql : string) : string {
-        let newPattern = this._pattern(this._currentExample!.query.sparql)[0];
-        const entities = this._pattern(sparql)[1];
-        for (let i = 0; i < entities.length; i++) 
-            newPattern = newPattern.replace(new RegExp('_e_' + i, 'g'), entities[i]);
-        return newPattern;
+        let updatedSparql = this._currentExampleNewPattern!.pattern;
+        const entities = this._pattern(sparql).entities;
+        const updatedEntities = this._currentExampleNewPattern!.entities.map((e) => {
+            const index = this._currentExampleOldPattern!.entities.indexOf(e);
+            return entities[index];
+        });
+        for (let i = 0; i < updatedEntities.length; i++) 
+            updatedSparql = updatedSparql.replace(new RegExp('_e_' + i, 'g'), updatedEntities[i]);
+        return updatedSparql;
     }
 
     save(dir : string) {
