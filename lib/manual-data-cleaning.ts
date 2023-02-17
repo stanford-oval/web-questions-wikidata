@@ -88,6 +88,15 @@ class Annotator extends events.EventEmitter {
                 return;
             }
 
+            // Apply the modified changes to the current
+            if (line.startsWith('m ')) {
+                const example = this._similarExamples[this._similarExampleIndex];
+                const sparql = line.slice('m '.length);
+                example.query.sparql = sparql;
+                this._next();
+                return; 
+            }
+
 
             // Apply changes to all the rest 
             if (line === 'a') {
@@ -147,7 +156,7 @@ class Annotator extends events.EventEmitter {
             console.log('Utterance: ' + example.question[0].string);
             console.log('SPARQL: ' + example.query.sparql);
             console.log('Updated SPARQL: ' + this._update(example.query.sparql));
-            this._rl.setPrompt('\nr/y/n/a/na: ');
+            this._rl.setPrompt('\nr/y/m/n/a/na: ');
             this._rl.prompt();
         } else {
             console.log('Done updating all examples with the same pattern.\n');
